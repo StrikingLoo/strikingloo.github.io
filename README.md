@@ -1,2 +1,2 @@
 # strikingloo.github.io
-personal site through github pages. Trying to make Jekyll work for the first time.
+Personal site through github pages. Trying to make Jekyll work for the first time.
