@@ -1,4 +1,4 @@
 name: Luciano Strika (@StrikingLoo)'s Personal Site
 markdown: kramdown
-
+permalink: /blog/:year/:month/:day/:title
 theme: jekyll-theme-midnight
