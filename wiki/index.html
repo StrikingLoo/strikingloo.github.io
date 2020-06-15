@@ -3,9 +3,11 @@ layout: default
 title: StrikingLoo's Haphazard Repository of Knowledge, Opinions and Trivia
 ---
 	<h1>{{ page.title }}</h1>
-	<ul class="posts">
 
-	  {% for article in site.wiki-articles %}
-	    <li><span>{{ article.date | date_to_string }}</span> » <a href="{{ article.url }}" title="{{ article.title }}">{{ article.title }}</a></li>
-	  {% endfor %}
-	</ul>
+      <h3>All notes</h3>
+
+{% assign folder1 = site.pages | where_exp: "item" , "item.path contains 'wiki-articles'" | sort:"path" %}
+{% for item in folder1 %}
+<a href="{{ item.url }}">{{item.path}}</a>
+<br>
+{% endfor %}
