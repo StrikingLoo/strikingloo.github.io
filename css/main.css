@@ -23,7 +23,15 @@ h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
+
+h2, h3 {
+    font-family: monospace;
+}
+h2 {font-size: 2em;}
+h3 {font-size: 2.2em;}
+
 p {
+    font-family: monospace;
     font-size: 1.2em;
     line-height: 1.4em;
     color: #333;
