@@ -34,7 +34,7 @@ p {
     font-family: Verdana;
     font-size: 1.2em;
     line-height: 1.4em;
-    color: #333;
+    color: #222;
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -42,10 +42,15 @@ footer {
 }
 
 ul.posts { 
+    font-family: Verdana;
     margin: 20px auto 40px; 
-    font-size: 1.5em;
+    font-size: 1.2em;
+    color: #222;
 }
 
 ul.posts li {
     list-style: none;
+    font-family: Verdana;
+    font-size: 1.2em;
+    color: #222;
 }
