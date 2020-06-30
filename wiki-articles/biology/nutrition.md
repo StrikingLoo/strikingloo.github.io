@@ -11,6 +11,7 @@ from [https://karpathy.github.io/2020/06/11/biohacking-lite/](Karpathy's Biohack
 
 "Collectively, this portion of energy expenditure is called the Base Metabolic Rate (BMR) and you burn this “for free” even if you slept the entire day. As an example, my BMR is somewhere around 1800kcal/day (a common estimate due to Mifflin St. Jeor for men is 10 x weight (kg) + 6.25 x height (cm) - 5 x age (y) + 5)."
 
+----------------------
 "The main components of **Mediterranean diet** include:
 
 - **Daily** consumption of vegetables, fruits, whole grains and healthy fats
@@ -18,4 +19,4 @@ from [https://karpathy.github.io/2020/06/11/biohacking-lite/](Karpathy's Biohack
 - **Moderate** portions of dairy products
 - **Limited** intake of red meat
 
-Other important elements of the Mediterranean diet are sharing meals with family and friends, enjoying a glass of red wine and being physically active."
+Other important elements of the Mediterranean diet are sharing meals with family and friends, enjoying a glass of red wine and being physically active." [https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/mediterranean-diet/art-20047801](Source)
