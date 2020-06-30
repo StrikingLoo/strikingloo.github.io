@@ -19,4 +19,4 @@ from [https://karpathy.github.io/2020/06/11/biohacking-lite/](Karpathy's Biohack
 - **Moderate** portions of dairy products
 - **Limited** intake of red meat
 
-Other important elements of the Mediterranean diet are sharing meals with family and friends, enjoying a glass of red wine and being physically active." (Source)[https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/mediterranean-diet/art-20047801]
+Other important elements of the Mediterranean diet are sharing meals with family and friends, enjoying a glass of red wine and being physically active." [Source](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/mediterranean-diet/art-20047801)
