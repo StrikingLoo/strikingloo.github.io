@@ -8,6 +8,7 @@ description: "Just a series of git commands I found helpful."
 ## Comparison between both anime and the manga on each particularly gory's scene level of censorship.
 
 by /u/F\_G\_E\_S
+
 Overall, the one major scene that the 1999 anime had going for it in terms of gore was Killua ripping out Jones’ heart. But overall, putting everything together, there was slightly more censorship in the 1999 anime than in the 2011 one.
 
 And even if you still think that the 1999 anime censored less gore than the 2011 anime, you should see by now that the comparison of censorship between the two adaptations is not nearly as one-sided or clear-cut as most people make it seem.
