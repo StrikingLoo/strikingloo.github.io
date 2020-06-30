@@ -15,4 +15,4 @@ And even if you still think that the 1999 anime censored less gore than the 2011
 Interestingly, this raises a question: what’s the reason behind this widely held notion (which, as I said, I was guilty of believing in as well)? I think it’s probably because of the scene where Killua rips out Jones’ heart, which the 2011 anime censored but the 1999 anime didn't. It's also partly because of the 1999 anime's darker tone and more serious pacing.
 
 But regardless of any of that—well, there you have it. The 1999 anime wasn’t a super edgy gorefest and the 2011 anime isn't inspired by Teletubbies. In fact, they both have had their fair share of censorship, with the 1999 anime censoring slightly more content overall than the 2011 one.
-(/r/HunterXHunter)[https://www.reddit.com/r/HunterXHunter/comments/1rxhwh/]
+[/r/HunterXHunter](https://www.reddit.com/r/HunterXHunter/comments/1rxhwh/)
