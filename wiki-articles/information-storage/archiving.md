@@ -21,3 +21,7 @@ For each subject that you might have ongoing thoughts about, start a separate â€
 "I find it so useful to keep my thoughts on each subject together, because I can see my past thoughts and current thoughts in one place. I can see how my thoughts on this subject have evolved or keep repeating. Sometimes I think I have a new thought on a subject, so I open up the file and write it down, then afterwards I see I had that same thought a year ago and had forgotten about it. **If you care about your thoughts, keep them.**"
 [https://sivers.org/dj](Daily Journal, Derek Sivers)
 
+To find a book if it's on the public domain, easily look for it on archive.org with this google search:
+```
+site:archive.org intitle:full/text/of intext:Lovecraft
+```
