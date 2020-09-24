@@ -25,3 +25,11 @@ To find a book if it's on the public domain, easily look for it on archive.org w
 ```
 site:archive.org intitle:full/text/of intext:Lovecraft
 ```
+
+
+Commonplace books (or *commonplaces*) are a way to compile knowledge, usually by writing information into books. They have been kept from antiquity, and were kept particularly during the Renaissance and in the nineteenth century. Such books are essentially scrapbooks filled with items of every kind: recipes, quotes, letters, poems, tables of weights and measures, proverbs, prayers, legal formulas. Commonplaces are used by readers, writers, students, and scholars as an aid for remembering useful concepts or facts. Each one is unique to its creator's particular interests but they almost always include passages found in other texts, sometimes accompanied by the compiler's responses. They became significant in Early Modern Europe.
+
+"Commonplace" is a translation of the Latin term *locus communis* (from Greek tópos koinós, see literary topos) which means "a general or common topic", such as a statement of proverbial wisdom. In this original sense, commonplace books were collections of such sayings, such as John Milton's example. Scholars now understand them to include manuscripts in which an individual collects material which have a common theme, such as ethics, or exploring several themes in one volume. Commonplace books are private collections of information, but they are not diaries or travelogues.
+
+In 1685 the English Enlightenment philosopher John Locke wrote a treatise in French on commonplace books, translated into English in 1706 as A New Method of Making Common-Place-Books, "in which techniques for entering proverbs, quotations, ideas, speeches were formulated. Locke gave specific advice on how to arrange material by subject and category, using such key topics as love, politics, or religion. Commonplace books, it must be stressed, are not journals, which are chronological and introspective.
+[https://en.wikipedia.org/wiki/Commonplace_book](source: wikipedia)
