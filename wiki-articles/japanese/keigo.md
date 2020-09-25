@@ -54,25 +54,25 @@ phrase would be used to express the idea that "I will carry it if you please."
 ---
 ## Irregular Verbs that Morph on keigo
 
-| meaning| dictionary form| respectful (sonkeigo) | humble (kenjōgo)| polite (teineigo)|
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------- | -------------------------------- |
-| see / look / watch | 見る miru| ご覧になる go-ran ni naru| 拝見する haiken suru| 見ます　mimasu |
-| meet | 会う au| regular (ex. お会いになる o-ai ni naru) | お目に掛かる o-me ni kakaru | 会います　aimasu|
-| be (inanimate)| ある aru | | ござる gozaru| あります arimasu |
-| be (animate)| いる iru | いらっしゃる irassharu| おる oru| います imasu|
-| come / go | 来る kuru (come) / 行く iku (go)| おいでになる o-ide ni naru| 伺う ukagau (to respectful location) 参る mairu (to other) | 来ます／行きます |
-| know | 知る | ご存じ | 存じ上げる | 知ります |
-| eat / drink| 食べる/ 飲む| 召し上がる| いただく | 食べます／飲みます|
-| receive| もらう | | いただく 頂戴する | もらいます|
-| give (when the receiver is respected) | やる (considered rude today, except in [Kansai dialect](https://en.wikipedia.org/wiki/Kansai_dialect "Kansai dialect")) あげる ageru (once the humble form) | | 差しあげる | あげます|
+| meaning| dictionary form| respectful (sonkeigo) | humble (kenjōgo)|
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------- |
+| see / look / watch | 見る miru| ご覧になる go-ran ni naru| 拝見する haiken suru|
+| meet | 会う au| regular (ex. お会いになる o-ai ni naru) | お目に掛かる o-me ni kakaru |
+| be (inanimate)| ある aru | | ござる gozaru|
+| be (animate)| いる iru | いらっしゃる irassharu| おる oru|
+| come / go | 来る kuru (come) / 行く iku (go)| おいでになる o-ide ni naru| 伺う ukagau (to respectful location) 参る mairu (to other) |
+| know | 知る | ご存じ | 存じ上げる |
+| eat / drink| 食べる/ 飲む| 召し上がる| いただく |
+| receive| もらう | | いただく 頂戴する |
+| give (when the receiver is respected) | やる (considered rude today, except in [Kansai dialect](https://en.wikipedia.org/wiki/Kansai_dialect "Kansai dialect")) あげる ageru (once the humble form) | | 差しあげる |
 | give (when the giver is respected)| くれる | くださる | | くれます|
-| do | する | なさる | 致す | します　|
-| say| 言う iu| おっしゃる | 申し上げる 申す mōsu| 言います　iimasu|
-| put on | 着る kiru| お召しになる omeshi ni naru | | 着ます　kimasu |
-| sleep| 寝る neru| お休みになる o-yasumi ni naru | | 寝ます nemasu |
-| die| 死ぬ shinu | お亡くなりになる o-nakunari ni naru | | 死にます shinimasu |
-| ask| 聞く kiku / 尋ねる tazuneru | | 伺う ukagau | 聞きます／尋ねます kikimasu / tazunemasu |
-| visit| 訪ねる tazuneru | | 伺う ukagau | 訪ねます tazunemasu|
+| do | する | なさる | 致す |
+| say| 言う iu| おっしゃる | 申し上げる 申す mōsu|
+| put on | 着る kiru| お召しになる omeshi ni naru | |
+| sleep| 寝る neru| お休みになる o-yasumi ni naru | |
+| die| 死ぬ shinu | お亡くなりになる o-nakunari ni naru | |
+| ask| 聞く kiku / 尋ねる tazuneru | | 伺う ukagau |
+| visit| 訪ねる tazuneru | | 伺う ukagau |
 
 ---
 ## Bottom line:
