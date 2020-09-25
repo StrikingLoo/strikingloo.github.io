@@ -65,7 +65,7 @@ phrase would be used to express the idea that "I will carry it if you please."
 | eat / drink| 食べる/ 飲む| 召し上がる| いただく |
 | receive| もらう | | いただく 頂戴する |
 | give (when the receiver is respected) | やる (considered rude today, except in [Kansai dialect](https://en.wikipedia.org/wiki/Kansai_dialect "Kansai dialect")) あげる ageru (once the humble form) | | 差しあげる |
-| give (when the giver is respected)| くれる | くださる | | くれます|
+| give (when the giver is respected)| くれる | くださる | |
 | do | する | なさる | 致す |
 | say| 言う iu| おっしゃる | 申し上げる 申す mōsu|
 | put on | 着る kiru| お召しになる omeshi ni naru | |
