@@ -1,9 +1,11 @@
 # Honorifics (keigo):
 
 _keigo_ (敬語), fall under three main categories:
-● _sonkeigo_ (尊敬語) - respectful language.
-● _kenjōgo_ (謙譲語) - humble language (or "modest language").
-● _teineigo_ (丁寧語) - polite language. (just -masu-kei)
+
+- _sonkeigo_ (尊敬語) - respectful language.
+- _kenjōgo_ (謙譲語) - humble language (or "modest language").
+- _teineigo_ (丁寧語) - polite language. (just -masu-kei)
+
 Linguistically, the former two are referent honorifics, used for someone being talked ​**about** ​, and the
 last is an addressee honorific, used for someone being talked ​**to**.
 
@@ -49,11 +51,16 @@ the set phrase _o matase shimashita_ ​, "I am sorry to have kept you waiting".
 Even more politely, the form _motasete_ **_itadaku_** literally means "​ **humbly be allowed to** carry". This
 phrase would be used to express the idea that "I will carry it if you please."
 
+---
+
 ## Bottom line:
 
 While keeping tense:
+
 **sonkeigo (honorific):** o- (i-form) - ni naru
+
 **kenjōgo (humble):** o- (i-form) - suru / itasu (humbler)
+
 Unless it’s an irregular verb, in which case, see chart above.
 
 
