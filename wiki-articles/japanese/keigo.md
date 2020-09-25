@@ -40,7 +40,7 @@ actions are taking place in order to assist the other person.
 
 Humble language (kenjōgo) is similar to respectful language, in **substituting verbs with other
 forms**. For example: **suru becomes itasu, and morau becomes itadaku**. These two verbs are
-also seen in set phrases such as dō itashimashite andいただきます.
+also seen in set phrases such as dō itashimashite and いただきます.
 
 Similar to respectful language, **verbs can also change their form by adding a prefix and the verb
 "suru" or "itasu".** For example, _motsu_ becomes _o mochi shimasu_. The use of humble forms
@@ -52,7 +52,51 @@ Even more politely, the form _motasete_ **_itadaku_** literally means "**humbly 
 phrase would be used to express the idea that "I will carry it if you please."
 
 ---
+## Irregular Verbs that Morph on keigo
 
+| meaning| dictionary form| respectful (sonkeigo) | humble (kenjōgo)| polite (teineigo)|
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------- | -------------------------------- |
+| see / look / watch | 見る miru| ご覧になる go-ran ni naru| 拝見する haiken suru| 見ます　mimasu |
+| meet | 会う au| regular (ex. お会いになる o-ai ni naru) | お目に掛かる o-me ni kakaru | 会います　aimasu|
+| be (inanimate)1| ある aru | | ござる gozaru| あります arimasu |
+| be (animate)1| いる iru | いらっしゃる irassharu| おる oru| います imasu|
+| come / go1 | 来る kuru (come)
+
+行く iku (go)| おいでになる o-ide ni naru| 伺う ukagau (to respectful location)
+
+参る mairu (to other) | 来ます／行きます
+
+kimasu / ikimasu |
+| know | 知る shiru | ご存じ go-zonji| 存じ上げる zonji ageru | 知ります shirimasu |
+| eat / drink| 食べる taberu (eat)
+
+飲む nomu (drink)| 召し上がる meshi-agaru | いただく itadaku| 食べます／飲みます
+
+tabemasu / nomimasu |
+| receive| もらう morau| | いただく itadaku2
+
+頂戴する chōdai-suru2| もらいます　moraimasu|
+| give
+
+(when the receiver is respected) | やる yaru (considered rude today, except in [Kansai dialect](https://en.wikipedia.org/wiki/Kansai_dialect "Kansai dialect"))
+
+あげる ageru (once the humble form) | | 差しあげる sashiageru| あげます　agemasu |
+| give
+
+(when the giver is respected)| くれる kureru | くださる kudasaru | | くれます　kuremasu|
+| do | する suru| なさる nasaru| 致す itasu| します　shimasu|
+| say| 言う iu| おっしゃる ossharu | 申し上げる mōshi-ageru
+
+申す mōsu| 言います　iimasu|
+| put on | 着る kiru| お召しになる omeshi ni naru | | 着ます　kimasu |
+| sleep| 寝る neru| お休みになる o-yasumi ni naru | | 寝ます nemasu |
+| die| 死ぬ shinu | お亡くなりになる o-nakunari ni naru | | 死にます shinimasu |
+| ask| 聞く kiku / 尋ねる tazuneru | | 伺う ukagau | 聞きます／尋ねます
+
+kikimasu / tazunemasu |
+| visit| 訪ねる tazuneru | | 伺う ukagau | 訪ねます tazunemasu|
+
+---
 ## Bottom line:
 
 While keeping tense:
