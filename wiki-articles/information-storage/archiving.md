@@ -38,3 +38,9 @@ Commonplace books (or *commonplaces*) are a way to compile knowledge, usually by
 
 In 1685 the English Enlightenment philosopher John Locke wrote a treatise in French on commonplace books, translated into English in 1706 as A New Method of Making Common-Place-Books, "in which techniques for entering proverbs, quotations, ideas, speeches were formulated. Locke gave specific advice on how to arrange material by subject and category, using such key topics as love, politics, or religion. Commonplace books, it must be stressed, are not journals, which are chronological and introspective.
 [https://en.wikipedia.org/wiki/Commonplace_book](source: wikipedia)
+
+
+**Memory systems can be used to build genuine conceptual understanding**, not just learn facts: In Quantum Country we achieve this in part through the aspiration to virtuoso card writing, and in part through a narrative embedding of spaced repetition that gradually builds context and understanding.
+**Mnemonic techniques such as memory palaces are great, but not versatile enough to build genuine conceptual understanding**: Such techniques are very specialized, and emphasize artificial connections, not the inherent connections present in much conceptual knowledge. The mnemonic techniques are, however, useful for bootstrapping knowledge with an ad hoc structure.
+**Memory is far more important than people tend to think**: It plays a role in nearly every part of cognition, including problem-solving, creative work, and meta-cognition. The flip side is that memory systems themselves want to grow into other types of tools – tools for reading, tools for problem-solving, tools for creating, tools for attention management. That said, we don’t yet know what memory systems want to be. To reiterate: memory systems are in their infancy.
+[https://numinous.productions/ttft](Transformative Tools for Thought)
