@@ -47,37 +47,37 @@ You make your cell state^ be tanh(another affine transform from input and hidden
 Then your actual cell state is input gate * that cell state + forget gate * last cell state.
 Finally, you update your hidden state as output_gate * tanh( cell).
 
-![](deep_learning_NLP_images/Screen%20Shot%202020-09-26%20at%2019.12.09.png){: style="height:50%; width:50%"}
+![](deep_learning_NLP_images/Screen%20Shot%202020-09-26%20at%2019.12.09.png){: style="height:70%; width:70%"}
 
 **GRU**
 They work similarly, but have less gates. Instead of output gate and tanh of cell, you just make a convex sum between update gate times previous hidden state, and 1- update gate times tanh of affine of inputs + hidden state t-1 (times a reset_gate that’s kinda like a forget gate).
 
-![](deep_learning_NLP_images/Screen%20Shot%202020-09-26%20at%2019.13.48.png){: style="height:50%; width:50%"}
+![](deep_learning_NLP_images/Screen%20Shot%202020-09-26%20at%2019.13.48.png){: style="height:70%; width:70%"}
 
 **Seq2Seq for Neural Machine Translation**
 
-![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.22.46.png){: style="height:50%; width:50%"}
+![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.22.46.png){: style="height:70%; width:70%"}
 
-![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.24.31.png){: style="height:50%; width:50%"}
+![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.24.31.png){: style="height:70%; width:70%"}
 
-![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.25.00.png){: style="height:50%; width:50%"}
+![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.25.00.png){: style="height:70%; width:70%"}
 
-![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.25.41.png){: style="height:50%; width:50%"}
+![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.25.41.png){: style="height:70%; width:70%"}
 
 You train an encoder RNN (With the usual chirimbolos: Word Embeddings, usually you could use an LSTM or GRU etc.) on the source language, and then train a different decoder RNN that has as its starting hidden state not a random or 0s vector, but the hidden state for the last word in the source sentence.
 It then has to generate all the words in the target sentence. You backpropagate the error in each word using cross entropy on softmax (with the same tricks you used for, say, word embeddings for the big vocab size).
 
-![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.26.00.png){: style="height:50%; width:50%"}
+![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.26.00.png){: style="height:70%; width:70%"}
 
 On the feedforward/test phase, you can sample the most likely word every time (greedy approach) or sample the top k most likely words, then keep expanding the top k most likely sequences of words, always stopping whenever you reach an end of sentence token.
 
 Since log likelihood necessarily decreases as more words are added, and the most likely sentence ever is just empty sentence, you normalize sentences by 1/N for N size of sentence in words, to get a normalized score and not penalize long sentences.
 
-![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.27.10.png){: style="height:50%; width:50%"}
+![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.27.10.png){: style="height:70%; width:70%"}
 
 But how do we solve for the fact that the last hidden state may not contain all the information, especially from words far away in the beginning of the sentence?
 
-![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.28.05.png){: style="height:50%; width:50%"}
+![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.28.05.png){: style="height:70%; width:70%"}
 
 We add attention! Here’s how it works:
 * You take the hidden state for your i-th word on the target sentence.
@@ -86,7 +86,7 @@ We add attention! Here’s how it works:
 * Take the convex sum of encoder hidden states weighted by the attention each one gets. Concatenate that with the decoder hidden state and use that for the affine layer before softmax.
 It can also get more general: instead of convex sum of dot products, you could do dot product between the states and a matrix in the middle, or do crazy things with tanh and a different vector for attention allocation.
 
-![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.28.14.png){: style="height:50%; width:50%"}
+![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.28.14.png){: style="height:70%; width:70%"}
 
-![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.28.26.png){: style="height:50%; width:50%"}
+![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.28.26.png){: style="height:70%; width:70%"}
 
