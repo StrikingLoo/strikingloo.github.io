@@ -57,7 +57,7 @@ They work similarly, but have less gates. Instead of output gate and tanh of cel
 
 ![](deep_learning_NLP_images/Screen%20Shot%202020-09-26%20at%2019.13.48.png){: style="height:70%; width:70%"}
 
-**Seq2Seq for Neural Machine Translation**
+## Seq2Seq for Neural Machine Translation
 
 ![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.22.46.png){: style="height:70%; width:70%"}
 
