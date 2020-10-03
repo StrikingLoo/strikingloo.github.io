@@ -5,6 +5,7 @@ _Based on the Stanford MOOC_
 ## Word2Vec
 
 Word2Vec optimizes for dot product between similar words (softmax(UWi)).
+
 But you can also make it sigmoid(WiUj) for each word, for each context embedding Uj in a window, and then that + sigmoid(-WiUk) for k chosen randomly. Similar to a Boltzmann Machine’s unlearning, in a way.
 
 Hyperparam magics: performance plateaus at d=300 (but doesn’t fall apart, even at 10k!! -nips, 2018-). Seems to have something to do with PCA.
