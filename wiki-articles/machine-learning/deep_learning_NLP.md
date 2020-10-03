@@ -14,13 +14,15 @@ Then another thing: data quality matters like crazy. Model with "small" Wikipedi
 
 Evaluating Word Embeddings: You can evaluate analogies (with accuracy over premade datasets, using semantic or syntactic analogy), or cosine distance/similarity vs psych-undergrad-driven mechanical turk similarity.
 
-##Language Modeling:
+## Language Modeling:
 Train a model to predict the t+1th word based on the previous n words.
 
-Fixed-window:
+**Fixed-window:**
+
 predict using the previous fixed k words. E.g., use a Markov chain or a co-occurrence matrix. You can train a fully connected MLP using one-hot encoding of the words (super sparse vectors as inputs -actually passed as indices in any sane implementation-).
 
 **Insight:**
+
 Semantically similar words should produce similar "next word" distributions, but normal window models don’t leverage that! Let’s add some embeddings into the mix.
 
 **Arbitrary length window:** 
