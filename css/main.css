@@ -41,14 +41,14 @@ footer {
     font-size: .8em;
 }
 
-ul.posts { 
+ul.posts, ul.wiki-articles { 
     font-family: Verdana;
     margin: 20px auto 40px; 
     font-size: 1.2em;
     color: #222;
 }
 
-ul.posts li {
+ul.posts li, ul.wiki-articles li {
     list-style: none;
     font-family: Verdana;
     font-size: 1.2em;
