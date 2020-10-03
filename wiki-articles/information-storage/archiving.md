@@ -53,5 +53,6 @@ In 1685 the English Enlightenment philosopher John Locke wrote a treatise in Fre
 
 **Capture everything**: Do not assume your brain will remember anything. Write it down ASAP. Use whatever will let you capture it quickest, whether that's pen and paper or a digital solution.
 
-**Review and process**: Make sure you actually look at the things you wrote down regularly and organize it. If it was an idea you need to act on (e.g. a topic for a blog post, or a reminder to look up a particular concept), add it to your task manager. If it was a thought for reference, add it to your 'second brain'/note-taking/archive system, and add tags so you can find it easily later. Once processed, archive or delete the item from your capture system. [rosiecam, LessWrong](https://www.lesswrong.com/posts/mbG3CZaX6657ttnCa/what-is-your-personal-knowledge-management-system?commentId=sMyFJewkqTujRgxpT)
+**Review and process**: Make sure you actually look at the things you wrote down regularly and organize it. If it was an idea you need to act on (e.g. a topic for a blog post, or a reminder to look up a particular concept), add it to your task manager. If it was a thought for reference, add it to your 'second brain'/note-taking/archive system, and add tags so you can find it easily later. Once processed, archive or delete the item from your capture system. 
+[rosiecam, LessWrong](https://www.lesswrong.com/posts/mbG3CZaX6657ttnCa/what-is-your-personal-knowledge-management-system?commentId=sMyFJewkqTujRgxpT)
 ---
