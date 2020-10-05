@@ -18,7 +18,23 @@ His steps for making Anki cards on a paper (I guess they apply to book chapters 
 - Second pass: add conceptual or more complicated questions, which require a certain understanding of the text.
 - Third pass: High level questions that require a deep understanding of the subject.
 
-Note: for a single paper, Nielsen makes "several hundred" cards.
+Note: for a single paper, Nielsen makes tens, sometimes "several hundred" cards.
+
+### Tips for Card Making
+**Make most Anki questions and answers as atomic as possible**
+One benefit of using Anki in this way is that you begin to habitually break things down into atomic questions. This sharply crystallizes the distinct things you've learned. In general, I find that you often get substantial benefit from breaking Anki questions down to be more atomic. It's a powerful pattern for question refactoring.
+
+Note that this doesn't mean you shouldn't also retain some version of the original question.
+
+**Anki use is best thought of as a virtuoso skill, to be developed**
+
+**Anki isn't just a tool for memorizing simple facts. It's a tool for understanding almost anything.**
+
+**Avoid orphan questions.**
+
+**Cultivate strategies for elaborative encoding / forming rich associations.** This is really a meta-strategy, i.e., a strategy for forming strategies. One simple example strategy is to use multiple variants of the “same” question.
+
+
 
 "OK, but what does one do with it? … [N]ow that I have all this power – a mechanical golem that will never forget and never let me forget whatever I chose to – what do I choose to remember?" --[Gwern](https://www.gwern.net/Spaced-repetition)
 
