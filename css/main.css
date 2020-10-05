@@ -2,6 +2,14 @@ body {
     margin: 60px auto;
     width: 70%;
 }
+
+ul li {
+    list-style: none;
+    font-family: Verdana;
+    font-size: 1.2em;
+    color: #222;
+}
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
