@@ -31,10 +31,15 @@ Note that this doesn't mean you shouldn't also retain some version of the origin
 **Anki isn't just a tool for memorizing simple facts. It's a tool for understanding almost anything.**
 
 **Avoid orphan questions.**
+**Avoid the yes/no pattern**
 
 **Cultivate strategies for elaborative encoding / forming rich associations.** This is really a meta-strategy, i.e., a strategy for forming strategies. One simple example strategy is to use multiple variants of the “same” question.
 
+**Procedural versus declarative memory: There's a big difference between remembering a fact and mastering a process.**
 
+"By analogy with code smells, we can speak of “question smells”, as suggesting a possible need for refactoring. A yes/no construction is an example of a question smell."
+
+Ebbinghaus found that the probability of correctly recalling an item declined (roughly) exponentially with time. Today, this is called the *Ebbinghaus forgetting curve*.
 
 "OK, but what does one do with it? … [N]ow that I have all this power – a mechanical golem that will never forget and never let me forget whatever I chose to – what do I choose to remember?" --[Gwern](https://www.gwern.net/Spaced-repetition)
 
