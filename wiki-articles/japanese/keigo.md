@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Summary of Keigo in Japanese"
+date: 2020-10-02
+description: "A summary of Japanese grammar's keigo, abridged from Wikipedia + formatting."
+---
+
 # Honorifics (keigo):
 
 _keigo_ (敬語), fall under three main categories:
