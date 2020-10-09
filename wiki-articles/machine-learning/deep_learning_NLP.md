@@ -4,7 +4,6 @@ date: 2020-10-02
 title: "Deep Learning for NLP"
 description: "My notes from Stanford's Deep Learning for NLP course, plus any papers from the recommended reading I went through."
 ---
-# Deep Learning for NLP
 Deep Learning + NLP
 _Based on the Stanford MOOC_
 [http://web.stanford.edu/class/cs224n/index.html](http://web.stanford.edu/class/cs224n/index.html#schedule) # Syllabus
