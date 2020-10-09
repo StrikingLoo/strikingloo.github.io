@@ -2,7 +2,7 @@
 layout: post
 title: "Anything interesting about HunterxHunter"
 date: 2020-06-13
-description: "Just a series of git commands I found helpful."
+description: "HunterxHunter stuff. So far very brief."
 ---
 
 ## Comparison between both anime and the manga on each particularly gory's scene level of censorship.
