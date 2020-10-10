@@ -41,5 +41,22 @@ Note that this doesn't mean you shouldn't also retain some version of the origin
 
 Ebbinghaus found that the probability of correctly recalling an item declined (roughly) exponentially with time. Today, this is called the *Ebbinghaus forgetting curve*.
 
+### From Gwern:
+
+The research favors questions which force the user to use their memory as much as possible; in descending order of preference:
+
+- free recall
+- short answers
+- multiple-choice
+- Cloze deletion
+- recognition
+
+the research literature is comprehensive and most questions have been answered - somewhere.
+
+the most common mistakes with spaced repetition are
+
+- formulating poor questions and answers
+- assuming it will help you learn, as opposed to maintain and preserve what one already learned. (It’s hard to learn from cards, but if you have learned something, it’s much easier to then devise a set of flashcards that will test your weak points.)"
+
 "OK, but what does one do with it? … [N]ow that I have all this power – a mechanical golem that will never forget and never let me forget whatever I chose to – what do I choose to remember?" --[Gwern](https://www.gwern.net/Spaced-repetition)
 
