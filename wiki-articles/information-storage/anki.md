@@ -60,6 +60,10 @@ the most common mistakes with spaced repetition are
 
 "OK, but what does one do with it? … [N]ow that I have all this power – a mechanical golem that will never forget and never let me forget whatever I chose to – what do I choose to remember?" 
 
+"multiple choice tests can accidentally lead to ‘negative suggestion effects’ where having previously seen a falsehood as an item on the test makes one more likely to believe it.
+
+This is mitigated or eliminated when there’s quick feedback about the right answer. Solution: don’t use multiple choice; inferior in testing ability to free recall or short answers, anyway."
+
 ### What To Add
 
 I find one of the best uses for Mnemosyne is, besides the classic use of memorizing academic material such as geography or the periodic table or foreign vocabulary or Bible/Koran verses or the avalanche of medical school facts, to add in **words from A Word A Day** and Wiktionary, **memorable quotes I see**, personal information such as birthdays (or license plates, a problem for me before), and so on. Quotidian uses, but all valuable to me. **With a diversity of flashcards, I find my daily review interesting**. I get all sorts of questions - now I’m trying to see whether a Haskell fragment is syntactically correct, now I’m pronouncing Korean hangul and listening to the answer, now I’m trying to find the Ukraine on a map, now I’m enjoying some A.E. Housman poetry, followed by a few quotes from LessWrong quote threads, and so on. Other people use it for many other things; one application that impresses me for its simple utility is memorizing names & faces of students although learning musical notes is also not bad.
