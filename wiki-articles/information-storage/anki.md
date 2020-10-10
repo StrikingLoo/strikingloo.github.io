@@ -41,7 +41,7 @@ Note that this doesn't mean you shouldn't also retain some version of the origin
 
 Ebbinghaus found that the probability of correctly recalling an item declined (roughly) exponentially with time. Today, this is called the *Ebbinghaus forgetting curve*.
 
-### From Gwern:
+## From Gwern:
 
 The research favors questions which force the user to use their memory as much as possible; in descending order of preference:
 
@@ -58,5 +58,29 @@ the most common mistakes with spaced repetition are
 - formulating poor questions and answers
 - assuming it will help you learn, as opposed to maintain and preserve what one already learned. (It’s hard to learn from cards, but if you have learned something, it’s much easier to then devise a set of flashcards that will test your weak points.)"
 
-"OK, but what does one do with it? … [N]ow that I have all this power – a mechanical golem that will never forget and never let me forget whatever I chose to – what do I choose to remember?" --[Gwern](https://www.gwern.net/Spaced-repetition)
+"OK, but what does one do with it? … [N]ow that I have all this power – a mechanical golem that will never forget and never let me forget whatever I chose to – what do I choose to remember?" 
 
+### What To Add
+
+I find one of the best uses for Mnemosyne is, besides the classic use of memorizing academic material such as geography or the periodic table or foreign vocabulary or Bible/Koran verses or the avalanche of medical school facts, to add in **words from A Word A Day** and Wiktionary, **memorable quotes I see**, personal information such as birthdays (or license plates, a problem for me before), and so on. Quotidian uses, but all valuable to me. **With a diversity of flashcards, I find my daily review interesting**. I get all sorts of questions - now I’m trying to see whether a Haskell fragment is syntactically correct, now I’m pronouncing Korean hangul and listening to the answer, now I’m trying to find the Ukraine on a map, now I’m enjoying some A.E. Housman poetry, followed by a few quotes from LessWrong quote threads, and so on. Other people use it for many other things; one application that impresses me for its simple utility is memorizing names & faces of students although learning musical notes is also not bad.
+
+it’s interesting to compare SRS decks to the feat of memorizing Paradise Lost or to the Muslim title of ‘hafiz’, one who has memorized the ~80,000 words of the Koran, or the stricter ‘hafid’, one who had memorized the Koran and 100,000 hadiths as well.
+
+--[Gwern](https://www.gwern.net/Spaced-repetition)
+
+## From rs.io
+
+### Tips for Cardmaking and Anki Use
+
+- **Why questions**: Cards that answer the question “Why?” are more valuable than factual cards. My emerging perspective here is that it’s important to understand all the context of an idea to really know it. How it emerged, how to invent it, what it’s for, and so on.
+
+(this ties nicely to what Nielsen says too. Add a question and its reverse, add different wh questions, split a concept into atomic bits.)
+
+- **Connections**: "The biggest problem with Anki is the tendency for cards to become disconnected" (...) "I now construct more cards that enforce links between knowledge. I might ask, “How is this concept different from that concept?"
+
+(I like this idea: add cards about each concept, but also about relationships between them. This way you can kill more birds with a single stone.)
+
+- **Two-way connections**: Don't just add cards like "what's X?", "What's the name of the Y that Z?". Also add things like "What's the name of something or other?" (it is X) and "what is W?" (it's the Y that Z). Basically, a card's question should be a reverse card's answer, and viceversa.
+
+
+--[summary of rs.io](https://rs.io/anki-tips/)
