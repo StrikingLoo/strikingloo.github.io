@@ -98,3 +98,46 @@ It can also get more general: instead of convex sum of dot products, you could d
 
 ![](deep_learning_NLP_images/Screen%20Shot%202020-10-03%20at%2016.28.26.png){: style="height:70%; width:70%"}
 
+## Question Answering.
+
+A few quotes I liked:
+
+"A lot of the last two years of NLP can be summed up as "people have found a lot of clever ways to use attention and that’s been pairing just about all the advances." "
+
+"Many times in research, you get the best performance with a simple model, then over time people come up with more complex architectures and they perform even better, and eventually someone realizes if you tune the parameters for the simpler model just right you can beat them again." [paraphrased by me]
+
+### Question Answering definition
+
+In question answering we provide a passage and a question, and the model needs to select a substring of the passage that answers the question. This means we cannot answer yes or no questions, counting questions, etc.
+
+Biggest datasets are made with mechanical turk + carefully selected rather simple texts. Most famous one is SQuAD. F1 score is usually the reported metric, where you look for precision+fpr of words vs mechanical turk answers.
+
+Models were bad at noticing if no answer was present, until researchers came up with a solution to that (either use a threshold, or get a "noAnswer" token for answers.)
+
+![](deep_learning_NLP_images/example_question_anwering.png){: style="height:70%; width:70%"}
+![](deep_learning_NLP_images/SQuAD_limitations.png){: style="height:70%; width:70%"}
+
+### Stanford attentive reader
+
+This model beats traditional (non-neural) NLP models by a factor of almost 30 F1 points in SQuAD. It loses to BERT &c. But it's kind of simple.
+
+- Feed the Question through a bi-directional LSTM with word embeddings. 
+- Concatenate both end states (one for each network, so one for first word of reverse and one for last of right way).
+- Feed another LSTM bidirectionally and with word embeddings, this time on the passage.
+- We use attention to find where the answer is. What we do is work out an attention score between question vector and passage states for each word, and use that to define a start and end word for the substring. 
+
+![](deep_learning_NLP_images/start_end_attentive_reader.png)
+
+You may say we're missing the information about words in the middle, but actually we're training the LSTM to push that information to the edges (and this is bidirectional so it works both ways).
+
+Here's what we actually gained by using neural networks:
+
+![](deep_learning_NLP_images/gains.png){: style="height:70%; width:70%"}
+
+### Bidaf
+
+![](deep_learning_NLP_images/bidaf1.png){: style="height:70%; width:70%"}
+![](deep_learning_NLP_images/bidaf2.png){: style="height:70%; width:70%"}
+![](deep_learning_NLP_images/bidaf3.png){: style="height:70%; width:70%"}
+![](deep_learning_NLP_images/bidaf4.png){: style="height:70%; width:70%"}
+
