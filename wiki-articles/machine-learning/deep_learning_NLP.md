@@ -117,7 +117,8 @@ Models were bad at noticing if no answer was present, until researchers came up 
 ![](deep_learning_NLP_images/example_question_anwering.png){: style="height:70%; width:70%"}
 ![](deep_learning_NLP_images/SQuAD_limitations.png){: style="height:70%; width:70%"}
 
-### Stanford attentive reader
+
+### Stanford attentive reader
 
 This model beats traditional (non-neural) NLP models by a factor of almost 30 F1 points in SQuAD. It loses to BERT &c. But it's kind of simple.
 
@@ -134,7 +135,7 @@ Here's what we actually gained by using neural networks:
 
 ![](deep_learning_NLP_images/gains.png){: style="height:70%; width:70%"}
 
-### Bidaf
+### BiDAF
 
 ![](deep_learning_NLP_images/bidaf1.png){: style="height:70%; width:70%"}
 ![](deep_learning_NLP_images/bidaf2.png){: style="height:70%; width:70%"}
