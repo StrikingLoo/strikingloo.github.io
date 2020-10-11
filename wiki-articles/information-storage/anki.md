@@ -88,3 +88,10 @@ it’s interesting to compare SRS decks to the feat of memorizing Paradise Lost 
 
 
 --[summary of rs.io](https://rs.io/anki-tips/)
+
+"Has your computer ever spat out an error message and, although you remember seeing it before, you don’t remember how to fix it? Before I started Janki Method this would happen to me a lot.
+
+The first time I saw the issue I would spend half a day solving the problem. Six months later the problem would happen again, perhaps in a slightly different form. Even though I was vaguely aware of having seen it before, I’d forgotten how to fix it.
+
+After solving a bug you should always add some cards to your deck containing the knowledge needed to prevent that bug from occurring again. Better yet, abstract one level and add cards containing the knowledge needed to prevent that class of bugs. Now, whenever you are faced with a bug the second time, all you need to do is search your archives."
+--[Jack Kinsella](https://www.gwern.net/docs/www/www.jackkinsella.ie/7f766c2f8b533e44f5a9ff02ea44573c3132557a.html)
