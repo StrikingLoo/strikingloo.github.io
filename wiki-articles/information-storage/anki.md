@@ -97,7 +97,9 @@ After solving a bug you should always add some cards to your deck containing the
 --[Jack Kinsella](https://www.gwern.net/docs/www/www.jackkinsella.ie/7f766c2f8b533e44f5a9ff02ea44573c3132557a.html)
 
 "If I look something up in StackOverflow, I'll add it to Anki. Wikipedia? Another Anki card."
+
 "If you have time, think about where you learned the card"
-Syntax for cloze deletion is `{{c1::Your String}}`
+
+Syntax for cloze deletion is `\{\{c1::Your String\}\}`
 
 --[senrigan.io](https://www.gwern.net/blog/everything-i-know-strategies-tips-and-tricks-for-spaced-repetition-anki/)
