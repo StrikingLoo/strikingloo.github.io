@@ -55,4 +55,16 @@ In 1685 the English Enlightenment philosopher John Locke wrote a treatise in Fre
 
 **Review and process**: Make sure you actually look at the things you wrote down regularly and organize it. If it was an idea you need to act on (e.g. a topic for a blog post, or a reminder to look up a particular concept), add it to your task manager. If it was a thought for reference, add it to your 'second brain'/note-taking/archive system, and add tags so you can find it easily later. Once processed, archive or delete the item from your capture system. 
 [rosiecam, LessWrong](https://www.lesswrong.com/posts/mbG3CZaX6657ttnCa/what-is-your-personal-knowledge-management-system?commentId=sMyFJewkqTujRgxpT)
+
+
 ---
+
+### Trying [Paul Graham](http://paulgraham.com/essay.html)
+
+To understand what a real essay is, we have to reach back into history again, though this time not so far. To Michel de Montaigne, who in 1580 published a book of what he called "essais." He was doing something quite different from what lawyers do, and the difference is embodied in the name. Essayer is the French verb meaning "to try" and an essai is an attempt. **An essay is something you write to try to figure something out.**
+
+Figure out what? You don't know yet. And so you can't begin with a thesis, because you don't have one, and may never have one. An essay doesn't begin with a statement, but with a question. In a real essay, you don't take a position and defend it. You notice a door that's ajar, and you open it and walk in to see what's inside.
+
+If all you want to do is figure things out, why do you need to write anything, though? Why not just sit and think? Well, there precisely is Montaigne's great discovery. **Expressing ideas helps to form them.** Indeed, helps is far too weak a word. Most of what ends up in my essays I only thought of when I sat down to write them. That's why I write them.
+
+In the things you write in school you are, in theory, merely explaining yourself to the reader. In a real essay you're writing for yourself. You're thinking out loud.
