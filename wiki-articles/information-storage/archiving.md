@@ -68,3 +68,10 @@ Figure out what? You don't know yet. And so you can't begin with a thesis, becau
 If all you want to do is figure things out, why do you need to write anything, though? Why not just sit and think? Well, there precisely is Montaigne's great discovery. **Expressing ideas helps to form them.** Indeed, helps is far too weak a word. Most of what ends up in my essays I only thought of when I sat down to write them. That's why I write them.
 
 In the things you write in school you are, in theory, merely explaining yourself to the reader. In a real essay you're writing for yourself. You're thinking out loud.
+
+---
+
+Nikita Voloboev's [list of personal wikis](https://github.com/nikitavoloboev/knowledge/blob/master/other/wiki-workflow.md#similar-wikis-i-liked)
+
+--- 
+
