@@ -75,3 +75,11 @@ Nikita Voloboev's [list of personal wikis](https://github.com/nikitavoloboev/kno
 
 --- 
 
+"I have been using plain text documents since 2001.
+I just make a new file with a YYYY-MM format and dump everything in there, and on the next month I start a new file. I keep them all in 1 folder.
+
+It's really simple to use and very searchable with grep. I like it because it's all offline and doesn't get in the way.
+
+It becomes a brain dump of interesting links, notes about certain things I'm doing or whatever else I feel is worth jotting down at the time."
+	
+nickjj on HackerNews (I just thought it was neat)
