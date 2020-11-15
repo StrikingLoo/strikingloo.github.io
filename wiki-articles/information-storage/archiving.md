@@ -4,6 +4,7 @@ title: "Information Storage and Archiving strategies"
 date: 2020-06-13
 description: "Since this is a Digital Garden to help me reflect and store information, I should ramp up my archiving skills."
 ---
+
 "The four top-level categories of P.A.R.A. — Projects, Areas, Resources, and Archives — are designed to facilitate this process of forwarding knowledge through time.
 
 - By placing a note in a project folder, you are essentially scheduling it for review on the short time horizon of an individual project.
@@ -59,9 +60,7 @@ In 1685 the English Enlightenment philosopher John Locke wrote a treatise in Fre
 
 ---
 
-## Trying 
-
-by [Paul Graham](http://paulgraham.com/essay.html)
+**Trying** by [Paul Graham](http://paulgraham.com/essay.html)
 
 To understand what a real essay is, we have to reach back into history again, though this time not so far. To Michel de Montaigne, who in 1580 published a book of what he called "essais." He was doing something quite different from what lawyers do, and the difference is embodied in the name. Essayer is the French verb meaning "to try" and an essai is an attempt. **An essay is something you write to try to figure something out.**
 
