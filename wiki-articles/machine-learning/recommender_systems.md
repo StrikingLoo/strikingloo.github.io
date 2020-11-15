@@ -5,8 +5,6 @@ title: "Recommender Systems"
 description: "My notes from Andrew Ng's Lectures on Recommendation Systems, plus some papers and other sources."
 ---
 
-# Recommender Systems
-
 ## Problem Statement
 
 We have a matrix with rows for movies, columns for users. We have some ratings for a pair of coordinates u, m, and some tuples have no corresponding rating. 
