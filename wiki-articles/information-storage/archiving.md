@@ -59,7 +59,7 @@ In 1685 the English Enlightenment philosopher John Locke wrote a treatise in Fre
 
 ---
 
-### Trying 
+## Trying 
 
 by [Paul Graham](http://paulgraham.com/essay.html)
 
