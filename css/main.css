@@ -20,7 +20,6 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 a {
-    text-decoration: none;
     color: #999;
 }
 a:hover {
@@ -37,7 +36,7 @@ h2, h3 {
 h2 {font-size: 2em;}
 h3 {font-size: 1.8em;}
 
-p {
+p, a {
     font-family: Verdana;
     font-size: 1.2em;
     line-height: 1.4em;
