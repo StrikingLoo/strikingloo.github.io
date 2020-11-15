@@ -54,3 +54,9 @@ If a user has never rated any movies, we can use mean normalization:
 - Subtract it from the ground-truth ratings for each movie (so each movie now has a mean-rating of 0).
 - Retrain the model (recomputing the factor matrices) with the new normalized ratings. New prediction is: prediction of new model, plus mu_i (the mean ground-truth rating for that movie).
 - Now for a user with no ratings, we're predicting the mean ground truth rating for each movie as a default, which is a lot better than nothing. We recommend the most popular movies to blank slate users until we know more about them. We could also ask them about what they like to improve the algorithm.
+
+---
+
+"A fun property of machine learning is that this reasoning works in reverse too: If meaningful generalities can help you represent your data with fewer numbers, finding a way to represent your data in fewer numbers can often help you find meaningful generalities. Compression is akin to understanding and all that."
+
+[Netflix collaborative filtering recommendations](https://sifter.org/~simon/journal/20061211.html)
