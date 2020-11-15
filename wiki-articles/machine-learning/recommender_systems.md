@@ -42,7 +42,7 @@ A way to improve this: You only have the ratings, and don't ask anything from th
 
 Note that this is equivalent to factoring the ratings matrix into two smaller matrices (one of user vectors, one of movie vectors) and that each have a dimension in common of arbitrary size (let's call it K), which is the "latent" dimension.
 
-![]((recommender_systems_img/reco1.png){: style="height:70%; width:70%"}
+![](recommender_systems_img/reco1.png){: style="height:70%; width:70%"}
 
 Things you can add to improve this:
 If a user is watching movie i, you can do k-NN over the latent space for movie i to get the k closest movies and recommend them as "similar" movies.
