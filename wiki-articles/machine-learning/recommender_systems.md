@@ -33,18 +33,20 @@ The coefficients in those linear regressions (one vector for each movie, with as
 
 We are making one vector for each movie, so we end up running one linear regression over the M users that rated each movie.
 
+## No starting features
 
 Now let's take it one step further: we could start off with random user vectors for each user, and use them to make some half-baked movie vectors by fitting a linear regression. We then generate user vectors by fitting linear regressions from the movie vectors we just made. We repeat this for the movies, and so on, until convergence.
 
 This actually works pretty well, though there are available improvements (especially in terms of time).
 
-A way to improve this: You only have the ratings, and don't ask anything from the users or hand make any features. Instead you just make a set of x vectors (for users) and theta vectors (for movies) such that for each movie, user pair that actually has a rating, the inner product of both corresponding vectors yields the correct rating.
+A way to improve this: You only have the ratings, and don't ask anything from the users or hand make any features. Instead you just make a set of x vectors (for users) and theta vectors (for movies) such that for each (movie, user) pair that actually has a rating, the **inner product** of both corresponding vectors yields the correct rating.
 
 Note that this is equivalent to factoring the ratings matrix into two smaller matrices (one of user vectors, one of movie vectors) and that each have a dimension in common of arbitrary size (let's call it K), which is the "latent" dimension.
 
 ![](recommender_systems_img/reco1.png){: style="height:70%; width:70%"}
 
-Things you can add to improve this:
+### Things you can add to improve this:
+
 If a user is watching movie i, you can do k-NN over the latent space for movie i to get the k closest movies and recommend them as "similar" movies.
 
 If a user has never rated any movies, we can use mean normalization:  
