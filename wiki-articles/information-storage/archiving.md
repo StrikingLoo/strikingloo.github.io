@@ -59,7 +59,9 @@ In 1685 the English Enlightenment philosopher John Locke wrote a treatise in Fre
 
 ---
 
-## Trying [Paul Graham](http://paulgraham.com/essay.html)
+### Trying 
+
+by [Paul Graham](http://paulgraham.com/essay.html)
 
 To understand what a real essay is, we have to reach back into history again, though this time not so far. To Michel de Montaigne, who in 1580 published a book of what he called "essais." He was doing something quite different from what lawyers do, and the difference is embodied in the name. Essayer is the French verb meaning "to try" and an essai is an attempt. **An essay is something you write to try to figure something out.**
 
