@@ -42,6 +42,7 @@ footer {
 }
 
 a {
+    text-decoration: none;
     color: #999;
 }
 a:hover {
