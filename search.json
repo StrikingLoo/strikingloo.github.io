@@ -1,0 +1,17 @@
+---
+---
+
+[
+  {% for item in folder1 %}
+    {
+
+      "title"    : "{{ item.title | escape }}",
+      "url"      : "{{ site.baseurl }}{{ item.url }}",
+      "category" : "{{ item.category }}",
+      "tags"     : "{{ item.tags | join: ', ' }}",
+      "date"     : "{{ item.date }}",
+      "name" : "{{item.path | remove_first: 'wiki-articles/' | remove_first: '.md' | escape }}"
+
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
