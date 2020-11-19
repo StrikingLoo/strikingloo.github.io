@@ -5,7 +5,7 @@ body {
 
 ul li {
     font-family: Verdana;
-    font-size: 1.2em;
+    font-size: 1.05em;
     color: #222;
 }
 
@@ -20,19 +20,19 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 h1 {
-    font-size: 3em;
+    font-size: 2em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 h2, h3 {
     font-family: Verdana;
 }
-h2 {font-size: 2em;}
-h3 {font-size: 1.8em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.2em;}
 
 p, a {
     font-family: Verdana;
-    font-size: 1.2em;
+    font-size: 1.05em;
     line-height: 1.4em;
     color: #222;
 }
