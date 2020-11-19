@@ -8,3 +8,20 @@ description: "A series of bash commands I found useful, usually the product of s
 how many lines with a given extension?
 
 ```find . -name "*.$1" | xargs wc -l| tail -n 1```
+
+---
+
+To run this blog locally
+
+```
+sudo gem install rails
+sudo gem install jekyll
+sudo gem install jekyll bundler
+cd ~/desiredFolder
+
+bundle init
+bundle install
+bundle add jekyll
+bundle exec jekyll serve
+```
+
