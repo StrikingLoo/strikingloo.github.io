@@ -9,6 +9,7 @@
       "title"    : "{{ item.title | escape }}",
       "url"      : "{{ site.baseurl }}{{ item.url }}",
       "category" : "{{ item.category }}",
+      "description" : "{{item.description | escape }}",
       "tags"     : "{{ item.tags | join: ', ' }}",
       "date"     : "{{ item.date }}",
       "name" : "{{item.path | remove_first: 'wiki-articles/' | remove_first: '.md' | escape }}"
