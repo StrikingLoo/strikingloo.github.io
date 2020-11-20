@@ -4,7 +4,7 @@ title: "Information Storage and Archiving strategies"
 date: 2020-06-13
 description: "Since this is a Digital Garden to help me reflect and store information, I should ramp up my archiving skills."
 ---
-
+### P.A.R.A Methodology
 "The four top-level categories of P.A.R.A. — Projects, Areas, Resources, and Archives — are designed to facilitate this process of forwarding knowledge through time.
 
 - By placing a note in a project folder, you are essentially scheduling it for review on the short time horizon of an individual project.
@@ -17,7 +17,7 @@ source: [progressive summarization @fortelabs](https://fortelabs.co/blog/progres
 - Take key fragments, summarize them, iterate.
 
 ---
-
+### 'Thoughts On' Journal
 "There are certain subjects in your life you think about a lot. People, places, hobbies, health, plans, finances.
 
 For each subject that you might have ongoing thoughts about, start a separate “Thoughts On” journal. Whenever you have some thoughts on this subject, open up that file, write today’s date, then start writing."
@@ -33,6 +33,7 @@ site:archive.org intitle:full/text/of intext:Lovecraft
 ```
 
 ---
+## Commonplace Books
 
 Commonplace books (or *commonplaces*) are a way to compile knowledge, usually by writing information into books. They have been kept from antiquity, and were kept particularly during the Renaissance and in the nineteenth century. Such books are essentially scrapbooks filled with items of every kind: recipes, quotes, letters, poems, tables of weights and measures, proverbs, prayers, legal formulas. Commonplaces are used by readers, writers, students, and scholars as an aid for remembering useful concepts or facts. Each one is unique to its creator's particular interests but they almost always include passages found in other texts, sometimes accompanied by the compiler's responses. They became significant in Early Modern Europe.
 
@@ -84,3 +85,24 @@ It's really simple to use and very searchable with grep. I like it because it's 
 It becomes a brain dump of interesting links, notes about certain things I'm doing or whatever else I feel is worth jotting down at the time."
 	
 nickjj on HackerNews (I just thought it was neat)
+
+---
+
+## Zettelkasten
+
+> "Notes (both your notes and highlights) should be **turned into explicit form as soon as possible.** As of now, your notes are implicit at best, and would therefore lose meaning & context quickly.
+
+Think of it like jotting down “pencil” to remind yourself to return a pencil to your classmate. After a couple of days, seeing that reminder “pencil” won’t make sense anymore. Otherwise, if you put it this way: “Return pencil to Sara” then you won’t have any problems no matter how much time has passed.
+
+The point is, every bit of implicit-ness must be stated clearly in words. (You can say this actually future-proofs your notes)"
+
+" To counteract [the bias of being overconfident about your memory], **write as if you’re writing for others.** If only the current you can understand what you’re saying in your notes, then the notes won’t be usable in the future. Technically speaking, you are going to become a different person in the future, so you might as well write as if you’re trying to talk to someone else. "
+-- [LeanAnki](https://leananki.com/zettelkasten-method-smart-notes/)
+
+As a summary, the Zettelkasten method follows a workflow with three steps:
+- **Capture** (get input from your books, articles or whatever you're consuming, and persist it)
+- **Elaborate** (add your own opinions, summaries, headlines, bolding, etc.)
+- **Connect** (link from one note to another. The point is to make that new note easy to find in your web of notes, so link from the old ones.
+
+Zettelkasten relies more heavily on linking than tags/searching. This is because of the use of smaller, more granulated Zettels which interlink to represent a "thought trail" (a linked list of Zettels). In my case I prefer big chunky notes + search, but we'll see.
+
