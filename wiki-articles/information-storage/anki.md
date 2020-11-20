@@ -4,6 +4,7 @@ title: "Reflections and Usage Advice on SRS and Anki"
 date: 2020-10-04
 description: "Mostly just a summary of tfft and augmenting cognition articles."
 ---
+
 ## Helping Develop Virtuoso Skills with Personal Memory Systems
 "As we'll see, Anki can be used to remember almost anything. That is, **Anki makes memory a choice**, rather than a haphazard event, to be left to chance. I'll discuss how to use Anki to understand research papers, books, and much else. And I'll describe numerous patterns and anti-patterns for Anki use. While Anki is an extremely simple program, it's possible to develop virtuoso skill using Anki, a skill aimed at understanding complex material in depth, not just memorizing simple facts.
 
@@ -41,6 +42,8 @@ Note that this doesn't mean you shouldn't also retain some version of the origin
 
 Ebbinghaus found that the probability of correctly recalling an item declined (roughly) exponentially with time. Today, this is called the *Ebbinghaus forgetting curve*.
 
+---
+
 ## From Gwern:
 
 The research favors questions which force the user to use their memory as much as possible; in descending order of preference:
@@ -72,6 +75,8 @@ it’s interesting to compare SRS decks to the feat of memorizing Paradise Lost 
 
 --[Gwern](https://www.gwern.net/Spaced-repetition)
 
+---
+
 ## From rs.io
 
 ### Tips for Cardmaking and Anki Use
@@ -89,12 +94,16 @@ it’s interesting to compare SRS decks to the feat of memorizing Paradise Lost 
 
 --[summary of rs.io](https://rs.io/anki-tips/)
 
+---
+
 "Has your computer ever spat out an error message and, although you remember seeing it before, you don’t remember how to fix it? Before I started Janki Method this would happen to me a lot.
 
 The first time I saw the issue I would spend half a day solving the problem. Six months later the problem would happen again, perhaps in a slightly different form. Even though I was vaguely aware of having seen it before, I’d forgotten how to fix it.
 
 After solving a bug you should always add some cards to your deck containing the knowledge needed to prevent that bug from occurring again. Better yet, abstract one level and add cards containing the knowledge needed to prevent that class of bugs. Now, whenever you are faced with a bug the second time, all you need to do is search your archives."
 --[Jack Kinsella](https://www.gwern.net/docs/www/www.jackkinsella.ie/7f766c2f8b533e44f5a9ff02ea44573c3132557a.html)
+
+---
 
 "If I look something up in StackOverflow, I'll add it to Anki. Wikipedia? Another Anki card."
 
