@@ -11,7 +11,7 @@ how many lines with a given extension?
 
 ---
 
-To run this blog locally
+To run this site locally
 
 ```
 sudo gem install rails
