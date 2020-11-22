@@ -25,3 +25,6 @@ bundle add jekyll
 bundle exec jekyll serve
 ```
 
+---
+
+To turn .enex notes from Evernote into .md files directly: [evernote2md](https://github.com/wormi4ok/evernote2md)
