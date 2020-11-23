@@ -32,8 +32,6 @@ footer {
 p, a, ul li {
     font-family: 'Roboto', Verdana;
     font-size: 1.1rem;
-    letter-spacing: 0.5px;
-    word-spacing: 2px;
     line-height: 1.75;
     color: #000;
 }
