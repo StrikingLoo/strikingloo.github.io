@@ -4,7 +4,7 @@ title: "Information Storage and Archiving strategies"
 date: 2020-06-13
 description: "Since this is a Digital Garden to help me reflect and store information, I should ramp up my archiving skills."
 ---
-### P.A.R.A Methodology
+## P.A.R.A Methodology
 "The four top-level categories of P.A.R.A. — Projects, Areas, Resources, and Archives — are designed to facilitate this process of forwarding knowledge through time.
 
 - By placing a note in a project folder, you are essentially scheduling it for review on the short time horizon of an individual project.
@@ -15,6 +15,26 @@ source: [progressive summarization @fortelabs](https://fortelabs.co/blog/progres
 
 - Think lossy, context vs discoverability trade-off.
 - Take key fragments, summarize them, iterate.
+
+### PARA methodology
+
+#### Why
+Keep a list of problems you're interested in (I'm not really buying this one)
+
+#### What 
+Raise the bar: does what you capture serve a purpose in one of your 12 (in our case N) problems? If so, keep. Else, discard.
+
+#### How 
+PARA: 
+- **Projects**: for projects with a clear deliverable and deadline,
+- **Areas**: for ongoing study/actionable topics, like health, finances, etc. Here these guys make a distinction between public and private notes, therefore...
+- **Resources**: Here's where you put interesting documents, quotes, tidbits and data that you'd like to show to other people, or consult afterwards. Typical notes you'd share with everyone. Public notes.
+- Archive: for deprecated notes.
+I don't completely like this system. Especially the archive part, but also it's mostly designed for writers or generators of content. This becomes more obvious once you read the next part:
+
+The final piece of the puzzle. Once you have the information captured and organized, you need to actually do something with it. There are two parts to the **creation stage: divergence and convergence. Divergence** is where you take what you have captured and begin to **explore the ideas, extracting useful tidbits, and discovering the best** of what you have. **Convergence** is where you then **compile those best ideas into something structured and concrete** that you can send out into the world. And of course, there are several strategies for each.
+
+So even though my main goal isn't writing or making content, I do believe extracting insights from data, or finding creative ways to connect different areas will prove useful, or at least fun. I'm keeping the idea of separating things into resources (shareable) and areas (personal), and also the idea of going through notes for convergence and divergence.
 
 ---
 ### 'Thoughts On' Journal
