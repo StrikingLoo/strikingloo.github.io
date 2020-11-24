@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Quotes, Facts and Tidbits related to Nutrition and Diets"
+title: "Nutrition and Diets"
 date: 2020-06-17
 description: "Quotes, Facts and Tidbits related to Nutrition and Diets"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Link Preload, Prefetch and Such."
+title: "Link Preload, Prefetch and Such"
 date: 2020-06-16
 description: "A very good explanation for link preloading/prefetching/etc."
 ---

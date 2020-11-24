@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Reflections and Usage Advice on SRS and Anki"
+title: "SRS and Anki: Advice, tips and quotes."
 date: 2020-10-04
-description: "Mostly just a summary of tfft and augmenting cognition articles."
+tags: productivity, quotes
+description: "Mostly just a summary of tfft, Gwern and augmenting cognition articles. Also a collection of Anki related tips and quotes."
 ---
 
 ## Helping Develop Virtuoso Skills with Personal Memory Systems
