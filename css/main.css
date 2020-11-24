@@ -68,7 +68,7 @@ nav a, footer a {
 strong { font-weight: bolder;}
 
 .wiki-item {
-  border-radius: 35%;
+  border-radius: 25%;
   background-color: #cfebfb;
   padding: 10px;
   display:inline-block;
