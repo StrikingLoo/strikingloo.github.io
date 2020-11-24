@@ -67,3 +67,8 @@ nav a, footer a {
     color: #7E1946;
 }
 strong { font-weight: bolder;}
+
+.wiki-item {
+  border-radius: 35%;
+  background-color: #a0d8f7;
+}
