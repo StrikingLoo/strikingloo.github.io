@@ -69,5 +69,6 @@ strong { font-weight: bolder;}
 
 .wiki-item {
   border-radius: 35%;
-  background-color: #a0d8f7;
+  background-color: #cfebfb;
+  padding: 25px;
 }
