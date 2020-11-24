@@ -28,3 +28,9 @@ bundle exec jekyll serve
 ---
 
 To turn .enex notes from Evernote into .md files directly: [evernote2md](https://github.com/wormi4ok/evernote2md)
+
+---
+
+To find all files containing a given expression. 
+``` grep -rnw '/path/to/somewhere/' -e 'pattern' ```
+
