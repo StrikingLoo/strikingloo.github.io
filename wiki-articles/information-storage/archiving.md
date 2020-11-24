@@ -16,15 +16,15 @@ source: [progressive summarization @fortelabs](https://fortelabs.co/blog/progres
 - Think lossy, context vs discoverability trade-off.
 - Take key fragments, summarize them, iterate.
 
-### PARA methodology
+---
 
-#### Why
+### Why
 Keep a list of problems you're interested in (I'm not really buying this one)
 
-#### What 
+### What 
 Raise the bar: does what you capture serve a purpose in one of your 12 (in our case N) problems? If so, keep. Else, discard.
 
-#### How 
+### How 
 PARA: 
 - **Projects**: for projects with a clear deliverable and deadline,
 - **Areas**: for ongoing study/actionable topics, like health, finances, etc. Here these guys make a distinction between public and private notes, therefore...
@@ -37,7 +37,7 @@ The final piece of the puzzle. Once you have the information captured and organi
 So even though my main goal isn't writing or making content, I do believe extracting insights from data, or finding creative ways to connect different areas will prove useful, or at least fun. I'm keeping the idea of separating things into resources (shareable) and areas (personal), and also the idea of going through notes for convergence and divergence.
 
 ---
-### 'Thoughts On' Journal
+## 'Thoughts On' Journal
 "There are certain subjects in your life you think about a lot. People, places, hobbies, health, plans, finances.
 
 For each subject that you might have ongoing thoughts about, start a separate “Thoughts On” journal. Whenever you have some thoughts on this subject, open up that file, write today’s date, then start writing."
