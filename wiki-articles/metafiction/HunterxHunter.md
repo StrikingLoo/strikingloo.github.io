@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Anything interesting about HunterxHunter"
+title: "HunterxHunter"
 date: 2020-06-13
+tags: metafiction
 description: "HunterxHunter stuff. So far very brief."
 ---
 
