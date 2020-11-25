@@ -34,3 +34,18 @@ To turn .enex notes from Evernote into .md files directly: [evernote2md](https:/
 To find all files containing a given expression. 
 ``` grep -rnw '/path/to/somewhere/' -e 'pattern' ```
 
+---
+
+### Tar commands:
+
+To extract a tarfile:
+
+``` tar -xzf myfile.tar.gz ```
+
+x for extract, z for zip, f for file. -v for verbose, is optional.
+
+``` tar -czf new_name.tar.gz source_directory ```
+
+c for create, z for zip, v for verbose (optional) and f for file. 
+
+**Note that source comes after destination, like in a ASM instruction!** 
