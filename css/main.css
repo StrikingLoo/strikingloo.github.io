@@ -3,8 +3,8 @@
 
 body {
     margin: 60px auto;
-    background-color: #FFFFFF;
-    width: 70%;
+    background-color: #FCFFFC;
+    width: 75%;
 }
 
 h1 {
@@ -72,4 +72,8 @@ strong { font-weight: bolder;}
   background-color: #cfebfb;
   padding: 10px;
   display:inline-block;
+  margin:3px;
+}
+.wiki-item:hover {
+  background-color:#E1F3FB;
 }
