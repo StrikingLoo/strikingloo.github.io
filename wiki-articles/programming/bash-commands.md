@@ -49,3 +49,12 @@ x for extract, z for zip, f for file. -v for verbose, is optional.
 c for create, z for zip, v for verbose (optional) and f for file. 
 
 **Note that source comes after destination, like in a ASM instruction!** 
+
+---
+
+### Basic sed use case
+
+``` echo 'this-is-a-path' | sed 's/-/\//g' ```
+output:
+` this/is/a/path `
+
