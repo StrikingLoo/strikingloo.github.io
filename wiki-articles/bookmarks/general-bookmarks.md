@@ -8,16 +8,22 @@ description: "Links to anywhere on the internet, mostly to interesting tools or 
 
 Remove background from a picture and get a transparent one instead. Works like a charm for Roll20 tokens.
 
-[https://www.remove.bg/]
+<https://www.remove.bg/>
+
+---
 
 A soft murmur, plays rain noises.
 
-[https://asoftmurmur.com/]
+<https://asoftmurmur.com/>
+
+---
 
 Z-Library for books
 
-[https://b-ok.lat/]
+<https://b-ok.lat/>
+
+---
 
 Free icons
 
-[https://thenounproject.com/]
+<https://thenounproject.com/>
