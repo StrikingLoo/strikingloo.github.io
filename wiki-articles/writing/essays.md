@@ -4,6 +4,7 @@ title: "Notes on Writing Essays"
 date: 2020-11-24
 description: "Quotes and advice on writing non-fiction. Especially about essays."
 ---
+
 From [LeanAnki, Zettelkasten Method](https://leananki.com/zettelkasten-method-smart-notes/), I see he has this simple method for essay writing: 
 - Write about a problem in detail.
 - Write about the solution.
@@ -28,6 +29,7 @@ From [Andy Matuschak's Executable strategy for writing](https://notes.andymatusc
 As is, it works better with a Zettelkasten kind of note-taking space, but each separate note could be replaced with a new paragraph or header in a big note in a system like this personal wiki. Then I could maintain an "outline" folder for essays-to-be, where they could grow organically. This may start with my small 'how to make a static site and host it on the web' and grow slowly from there, as a growing place for posts before I publish them on my actual blog (or on this site's blog, I guess).
 
 ---
+
 From [Matt Might's blog](http://matt.might.net/#blog)
 
 " The secret to low-cost academic blogging is to make blogging a natural byproduct of all the things that academics already do.
@@ -39,3 +41,7 @@ From [Matt Might's blog](http://matt.might.net/#blog)
 - Doing something geeky at home? Blog about what you learned.
 "
 
+---
+From [The ZettelKasten Method, LessWrong](https://www.lesswrong.com/posts/NfdHG6oHBJ8Qxc26s/the-zettelkasten-method-1)
+
+"This idea of jotting down ideas while you’re out and about is very important. If you feel you don’t have enough ideas (be it for research, for writing fiction, for art -- whatever) my first question would be whether you have a good way to jot down little ideas as they occur to you."
