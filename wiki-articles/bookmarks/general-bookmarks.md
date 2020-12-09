@@ -27,3 +27,8 @@ Z-Library for books
 Free icons
 
 <https://thenounproject.com/>
+
+---
+Clipoard to markdown. As great as it sounds and it works like a charm so far.
+
+<https://euangoddard.github.io/clipboard2markdown/>
