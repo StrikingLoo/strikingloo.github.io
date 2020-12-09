@@ -126,8 +126,7 @@ As a summary, the Zettelkasten method follows a workflow with three steps:
 
 Zettelkasten relies more heavily on linking than tags/searching. This is because of the use of smaller, more granulated Zettels which interlink to represent a "thought trail" (a linked list of Zettels). In my case I prefer big chunky notes + search, but we'll see.
 
-### Having a short-term and a long-term cache with nightly batch processing
-
+### Having a short-term and a long-term cache with nightly batch processing
 "In Taking Smart Notes, Luhmann is described as **transferring the important thoughts from the day into Zettel every evening**. Sheffler, on the other hand, keeps a gap of at least 24 hours between taking down engagement notes and deciding what belongs in the long-term store. A gap of time allows the initial excitement over an idea to pass, so that only the things which still seem important the next day get into long-term notes. He also points out that this system enforces a small amount of spaced repetition, making it more likely that content is recalled later."
 
 The author himself remarks he doesn't do this, and writes directly in the zettelkasten instead.
