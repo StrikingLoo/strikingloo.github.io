@@ -102,18 +102,18 @@ Most common similarity measures are:
 -   Dot product (monotonous to cosine similarity, sensitive to the norms. Prioritizes more popular or common items).
 -   Euclidean distance (sensitive to the norm).
 
-### Content-based Filtering
+## Content-based Filtering
 
 Content-based filtering uses **item features** to recommend other items similar to what the user likes, based on their **previous actions or explicit feedback**. You can make the user fill questionnaires, or just use previous feedback as data.
 
-The model should recommend items relevant to this user. To do so, you must first pick a similarity metric (for example, dot product). Then, you must set up the system to score each candidate item according to this similarity metric. Note that the recommendations are specific to this user, as the model did not use any information about other users.
+The model should recommend items relevant to this user. To do so, you must first pick a **similarity metric** (for example, dot product). Then, you must set up the system to **score each candidate item** according to this similarity metric. Note that the recommendations are specific to this user, as the model did not use any information about other users.
 
 ### Advantages
 
 -   This model easily scales to a large number of users, since it doesn't use data from other users.
 -   The model can capture the specific interests of a user, and can recommend niche items that very few other users are interested in.
 
-**Disadvantages**
+### Disadvantages
 
 -   Since the feature representations of the items are hand-engineered to some extent, this technique requires a lot of domain knowledge. Therefore, the model can only be as good as the hand-engineered features. Getting the users' values for those features can be costly as well.
 -   The model can only make recommendations based on existing interests of the user. In other words, the model has limited ability to expand on the users' existing interests. It's a self-fulfilling prophecy in a way.
