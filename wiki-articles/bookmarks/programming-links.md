@@ -19,8 +19,9 @@ grid-template: auto 1fr auto / auto 1fr auto
 
 [10 modern layouts in 1 line of CSS](https://www.youtube.com/watch?v=qm0IfG1GyZU)
 
----
 
-### A ton of programming books for free. Really a ton. Grab a few when you're free.
+---
+### A ton of programming books for free. Really a ton. Grab a few when you're free.
 
 <https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md>
+
