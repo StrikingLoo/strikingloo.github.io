@@ -4,9 +4,10 @@ title: "Genetics"
 date: 2020-12-12
 description: "Notes on anything I read about genetics, be it news or essays. This is far from my area of expertise."
 tags: genetics, DNA, scale, science
-------
+---
 
-## Notes on genetics. This is quite far from my area of expertise and I only have a casual interest in these topics, so my notes are not super valuable.
+## Notes on genetics. 
+This is quite far from my area of expertise and I only have a casual interest in these topics, so my notes are not super valuable.
 
 
 The first human genome was sequenced in 2003. 
