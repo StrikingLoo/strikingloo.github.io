@@ -132,3 +132,29 @@ Zettelkasten relies more heavily on linking than tags/searching. This is because
 The author himself remarks he doesn't do this, and writes directly in the zettelkasten instead.
 
 -- [The Zettelkasten Method](https://www.lesswrong.com/posts/NfdHG6oHBJ8Qxc26s/the-zettelkasten-method-1) 
+
+---
+
+### Johnny Decimal
+
+From [Johnny Decimal, A system to organise projects](https://johnnydecimal.com/)
+
+> Nobody can find anything any more, it’s time to get organised.
+
+- Step 1: Divide everything in to ten things.
+- Step 2: In each area, divide in ten again. Categories are the key.
+
+We give each category a number. Before the decimal: category id. After the decimal: auto-increasing file ID (for each new one you create). 
+
+None of the areas or categories overlap. There’s only one place anything can ever be.
+An important restriction of the system is that you’re not allowed to create any folders inside a Johnny.Decimal folder.
+
+This means that you’ll never get lost in layers upon layers of folders. It also makes you create quite specific folders for each thing, ensuring that you can always find what you want.
+
+Easily tell people where things are.
+
+That's a summary of what they suggest. Though I don't know if I'd go all in on the indexing by numbers wagon, I do like the idea of using a depth-2-at-most file tree for easy retrieval and to improve discoverability.
+
+I think this is one of those things that sounds nice in theory but would be a nightmare to implement in practice, for any team bigger than 5 people. Just imagining trying to make the teams from different provinces adopt our same indexing system sounds like it would take 4 or 5 meetings, and somebody would still get it wrong on either end. It's a huge coordination problem.
+
+But maybe a small squad system could work. 
