@@ -175,7 +175,7 @@ Ademas, podemos acotar el error de la interpolación si tenemos una idea de la n
 
 ![Screen_Shot_2020-12-13_at_22-38-54.png](image/Screen_Shot_2020-12-13_at_22-38-54.png)
 
-El polinomio de Lagrange es el unico polinomio de grado n-1 que interpola estos n puntos.
+El polinomio de Lagrange es el único polinomio de grado n-1 que interpola estos n puntos.
 
 ### Diferencias divididas
 
