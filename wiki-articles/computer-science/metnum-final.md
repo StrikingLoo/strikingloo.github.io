@@ -169,7 +169,7 @@ Tipicamente usamos un polinomio, o varios juntos, porque son bonitos, derivables
 
 Defino un polinomio que toma los valores de los puntos en los x correctos.
 
-![Screen_Shot_2020-12-13_at_22-38-45.png](image/Screen_Shot_2020-12-13_at_22-38-45.png)
+![Screen_Shot_2020-12-13_at_22-38-45.png](image/Screen_Shot_2020-12-13_at_22-38-45.png){: style="height:70%; width:70%"}
 
 Ademas, podemos acotar el error de la interpolación si tenemos una idea de la n+1-ésima derivada de la función (imagino que es difícil de obtener en la práctica), evaluandola en algun punto E entre [x0, xn].
 
