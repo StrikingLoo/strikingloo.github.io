@@ -276,6 +276,48 @@ Muy similar al método de bisección, pero en cada punto en vez de elegir como p
 
 Converge linealmente igual que la bisección, pero en la práctica es más rápido, y evita la cancelación catastrófica del método de la secante.
 
+## Cuadrados Mínimos Lineales
+
+Tengo A x = b, y quiero hallar el x que minimiza el error cuadrático \|\| b - Ax \|\|^2 
+
+Puedo usar 3 métodos:
+
+### Ecuaciones normales
+
+Comienzo multiplicando a ambos lados por A^t por izquierda.
+Puede verse que esto proyecta b al espacio vectorial generado por A (osea, elimina la parte ortogonal de b). A esto se lo llama que
+
+ _"A^t \* b es la proyección en la imagen de A de b"_.
+
+![](image/ata.png)
+
+El sistema permite usar Cholesky, porque A^t\*A es una matriz sdp. Pero, la estabilidad numérica puede ser muy mala.
+
+### Resolución por Factorizacion QR
+
+Reescribo A = QR.
+
+- Si A es rango columna completo, luego solo tengo que resolver R1 = c, donde R1\*x es la parte no nula de R, y c es los primeros rg(A) componentes de Q^t \* b.
+- Si no es rango columna completo, tenemos en cuenta el pivoteo.
+
+### Resolución SVD
+
+Esta es la que mas se usa en la práctica: es más lenta, pero en casos de matrices de rango incompleto tiene mucha más estabilidad numérica.
+
+![](image/metnum_svd.png){: style="height:99%; width:99%"}
+
+Aca una vez más separamos en casos:
+
+Si A es rango columna completa, hay una forma cerrada para x:
+ 
+![](image/svd_sol_1.png)
+
+Sino, la forma cerrada es esta:
+
+![](image/svd_sol_2.png)
+
+Donde los y_k pueden ser cualquier real. Se suele usar que sean todos 0 para minimizar la norma.
+
 ### Complejidades
 
 Factorizacion de Cholesky : O(n^3) -aunque mas rápida-
