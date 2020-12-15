@@ -156,14 +156,14 @@ Para el método de la potencia, multiplicamos un vector inicial aleatorio x_0 po
 
 ![Screen_Shot_2020-12-13_at_21-13-19.png](image/Screen_Shot_2020-12-13_at_21-13-19.png)
 
-El ratio entre el vector obtenido x, y Ax, en normas será el modulo del autovalor de modulo mas alto en la matriz. Al restar \mu\* u u^t (producto externo) para mu el autovalor y u el autovector, obtenemos una nueva matriz cuyo autovalor de modulo mas alto ya no es el mismo.
+El ratio entre el vector obtenido x, y Ax, en normas será el módulo del autovalor de módulo mas alto en la matriz. Al restar \mu\* u u^t (producto externo) para mu el autovalor y u el autovector, obtenemos una nueva matriz cuyo autovalor de módulo mas alto ya no es el mismo.
 
 
 ## Interpolación
 
 Tengo un conjunto de puntos, quiero hallar una función que pase por todos ellos y tenga ciertas propiedades deseables. 
 
-Tipicamente usamos un polinomio, o varios juntos, porque son bonitos, derivables y compoutables facilmente, y en general muy estudiados.
+Tipicamente usamos un polinomio, o varios juntos, porque son bonitos, derivables y computables facilmente, y en general muy estudiados.
 
 ### Polinomio interpolador de Lagrange
 
