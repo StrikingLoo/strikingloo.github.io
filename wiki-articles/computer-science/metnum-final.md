@@ -45,7 +45,7 @@ Si A es **simetrica, inversible y tiene LU**, entonces **tiene LDL**.
 
 **L es triangular inferior** con positivos en la diagonal (no necesariamente 1).
 
-A tiene **Cholesky** <-> A es **definida positiva**.
+A tiene **Cholesky** <-> A es **simétrica definida positiva**.
 
 A es **definida positiva** si
 
