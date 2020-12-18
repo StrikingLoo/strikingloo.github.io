@@ -45,3 +45,14 @@ From [Matt Might's blog](http://matt.might.net/#blog)
 From [The ZettelKasten Method, LessWrong](https://www.lesswrong.com/posts/NfdHG6oHBJ8Qxc26s/the-zettelkasten-method-1)
 
 "This idea of jotting down ideas while you’re out and about is very important. If you feel you don’t have enough ideas (be it for research, for writing fiction, for art -- whatever) my first question would be whether you have a good way to jot down little ideas as they occur to you."
+
+---
+### What is, what could be, call-to-action
+
+This is the story structure behind every TED talk:
+
+-   Act I: What is
+-   Act II: What could be.
+-   Act III: The call to action.
+
+You can build this story arc in different lengths for different settings: the elevator pitch, the 15 minute explanation, the 1hr story.
