@@ -32,3 +32,8 @@ Free icons
 Clipoard to markdown. As great as it sounds and it works like a charm so far.
 
 <https://euangoddard.github.io/clipboard2markdown/>
+
+---
+HN's recommended MOOCs list (with links)
+
+<https://github.com/Tuccinator/hn-moocs>
