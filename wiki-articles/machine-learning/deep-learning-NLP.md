@@ -196,8 +196,6 @@ Run bidirectional LSTM on both directions over characters of a word, concat both
 * bidirectional LSTMs, 8 stacks.
 
 
-# tmp
-
 ## Contextual Word Representations: ELMo, Bert, etc.
 
 Word embeddings are the basis of deep learning for NLP.
