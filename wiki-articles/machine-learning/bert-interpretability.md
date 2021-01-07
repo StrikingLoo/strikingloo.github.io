@@ -1,3 +1,11 @@
+---
+layout: post
+date: 2021-01-07
+title: "BERT Interpretability"
+tags: deep learning, neural network, NLP, BERT, interpretability, paper, notes, thegradient
+description: "Notes from a paper on BERT interpretability from thegradient.pub"
+---
+
 ### On BERT interpretability:
 
 >  The **Lottery Ticket Hypothesis** proposes that randomly initialized neural networks contain **subnetworks** that could be re-trained alone to **reach (or exceed) the performance of the full model** ([Frankle and Carbin 2019](https://thegradient.pub/when-bert-plays-the-lottery-all-tickets-are-winning/?utm_source=Deep+Learning+Weekly&utm_campaign=cce584827a-EMAIL_CAMPAIGN_2019_04_24_03_18_COPY_01&utm_medium=email&utm_term=0_384567b42d-cce584827a-73521553#RefFrankle));
