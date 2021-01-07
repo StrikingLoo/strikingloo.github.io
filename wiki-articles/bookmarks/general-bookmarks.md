@@ -50,4 +50,4 @@ Cards for WarmaHordes MKIII:
 
 Rules for MKIII
 
-[rules](/resources/mk3_rules.pdf)
+[rules](https://home.privateerpress.com/wp-content/uploads/2020/02/Digest-Game-Rules-Feb2020.pdf)

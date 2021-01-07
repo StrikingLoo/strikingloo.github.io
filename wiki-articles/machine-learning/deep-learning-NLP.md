@@ -142,3 +142,56 @@ Here's what we actually gained by using neural networks:
 ![](deep_learning_NLP_images/bidaf3.png){: style="height:70%; width:70%"}
 ![](deep_learning_NLP_images/bidaf4.png){: style="height:70%; width:70%"}
 
+## Subword Models
+
+### Character-Level Models
+
+Word embeddings can be composed from character embeddings:
+
+* Generates **embeddings for unknown words**. 
+* Similar spellings share similar embeddings. 
+* Solves **OOV problem** (usually you'll keep your word embeddings, and use average of character embeddings when OOV.
+
+**Connected language** (such as Japanese) can be processed as characters.
+
+Both methods have proven to work very successfully!
+
+A seq2seq on character-level using LSTM was tested for Czech-English NMT. It slightly beat a baseline of word-level LSTM. 
+
+Char-level works especially well on connected and agglutinative languages, but it's mega slow -3 weeks to train back in 2018-.
+
+![Screen_Shot_2021-01-07_at_16-15-34.png](image/Screen_Shot_2021-01-07_at_16-15-34.png){: style="height:70%; width:70%"}
+
+Two trends appear:
+
+* **Hybrid models**: word-level model that defaults to char-level for unks.
+* **Same architecture** as a word-level model, but with **char or word-piece embeddings**.
+
+BERT uses a variant of the wordpiece model 
+
+* (Relatively) common words are in the vocabulary:  at, fairfax, 1910s.
+* Other words are built from wordpieces:
+
+hypatia = h ##yp ##ati ##a 
+
+*  If you’re using BERT in an otherwise word based model, you have to deal with this.
+
+### Highway Network (2015)
+
+![Screen_Shot_2021-01-07_at_16-23-33.png](image/Screen_Shot_2021-01-07_at_16-23-33.png){: style="height:70%; width:70%"}
+
+### Character level language model (2015, more complex)
+
+![Screen_Shot_2021-01-07_at_16-24-30.png](image/Screen_Shot_2021-01-07_at_16-24-30.png){: style="height:70%; width:70%"}
+
+Almost reached SOTA, and also understood semantics of transformed words -good vs gooood-.
+
+### Char-level word representations
+
+Run bidirectional LSTM on both directions over characters of a word, concat both final hidden states as new representation.
+
+### Hybrid NMT
+
+* 2- stage decoding: use aggregated char-embeddings when decoding UNK.
+* bidirectional LSTMs, 8 stacks.
+
