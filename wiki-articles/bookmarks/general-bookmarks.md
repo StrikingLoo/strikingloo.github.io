@@ -42,3 +42,12 @@ HN's recommended MOOCs list (with links)
 Waifuist Personal Site -weird but awesome digital garden-.
 
 <https://wiki.waifu.haus/#Root>
+
+---
+Cards for WarmaHordes MKIII:
+
+<http://cards.privateerpress.com/>
+
+Rules for MKIII
+
+[rules](/resources/mk3_rules.pdf)
