@@ -195,3 +195,100 @@ Run bidirectional LSTM on both directions over characters of a word, concat both
 * 2- stage decoding: use aggregated char-embeddings when decoding UNK.
 * bidirectional LSTMs, 8 stacks.
 
+
+# tmp
+
+## Contextual Word Representations: ELMo, Bert, etc.
+
+Word embeddings are the basis of deep learning for NLP.
+
+**Problem**: Word embeddings are applied in a **context free manner**
+
+**Solution**: Train **contextual representations** on text corpus.
+
+We sort of did this with hidden states on RNNs/LSTMs: their values depend on previously seen words (or seen in the future).
+
+### TagLM
+
+![Screen_Shot_2021-01-07_at_18-40-30.png](image/Screen_Shot_2021-01-07_at_18-40-30.png)
+
+Train a separate Language Model in an unsupervised manner, which allows you to use a huge corpus (say, Wikipedia). Also derive your word embeddings from it.
+
+Then feed to your main model both a char-RNN rep'n, a word embedding and, after going through a bi-directional LSTM, concatenate hidden states with the concatenated hidden states of the (now pre-trained and frozen) language model.
+
+This beat SOTA by a narrow margin (0.3) but it was a much simpler model than the competition. 
+
+### ELMo
+
+ELMo beat SOTA in a wide range of tasks by a big margin, whereas most academics work all year to beat SOTA on a single task by about 1%. 
+
+This was ground-breaking, and the paper won Best Paper Award at NAACL 2018 (maybe read the best paper awards from the last few years?).
+
+ELMo works similarly to TagLM, but:
+
+* Use 2 Bi-LSTM layers
+* Use only a char-CNN to build initial word representations (only): 2048 char n-gram filters, 2 highway layers, 512 dim projection space.
+* Use 4096 hidden state cells with 512 dim projections for next layer.
+
+Then they added:
+
+![Screen_Shot_2021-01-07_at_17-57-49.png](image/Screen_Shot_2021-01-07_at_17-57-49.png){: style="height:70%; width:70%"}
+
+Different weights per LSTM layer's hidden state. Different weight to the whole LM's hidden states per task. This way ELMo only uses the LM where it matters, and assigns different importance to each layer (reportedly the lowest layer is better for syntactic information, and is more useful for NER or POS-tag, whereas the second layer carries more semantic data, and works better for Question Answering, Sentiment Analysis, etc.).
+
+## Transformers
+
+### GPT
+
+"Attention is all you need": What if we drop the Recurrent part, and just keep the attention to maintain long-term information and context?
+
+This is how a transformer's Encoder works:
+
+You take the whole sentence, and make each word go through an "atttention head". 
+
+All words in a same sentence can run through an attention head in parallel, making transformers train a lot faster in GPU.
+
+![Screen_Shot_2021-01-07_at_18-40-02.png](image/Screen_Shot_2021-01-07_at_18-40-02.png){: style="height:70%; width:70%"}
+
+The attention mechanism can be scaled horizontally to add more semantic/syntactic interpretations of a word in-context.
+
+Here's the attention function for embeddings Q, K, V:
+
+![Screen_Shot_2021-01-07_at_19-17-51.png](image/Screen_Shot_2021-01-07_at_19-17-51.png){: style="height:70%; width:70%"}
+
+The FF layer is a 2-layer MLP with ReLU.
+
+![Screen_Shot_2021-01-07_at_18-40-30.png](image/Screen_Shot_2021-01-07_at_18-40-30.png){: style="height:70%; width:70%"}
+
+Where Wi are learned matrices, each of them projecting the Q,K,V word-embeddings into different spaces.
+
+Typically, we'll make Q,K,V be the word embedding for the current word, concatenated to **positional encoding**, so same words at different locations have different overall representations:
+
+![Screen_Shot_2021-01-07_at_18-41-02.png](image/Screen_Shot_2021-01-07_at_18-41-02.png){: style="height:70%; width:70%"}
+
+Multi-headed attention nodes are composed (vertically) and finally you can run your supervised task on the output.
+
+The decoder is left as an exercise for the reader. For LM you can skip it.
+
+### BERT (Bidirectional Encoder Representations from Transformers)
+
+Problem: LM's are unidirectional, but language understanding is bidirectional.
+
+Why? Because you can't learn to predict the future by seeing it.
+
+Solution: Train a LM by removing k=15% (they never change this) of words from each sentence and predicting them from bidirectional context. 
+
+Setting k is a trade-off: too much and you don't see context, too little and you train too slowly.
+
+In a way, OpenAI's GPT used unidirectional transformers, and ELMo took advantage of bidirectionality with its pre-trained LM.
+
+This mixes both approaches by training a model that's inherently bidirectional. 
+
+They also train it on **next sentence prediction**: given sentence A and sentence B, **can sentence B come after A**?
+
+**First Layer**: Combine token embeddings -typical word/char embeddings-, position embeddings -as in GPT- and segment embedding -whether word belongs to sentence A or B-.
+
+They trained a transformer encoder on Wikipedia+BookCorpus, similar size to GPT beat it by a couple points on most benchmarks.
+
+After training the encoder, it can be used in other tasks by **removing last layer (classification) and fine-tuning** -as opposed to ELMo which just gave frozen representations-.
+
