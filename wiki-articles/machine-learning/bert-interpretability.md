@@ -22,6 +22,8 @@ For most GLUE tasks, the **'good' subnetworks can be retrained to reach performa
 
 For m-pruning, pruned and re-fine-tuned "good" subnetworks reach the full model performance in 8/9 GLUE tasks (except for WNLI, where the model generally fails to learn). These results are consistent with concurrent work on magnitude-pruned BERT ([Chen et al. 2020](https://thegradient.pub/when-bert-plays-the-lottery-all-tickets-are-winning/?utm_source=Deep+Learning+Weekly&utm_campaign=cce584827a-EMAIL_CAMPAIGN_2019_04_24_03_18_COPY_01&utm_medium=email&utm_term=0_384567b42d-cce584827a-73521553#RefChen)). The "random" and "bad" subnetworks also generally perform better when re-fine-tuned, but the "bad" subnetworks are consistently worse than "random".
 
-All this means that we still have more questions than answers about how BERT achieves its remarkable performance. If so many of the important self-attention heads are not even potentially interpretable, should we give up on the idea that some knowledge is encoded in specific architecture components, rather than spread across the whole network? How can we study such distributed representations? 
+All this means that **we still have more questions than answers about how BERT achieves its remarkable performance.** If so many of the important self-attention heads are not even potentially interpretable, should we give up on the idea that some knowledge is encoded in specific architecture components, rather than spread across the whole network? How can we study such distributed representations? 
+
+Source:
 
 <https://thegradient.pub/when-bert-plays-the-lottery-all-tickets-are-winning>
