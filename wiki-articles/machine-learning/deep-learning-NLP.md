@@ -210,7 +210,7 @@ We sort of did this with hidden states on RNNs/LSTMs: their values depend on pre
 
 ### TagLM
 
-![Screen_Shot_2021-01-07_at_18-40-30.png](image/Screen_Shot_2021-01-07_at_18-40-30.png)
+![Screen_Shot_2021-01-07_at_18-40-30.png](image/Screen_Shot_2021-01-07_at_18-40-30.png){: style="height:70%; width:70%"}
 
 Train a separate Language Model in an unsupervised manner, which allows you to use a huge corpus (say, Wikipedia). Also derive your word embeddings from it.
 
