@@ -290,3 +290,12 @@ They trained a transformer encoder on Wikipedia+BookCorpus, similar size to GPT 
 
 After training the encoder, it can be used in other tasks by **removing last layer (classification) and fine-tuning** -as opposed to ELMo which just gave frozen representations-.
 
+### Comparing BERT vs GPT
+
+![gpt vs bert](image/gpt-vs-bert.png){: style="height:70%; width:70%"}
+
+On BERT, you multiply by the whole sentence's embeddings on each layer, then go through the block. This makes it bidirectional, and lets you do each layer in a single matrix multiply, which is good for GPU usage.
+
+On GPT, you were doing first a product for the first word, then one for the first two, and so on, for every layer. This wasn't as good -though it was still better than going full recurrent-.
+
+
