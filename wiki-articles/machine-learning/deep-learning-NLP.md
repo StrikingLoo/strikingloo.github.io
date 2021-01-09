@@ -290,6 +290,8 @@ They trained a transformer encoder on Wikipedia+BookCorpus, similar size to GPT 
 
 After training the encoder, it can be used in other tasks by **removing last layer (classification) and fine-tuning** -as opposed to ELMo which just gave frozen representations-.
 
+*Related reading*: [BERT interpretability](/wiki-articles/machine-learning/bert-interpretability)
+
 ### Comparing BERT vs GPT
 
 ![gpt vs bert](image/gpt-vs-bert.png){: style="height:70%; width:70%"}
