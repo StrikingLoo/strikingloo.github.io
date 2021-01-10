@@ -300,4 +300,12 @@ On BERT, you multiply by the whole sentence's embeddings on each layer, then go 
 
 On GPT, you were doing first a product for the first word, then one for the first two, and so on, for every layer. This wasn't as good -though it was still better than going full recurrent-.
 
+![decoder-transformer](image/decoder-transformer.png){: style="height:70%; width:70%"}
 
+For transformers for NMT, you send the last layer of the encoder, plus the last in the decoder, into an encoder-decoder attention layer which lets you model interaction between words.
+
+You also make sure the decoder is trained on predicting unidirectionally, as opposed to the encoder which is bidirectional. This is, you feed the decoder only the first n words, and do prediction for the n+1-th one.
+
+Transformers have been used on image generation tasks (either feeding them a rasterized version of the last n pixels on reading-order to predict the next one, or a rasterized version of the pixels on a MxN grid around the pixel that have been generated -that's the ones that come before in reading order-).
+
+They have also been used for music generation, where the "tokens" were start note, end note, move clock forward, and a volume indicator.
