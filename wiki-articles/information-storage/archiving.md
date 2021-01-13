@@ -158,3 +158,15 @@ That's a summary of what they suggest. Though I don't know if I'd go all in on t
 I think this is one of those things that sounds nice in theory but would be a nightmare to implement in practice, for any team bigger than 5 people. Just imagining trying to make the teams from different provinces adopt our same indexing system sounds like it would take 4 or 5 meetings, and somebody would still get it wrong on either end. It's a huge coordination problem.
 
 But maybe a small squad system could work. 
+
+---
+
+Let me introduce the word "hypertext" to mean a body of written or pictorial mterial interconnected in such a complex way that it could not conveniently be presented or represented on paper.
+
+It may contain sunnnaries, or maps of its contents and their interrelations; it may contain annotations, additions and footnotes from scholars who have examined it. Let me suggest that such an object and
+system, properly designed and administered , could have great potential for education, increasing the student's range of choices, his sense of freedom, his motivation, and his intellectual grasp-. 
+
+Such a system could grow indefinitely, gradually including more and more of the world's written knowledge.
+However, its internal file structure would have to be built to accept growth, change and complex informational arrangements, The ELF is such a file structure.
+
+[Nelson](http://csis.pace.edu/~marchese/CS835/Lec3/nelson.pdf)
