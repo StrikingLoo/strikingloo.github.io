@@ -29,3 +29,13 @@ My solution? Move the Anki bar so it's 18 new words a day. This way, since 6*18 
 This is nothing new, companies do this with KPIs all the time: overshoot so you hit the mark. But I'd never thought of what this implies for fault tolerance: if every day I'm overdoing it a bit, then when a random event brings down a piece of my infrastructure or resources, I can still survive.
 
 It's like stocking up for the winter!
+
+### Do bees like celery? On randomly lost knowledge.
+
+So today I was walking to get food and thinking: the api in apiculture -should mean *bee*- sounds a hell lot like *apio* (celery). And *apio* totally sounds Latin, like it should've been Apium or something way back when. So I wonder if bees are the apio-eating insect or whatever, and that was very common knowledge in ancient Rome but now a random person like me wouldn't know it.
+
+A quick check in the wiktionary entry for *abeja* says:
+
+> From apis (“bee”) because of bees' perceived inclination towards the plant.
+
+Seems like my guess was correct! But now I have to wonder. What other things are embedded in ancient names, and how many are true knowledge like this one, and how many just lies? Man, I love etymology.
