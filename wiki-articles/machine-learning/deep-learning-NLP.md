@@ -309,3 +309,91 @@ You also make sure the decoder is trained on predicting unidirectionally, as opp
 Transformers have been used on image generation tasks (either feeding them a rasterized version of the last n pixels on reading-order to predict the next one, or a rasterized version of the pixels on a MxN grid around the pixel that have been generated -that's the ones that come before in reading order-).
 
 They have also been used for music generation, where the "tokens" were start note, end note, move clock forward, and a volume indicator.
+
+---
+
+## Natural Language Generation
+
+Teacher Forcing: during training we feed the decoder with the right words from the supervised decoded sentence, regardless of what it is actually predicting on each step. 
+
+
+![Screen_Shot_2021-01-14_at_18-31-12.png](image/Screen_Shot_2021-01-14_at_18-31-12.png)
+
+![Screen_Shot_2021-01-14_at_18-31-54.png](image/Screen_Shot_2021-01-14_at_18-31-54.png)
+
+### Decoding Algorithms
+
+* Greedy Decoding: take the most probable word at every step (until producing <END> token). Lacks backtracking and can generate poor results. Think Markov chain.
+* Beam-Search Decoding: Find a high-probability sequence by tracking k most probable partial sequences (called hypotheses) so far. You choose sequence with highest probability, adjusted for length.  (= greedy if k = 1. Ungrammatical, nonsensical, etc. Larger k: reduces some of the problems, but is more computationally expensive. It also makes more generic dialogue on chit-chat tasks, and less BLEU score due to short sentences).
+
+### Sampling-based Decoding
+
+* Pure Sampling: sample from probability distribution for next word, greedily.
+* Top-n Sampling: sample from probability distribution for next word (greedy), but only take into account the top n most likely words.
+
+![Screen_Shot_2021-01-14_at_18-51-54.png](image/Screen_Shot_2021-01-14_at_18-51-54.png)
+
+## Summarization
+
+Task: given input text x, write a summary y, which is shorter and contains the main information of x. 
+
+It can be **single-document** or **multi-document**: you either write a summary of x, or a summary of many related x's about the same topic (e.g., many news of a single event).
+
+Summarization can be **extractive** (highlight the relevant parts of an article x) or **abstractive** (rewrite x in fewer words. Requires original language generation and is typically harder).
+
+### Evaluation
+
+Summarization can be evaluated with ROUGE, a BLEU-like metric that's recall-oriented (Recall-Oriented Understudy for Gisting Evaluation).
+
+It's number of matching n-grams in generated summary over total number of n-grams generated. Summed over all human-made summaries.
+
+It has no penalty for brevity, and is typically reported for 1-grams, 2-grams, etc. ROUGE-L is longest common subsequence overlap.
+
+Both ROUGE and BLEU correlate badly with human ratings. Even if you correct by counting "near hits" where you used a word that is close in embedding space to another, it still fails catastrophically. 
+
+### Neural Summarization
+
+Since 2015 summarization has been done with Seq2Seq models with attention, with maybe later a few copying mechanisms which seemed useful at the time (like for each generated summary word having a probability of just copying a word from input, times the attention each input word gets at that stage). 
+
+![Screen_Shot_2021-01-14_at_20-06-41.png](image/Screen_Shot_2021-01-14_at_20-06-41.png)
+
+Copying can make your model **less abstractive**, and more extractive.
+
+**Bottom Up Summarization**: Run a RNN that maps each word to a keep-vs-discard probability. Then only attend to words that have a high proba (the keep ones) during summarizing.
+
+## Dialogue
+
+![Screen_Shot_2021-01-14_at_20-10-16.png](image/Screen_Shot_2021-01-14_at_20-10-16.png)
+
+The solutions are basically another Seq2Seq model with attention, very similar. 
+
+![Screen_Shot_2021-01-14_at_20-13-00.png](image/Screen_Shot_2021-01-14_at_20-13-00.png)
+
+Some problems have easy solutions like improving beam-search to incentivize rarer words, penalize or ban repetition directly in beam-search. Lack of context and consistent persona are harder.
+
+### Storytelling
+
+Similar system (dataset made of WP's in r/writingPrompts and responses). Interestingly, models make very descriptive stories with consistent characters but no plot moves forward. They're static. 
+
+This problem hasn't been solved yet! -as of the lecture-. 
+
+### Conclusions on NLG
+
+Final takeaway: NLG is the wild west of NLP, and there's a lot of new stuff to uncover. 
+
+1. The more open-ended the task, the harder everything becomes. • Constraints are sometimes welcome! 
+
+2. Aiming for a specific improvement can be more manageable than aiming to improve overall generation quality. 
+
+3. If you're using a LM for NLG: improving the LM (i.e. perplexity) will most likely improve generation quality... but it's not the only way to improve generation quality. 
+
+4. Look at your output, a lot.
+
+5. You need an automatic metric, even if it's imperfect. • You probably need several automatic metrics. 
+
+6. If you do human eval, make the questions as focused as possible. 
+
+7. Reproducibility is a huge problem in today's NLP + Deep Learning, and a huger problem in NLG. Please, publicly release all your generated output along with your paper! 
+
+8. Working in NLG can be very frustrating. But also very funny...
+
