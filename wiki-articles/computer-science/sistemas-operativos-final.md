@@ -249,6 +249,18 @@ En un sistema de seguridad hay **Sujetos** que hacen **Acciones** sobre **Objeto
 
 Hay 3 propiedades deseables: Authentication, Authorization y Accountability.
 
+### RSA
+Tengo clave privada y publica. Puedo encriptar con la privada y cualquiera con la publica desencripta y sabe que algo es mío. Con esto se implementa la firma digital: tengo un documento, le computo un hash y te mando el doc y el hash encriptado con mi clave privada. Como tenes mi clave publica, podes facilmente verificar que el documento no fue adulterado. Un atacante necesitaria mi clave privada para romper el documento y generar un hash falso.
+
+RSA en detalle funciona: tomando dos primos grandotes p y q (> 10^200). 
+- Hago `n = p*q`
+- `n' = (p-1) * (q - 1)`
+- `Let e in range(3, n'-1) such that n' % e != 0`
+- `Let d such that (d * e) % n' == 1`
+- e es la clave de encripción **pública**. d la de desencripción **privada**.
+
+Para encriptar : cada caracter m -> m^e % n.
+Para desencriptar : cada caracter encriptado c -> c^d % n.
 ## Sistemas distribuidos
 
 Conjunto de recursos conectados que interactúan.
