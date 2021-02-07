@@ -201,7 +201,7 @@ La interacción con dispositivos puede ser por:
 
 API del subsistema de E/S : Todo es un archivo! Read/Write, Open/Close.
 
-Scheduling de disco: mover el cabezal lleva tiempo y el disco son muchos cilindros con alturas y rotaciones. Hacerlo óptimo es altamente no trivial, se suelen usar algoritmos complejos con prioridades. Algunos de los simples serian FCFS, SSTF, o "Scan" que es "voy y vengo y siempre agarro lo siguiente primero".
+**Scheduling de disco**: mover el cabezal lleva tiempo y el disco son muchos cilindros con alturas y rotaciones. Hacerlo óptimo es altamente no trivial, se suelen usar algoritmos complejos con prioridades. Algunos de los simples serian **FCFS, SSTF, o "Scan"** que es "voy y vengo y siempre agarro lo siguiente primero".
 
 **Spooling**: el dispositivo encola los eventos y los hace esperar, sin intermediar el kernel. Esto evita que el usuario se bloquee. Ejemplo: impresora. 
 
