@@ -215,6 +215,21 @@ API del subsistema de E/S : Todo es un archivo! Read/Write, Open/Close.
 
 **RAID**: Redundant Array of Inexpensive Disks
 
+Mirroring provides high reliability, but it is expensive. Striping provides high
+data-transfer rates, but it does not improve reliability. Numerous schemes
+to provide redundancy at lower cost by using disk striping combined with
+“parity” bits (which we describe shortly) have been proposed.
+
+### Levels of RAID
+
+**RAID 0**: non-redundant bit-striping.
+**RAID 1**: no striping, but full backups.
+**RAID 2**: bit-striping + 3 discos de parity bits -no se usa en la practica-.
+**RAID 3**: bit-striping + 1 disco de parity bits -el otro usaba dos discos de mas-.
+**RAID 4**: striping de bloques en vez de bits. 1 disco de parity.
+**RAID 5**: Como el 5 pero distribuye el parity en un disco distinto por cada bloque. Evita overusing un disco, y single point of failure.
+
+
 ### File Systems
 
 Un archivo es una secuencia de bytes sin estructura + nombre. 
