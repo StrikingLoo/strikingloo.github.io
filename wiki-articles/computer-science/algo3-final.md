@@ -31,9 +31,31 @@ operacion elemental (O(1)) : no depende del tamaño del input, solo de la implem
 Simplificamos asumiendo que toda operación elemental puede ser ejecutada en una unidad de tiempo. Interesa cómo crece el tiempo de ejecución de un algoritmo cuando el tamaño de las instancias de entrada crece. No interesa el tiempo exacto requerido por cada una de ellas.
 
 **Modelo uniforme** : Cada operación básica tiene un tiempo de ejecución constante.
-**Modelo logar´ıtmico**: El tiempo de ejecución de cada operación es función del tamaño (cantidad de bits) de los operandos.
+**Modelo logarítmico**: El tiempo de ejecución de cada operación es función del tamaño (cantidad de bits) de los operandos.
 
 ## Big O notation
 Sii f es O(g), lim n->inf de f/g = c tq c > 0.
 
+## Técnicas de diseño de algoritmos
 
+Para demostrar la correctitud de un algoritmo tenemos que demostrar que **termina** y que **cumple la especificación**.
+
+**Divide and Conquer** : Para obtener un algoritmo eficiente, la medida de los subproblemas debe ser similar y no necesitar resolver mas de una vez el mismo subproblema.
+
+**Backtracking** :  Técnica para recorrer sistemáticamente todas las posibles configuraciones del espacio de soluciones.
+Se recorre el arbol de soluciones parciales potenciales, y se llega a cada hoja siendo una con todos los elementos definidos. Podemos abandonar una rama del arbol prematuramente por criterios de poda: **Factibilidad** (no quedan soluciones posibles en esta rama) u **Optimalidad** (para problemas de optimización: ya no puede haber una solución óptima en esta rama).
+
+Para poder hacer podas por factibilidad, tiene que cumplirse el **efecto dominó**: Si una solución parcial no es viable, sus extensiones tampoco lo serán.
+
+**Dynamic Programming** : 
+**Principio de optimalidad de Bellman** : Una solución óptima cada subsolución es a su vez óptima del subproblema correspondiente.
+
+## Grafos
+
+**Circuito Hamiltoniano** : Pasar por todos los vertices (Hamilton: cientifico victoriano: como paso por todas las ciudades en mi viaje?)
+
+**Subgrafo** : H es subgrafo de G si H tiene un subconjunto de los vertices, y un subconjunto de los edges -que ademas obviamente solo van entre nodos de H-.
+**Subgrafo generador** : H mismos vertices que G, pero subconjunto de aristas. 
+**Subgrafo inducido**: H mismos aristas que G, si van entre nodos que estén en H. Osea, removiste nodos, pero no edges. 
+
+**Grafo Bipartito** : Un grafo G con 2 o más vértices es bipartito sii **no tiene circuitos simples de longitud impar**.
