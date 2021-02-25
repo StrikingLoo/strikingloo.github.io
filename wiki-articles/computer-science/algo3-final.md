@@ -59,3 +59,19 @@ Para poder hacer podas por factibilidad, tiene que cumplirse el **efecto dominó
 **Subgrafo inducido**: H mismos aristas que G, si van entre nodos que estén en H. Osea, removiste nodos, pero no edges. 
 
 **Grafo Bipartito** : Un grafo G con 2 o más vértices es bipartito sii **no tiene circuitos simples de longitud impar**.
+**Árbol** : Un árbol es un grafo conexo sin circuitos simples.
+Son equivalentes: 
+- G es un árbol (un grafo conexo acíclico).
+- Existe exactamente un camino simple entre cada par de vértices.
+- G es conexo pero toda arista es puente.
+- Si se le agregara una arista e a G, G+e tiene exactamente un ciclo, y ese ciclo tiene a e.
+- G es un grafo sin circuitos simples y m = n − 1.
+- G es conexo y m = n − 1.
+
+
+Sea G un bosque con c componentes conexas. Entonces *m = n − c*.
+
+**Arbol generador minimo**: Hallar el conjunto de aristas que arman un arbol generador del grafo G que minimizan la suma de los pesos.
+Se resuelve con Prim: parto de un vertice cualquiera, v1, creo mi VT = {v1} y en cada paso selecciono la arista de menor costo entre las que tienen un extremo en VT y el otro en V \ VT .
+O con Kruskal: Ordeno las aristas de mas chica a mas grande. Tomo en cada paso la siguiente arista que no forme un ciclo en mi grafo. Freno cuando tomé n-1 aristas -porque es un arbol-. En la practica: cada nodo arranca como su propio componente, y al unir un arista a mi arbol, pinto uno de los nodos del color del otro. Entonces ver que no formo ciclo == ver que ambos nodos del arista no estan en la misma componente -tienen distinto color-. Hermoso.
+Prim's Algorithm is faster for dense graphs.
