@@ -75,3 +75,17 @@ Sea G un bosque con c componentes conexas. Entonces *m = n − c*.
 Se resuelve con Prim: parto de un vertice cualquiera, v1, creo mi VT = {v1} y en cada paso selecciono la arista de menor costo entre las que tienen un extremo en VT y el otro en V \ VT .
 O con Kruskal: Ordeno las aristas de mas chica a mas grande. Tomo en cada paso la siguiente arista que no forme un ciclo en mi grafo. Freno cuando tomé n-1 aristas -porque es un arbol-. En la practica: cada nodo arranca como su propio componente, y al unir un arista a mi arbol, pinto uno de los nodos del color del otro. Entonces ver que no formo ciclo == ver que ambos nodos del arista no estan en la misma componente -tienen distinto color-. Hermoso.
 Prim's Algorithm is faster for dense graphs.
+
+---
+## Camino mínimo
+Lo resolvemos para digrafos porque un grafo es un caso particular.
+
+### 1 to many:
+- **Todos los edges misma distancia** : Usamos el algoritmo para shortest path (BFS)
+- **No hay edges negativos** : Algoritmo de Dijkstra (Prim with extra steps). Por cada vertice, va definiendo un dicc con la distancia al origen. Lo actualiza si encuentra una forma de llegar mas corta. El dicc puede hacerse con array (donde buscar el minimo lleva O(n) ) o con min-heap (donde toma m log(n), pero las lookups del heap son n log (n)). O(m log(n) ) es mejor que O(n^2) -implementación "naive" de array-, solo si m ~ O(n). Si m ~ O(n^2) (grafo denso) es mucho peor.
+
+### many to many:
+- **Floyd's Algorithm** : Funciona con pesos negativos pero **no si hay ciclos negativos**. Es cúbico en n. Usa una matriz de distancias que arranca inicializada con los pesos de los edges, y se va actualizando, en cada una de las k iteraciones con "caminos que tengan solo como intermediarios a los primeros k nodos".
+
+
+
