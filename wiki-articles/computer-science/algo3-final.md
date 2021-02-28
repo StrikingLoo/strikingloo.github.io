@@ -87,5 +87,52 @@ Lo resolvemos para digrafos porque un grafo es un caso particular.
 ### many to many:
 - **Floyd's Algorithm** : Funciona con pesos negativos pero **no si hay ciclos negativos**. Es cúbico en n. Usa una matriz de distancias que arranca inicializada con los pesos de los edges, y se va actualizando, en cada una de las k iteraciones con "caminos que tengan solo como intermediarios a los primeros k nodos".
 
+## Grafos Hamiltonianos y Eulerianos.
+Existen algoritmos polinomiales para saber si un grafo dado tiene un circuito euleriano, no uno hamiltoniano.
+
+**Circuito euleriano**: pasa por **todos las aristas** de G una y sólo una vez. Un **Grafo Euleriano** tiene un ciclo euleriano.
+
+Equivalencias:
+- G es Euleriano.
+- Todos los vértices tienen grado par.
+- Las aristas de G pueden ser particionadas en ciclos simples.
+
+Para **construir** el ciclo: aprovechamos que cada vertice tiene cantidad par de aristas. Partimos de uno cualquiera y avanzamos vertice por vertice. Siempre que entramos a uno podemos salir, pues cantidad par de aristas. Cuando volvemos al vertice inicial, entonces tenemos un ciclo. Si quedan aristas sin explorar en el grafo, repetimos partiendo por cualquier arista que tenga una punta en el ciclo que acabamos de descubrir, y obtenemos otro ciclo. Eventualmente formamos n ciclos que particionan a G, y la intercalación de estos es un ciclo (no simple) que pasa una vez por arista.
+
+Un digrafo conexo es euleriano si, y sólo si, para todo nodo v de G se verfica que din(v) = dout(v).
+
+**Circuito hamiltoniano** : pasa por **cada nodo** de G una y solo una vez. Si G tiene un ciclo Hamiltoniano, decimos que es un grafo Hamiltoniano.
+El problema es NP-Hard no resuelto, y no tiene una buena caracterizacion.
+
+Sea G un grafo conexo. Si existe W ⊂ V tal que G \\ W tiene c componentes conexas con c > \|W\| entonces G no es hamiltoniano.
+
+**teorema de Dirac** : Sea G un grafo conexo tq n >= 3. Si para todo v en V, d(v) >= n/2, entonces **G Hamiltoniano**.
+La inversa no es necesariamente cierta. (Ver C_k!)
+
+**Condicion de Clausura** : Por cada par de vértices no adyacentes u y w, unirlos con una arista si d(u)+d(w) >= n. Repetir hasta convergencia. Si el resultado es hamiltoniano, el grafo inicial también lo es. Notar que todo grafo completo es hamiltoniano.
+
+## Heuristicas y Metaheuristicas
+Problema de Optimización: Determinar una solución factible (satisface toda restriccion) que minimice (o maximice) el objetivo.
+
+Decimos que A es un algoritmo  – aproximado, con  ∈ R>0, si para toda instancia se cumple:
+|f (x^A) − f (x∗)| ≤ |f (x∗)|
+
+Por su facilidad de diseño e implementación, es muy frecuente utilizar procedimientos golosos. Si bien no aseguran que nos brinden una solución óptima (y en general no lo hacen), retornan soluciones de calidad aceptables en compensación por el esfuerzo computacional que requieren.
+
+Para TSP muchas heurísticas existen que dan resultados ok pero tienen casos patologicos: hacer un kruskal -quedarse cada vez con el edge mas chico factible-, agregar el eje mas pequeño posible cada vez -greedy-, o armar un MST del grafo y recorrerlo para conseguir un camino Hamiltoniano. Esta ultima es 1-aproximada si el grafo cumple la desigualdad triangular -es euclideano-. 
+
+Podemos ademas definir "vecindades" para nuestras soluciones: formas de generar soluciones cercanas en el espacio de soluciones, factibles, que podemos comparar para ver si hay ganancia tomandolas. Un ejemplo es k-opt: tomo k nodos y sus sucesores, y roto los ejes seleccionados. E.g., remuevo (i, i+1) y (j, j+1) y agrego (j, i+1), (i, j+1), formando 2-opt. Esto es cuadratico-ish. Definitivamente polinomico.
+
+Esto nos da la noción de óptimo local: una solución que no tiene vecinos mejores. 
+
+**Búsqueda Local** : buscar un optimo local haciendo un gradient descent discreto: hago alguna permutación hacia otra solución de la vecindad que mejore mi solución candidata, repetidas veces hasta que no pueda mejorarla mas con esta permutacion. E.g.: arranco con un ciclo feo para TSP y voy haciendo 2-opt greedily hasta llegar a la mejor posible. Podes buscar el optimo local de la vecindad cada vez, o solo ir siempre en direcciones que mejoren.
+
+## Metaheuristicas
+Buscan mejorar la busqueda local tradicional para no quedar varados en minimos locales. Pueden ser mas o menos simples, y usar memoria en vez de solo mirar vecinos.
+
+**Busqueda Tabú** : Memoriza T soluciones visitadas, y las elimina de las opciones V\* en N(s) para explorar.  Clasifica como tabú ciertos atributos de las soluciones (e.g., alguna arista en un TSP).
+Se detiene el algoritmo por criterios de parada: cantidad de iteraciones, falta de soluciones mejores, solucion optima global hallada (si se sabe por teoria). 
+
+Solemos usar metaheuristicas para resolver problemas NP-Hard, por falta de algoritmos exactos que los resuelvan en tiempo polinomico. 
 
 
