@@ -135,4 +135,61 @@ Se detiene el algoritmo por criterios de parada: cantidad de iteraciones, falta 
 
 Solemos usar metaheuristicas para resolver problemas NP-Hard, por falta de algoritmos exactos que los resuelvan en tiempo polinomico. 
 
+## Planaridad
+Un grafo es planar si puedo representarlo en el plano sin que sus aristas se superpongan. 
+Determinar planaridad es polinomial: basta ver que el grafo no contiene a k3,3 ni a k5 (minima cantidad de aristas o vertices para no-planaridad, respectivamente).
 
+Una cota util:
+Si G es conexo y planar con n ≥ 3, entonces m ≤ 3n − 6.
+
+## Coloreo
+Dado un grafo, puedo pintar sus aristas de colores tq no haya dos vecinos del mismo color?
+Problema NP-Hard! :D 
+Tenemos cotas:
+- Chi(Kn) = n
+- G bipartito, Chi(G) = 2 (salvo que sea m=0)
+- H_2k ciclo de n par, Chi(H_2k) = 2
+- h_2k+1, Chi = 3
+- T arbol, Chi(T) = 2
+
+Ademas tenemos un monton de cotas copadas:
+> Sea w(G) el tamaño de su máxima clique. Esta es una cota inferior de chi. Osea w(G) <= chi(G).
+Pero, sorpresa, esta cota no es ajustada! 
+
+**Grafos de Mycielsky**: su clique mas grande siempre es k2, pero su chi es arbitrariamente grande! Forman una sucesion tq chi(Mi) = i.
+
+Mas cotas:
+> Chi(G) <= D(G) + 1 tq D(G) es su máximo degree. Si G no es ciclo impar o completo, entonces Chi(G) <= D(G)
+
+Esta cota tampoco es ajustada: ver K1,k
+
+> G un grafo planar => Chi(G) <= 4
+
+Este problema es NP-Hard! No hay solucion polinomica, se usan heuristicas, programacion lineal entera o backtracking.
+
+**Heurística secuencial** : A cada nodo le asigno el minimo color "posible". Recorro los nodos en orden. El resultado es subóptimo pero válido.
+S -> LF -> SL -> SI -flippear colores de cada componente filtrando por dos colores- (con SL). Cada una gana cotas mas ajustadas que la anterior, pero todas tienen casos patologicos.
+SI+SL colorea siempre un planar con <=5, y un bipartito con 2.
+**Coloreo de Aristas** : Denominado Chi'(G), es pintar aristas tq dos aristas con un vértice en común no coincidan. Chi'(G) = D(G) + d tq d en {0,1}
+
+## Matching y cubrimientos
+- **Matching máximo** : Hallar maximo conjunto de edges tq no dos edges incidan en un mismo vertice.
+- **Conjunto independiente máximo**: Hallar máximo conjunto de vércitces no adyacentes entre si de a pares.
+- **Recubrimiento de aristas mínimo**: Mínimo conjunto de vértices que sean incidentes en toda arista.
+- **Recubrimiento de vértices mínimo**: Misma idea para el otro lado.
+
+Matching máximo es polinómico. Conjunto independiente máximo es NP-Hard.
+S es un conjunto independiente <-> V \\ S es un cubrimiento de aristas.
+
+Interesante: Cada conjunto de vertices pintados de un **mismo color** en un coloreo de G, es un **conjunto independiente**. Evidentemente el color de mayor cardinal no necesariamente sea el conjunto independiente maximal del grafo, sin embargo.(pensar en hojas).
+Esto ultimo nos da un algoritmo greedy de coloreo muy simple (y obviamente suboptimo): tomar un nodo no pintado, extender su conjunto independiente maximal (mirando cada vez el nodo de menor grado de adyacentes entre candidatos), pintarlo de un color, repetir hasta convergencia. 
+
+### Cartero chino
+El problema del cartero chino consiste en encontrar un **circuito** que pase por todas las aristas, minimizando el peso. Si hay un ciclo euleriano ganamos, pero sino hay que repasar una misma arista al menos dos veces. Cómo elegimos?
+
+- Tomamos todos los nodos de degree impar. Los llamamos S.
+- Por cada vi, vj en S, hallamos d(vi, vj), la longitud de su camino mínimo.
+- Armamos Ks su grafo completo con distancias d(vi, vj) como pesos.
+- Hallamos matching de peso minimo de este grafo (esto es polinomico, cubico, pero no vimos como hacerlo).
+- Construimos el multigrafo G\* duplicando en G las aristas que conforman un camino mínimo entre vi y vj. G\* es euleriano.
+- Hallamos el ciclo euleriano en G\*, y ahora es minimo.
