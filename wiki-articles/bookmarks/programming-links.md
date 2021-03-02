@@ -25,3 +25,9 @@ grid-template: auto 1fr auto / auto 1fr auto
 
 <https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md>
 
+---
+### Skill tree React component
+
+<https://github.com/andrico1234/beautiful-skill-tree#examples>
+
+<https://github.com/352Media/skilltree/blob/master/demos/dungeons-and-developers/default.htm>
