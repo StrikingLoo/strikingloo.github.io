@@ -193,3 +193,63 @@ El problema del cartero chino consiste en encontrar un **circuito** que pase por
 - Hallamos matching de peso minimo de este grafo (esto es polinomico, cubico, pero no vimos como hacerlo).
 - Construimos el multigrafo G\* duplicando en G las aristas que conforman un camino mínimo entre vi y vj. G\* es euleriano.
 - Hallamos el ciclo euleriano en G\*, y ahora es minimo.
+
+## Flujo en Redes
+Una red es un digrafo conexo con dos vértices distinguidos: **fuente** y **sumidero** (_s_ y _t_), con grado de salida o entrada positivo, respectivamente.
+Una función de capacidades asigna pesos reales no-negativos a cada eje.
+**Problema de flujo máximo** : Enviar el máximo flujo posible de _s_ a _t_ restringido a las capacidades de los ejes.
+**Problema de flujo de costo mínimo** : Enviar un flujo fijo de _s_ a _t_ minimizando el costo, si cada eje tiene un costo por punto de flujo y una capacidad que lo restringe.
+
+**Flujo factible** : Una funcion de flujo _f_ es factible si:
+- 0 <= f(e) <= c(e) para función de capacidades c, para todo eje e.
+- El flujo se conserva. i.e., sum(f(e)) for e in in(v) == sum(f(e)) for e in out(v) forall v.
+
+Si se cumple, el valor del flujo es todo el flujo entrando a _t_, menos el que sale de _t_. Equivalente a todo el que sale de _s_.
+
+Dado un corte cualquiera S tq S+T = V, tq s \in S, t \in T:
+El flujo *F* en una red es siempre igual a la suma de los flujos a traves de ST = {(u,v) \in X tq u \in S, v \in T}.
+Si _S'_ es el complemento de S, entonces la suma de flujos de ejes de SS' menos la suma de los de S'S, te da el flujo.
+
+La **capacidad de un corte S** es la suma de las capacidades de los ejes de SS'.
+El **problema de corte minimo** es encontrar un corte que minimice la capacidad.
+
+Puede verse que para todo corte, F <= c(S). Luego si F == c(S) para algun corte S, entonces S es un corte mínimo, y F un flujo máximo. 
+
+**Grafo residual**: Lo formamos creando un grafo con los mismos nodos que N, pero asignando entre cada par de nodos: 
+- Un eje "positivo" de u a w si (u,w) in X, y faltaba empujar k de peso entre u y w. El eje positivo pesa k.
+- Un eje "negativo" de w a u si (u,w) in X, que vale tanto como empujamos de u a w.
+
+**Camino de aumento** : Un camino orientado de _s_ a _t_ en el grafo residual.
+Para hallarlo: partimos de s en el grafo residual, y vamos haciendo bfs en ningun orden. Si hallamos t, hacemos anterior hasta s y tenemos nuestro camino de aumento. Si no hallamos t y nos quedamos sin ejes para aumentar, tenemos nuestro corte minimo!
+
+Una vez que tenemos P un camino de aumento, hacemos dos cosas:
+- Hallamos el valor D = mínima capacidad sin uso en P. Si el eje en P va en direccion contraria, es f(e) en su lugar.
+- Por cada eje en P, si va de s a t, sumamos D flujo, si va al reves le restamos D.
+
+Finalmente, **Ford & Fulkerson's Algorithm** : Inicializamos la red con todos los ejes en 0 flujo. Hallamos un camino de aumento. Lo aumentamos. Repetimos hasta no hallar camino de flujo. Encontramos un corte minimo! Esto es equivalente a un flujo máximo. 
+Complejidad: O(mU) Donde U es el maximo flujo posible.
+Existe Edmond-Karp que es O(nm^2) y termina para irracionales.
+
+## Complejidad 
+Dado un problema de optimización, puede tratarse de:
+- Optimización: Hallar la solución óptima.
+- Evaluación: Hallar el valor de la solución óptima.
+- Localización: Hallar una solución de valor a lo sumo _k_ para algún _k_.
+- Decisión: Decidir si existe solución que valga a lo sumo _k_, para algún _k_.
+
+Solemos estudiar problemas de decisión, porque si los resolvemos en forma eficiente, podemos resolver todos los otros de forma eficiente también. 
+
+Un problema es polinomial si una MTD puede resolverlo en tiempo polinomial (osea polinomial cantidad de movimientos de cabeza para input de tamaño n).
+ 
+Una MTND es una MT que para un mismo estado, simbolo puede ir a mas de un estado, simbolo, movimiento de cabeza. (qf, tf, {+1,-1}). 
+Si la MTND llega a un estado con mas de un mappeo, toma todos juntos. Otra forma de verlo, equivalente aunque menos intuitiva, es que siempre elige la correcta. En este caso, la complejidad es la longitud de la primera rama en llegar a una solucion.
+Si una MTND encuentra la solución en tiempo polinomial, el problema es NP.
+
+Equivalentemente, podemos dar una solucion y debe ser verificable en tiempo polinomial (la maquina toma la decisión correcta cada vez)
+
+NP <= NP-Complete <= NP-Hard. Existen problemas NP-hard no NP. e.g., cualquiera exponencial.
+NP-Hard: Al menos tan dificil como todo problema en NP.
+NP-Complete: NP-Hard and also NP.
+Co-NP: Dada una instancia negativa y un NO, podemos verificarlo en tiempo polinomial. No esta demostrado que Co-NP == NP.
+
+Llamamos **restricción** de un problema a una versión con un **dominio acotado**. Esto puede achicar la complejidad (e.g., clique en planares vs clique en el caso general).
