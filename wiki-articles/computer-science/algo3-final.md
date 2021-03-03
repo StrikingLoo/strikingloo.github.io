@@ -82,6 +82,7 @@ O con **Kruskal**: Ordeno las aristas de mas chica a mas grande. Tomo en cada pa
 Prim's Algorithm is faster for dense graphs. O(n^2) vs O(m log n).
 
 ---
+
 ## Camino mínimo
 Lo resolvemos para digrafos porque un grafo es un caso particular.
 
