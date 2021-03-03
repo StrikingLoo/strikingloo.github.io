@@ -31,9 +31,11 @@ operacion elemental (O(1)) : no depende del tamaño del input, solo de la implem
 Simplificamos asumiendo que toda operación elemental puede ser ejecutada en una unidad de tiempo. Interesa cómo crece el tiempo de ejecución de un algoritmo cuando el tamaño de las instancias de entrada crece. No interesa el tiempo exacto requerido por cada una de ellas.
 
 **Modelo uniforme** : Cada operación básica tiene un tiempo de ejecución constante.
+
 **Modelo logarítmico**: El tiempo de ejecución de cada operación es función del tamaño (cantidad de bits) de los operandos.
 
 ## Big O notation
+
 Sii f es O(g), lim n->inf de f/g = c tq c > 0.
 
 ## Técnicas de diseño de algoritmos
@@ -72,8 +74,11 @@ Son equivalentes:
 Sea G un bosque con c componentes conexas. Entonces *m = n − c*.
 
 **Arbol generador minimo**: Hallar el conjunto de aristas que arman un arbol generador del grafo G que minimizan la suma de los pesos.
-Se resuelve con Prim: parto de un vertice cualquiera, v1, creo mi VT = {v1} y en cada paso selecciono la arista de menor costo entre las que tienen un extremo en VT y el otro en V \ VT .
+
+Se resuelve con **Prim**: parto de un vertice cualquiera, v1, creo mi VT = {v1} y en cada paso selecciono la arista de menor costo entre las que tienen un extremo en VT y el otro en V \ VT .
+
 O con Kruskal: Ordeno las aristas de mas chica a mas grande. Tomo en cada paso la siguiente arista que no forme un ciclo en mi grafo. Freno cuando tomé n-1 aristas -porque es un arbol-. En la practica: cada nodo arranca como su propio componente, y al unir un arista a mi arbol, pinto uno de los nodos del color del otro. Entonces ver que no formo ciclo == ver que ambos nodos del arista no estan en la misma componente -tienen distinto color-. Hermoso.
+
 Prim's Algorithm is faster for dense graphs.
 
 ---
