@@ -108,7 +108,7 @@ Equivalencias:
 
 Para **construir** el ciclo: aprovechamos que cada vertice tiene cantidad par de aristas. Partimos de uno cualquiera y avanzamos vertice por vertice. Siempre que entramos a uno podemos salir, pues cantidad par de aristas. Cuando volvemos al vertice inicial, entonces tenemos un ciclo. Si quedan aristas sin explorar en el grafo, repetimos partiendo por cualquier arista que tenga una punta en el ciclo que acabamos de descubrir, y obtenemos otro ciclo. Eventualmente formamos n ciclos que particionan a G, y la intercalación de estos es un ciclo (no simple) que pasa una vez por arista.
 
-Un digrafo conexo es euleriano si, y sólo si, para todo nodo v de G se verfica que din(v) = dout(v).
+Un digrafo conexo es euleriano si, y sólo si, para todo nodo v de G se verifica que din(v) = dout(v).
 
 **Circuito hamiltoniano** : pasa por **cada nodo** de G una y solo una vez. Si G tiene un ciclo Hamiltoniano, decimos que es un grafo Hamiltoniano.
 El problema es NP-Hard no resuelto, y no tiene una buena caracterizacion.
@@ -123,8 +123,9 @@ La inversa no es necesariamente cierta. (Ver C_k!)
 ## Heuristicas y Metaheuristicas
 Problema de Optimización: Determinar una solución factible (satisface toda restriccion) que minimice (o maximice) el objetivo.
 
-Decimos que A es un algoritmo  – aproximado, con  ∈ R>0, si para toda instancia se cumple:
-|f (x^A) − f (x∗)| ≤ |f (x∗)|
+Decimos que A es un algoritmo ϵ – aproximado, con ϵ ∈ R>0, si para toda instancia se cumple:
+
+**|f (x^A) − f (x∗)| ≤ ϵ|f (x∗)|**
 
 Por su facilidad de diseño e implementación, es muy frecuente utilizar procedimientos golosos. Si bien no aseguran que nos brinden una solución óptima (y en general no lo hacen), retornan soluciones de calidad aceptables en compensación por el esfuerzo computacional que requieren.
 
@@ -193,7 +194,8 @@ S es un conjunto independiente <-> V \\ S es un cubrimiento de aristas.
 Interesante: Cada conjunto de vertices pintados de un **mismo color** en un coloreo de G, es un **conjunto independiente**. Evidentemente el color de mayor cardinal no necesariamente sea el conjunto independiente maximal del grafo, sin embargo.(pensar en hojas).
 Esto ultimo nos da un algoritmo greedy de coloreo muy simple (y obviamente suboptimo): tomar un nodo no pintado, extender su conjunto independiente maximal (mirando cada vez el nodo de menor grado de adyacentes entre candidatos), pintarlo de un color, repetir hasta convergencia. 
 
-### Cartero chino
+### Cartero chino
+
 El problema del cartero chino consiste en encontrar un **circuito** que pase por todas las aristas, minimizando el peso. Si hay un ciclo euleriano ganamos, pero sino hay que repasar una misma arista al menos dos veces. Cómo elegimos?
 
 - Tomamos todos los nodos de degree impar. Los llamamos S.
