@@ -209,7 +209,9 @@ El problema del cartero chino consiste en encontrar un **circuito** que pase por
 
 Una red es un digrafo conexo con dos vértices distinguidos: **fuente** y **sumidero** (_s_ y _t_), con grado de salida o entrada positivo, respectivamente.
 Una función de capacidades asigna pesos reales no-negativos a cada eje.
+
 **Problema de flujo máximo** : Enviar el máximo flujo posible de _s_ a _t_ restringido a las capacidades de los ejes.
+
 **Problema de flujo de costo mínimo** : Enviar un flujo fijo de _s_ a _t_ minimizando el costo, si cada eje tiene un costo por punto de flujo y una capacidad que lo restringe.
 
 **Flujo factible** : Una funcion de flujo _f_ es factible si:
@@ -235,8 +237,8 @@ Puede verse que para todo corte, F <= c(S). Luego si F == c(S) para algun corte 
 Para hallarlo: partimos de s en el grafo residual, y vamos haciendo bfs en ningun orden. Si hallamos t, hacemos anterior hasta s y tenemos nuestro camino de aumento. Si no hallamos t y nos quedamos sin ejes para aumentar, tenemos nuestro corte minimo!
 
 Una vez que tenemos P un camino de aumento, hacemos dos cosas:
-- Hallamos el valor D = mínima capacidad sin uso en P. Si el eje en P va en direccion contraria, es f(e) en su lugar.
-- Por cada eje en P, si va de s a t, sumamos D flujo, si va al reves le restamos D.
+- Hallamos el valor D. Para esto definimos D(v-\>w) = c((v-\>w)) - f((v-\>w)) si (v-\>w) en X, o f((w-\>v)) si no, por cada eje en P. D es el mínimo valor de Di. Si el eje en P va en direccion contraria, es f(e) en su lugar.
+- Por cada eje en P, si está al derecho en el X, sumamos D flujo, si va al reves le restamos D.
 
 Finalmente, **Ford & Fulkerson's Algorithm** : Inicializamos la red con todos los ejes en 0 flujo. Hallamos un camino de aumento. Lo aumentamos. Repetimos hasta no hallar camino de flujo. Encontramos un corte minimo! Esto es equivalente a un flujo máximo. 
 Complejidad: O(mU) Donde U es el maximo flujo posible.
