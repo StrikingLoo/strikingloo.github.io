@@ -205,7 +205,8 @@ El problema del cartero chino consiste en encontrar un **circuito** que pase por
 - Construimos el multigrafo G\* duplicando en G las aristas que conforman un camino mínimo entre vi y vj. G\* es euleriano.
 - Hallamos el ciclo euleriano en G\*, y ahora es minimo.
 
-## Flujo en Redes
+## Flujo en Redes
+
 Una red es un digrafo conexo con dos vértices distinguidos: **fuente** y **sumidero** (_s_ y _t_), con grado de salida o entrada positivo, respectivamente.
 Una función de capacidades asigna pesos reales no-negativos a cada eje.
 **Problema de flujo máximo** : Enviar el máximo flujo posible de _s_ a _t_ restringido a las capacidades de los ejes.
