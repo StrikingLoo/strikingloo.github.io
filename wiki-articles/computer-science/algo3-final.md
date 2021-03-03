@@ -94,7 +94,8 @@ Lo resolvemos para digrafos porque un grafo es un caso particular.
 ### many to many:
 - **Floyd's Algorithm** : Funciona con pesos negativos pero **no si hay ciclos negativos**. Es cúbico en n. Usa una matriz de distancias que arranca inicializada con los pesos de los edges, y se va actualizando, en cada una de las k iteraciones con "caminos que tengan solo como intermediarios a los primeros k nodos".
 
-## Grafos Hamiltonianos y Eulerianos
+
+## Grafos Hamiltonianos y Eulerianos
 
 Existen algoritmos polinomiales para saber si un grafo dado tiene un circuito euleriano, no uno hamiltoniano.
 
