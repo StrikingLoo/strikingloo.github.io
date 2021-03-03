@@ -84,6 +84,7 @@ Prim's Algorithm is faster for dense graphs. O(n^2) vs O(m log n).
 ---
 
 ## Camino mínimo
+
 Lo resolvemos para digrafos porque un grafo es un caso particular.
 
 ### 1 to many:
