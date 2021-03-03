@@ -77,9 +77,9 @@ Sea G un bosque con c componentes conexas. Entonces *m = n − c*.
 
 Se resuelve con **Prim**: parto de un vertice cualquiera, v1, creo mi VT = {v1} y en cada paso selecciono la arista de menor costo entre las que tienen un extremo en VT y el otro en V \ VT .
 
-O con Kruskal: Ordeno las aristas de mas chica a mas grande. Tomo en cada paso la siguiente arista que no forme un ciclo en mi grafo. Freno cuando tomé n-1 aristas -porque es un arbol-. En la practica: cada nodo arranca como su propio componente, y al unir un arista a mi arbol, pinto uno de los nodos del color del otro. Entonces ver que no formo ciclo == ver que ambos nodos del arista no estan en la misma componente -tienen distinto color-. Hermoso.
+O con **Kruskal**: Ordeno las aristas de mas chica a mas grande. Tomo en cada paso la siguiente arista que no forme un ciclo en mi grafo. Freno cuando tomé n-1 aristas -porque es un arbol-. En la practica: cada nodo arranca como su propio componente, y al unir un arista a mi arbol, pinto uno de los nodos del color del otro. Entonces ver que no formo ciclo == ver que ambos nodos del arista no estan en la misma componente -tienen distinto color-. Hermoso.
 
-Prim's Algorithm is faster for dense graphs.
+Prim's Algorithm is faster for dense graphs. O(n^2) vs O(m log n).
 
 ---
 ## Camino mínimo
