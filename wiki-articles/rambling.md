@@ -39,3 +39,8 @@ A quick check in the wiktionary entry for *abeja* says:
 > From apis (“bee”) because of bees' perceived inclination towards the plant.
 
 Seems like my guess was correct! But now I have to wonder. What other things are embedded in ancient names, and how many are true knowledge like this one, and how many just lies? Man, I love etymology.
+
+---
+
+So 文句, 文字, 文明 all start with the same kanji, but it's read different every time. Namely, もんく、もじ、ぶんめい　 respectively. Seriously, nipponjin? That's today's rant.
+
