@@ -397,3 +397,6 @@ Final takeaway: NLG is the wild west of NLP, and there's a lot of new stuff to u
 
 8. Working in NLG can be very frustrating. But also very funny...
 
+---
+
+Back-translation : You train a reverse translator, and add to your dataset the pair (noisy input, nice target sentence). This is much more effective than generating a noisy target sentence and using it for training -because it may exacerbate error patterns or model biases-.
