@@ -400,3 +400,15 @@ Final takeaway: NLG is the wild west of NLP, and there's a lot of new stuff to u
 ---
 
 Back-translation : You train a reverse translator, and add to your dataset the pair (noisy input, nice target sentence). This is much more effective than generating a noisy target sentence and using it for training -because it may exacerbate error patterns or model biases-.
+
+XLNet: Try many different ablations of BERT using a huge amount of computing power. They beat SotA until GPT-3 came along, only barely beating BERT and Roberta -which is just BERT+more epochs and data, since they showed BERT was undertrained. 
+
+Part of the improvement seen on BERT comes from next-sentence prediction task, and part just comes from being bidirectional. Next sentence is important for question answering, in the other tasks improvement seems to come mostly from bidirectionality.
+An interesting emerging effect is BERT beat SotA models in small datasets too, which violates common rules of thumb. 
+
+### Distillation 
+- Train a "teacher" which is just a SotA model
+- Label a large amount of unlabeled inputs with teacher on the specific task you want to distill
+- Train student with smaller (e.g., ~50x smaller) size and bigger dataset, on cross entropy
+
+Now you have a small trained model for your problem.
