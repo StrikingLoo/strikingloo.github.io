@@ -16,7 +16,9 @@ Just an awesome quote from the book:
 "Modern architecture suggests that keeping memory use down and maintaining coherent memory access are the keys to efficiency. This suggests using single precision data. However, avoiding numerical problems suggests using doubleprecision arithmetic. The tradeoffs depend on the program, but it is nice to have a default in your class definitions."
 
 > "I advocate doing all computations with floats until you find evidence that double precision is needed in a particular part of the code. —S.M."
+
 ---
+
 ### Debugging Computer Graphics Programs
 
 **The Scientific Method** : Try an image output, see what's wrong about it. Make a hypothesis as to the reason, change the program accordingly. Repeat until you find the error. According to the book "Typically only a few trials are needed to track things down, and this type of debugging is enjoyable."
