@@ -23,3 +23,36 @@ Just an awesome quote from the book:
 
 **Images as Coded Debugging Output**:  If you want to know the value of some variable for part of a computation that runs for every pixel, you can just modify your program temporarily to copy that value directly to the output image and skip the rest of the calculations that would normally be done. Like painting any pixel that leaves its legal range a bright (255,0,0).
 
+---
+## Raster vs Vectorial
+
+**Raster**: We represent an image as a matrix of pixels.
+
+**Vectorial**: We represent the image as a set of geommetric shapes. They are described in HTML or any static language. They are mostly used for simple images, as complex images with shading and such would be hard to represent in a non-rasterized format, and since most displays use a rasterized format, vectorized images necessarily go through a conversion before display.
+
+### Color Representations
+
+RGB is the classic format. 
+
+### Pixel Storage Order
+
+- Sequential -most common one-
+- Separate Channels -save all R values, then all G, then all B.
+- Z-format -swizzling-: super fun! Make a Z: first four pixels. Then a Z to the right, then down, then diag. Repeat recursively until you cover all of the image.
+
+### Image formats
+Few colors: Better use .png or .bmp
+Many colors, or real pictures from a camera: Better use JPEG. It compresses with loss, but it's not very noticeable.
+
+formats:
+- .bmp and .ppc: compressionless
+- .png: has a color dictionary optionally for compression, and has lossless compression
+- .jpg and gif: have a very aggressive compressive algorithm, you can choose how much to compress and it uses 8-bits per pixel. 
+
+Error Dithering: uses one of a list of colors for each pixel upon compression, but also takes neighbors into account, and maintains an "average intensity" for each grid of 9.
+
+### Alpha Compositing
+
+Consists of superposing to images, keeping a piece of each as per opacity values.
+
+![](image/alpha-compositing.jpg)
