@@ -7,7 +7,6 @@ description: "Notas para el final de Bases de Datos. Basadas en las diapos teori
 ---
 
 ### Independencia de Datos
- .
 **Independencia lógica**: la capacidad del sistema de cambiar el esquema conceptual, sin cambiar la vista lógica que el usuario tiene de los datos.
 
 ### MER -Modelo Entidad Relacion
