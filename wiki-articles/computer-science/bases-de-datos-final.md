@@ -7,7 +7,7 @@ description: "Notas para el final de Bases de Datos. Basadas en las diapos teori
 ---
 
 ### Independencia de Datos
-
+ .
 **Independencia lógica**: la capacidad del sistema de cambiar el esquema conceptual, sin cambiar la vista lógica que el usuario tiene de los datos.
 
 ### MER -Modelo Entidad Relacion
@@ -66,6 +66,7 @@ Anomalías de Actualización. Almacenar NATURAL JOINs introduce problemas adicio
 - Si tengo data redundante, mantener consistencia a mano es un pain, y actualizar en bulk es poco acertado.
 
 ### Dependencias funcionales
+
 Decimos a -> b si b depende de a - a define b-. Para un mismo valor de a, necesariamente b valdra lo mismo.
 
 ### FN basadas en PK
@@ -89,6 +90,7 @@ Otra forma de verlo: para todo DF A -> B se da que o bien A es CK o bien B es at
 **BCFN**: Para toda dependencia funcional *no trivial* X -> A de R, X es CK de R. **Surrogate keys all the way down**.
 
 ### Clausura de dependencias
+
 Para hallar la clausura de F un cjto de DFs, tengo las reglas **transitiva**, **reflexiva** y la de **incremento** (añadir a la derecha un mismo elemento en ambos lados de la ->).
 
 Para un subcjto X de atributos de R, puedo hallar todos los atributos que dependen funcionalmente de X (X+) si voy dependencia por dependencia y, para cada dependencia A -> B, X+=B si A \in X.
@@ -98,12 +100,13 @@ Para hallar clave de R:
 - Por cada atributo A en K: si (K - A)+ es R entonces K-= A.
 Al final tenemos una clave minimal.
 
-## Datos No-estructurados
+## Datos No-estructurados
 
 Datos estructurados: Tienen un formato estricto, una estructura predefinida y fija.
 Datos Semi-Estructurados: No tienen el mismo nivel de organización y predictibilidad que los datos estructurados. Los datos no residen en campos fijos o registros o tuplas, pero contienen elementos (marcas) que pueden separar los datos de manera jerárquica. Suelen representarse con JSON o XML y permiten modelar arboles de datos, etc. Punto medio entre estructurado -tablas de MR- y no-estructurado -un HTML pelado-. 
 
 ### XML
+
 Un formato parecido a HTML, pero extensible -los usuarios inventan sus propias tags-. Datos autodescriptivos -markup-, estructurados como árbol, con anidamiento, ademas de human-readable. 
 XML is slower than JSON, because it is designed for a lot more than just data interchange.
 **DTD**: Una forma de definir schemas en XML -decir cuales son los campos, etc.-.
@@ -124,10 +127,14 @@ Algunos problemas posibles son: Lost update, Temporary Update (Dirty Read), Inco
 Una transaccion puede ser committed o aborted. En el segundo caso todas sus operaciones deben revertirse. 
 
 ### ACID Properties
+ACID es un conjunto de propiedades de las bases de datos relacionales.
+
 - **Atomicity** : Transacción como unidad atómica. Las operaciones de una transacción se ejecutan en su totalidad o no se ejecuta ninguna.
 - **Consistency preservation**: Si la transaccion se ejecuta, mueve la base entre estados consistentes -segun reglas establecidas al definir cada entidad-.
 - **Isolation**: La ejecucion de una transacción no debe interferir en la de otra que se ejecute de manera concurrente. Cada transacción debe aparentar ser ejecutada como si lo hiciera en aislamiento.
 - **Durability**: Los cambios aplicados en la DB por una transaccion committeada, deben persistir en la BD. No pueden perderse por fallos.
+
+.
 
 ### Componentes del DBMS
 
@@ -143,6 +150,7 @@ Historia: orden en que se ejecuta un conjunto de transacciones. La unica restric
 Conflicto: si dos operaciones pertenecen a transacciones distintas, operan sobre un mismo item y al menos una de ellas es un write, tenemos conflicto.
 
 ### Tipos de conflictos
+
 - **Lost update** – dos transacciones intentan escribir el mismo item y el resultado de la primera se pierde porque se sobre escribe con el segundo antes de que se puedan grabar.
 - **Phantom Read** – La transacción reejecuta la misma query pero el conjunto de tuplas resultados son distintos. Notar que hay tuplas nuevas o viejas. Es un caso dentro de non-repeatable read.
 - **Dirty Read** – Una transacción lee un dato que NO ha sido committed.
@@ -204,6 +212,7 @@ No relacionales, open-source, distribuidas, escalan muy bien horizontalmente.
 - Son BASE en vez de ACID
 
 ### BASE
+
 Base significa que dan **Basic Availability** (availability as in CAP-theorem), **Soft state** (el estado va mutando aun sin intervención externa, debido a la consistencia eventual) y **Eventual consistency** (El sistema va a ser consistente a lo largo del tiempo, si no recibe inputs en el medio).
 Osea que, si el sistema se lo deja quieto, su estado va a ir mutando hacia una consistencia, que garantiza, y en todo momento va a devolver respuestas no-errores, aunque quizas no sean el dato mas reciente.
 
@@ -212,15 +221,18 @@ No hay garantia de consistencia como la de ACID, pero si a que eventualmente va 
 Partition tolerance: el sistema sigue andando aun si se cae un nodo.
 
 ### Key-Value Store
+
 Son la base que mas escala. Almacenan items como ciudadano de primer orden, en un sistema de pares key, value, donde un item puede ser de muchos tipos ricos -texto plano, XML, JSON, imagenes- y sin ningun schema. Pueden guardarse en "dominios" como semi-estructura.
 Puede tener redundancia y no tener integridad referencial. Escalan muy bien y funcionan bien con object-oriented design.
 Son buenos almacenando datos, pero si se quiere analizarlos conviene primero transferirlos a una base relacional u otro formato.
 Al no haber estructura, la integridad de datos queda como ejercicio para el programador.
 
 ### Document-oriented Databases
+
 Son menos libres que los kvs, pero a cambio tienen datos mas claros. Cada valor **debe** ser un XML o JSON -un documento-, pero pueden diferir en estructura y datos. Vuelve el concepto de metadata, y eso permite indexar algunos campos, u otras optimizaciones. 
 
 ### Column Family Databases
+
 Columnas de datos relacionados. Un grupo de columnas tiene una funcion similar a una tabla en una base relacional. Las "column families" son columnas que se acceden y almacenan juntas. Una column family es un par clave, valor, donde la clave es el nombre de la family, y el valor es el conjunto de columnas agrupadas. Pueden repetirse.
 Termina siendo como si una key mappeara a un json, en un kvs, pero con un poco mas de schema -los jsons tienen todos mas o menos los mismos campos- y con redundancia y particiones. 
 Escalan muy bien y soportan datos semi estructurados, con indices, pero no tienen consistencia inmediata ni datos relacionales.
@@ -253,9 +265,10 @@ Los filtros, los productos cartesianos/joins y la union e interseccion son todos
 
 
 ## Logging
+
 El DBMS necesita un modulo de recovery que administre situaciones de recuperacion de datos ante una falla.
 
-### Tipos de errores:
+### Tipos de errores
 
 - **Fallas en las transacciones:** Pueden ser **Errores Lógicos** (la transacción no se completa porque ocurre un error interno como romper una restriccion) o **Errores de estado interno** (el DBMS termina la transaccion por abort, deadlock, etc.).
 - **Fallas de Sistemas**: Fallas de SW (bugs en el DBMS), fallas de HW (crash recuperable de la computadora).
