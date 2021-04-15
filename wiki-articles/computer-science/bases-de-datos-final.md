@@ -323,3 +323,17 @@ Ante un restart: por cada entry del log, si x no se habia visto antes, se le asi
 **Repasar esto!!**
 
 **Checkpoints**: Un checkpoint agrega la entry \<checkpoint> y hace flush del log a disco. Escribe todos los datos dirty committeados sin persistir. Luego en un crash podemos ignorar toda transaccion committeada antes del  ultimo checkpoint. Decimos que un checkpoint es quiescente si bloquea las transacciones. 
+
+---
+
+## Long Duration Transactions
+
+Una LDT puede ser:
+- Transaccion que escribe/modifica **muchos registros** en el orden de millones+
+- Un **Workflow que conecta diferentes bases** e.g., por redes.
+
+Para ejecutar una SDT creamos una "saga" que es un grafo de acciones, donde cada una bloquea a la siguiente, asociada cada una a una "compensacion" que es su accion inversa. Si quiero revertir una saga ejecutada -un path del grafo- hago el path a la inversa ejecutando las compensaciones. 
+
+### In-memory databases
+
+Almaceno todo en memoria sin bajarlo a disco. Puedo tener o no persistencia. Si la tengo, es a traves de un transaction log, lo unico que escribo. Si quiero restaurar la base desde disco solo tengo que ejecutar el log de nuevo. Pueden ser por rows o columnares.
