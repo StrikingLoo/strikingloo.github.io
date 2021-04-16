@@ -337,3 +337,24 @@ Para ejecutar una SDT creamos una "saga" que es un grafo de acciones, donde cada
 ### In-memory databases
 
 Almaceno todo en memoria sin bajarlo a disco. Puedo tener o no persistencia. Si la tengo, es a traves de un transaction log, lo unico que escribo. Si quiero restaurar la base desde disco solo tengo que ejecutar el log de nuevo. Pueden ser por rows o columnares.
+
+### Distributed Databases
+
+Colecciones de bases de datos, distribuidas en una red de computadoras, potencialmente heterogenea.
+Nos empieza a importar el **costo de transferencia** de un conjunto de rows a la hora de optimizar operaciones.
+
+Se abstrae al usuario de muchas complejidades de la arquitectura de la base. I.e., transparencia de:
+- **Organizacion de los datos**: Tenemos transparencia de ubicacion y nombres: el usuario no sabe donde guardamos cada cosa.
+- **Fragmentacion**: Hay sharding horizontal -subdividir en rows- y vertical -por columnas-, y esto le es transparente al usuario.
+- **Replicacion**: redundancia para fault-tolerance.
+- **Otros**: tiene que ver con optimizaciones y ejecucion.
+
+Algunas propiedades deseables: Disponibilidad -uptime-, escalabilidad -horizontal o vertical-, partition tolerance, autonomia -de nodos individuales- 
+
+Datos y Software distribuídos en multiples lugares, pero conectados a través de una red de comunicaciones.
+**Grado de Homogeneidad** : Si todos los servers y usuarios utilizan el mismo software.
+
+## Integracion de datos
+
+Integracion de datos vs transferencia. En una tenes alguna interfaz transparente para hacer consultas que agrega datosde multiples fuentes (BDs distintas, web, no estructurados, etc.). En la otra transferis datos de una base a otra que son de una misma naturaleza y estructuras homomorficas. Podes usar mappeos de schemas, que se hacen a menudo con "Source target tuple generating dependencies": triggers que mappean un campo de una tabla a otro de la otra (so.scoring -> pay.payment\_id).
+
