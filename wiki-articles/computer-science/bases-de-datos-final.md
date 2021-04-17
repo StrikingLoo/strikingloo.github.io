@@ -320,7 +320,9 @@ Los algoritmos de recovery tienen dos partes: acciones que se ejecutan **mientra
 El DBMS tiene un cache manager que hace fetch y flush como esperarias, con bits de dirty y present.
 
 El Recovery Manager (RM) tiene una interfaz simple: writes que toman Ti, Ri y v/w -segun si redo o undo, guardar valor nuevo o viejo-, commit y abort, y un restart que recupera ante crash.
+
 El RM puede ser **Undo** -escribe a disco cada write, y los deshace si la transaccion aborta-, o **redo** -loggea cada cambio y, ante un commit, lo pasa al disco-.
+
 Todas las operaciones, commits y aborts se registran en el log, para luego poder restaurar. Se mantiene en memoria -log buffer- y cada tanto se persiste en un archivo. En cada commit, o en group commit policy -agrupa varios commits antes de flushear-.
 
 **Undo rule**: Si el disco tiene el ultimo valor committeado de X antes de reemplazarlo con uno nuevo, preservarlo en el log.
