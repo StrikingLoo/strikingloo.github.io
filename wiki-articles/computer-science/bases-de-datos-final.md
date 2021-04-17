@@ -131,7 +131,7 @@ Existe un actual query language para xml que estan estandarizando los de W3C: Xq
 
 ## Transacciones
 
-Una transacción es un conjunto de instrucciones que se ejecutan formando una unidad lógica de procesamiento. Una transaccion puede incluir uno o m´as accesos a la BD.
+Una transacción es un conjunto de instrucciones que se ejecutan formando una unidad lógica de procesamiento. Una transaccion puede incluir uno o más accesos a la BD.
 
 Son necesarias para sistemas multiusuario: la base es accedida por mas de un usuario en concurrencia. 
 
@@ -157,6 +157,7 @@ ACID es un conjunto de propiedades de las bases de datos relacionales.
 ### Componentes del DBMS
 
 Scheduler: controla el orden en el que se ejecutan las transacciones.
+
 Recovery Manager: es el encargado de asegurar la durabilidad y atomicidad de las transacciones.
 
 ### Scheduling de transacciones
@@ -201,11 +202,13 @@ Luego los tipos de historias son:
 Alivorte, ST: si la operacion de escritura de Ti precede a una operacion conflictiva de Tj otra transaccion, entonces el commit o abort de Ti tambien debe precederla. Es como tratar cada registro como un mutex, y los commit/abort son unlocks.
 
 ACA: Si una Ti va a realizar un read, tiene que esperar hasta que toda transaccion que escribe antes haga un commit.
+
 Recuperable: si Ti hace un read dirty, no puede committear hasta que la otra haya committeado.
 
 ### Control de concurrencia
 
 **Lock binario**: lockeo cada registro con un lock -un mutex- que bloquea tanto read como write. Hasta que no hay Ui(x) no puede haber otro Li(x). 
+
 **Lock multiple -compartido-**: puedo hacer un wLi(x) o un rLi(x). La primera evita reads y writes posteriores hasta el unlock, pero la segunda sigue permitiendo los reads. 
 
 **2PL**: Cada transaccion debe hacer su ultimo lock antes de su primer unlock. Si esto se cumple, el scheduler puede patear cada operacion que genere conflicto, y no liberarla hasta que el lock correspondiente se libera. 
@@ -213,8 +216,11 @@ Recuperable: si Ti hace un read dirty, no puede committear hasta que la otra hay
 Se llama two-phase porque hay una fase de "crecimiento" en la que las transacciones adquieren locks, y una de decrecimiento en la que los pierden. Puede generar deadlocks, pero se hace un wait-for graph y, si hay un ciclo implica deadlock.
 Pero 2PL garantiza seriabilidad! Aun si no previene deadlocks o rollbacks en cascada.
 
-**Timestamp-based**: Cada transaccion tiene una timestamp TS(Ti). Cuando leo, si el registro se escribio despues entonces me abortan.
-Cuando escribo, si el registro se leyó despues, me abortan. Si se escribio despues, pero no se leyo, pueden ignorarme -regla de Thomas- o no.
+Ademas, existe 2PL ST que es igual pero solo unlockea los de escritura luego de committear o abortar, y 2PL Riguroso que no libera ningun lock hasta no haber committeado.
+
+**Timestamp-based**: Cada transaccion tiene una timestamp TS(Ti). Cuando leo, si el registro se escribio despues entonces me abortan. Si se escribio antes, leo si ya esta committeado, sino espero. Cuando escribo, si el registro se leyó despues, me abortan. Si se escribio despues, pero no se leyo, pueden ignorarme -regla de Thomas- o no. En caso de leer, ademas espero hasta que se committeo la ultima transaccion en escribir. 
+
+Cuando una operacion es imposible, decimos que no es **físicamente realizable**.
 
 Esto asegura seriabilidad tambien.
 
