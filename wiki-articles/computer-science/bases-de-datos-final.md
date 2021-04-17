@@ -6,8 +6,11 @@ tags: bases de datos, DB, Databases, SQL, UBA, spanish, español, cs, algorithms
 description: "Notas para el final de Bases de Datos. Basadas en las diapos teoricas en el campus. In Spanish."
 ---
 
+**Independencia fisica**: Abstraccion entre los datos que ve el usuario, y su almacenamiento fisico -optimizaciones del DBMS etc-.
 
 **Independencia lógica**: la capacidad del sistema de cambiar el esquema conceptual, sin cambiar la vista lógica que el usuario tiene de los datos.
+
+**DML vs DDL**: DDL se usa para definir datos, e.g. CREATE, DROP, ALTER -agrega columnas-. DML se usa para manipular datos: no cambia el schema, solo cambia tuplas. DDL es horizontal, DML es vertical.
 
 ### MER -Modelo Entidad Relacion
 
