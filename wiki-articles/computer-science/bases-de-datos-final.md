@@ -25,9 +25,13 @@ Para diseñar:
 ## Algebra Relacional
 Lenguaje formal utilizado por el modelo relacional. Va de relaciones a relaciones haciendo operaciones -consultas-.
 Fundamento formal del modelo relacional. Permite optimizar queries. 
+
 Operaciones: 
+
 Unarias: Select, project, rename
+
 Binarias: Union, intersection, minus. Solo pueden hacerse entre entidades union compatibles: con mismos tipos en mismo orden.
+
 Joins: Producto cartesiano, join -inner, nunca joinnea nulls- , equijoin -inner con solo = como operacion-, natural join: inner join entre campos de mismo nombre y deja uno solo de cada duplicado. Si no tienen mismo nombre, hay que meter rename primero. Y los outer.
 
 Llamamos **selectividad del join** a la cardinalidad del join / la del producto de las cardinalidades de la tabla.
