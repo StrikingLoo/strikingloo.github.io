@@ -112,6 +112,14 @@ Para hallar clave de R:
 - Por cada atributo A en K: si (K - A)+ es R entonces K-= A.
 Al final tenemos una clave minimal.
 
+Para descomponer una entidad R en entidades FN3 SPI y SPDF:
+- Por cada dependencia X -> Y en un conjunto DF minimal, creo una entidad XY a menos que haya creado otra que contenga XY.
+- Si ninguna entidad contiene una clave de R, creo una entidad que tenga alguna clave de R como campos.
+
+Para descomponer en FNBC -SPI pero no SPDF-:
+- Por cada DF X -> Y en el conjunto, creo una entidad XY y remuevo sucesivamente Y de R.
+
+
 ## Datos No-estructurados
 
 Datos estructurados: Tienen un formato estricto, una estructura predefinida y fija.
@@ -372,4 +380,5 @@ Datos y Software distribuídos en multiples lugares, pero conectados a través d
 ## Integracion de datos
 
 Integracion de datos vs transferencia. En una tenes alguna interfaz transparente para hacer consultas que agrega datosde multiples fuentes (BDs distintas, web, no estructurados, etc.). En la otra transferis datos de una base a otra que son de una misma naturaleza y estructuras homomorficas. Podes usar mappeos de schemas, que se hacen a menudo con "Source target tuple generating dependencies": triggers que mappean un campo de una tabla a otro de la otra (so.scoring -> pay.payment\_id).
+
 
