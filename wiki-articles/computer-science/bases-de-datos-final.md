@@ -28,7 +28,7 @@ Fundamento formal del modelo relacional. Permite optimizar queries.
 
 Operaciones: 
 
-Unarias: Select, project, rename
+Unarias: Select, project, rename.
 
 Binarias: Union, intersection, minus. Solo pueden hacerse entre entidades union compatibles: con mismos tipos en mismo orden.
 
