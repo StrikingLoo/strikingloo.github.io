@@ -67,5 +67,8 @@ They take this form:
 
 ![](image/bezier.png)
 
+### Casteljau's Algorithm
+
 To evaluate what a curve's value is for a certain input t, we could evaluate it directly, or we can iteratively take the interpolation that's `t%` between every two points (in a convex hull's perimeter), this gives us n-1 points. We repeat again and again until keeping only one point, which is our desired value.
 
+This is called Casteljau's algorithm.
