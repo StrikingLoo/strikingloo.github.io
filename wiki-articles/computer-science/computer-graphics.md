@@ -58,3 +58,14 @@ Error Dithering: uses one of a list of colors for each pixel upon compression, b
 Consists of superposing to images, keeping a piece of each as per opacity values.
 
 ![](image/alpha-compositing.png)
+
+## Bezier Curves
+
+Bezier curves allow us to model curves in three dimensional or bidimensional space, and parameterize them with a single real number between 0 and 1 (or a bigger range for more ganularity).
+
+They take this form:
+
+![](image/bezier.png)
+
+To evaluate what a curve's value is for a certain input t, we could evaluate it directly, or we can iteratively take the interpolation that's `t%` between every two points (in a convex hull's perimeter), this gives us n-1 points. We repeat again and again until keeping only one point, which is our desired value.
+
