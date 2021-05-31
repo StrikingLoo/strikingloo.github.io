@@ -26,5 +26,26 @@ PRC: Una clase es PRC si es la clausura por composicion y recursion primitiva, d
 
 PR : Una funcion es **primitiva recursiva** sii pertenece a toda clase PRC. Esto es, la funcion es el resultado de finitos pasos de composicion y recursion primitiva, partiendo de funciones iniciales.
 
+**Minimizacion acotada:** Dado p un predicado en una clase PRC, la minimizacion acotada me da el minimo t tq p(t, X) si existe, o 0 si no.
+
+**Minimización no acotada**: Dado p un predicado, la minimización no acotada me da el mínimo t tq p(t, X) si existe, y n otermina si no.
+
+## Numero de Gödel
+El número de Gödel codifica una n-upla de naturales \<x1,...,xn> como productoria donde cada factor es el i-ésimo primo a la xi-ésima potencia.
+
+No es una codificación biyectiva, pero solo ignora 0s a la derecha así que si sabemos la dimensión no es un problema.
+
+## Lenguaje S
+
+Solo usa inc, dec y jnz. Usa X para inputs, Zi para auxiliares y devuelve siempre en Y (como rax).
+
+Llamamos descripcion instantanea a la tupla (i, s) donde s es el estado de todas las variables usadas, i la linea en la que estamos.
+
+i==n+1 -> programa termino. Para cada estado podemos calcular facil un estado "sucesor", y una sucesion de descripciones instantaneas desde un inicial a un terminal sucesores cada uno del anterior, se llama "cómputo".
+
+Podemos generar el cómputo de un programa P para inputs r1...rn. En particular si existe decimos que el programa termina. Sino, no (la secuencia es infinita).
+
+Funcion parcial f es S-parcial computable si existe un programa que se indefine donde la función se indefine, y vale lo mismo donde está definida.
+Si es parcial computable y total, entonces es computable.
 
 
