@@ -382,3 +382,4 @@ Datos y Software distribuídos en multiples lugares, pero conectados a través d
 Integracion de datos vs transferencia. En una tenes alguna interfaz transparente para hacer consultas que agrega datosde multiples fuentes (BDs distintas, web, no estructurados, etc.). En la otra transferis datos de una base a otra que son de una misma naturaleza y estructuras homomorficas. Podes usar mappeos de schemas, que se hacen a menudo con "Source target tuple generating dependencies": triggers que mappean un campo de una tabla a otro de la otra (so.scoring -> pay.payment\_id).
 
 
+
