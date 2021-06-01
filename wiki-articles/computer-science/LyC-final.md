@@ -59,5 +59,9 @@ Tenemos psi\_P(x) = resultado de ejecutar programa P con input X
 y fi(e, x) = correr programa de numero e con input X.
 fi es parcial computable: hacemos un interprete de S y o bien genera el output o bien se tilda si el programa mismo se tildaba.
 
-image/Screen Shot 2021-06-01 at 17.46.20.png
 ![](image/Screen Shot 2021-06-01 at 17.46.20.png)
+
+Definimos STP la funcion Step(x1...xn, e, t) que te dice si el programa e termina luego de t pasos o menos, con nput x1...xn.
+STP es P.R.
+SNAP es como STP pero SNAP(x1...xn, e, t) te da el estado del programa e en step t: [z1, ..., zn] y instruction id.
+
