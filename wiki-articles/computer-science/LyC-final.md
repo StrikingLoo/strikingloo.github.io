@@ -48,4 +48,16 @@ Podemos generar el cómputo de un programa P para inputs r1...rn. En particular 
 Funcion parcial f es S-parcial computable si existe un programa que se indefine donde la función se indefine, y vale lo mismo donde está definida.
 Si es parcial computable y total, entonces es computable.
 
+## Computabilidad
 
+Podemos mappear cada programa en S a un numero entero: 
+- Cada instruccion es [ a, \<b, c>] donde a es el numero de tag o 0 si no hay, b codifica 1 de 4 instrucciones y c el numero de variable.
+- Representamos la tupla de triplas (o pares de pares) usando numeros de Gödel.
+
+Hay mas funciones de N-\>N que programas (porque son mas que numeros en N) y no todas las funciones van a ser computables. E.g., halt (que te dice si un programa de numero e con input e termina).
+Tenemos psi\_P(x) = resultado de ejecutar programa P con input X
+y fi(e, x) = correr programa de numero e con input X.
+fi es parcial computable: hacemos un interprete de S y o bien genera el output o bien se tilda si el programa mismo se tildaba.
+
+image/Screen Shot 2021-06-01 at 17.46.20.png
+![](image/Screen Shot 2021-06-01 at 17.46.20.png)
