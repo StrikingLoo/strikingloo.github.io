@@ -44,3 +44,10 @@ Seems like my guess was correct! But now I have to wonder. What other things are
 
 So 文句, 文字, 文明 all start with the same kanji, but it's read different every time. Namely, もんく、もじ、ぶんめい　 respectively. Seriously, nipponjin? That's today's rant.
 
+---
+
+The word "bear" actually means "the brown one". The actual word for a bear is lost to history; nobody would say it because they truly believed that saying the real name would summon an actual bear. So all we have left is the non-magical euphemism.
+
+The same happens in Russian where they use medxxx which means "Those who love honey -med-".
+
+Bears were the first Lord Voldemort.

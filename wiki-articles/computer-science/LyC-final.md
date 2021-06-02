@@ -65,3 +65,56 @@ Definimos STP la funcion Step(x1...xn, e, t) que te dice si el programa e termin
 STP es P.R.
 SNAP es como STP pero SNAP(x1...xn, e, t) te da el estado del programa e en step t: [z1, ..., zn] y instruction id.
 
+### Teoremas de computabilidad
+
+Teorema del parametro: dado un programa con m+n inputs, podemos generar un nuevo programa equivalente a tener los primeros m parametros hardcodeados en ciertos valores, que solo toma los otros n.
+
+Teorema de la recursion: Para una funcion g que toma n+1 parametros, podemos siempre encontrar un numero e tq el e-esimo programa con los n parametros devuelve lo mismo que g(e,x1...xn) para todo x.
+
+## Conjuntos 
+Un conjunto se representa con una funcion A(x) = 1 if x in A else 0.
+
+Un conjunto puede ser computable, p.r., etc. Las operaciones union, interseccion y diferencia de conjuntos preservan la clase de PRC. 
+
+Hay conjuntos computables y no computables (segun si su funcion caracteristica lo es).
+
+Un conjunto es **computablemente enumerable** si hay una función parcial computable g tq g(x) termina sii x en A.
+Permiten algoritmos de semi-decisión. 
+Son un superset de los computables.
+
+Llamamos Co-c.e. a un conjunto si su complemento es c.e. Ser c.e. se preserva en union e interseccion (usando STEP).
+
+A es computable sii A y Ac son c.e. Izq a der es trivial por def, der a izq sale usando step en ambos: como ambos son c.e. y disjuntos, necesariamente uno de los dos termina.
+
+Wn es el dominio del n-esimo programa (x tq P(x) termina donde P es el n-esimo programa).
+Asi que podemos enumerar todos los c.e. (W1, W2... Wn).
+
+Llamamos K al conjunto de { n tq n in Wn }. Osea n tq el n-esimo programa con input n termina (sii HALT(n,n) ).
+K es c.e. pero no computable. 
+
+Si **A es c.e.**, existe f una funcion p.r. que puede **enumerar todos los elementos de A**. Usa step.
+
+Si f es parcial computable, A tq f termina es c.e.
+
+A es c.e. sii es la imagen de una funcion p.r., la de una funcion parcialmente computable, o la de una computable.
+
+## Teorema de Rice
+
+A es un conjunto de indices si hay una clase de funciones parciales computables C de N-\>N tq A = { x : fi|x in C }.
+
+**Teorema de Rice**: Si A es un conjunto de indices no vacio distinto de N, entonces A no es computable.
+
+##  Logica proposicional
+
+Usamos solo -> y ¬ para definir todas las formulas validas en FORM ( and y or se expresan con esos dos), para facilitar induccion estructural y evitar redundancia.
+
+Una valuacion v : PROP -> {0,1} le asigna un valor de verdad binario a cada proposicion (p, p', etc.).
+
+Decimos v|=F si v vuelve cierta a F. v|/=F si no. Podemos computar |= recursivamente. 
+
+Decimos F tautologia si v|=F para todo v. Podemos corroborarla a fuerza bruta probando los 2^n posibles v.
+
+Decimos F consecuencia semantica de Γ si Γ|=F i.e. si [de valer v|=P para todo P en Γ entonces necesariamente v|=F].
+
+Γ satisfasible sii existe v tq v|=P para todo P en Γ.
+ 
