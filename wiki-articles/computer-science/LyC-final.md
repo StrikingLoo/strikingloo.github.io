@@ -41,7 +41,7 @@ Solo usa inc, dec y jnz. Usa X para inputs, Zi para auxiliares y devuelve siempr
 
 Llamamos descripcion instantanea a la tupla (i, s) donde s es el estado de todas las variables usadas, i la linea en la que estamos.
 
-i==n+1 -> programa termino. Para cada estado podemos calcular facil un estado "sucesor", y una sucesion de descripciones instantaneas desde un inicial a un terminal sucesores cada uno del anterior, se llama "cómputo".
+i==n+1 => programa termino. Para cada estado podemos calcular facil un estado "sucesor", y una sucesion de descripciones instantaneas desde un inicial a un terminal sucesores cada uno del anterior, se llama "cómputo".
 
 Podemos generar el cómputo de un programa P para inputs r1...rn. En particular si existe decimos que el programa termina. Sino, no (la secuencia es infinita).
 
@@ -110,11 +110,66 @@ Usamos solo -> y ¬ para definir todas las formulas validas en FORM ( and y or s
 
 Una valuacion v : PROP -> {0,1} le asigna un valor de verdad binario a cada proposicion (p, p', etc.).
 
-Decimos v|=F si v vuelve cierta a F. v|/=F si no. Podemos computar |= recursivamente. 
+Decimos v|=F si v vuelve cierta a F. v |/= F si no. Podemos computar |= recursivamente. 
 
 Decimos F tautologia si v|=F para todo v. Podemos corroborarla a fuerza bruta probando los 2^n posibles v.
 
-Decimos F consecuencia semantica de Γ si Γ|=F i.e. si [de valer v|=P para todo P en Γ entonces necesariamente v|=F].
+Decimos F **consecuencia semántica de Γ** si Γ |= F i.e. si [de valer v|=P para todo P en Γ entonces necesariamente v|=F].
 
-Γ satisfasible sii existe v tq v|=P para todo P en Γ.
- 
+Γ **satisfacible** sii existe v tq v|=P para todo P en Γ.
+
+![](image/Screen Shot 2021-06-02 at 23.12.12.png)
+
+Una **demostración** de fi es cadena finita no vacía de fórmulas tq la n-esima es fi y fi\_k es axioma o consecuencia directa de dos fi\_i fi\_j tq i, j \< k.
+
+![](image/Screen Shot 2021-06-02 at 23.52.33.png)
+
+fi es **Consecuencia sintáctica** de Γ si Γ |- fi. i.e., si puedo hacer una demo de fi tq fi\_n=fi y fi\_k es :
+- Axioma
+- Consecuencia directa de dos fi\_i anteriores
+- Elemento de Γ 
+
+Llamamos a Γ *teoría*, fi_1...fi_n se llama *derivación de fi*, y Γ es una *teoría*.
+Si Γ |- fi entonces Γ |= fi. Osea si fi es consecuencia sintáctica de Γ , entonces también es consecuencia semántica. 
+
+Lo opuesto no es necesariamente cierto.
+
+Γ **consistente** : No existe fi tq Γ |- fi && Γ |- ¬fi.
+
+El conjunto de teoremas de SP es c.e., pues las fórmulas y las demos son numerables (símbolos son finitos) y ver si una fórmula es teorema o no es c.e. (i = 0; ver si demos(i) y i[|i|]=X. Si es devolver 1, else i++ jmp back) Luego pruebo cada i-ésima fórmula a ver si es o no teorema.
+
+Más adelante vimos que como |- ϕ sii |= ϕ, entonces el conjunto de teoremas es computable (enumerando a la fuerza).
+
+Esto aplica a cualquier sistema axiomático.
+
+SP además es **completo**. 
+
+**Teorema de la deducción**: `[ Γ U {ϕ} |- ψ ]` entonces `[ Γ |- ϕ -> ψ ]`
+
+**Proposiciones** : Γ U {¬ ϕ} inconsistente sii Γ |- ϕ. Análogo negando ϕ.
+
+**Maximal Consistente** : 
+
+Γ maximal consistente si 
+- Γ consistente
+- Para todo ϕ not in Γ, Existe ψ tq [ Γ U {ϕ} |- ψ ] Y [ Γ U {ϕ} |- ¬ψ ]
+
+**Lema de Lindenbaum** :
+Si Γ consistente, existe Γ' tq Γ contenido en Γ' y Γ' m.c.
+
+Γ m.c. entonces para toda formula o bien está en él o bien su negación lo está. 
+
+Entonces Γ |- ϕ sii ϕ in Γ.
+
+Γ consistente sii Γ satisfacible.
+
+**Teorema de completitud** : Γ |= ϕ entonces Γ |- ϕ. 
+
+**Teorema de compacidad** : si todo subconjunto finito de Γ es satisfacible, Γ es satisfacible.
+
+
+
+
+
+
+
