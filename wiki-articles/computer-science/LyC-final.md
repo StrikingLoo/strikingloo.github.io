@@ -171,6 +171,7 @@ Entonces Γ \|- ϕ sii ϕ in Γ.
 ## Lógica de Primer Orden
 
 Lenguaje de primer orden: 
+
 **Simbolos logicos y auxiliares** : Los mismos que en lógica proposicional + el cuantificador universal (el para-todo). 
 
 **Simbolos de un lenguaje particular** : L = C U F U P tq:
@@ -197,6 +198,8 @@ Una variable está libre en una formula si todas sus apariciones estan libres. S
 
 Llamamos a una formula una **sentencia** si todas sus variables están ligadas.
 
+### L-Estructuras
+
 Llamamos a una L-estructura A de un lenguaje L cuando es un conjunto no vacio que incluye a todas las constantes de L, y las funciones que van de ese conjunto en él (con aridad arbitraria) y relaciones en ese conjunto (aridad arbitraria).
 
 Podemos instanciar a la L-estructura A con un conjunto A arbitrario, por ejemplo los naturales (y usar como funciones la suma, etc. y como constantes el 0 y 1, por decir) o partes de los naturales (y las funciones van de conj(nat) a conj(nat) ).
@@ -214,5 +217,53 @@ Para un lenguaje L fijo,
 
 Decimos que ϕ consecuencia semantica de Γ (Γ \|= ϕ) si para toda L-estructura A y toda valuación v de A :
 
-| si A \|= Γ[v] entonces A \|= ϕ[v]
+Si A \|= Γ[v] entonces A \|= ϕ[v]
+
+### Reemplazo de variables libres por terminos
+
+ϕ[x/t] es la fórmula obtenida a partir de ϕ sustituyendo todas las apariciones libres de la variable x por t
+e.g., 
+
+[ P(x, y)[x/f (z)] = P(f (z), y)]
+
+[ (∀x)(∀y) P(x, y)[x/f (z)] = (∀x)(∀y) P(x, y) ]
+
+
+Decimos que una variable x es reemplazable por el termino t en ϕ si
+
+- t es un término cerrado (no tiene variables) o
+- t tiene variables, pero ninguna queda atrapada por un cuantificador en el reemplazo ϕ[x/t]
+
+**Lema de sustitución**
+
+Si x es reemplazable por t en ϕ entonces
+A |= (ϕ[x/t])[v] sii A |= ϕ[v(x = v(t))].
+
+![]()
+
+Las nociones de **correctitud y consistencia** son análogas.
+Aplica el teorema de deducción, Γ ∪ {ϕ} -> ψ entonces Γ -> ϕ → ψ
+
+Γ satisfacible -> consistente
+
+Γ inconsistente entonces tiene un subconjunto finito inconsistente. 
+
+**Esquemas tautológicos**
+- sea ϕ(p1, . . . , pn) una tautología de P con variables proposicionales p1, ... , pn.
+- sean ψ1, . . . , ψn fórmulas cualesquiera de primer orden
+ ϕ(ψ1, . . . , ψn) es una instancia de un esquema tautológico
+
+Si ϕ es una instancia de un esquema tautológico entonces \|- ϕ.
+
+**Variante alfabética** : reescritura de una formula reemplazando toda instancia de una cierta variable por otra, fresca.
+
+Dos fórmulas variante alfabética mutuas son demostrables una desde la otra, y podes en una reemplazar x por t.
+
+**Teorema de la generalización**: A.k.a., TG, Si Γ \|- ϕ y x no aparece libre en ninguna fórmula de Γ, entonces Γ \|- (∀x)ϕ
+
+**Teorema de Generalización en Constantes (TGC)** : Supongamos que Γ \|- ϕ y c es un símbolo de constante que no aparece en Γ. Entonces existe una variable x que no aparece en ϕ tal que Γ \|- (∀x)(ϕ[c/x]). Mas aun, hay una derivación de (∀x)(ϕ[c/x]) a partir de Γ en donde c no aparece.
+
+Como corolario, esto permite hacer el gran "como no use en ningun lado que Blah vale Bleh, lo probe para todo Blah.". Classic math move.
+
+El conjunto de teoremas del sistema SQ para L es c.e.
 
