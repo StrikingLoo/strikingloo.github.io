@@ -239,7 +239,7 @@ Decimos que una variable x es reemplazable por el termino t en ϕ si
 Si x es reemplazable por t en ϕ entonces
 A |= (ϕ[x/t])[v] sii A |= ϕ[v(x = v(t))].
 
-![]()
+![](image/Screen Shot 2021-06-03 at 19.30.52.png)
 
 Las nociones de **correctitud y consistencia** son análogas.
 Aplica el teorema de deducción, Γ ∪ {ϕ} -> ψ entonces Γ -> ϕ → ψ
