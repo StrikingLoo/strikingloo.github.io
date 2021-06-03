@@ -72,6 +72,7 @@ Teorema del parametro: dado un programa con m+n inputs, podemos generar un nuevo
 Teorema de la recursion: Para una funcion g que toma n+1 parametros, podemos siempre encontrar un numero e tq el e-esimo programa con los n parametros devuelve lo mismo que g(e,x1...xn) para todo x.
 
 ## Conjuntos 
+
 Un conjunto se representa con una funcion A(x) = 1 if x in A else 0.
 
 Un conjunto puede ser computable, p.r., etc. Las operaciones union, interseccion y diferencia de conjuntos preservan la clase de PRC. 
