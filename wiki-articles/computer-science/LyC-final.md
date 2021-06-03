@@ -168,8 +168,51 @@ Entonces Γ \|- ϕ sii ϕ in Γ.
 **Teorema de compacidad** : si todo subconjunto finito de Γ es satisfacible, Γ es satisfacible.
 
 
+## Lógica de Primer Orden
 
+Lenguaje de primer orden: 
+**Simbolos logicos y auxiliares** : Los mismos que en lógica proposicional + el cuantificador universal (el para-todo). 
 
+**Simbolos de un lenguaje particular** : L = C U F U P tq:
+- C son constantes
+- F son funciones de N términos a otro término
+- P son predicados (reciben terminos)
 
+Los términos de un lenguaje L son:
+- Toda variable
+- Todo símbolo de constante
+- f(t1,...,tn) es un término sin t1,...,tn son términos
 
+Los llamaremos TERM(L). 
+
+Las formulas de L son:
+- Un predicado con sus términos (fórmula atómica)
+- Si p1 y p2 son formulas, p1-\>p2 es formula
+- ¬ p1 formula
+- (∀x)ϕ es formula si ϕ lo es.
+
+Los llamaremos FORM(L)
+
+Una variable está libre en una formula si todas sus apariciones estan libres. Sino, está ligada (al alcance de un cuantificador). 
+
+Llamamos a una formula una **sentencia** si todas sus variables están ligadas.
+
+Llamamos a una L-estructura A de un lenguaje L cuando es un conjunto no vacio que incluye a todas las constantes de L, y las funciones que van de ese conjunto en él (con aridad arbitraria) y relaciones en ese conjunto (aridad arbitraria).
+
+Podemos instanciar a la L-estructura A con un conjunto A arbitrario, por ejemplo los naturales (y usar como funciones la suma, etc. y como constantes el 0 y 1, por decir) o partes de los naturales (y las funciones van de conj(nat) a conj(nat) ).
+
+Las funciones y predicados tienen que estar definidas para TODOS los terminos, o no cuenta como L-estructura (e.g., si usamos naturales y metemos predicado de division, lidiar con el 0).
+
+La nocion de valuacion se extiende para asignarle valores a cada constante y variable en A tq v(x) = K algun valor. 
+Luego puedo decir A \|= P(x, y)[v] o generalmente A \|= ϕ[v]. Calcularlo es simplemente ir llamando v recursivamente en cada termino usando la descomposicion estructural.
+
+Para un lenguaje L fijo, 
+
+- ϕ **satisfacible** si existe una L-estructura A y una valuacion v de A tq A \|= ϕ[v]
+- ϕ **verdadera en una L-estructura A** si para toda valuacion v de A, A \|= ϕ[v]. Decimos que A es un modelo de ϕ.
+- ϕ **universalmente valida** si A \|= ϕ para toda valuacion y estructura A de L.
+
+Decimos que ϕ consecuencia semantica de Γ (Γ \|= ϕ) si para toda L-estructura A y toda valuación v de A :
+
+| si A \|= Γ[v] entonces A \|= ϕ[v]
 
