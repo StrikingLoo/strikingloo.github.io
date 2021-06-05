@@ -28,7 +28,7 @@ PR : Una funcion es **primitiva recursiva** sii pertenece a toda clase PRC. Esto
 
 **Minimizacion acotada:** Dado p un predicado en una clase PRC, la minimizacion acotada me da el minimo t tq p(t, X) si existe, o 0 si no.
 
-**Minimización no acotada**: Dado p un predicado, la minimización no acotada me da el mínimo t tq p(t, X) si existe, y n otermina si no.
+**Minimización no acotada**: Dado p un predicado, la minimización no acotada me da el mínimo t tq p(t, X) si existe, y no termina si no.
 
 ## Numero de Gödel
 El número de Gödel codifica una n-upla de naturales \<x1,...,xn> como productoria donde cada factor es el i-ésimo primo a la xi-ésima potencia.
@@ -55,21 +55,24 @@ Podemos mappear cada programa en S a un numero entero:
 - Representamos la tupla de triplas (o pares de pares) usando numeros de Gödel.
 
 Hay mas funciones de N-\>N que programas (porque son mas que numeros en N) y no todas las funciones van a ser computables. E.g., halt (que te dice si un programa de numero e con input e termina).
+
 Tenemos psi\_P(x) = resultado de ejecutar programa P con input X
 y fi(e, x) = correr programa de numero e con input X.
+
 fi es parcial computable: hacemos un interprete de S y o bien genera el output o bien se tilda si el programa mismo se tildaba.
 
 ![](image/Screen Shot 2021-06-01 at 17.46.20.png)
 
-Definimos STP la funcion Step(x1...xn, e, t) que te dice si el programa e termina luego de t pasos o menos, con nput x1...xn.
+Definimos **STP** la funcion Step(x1...xn, e, t) que **te dice si el programa e termina luego de t pasos o menos**, con input x1...xn.
 STP es P.R.
-SNAP es como STP pero SNAP(x1...xn, e, t) te da el estado del programa e en step t: [z1, ..., zn] y instruction id.
+
+**SNAP** es como STP pero SNAP(x1...xn, e, t) te da el **estado del programa e en step t**: [z1, ..., zn] y instruction id.
 
 ### Teoremas de computabilidad
 
-Teorema del parametro: dado un programa con m+n inputs, podemos generar un nuevo programa equivalente a tener los primeros m parametros hardcodeados en ciertos valores, que solo toma los otros n.
+**Teorema del parametro**: dado un programa con m+n inputs, podemos generar un nuevo programa equivalente a tener los primeros m parametros hardcodeados en ciertos valores, que solo toma los otros n.
 
-Teorema de la recursion: Para una funcion g que toma n+1 parametros, podemos siempre encontrar un numero e tq el e-esimo programa con los n parametros devuelve lo mismo que g(e,x1...xn) para todo x.
+**Teorema de la recursion**: Para una funcion g que toma n+1 parametros, podemos siempre encontrar un numero e tq el e-esimo programa con los n parametros devuelve lo mismo que g(e,x1...xn) para todo x.
 
 ## Conjuntos
 Un conjunto se representa con una funcion A(x) = 1 if x in A else 0.
