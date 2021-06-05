@@ -103,7 +103,7 @@ A es c.e. sii es la imagen de una funcion p.r., la de una funcion parcialmente c
 
 ## Teorema de Rice
 
-A es un conjunto de indices si hay una clase de funciones parciales computables C de N-\>N tq A = { x : fi\|x in C }.
+A es un conjunto de indices si hay una clase de funciones parciales computables C de N-\>N tq A = { x : fi\_x in C }.
 
 **Teorema de Rice**: Si A es un conjunto de indices no vacio distinto de N, entonces A no es computable.
 
