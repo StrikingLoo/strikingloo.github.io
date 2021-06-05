@@ -267,3 +267,20 @@ Como corolario, esto permite hacer el gran "como no use en ningun lado que Blah 
 
 El conjunto de teoremas del sistema SQ para L es c.e.
 
+Γ es un conjunto consistente sii es satifacible. 
+
+Ademas  Γ \|= ϕ sii Γ \|- ϕ y se cumple teorema de compacidad (si todo subconjunto finito es satisfacible entonces el conjunto tambien lo será).
+
+Compacidad: Todo subconjunto finito es satisfacible, entonces el conjunto tambien lo es.
+
+Como consecuencia, podemos expresar la cardinalidad infinita de un modelo usando una teoría, pero no una fórmula.
+
+## Teorema de Gödel
+
+En el modelo de los naturales, axiomatizados con Peano (\<N, <, +, ., 0, S>) hay sentencias que son ciertas, pero no demostrables.
+
+Particularmente lo demuestra haciendo una sentencia que es "la sentencia x, para toda demostracion y no es cierto que y la demuestre" y la instancia tq la sentencia sea esa misma. Osea que queda "soy m, una sentencia que no es demostrable". 
+
+Efectivamente no es demostrable ni su negacion (para que la negacion no sea demostrable hay que asumir w-consistency que es que el para-todo es posta un para-todo). Pero es cierta, necesariamente porque a) una sentencia siempre tiene valor de verdad si es sintactica y b) claramente falsa no es (o podriamos demostrarla, which we can't and, if we could, wouldn't be false). 
+
+Finalmente, esto se mantiene aun si axiomatizamos Peano sin inducción.
