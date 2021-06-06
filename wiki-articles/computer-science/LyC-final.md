@@ -101,6 +101,8 @@ Si f es parcial computable, A tq f termina es c.e.
 
 A es c.e. sii es la imagen de una funcion p.r., la de una funcion parcialmente computable, o la de una computable.
 
+A es c.e. => existe un predicado NxN -> N tq A = {x : Existe t tq P(x,t)}. Particularmente ese predicado puede ser el STP(x, e, t) para un e que compute el while true de siempre.
+
 ## Teorema de Rice
 
 A es un conjunto de indices si hay una clase de funciones parciales computables C de N-\>N tq A = { x : fi\_x in C }.
@@ -109,7 +111,7 @@ A es un conjunto de indices si hay una clase de funciones parciales computables 
 
 ##  Logica proposicional
 
-Usamos solo -> y ¬ para definir todas las formulas validas en FORM ( and y or se expresan con esos dos), para facilitar induccion estructural y evitar redundancia.
+Usamos solo -> y ¬ para definir todas las formulas validas en FORM (and y or se expresan con esos dos), para facilitar induccion estructural y evitar redundancia.
 
 Una valuacion v : PROP -> {0,1} le asigna un valor de verdad binario a cada proposicion (p, p', etc.).
 
@@ -123,13 +125,13 @@ Decimos F **consecuencia semántica de Γ** si Γ \|= F i.e. si [de valer v\|=P 
 
 ![](image/Screen Shot 2021-06-02 at 23.12.12.png)
 
-Una **demostración** de fi es cadena finita no vacía de fórmulas tq la n-esima es fi y fi\_k es axioma o consecuencia directa de dos fi\_i fi\_j tq i, j \< k.
+Una **demostración** de fi es cadena finita no vacía de fórmulas tq la n-esima es fi y fi\_k es axioma o consecuencia directa (i.e., por Modus Ponens) de dos fi\_i fi\_j tq i, j \< k.
 
 ![](image/Screen Shot 2021-06-02 at 23.52.33.png)
 
 fi es **Consecuencia sintáctica** de Γ si Γ \|- fi. i.e., si puedo hacer una demo de fi tq fi\_n=fi y fi\_k es :
 - Axioma
-- Consecuencia directa de dos fi\_i anteriores
+- Consecuencia directa de dos fi\_i anteriores (por Modus Ponens)
 - Elemento de Γ 
 
 Llamamos a Γ *teoría*, fi_1...fi_n se llama *derivación de fi*, y Γ es una *teoría*.
@@ -210,7 +212,9 @@ Podemos instanciar a la L-estructura A con un conjunto A arbitrario, por ejemplo
 Las funciones y predicados tienen que estar definidas para TODOS los terminos, o no cuenta como L-estructura (e.g., si usamos naturales y metemos predicado de division, lidiar con el 0).
 
 La nocion de valuacion se extiende para asignarle valores a cada constante y variable en A tq v(x) = K algun valor. 
-Luego puedo decir A \|= P(x, y)[v] o generalmente A \|= ϕ[v]. Calcularlo es simplemente ir llamando v recursivamente en cada termino usando la descomposicion estructural.
+Luego puedo decir A \|= P(x, y)[v] o generalmente A \|= ϕ[v]. 
+
+Calcularlo es simplemente ir llamando v recursivamente en cada termino usando la descomposicion estructural.
 
 Para un lenguaje L fijo, 
 
@@ -287,3 +291,5 @@ Particularmente lo demuestra haciendo una sentencia que es "la sentencia x, para
 Efectivamente no es demostrable ni su negacion (para que la negacion no sea demostrable hay que asumir w-consistency que es que el para-todo es posta un para-todo). Pero es cierta, necesariamente porque a) una sentencia siempre tiene valor de verdad si es sintactica y b) claramente falsa no es (o podriamos demostrarla, which we can't and, if we could, wouldn't be false). 
 
 Finalmente, esto se mantiene aun si axiomatizamos Peano sin inducción.
+
+
