@@ -72,3 +72,40 @@ They take this form:
 To evaluate what a curve's value is for a certain input t, we could evaluate it directly, or we can iteratively take the interpolation that's `t%` between every two points (in a convex hull's perimeter), this gives us n-1 points. We repeat again and again until keeping only one point, which is our desired value.
 
 This is called Casteljau's algorithm.
+
+## Surfaces
+
+There are many different ways to represent a 3d surface. Here are some we've seen in class:
+
+### Implicit surfaces
+
+Define the surface as any point in 3d-space which
+- Fits a set of equations (e.g., (x,y,z) such that (x,y,z)^2 < K is a sphere) or
+- Yields a non-positive value on a certain function (similar to previous example).
+
+We can take the intersection of two surfaces as the maximum between two equations, and the union as the minimum.
+
+A sufficiently complex tree of unions and intersects yields a consequently complex surface, and these can be represented by a tree of operations typically called a CSG (Constructive Solid Geometry) tree.
+
+Blending extends these construction methods by adding a soft blending option, where each surface "decays" (usually exponentially or similarly abruptly), so that two surfaces merge in soft ways. 
+This way, a sphere would be defined as "e ^ norm(c - p)" for norm == norm 2 and c center of sphere.
+
+We can use a hyperparam alpha to decide how blendy things get. For alpha = 1, everything is a solid and we get back to implicit surfaces.
+
+### Parametric surfaces
+
+We define a set of curves (typically bezier or NURBS or binomial splice curves). Using two params s and t we parameterize the curves: t for how far along the curve we are (from 0 to 1) and s for how far along the list of curves we are (so 0 is 100% first curve, 1/n\*i is the i-th curve, and anything in between falls in an interpolation between two curves).
+
+This yields bezier patches, nurbs patches, and so on.
+
+### Polygonal Mesh
+
+Finally a polygon mesh defines a set of 3d polygons to represent surfces. They need not be all the same amount of sides, though typically we will model everything with arbitrary polygons (usually quads) and then change everything into triangular mesh before storing, for optimization purposes.
+
+Each polygon is a set of vertices v1 ... vn such that v1==vn, and they are planar and without intersection.
+
+A polygon mesh is stored as a list of 3d vertices, followed by a list of faces (sequences of polygon indices from before).
+
+**Catmull-Clark Subdivision** turns a square looking non-differentiable surface into a roundish one that is at least c1 continuous everywhere.
+It can be applied iteratively and converges in roundish objects (e.g., cube to sphere sequence).
+
