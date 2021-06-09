@@ -92,6 +92,9 @@ A es computable sii A y Ac son c.e. Izq a der es trivial por def, der a izq sale
 Wn es el dominio del n-esimo programa (x tq P(x) termina donde P es el n-esimo programa).
 Asi que podemos enumerar todos los c.e. (W1, W2... Wn).
 
+Ademas podemos encontrar todo a tq a en A c.e., enumerandolos con una funcion p.r. Esto lo hacemos tratando a cada input u como una tupla \<ul,ur> y viendo: si step(ul,ur) entonces devuelvo ul else devuelvo algun elemento cualquiera del conjunto. 
+Esta funcion garantiza generar todos los elementos, aunque no da ninguna garantia de orden y no termina (obviamente).
+
 Llamamos K al conjunto de { n tq n in Wn }. Osea n tq el n-esimo programa con input n termina (sii HALT(n,n) ).
 K es c.e. pero no computable. 
 
