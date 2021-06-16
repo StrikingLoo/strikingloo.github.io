@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Designing dungeons"
+date: 2021-06-16
+description: "Tips and advice on writing dungeons. Taken from reddit and other places."
+---
+
+[Scavenger144](https://www.reddit.com/r/dndnext/comments/754kez/how_to_create_a_dungeon_crawl/) on how to create a Dungeon.
+- Try to include a variety of environments. You could have a subterranean crypt that opens into a beautiful garden full of the deceased's favorite flowers, only for the dark grind to continue downwards after crossing a corridor.
+- If your dungeon is particularly large, break it into wings. Add themes and subplots to each wing, and you can finish each session on a different section of the dungeon.
+- Include opportunities to role play. NPCs, abandoned damsels in distress, angry ghosts, confused extraplanar creatures.
+- Not every room needs a significant encounter. Use dungeon dressing to telegraph future threats or share world building. Use all the senses. Foreshadow future challenges: a charred corpse reveals a lot.
+- Track time. Time moves forward every time a check fails. Make it clear that events will happen as time passes. It helps make your dungeon feel alive.
+- A one-page dungeon of five rooms with three monster encounters, a trap, a hazard and a puzzle or secret makes a good one-shot adventure location for a couple of hours of play.
+
