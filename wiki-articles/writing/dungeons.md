@@ -13,3 +13,8 @@ description: "Tips and advice on writing dungeons. Taken from reddit and other p
 - Track time. Time moves forward every time a check fails. Make it clear that events will happen as time passes. It helps make your dungeon feel alive.
 - A one-page dungeon of five rooms with three monster encounters, a trap, a hazard and a puzzle or secret makes a good one-shot adventure location for a couple of hours of play.
 
+Include a **secret**. A secret could be a hidden monster that has a way to be avoided, hidden treasure or a hidden chamber or room such that accessing it requires secret information (a spell, password, item, etc.).
+This information could be scattered through the dungeon, or acquired through negotiation with a different NPC.
+
+A trap that immobilises characters via adhesive or magic, for example, and sounds an alarm to alert monsters, creates a more interesting scenario than knocking off hit points. Monsters should work in tandem with traps; it’s their home turf advantage.
+
