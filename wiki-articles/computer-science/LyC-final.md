@@ -114,7 +114,7 @@ A es un conjunto de indices si hay una clase de funciones parciales computables 
 
 ##  Logica proposicional
 
-Usamos solo -> y ¬ para definir todas las formulas validas en FORM (and y or se expresan con esos dos), para facilitar induccion estructural y evitar redundancia.
+Usamos solo -> y ¬ para definir todas las formulas validas en FORM (*and* y *or* se expresan con esos dos), para facilitar inducción estructural y evitar redundancia.
 
 Una valuacion v : PROP -> {0,1} le asigna un valor de verdad binario a cada proposicion (p, p', etc.).
 
