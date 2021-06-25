@@ -1,8 +1,8 @@
 ---
-title: Autoencoders: Deep Learning with TensorFlow’s Eager Execution
-published: true
+layout: post
+date: 2019-04-20
+title: Autoencoders: Deep Learning with TensorFlow’s Eager Execution 
 tags: DataScience, MachineLearning, Programming, tensorflow
-canonical_url: https://www.datastuff.tech/machine-learning/autoencoder-deep-learning-tensorflow-eager-api-keras/
 ---
 
 Deep Learning has revolutionized the Machine Learning scene in the last years. Can we apply it to image compression? How well can a Deep Learning algorithm reconstruct pictures of kittens? What’s an autoencoder?
