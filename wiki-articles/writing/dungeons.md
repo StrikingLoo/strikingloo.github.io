@@ -18,3 +18,19 @@ This information could be scattered through the dungeon, or acquired through neg
 
 A trap that immobilises characters via adhesive or magic, for example, and sounds an alarm to alert monsters, creates a more interesting scenario than knocking off hit points. Monsters should work in tandem with traps; it’s their home turf advantage.
 
+---
+
+## Dungeon Crawl Builder
+
+### Dungeon History
+- Who built this dungeon and for what purpose?
+- How did it come to ruin?
+- What faction/s occupies/y the dungeon now, and why?
+- Why are players visiting it now?
+
+### Dungeon Look
+- What is unique about the entrance?
+- How is the dungeon history evident in different layered themes?
+
+### Dungeon Challenges
+- Combat, boss-fight, maze, riddles and puzzles, social, trap, travel, sneak. Choose 2 or 3.
