@@ -6,13 +6,15 @@ tags: patrones, pattern recognition, UBA, spanish, español, cs
 description: "Notas para el final de Algo3. Basadas en los apuntes de la teorica. In Spanish."
 ---
 
-## Ajuste polinomial
+## Modelos Lineales
+
+### Ajuste polinomial
 Buscamos hallar W tq ∑X\_i^t\*W\_t minimice el rmse, pero no queremos un grado n del polinomio demasiado grande para no overfittear. Ademas podemos agregar regularización l1 o l2. Si el orden del polinomio es cercano a N, overfittea fuerte (y los coeficientes tienden a ser muy altos!).
 
-## Regresión lineal
+### Regresión lineal
 Hallar W tq W\_i\*X\_j + b minimice el rmse. Es una regresión lineal.
 
-## Validacion cruzada (cross-validation)
+### Validacion cruzada (cross-validation)
 Divido el dataset en K fragmentos, y uso k-1 de train y el ultimo de test, repito k veces y agrego todas las métricas. Vuelve al resultado más robusto.
 
 **Modelo discriminativo vs generativo**: Un modelo generativo modela P(x\| C) y usa eso con Bayes. Uno discriminativo directamente intenta modelar P(C \| x) ignorando la distribución latente (casi todos los que solemos usar son discriminativos).
