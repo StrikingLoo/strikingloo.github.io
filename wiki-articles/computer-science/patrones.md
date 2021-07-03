@@ -5,8 +5,9 @@ date: 2021-07-02
 tags: patrones, pattern recognition, UBA, spanish, español, cs
 description: "Notas para el final de Algo3. Basadas en los apuntes de la teorica. In Spanish."
 ---
+
 ## Ajuste polinomial
-Buscamos hallar W tq ∑X\_i^t\*W\_t minimice el rmse, pero no queremos un grado n del polinomio demasiado grande para no overfittear. Ademas podemos agregarregularización l1 o l2. Si el orden del polinomio es cercano a N, overfittea fuerte (y los coeficientes tienden a ser muy altos!).
+Buscamos hallar W tq ∑X\_i^t\*W\_t minimice el rmse, pero no queremos un grado n del polinomio demasiado grande para no overfittear. Ademas podemos agregar regularización l1 o l2. Si el orden del polinomio es cercano a N, overfittea fuerte (y los coeficientes tienden a ser muy altos!).
 
 ## Regresión lineal
 Hallar W tq W\_i\*X\_j + b minimice el rmse. Es una regresión lineal.
