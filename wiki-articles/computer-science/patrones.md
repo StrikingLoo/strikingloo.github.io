@@ -89,7 +89,7 @@ Para el algoritmo CART, elijo greedily en cada paso hacer la particion j, s tq d
 
 Elijo la partición tq minimizo el rmse sumado en ambos lados, si aproximo los valores de cada region con el promedio.
 
-Arbol muy grande overfittea, muy chico underfittea. Elegimos un arbol de tamaño T0 tq si segumos haciendo split quedan muy pocos nodos, y despues se prunea.
+Arbol muy grande overfittea, muy chico underfittea. Elegimos un arbol de tamaño T0 tq si seguimos haciendo split quedan muy pocos nodos, y despues se prunea.
 
 Definimos Nm cuantos instancias caen en la region m, cm el centro de la region (la media para lo que caen ahi) y Qm el costo de la region (la varianza empirica).
 
