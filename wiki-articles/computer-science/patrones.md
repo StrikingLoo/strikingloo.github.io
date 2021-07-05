@@ -69,10 +69,11 @@ L(x) = f(x) + lambda * g(x). El max de f restringido a g = 0 sera cuando dL = 0,
 
 The optimization algorithm to generate the weights proceeds in such a way that only the support vectors determine the weights and thus the boundary.
 
-En el problema de optimizacion aparecen multiplicandose fi(xi)*fi(xj) (dos instancias distintas), pero podemos cambiar eso por otras funciones que dependan directo de x y x' para ahorrarnos el mappeo intermedio a un espacio de mayor dimensionalidad. E.g., 
-``` (1 + x*x^t)^2 ``` es como haber mappeado a (x1,x2) -> (1, sqrt(2)*x1, sqrt(2)x2, x1^2, x2^2, sqrt(2)x1x2)
+En el problema de optimizacion aparecen multiplicandose fi(xi)\*fi(xj) (dos instancias distintas), pero podemos cambiar eso por otras funciones que dependan directo de x y x' para ahorrarnos el mappeo intermedio a un espacio de mayor dimensionalidad. E.g., 
 
-Otro kernel de uso frecuente es e^(-t*\|\| x - x' \|\|^2) (exponential decay). Es equivalente a haber mappeado el vector con una fi de infinitos componentes de output (por la serie de Taylor de e^x).
+` (1 + x*x^t)^2 ` es como haber mappeado a (x1,x2) -> (1, sqrt(2)\*x1, sqrt(2)x2, x1^2, x2^2, sqrt(2)x1x2)
+
+Otro kernel de uso frecuente es e^(-t\*\|\| x - x' \|\|^2) (exponential decay). Es equivalente a haber mappeado el vector con una fi de infinitos componentes de output (por la serie de Taylor de e^x).
 
 ``` fi: x -> e^(-x^2)(1, sqrt(2)*x, ..., sqrt(2^k/k!)*x^k ) ```
 
@@ -82,7 +83,8 @@ Condiciones tq K(x,y) es kernel: K(x,y) == K(y,x) y ademas, para todo conjunto x
 
 ``` Mij = K(xi, xj) ``` cumple ser semi-definida positiva.
 
-## Decision Trees
+## Decision Trees
+
 Para el algoritmo CART, elijo greedily en cada paso hacer la particion j, s tq de un lado quedan los que en la variable Xj tienen un valor < s, del otro \>=. 
 
 Elijo la partición tq minimizo el rmse sumado en ambos lados, si aproximo los valores de cada region con el promedio.
@@ -97,11 +99,11 @@ Notar que eso nos da una sucesion de arboles: partimos del arbol mas grande (por
 
 Para el caso de clasificacion, le asignamos a cada hoja la clase más representada en la region. Luego usamos Gini o Cross-entropy o simplemente class error para medir el costo de cada split. 
 
-** Gini ** : 1 - ∑ pmk^2 donde pmk es la probabilidad de cada clase k en la region m (e.g. si son 50/50 esto sera gini=.5).
+**Gini**: 1 - ∑ pmk^2 donde pmk es la probabilidad de cada clase k en la region m (e.g. si son 50/50 esto sera gini=.5).
 
-** Cross-entropy ** : - ∑ pmk log(pmk) (sumado sobre todos los k para esta region m)
+**Cross-entropy**: - ∑ pmk log(pmk) (sumado sobre todos los k para esta region m)
 
-** class error ** : 1 - pmk para la k mas probable.
+**class error**: 1 - pmk para la k mas probable.
 
 diapo 1, 158. arg min -> arg max?
 diapo 2, aprendizaje secuencial, el update del vector w está bien?
