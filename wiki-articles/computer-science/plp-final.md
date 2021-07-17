@@ -5,7 +5,9 @@ date: 2021-07-10
 tags: PLP, UBA, spanish, español, cs, algorithms
 description: "Notas para el final de PLP. Basadas en las teóricas de la materia, y adornadas luego al leer las preguntas tipicas de final. In Spanish."
 ---
+.
 ## Calculo Lambda
+
 Definimos axiomas y reglas de tipado ( Γ ▷ A : σ) y de evaluación ( M -> M' ). Tenemos M ->> M' que es la relación de terminación (M termina en M'), la clausura transitiva de la evaluación en un small step. Siempre termina en una forma normal (un termino irreducible, no necesariamente valor).
 
 Decimos que dos expresiones son alpha equivalentes (y esto formara una relacion de equivalencia) si solo difieren en los nombres de sus variables **ligadas**. 
