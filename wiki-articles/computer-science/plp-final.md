@@ -99,7 +99,7 @@ Para pasar de skolem a clausal, como ya tenemos todos los quant a la izquierda, 
 
 En LPO la resolucion se hace unificando primero terminos de ambos lados (a diferencia de proposicional, para lidiar con cosas como {P(x), ¬ P(A)} que es insatisfactible. Una vez mas la resolución preserva satisfactibilidad.
 
-### Resolucion lineal
+### Resolucion lineal
 
 Preserva completitud pero reduce espacio de busqueda considerablemente respecto de la general.
 
