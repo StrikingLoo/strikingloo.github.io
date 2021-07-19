@@ -8,6 +8,10 @@ description: "Notas para el final de PLP. Basadas en las teóricas de la materia
 
 ## Calculo Lambda
 
+Currying is the technique of converting a function that takes multiple arguments into a sequence of functions that each takes a single argument. For example, currying a function f that takes three arguments creates three functions: f(a,b,c) = f(a)(b)(c) where f(a) is a function g, etc.
+
+
+
 Definimos axiomas y reglas de tipado ( Γ ▷ A : σ) y de evaluación ( M -> M' ). Tenemos M ->> M' que es la relación de terminación (M termina en M'), la clausura transitiva de la evaluación en un small step. Siempre termina en una forma normal (un termino irreducible, no necesariamente valor).
 
 Decimos que dos expresiones son alpha equivalentes (y esto formara una relacion de equivalencia) si solo difieren en los nombres de sus variables **ligadas**. 
