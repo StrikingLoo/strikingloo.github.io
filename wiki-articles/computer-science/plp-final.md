@@ -127,3 +127,10 @@ Una resolucion SLD es una secuencia N0...Nn tq **N0 = G** y cada Ni es una **cla
 **Completitud**: Si P U {G} Son clausulas de Horn como se dijo antes, y es insatisfacible, entonces existe una refutacion SLD en la que G es la primera clausula.
 
 Prolog usa SLD con busqueda de arriba hacia abajo, y seleccion de izquierda a derecha de las clausulas de mi Goal actual. 
+
+El ! o cut de Prolog freezea las respuestas so far. Por ejemplo si tengo:
+
+``` p(a); p(b); p(c) y pido p(X), !, p(Y) ```
+
+Va a hallar un valor X = a; y luego enumerar todos y = a,b,c. Pero como ya hallo un valor de X y evaluo el !, corta el arbol hacia la derecha desde el not, entonces no va a probar X= b, o c (que otherwise serian respuestas validas!).
+
