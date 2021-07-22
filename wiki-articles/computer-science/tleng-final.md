@@ -8,6 +8,12 @@ description: "Notas para el final de Tleng. Basadas en las teóricas de la mater
 
 ## Definiciones
 
+![](tleng-images/sc_grammar_type_1.png)
+![](tleng-images/sc_grammar_type_2.png)
+![](tleng-images/sc_grammar_type_3.png)
+![](tleng-images/sc_def_AFD.png)
+![](tleng-images/sc_def_AFD_cadena.png)
+
 ## Lema de Pumping
 
 Sii un lenguaje es finito (tiene finitas cadenas) todo automata que lo reconoce será acíclico.
@@ -44,7 +50,7 @@ Ademas, dado un AFD existe una regex que acepta el mismo lenguaje.
 
 ## Automatas de pila
 
-*img*
+![](tleng-images/sc_def_automata_de_pila.png)
 
 Aceptación puede ser por estado final (si al terminar de procesar la cadena, llegué a un estado en F, acepto la cadena independientemente del contenido de la pila) o por pila vacía (si al terminar de procesar la cadena la pila está vacía, acepto independientemente de en qué estado estoy).
 
@@ -60,6 +66,8 @@ Si en el tope de la pila hay un símbolo terminal t, el automata constatara que 
 Este automata acepta L por pila vacía."
 
 ### Automata de pila deterministico
+
+![](tleng-images/sc_def_automata_de_pila_det.png)
 
 Tiene para cada tripla q, a, A de estado, caracter y tope de pila, como mucho una transición posible. Y en particular si tiene transición lambda para un estado y tope, entonces no tiene transición no-lambda.
 
