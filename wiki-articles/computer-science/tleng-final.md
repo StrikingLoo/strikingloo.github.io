@@ -30,16 +30,17 @@ Osea existe algun n, tq para todo w en L de longitud al menos n, existe una mane
 
 ---
 
-Si tengo una gramatica regular, existe un AFND que genera el mismo lenguaje (es straightforward la conversion).
+## Equivalencias
+Si tengo una **gramatica regular**, existe un **AFND** que genera el mismo lenguaje (es straightforward la conversion).
 
-Si tengo un AFD, hay una gramatica regular equivalente.
+Si tengo un **AFD**, hay una **gramatica regular** equivalente.
 
-Dada una expresion regular r, existe un AFND-l M tq #qf = 1, y L(M) = L(r). 
+Dada una **expresion regular** r, existe un **AFND-l** M tq #qf = 1, y L(M) = L(r). 
 
 Estas 3 se demuestran por induccion en la longitud de la cadena. En las primeras dos probamos la equivalencia entre As -> wa y d(s, wa) = qf. 
 En la tercera vamos por induccion en la longitud de la regex (cantidad de operadores) e induccion estructural.
 
-Ademas, dado un AFD existe una regex que acepta el mismo lenguaje. 
+Ademas, dado un **AFD** existe una **regex** que acepta el mismo lenguaje. 
 
 ---
 
