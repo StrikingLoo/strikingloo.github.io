@@ -8,9 +8,9 @@ description: "Notas para el final de Tleng. Basadas en las teóricas de la mater
 
 ## Definiciones
 
-![](tleng-images/sc_grammar_type_1.png)
-![](tleng-images/sc_grammar_type_2.png)
 ![](tleng-images/sc_grammar_type_3.png)
+![](tleng-images/sc_grammar_type_2.png)
+![](tleng-images/sc_grammar_type_1.png)
 ![](tleng-images/sc_def_AFD.png)
 ![](tleng-images/sc_def_AFD_cadena.png)
 
