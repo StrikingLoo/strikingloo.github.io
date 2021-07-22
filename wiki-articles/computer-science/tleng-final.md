@@ -46,8 +46,13 @@ Ademas, dado un **AFD** existe una **regex** que acepta el mismo lenguaje.
 
 ## Propiedades de lenguajes regulares
 
-- Son cerrados en complemento, union e intersección finitas (no infinitas, ver \{ a^kb^k \}).
-- Problemas decidibles en lenguajes regulares : **pertenencia (dado w, está en L?), vacuidad (L = {}?), finitud (#L) y equivalencia (se resuelve por diferencia de conjuntos, que es regular por lo visto mas arriba)**.
+> Son cerrados en complemento, union e intersección finitas (no infinitas, ver \{ a^kb^k \}).
+
+### Problemas decidibles en lenguajes regulares
+- **pertenencia (dado w, está en L?)
+- vacuidad (L = {}?)
+- finitud (#L) 
+- equivalencia (se resuelve por diferencia de conjuntos, que es regular por lo visto mas arriba)**.
 
 ## Automatas de pila
 
