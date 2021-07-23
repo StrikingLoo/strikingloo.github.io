@@ -116,4 +116,10 @@ Para A,B,C Vn y a Vt, tq L(G') = L(G).
 
 Tq w in Vn\*, a in Vt.
 
+Existe un lenguaje recursivo, que no es independiente del contexto.
 
+El lenguaje aceptado por una maquina de Turing (que en cada transicion pasa de un estado a otro,y tiene una cinta en la que va leyendo un caracter, escribiendo otro y moviendose a izquierda o derecha a la vez que cambia de estado), es cualquier w tq q0w \|-\* w1 p w2 con p in F y w1, w2 cadenas de gamma. 
+
+Sea M una MT-no-deterministica. Existe una M deterministica que genera el mismo leguaje. Esto se logra probando a fuerza bruta cada una de las posibles combinaciones de transiciones: si cada nodo tiene maximo r salidas, entonces numeramoslas y generamos con eso una secuencia, que luego simulamos. Podemos hacer esto usando 3 cintas (o escribiendo todo en la segunda y leyendo y escribiendo mas adelante a la LyC). 
+
+Si G es gramatica sin restricciones, hay una MT que acepta L(G). 
