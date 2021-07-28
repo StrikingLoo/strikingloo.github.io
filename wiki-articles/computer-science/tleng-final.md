@@ -208,3 +208,4 @@ Un lenguaje es **reconocible con automata de pila deterministico sii es un lengu
 Para toda gramatica LR(k), k >= 0, G, hay una gramática G' LR(1) tq L(G) = L(G'). 
 
 > Nota: Repasar definicion de LR!!!
+
