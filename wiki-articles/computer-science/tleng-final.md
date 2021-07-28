@@ -207,5 +207,39 @@ Un lenguaje es **reconocible con automata de pila deterministico sii es un lengu
 
 Para toda gramatica LR(k), k >= 0, G, hay una gramática G' LR(1) tq L(G) = L(G'). 
 
-> Nota: Repasar definicion de LR!!!
+## Parsing LL(1)
+
+Para parsear un lenguaje LL(1) dada su gramatica G:
+
+- generamos la tabla LL(1): Esta tabla tiene Vn en filas, Vt en columnas, y M(A,a) = A -> v tq SD(A -> v) == a. Este elemento, si existe es unico, o el lenguaje no seria LL(1). Si no existe, dictará cadenas no aceptadas.
+- Una vez hecha la tabla, tenemos una pila que arranca con $S y la cadena en una queue. Vamos desapilando de a un caracter y:
+- Si es un No-terminal, miramos el frente de la queue y buscamos M(A,a). Luego apilamos en orden inverso el RHS de la produccion correspondiente.
+- Si es un termina, comparo con el tope de la queue. Si matchean, desencolo y desapilo. Si no matchean, raise ValueError().
+- Repito hasta que tope de pila == $. Ahi devuelvo True.
+
+El runtime es O(n) donde n es \|w\| ya que por cada caracter de la cadena, a lo sumo pasamos l\^k veces por transformaciones antes de matchearlo, donde l es el maximo size de una RHS de produccion, y k = \|Vn\|.
+
+## Parsing LR(1)
+
+> G es LR(k), k>=0, Hay G' tq G' es LR(1) y L(G') == L(G).
+
+> Los lenguajes LR(1) son los reconocibles por automatas de pila deterministicos.
+
+**Reducción** : Si αAw =\> αβw, entonces decimos que αβw puede ser reducida usando la producción (A -> β) a αAw.
+
+**Pivote** : Si αAw =\> αβw, el pivote es el par (A -> β), \|α\|+1. Te dice, dado auw, donde ubicarte y qué prod usar para revertir la ultima transformación más a la derecha. 
+
+> *La técnica de parsing determinista “bottom up” que opera linealmente consiste en identificar unívocamente el pivote y hacer una reducción.*
+
+**Prefijo viable**: Si αAw =\> αβw, todo prefijo de αβ es un prefijo viable de la gramática G. En general, un prefijo es viable si no va mas alla del extremo derecho del pivote. (que es UNICO por cadena, o no sería LR!).
+
+El algoritmo de parsing es, dada una cadena:
+
+- Busco el pivote, hago reduccion. loop.
+
+En más palabras: voy apilando caracteres a una pila y viendo, cada vez, por cada sufijo del contenido de la pila si es una RHS de una prod. Si lo es, es la prod que quiero y reduzco. Si no lo es, sigo apilando. Sigo reduciendo hasta volver a S'.
+
+> El conjunto de prefijos viables de una gramática LR(k) es regular.
+
+
 
