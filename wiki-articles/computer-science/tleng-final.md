@@ -240,5 +240,36 @@ En más palabras: voy apilando caracteres a una pila y viendo, cada vez, por cad
 
 > El conjunto de prefijos viables de una gramática LR(k) es regular.
 
+**item**: Un item de una gramatica LR(k) es una produccion, un . a la derecha y una cadena de terminales de longitud <=k.
 
+**Item válido LR(k)**: Fijemos una gramática G = (N,T,P,S) libre de contexto. 
+Supongamos A → αβ ∈ P. Un item [A → α.β, u], con u ∈ T\* y |u| ≤ k, es un item LR(k) válido para el prefijo viable ηα, si existe una derivación a derecha tq
+- S =\> ηAw =\> ηαβw. 
+- u ∈ primeros\_k(w)
 
+Si el lenguaje es LR(0), obviamos la segunda condición. Notar que si voy moviendo el punto, tengo 1 prefijo viable por cada posicion, entonces para A -> αβ voy teniendo \|αβ\| prefijos vialbes * cada eta.
+
+Para parsear una cadena LR(1) primero construimos un AFND-lambda que acepta el lenguaje de **prefijos viables** de G. Este se comporta tq q0 = [S' -> .S, $], y hacemos la clausura lambda (que es agregar todos los [A -> .u, $] si S -> A). Y despues d([A -> α.Xβ, u], X) = [A -> αX.β, u], pero ademas hacemos clausura lambda de ambos lados!
+
+Este automata te genera los prefijos viables de G (todos los qi son finales).
+(d(q0, g) = q = [A -> α.Xβ, u] =\> g = ηα un prefijo viable.
+
+Para parsear agregamos un M' automata de prefijos viables, pero tambien una tabla de accion (desplazar q, reducir A -> β, Aceptar, Error). 
+
+La tabla ACCION toma un estado y un terminal, y se define:
+- if [A -> α.aβ, b] en qi, con a ∈ T y IR(qi, a) = qj => ACCION(qi, a) = *desplazar qj*.
+- if [A -> α., a] en qi y A != S' con a ∈ T U {$} => ACCION(qi, a) = *Reducir A → α*.
+- if [S' -> S., $] en qi  => ACCION(qi, $) = *Aceptar*.
+- Else: Accion(qi, $) = **Error**.
+
+El algoritmo de parsing LR(1) es : 
+- Pila = q0, sea q estado en tope de pila y a el primer caracter apuntado del input (el pointer arranca en 0).
+- Loop hasta Accion(q, a) in {Accept, Error}
+- if [ACCION(q, a) = Desplazar p] : push a, push p, pointer++.
+- if [ACCION(q, a) = Reducir A -> α] : pop \|α\| times. Let p = tope de pila. push A, push IR(p, A) -como IR es d, esto solo settea el proximo estado!-. Print(A -> α).
+
+> Para todo autómata de pila determinístico, hay otro P' tq L(P) = L(P') pero P' no tiene configuraciones que ciclen. 
+
+El algoritmo tiene complejidad lineal en el tamaño de entrada. Podemos asignar a una configuracion una funcion V(C) = \|pila\| + 2\*(\|w\| - i) donde i es mi posicion actual de la cadena w input.
+
+Luego cada transición o bien el valor baja 2 (porque comió un caracter de la cadena), o baja >=1 si reduje, o mas. Entonces si mi input tiene n caracteres, mi peor escenario es pasar por como mucho 2\*n configuraciones. Como las LR no son ambiguas (ergo no tienen ciclos), mi automata de pila no va a ciclar infinitamente (no hay derivacion a derecha arbitrariamente larga). Hay una cota a cuantas operaciones puede hacer el automata de pila antes de cambiar de configuracion, y eso lo multiplicamos por n y ganamos. Entonces es lineal.
