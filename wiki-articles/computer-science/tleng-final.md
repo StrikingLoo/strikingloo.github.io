@@ -273,3 +273,56 @@ El algoritmo de parsing LR(1) es :
 El algoritmo tiene complejidad lineal en el tamaño de entrada. Podemos asignar a una configuracion una funcion V(C) = \|pila\| + 2\*(\|w\| - i) donde i es mi posicion actual de la cadena w input.
 
 Luego cada transición o bien el valor baja 2 (porque comió un caracter de la cadena), o baja >=1 si reduje, o mas. Entonces si mi input tiene n caracteres, mi peor escenario es pasar por como mucho 2\*n configuraciones. Como las LR no son ambiguas (ergo no tienen ciclos), mi automata de pila no va a ciclar infinitamente (no hay derivacion a derecha arbitrariamente larga). Hay una cota a cuantas operaciones puede hacer el automata de pila antes de cambiar de configuracion, y eso lo multiplicamos por n y ganamos. Entonces es lineal.
+
+## Gramaticas con Atributos
+
+Una gramática de atributos es una tupla (G, A, V, R) donde G es una gramatica (libre de contexto, no ambigua, sin Vn no alcanzables), A conjunto de atributos (A(X) es el cjto de atributos de X en NUT), V los dominios de los valores y R el conjunto de reglas asociadas a una produccion+atributo.
+
+Un atributo X.a es sintetizado si hay una producción p : X -> α y una regla para p donde ocurre X.a. Un atributo X.a es heredado si hay una producción p : Y -> αXβ y una regla para p donde ocurre X.a.
+
+Start no puede tener heredados. 
+
+Dado el árbol de derivación, el valor de un atributo sintetizado en un nodo se obtiene de los nodos hijos, y el valor de un atributo heredado en un nodo se obtiene del nodo padre o de los nodos hermanos.
+
+**Semantica de una cadena** : Dada una cadena α, y una gramatica GA, el significado de α en L(G) es el conjunto de valores de A(S). Esto es el conjunto de valores que toma el simbolo start S. 
+
+El orden de evaluación, si existe, queda parcialmente determinado por las dependencias entre los atributos. Si hay dependencias circulares, la evaluación podría no ser posible. Para esto construimos un **grafo de dependencias** de una **produccion** tq si una regla define a en función de b, decimos Xi.b -> Xi.a. 
+
+Llamamos **arbol atribuido** al arbol de derivación con etiquetas para atributos de A. 
+
+**Grafo de dependencias**: Para cada produccion p, damos un grafo DP(p) de dependencias. Luego el de un arbol atribuido se forma mediante la composición de grafos de dependencias DP(p) para todo p.
+
+**Gramática de Atributos Circular**: una GA será circular si su grafo de dependencias lo es.
+
+**Gramática bien definida**: Una GA está bien definida si no tiene ninguna forma sentencial con atributos que dependan circularmente de si mismos.
+
+**Orden topológico de un grafo**: Todos los nodos aparecen exactamente una vez, y si (u, v) en G entonces u aparece antes que v. (Vamos de los source a los sink).
+
+> Una gramática GA está bien definida si todo orden topológico de su grafo de dependencias es orden de evaluación consistente con las dependencias.
+
+
+**GA Completa**: 
+- Para toda producción p, A -> αXß, todos los atributos heredados de X se definen en p.
+- Para toda producción p, A -> α, todos los atributos sintetizados de A se definen en p.
+
+A fin de cuentas, completa sii todos los atributos heredados y sintetizados definibles se definen.
+
+GA Completa AND DP(GA) aciclico -> GA bien definida.
+
+Para testear si GA tiene un grafo de dependencias ciclico:
+- Generamos G'
+- Generamos sus producciones
+- Vemos la admisibilidad de las producciones revisando el grafo de dependencias de G.
+- Quitamos de G' las producciones inutiles (las que no generan terminales desde start)
+- Si en G' hay una **producción que es un arco admisible**^^, contestar G es circular. Sino, contestar GA bien formada.
+
+Si GA es bien definida, podemos generar GA' tq todos sus atributos son sintetizados.
+
+X → αtY Y → βZγ
+
+**Gramaticas s-atribuidas**: Una gramatica s-atribuida no tiene atributos heredados, y el grafo de dependencias directas de cada prod p es acíclico. Pueden evaluarse en un solo recorrido ascendente.
+
+**Gramática l-atribuida**: 1-pass grammar. X -> X1X2X3...Xn => si (Xi.a, Xj.b) en grafo de dependencias, i < j. Y el grafo es acíclico.
+
+
+
