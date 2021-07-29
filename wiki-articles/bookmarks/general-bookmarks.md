@@ -55,3 +55,8 @@ Rules for MKIII
 ---
 Image to text
 <https://www.onlineocr.net/>
+
+---
+Read something great
+<https://www.readsomethinggreat.com/>
+
