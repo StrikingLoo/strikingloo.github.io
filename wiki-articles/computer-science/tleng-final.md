@@ -325,4 +325,67 @@ X → αtY Y → βZγ
 **Gramática l-atribuida**: 1-pass grammar. X -> X1X2X3...Xn => si (Xi.a, Xj.b) en grafo de dependencias, i < j. Y el grafo es acíclico.
 
 
+## Ultimas 2 clases
 
+- Hay un algoritmo para pasar cualquier gramática G libre de contexto a forma normal de Chomsky.
+
+Por cada producción de forma A -> a o A -> BC la dejo como está. Si es A -> X1X2 tq X1 o X2 en T, genero A -> X1'X2'. Si A -> X1...Xk la desenvuelvo:
+- A -> X1'\<X2...Xk>
+- \<X2...Xk> -> X2'\<X3...Xk>
+
+Finalmente, si Xi es un T entonces Xi' -> Xi. Si Xi en Vn, reemplazo Xi' por Xi.
+
+Notar que \|N'\| <= \|N\| + \|T\| + l \* \|P\| donde l es la máxima longitud de un RHS.
+
+La cantidad de operaciones es lineal en P.
+
+### Cocke Younger-Kasami (CYK)
+
+Construyo tabla T tq Tij = { A tq A =+\> ai...ai+j-1 }. Osea todos los no-terminales que derivan ai...ai+j-1. (La tabla se indefine si i+j-1 > n).
+
+Luego w en L(G) sii S en T1,n.
+
+Para construir la tabla de CYK:
+
+- Partimos de G una gramatica en forma normal de Chomsky sin lambda producciones, y con w como cadena de input.
+
+Definimos ti, 1 = {A : A -> ai en P}, para i in 1...n.
+
+Una vez computados ti,j' para i en 1...n y j' en 1...j-1, definimos:
+
+tij = {A : A -> BC en P, y para algun k, 1 <= k < j, B en tik y C en ti+k,j-k}
+
+Notar que tik y ti+k,j-k se computan antes. (Es un Floyd's Algorithm de derivaciones!).
+
+Complejidad para construir la tabla en cadena de n caracteres es n^3. Se hace como reconstruir un camino con el Floyd's Algo.
+
+(Pido gen(1, n, S) y en general gen(i, j, A) es A -> wi si A -> wi es una produccion, sino por cada k entre i, i+j pruebo si hay una prod A -> BC tq B in ti,k, C in ti+k,j y devuelvo esa y llamo a ambos gen.)
+
+### Parsing de Earley
+
+Un item de Earley para G, w es [A -> X1X2...Xk·Xk+1...Xm, i] tq i entre 1...\|w\| y A -> X1...Xm en P. 
+
+Construimos las listas de items l1...ln tq [A ->  α·β, i] ∈ j sii para algún γ y δ S
+- S =\*> γAδ, 
+- γ =\*> a1 . . . ai 
+- α =\*> ai+1 . . . aj 
+
+Osea: el item [A ->  α·β, i] en lj se lee "puedo generar hasta w[:i], luego una A, y α genera w[i:j]. 
+
+En particular si [A -> α., 0] está en lj, ganamos (w in L(G)).
+
+El algoritmo de Earley genera las listas li. En 6 pasos.
+
+- Si S -> α, agregar [S -> ·α, 0] a l0.
+- Si [A -> α · Bβ, 0] ∈ l0 y [B → γ·, 0] ∈ l0 (en particular γ puede ser λ) entonces agregar a l0, [A -> αB · β, 0]. (Agrego no terminales que no aportan, adelantando el puntito).
+- Si [A → α·Bβ, 0] ∈ l0, agregar a l0 para toda B → γ en P, (si es que aún no está), [B → ·γ, 0]. (Clausura lambda!)
+- Supongamos que ya hemos construido l0, . . . lj−1. Si [B → α·aBβ, i] en lj−1 tal que a = aj, agregar a lj [B -> αa · β, i]. (adelantar el puntito trivial)
+- Paso 5 Si [B -> α · Aβ, k] ∈ li y [A -> γ·, i] ∈ lj , agregar a lj [B → αA · β, k]. (ahi sale el Floyd).
+- Si [A → α · Bβ, i] ∈ lj , agregar a lj , para todo B → γ en P, [B → ·γ, j].
+
+Si la gramatica es no ambigua, la construcción de las listas es n^2 en tiempo, si n == \|w\|.
+
+Luego, la derivación mas a la derecha se encuentra en tiempo cuadratico, haciendo lookups en la tabla de listas (Hacemos R([A -> X1...Xk., 0], n) partiendo de ln y vamos moviendo el puntero j a la izquierda si es un terminal, o hallando items tq forman substrings de w si no. 
+- Encontrar un item [Xk -> γ·, i'] en lj' para algun i' tq [A -> X1...Xk-1 · Xk...Xm, i] en li'. Luego ejecutar R([Xk -> γ·, i'], j'). Luego k--, j' = i'.
+
+El algoritmo es cuadratico porque, a fin de cuentas, a lo sumo pasa una cantidad constante de veces por cada i', j' (\|P\|\*M donde M es máx size de RHS).
