@@ -79,6 +79,7 @@ Tiene para cada tripla q, a, A de estado, caracter y tope de pila, como mucho un
 Si un idioma no es libre de prefijos (x en L entonces xy no en L), entonces todo automata de pila M que acepta L necesariamente será no-deterministico. (Sino, vacio la pila y termino, porque necesito aceptar x, y nunca podria aceptar xy).
 
 ### Los APD se tildan?
+
 Un AFD o AFND-l no se puede tildar. En cambio:
 
 La cantidad de transiciones que realiza un AP determinístico no está acotada por el tamaño de la entrada. La ejecución depende no solamente de la entrada sino también del contenido de la pila.
