@@ -402,11 +402,44 @@ Luego, la derivación mas a la derecha se encuentra en tiempo cuadratico, hacien
 
 El algoritmo es cuadratico porque, a fin de cuentas, a lo sumo pasa una cantidad constante de veces por cada i', j' (\|P\|\*M donde M es máx size de RHS).
 
+## DFA (AFD) minimization
+Tengo un AFD y lo quiero convertir en uno equivalente que tenga el minimo numero de estados.
+
+Primero removemos estados redundantes:
+- Removemos unreachable states (estados inalcanzables desde S).
+- Removemos estados muertos (los que no pueden alcanzar un estado final bajo ninguna configuracion).
+- Nondistinguishable states son los que no pueden distinguirse entre si para ningun input. Tambien son removibles.
+
+Normalmente armar al automata se hace en 2 pasos:
+- Remover redundantes
+- Mergear indistinguibles
+
+El estado qi es inalcanzable si no existe w tq d(q0, w) = qi. 
+
+Los reachable salen facil: comenzas por q0 y, por cada estado en la frontera, por cada simbolo, agregas todos los adyacentes. Luego esos son tu frontera, los agregas a reachable y repetis. Luego los nuevos son la frontera, etc. 
+
+Dos estados p, q son indistinguibles si para toda cadena w, d(p, w) in F sii d(q, w) in F. Ademas si dos estados son indistinguibles, todos los alcanzables desde ellos tambien lo seran. 
+
+Para particionar los estados de un AFD por clase de distinguibilidad (y luego crear el AFD minimo) partimos con {F, ¬F} y hacemos
+
+``` for each X in P:
+        for each e in X such that ¬marked(e): 
+            X' = {e}
+            for each e' in X:
+                if [d(e',a)]==[d(e,a)] for every a in alphabet:
+                    X' += {e'}
+                    (mark(e'))
+            X -= X';
+            P+=X;
+   repeat until convergence;
+```
+
+
 ## Preguntas
 
-- Algoritmo para ver si dos AFD reconocen el mismo lenguaje (o si un lenguaje regular es finito)
-- Ver que dada una gramatica con atributos puede crearse una con todos sus atributos sintetizados
-- Ver que si tengo un automata de pila deterministico con ciclos, se puede generar uno que reconozca el mismo lenguaje sin ciclos
-- Enunciar (no demostrar) pumping para lenguajes libres de contexto.
-- repasar automata de pila no-det. cuantos posibles hay dado un alfabeto de simbolos?
+- Algoritmo para ver si dos AFD reconocen el mismo lenguaje (o si un lenguaje regular es finito) √ 
+- Ver que dada una gramatica con atributos puede crearse una con todos sus atributos sintetizados ~
+- Ver que si tengo un automata de pila deterministico con ciclos, se puede generar uno que reconozca el mismo lenguaje sin ciclos ~
+- Enunciar (no demostrar) pumping para lenguajes libres de contexto. 
+- repasar automata de pila no-det. cuantos posibles hay dado un alfabeto de simbolos? 
 - repasar estos: <https://www.cubawiki.com.ar/index.php/Finales_Virtuales_Tleng:_Diciembre_de_2020>
