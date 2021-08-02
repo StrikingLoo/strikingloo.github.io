@@ -78,6 +78,18 @@ Tiene para cada tripla q, a, A de estado, caracter y tope de pila, como mucho un
 
 Si un idioma no es libre de prefijos (x en L entonces xy no en L), entonces todo automata de pila M que acepta L necesariamente será no-deterministico. (Sino, vacio la pila y termino, porque necesito aceptar x, y nunca podria aceptar xy).
 
+### Los APD se tildan?
+Un AFD o AFND-l no se puede tildar. En cambio:
+
+La cantidad de transiciones que realiza un AP determinístico no está acotada por el tamaño de la entrada. La ejecución depende no solamente de la entrada sino también del contenido de la pila.
+
+Es posible que un autómata de pila determinístico realice una cantidad infinita de λ-movimientos desde alguna configuración. Decimos que estas configuraciones ciclan.
+
+E.g., dos nodos que se vinculan mutuamente con lambda, uno pushea a si top ==b, el otro pushea b si top ==a.
+
+Formalmente, una configuracion (q, w, α) con \|α\| > 0 cicla si existen infinitas (qi, w, αi) tq \|αi\| >= \|α\|. Osea, infinitas transiciones lambda, que no achican la cadena ni los contenidos de la pila.
+
+Notar que la pila podria crecer indefinidamente, o ciclar entre varias cadenas (e.g. arranca en a, y despues cicla entre abcd y acdb). 
 ## Gramáticas libres de contexto
 
 Una gramatica G es ambigua si para una cadena w, existen dos árboles de derivación distintos.
@@ -389,3 +401,12 @@ Luego, la derivación mas a la derecha se encuentra en tiempo cuadratico, hacien
 - Encontrar un item [Xk -> γ·, i'] en lj' para algun i' tq [A -> X1...Xk-1 · Xk...Xm, i] en li'. Luego ejecutar R([Xk -> γ·, i'], j'). Luego k--, j' = i'.
 
 El algoritmo es cuadratico porque, a fin de cuentas, a lo sumo pasa una cantidad constante de veces por cada i', j' (\|P\|\*M donde M es máx size de RHS).
+
+## Preguntas
+
+- Algoritmo para ver si dos AFD reconocen el mismo lenguaje (o si un lenguaje regular es finito)
+- Ver que dada una gramatica con atributos puede crearse una con todos sus atributos sintetizados
+- Ver que si tengo un automata de pila deterministico con ciclos, se puede generar uno que reconozca el mismo lenguaje sin ciclos
+- Enunciar (no demostrar) pumping para lenguajes libres de contexto.
+- repasar automata de pila no-det. cuantos posibles hay dado un alfabeto de simbolos?
+- repasar estos: <https://www.cubawiki.com.ar/index.php/Finales_Virtuales_Tleng:_Diciembre_de_2020>
