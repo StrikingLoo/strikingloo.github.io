@@ -422,7 +422,8 @@ Dos estados p, q son indistinguibles si para toda cadena w, d(p, w) in F sii d(q
 
 Para particionar los estados de un AFD por clase de distinguibilidad (y luego crear el AFD minimo) partimos con {F, ¬F} y hacemos
 
-``` for each X in P:
+``` 
+for each X in P:
         for each e in X such that ¬marked(e): 
             X' = {e}
             for each e' in X:
@@ -431,7 +432,7 @@ Para particionar los estados de un AFD por clase de distinguibilidad (y luego cr
                     (mark(e'))
             X -= X';
             P+=X;
-   repeat until convergence;
+repeat until convergence;
 ```
 .
 ## Preguntas
