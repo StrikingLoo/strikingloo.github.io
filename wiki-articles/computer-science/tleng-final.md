@@ -432,7 +432,7 @@ for each X in P:
                     X' += {e'}
                     (mark(e'))
             X -= X';
-            P+=X;
+            P+=X';
 repeat until convergence;
 ```
 ## Preguntas
