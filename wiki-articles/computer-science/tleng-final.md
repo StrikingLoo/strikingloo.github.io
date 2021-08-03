@@ -435,9 +435,7 @@ for each X in P:
             P+=X;
 repeat until convergence;
 ```
-.
 ## Preguntas
-.
 - Algoritmo para ver si dos AFD reconocen el mismo lenguaje (o si un lenguaje regular es finito) √ 
 - Ver que dada una gramatica con atributos puede crearse una con todos sus atributos sintetizados ~
 - Ver que si tengo un automata de pila deterministico con ciclos, se puede generar uno que reconozca el mismo lenguaje sin ciclos ~
