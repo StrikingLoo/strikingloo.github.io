@@ -190,7 +190,7 @@ Primeros\_k(w) = conjunto de prefijos de k caracteres de todas las cadenas de te
 
 Una gramatica LL(k) cumple que si tengo S => wAv => wuv => wx y S => wAv => wu'v => wy, y primeros\_k(x) =primeros\_k(y) entonces u==u'.
 
-Osea: si tengo dos cadenas que empiezan igual, tienen a la mas izquierda al mismo no-terminal, y terminan en dos cadenas que comparten los primeros k caractres (+ el prefijo compatido) entonces ese mismo no-terminal tiene que haber mutado a la misma cadena en su derivación mas a la izquierda.
+Osea: si tengo dos cadenas que empiezan igual, tienen a la mas izquierda al mismo no-terminal, y terminan en dos cadenas que comparten los primeros k caractres (+ el prefijo compartido) entonces ese mismo no-terminal tiene que haber mutado a la misma cadena en su derivación mas a la izquierda.
 
 > Una gramática G libre de contexto es LLk sii para todo wAv tq S =\*\>L wAv y todo par de producciones A -> u y A -> u', u!=u', primeros\_k(uv) AND primeros\_k(u'v) == {}. 
 
@@ -226,10 +226,10 @@ Para parsear un lenguaje LL(1) dada su gramatica G:
 - generamos la tabla LL(1): Esta tabla tiene Vn en filas, Vt en columnas, y M(A,a) = A -> v tq SD(A -> v) == a. Este elemento, si existe es unico, o el lenguaje no seria LL(1). Si no existe, dictará cadenas no aceptadas.
 - Una vez hecha la tabla, tenemos una pila que arranca con $S y la cadena en una queue. Vamos desapilando de a un caracter y:
 - Si es un No-terminal, miramos el frente de la queue y buscamos M(A,a). Luego apilamos en orden inverso el RHS de la produccion correspondiente.
-- Si es un termina, comparo con el tope de la queue. Si matchean, desencolo y desapilo. Si no matchean, raise ValueError().
+- Si es un terminal, comparo con el tope de la queue. Si matchean, desencolo y desapilo. Si no matchean, raise ValueError().
 - Repito hasta que tope de pila == $. Ahi devuelvo True.
 
-El runtime es O(n) donde n es \|w\| ya que por cada caracter de la cadena, a lo sumo pasamos l\^k veces por transformaciones antes de matchearlo, donde l es el maximo size de una RHS de produccion, y k = \|Vn\|.
+El runtime es O(n) donde n es \|w\| ya que por cada caracter de la cadena, a lo sumo pasamos L^k veces por transformaciones antes de matchearlo, donde L es el maximo size de una RHS de produccion, y k = \|Vn\|.
 
 ## Parsing LR(1)
 
@@ -260,7 +260,7 @@ Supongamos A → αβ ∈ P. Un item [A → α.β, u], con u ∈ T\* y |u| ≤ k
 - S =\> ηAw =\> ηαβw. 
 - u ∈ primeros\_k(w)
 
-Si el lenguaje es LR(0), obviamos la segunda condición. Notar que si voy moviendo el punto, tengo 1 prefijo viable por cada posicion, entonces para A -> αβ voy teniendo \|αβ\| prefijos vialbes * cada eta.
+Si el lenguaje es LR(0), obviamos la segunda condición. Notar que si voy moviendo el punto, tengo 1 prefijo viable por cada posicion, entonces para A -> αβ voy teniendo \|αβ\| prefijos viables por cada η.
 
 Para parsear una cadena LR(1) primero construimos un AFND-lambda que acepta el lenguaje de **prefijos viables** de G. Este se comporta tq q0 = [S' -> .S, $], y hacemos la clausura lambda (que es agregar todos los [A -> .u, $] si S -> A). Y despues d([A -> α.Xβ, u], X) = [A -> αX.β, u], pero ademas hacemos clausura lambda de ambos lados!
 
@@ -287,7 +287,7 @@ El algoritmo tiene complejidad lineal en el tamaño de entrada. Podemos asignar 
 
 Luego cada transición o bien el valor baja 2 (porque comió un caracter de la cadena), o baja >=1 si reduje, o mas. Entonces si mi input tiene n caracteres, mi peor escenario es pasar por como mucho 2\*n configuraciones. Como las LR no son ambiguas (ergo no tienen ciclos), mi automata de pila no va a ciclar infinitamente (no hay derivacion a derecha arbitrariamente larga). Hay una cota a cuantas operaciones puede hacer el automata de pila antes de cambiar de configuracion, y eso lo multiplicamos por n y ganamos. Entonces es lineal.
 
-## Gramaticas con Atributos
+## Gramaticas con Atributos
 
 Una gramática de atributos es una tupla (G, A, V, R) donde G es una gramatica (libre de contexto, no ambigua, sin Vn no alcanzables), A conjunto de atributos (A(X) es el cjto de atributos de X en NUT), V los dominios de los valores y R el conjunto de reglas asociadas a una produccion+atributo.
 
