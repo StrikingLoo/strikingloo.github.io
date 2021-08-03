@@ -352,7 +352,7 @@ Notar que \|N'\| <= \|N\| + \|T\| + l \* \|P\| donde l es la máxima longitud de
 
 La cantidad de operaciones es lineal en P.
 
-### Cocke Younger-Kasami (CYK)
+### Cocke Younger-Kasami (CYK)
 
 Construyo tabla T tq Tij = { A tq A =+\> ai...ai+j-1 }. Osea todos los no-terminales que derivan ai...ai+j-1. (La tabla se indefine si i+j-1 > n).
 
