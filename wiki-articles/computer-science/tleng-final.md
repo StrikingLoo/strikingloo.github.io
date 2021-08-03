@@ -374,7 +374,7 @@ Complejidad para construir la tabla en cadena de n caracteres es n^3. Se hace co
 
 (Pido gen(1, n, S) y en general gen(i, j, A) es A -> wi si A -> wi es una produccion, sino por cada k entre i, i+j pruebo si hay una prod A -> BC tq B in ti,k, C in ti+k,j y devuelvo esa y llamo a ambos gen.)
 
-### Parsing de Earley
+### Parsing de Earley
 
 Un item de Earley para G, w es [A -> X1X2...Xk·Xk+1...Xm, i] tq i entre 1...\|w\| y A -> X1...Xm en P. 
 
