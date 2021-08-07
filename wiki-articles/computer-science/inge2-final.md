@@ -5,8 +5,7 @@ date: 2021-08-06
 tags: Inge2,inge2, UBA, spanish, español, cs, algorithms, fuzzing, testing
 description: "Notas para el final de Inge2. Basadas en los videos de la teorica. In Spanish."
 ---
-
-## Program Analysis
+## Program Analysis
 
 **Program Analysis**: Discover useful facts about a program. 
 
@@ -15,7 +14,7 @@ description: "Notas para el final de Inge2. Basadas en los videos de la teorica.
 
 Analysis can be complete (we find every useful fact) or sound (every fact we find is true). Typically static analysis is more complete, but dynammic analysis is more sound. 
 
-## Iterative analysis
+## Iterative analysis
 
 Armamos el control flow graph donde cada nodo es un statement y un nodo lleva a otro si puede precederlo. Vamos mappeando los valores posibles de variables si los sabemos, de nodo a nodo. Con eso podemos concluir, por ejemplo, si una variable siempre vale lo mismo en un cierto esstado.
 
@@ -60,13 +59,13 @@ Por cada statement de while++-flow, siempre agregamos nodos y flechas, nunca rem
 - **Type based**: Menos granulado, menos costoso. Cantidad de tipos es finito, cantidad de objetos abstractos tambien. Al menos te dice el tipo de cada variable.
 - **Heap insensitive**: Un solo abstract object que es simplemente la heap. Todas las variables le apuntan con azul, y todos los atributos en rojo tambien.
 
-### Modeling Aggregate Data Types: Records
+### Modeling Aggregate Data Types: Records
 
 - **Field Insensitive**: merge all fields of each record.
 - **Field based**: merge each field for all records.
 - **field sensitive**: keep each field of each record object separate.
 
-## Constraint-Based analysis
+## Constraint-Based analysis
 
 Nos deja separar implementacion del analisis, de declaracion de constraints (what de how) y abstraernos de la primera para concentrarnos en la segunda.
 
@@ -130,7 +129,7 @@ Algunos mutantes pueden ser equivalentes: para todo input tienen el mismo output
 
 Notar que hay muchisimos mutantes posibles para un solo programa pequeño (aun para un solo statement). Algunas formas de resolver esto para ganar escalabilidad son: ejecutar para cada mutante, solo los inputs que tienen covertura de ese statement mutado. Mutacion debil: veo si modifique el valor de una variable del estado luego de mutar un statement, en vez de mirar si modifique el output mismo del programa. 
 
-### Random Testing (Fuzzing)
+### Random Testing (Fuzzing)
 
 **Monkey Testing (for Android)**: Generate a sequence of tapping events (down and up, or down, drag and up), then generate many different random sequences and check if any one sequence crashes the program.
 
