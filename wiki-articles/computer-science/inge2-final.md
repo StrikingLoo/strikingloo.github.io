@@ -121,6 +121,28 @@ Usamos pre y post condiciones, idealmente escritos en el mismo lenguaje del codi
 
 **Mutation Analysis**: Assumes the programmer wrote a close to right code. Tests variations of the program (e.g., replace x < k with x > k, or w + 1 to w - 1). If the testsuit eis good, it should break on mutants. If it doesn't, then we add a test that covers that case. As a possible problem: what happens when mutation generates equivalent programs?
 
+### Mutation Analysis
 
 
+Tomo el codigo de una funcion y le aplico operadores de mutacion. Hacen un solo pequeño cambio al codigo, e.g. cambiar un + por un -, una expr por abs(expr), o por 0, intercambiar argumentos de funcion, etc. Luego le corro el testsuite. Si rompe por los bugs introducidos en el cambio, decimos que "la testsuite mata al mutante", de lo contrario decimos que no. Llamamos el **mutation score** al % de mutantes que mueren sobre el total, para un total prefijado (y configuramos que mutaciones queremos usar, etc.).
+
+Algunos mutantes pueden ser equivalentes: para todo input tienen el mismo output, aun si hay o no un defecto en su comportamiento.
+
+Notar que hay muchisimos mutantes posibles para un solo programa pequeño (aun para un solo statement). Algunas formas de resolver esto para ganar escalabilidad son: ejecutar para cada mutante, solo los inputs que tienen covertura de ese statement mutado. Mutacion debil: veo si modifique el valor de una variable del estado luego de mutar un statement, en vez de mirar si modifique el output mismo del programa. 
+
+### Random Testing (Fuzzing)
+
+**Monkey Testing (for Android)**: Generate a sequence of tapping events (down and up, or down, drag and up), then generate many different random sequences and check if any one sequence crashes the program.
+
+**Concurrency testing**: Simulate different thread schedules by adding artificial delays between threads, appending "Sleep()" calls randomly on different threads' code. Shown to be a lot better than stress testing.
+
+We call a bug's "depth" the quantity of ordering constraints needed to guarantee the bug takes place. E.g., "statement1 before statement 2 and statement 2 before statement 3". These constraints imply scheduler behaviour, and transcend thread boundaries (inside a thread, two statements will always go in the same order, obv).
+
+Cuzz and other frameworks say most bugs have small depth.
+
+Pros: Can be a lot easier to use than manual testing, cheaper and more efficient. Con: uses more tests per coverage point and may find useless bugs (like weird unsanitized inputs). Also makes many tests that simply don't pass preconditions.
+
+> Automatic testing should complement, not replace manual testing.
+
+Podemos usar alguna [gramática formal](/wiki-articles/computer-science/tleng-final) para generar inputs aleatorios que sean validos. De esta forma, especialmente en programas de mayor complejidad, los inputs generados tienen mas chances (idealmente 100%) de cumplir las precondiciones del programa a testear, siendo mucho mas eficiente la generacion de tests.
 
