@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Ingenieria del Software II - Notas para el final"
+date: 2021-08-06
+tags: Inge2,inge2, UBA, spanish, español, cs, algorithms, fuzzing, testing
+description: "Notas para el final de Inge2. Basadas en los videos de la teorica. In Spanish."
+---
 
 ## Program Analysis
 
