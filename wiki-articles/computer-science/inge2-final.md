@@ -145,3 +145,74 @@ Pros: Can be a lot easier to use than manual testing, cheaper and more efficient
 
 Podemos usar alguna [gramática formal](/wiki-articles/computer-science/tleng-final) para generar inputs aleatorios que sean validos. De esta forma, especialmente en programas de mayor complejidad, los inputs generados tienen mas chances (idealmente 100%) de cumplir las precondiciones del programa a testear, siendo mucho mas eficiente la generacion de tests.
 
+## Automated Testing
+
+A diferencia de Random testing, hacemos white-box testing y buscamos generar casos de test relevantes usando el codigo de forma directa.
+
+Algunos ejemplos:
+
+### Korat
+Korat testea mayormente estructuras de datos algebraicas/linkeadas, enumerando para un cierto tamaño n todos los posibles candidatos no isomorficos de ese tamaño (e.g., toda lista linkeada de n nodos, o arbol binario de n nodos).
+
+Enumera haciendo un vector de todos los fields de todos los nodos + una lista de valores posibles, y va "expandiendo" el vector en un orden dictado por una funcion "repOK" que es el invariable de representacion de la estructura. Va a ir probando todos los valores posibles del vector (que univocamente describe una estructura) y viendo: si cumplen la precondicion los deja como test, sino no. Lo interesante es que prunea el espacio de valores posibles agresivamente, eliminando isomorfismos, y siguiendo un orden de stack con la precondicion: simepre expande el ultimo campo en ser accedido por repOK hasta que no quedan valores para expandirlo, y ahi el campo anterior, y asi.
+
+Funciona mejor para estructuras de datos linkeadas, no para tipos dificiles de enumerar (e.g., enteros o floats).
+
+### Randoop
+Feedback-directed random test generation.
+
+Hace un test con muchas operaciones de seetup de estado (Crear un objeto, modificarlo etc.) y finalmente un assert de una propiedad que deberia holdearse (una post condicion de alguno de los metodos usados), e.g., o1.equals(o1).
+
+Resuelve el problema de uniform random testing usando una secuencia: usa una secuencia de metodos, y si no rompen y no son ilegales los resultados, entonces la recuerda y luego puede extenderla llamando a otro metodo de la clase. Tiene que tener como input un budget de tiempo, y post-condiciones para los objetos testeados y sus metodos.
+
+El output son contract-violating test-cases (method sequences). Estos casos no pueden romper ninguna precondicion ni lanzar excepciones en el camino, y cada uno tiene al final un assert que rompe.
+
+Randoop algorithm:
+![](img_inge2/randoop_algorithm.png)
+
+Luego de generar una secuencia, decide si la descarta, conserva y outputea como test, o la descarta por redundancia.
+- if preconditions broke (exception thrown before assert): *discard*.
+- if preconditions worked but assertion broke: *output as failing test* (happy path).
+- if preconditions worked but sequence redundant (simply do an equals between a generated object and any other object in the current generated universe): *discard*.
+- if assertion passed but object not redundant: add to universe of generated objects.
+
+### Greybox Fuzzing
+
+Fuzzeo sin mirar el codigo, pero viendo la coverage. El algoritmo toma una serie de "seeds" (inputs predefinidos) y mutaciones (operaciones que transforman las seeds y sus mutaciones). 
+
+Lo que hace el algoritmo es probar los path cubiertos por cada seed y, para los que no crashean ni vulneran precondiciones, los muta y genera nuevos inputs, y asi hasta K ejecuciones de inputs (K un budget provisto por el usuario).  
+
+Si un input aumenta la coverage, lo agregamos al set de seeds, para que pueda seguir mutando etc. En "boosted" greybox fuzzing, cada input será elegido como una siguiente seed con probabilidad proporcional a su "energia" que es 1/f(p(input)) donde f(p(x)) es "cuantas veces un input recorrio este path en el codigo antes?" asi un input que recorre un path por primera vez tiene energia = 1, uno que recorre un camino visto 1000 veces tiene energia 1e-3, etc.
+
+Defecto, propagacion, infeccion y falla (defecto es algo salio mal, propagacion es que afecto otras partes del programa, infeccion es que el defecto cambio un comportamiento y falla es que el programa efectivamente da un output distinto). (e.g., si mi programa es accidentalmente cuadratico, puede nunca fallar pero tiene un defecto por su mala performance. Lo mismo si indexo un puntero fuera de bounds pero no tengo segmentation fault porque justo estoy dentro de mi area.).
+
+Basicamente, con blackbox fuzzing genero seed o seed+mutacion pero nunca agrego un mutante a mis seeds. Con greybox fuzzing voy agregando a mi corpus los mutantes efectivos, y tengo una metrica de efectividad con la que seleccionarlos.
+
+## Dynamic symbolic execution
+
+Tenemos **symbolic execution** desde los '70s: por cada conjunto de ifs anidados, meto en un theorem prover todos, y si hallo un input que los cumpla, reporto que ese bloque de codigo es alcanzable. En particular si el bloque de codigo genera un error, asumimos que el error es posible.
+
+Luego si el prover prueba que tal input no existe, ignoramos ese codigo aun si tiene fallas.
+
+Pero si no somos capaces de probar existencia ni inexistencia, entonces erramos del lado de soundness: asumimos que hay un bug y reportamos que es alcanzable, aun si no sabemos como. Otro problema que tiene este algoritmo es que escala mal a codigo muy grande.
+
+DSE comienza con un set de inputs aleatorio, y lo ejecuta. Luego backtrackea en el arbol de condiciones y toma un camino anteriormente no tomado, usando un theorem prover para hallar valores que cumplan todas las constraints. Genera el camino negando la ultima condicion que haya sido evaluada, luego backtrackeando.
+
+Esto lo vuelve incomplete theorem prover: podria declarar insatisfactible una constraint satisfactible, pero nunca va a pensar que una insatisfactible tiene solucion. 
+
+Dynamic symbolic execution is akin to dynamic analysis itself: it is never reporting an error that no input can reach, and therefore it is complete. However it will be unsound, as it may fail to find inputs that trigger a certain failure.
+
+### SBST Search Based Software Testing
+
+Cuando las condiciones en los if son suficientemente complejas, usar un theorem prover para resolverlas puede ser lento o impracticable. En estos casos, recurrimos a algoritmos de hill climbing, [metaheurísticas](wiki-articles/computer-science/algo3-final) o genéticos para generar inputs que satisfagan una cierta condición.
+
+Usan **hill-climbing**, **algoritmos geneticos** o **metaheuristicas**.
+
+Como funcion de costo / fitness usamos una "branch distance", que idealmente será continua y derivable.
+
+Como forma de mejorar branch distance podemos tener en cuenta dominators y post-dominators. Eventualmente guiamos nuestra busqueda con una mezcla del "approach level" (cuan cerca estoy del predicado, a cuantos if estoy) y la branch distance (la que definimos antes, cosas como "a == b" seria abs(a-b).
+
+Usamos una suma entre el "approach level" (cuandos nodos dependientes - ejecutados) y branch distance al predicado mas cercano (menos profundo), y tomamos la minima suma entre todos los path desde el root del cfg hasta el nodo que queremos alcanzar. Eventualmente es mejor sumar una normalizacion de la branch distance, para que no overwhelmee el approach level.
+
+Se normaliza para que sea entre 0 y 1, pero no veo que usen un maximo, es mas v := v/(v+1)
+
