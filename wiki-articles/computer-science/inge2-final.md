@@ -240,9 +240,9 @@ Finalmente el operador \|\| efectua una composición paralela: \|\|A = (B\|\|C) 
 
 Podemos agregar acciones compartidas: acciones que figuran en mas de un LTS, y que solo pueden llamarse si estan disponibles en todos los LTS a la vez. Basicamente si una accion esta en el alfabeto de dos LTS, entonces bloquea a ambos a menos que ambos la tengan disponible (de lo contrario nadie puede tomarla).
 
-Strong bisimulation: Una relacion binaria R es bisimulacion fuerte sii para toda accion a, PRQ sii (P -\>a  P') =\> existe Q' tq Q -\>a Q' y P'RQ', y analogo para el otro lado (Q, P).
+**Strong bisimulation**: Una relacion binaria R es bisimulacion fuerte sii para toda accion a, PRQ sii (P -\>a  P') =\> existe Q' tq Q -\>a Q' y P'RQ', y analogo para el otro lado (Q, P).
 
-Strong bisimilarity: Dos LTS P, Q son bisimilares sii hay una bisimulacion fuerte R tq (P,Q) in R. Osea, cada uno puede simular al otro. Dos procesos son no bisimilares si existe un observador externo uqe puede distinguirlos. Se representa "Q simula a P" con P <= Q.
+**Strong bisimilarity**: Dos LTS P, Q son bisimilares sii hay una bisimulacion fuerte R tq (P,Q) in R. Osea, cada uno puede simular al otro. Dos procesos son no bisimilares si existe un observador externo uqe puede distinguirlos. Se representa "Q simula a P" con P <= Q.
 
 Se agrega la nocion weak bisimulation: es igual pero incluye transiciones tau (como transiciones lambda) para trabajo interno de un proceso que no es input/output.
 
