@@ -222,7 +222,7 @@ Se normaliza para que sea entre 0 y 1, pero no veo que usen un maximo, es mas v 
 
 Para modelar sistemas concurrentes usamos **LTS (Labelled Transition Systems)**: [automatas finitos deterministicos](/wiki-articles/computer-science/tleng-final) tq hay n estados y entre dos estados la transición es un evento (el alfabeto es un set de eventos). Llamamos una ejecución valida a toda cadena de eventos+estados resultantes que sea aceptada por el automata. Una traza, en cambio, es meramente la cadena de eventos pura aceptada.
 
-**FSP (Finite Sequential Processes)**: Nos deja describir un LTS a traves de una gramatica formal. e.g., CONTROLLER = INACTIVE; INACTIVE = (on -> ACTIVE)|(burn -> ONFIRE);&c.
+**FSP (Finite Sequential Processes)**: Nos deja describir un LTS a traves de una gramatica formal. e.g., CONTROLLER = INACTIVE; INACTIVE = (on -> ACTIVE)\|(burn -> ONFIRE);&c.
 
 Para demostrar una propiedad de LTL, vamos a tomar el predicado P a demostrar, y crear A\_{¬P} el automata que genera todas las trazas que no cumplen P. Luego hacemos interseccion entre este, y el automata correspondiente al programa (su LTS). Si da vacío, es porque no hay instancia que no cumpla P. De no dar vacío, nos genera nuestro contraejemplo.
 
