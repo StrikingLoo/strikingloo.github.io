@@ -230,7 +230,7 @@ Cada transición del FSP añade un estado al LTS y una transicion de ese nuevo a
 
 Si desde un estado tengo dos transiciones (x -> A\|x -> B) tenemos que x es no deterministico. Si sale x, no deterministicamente elijo A o B.
 
-Syntactic sugar: BUFF = (in\[i:1..N\]-\>out\[i\]-\>BUFF). (equivalente a (in[1]-\>out[1]-\>BUFF|in[2]...). 
+Syntactic sugar: BUFF = (in\[i:1..N\]-\>out\[i\]-\>BUFF). (equivalente a (in[1]-\>out[1]-\>BUFF\|in[2]...). 
 
 Also podemos count\[i:0..N\] = (when \(i\<N\) inc -\> COUNT\[i+1\]\)
 
