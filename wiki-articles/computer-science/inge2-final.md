@@ -118,10 +118,9 @@ Usamos pre y post condiciones, idealmente escritos en el mismo lenguaje del codi
 
 **Code Coverage**: Can be measured in functions, statements, branches, lines and blocks. Pro: easy to measure. Con: doesn't imply robustness.
 
-**Mutation Analysis**: Assumes the programmer wrote a close to right code. Tests variations of the program (e.g., replace x < k with x > k, or w + 1 to w - 1). If the testsuit eis good, it should break on mutants. If it doesn't, then we add a test that covers that case. As a possible problem: what happens when mutation generates equivalent programs?
+**Mutation Analysis**: Assumes the programmer wrote a close to right code. Tests variations of the program (e.g., replace x < k with x > k, or w + 1 to w - 1). If the testsuite is good, it should break on mutants. If it doesn't, then we add a test that covers that case. As a possible problem: what happens when mutation generates equivalent programs?
 
 ### Mutation Analysis
-
 
 Tomo el codigo de una funcion y le aplico operadores de mutacion. Hacen un solo pequeño cambio al codigo, e.g. cambiar un + por un -, una expr por abs(expr), o por 0, intercambiar argumentos de funcion, etc. Luego le corro el testsuite. Si rompe por los bugs introducidos en el cambio, decimos que "la testsuite mata al mutante", de lo contrario decimos que no. Llamamos el **mutation score** al % de mutantes que mueren sobre el total, para un total prefijado (y configuramos que mutaciones queremos usar, etc.).
 
@@ -151,7 +150,8 @@ A diferencia de Random testing, hacemos white-box testing y buscamos generar cas
 
 Algunos ejemplos:
 
-### Korat
+### Korat
+
 Korat testea mayormente estructuras de datos algebraicas/linkeadas, enumerando para un cierto tamaño n todos los posibles candidatos no isomorficos de ese tamaño (e.g., toda lista linkeada de n nodos, o arbol binario de n nodos).
 
 Enumera haciendo un vector de todos los fields de todos los nodos + una lista de valores posibles, y va "expandiendo" el vector en un orden dictado por una funcion "repOK" que es el invariable de representacion de la estructura. Va a ir probando todos los valores posibles del vector (que univocamente describe una estructura) y viendo: si cumplen la precondicion los deja como test, sino no. Lo interesante es que prunea el espacio de valores posibles agresivamente, eliminando isomorfismos, y siguiendo un orden de stack con la precondicion: simepre expande el ultimo campo en ser accedido por repOK hasta que no quedan valores para expandirlo, y ahi el campo anterior, y asi.
@@ -215,4 +215,72 @@ Como forma de mejorar branch distance podemos tener en cuenta dominators y post-
 Usamos una suma entre el "approach level" (cuandos nodos dependientes - ejecutados) y branch distance al predicado mas cercano (menos profundo), y tomamos la minima suma entre todos los path desde el root del cfg hasta el nodo que queremos alcanzar. Eventualmente es mejor sumar una normalizacion de la branch distance, para que no overwhelmee el approach level.
 
 Se normaliza para que sea entre 0 y 1, pero no veo que usen un maximo, es mas v := v/(v+1)
+
+## Programacion concurrente
+
+3 niveles de concurrencia: concurrencia, paralelismo y distribucion.
+
+Para modelar sistemas concurrentes usamos **LTS (Labelled Transition Systems)**: [automatas finitos deterministicos](/wiki-articles/computer-science/tleng-final) tq hay n estados y entre dos estados la transición es un evento (el alfabeto es un set de eventos). Llamamos una ejecución valida a toda cadena de eventos+estados resultantes que sea aceptada por el automata. Una traza, en cambio, es meramente la cadena de eventos pura aceptada.
+
+**FSP (Finite Sequential Processes)**: Nos deja describir un LTS a traves de una gramatica formal. e.g., CONTROLLER = INACTIVE; INACTIVE = (on -> ACTIVE)|(burn -> ONFIRE);&c.
+
+Para demostrar una propiedad de LTL, vamos a tomar el predicado P a demostrar, y crear A\_{¬P} el automata que genera todas las trazas que no cumplen P. Luego hacemos interseccion entre este, y el automata correspondiente al programa (su LTS). Si da vacío, es porque no hay instancia que no cumpla P. De no dar vacío, nos genera nuestro contraejemplo.
+
+Cada transición del FSP añade un estado al LTS y una transicion de ese nuevo al source del referido. El FSP permite describir recursivamente procesos de finitos estados que aceptan cadenas infinitas de transiciones. En cada transicion puedo anotar los procesos (los no-terminales) o no, y ahi se deja implicito y anonimo (e.g., ON -> (off -> on -> ON).
+
+Si desde un estado tengo dos transiciones (x -> A|x -> B) tenemos que x es no deterministico. Si sale x, no deterministicamente elijo A o B.
+
+Syntactic sugar: BUFF = (in[i:1..N]-\>out[i]-\>BUFF). (equivalente a (in[1]-\>out[1]-\>BUFF|in[2]...). Also podemos count[i:0..N] = (when (i\<N) inc -> COUNT[i+1])
+
+Tenemos el estado magico **Stop** que es un estado sin salida.
+
+Finalmente el operador \|\| efectua una composición paralela: \|\|A = (B\|\|C) A es la union de ambos B y C, y arranca en el start de ambos.
+
+Podemos agregar acciones compartidas: acciones que figuran en mas de un LTS, y que solo pueden llamarse si estan disponibles en todos los LTS a la vez. Basicamente si una accion esta en el alfabeto de dos LTS, entonces bloquea a ambos a menos que ambos la tengan disponible (de lo contrario nadie puede tomarla).
+
+Strong bisimulation: Una relacion binaria R es bisimulacion fuerte sii para toda accion a, PRQ sii (P -\>a  P') =\> existe Q' tq Q -\>a Q' y P'RQ', y analogo para el otro lado (Q, P).
+
+Strong bisimilarity: Dos LTS P, Q son bisimilares sii hay una bisimulacion fuerte R tq (P,Q) in R. Osea, cada uno puede simular al otro. Dos procesos son no bisimilares si existe un observador externo uqe puede distinguirlos. Se representa "Q simula a P" con P <= Q.
+
+Se agrega la nocion weak bisimulation: es igual pero incluye transiciones tau (como transiciones lambda) para trabajo interno de un proceso que no es input/output.
+
+### Logica Temporal
+
+Usamos la logica proposicional, mas dos operadores modales: [] y <>: uno para "siempre" y el otro para "a veces". 
+
+La logica temporal lineal usa estructuras de kripke y valuaciones que dan valores TorF a los mundos.
+
+v \|= []a sii para todo mundo w' tq vRw' pasa que w'\|=a. !, && y \|\| se definen intuitivamente.
+
+v \|= <\>a sii existe un mundo w' tq vRw' tq w'\|=a.
+
+**Logica Temporal**: razona sobre el tiempo, adecuadas para un programa reactivo, caso particular de logica modal. Puede variarse de modelo de tiempo.
+
+Una formula LTL debe interpretarse en una estructura de kripke (W, R) tq W numerable y R orden total de W. 
+
+Decimos que M \|= P sii para toda traza s \|= P. 
+
+Safety: M \|= []!(cosa mala) 
+
+Liveness: M \|= []\(cosa buena\)
+
+Los LTS no son estructuras de kripke, pero interpretamos una traza t como estructura de kripke, donde el conjuntode proposiciones es el alfabeto del LTS, p true en i sii p es la accion en posicion i de t. 
+
+Traza usa solo acciones observables.
+
+**Automatas de Buchi**: Reconocen cadenas infinitas, w-regulares tq tienen un estado de aceptacion y reconocen toda cadena que pase por ese estado infinitas veces.
+Las cadenas que acepta estan en Sigma ^ Omega. 
+
+Podemos traducir una traza a un automata de Buchi, cuyo tamaño es exponencial en el tamaño de la clausula a probar. El algoritmo a usar se llama "LTL2Buchi".
+
+Expandimos new a next, cuando new vacio miramos next+old si matchean y linkeamos. Hay regla para cada operador. Los Old definen las transiciones: solo te moves hacia un estado si tu config actual satisface toda clausula del OLD.
+
+Arrancamos con un nodo con new = {P}, y despues por cada nodo que new!={}, expandimos el new. Los criterios de expansion son complejos, bizantinos y exceden el scope de este apunte.
+
+Para probar P aplica a un LTS m, pasamos LTS a otro automata de büchi usando LTS2Buchi (es una conversion muy directa: dejo todo casi igual y el conjunto F =Q).
+
+Luego tomamos el producto entre el LTS2Buchi y el LTL2Buchi (Q = Q1xQ2, Q0 = Q01xQ02, F = F1xQ2 U Q1xF2 y los delta son un cartesiano de ambos filtrado por que ambas transiciones tengan sentido. El lenguaje del producto es la interseccion de los lenguajes. Basta con verificar su vacuidad para probar P (de lo contrario, probamos ¬P).
+
+Para hallar que es no vacio, buscamos un ciclo que contenga un estado final y sea alcanzable desde S.
+
 
