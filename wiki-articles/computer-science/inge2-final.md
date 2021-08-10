@@ -154,7 +154,7 @@ Algunos ejemplos:
 
 Korat testea mayormente estructuras de datos algebraicas/linkeadas, enumerando para un cierto tamaño n todos los posibles candidatos no isomorficos de ese tamaño (e.g., toda lista linkeada de n nodos, o arbol binario de n nodos).
 
-Enumera haciendo un vector de todos los fields de todos los nodos + una lista de valores posibles, y va "expandiendo" el vector en un orden dictado por una funcion "repOK" que es el invariable de representacion de la estructura. Va a ir probando todos los valores posibles del vector (que univocamente describe una estructura) y viendo: si cumplen la precondicion los deja como test, sino no. Lo interesante es que prunea el espacio de valores posibles agresivamente, eliminando isomorfismos, y siguiendo un orden de stack con la precondicion: simepre expande el ultimo campo en ser accedido por repOK hasta que no quedan valores para expandirlo, y ahi el campo anterior, y asi.
+Enumera haciendo un vector de todos los fields de todos los nodos + una lista de valores posibles, y va "expandiendo" el vector en un orden dictado por una funcion "repOK" que es el invariable de representacion de la estructura. Va a ir probando todos los valores posibles del vector (que univocamente describe una estructura) y viendo: si cumplen la precondicion los deja como test, sino no. Lo interesante es que prunea el espacio de valores posibles agresivamente, eliminando isomorfismos, y siguiendo un orden de stack con la precondicion: siempre expande el ultimo campo en ser accedido por repOK hasta que no quedan valores para expandirlo, y ahi el campo anterior, y asi.
 
 Funciona mejor para estructuras de datos linkeadas, no para tipos dificiles de enumerar (e.g., enteros o floats).
 
@@ -244,7 +244,7 @@ Strong bisimilarity: Dos LTS P, Q son bisimilares sii hay una bisimulacion fuert
 
 Se agrega la nocion weak bisimulation: es igual pero incluye transiciones tau (como transiciones lambda) para trabajo interno de un proceso que no es input/output.
 
-### Logica Temporal
+### Logica Temporal
 
 Usamos la logica proposicional, mas dos operadores modales: [] y <>: uno para "siempre" y el otro para "a veces". 
 
