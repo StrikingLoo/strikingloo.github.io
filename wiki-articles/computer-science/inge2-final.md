@@ -273,7 +273,7 @@ Traza usa solo acciones observables.
 **Automatas de Buchi**: Reconocen cadenas infinitas, w-regulares tq tienen un estado de aceptacion y reconocen toda cadena que pase por ese estado infinitas veces.
 Las cadenas que acepta estan en Sigma ^ Omega. 
 
-Podemos traducir una traza a un automata de Buchi, cuyo tamaño es exponencial en el tamaño de la clausula a probar. El algoritmo a usar se llama "LTL2Buchi".
+Podemos traducir una clausula a un automata de Buchi, cuyo tamaño es exponencial en el tamaño de la clausula a probar. El algoritmo a usar se llama "LTL2Buchi".
 
 Expandimos new a next, cuando new vacio miramos next+old si matchean y linkeamos. Hay regla para cada operador. Los Old definen las transiciones: solo te moves hacia un estado si tu config actual satisface toda clausula del OLD.
 
