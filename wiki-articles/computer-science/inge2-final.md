@@ -242,13 +242,13 @@ Podemos agregar acciones compartidas: acciones que figuran en mas de un LTS, y q
 
 **Strong bisimulation**: Una relacion binaria R es bisimulacion fuerte sii para toda accion a, PRQ sii (P -\>a  P') =\> existe Q' tq Q -\>a Q' y P'RQ', y analogo para el otro lado (Q, P).
 
-**Strong bisimilarity**: Dos LTS P, Q son bisimilares sii hay una bisimulacion fuerte R tq (P,Q) in R. Osea, cada uno puede simular al otro. Dos procesos son no bisimilares si existe un observador externo uqe puede distinguirlos. Se representa "Q simula a P" con P <= Q.
+**Strong bisimilarity**: Dos LTS P, Q son bisimilares sii hay una bisimulacion fuerte R tq (P,Q) in R. Osea, cada uno puede simular al otro. Dos procesos son no bisimilares si existe un observador externo que puede distinguirlos. Se representa "Q simula a P" con P <= Q.
 
 Se agrega la nocion weak bisimulation: es igual pero incluye transiciones tau (como transiciones lambda) para trabajo interno de un proceso que no es input/output.
 
 ### Logica Temporal
 
-Usamos la logica proposicional, mas dos operadores modales: [] y <>: uno para "siempre" y el otro para "a veces". 
+Usamos la logica proposicional, mas dos operadores modales: [] y <>: uno para "siempre" y el otro para "eventualmente". 
 
 La logica temporal lineal usa estructuras de kripke y valuaciones que dan valores TorF a los mundos.
 
@@ -262,11 +262,11 @@ Una formula LTL debe interpretarse en una estructura de kripke (W, R) tq W numer
 
 Decimos que M \|= P sii para toda traza s \|= P. 
 
-Safety: M \|= []!(cosa mala) 
+**Safety**: M \|= []!(cosa mala) 
 
-Liveness: M \|= []\(cosa buena\)
+**Liveness**: M \|= <>\(cosa buena\)
 
-Los LTS no son estructuras de kripke, pero interpretamos una traza t como estructura de kripke, donde el conjuntode proposiciones es el alfabeto del LTS, p true en i sii p es la accion en posicion i de t. 
+Los LTS no son estructuras de kripke, pero interpretamos una traza t como estructura de kripke, donde el conjunto de proposiciones es el alfabeto del LTS, p true en i sii p es la accion en posicion i de t. 
 
 Traza usa solo acciones observables.
 
