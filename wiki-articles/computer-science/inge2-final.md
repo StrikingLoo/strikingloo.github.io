@@ -203,7 +203,7 @@ Esto lo vuelve incomplete theorem prover: podria declarar insatisfactible una co
 
 Dynamic symbolic execution is akin to dynamic analysis itself: it is never reporting an error that no input can reach, and therefore it is complete. However it will be unsound, as it may fail to find inputs that trigger a certain failure.
 
-### SBST Search Based Software Testing
+## SBST Search Based Software Testing
 
 Cuando las condiciones en los if son suficientemente complejas, usar un theorem prover para resolverlas puede ser lento o impracticable. En estos casos, recurrimos a algoritmos de hill climbing, [metaheurísticas](wiki-articles/computer-science/algo3-final) o genéticos para generar inputs que satisfagan una cierta condición.
 
