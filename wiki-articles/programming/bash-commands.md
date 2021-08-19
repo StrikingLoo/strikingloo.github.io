@@ -58,3 +58,19 @@ c for create, z for zip, v for verbose (optional) and f for file.
 output:
 ` this/is/a/path `
 
+---
+
+### Redshift copy from S3
+
+``` 
+copy $TABLE\_NAME
+from 'S3\_PATH'
+iam\_role '$iam\_role'
+removequotes
+emptyasnull
+blanksasnull
+maxerror 100
+delimiter ','
+IGNOREHEADER 1
+; 
+```
