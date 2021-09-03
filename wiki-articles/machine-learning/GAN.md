@@ -45,3 +45,5 @@ particular change in the development of the mathematics."
 [Diffusion models intro](https://yang-song.github.io/blog/2021/score/)
 
 [BigGAN](https://arxiv.org/abs/1809.11096#deepmind)
+
+[Tips, tricks and hacks for training a GAN](https://github.com/soumith/ganhacks)
