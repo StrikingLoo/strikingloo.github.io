@@ -37,6 +37,14 @@ particular change in the development of the mathematics."
 
 ![](image/gan3.png)
 
+Another highly important research area related to GANs is that it is not clear
+how to quantitatively evaluate generative models. Models that obtain good
+likelihood can generate bad samples, and models that generate good samples
+can have poor likelihood. There is no clearly justified way to quantitatively
+score samples. GANs are somewhat harder to evaluate than other generative
+models because it can be difficult to estimate the likelihood for GANs. [Theis et al. (2015)](https://arxiv.org/pdf/1511.01844.pdf) describe many of the
+difficulties with evaluating generative models.
+
 ## Read Later
 [Survey on Computer Vision (1 decade later)](https://www.gwern.net/docs/ai/2008-golle.pdf)
 
