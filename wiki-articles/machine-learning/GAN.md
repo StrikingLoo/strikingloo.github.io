@@ -9,7 +9,7 @@ description: "Notes on Generative Adversarial Networks, combining summaries and 
 ## Resources I already read
 [DC-GAN TensorFlow tutorial (it works fine) with MNIST](https://www.tensorflow.org/tutorials/generative/dcgan)
 
-## Reading
+### GAN Survey, Goodfellow 2016
 [Goodfellow GAN Survey 2016 NIPS](https://arxiv.org/pdf/1701.00160.pdf)
 
 ![](image/gan1.png)
