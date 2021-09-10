@@ -86,3 +86,4 @@ In the appendices, there's a nice summary of [Attention](/wiki-articles/machine-
 Related links:
 [iGPT (GPT autoregression of pixels, OpenAI, 2020)](https://openai.com/blog/image-gpt/)
 [Understanding ViT vs ResNet](/wiki-articles/machine-learning/transformers-see-like-cnn)
+[Model itself to play around with](https://github.com/google-research/vision_transformer#installation)
