@@ -158,3 +158,18 @@ from the initial state to e.
 
 **Definition of predecessors**:
 ![](image/predecessors_definition.png)
+
+all reachable uncontrollable transitions are included in fully uncontrollable
+states, and at least one controllable transition is included in fully controllable
+states. Moreover, in mixed states all uncontrollable transitions are included,
+and if no such transition leads to a marked state then at least one controllable
+transition with this property is included too. Thus, the result is a valid nonblocking supervisor.
+
+ The proof follows from the fact that for D C S to return a supervisor,
+the initial state e¯ has to be flagged as a goal. Thus, there must be a marked
+CCC C containing e¯. In such a case, it is straightforward to see that we can
+extract a supervisor from C (i.e., restricting the plant to remain within C).
+
+**Controllable**: For this not to hold, σ must disable some uncontrollable event from a state in which the event is enabled.
+
+**Non-blocking**:  for this not to hold, there must exist a word w ∈ Lσ(E) such that w cannot be extended to reach a marked state.
