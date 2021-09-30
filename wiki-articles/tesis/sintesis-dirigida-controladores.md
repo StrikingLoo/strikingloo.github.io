@@ -2,7 +2,7 @@
 layout: post
 title: "Sintesis de Controladores Dirigida (Zanollo et al.)"
 date: 2021-09-14
-tags: UBA, spanish, español, cs, algorithms, LTS, DCS
+tags: UBA, spanish, español, cs, algorithms, LTS, DCS, paper
 description: "Notas para la tesis, tomadas mientras leia el primer paper del material de lectura."
 ---
 Dado un (conjunto de) automata(s) y una particion de sus eventos en dos subconjuntos: controlables y no-controlables, lo que buscamos es un controlador (director) que restrinja el vocabulario aceptado de forma de mantener un camino posible a los estados marcados del automata.
