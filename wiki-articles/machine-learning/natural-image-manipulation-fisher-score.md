@@ -29,7 +29,7 @@ more meaningful information about the data distribution can be extracted compare
 values. More complex deep generative models may learn parameters that encode information at
 high-levels of abstraction which may be reflected as high-level features in Fisher scores.
 
-### Sparse Random Projections
+### Sparse Random Projections
 It would be cumbersome to work in the very high-dimensional parameter spaces of deep generative
 models, so we use dimensionality reduction methods to make our methods more scalable. Sparse
 random projections allow for memory-efficient and scalable projections of high dimensional vectors. The Johnson-Lindenstrauss Lemma (Dasgupta & Gupta, 1999) states that under a suitable
