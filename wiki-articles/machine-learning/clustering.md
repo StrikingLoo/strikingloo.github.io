@@ -27,7 +27,7 @@ The score can be the distance between the instance and the centroid; conversely,
 
 > A Voronoi Diagram partitions a 2d plane into regions by how close they are (given some measure) to particular points. For instance, the regions that lie closest to each cluster in a plane.
 
-### Clustering performance metrics
+### Clustering performance metrics
 We define a clustering's inertia as the aggregated distance from each instance to its assigned centroid (within-cluster sum-of-squares criterion). Some algorithms (like skl's) try N initializations and keep the one that yields the lowest inertia.
 
 Inertia makes the assumption that clusters are convex and isotropic, which is not always the case. It responds poorly to elongated clusters, or manifolds with irregular shapes.
