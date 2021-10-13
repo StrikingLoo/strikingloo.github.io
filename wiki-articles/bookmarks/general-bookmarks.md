@@ -60,3 +60,5 @@ Image to text
 Read something great
 <https://www.readsomethinggreat.com/>
 
+---
+<https://weatherspark.com/map> 
