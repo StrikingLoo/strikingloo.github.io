@@ -62,3 +62,11 @@ Read something great
 
 ---
 <https://weatherspark.com/map> 
+
+---
+Cool art digimon inspired:
+<http://androidarts.com/GarlicChampions/Digimon.htm>
+
+---
+US State Salary Scale for Seattle
+<https://www.federalpay.org/gs/locality/seattle>
