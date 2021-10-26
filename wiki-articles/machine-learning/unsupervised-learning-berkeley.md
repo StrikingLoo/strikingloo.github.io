@@ -42,5 +42,5 @@ Tipicamente partis alternando pixeles (el famoso checkerboard) pero tambien se p
 ![](unsupervised-learning-images/real-nvp.png)
 
 Otros modelos que funcionan pero no se cubren en detalle:
-- [Glow](https://openai.com/blog/glow/) 🌱
+- [Glow](https://openai.com/blog/glow/) [🌱](/wiki-articles/machine-learning/flow-based-models-glow)
 - [FFJORD](https://arxiv.org/abs/1810.01367) 🌱
