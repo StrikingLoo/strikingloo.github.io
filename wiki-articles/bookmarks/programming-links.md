@@ -31,3 +31,8 @@ grid-template: auto 1fr auto / auto 1fr auto
 <https://github.com/andrico1234/beautiful-skill-tree#examples>
 
 <https://github.com/352Media/skilltree/blob/master/demos/dungeons-and-developers/default.htm>
+
+---
+### Good zsh theme
+
+<https://github.com/romkatv/powerlevel10k>
