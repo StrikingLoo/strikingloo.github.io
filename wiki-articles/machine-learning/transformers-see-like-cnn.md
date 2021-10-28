@@ -42,3 +42,9 @@ transfer learning, finding larger ViT models develop significantly stronger inte
 larger pretraining datasets.
 
 This paper uses HSIC to compare activations of layers given a batch of inputs. It looks like cosine similarity with extra steps, and they take the HSIC(L,K) divided by the geometric mean of HSIC(K,K) and HSIC(L,L) as CKA. 
+
+### See Also
+
+- [Visual Transformer](/wiki-articles/machine-learning/visual-transformer)
+- [transGAN](/wiki-articles/machine-learning/transGAN)
+- [Unsupervised Learning Core](/wiki-articles/machine-learning/unsupervised-learning-berkeley)

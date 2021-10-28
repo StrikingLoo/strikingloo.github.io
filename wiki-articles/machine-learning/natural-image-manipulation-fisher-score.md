@@ -60,3 +60,7 @@ They then present results both quantitative (with FID scores) and qualitative (p
 
 I love this approach and wonder whether it would work for other spaces (like audio). I personally don't like the name "Fisher **score**" as it is a vector.
 
+### See also
+
+- [GLOW: Flow-Based Models](/wiki-articles/machine-learning/flow-based-models-glow)
+- [Unsupervised Learning](/wiki-articles/machine-learning/unsupervised-learning-berkeley)

@@ -42,7 +42,7 @@ Seems like my guess was correct! But now I have to wonder. What other things are
 
 ---
 
-So 文句, 文字, 文明 all start with the same kanji, but it's read different every time. Namely, もんく、もじ、ぶんめい　 respectively. Seriously, nipponjin? That's today's rant.
+So 文句, 文字, 文明 all start with the same kanji, but it's read different every time. Namely, もんく、もじ、ぶんめい respectively. Seriously, nipponjin? That's today's rant.
 
 ---
 

@@ -66,3 +66,7 @@ This generates an a priori unknown number of clusters, with different thresholds
 
 The algorithm works better when most clusters are comparatively dense. For bigger and smaller clusters of different density it may break.
 To assign a cluster to a new instance, you may take the closest k-neighbors to it, and do k-NN using the cluster indices as labels.
+
+## See also
+
+- [Deep Unsupervised Learning](/wiki-articles/machine-learning/unsupervised-learning-berkeley)

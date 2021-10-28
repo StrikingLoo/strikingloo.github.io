@@ -24,6 +24,8 @@ For m-pruning, pruned and re-fine-tuned "good" subnetworks reach the full model 
 
 All this means that **we still have more questions than answers about how BERT achieves its remarkable performance.** If so many of the important self-attention heads are not even potentially interpretable, should we give up on the idea that some knowledge is encoded in specific architecture components, rather than spread across the whole network? How can we study such distributed representations? 
 
-Source:
+[*Source*](https://thegradient.pub/when-bert-plays-the-lottery-all-tickets-are-winning)
 
-<https://thegradient.pub/when-bert-plays-the-lottery-all-tickets-are-winning>
+### See Also
+
+- [Deep Learning for NLP](/wiki-articles/machine-learning/deep-learning-NLP)

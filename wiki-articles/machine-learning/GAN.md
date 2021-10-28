@@ -46,14 +46,14 @@ models because it can be difficult to estimate the likelihood for GANs. [Theis e
 difficulties with evaluating generative models.
 
 ## Read Later
-[Survey on Computer Vision (1 decade later)](https://www.gwern.net/docs/ai/2008-golle.pdf)
+- [Survey on Computer Vision (1 decade later)](https://www.gwern.net/docs/ai/2008-golle.pdf) 🌱
+- [Diffusion models beat GANs](https://arxiv.org/abs/2105.05233#openai) 🌱
+- [Diffusion models intro](https://yang-song.github.io/blog/2021/score/) 🌱
+- [BigGAN](https://arxiv.org/abs/1809.11096#deepmind) 🌱
+- [Tips, tricks and hacks for training a GAN](https://github.com/soumith/ganhacks) 🌱
+- [Machine Vision Unsupervised Task](https://arxiv.org/abs/1807.03748) A task that's a language model equivalent for images (but not literally language modelling like [ViT](/wiki-articles/machine-learning/visual-transformer) does now). Was relevant back in 2019 and seems interesting. 🌱
 
-[Diffusion models beat GANs](https://arxiv.org/abs/2105.05233#openai)
+### Related Reading
 
-[Diffusion models intro](https://yang-song.github.io/blog/2021/score/)
-
-[BigGAN](https://arxiv.org/abs/1809.11096#deepmind)
-
-[Tips, tricks and hacks for training a GAN](https://github.com/soumith/ganhacks)
-
-[Machine Vision Unsupervised Task](https://arxiv.org/abs/1807.03748) A task that's a language model equivalent for images (but not literally language modelling like ViT does now). Was relevant back in 2019 and seems interesting.
+- [TransGan](/wiki-articles/machine-learning/transGAN)
+- [Visual Transformer](/wiki-articles/machine-learning/visual-transformer)

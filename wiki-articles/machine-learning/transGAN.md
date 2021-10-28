@@ -23,4 +23,4 @@ They try mixing CNN based discriminator with transformer based generators and vi
 be regarded as a “word” The 8 × 8 patches are then converted to the 1D sequence of token embeddings through a
 linear flatten layer, with token number N = 8 × 8 = 64 and embedding dimension equal to C. After that, the learnable positional encoding is added and a [cls] token isappended at the beginning of the 1D sequence. After passing through the transformer encoders, only [cls] token is taken by the classification head to output the real/fake prediction."
 
-
+Relates to [Deep Learning with NLP](wiki-articles/machine-learning/deep-learning-NLP)

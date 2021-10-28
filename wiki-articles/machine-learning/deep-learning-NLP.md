@@ -268,6 +268,11 @@ Multi-headed attention nodes are composed (vertically) and finally you can run y
 
 The decoder is left as an exercise for the reader. For LM you can skip it.
 
+*Related reading*: 
+- [TransGAN](/wiki-articles/machine-learning/transGAN)
+- [Visual Transformer](/wiki-articles/machine-learning/visual-transformer)
+- [Transformers see like CNNs](/wiki-articles/machine-learning/transformers-see-like-cnn)
+
 ### BERT (Bidirectional Encoder Representations from Transformers)
 
 Problem: LM's are unidirectional, but language understanding is bidirectional.
