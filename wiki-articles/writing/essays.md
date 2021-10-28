@@ -56,3 +56,12 @@ This is the story structure behind every TED talk:
 -   Act III: The call to action.
 
 You can build this story arc in different lengths for different settings: the elevator pitch, the 15 minute explanation, the 1hr story.
+
+---
+## Public Narrative
+
+The public narrative has three steps, and is used a lot in speeches both in industry and Politics.
+
+- The me part: talk about yourself.
+- The us part: talk about shared values and your listener.
+- The action part: a call to action appealing to shared values.
