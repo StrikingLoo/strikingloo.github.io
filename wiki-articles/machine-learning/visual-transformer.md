@@ -6,7 +6,6 @@ tags: deep learning,convolutional neural networks,cnn,vit,transformer,transforme
 description: "Notes on the original 2021 June paper that introduced visual transformers, also comparing them to ResNet CNN."
 ---
 
-# An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale
 <https://arxiv.org/pdf/2010.11929v2.pdf>
 
 While the Transformer architecture has become the de-facto standard for natural
