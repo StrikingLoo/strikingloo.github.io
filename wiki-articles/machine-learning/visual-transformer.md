@@ -83,6 +83,6 @@ In the appendices, there's a nice summary of [Attention](/wiki-articles/machine-
 ![](image/vit-summary-attention.png)
 
 ### Related links (May read later):
-- [iGPT (GPT autoregression of pixels, OpenAI, 2020)](https://openai.com/blog/image-gpt/)
-- [Understanding ViT vs ResNet](/wiki-articles/machine-learning/transformers-see-like-cnn) 🌱
+- [iGPT (GPT autoregression of pixels, OpenAI, 2020)](https://openai.com/blog/image-gpt/) 🌱
 - [Model itself to play around with](https://github.com/google-research/vision_transformer#installation) 🌱
+- [Understanding ViT vs ResNet](/wiki-articles/machine-learning/transformers-see-like-cnn) : Transformers see like a CNN.
