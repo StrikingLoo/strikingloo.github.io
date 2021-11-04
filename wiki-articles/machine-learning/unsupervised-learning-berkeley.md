@@ -60,3 +60,5 @@ This works because we're doing importance sampling: we could be sampling from ou
 
 ![](unsupervised-learning-images/variational-equation.png)
 
+![](unsupervised-learning-images/VLB-derivation.png)
+![](unsupervised-learning-images/VLB-consequences.png)
