@@ -54,6 +54,7 @@ In a way this is similar to flow models, but here we make no strong constraints 
 
 ![](unsupervised-learning-images/exact-likelihood-objective.png)
 
+### Variational AutoEncoders
 **Principle of Variational Approach**: We can't directly use the *p* we want, so instead we propose a parameterized distribution *q* we know we can work with (sample from, estimate likelihood) easily, and try to find a parameter setting that makes it as good as possible.
 
 This works because we're doing importance sampling: we could be sampling from our random latent space and doing maximum likelihood of X given Z (without fitting Z, we only fit P(X\|Z)), but then for Z st P(X\|Z) is ~0, we're doing the work pointlessly (because the gradient is 0 and there's no information to propagate). Whereas if we make sure to only sample from points where X given Z is likely, we get more bang for our buck. However if we already had P(Z\|X) to calculate this we wouldn't be going through this in the first place (because Bayes) and this is usually intractable (if Z is gaussian or generally not enumerable), so instead we try to get this to be "as good as possible" and that's that.
@@ -62,3 +63,7 @@ This works because we're doing importance sampling: we could be sampling from ou
 
 ![](unsupervised-learning-images/VLB-derivation.png)
 ![](unsupervised-learning-images/VLB-consequences.png)
+
+
+![](unsupervised-learning-images/vae-1-loss.png)
+![](unsupervised-learning-images/vae-2-loss.png)
