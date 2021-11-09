@@ -67,3 +67,24 @@ This works because we're doing importance sampling: we could be sampling from ou
 
 ![](unsupervised-learning-images/vae-1-loss.png)
 ![](unsupervised-learning-images/vae-2-loss.png)
+
+## GANs
+The course introduces GANs, following Goodfellow et al. closely, so I won't reproduce what they say as it overlaps with [GANs](/wiki-articles/machine-learning/GAN).
+
+It then discusses the difficulties in measuring GAN performance, as human judgement over samples is not enough (though it is the original propeller of GANs in a way).
+
+### Inception Score
+We pick a pretrained classifier on imagenet 1k classes and:
+- Entropy of labels should be high (the generator should generate a diverse set of classes)
+- But entropy of certainty of classifier should be low: the classifier must be quite certain which class each image belongs to.
+
+The Inception score ends up being the DKL between p(y\|x) and p(y), where p(y) is the marginal probability over a sample set for each class, and p(y\|x) is the probability for that label for that specific sample. The p(y) marginal should be a uniform distribution, whereas the p(y\|x) should peak around a class. You want KLD to be *high*.
+
+Equivalent to entropy of labels for generated samples - entropy of labels for each sample.
+
+FID is a more complicated metric based on inception score that uses an embedding space from some classifier, and compares the embedding for generated image vs average embedding.
+
+### Discriminator Saturation
+The bayes ideal discriminator is always right (assigns prob 0 to fake and prob 1 to true). However if our discriminator is too good too fast, since the gradient tends to be very close to zero for high confidence predictions (the landscape is flat around the edges, think of a sigmoid), the generator gets little information to work with.
+
+**Ways to address Discriminator Saturation**: Use a different, non-zero-sum objective where you switch the log(1 - D(G(z))) with a -log(D(G(z))). This changes the regime of the game so it stops being zero sum, and also makes it so that the gradient goes to 0 when the generator is already winning, which is far less terrible. Otherwise a generator may get stuck on a bad initialization. The other way to prevent this is alternating updates between generator and discriminator.
