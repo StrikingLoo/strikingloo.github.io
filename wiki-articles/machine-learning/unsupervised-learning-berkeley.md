@@ -73,7 +73,7 @@ The course introduces GANs, following Goodfellow et al. closely, so I won't repr
 
 It then discusses the difficulties in measuring GAN performance, as human judgement over samples is not enough (though it is the original propeller of GANs in a way).
 
-### Inception Score
+### Inception Score
 We pick a pretrained classifier on imagenet 1k classes and:
 - Entropy of labels should be high (the generator should generate a diverse set of classes)
 - But entropy of certainty of classifier should be low: the classifier must be quite certain which class each image belongs to.
