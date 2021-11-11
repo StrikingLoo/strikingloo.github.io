@@ -88,3 +88,22 @@ FID is a more complicated metric based on inception score that uses an embedding
 The bayes ideal discriminator is always right (assigns prob 0 to fake and prob 1 to true). However if our discriminator is too good too fast, since the gradient tends to be very close to zero for high confidence predictions (the landscape is flat around the edges, think of a sigmoid), the generator gets little information to work with.
 
 **Ways to address Discriminator Saturation**: Use a different, non-zero-sum objective where you switch the log(1 - D(G(z))) with a -log(D(G(z))). This changes the regime of the game so it stops being zero sum, and also makes it so that the gradient goes to 0 when the generator is already winning, which is far less terrible. Otherwise a generator may get stuck on a bad initialization. The other way to prevent this is alternating updates between generator and discriminator.
+
+![](unsupervised-learning-images/dcgan-archi.png)
+
+### Other techniques
+
+**Feature Matching**: Add to the objective that the mean batch value for the vector of **hidden features** for generated images shouldn't stray too far from mean vector of data features.
+
+**DC-Gan**: Improved performance by using deconv layers and a few other tricks.
+
+**Improvements over DCGAN**:
+- Feature Matching: add a loss that looks at 2-norm divergence between means of hidden reps of generated and true data.
+- Minibatch discrimination: I didn't quite understand this one [🌱]
+- Historical Averaging: add a penalty to distance between theta and mean historical theta
+- Virtual batch normalization: instead of calculating mu and sigma for each minibatch, keep a big one and use their weights and keep adding the new batches to it.
+- One-sided label smoothing: change label 1 to .9 (less important if you use the good objective)
+
+**WGAN**: Wassertein GAN: keep the gradient in a magic (Lipschitz-1) space using weight clipping: for each weight, clip it between c and -c. c too big changes nothing and makes convergence hard. c too close to 0 may make you lose too much information. Made models significantly more robust, allowing for instance to train a DCGAN without batch-norm with similar results.
+
+**WGAN-GP**: Same idea, achieves the same without weight clipping (which is subpar in many ways and gets ugly results). Just add a term to loss that punishes the gradient of the discriminator from diverging from norm 1. Keeps the gradient in a more docile regime and generally gets better and more robust results. The only code change is adding this term to the loss. Interestingly, the gradient is computed for an interpolation (convex sum) between generated and real samples.
