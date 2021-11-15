@@ -107,3 +107,15 @@ The bayes ideal discriminator is always right (assigns prob 0 to fake and prob 1
 **WGAN**: Wassertein GAN: keep the gradient in a magic (Lipschitz-1) space using weight clipping: for each weight, clip it between c and -c. c too big changes nothing and makes convergence hard. c too close to 0 may make you lose too much information. Made models significantly more robust, allowing for instance to train a DCGAN without batch-norm with similar results.
 
 **WGAN-GP**: Same idea, achieves the same without weight clipping (which is subpar in many ways and gets ugly results). Just add a term to loss that punishes the gradient of the discriminator from diverging from norm 1. Keeps the gradient in a more docile regime and generally gets better and more robust results. The only code change is adding this term to the loss. Interestingly, the gradient is computed for an interpolation (convex sum) between generated and real samples.
+
+**SNGAN**: You normalize each layer of the discriminator by the [spectral norm](/wiki-articles/computer-science/metnum-final) (value of biggest eigenvalue) of its weight matrix W. You do this to guarantee lipschitz-ness of the network, restricting the optimization problem to min G: max \|\|f\|\|Lip <= K V(G,D).
+
+**SAGAN**: Adds self attention to SNGAN. Applies spectral norm in both discriminator and generator. (Instead of just discriminator).
+
+![](unsupervised-learning-images/sagan-self-attention.png)
+
+**BigGAN**: Just makes everything bigger (wider and deeper), Orthonormal regularization -make each W close to I- & Truncation Trick -at test time only, sample from truncated normal instead of standard one-.
+
+**StyleGAN**: Very big GAN with a MLP that turns gaussian latent into a different vector, and feeds it into every layer. Also adds noise to inputs 100 times (100 different noise vectors) and uses *that* to generate the statistics for batch norm, which it does individually for each sample and for each channel (averaging over all WxH). This is called AdaIN. 
+
+![](unsupervised-learning-images/stylegan-architecture.png)
