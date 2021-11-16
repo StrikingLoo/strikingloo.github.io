@@ -36,3 +36,7 @@ grid-template: auto 1fr auto / auto 1fr auto
 ### Good zsh theme
 
 <https://github.com/romkatv/powerlevel10k>
+
+---
+### Permutation importance
+<https://explained.ai/rf-importance/index.html>
