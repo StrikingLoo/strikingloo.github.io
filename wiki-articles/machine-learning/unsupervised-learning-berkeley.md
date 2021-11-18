@@ -130,3 +130,13 @@ In the objective, besides the shared loss function they add a term for L1 recons
 
 - Pix2Pix can be extended to video but I'm not 100% sure how (see 2018 neurips video synthesis from semantic drawings). [🌱]
 - There's also GauGAN by Nvidia which makes photorealistic illustrations from segmentation semantic drawings. It looks pretty awesome so I'd like to read on that. [🌱]
+
+**InfoGAN**: Instead of class, you provide a vector of "latent codes" such that each code captures a few aspects of your image. You train the discriminator with two losses: the classic discriminator loss (real or fake?) and also a new term where the discriminator tries to maximize I(c ; x) the mutual information (by maximizing its estimation of the posterior P(c\|x)). So basically it's trying to predit what C generated a given x. e.g., for MNIST you could have c1 = digit, c2 = rotation etc.
+
+Interestingly, the code can be discrete and fed in a random way (e.g., uniformCateg(1024) for a 1000 classes dataset) and eventually even without a specific loss for this, the models converge in making different classes for different values of the categ code (obtained in a completely unsupervised way). This is only using the loss of a regular BigGAN.
+
+**BigBiGAN**: Comes after BigGAN. You train an encoder that generates z' from image x, and your typical generator G(z)=x'. You then train the discriminator to receive both z' and x' or z and x, and decide whether x/' is real or fake. 
+You could then take any image and map it into the representational space z'. This reaches state of the art in linear probe for top 1 accuracy in some datasets at the time.
+Also you can do a weird autoencoder (which was never in the objective!) x' = G(E(x)), where x' is the optimal confounder for a given discriminator. Pretty neat! (and pure nightmare fuel for human faces apparently).
+
+![](unsupervised-learning-images/bigbigan.png)
