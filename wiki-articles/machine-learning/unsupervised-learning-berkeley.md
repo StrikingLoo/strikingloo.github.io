@@ -119,3 +119,14 @@ The bayes ideal discriminator is always right (assigns prob 0 to fake and prob 1
 **StyleGAN**: Very big GAN with a MLP that turns gaussian latent into a different vector, and feeds it into every layer. Also adds noise to inputs 100 times (100 different noise vectors) and uses *that* to generate the statistics for batch norm, which it does individually for each sample and for each channel (averaging over all WxH). This is called AdaIN. 
 
 ![](unsupervised-learning-images/stylegan-architecture.png)
+
+> **Bottom line**: Use BigGan for conditioned image generation, styleGAN for unconditioned or if you have an interest in interpolation. They require at least 16GB of VRAM anyway.
+
+**Pix2Pix**: Train a model G(x, z) where z is your (random) latent and x is an actual black and white image, such that a discriminator that takes D(x, G(x, z)) and D(x, y) can't tell which is which in an adversarial setting (where y = actual-colored-of(x) ). I think this approach is beautiful. It kind of reminds me of [contrastive learning](wiki-articles/machine-learning/clip)
+
+![](unsupervised-learning-images/pix2pix-color.png) 
+
+In the objective, besides the shared loss function they add a term for L1 reconstruction loss (L1-norm of difference between G(x,z) and y) -between the generated translation of the source image and the expected target image-.
+
+- Pix2Pix can be extended to video but I'm not 100% sure how (see 2018 neurips video synthesis from semantic drawings). [🌱]
+- There's also GauGAN by Nvidia which makes photorealistic illustrations from segmentation semantic drawings. It looks pretty awesome so I'd like to read on that. [🌱]
