@@ -52,6 +52,7 @@ difficulties with evaluating generative models.
 - [BigGAN](https://arxiv.org/abs/1809.11096#deepmind) 🌱
 - [Tips, tricks and hacks for training a GAN](https://github.com/soumith/ganhacks) 🌱
 - [Machine Vision Unsupervised Task](https://arxiv.org/abs/1807.03748) A task that's a language model equivalent for images (but not literally language modelling like [ViT](/wiki-articles/machine-learning/visual-transformer) does now). Was relevant back in 2019 and seems interesting. 🌱
+- [Notes on GANs](http://joschu.net/docs/gan-notes.pdf) Recommended reading from the Berkeley course.🌱
 
 ### Related Reading
 
