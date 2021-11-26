@@ -3,7 +3,7 @@ layout: post
 title: "Sistemas Operativos - Notas para el Final"
 date: 2021-02-06
 tags: sysop, SO, OS, Operating Systems, Distributed systems, concurrency, UBA, spanish, español, cs, algorithms
-description: "Notas para el final de MetNum. Basadas en las diapos de la teórica y adornadas con fragmentos del Silberschatz, Tanenbaum y Wikipedia."
+description: "Notas para el final de SysOp. Basadas en las diapos de la teórica y adornadas con fragmentos del Silberschatz, Tanenbaum y Wikipedia."
 ---
 
 # Sistemas Operativos
