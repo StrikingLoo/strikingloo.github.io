@@ -74,3 +74,8 @@ delimiter ','
 IGNOREHEADER 1
 ; 
 ```
+
+---
+
+Watch example:
+``` watch -n 10 ls -lAhF ```
