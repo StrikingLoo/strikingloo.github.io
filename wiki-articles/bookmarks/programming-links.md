@@ -40,3 +40,8 @@ grid-template: auto 1fr auto / auto 1fr auto
 ---
 ### Permutation importance
 <https://explained.ai/rf-importance/index.html>
+
+---
+### WebGL Water
+Peruse at my leisure
+<https://github.com/evanw/webgl-water>
