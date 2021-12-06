@@ -140,3 +140,6 @@ You could then take any image and map it into the representational space z'. Thi
 Also you can do a weird autoencoder (which was never in the objective!) x' = G(E(x)), where x' is the optimal confounder for a given discriminator. Pretty neat! (and pure nightmare fuel for human faces apparently).
 
 ![](unsupervised-learning-images/bigbigan.png)
+
+**IMLE (Implicit Maximum Likelihood Estimation)**: initialize theta on random. for k = 1 to K: sample X1'...Xn' from P'(x), pick a random batch S of X (real), L times repeat: update theta with gradient where cost is distance between a random sample of size n from the batch S, and the generated samples, but you compare generated vector to the one closest to it in the real batch (for some definition of distance).
+This evenually converges preventing mode collapse.
