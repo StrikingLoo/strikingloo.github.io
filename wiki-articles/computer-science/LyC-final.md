@@ -279,7 +279,7 @@ El conjunto de teoremas del sistema SQ para L es c.e.
 
 Γ es un conjunto consistente sii es satifacible. 
 
-Ademas  {% raw %}$\Gamma \vDash \varphi sii \Gamma \vdash \varphi ${% endraw %} y se cumple teorema de compacidad (si todo subconjunto finito es satisfacible entonces el conjunto tambien lo será).
+Ademas  {% raw %}\(\Gamma \vDash \varphi sii \Gamma \vdash \varphi \){% endraw %} y se cumple teorema de compacidad (si todo subconjunto finito es satisfacible entonces el conjunto tambien lo será).
 
 Compacidad: Todo subconjunto finito es satisfacible, entonces el conjunto tambien lo es.
 
