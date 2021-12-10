@@ -70,3 +70,7 @@ Cool art digimon inspired:
 ---
 US State Salary Scale for Seattle
 <https://www.federalpay.org/gs/locality/seattle>
+
+---
+Marginalia neat links
+<https://proxy.vulpes.one/gemini/marginalia.nu/links/fragments-old-web.gmi>
