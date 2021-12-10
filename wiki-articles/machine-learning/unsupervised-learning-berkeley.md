@@ -143,3 +143,19 @@ Also you can do a weird autoencoder (which was never in the objective!) x' = G(E
 
 **IMLE (Implicit Maximum Likelihood Estimation)**: initialize theta on random. for k = 1 to K: sample X1'...Xn' from P'(x), pick a random batch S of X (real), L times repeat: update theta with gradient where cost is distance between a random sample of size n from the batch S, and the generated samples, but you compare generated vector to the one closest to it in the real batch (for some definition of distance).
 This evenually converges preventing mode collapse.
+
+## Self-Supervised Learning
+
+We wish to learn rich and useful features from raw unlabeled data that can be useful for several downstream tasks. For this we use pretext tasks that require no labeling on a big dataset, improving data efficiency for downstream tasks.
+
+### Pretext Tasks
+Used to learn feature representations.
+- Autoencoders (typically denoising)
+- Relative Position of Image Patches
+- Predicting one view from another (e.g., color from B&W)
+- Predict rotation (rotating just 4 angles works best)
+- Word2Vec and contrastive learning are also Self-supervised learning
+
+CPC (Contrastive predicting coding) can also be used to predict next audio chunk after X audio (using a RNN as encoder) or next patch of an image. They just use softmax over k\_i embedding * W * c where c is code for X.
+
+MoCo and SimCLR do the same, but they keep a stash of all previous instances in memory using a weighted average of the weights over time to predict (so noisy output of model for contrastive loss). This is useful for batchnorm and biggest "no" for contrastive step.
