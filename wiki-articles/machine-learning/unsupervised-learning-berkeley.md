@@ -159,3 +159,19 @@ Used to learn feature representations.
 CPC (Contrastive predicting coding) can also be used to predict next audio chunk after X audio (using a RNN as encoder) or next patch of an image. They just use softmax over k\_i embedding * W * c where c is code for X.
 
 MoCo and SimCLR do the same, but they keep a stash of all previous instances in memory using a weighted average of the weights over time to predict (so noisy output of model for contrastive loss). This is useful for batchnorm and biggest "no" for contrastive step.
+
+## Semi-Supervised Learning
+
+Train a supervised model on labeled data and then leverage unlabeled (typically much more numerous) data to improve it.
+
+Some techniques include:
+- Label Consistency: minimizing entropy for unlabeled data
+- unsupervised data augmentation
+- Pseudo Labeling: adding the most confident predictions as 100% labeled
+- VAT Virtual Adversarial Training: where you take derivative of prediction wrt *the input* and move the input in the opposite direction keeping the label
+
+**MixMatch**: Take unlabeled data, augment it many times, average predictions and sharpen them with temperature, then make that the label for all augmentations. This term in loss is weighted with a hyperparam. This algorithm *almost* matches supervised performance in CIFAR10 and others.
+
+**Noisy Student** : Train a supervised model on your labeled data, that's your teacher. Create a student, which trains on labeled data but also in unlabeled such that the original teacher has high confidence in the label. Add noise (stochastic skip connections, dropout, data augmentation) to the inputs that go into the noisy student (hence the name). Then the student becomes the teacher and you keep repeating.
+
+This uses the logits instead of the one-hot encoded predictions for the teacher classifications. It got a 10x data efficiency compared with sota (10x smaller unlabelled dataset) combining ImageNet and JFT. Sota in imageNet. Very robust in Imagenet-A, an adversarial dataset [🌱]. Scales well to little labeled data.
