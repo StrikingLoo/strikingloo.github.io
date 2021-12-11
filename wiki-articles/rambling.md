@@ -51,3 +51,7 @@ The word "bear" actually means "the brown one". The actual word for a bear is lo
 The same happens in Russian where they use medved which means "Those who know honey -med-".
 
 Bears were the first Lord Voldemort.
+
+---
+
+When checking out a new hot unsupervised learning algorithm, something the Berkeley course guys do is test it with a 1d pair of variables. Like "oh does this GAN/distribution alignment thingamagig work? Let's imagine X and Y are 1d random variables and see how that would work". I take this as a very good first principles approach to understanding the algorithm, and would extend it to 2d for visualization too. I just think reducing example problems to small ones is a nice trick I keep stumbling upon in many different areas and it would be good to have this mapping of "for X domain, typical small problem is Y" like how in graph theory you always start induction with a K1 graph, or in DCS you use a small LTS with maybe 3 states.
