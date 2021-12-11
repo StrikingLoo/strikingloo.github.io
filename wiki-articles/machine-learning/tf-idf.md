@@ -17,3 +17,12 @@ Some common tf-idf functions are:
 {% raw %} \\\( log(1 + f_{t,d})\*log(1+\frac{N}{n_{t}}) \\\) {% endraw %}
 
 {% raw %} \\\(   \\\) {% endraw %}
+
+```
+from sklearn.feature_extraction.text import TfidfVectorizer
+def vectorize(text, maxx_features):
+    
+    vectorizer = TfidfVectorizer(max_features=maxx_features)
+    X = vectorizer.fit_transform(text)
+    return X
+```
