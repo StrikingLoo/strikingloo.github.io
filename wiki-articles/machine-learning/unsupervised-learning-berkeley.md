@@ -182,3 +182,11 @@ A small aside: a matrix W is orthogonalized by solving the following constrained
 {% raw %} \\\( \min_{\bar{W}} \lVert W - \bar{W} \rVert s.t. \bar{W}^T \bar{W} = I \\\) {% endraw %}
 
 One can show that this problem can be solved by taking the singular value decomposition (SVD) of W and replacing the singular values to ones.
+
+### Notes from <title>
+
+[Paper](https://aclanthology.org/N15-1104.pdf)
+
+The authors try training an orthogonal matrix W to align (i.e., minimize cosine distance of normalized vectors) two word embedding spaces (EN-ES). They sample 6k frequent words, translate with google, and find W orthogonal that minimizes cosine distance (after normalizing embedding vectors to norm 1).
+
+They compare against Mikolov who didn't normalize and used arbitrary linear transform, and conclude that "bilingual translation can be largely improved by the normalized embedding and the accompanied orthogonal transform". They reach about 40% P@1, 60% P@5.
