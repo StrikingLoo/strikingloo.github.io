@@ -175,3 +175,10 @@ Some techniques include:
 **Noisy Student** : Train a supervised model on your labeled data, that's your teacher. Create a student, which trains on labeled data but also in unlabeled such that the original teacher has high confidence in the label. Add noise (stochastic skip connections, dropout, data augmentation) to the inputs that go into the noisy student (hence the name). Then the student becomes the teacher and you keep repeating.
 
 This uses the logits instead of the one-hot encoded predictions for the teacher classifications. It got a 10x data efficiency compared with sota (10x smaller unlabelled dataset) combining ImageNet and JFT. Sota in imageNet. Very robust in Imagenet-A, an adversarial dataset [🌱]. Scales well to little labeled data.
+
+---
+A small aside: a matrix W is orthogonalized by solving the following constrained quadratic problem:
+
+{% raw %} \\\( \min_{\bar{W}} \lVert W - \bar{W} \rVert s.t. \bar{W}^T \bar{W} = I \\\) {% endraw %}
+
+One can show that this problem can be solved by taking the singular value decomposition (SVD) of W and replacing the singular values to ones.
