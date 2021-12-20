@@ -160,6 +160,10 @@ CPC (Contrastive predicting coding) can also be used to predict next audio chunk
 
 MoCo and SimCLR do the same, but they keep a stash of all previous instances in memory using a weighted average of the weights over time to predict (so noisy output of model for contrastive loss). This is useful for batchnorm and biggest "no" for contrastive step.
 
+**CycleGAN**: Image to Image GAN that uses a triple loss for its generator: given two domains X and Y, you have your typical adversarial loss (how well the discriminator is fooled by genY(x) ) + cycle loss (how well GenX(GenY(x)) matches x) + identity loss (error reconstruction of GenX(x) vs x) plus their analogs with y as input. The example in the paper turns pictures of zebras into pictures of horses with moderate success, and it can also be used for summer to winter or night to day.
+
+Excellent [Keras Documentation on CycleGAN with code](https://keras.io/examples/generative/cyclegan/).
+
 ## Semi-Supervised Learning
 
 Train a supervised model on labeled data and then leverage unlabeled (typically much more numerous) data to improve it.
