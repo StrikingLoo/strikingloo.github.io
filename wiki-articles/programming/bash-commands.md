@@ -79,3 +79,33 @@ IGNOREHEADER 1
 
 Watch example:
 ``` watch -n 10 ls -lAhF ```
+
+---
+
+Installing GPT-NeoX
+
+```
+
+git clone https://github.com/EleutherAI/gpt-neox.git
+apt-get install python3.8
+update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 2
+update-alternatives --config python3
+wget https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py
+python3.8 -m pip install torch
+apt-get install python3-dev
+python3.8 -m pip install https://bitbucket.org/mpi4py/mpi4py/downloads/mpi4py-3.0.3.tar.gz
+python3.8 -m pip install -r requirements/requirements.txt
+
+python3 -m pip install torch==1.5.0+cu101 torchvision==0.6.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html #case when cuda 10.1
+
+python prepare_data.py enron -t CharLevelTokenizer -d ./data/
+python ./deepy.py train.py -d configs small.yml local_setup.yml #warning since eval won't work ok
+```
+
+---
+
+Classic nvidia commands:
+
+- nvcc --version : get CUDA version
+- nvidia-smi : display cute table with stats that include VRAM.
