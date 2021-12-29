@@ -100,6 +100,9 @@ python3.8 -m pip install -r requirements/requirements.txt
 python3 -m pip install torch==1.5.0+cu101 torchvision==0.6.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html #case when cuda 10.1
 
 python prepare_data.py enron -t CharLevelTokenizer -d ./data/
+
+https://github.com/NVIDIA/apex/issues/957 for weird megatron problems
+python ./megatron/fused_kernels/setup.py install
 python ./deepy.py train.py -d configs small.yml local_setup.yml #warning since eval won't work ok
 ```
 
