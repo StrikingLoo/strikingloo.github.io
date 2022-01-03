@@ -72,7 +72,8 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.1)
   jekyll-toc
+  nokogiri (>= 1.12.5)
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.1.4
+   2.2.22
