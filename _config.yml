@@ -3,3 +3,8 @@ markdown: kramdown
 permalink: /:title
 plugins:
   - jekyll-toc
+kramdown:
+  # Enable GitHub Flavored Markdown (fenced code blocks)
+  input: GFM
+  # Disable auto-generated ID's for headings
+  auto_ids: true
