@@ -7,28 +7,6 @@ body {
     width: 70%;
 }
 
-h1 {
-    font-size: 3em;
-    font-family:'Lato', cursive, 'Helvetica', 'Arial', 'Sans-Serif';
-}
-
-h2, h3 {
-    font-family: 'Lato',  cursive, Verdana;
-}
-h2 {font-size: 2.5em;}
-h3 {font-weight: bolder;
-    font-size: 1.9rem;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-    line-height: 1.5;}
-h1,h2,h3 {
-    color:#0C6291;
-}
-footer {
-    border-top: 1px solid #7E1946;
-    font-size: .8em;
-}
-
 p, a, ul li {
     font-family: 'Roboto', Verdana;
     font-size: 1.1rem;
@@ -43,6 +21,28 @@ a {
 a:hover {
     color: #7E1946;
     text-decoration: underline;
+}
+
+h1, h1 a {
+    font-size: 3em;
+    font-family:'Lato', cursive, 'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+h2, h3, h2 a, h3 a {
+    font-family: 'Lato',  cursive, Verdana;
+}
+h2, h2 a {font-size: 2.5em;}
+h3, h3 a {font-weight: bolder;
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 1.5;}
+h1,h2,h3, h1 a, h2 a, h3 a {
+    color:#0C6291;
+}
+footer {
+    border-top: 1px solid #7E1946;
+    font-size: .8em;
 }
 
 nav {
