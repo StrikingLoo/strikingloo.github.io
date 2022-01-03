@@ -38,7 +38,7 @@ Simplificamos asumiendo que toda operación elemental puede ser ejecutada en una
 
 Sii f es O(g), lim n->inf de f/g = c tq c > 0.
 
-## [Técnicas de diseño de algoritmos](#tecnicas-de-diseño-de-algoritmos)
+## [Técnicas de diseño de algoritmos](#técnicas-de-diseño-de-algoritmos)
 
 Para demostrar la correctitud de un algoritmo tenemos que demostrar que **termina** y que **cumple la especificación**.
 
@@ -120,7 +120,7 @@ La inversa no es necesariamente cierta. (Ver C_k!)
 
 **Condicion de Clausura** : Por cada par de vértices no adyacentes u y w, unirlos con una arista si d(u)+d(w) >= n. Repetir hasta convergencia. Si el resultado es hamiltoniano, el grafo inicial también lo es. Notar que todo grafo completo es hamiltoniano.
 
-## [Heuristicas y Metaheuristicas](#heutisticas-y-metaheuristicas)
+## [Heuristicas y Metaheuristicas](#heuristicas-y-metaheuristicas)
 Problema de Optimización: Determinar una solución factible (satisface toda restriccion) que minimice (o maximice) el objetivo.
 
 Decimos que A es un algoritmo ϵ – aproximado, con ϵ ∈ R>0, si para toda instancia se cumple:
