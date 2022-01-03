@@ -6,7 +6,7 @@ description: "Notes on anything I read about genetics, be it news or essays. Thi
 tags: genetics, DNA, scale, science
 ---
 
-## Notes on genetics. 
+## [Notes on genetics](#notes-on-genetics)
 This is quite far from my area of expertise and I only have a casual interest in these topics, so my notes are not super valuable.
 
 
@@ -18,7 +18,7 @@ The technology to sequence genes has gotten cheaper and faster. The first human 
 
 About 500,000 human genomes have been sequenced since 2003.
 
-### Approach to find which genes regulate which
+### [Approach to find which genes regulate which](#approach-to-find-which-genes-regulate-which)
 
 We begin by literally mail ordering short sequences of DNA —the regions immediately in front of a gene— where transcription factors typically bind. A computer helps us design **mutated versions of each DNA sequence**, randomly changing the letters until we have thousands of variants for each sequence. A company in San Francisco takes our digital letters, creates physical copies, and ships them in a little plastic tube to our laboratory. We then **place these synthetic pieces of DNA inside of E. coli cells**, and use a modified version of DNA sequencing to **determine whether each “letter” change made a gene produce more** or fewer Xerox copies.
 

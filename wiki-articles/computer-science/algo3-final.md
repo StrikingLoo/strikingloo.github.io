@@ -6,14 +6,14 @@ tags: algo3, data structures, UBA, spanish, español, cs, algorithms
 description: "Notas para el final de Algo3. Basadas en los apuntes de la teorica. In Spanish."
 ---
 
-## Algoritmos
+## [Algoritmos](#algoritmos)
 Secuencia finita de pasos que terminan en tiempo finito. 
 Los pasos deben ser:
 - **Precisos** (en su orden)
 - **Bien definidos** (deterministicos)
 - **Finitos** 
 
-## Máquina RAM
+## [Máquina RAM](#máquina-ram)
 - Tiene infinitos registros de tamaño infinito.
 - Cada uno accesible en tiempo constante.
 
@@ -22,7 +22,7 @@ Instrucciones disponibles:
 - add, sub, mult, div (misma complejidad independiente del tamaño del numero)
 - jmp, jgtz, jz, halt
 
-## Complejidad computacional
+## [Complejidad computacional](#complejidad-computacional)
 
 Definición informal: La complejidad de un algoritmo es una función que representa el tiempo de ejecución en función del tamaño de la entrada del algoritmo.
 
@@ -34,11 +34,11 @@ Simplificamos asumiendo que toda operación elemental puede ser ejecutada en una
 
 **Modelo logarítmico**: El tiempo de ejecución de cada operación es función del tamaño (cantidad de bits) de los operandos.
 
-## Big O notation
+## [Big O notation](#big-o-notation)
 
 Sii f es O(g), lim n->inf de f/g = c tq c > 0.
 
-## Técnicas de diseño de algoritmos
+## [Técnicas de diseño de algoritmos](#tecnicas-de-diseño-de-algoritmos)
 
 Para demostrar la correctitud de un algoritmo tenemos que demostrar que **termina** y que **cumple la especificación**.
 
@@ -52,7 +52,7 @@ Para poder hacer podas por factibilidad, tiene que cumplirse el **efecto dominó
 **Dynamic Programming** : 
 **Principio de optimalidad de Bellman** : Una solución óptima cada subsolución es a su vez óptima del subproblema correspondiente.
 
-## Grafos
+## [Grafos](#grafos)
 
 **Circuito Hamiltoniano** : Pasar por todos los vertices (Hamilton: cientifico victoriano: como paso por todas las ciudades en mi viaje?)
 
@@ -83,19 +83,19 @@ Prim's Algorithm is faster for dense graphs. O(n^2) vs O(m log n).
 
 ---
 
-## Camino minimo
+## [Camino minimo](#camino-minimo)
 
 Lo resolvemos para digrafos porque un grafo es un caso particular.
 
-### 1 to many:
+### [1 to many](#1-to-many)
 - **Todos los edges misma distancia** : Usamos el algoritmo para shortest path (BFS)
 - **No hay edges negativos** : Algoritmo de Dijkstra (Prim with extra steps). Por cada vertice, va definiendo un dicc con la distancia al origen. Lo actualiza si encuentra una forma de llegar mas corta. El dicc puede hacerse con array (donde buscar el minimo lleva O(n) ) o con min-heap (donde toma m log(n), pero las lookups del heap son n log (n)). O(m log(n) ) es mejor que O(n^2) -implementación "naive" de array-, solo si m ~ O(n). Si m ~ O(n^2) (grafo denso) es mucho peor.
 
-### many to many:
+### [many to many](#many-to-many)
 - **Floyd's Algorithm** : Funciona con pesos negativos pero **no si hay ciclos negativos**. Es cúbico en n. Usa una matriz de distancias que arranca inicializada con los pesos de los edges, y se va actualizando, en cada una de las k iteraciones con "caminos que tengan solo como intermediarios a los primeros k nodos".
 
 
-## Grafos Hamiltonianos y Eulerianos
+## [Grafos Hamiltonianos y Eulerianos](#grafos-hamiltonianos-y-eulerianos)
 
 Existen algoritmos polinomiales para saber si un grafo dado tiene un circuito euleriano, no uno hamiltoniano.
 
@@ -120,7 +120,7 @@ La inversa no es necesariamente cierta. (Ver C_k!)
 
 **Condicion de Clausura** : Por cada par de vértices no adyacentes u y w, unirlos con una arista si d(u)+d(w) >= n. Repetir hasta convergencia. Si el resultado es hamiltoniano, el grafo inicial también lo es. Notar que todo grafo completo es hamiltoniano.
 
-## Heuristicas y Metaheuristicas
+## [Heuristicas y Metaheuristicas](#heutisticas-y-metaheuristicas)
 Problema de Optimización: Determinar una solución factible (satisface toda restriccion) que minimice (o maximice) el objetivo.
 
 Decimos que A es un algoritmo ϵ – aproximado, con ϵ ∈ R>0, si para toda instancia se cumple:
@@ -137,7 +137,7 @@ Esto nos da la noción de óptimo local: una solución que no tiene vecinos mejo
 
 **Búsqueda Local** : buscar un optimo local haciendo un gradient descent discreto: hago alguna permutación hacia otra solución de la vecindad que mejore mi solución candidata, repetidas veces hasta que no pueda mejorarla mas con esta permutacion. E.g.: arranco con un ciclo feo para TSP y voy haciendo 2-opt greedily hasta llegar a la mejor posible. Podes buscar el optimo local de la vecindad cada vez, o solo ir siempre en direcciones que mejoren.
 
-## Metaheuristicas
+## [Metaheuristicas](#metaheuristicas)
 Buscan mejorar la busqueda local tradicional para no quedar varados en minimos locales. Pueden ser mas o menos simples, y usar memoria en vez de solo mirar vecinos.
 
 **Busqueda Tabú** : Memoriza T soluciones visitadas, y las elimina de las opciones V\* en N(s) para explorar.  Clasifica como tabú ciertos atributos de las soluciones (e.g., alguna arista en un TSP).
@@ -145,14 +145,14 @@ Se detiene el algoritmo por criterios de parada: cantidad de iteraciones, falta 
 
 Solemos usar metaheuristicas para resolver problemas NP-Hard, por falta de algoritmos exactos que los resuelvan en tiempo polinomico. 
 
-## Planaridad
+## [Planaridad](#planaridad)
 Un grafo es planar si puedo representarlo en el plano sin que sus aristas se superpongan. 
 Determinar planaridad es polinomial: basta ver que el grafo no contiene a k3,3 ni a k5 (minima cantidad de aristas o vertices para no-planaridad, respectivamente).
 
 Una cota util:
 Si G es conexo y planar con n ≥ 3, entonces m ≤ 3n − 6.
 
-## Coloreo
+## [Coloreo](#coloreo)
 Dado un grafo, puedo pintar sus aristas de colores tq no haya dos vecinos del mismo color?
 Problema NP-Hard! :D 
 Tenemos cotas:
@@ -182,7 +182,7 @@ S -> LF -> SL -> SI -flippear colores de cada componente filtrando por dos color
 SI+SL colorea siempre un planar con <=5, y un bipartito con 2.
 **Coloreo de Aristas** : Denominado Chi'(G), es pintar aristas tq dos aristas con un vértice en común no coincidan. Chi'(G) = D(G) + d tq d en {0,1}
 
-## Matching y cubrimientos
+## [Matching y cubrimientos](#matching-y-cubrimientos)
 - **Matching máximo** : Hallar maximo conjunto de edges tq no dos edges incidan en un mismo vertice.
 - **Conjunto independiente máximo**: Hallar máximo conjunto de vércitces no adyacentes entre si de a pares.
 - **Recubrimiento de aristas mínimo**: Mínimo conjunto de vértices que sean incidentes en toda arista.
@@ -194,7 +194,7 @@ S es un conjunto independiente <-> V \\ S es un cubrimiento de aristas.
 Interesante: Cada conjunto de vertices pintados de un **mismo color** en un coloreo de G, es un **conjunto independiente**. Evidentemente el color de mayor cardinal no necesariamente sea el conjunto independiente maximal del grafo, sin embargo.(pensar en hojas).
 Esto ultimo nos da un algoritmo greedy de coloreo muy simple (y obviamente suboptimo): tomar un nodo no pintado, extender su conjunto independiente maximal (mirando cada vez el nodo de menor grado de adyacentes entre candidatos), pintarlo de un color, repetir hasta convergencia. 
 
-### Cartero chino
+### [Cartero chino](#cartero-chino)
 
 El problema del cartero chino consiste en encontrar un **circuito** que pase por todas las aristas, minimizando el peso. Si hay un ciclo euleriano ganamos, pero sino hay que repasar una misma arista al menos dos veces. Cómo elegimos?
 
@@ -205,7 +205,7 @@ El problema del cartero chino consiste en encontrar un **circuito** que pase por
 - Construimos el multigrafo G\* duplicando en G las aristas que conforman un camino mínimo entre vi y vj. G\* es euleriano.
 - Hallamos el ciclo euleriano en G\*, y ahora es minimo.
 
-## Flujo en Redes
+## [Flujo en Redes](#flujo-en-redes)
 
 Una red es un digrafo conexo con dos vértices distinguidos: **fuente** y **sumidero** (_s_ y _t_), con grado de salida o entrada positivo, respectivamente.
 Una función de capacidades asigna pesos reales no-negativos a cada eje.
@@ -244,7 +244,7 @@ Finalmente, **Ford & Fulkerson's Algorithm** : Inicializamos la red con todos lo
 Complejidad: O(mU) Donde U es el maximo flujo posible.
 Existe Edmond-Karp que es O(nm^2) y termina para irracionales.
 
-## Complejidad 
+## [Complejidad](#complejidad) 
 Dado un problema de optimización, puede tratarse de:
 - Optimización: Hallar la solución óptima.
 - Evaluación: Hallar el valor de la solución óptima.
