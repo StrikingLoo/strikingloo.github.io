@@ -29,7 +29,7 @@ more meaningful information about the data distribution can be extracted compare
 values. More complex deep generative models may learn parameters that encode information at
 high-levels of abstraction which may be reflected as high-level features in Fisher scores.
 
-### Sparse Random Projections
+### [Sparse Random Projections](#sparse-random-projections)
 It would be cumbersome to work in the very high-dimensional parameter spaces of deep generative
 models, so we use dimensionality reduction methods to make our methods more scalable. Sparse
 random projections allow for memory-efficient and scalable projections of high dimensional vectors. The Johnson-Lindenstrauss Lemma (Dasgupta & Gupta, 1999) states that under a suitable
@@ -38,11 +38,11 @@ some k-dimensional vector space, where k depends only on log n. Therefore, for s
 we can preserve the norms and relative distances between projected points, even for very high dimensional data. Since sparse random matrices are nearly orthogonal in high-dimensional settings,
 we can safely substantially reduce the dimensionality of our embedding spaces using this method.
 
-### Decoder
+### [Decoder](#decoder)
 Regardless of whether we use Fisher scores or network activations as embedding spaces, doing any sort of image manipulation in a generated embedding space requires a mapping back from zi to xi. To solve this problem, we learn a mapping back from zi to xi by training a network to model the density p(xi |zi). We try both supervised and unsupervised learning approaches, either directly learning a decoding model to minimize reconstruction error, or implicitly learn reconstruction by
 training a conditional generative model, such as another autoregressive model or a flow.
 
-### Semantic Manipulation
+### [Semantic Manipulation](#semantic-manipulation)
 For some attribute, let zpos be the average of all embedding
 vectors with the attribute, and zneg be the average of all embedding vectors without the attribute. We
 can then apply or remove the attribute by manipulating a given embedding vector in the direction
@@ -60,7 +60,7 @@ They then present results both quantitative (with FID scores) and qualitative (p
 
 I love this approach and wonder whether it would work for other spaces (like audio). I personally don't like the name "Fisher **score**" as it is a vector.
 
-### See also
+### [See also](#see-also)
 
 - [GLOW: Flow-Based Models](/wiki-articles/machine-learning/flow-based-models-glow)
 - [Unsupervised Learning](/wiki-articles/machine-learning/unsupervised-learning-berkeley)

@@ -6,7 +6,7 @@ description: "Lego as an ecosystem, product decisions"
 tags: autocatalytic processes, network effects
 ---
 
-### The Lego System of Play:
+### [The Lego System of Play](#the-lego-system-of-play)
 
 Lego's creator decided that every set would be composed of the same set of bricks, allowing them to be combined to produce something even grander. 
 
