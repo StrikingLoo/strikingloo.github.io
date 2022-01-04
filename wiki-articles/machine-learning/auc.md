@@ -18,3 +18,13 @@ It can also be mathematically proven that AUC is equal to the probability that a
 
 *Source: [Guide to ROC Curves, Medium]*(https://towardsdatascience.com/an-understandable-guide-to-roc-curves-and-auc-and-why-and-when-to-use-them-92020bc4c5c1)
 
+---
+
+Small snippet for risk distribution plot.
+
+```
+positive_qty = df_a[df_a[LABEL]==1].count()['unique_id']
+df_sym = pd.concat([df_a.loc[df[LABEL]==1], (df_a.loc[df[LABEL]==0]).sample(positive_qty)])
+sns.displot(data=df_sym, x="prediction", hue=LABEL)
+plt.title('Risk distribution')
+```
