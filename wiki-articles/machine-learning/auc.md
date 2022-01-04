@@ -28,3 +28,7 @@ df_sym = pd.concat([df_a.loc[df[LABEL]==1], (df_a.loc[df[LABEL]==0]).sample(posi
 sns.displot(data=df_sym, x="prediction", hue=LABEL)
 plt.title('Risk distribution')
 ```
+
+Also possible to
+
+> `sns.catplot(x='prediction', y=category, hue=LABEL, kind="box", data=df_a)`
