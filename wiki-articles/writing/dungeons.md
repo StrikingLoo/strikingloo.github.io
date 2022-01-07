@@ -34,3 +34,12 @@ A trap that immobilises characters via adhesive or magic, for example, and sound
 
 ### Dungeon Challenges
 - Combat, boss-fight, maze, riddles and puzzles, social, trap, travel, sneak. Choose 2 or 3.
+
+---
+### How to make an Aberration
+
+- Pick a shape, creature or organ.
+- Change the number and/or location of eyes, mouths and/or appendages other than people are comfortable with.
+- Give it one or two psionic traits/powers
+
+<https://www.reddit.com/r/DnDBehindTheScreen/comments/55hspa/outside_the_manual_aberrations/>
