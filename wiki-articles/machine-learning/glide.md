@@ -12,6 +12,9 @@ GLIDE combines a diffusion model with CLIP embedding conditioning to generate ph
 
 In a **diffusion model**, an image is iteratively added Gaussian noise ~N(0, (1 − αt)I), and then a model is trained to reconstruct mu and sigma for the step xt-1 given xt, iteratively (sharing weights) until x0 is the image. In practice, the model fits both mu and sigma, and the loss function takes the distance between predicted and actual noise for each step.
 
+![](image/diffusion.png)
+[Source](https://lilianweng.github.io/lil-log/2021/07/11/diffusion-models.html)
+
 **Guided diffusion** additionally conditions reconstruction on a label y, using a classifier so that µθ(xt\|y) = µθ(xt\|y) + s · Σθ(xt\|y)∇xt \* log pφ(y\|xt). 
 
 **Classifier free guidance** additionally masks out X% of the labels for a null label (in CLIP this is replaced with the embedding for empty sequence) and trains on the difference between the classifier predicting y vs empty.
