@@ -21,6 +21,8 @@ In a **diffusion model**, an image is iteratively added Gaussian noise ~N(0, (1 
 
 eˆθ(xt\|c) = eθ(xt\|∅) + s · (eθ(xt\|c) − eθ(xt\|∅))
 
+Where s is always >1.
+
 For **CLIP guidance**, they do the same as in guided diffusion but use the cosine similarity between image encoding and text encoding instead of a classifier's log odds.
 
 They get very good results and beat DALL-E.
