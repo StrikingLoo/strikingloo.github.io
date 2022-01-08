@@ -43,3 +43,5 @@ A trap that immobilises characters via adhesive or magic, for example, and sound
 - Give it one or two psionic traits/powers
 
 <https://www.reddit.com/r/DnDBehindTheScreen/comments/55hspa/outside_the_manual_aberrations/>
+
+[A lot of resources for DMing](https://homebrewery.naturalcrit.com/source/S1s_gZCmQ)
