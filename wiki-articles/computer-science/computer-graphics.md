@@ -109,3 +109,8 @@ A polygon mesh is stored as a list of 3d vertices, followed by a list of faces (
 **Catmull-Clark Subdivision** turns a square looking non-differentiable surface into a roundish one that is at least c1 continuous everywhere.
 It can be applied iteratively and converges in roundish objects (e.g., cube to sphere sequence).
 
+---
+## Good Links
+
+- [Intro to OpenGL](https://engineering.monstar-lab.com/en/post/2022/03/01/Introduction-To-GPUs-With-OpenGL/): a very simple tutorial but contains all the snippets you need to bootstrap a project.
+

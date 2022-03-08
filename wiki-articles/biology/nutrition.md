@@ -20,3 +20,8 @@ from [Karpathy's Biohacking Lite:](https://karpathy.github.io/2020/06/11/biohack
 - **Limited** intake of red meat
 
 Other important elements of the Mediterranean diet are sharing meals with family and friends, enjoying a glass of red wine and being physically active." [Source](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/mediterranean-diet/art-20047801)
+
+---
+“Even in quite mild weather half the calories you burn go to keep your body warm.”
+
+Excerpt From: Bill Bryson. “A Short History Of Nearly Everything.”  
