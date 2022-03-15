@@ -110,7 +110,19 @@ A polygon mesh is stored as a list of 3d vertices, followed by a list of faces (
 It can be applied iteratively and converges in roundish objects (e.g., cube to sphere sequence).
 
 ---
+Small snippet for a fragment shader.
+
+```
+void main() {
+	vec2 st = gl_FragCoord.xy/u_resolution;
+	gl_FragColor = vec4(st.x,st.y,0.0,1.0);
+}
+```
+
+---
+
 ## Good Links
 
 - [Intro to OpenGL](https://engineering.monstar-lab.com/en/post/2022/03/01/Introduction-To-GPUs-With-OpenGL/): a very simple tutorial but contains all the snippets you need to bootstrap a project.
+
 
