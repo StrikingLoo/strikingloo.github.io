@@ -25,3 +25,7 @@ Other important elements of the Mediterranean diet are sharing meals with family
 “Even in quite mild weather half the calories you burn go to keep your body warm.”
 
 Excerpt From: Bill Bryson. “A Short History Of Nearly Everything.”  
+
+---
+
+The foods you eat can affect your brain health—Amen isn't the only expert on board with the idea, but he does have a few personal favorites. "I'm a huge fan of berries," he says. "Get as many different colors as you can—blackberries, blueberries, and raspberries." These deeply hued berries contain flavonoid antioxidants called anthocyanins, which likely play an important role in brain and overall health. On that note, Amen also suggests adding as many colorful veggies as you can fit onto your plate. As a general rule of thumb: The more colors you can include, the better.
