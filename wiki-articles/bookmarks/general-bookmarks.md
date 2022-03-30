@@ -74,3 +74,7 @@ US State Salary Scale for Seattle
 ---
 Marginalia neat links
 <https://proxy.vulpes.one/gemini/marginalia.nu/links/fragments-old-web.gmi>
+
+---
+Tezuka Osamu Cultural Prize
+<https://en.wikipedia.org/wiki/Tezuka_Osamu_Cultural_Prize>
