@@ -112,3 +112,10 @@ Classic nvidia commands:
 
 - nvcc --version : get CUDA version
 - nvidia-smi : display cute table with stats that include VRAM.
+
+---
+
+python reindex after sorting panads dataframe:
+
+```limit_df.sort_values(['case', 'limit'],inplace = True)
+limit_df.reset_index(drop=True, inplace = True) ```
