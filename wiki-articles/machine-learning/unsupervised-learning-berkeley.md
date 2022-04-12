@@ -12,6 +12,8 @@ On a general, generic case you may approach this problem with an autoregressive 
 
 **PixelCNN**: User a 2d-filter over pixels above, and a different 1d one over pixels to the left, condition on both and do softmax.
 
+**PixelCNN++**: Uses a whole 6 layers of resnet with diamond-like residual connections, and instead of doing softmax over 256 values has as an output a mixture of sigmoids (typically 5) where only pi\_i, mu\_i and s\_i are fit by the model, and then output is taken as mean of a gaussian, sampled and finally discretized to 1 of 256 values. Dropout used in first residual connection.
+
 **WaveNet**: We actually read the paper, but dillated causal convolutions + tanh\*sigmoid activation+ residual connections. It's interesting that it generalizes to images, but it *needs* the pixel coordinates as metadata to work.
 
 ## Flow models
