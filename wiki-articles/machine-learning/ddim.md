@@ -1,3 +1,10 @@
+---
+layout: post
+date: 2022-04-13
+title: "Denoising Diffusion Implicit Models"
+tags: deep learning, neural network, DDPM, DDIM, diffusion, unsupervised learning, paper, GLIDE, OpenAI, generative
+description: "Notes on the DDIM paper"
+---
 
 <https://arxiv.org/pdf/2010.02502.pdf>
 A critical drawback of these models is that they require many iterations to produce a high quality
@@ -33,3 +40,22 @@ good approximation; this motivates the choice of large T values, such as T = 100
 (2020). However, as all T iterations have to be performed sequentially, instead of in parallel, to obtain a sample x0, sampling from DDPMs is much slower than sampling from other deep generative
 models, which makes them impractical for tasks where compute is limited and latency is critical.
 near the image space due to the stochastic generative process.
+
+
+Our key observation is that the DDPM objective in the form of Lγ only depends on the marginals2
+q(xt|x0), but not directly on the joint q(x1:T |x0). Since there are many inference distributions
+(joints) with the same marginals, we explore alternative inference processes that are non-Markovian,
+which leads to new generative processes (Figure 1, right). These non-Markovian inference process
+lead to the same surrogate objective function as DDPM.
+
+They change the forward process for something more general that depends both on x0 and xt for xt-1, adding random noise that depends on a sigma for each step (where if the parameter for sigma were 0, the whole chain could be deterministic and determined by x0 and any xt). This process is more general but has the same objective!
+
+The key insight: instead of approximating ϵ from xt to xt-1, they approximate the ϵ such that x0 and ϵ are mixed to make xt. They then can use the same training objective and the same model as DDPM, but sample only S steps in the markov chain (no longer markovian as it now depends on x0 directly) and reconstruct the image 10~50x faster!
+
+![](image/ddim-12.png)
+
+They fix the sigmas and multiply by η so η==0 means DDIM, η==1 means DDPM no changes added, and it's possible to interpolate between both.
+The XT parameter seems to encode the high level features of the image well, and interpolation works semantically. longer sample trajectories give better quality samples but
+do not significantly affect the high-level features.
+
+It's also possible to reconstruct an image given its XT encoding (if I understand correctly though, this encoding has the same dimensionality, so it's not really compressing. Maybe it's possible to take fewer dimensions?).
