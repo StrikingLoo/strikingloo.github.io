@@ -7,6 +7,7 @@ description: "Notes on the DDIM paper"
 ---
 
 <https://arxiv.org/pdf/2010.02502.pdf>
+
 A critical drawback of these models is that they require many iterations to produce a high quality
 sample. For DDPMs, this is because that the generative process (from noise to data) approximates
 the reverse of the forward diffusion process (from data to noise), which could have thousands of
@@ -49,6 +50,8 @@ which leads to new generative processes (Figure 1, right). These non-Markovian i
 lead to the same surrogate objective function as DDPM.
 
 They change the forward process for something more general that depends both on x0 and xt for xt-1, adding random noise that depends on a sigma for each step (where if the parameter for sigma were 0, the whole chain could be deterministic and determined by x0 and any xt). This process is more general but has the same objective!
+
+![](image/ddim-9.png)
 
 The key insight: instead of approximating ϵ from xt to xt-1, they approximate the ϵ such that x0 and ϵ are mixed to make xt. They then can use the same training objective and the same model as DDPM, but sample only S steps in the markov chain (no longer markovian as it now depends on x0 directly) and reconstruct the image 10~50x faster!
 
