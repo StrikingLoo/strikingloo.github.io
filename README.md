@@ -7,3 +7,5 @@ Mostly used as my personal wiki, with notes from MOOCs, books and youtube videos
 
 🌿 : closed thread (spawned a note)
 🌱 : open thread (invites further reading and goes into eternal backlog)
+
+For LaTeX enclose markdown in `{% raw %} \\\(  \\\) {% endraw %} `.
