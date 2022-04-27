@@ -84,7 +84,7 @@ The Inception score ends up being the DKL between p(y\|x) and p(y), where p(y) i
 
 Equivalent to entropy of labels for generated samples - entropy of labels for each sample.
 
-FID is a more complicated metric based on inception score that uses an embedding space from some classifier, and compares the embedding for generated image vs average embedding.
+FID is a more complicated metric based on inception score that uses an embedding space from some classifier, and compares the embedding for generated image vs average embedding. [🌿](/wiki-articles/machine-learning/fid)
 
 ### Discriminator Saturation
 The bayes ideal discriminator is always right (assigns prob 0 to fake and prob 1 to true). However if our discriminator is too good too fast, since the gradient tends to be very close to zero for high confidence predictions (the landscape is flat around the edges, think of a sigmoid), the generator gets little information to work with.
