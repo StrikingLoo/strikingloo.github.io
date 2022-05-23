@@ -43,3 +43,5 @@ Excerpts:
 “John Thurloe was too useful a figure to condemn: no one knew as much as he about the administration of the past decade – and, anyhow, he was rumoured to have kept a ‘black book’ containing information that could send half of those who claimed to be royalists to the gallows in his place. ”
 
 “It was in order to demonstrate their innocence and independence of the rambunctious Fifth Monarchists that George Fox published the Quaker ‘peace testimony’, A Declaration from the Harmles & Innocent People of God, called Quakers in February 1661. This definitive denunciation of war and conflict ‘for any end or under any pretence whatsoever’ marked the movement’s abandonment of political agitation and began the explicit pacifism which endures to this day.”
+
+![](image/cromwell.png)
