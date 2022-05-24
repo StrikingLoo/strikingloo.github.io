@@ -78,3 +78,7 @@ Marginalia neat links
 ---
 Tezuka Osamu Cultural Prize
 <https://en.wikipedia.org/wiki/Tezuka_Osamu_Cultural_Prize>
+
+---
+A nice resource on Roman Naming Practices, and the origin of Modern Surnames: 
+<http://web.pdx.edu/~davide/gene/names.htm>
