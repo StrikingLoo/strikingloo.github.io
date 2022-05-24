@@ -29,3 +29,11 @@ Excerpt From: Bill Bryson. “A Short History Of Nearly Everything.”
 ---
 
 The foods you eat can affect your brain health—Amen isn't the only expert on board with the idea, but he does have a few personal favorites. "I'm a huge fan of berries," he says. "Get as many different colors as you can—blackberries, blueberries, and raspberries." These deeply hued berries contain flavonoid antioxidants called anthocyanins, which likely play an important role in brain and overall health. On that note, Amen also suggests adding as many colorful veggies as you can fit onto your plate. As a general rule of thumb: The more colors you can include, the better.
+
+---
+
+"First, you’ll need your maximum heart rate which you can get by subtracting your age from 220. For example, if you’re 35, your max heart rate is 185. At this point, you can figure out what heart rate zone is best for burning fat.
+
+At 50-60% of your maximum heart rate, you’re using 85% fat to burn calories. At 60-70% of your maximum heart rate, that drops to 65% fat being used. And at 70-80%, you’re only using 45% fat to burn calories."
+
+[Source: Heart Rate Monitor for Workouts](https://health.clevelandclinic.org/serious-about-your-workouts-get-a-heart-rate-monitor/)
