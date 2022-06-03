@@ -170,3 +170,11 @@ Such a system could grow indefinitely, gradually including more and more of the 
 However, its internal file structure would have to be built to accept growth, change and complex informational arrangements, The ELF is such a file structure.
 
 [Nelson](http://csis.pace.edu/~marchese/CS835/Lec3/nelson.pdf)
+
+---
+
+### LYT
+
+LYT is a way to take in, process, and link captured information in order to turn that information into knowledge, with the expressed purpose of bettering one's life. Though, a zettelkasten regularly benefits the user in the same way—far beyond its expressed purpose—LYT comes with a much taller order. What are beneficial byproducts in zettelkasten are centered in LYT. And, it's what's centered in LYT that drew Nick into new note-taking territory.
+
+[bobdoto](https://writing.bobdoto.computer/zettelkasten-linking-your-thinking-and-nick-milos-search-for-ground/)
