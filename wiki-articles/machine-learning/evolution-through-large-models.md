@@ -7,6 +7,7 @@ description: "Notes on the ELM paper, which uses a three-step invention pipeline
 ---
 
 <https://arxiv.org/pdf/2206.08896.pdf>
+
 Evolution through Large Models by OpenAI
 
 From Abstract:
@@ -20,7 +21,8 @@ large models (ELM), in the main experiment ELM combined with MAPElites generates
 programs that output working ambulating robots in the Sodarace domain,
 which the original LLM had never seen in pre-training. **These examples then help to bootstrap training a new conditional language model that can output the right walker for a particular terrain**"
 
-```
+---
+
 My notes and highlights from the ELM paper by OpenAI, which uses a three-step invention pipeline combining LLM mutators, MAPElites (a genetic algorithm) and RL to design racing robots.
 
 The three stages are:
@@ -29,7 +31,8 @@ The three stages are:
 - **Conditional RL**: A RL model is trained that generates conditioned racers, initializing weights from the stage two LLM and conditioning it on a terrain embedding (which is fit using a ResNet over an image of the terrain) as input. This way, using run length as a reward, a new autoregressive model is trained, this time conditional, which generates even fitter, diverse racers (with some emerging properties)
 
 The authors discuss how this could be applied to other, open-ended tasks and spark innovation in multiple novel domains, and how innovation can bootstrap itself to develop more things (mentioning the concept of DCT).
-```
+
+---
 
 *What follows is mostly excerpts and highlights.*
 
