@@ -90,7 +90,7 @@ in this work as a way to improve GP.
 This paper argues that **computer programs are a general and powerful encoding** for continually expanding the richness of an existing environment.
 
 ### Approach: Evolution through Large Models
- #Makelist
+
 Three distinct components facilitate ELM. 
 - The novel mutation operator driven by an LLM. 
 - An evolutionary outer loop that calls this mutation operator. 
@@ -163,7 +163,7 @@ In this step, a 12x12x12 grid of height, width and mass is initialized with a se
 
 The mutator LLM is optionally fine-tuned on diffs that generated valid outputs (physically viable, compiles and runs, etc.). This improves the model.
 
-## Pipeline Stage Two: Language Model Training
+## Pipeline Stage Two: Language Model Training
 
 The second stage of the invention pipeline fine-tunes an LLM on the products of stage one.
 
@@ -204,5 +204,5 @@ very unlikely to be useful.
 
 A few years ago, the idea that the mutation operator could “know” how to
 perturb such programs in reasonable and promising ways would be fanciful, but,
-as shown in this paper. the emergence of LLMs has now made such capabilities
+as shown in this paper, the emergence of LLMs has now made such capabilities
 a reality.
