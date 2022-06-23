@@ -34,6 +34,7 @@ If I read a paper, find it interesting, and think I will want to think about it 
 - [Glow: Generative Flow with Invertible 1×1 Convolutions](/wiki-articles/machine-learning/flow-based-models-glow): An OpenAI flow model for image generation. 
 - [GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models](/wiki-articles/machine-learning/glide): OpenAI's GLIDE combines a diffusion model with CLIP embedding conditioning to generate photorealistic images, conditioned on text prompts, that compare favorably to DALL-E when judged by humans. 
 - [Natural Image Manipulation with Fisher Score](/wiki-articles/machine-learning/natural-image-manipulation-fisher-score): A somewhat dated way of interpolating between images semantically, with an arbitrary generator.
+- [Evolution through Large Models](/wiki-articles/machine-learning/evolution-through-large-models): A new approach where a LLM is trained on synthetic data generated through an evolutionary process (MAP-Elites), to produce programs that solve an out-of-distribution task -Sodaracing-. RL is then used to create a generator of programs conditioned on terrains (so each problem gets a custom solution).
 
 ### Big Notes (MOOCs)
 
