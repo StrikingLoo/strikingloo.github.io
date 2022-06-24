@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400');
-
+/*
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700');
+*/
 body {
     margin: 60px auto;
     background-color: #FFFFFF;
@@ -8,7 +9,7 @@ body {
 }
 
 p, a, ul li {
-    font-family: 'Helvetica', Verdana;
+    font-family: 'Lato', 'Helvetica', Verdana;
     font-size: 1.1rem;
     line-height: 1.75;
     color: #000;
