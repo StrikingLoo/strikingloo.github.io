@@ -35,6 +35,7 @@ If I read a paper, find it interesting, and think I will want to think about it 
 - [GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models](/wiki-articles/machine-learning/glide): OpenAI's GLIDE combines a diffusion model with CLIP embedding conditioning to generate photorealistic images, conditioned on text prompts, that compare favorably to DALL-E when judged by humans. 
 - [Natural Image Manipulation with Fisher Score](/wiki-articles/machine-learning/natural-image-manipulation-fisher-score): A somewhat dated way of interpolating between images semantically, with an arbitrary generator.
 - [Evolution through Large Models](/wiki-articles/machine-learning/evolution-through-large-models): A new approach where a LLM is trained on synthetic data generated through an evolutionary process (MAP-Elites), to produce programs that solve an out-of-distribution task -Sodaracing-. RL is then used to create a generator of programs conditioned on terrains (so each problem gets a custom solution).
+- [Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language](/wiki-articles/machine-learning/socratic-models): An attempt at a more general agent by using multiples LLMs and making them interact in a zero-shot context to improve egocentric perception, video summarization, storytelling and question-answering. Not AGI, but not as far as it may be expected.
 
 ### Big Notes (MOOCs)
 
