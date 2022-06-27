@@ -27,15 +27,15 @@ I store every quote I found especially interesting in each book on a separate pa
 If I read a paper, find it interesting, and think I will want to think about it again in the future (especially if I plan on reading related papers later), I will write a summary of it and save the most important bits here. These are the papers I've read so far (mostly in the Machine Learning/Deep Learning space). [under tag: *paper*]
 
 - [GAN Survey, Goodfellow 2016](/wiki-articles/machine-learning/GAN) : A survey on Generative Adversarial Networks by Ian Goodfellow. That article also works as a hub for GAN related articles.
-- [BERT Interpretability, Frankle and Carbin 2019](/wiki-articles/machine-learning/bert-interpretability)
 - [CLIP: Learning Transferable Visual Models From Natural Language Supervision](/wiki-articles/machine-learning/clip)
 - [Denoising Diffusion Implicit Models](/wiki-articles/machine-learning/ddim)
-- [Distilling the Knowledge in a Neural Network](/wiki-articles/machine-learning/distilling-knowledge-nn): It is possible to compress the knowledge in an ensemble into a single model which is much easier to deploy.
-- [Glow: Generative Flow with Invertible 1×1 Convolutions](/wiki-articles/machine-learning/flow-based-models-glow): An OpenAI flow model for image generation. 
-- [GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models](/wiki-articles/machine-learning/glide): OpenAI's GLIDE combines a diffusion model with CLIP embedding conditioning to generate photorealistic images, conditioned on text prompts, that compare favorably to DALL-E when judged by humans. 
+- [GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models](/wiki-articles/machine-learning/glide): OpenAI's GLIDE combines a diffusion model with CLIP embedding conditioning to generate photorealistic images, conditioned on text prompts, that compare favorably to DALL-E when judged by humans.
+- [Glow: Generative Flow with Invertible 1×1 Convolutions](/wiki-articles/machine-learning/flow-based-models-glow): An OpenAI flow model for image generation.  
 - [Natural Image Manipulation with Fisher Score](/wiki-articles/machine-learning/natural-image-manipulation-fisher-score): A somewhat dated way of interpolating between images semantically, with an arbitrary generator.
+- [BERT Interpretability, Frankle and Carbin 2019](/wiki-articles/machine-learning/bert-interpretability)
 - [Evolution through Large Models](/wiki-articles/machine-learning/evolution-through-large-models): A new approach where a LLM is trained on synthetic data generated through an evolutionary process (MAP-Elites), to produce programs that solve an out-of-distribution task -Sodaracing-. RL is then used to create a generator of programs conditioned on terrains (so each problem gets a custom solution).
 - [Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language](/wiki-articles/machine-learning/socratic-models): An attempt at a more general agent by using multiples LLMs and making them interact in a zero-shot context to improve egocentric perception, video summarization, storytelling and question-answering. Not AGI, but not as far as it may be expected.
+- [Distilling the Knowledge in a Neural Network](/wiki-articles/machine-learning/distilling-knowledge-nn): It is possible to compress the knowledge in an ensemble into a single model which is much easier to deploy.
 
 ### Big Notes (MOOCs)
 
