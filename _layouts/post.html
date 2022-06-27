@@ -7,3 +7,14 @@ layout: default
 <div class="post">
   {{ content | toc }}
 </div>
+
+<script>
+const headings = document.querySelectorAll('h2[id],h3[id]'); // 1
+const linkContent = '🔗'; // 2
+for (const heading of headings) { // 3
+    const linkIcon = document.createElement('a'); // 4
+    linkIcon.setAttribute('href', `#${heading.id}`); // 5
+    linkIcon.innerHTML = linkContent; // 6
+    heading.appendChild(linkIcon); // 7
+}
+</script>
