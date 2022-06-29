@@ -30,7 +30,7 @@ This is nothing new, companies do this with KPIs all the time: overshoot so you 
 
 It's like stocking up for the winter!
 
-### Do bees like celery? On randomly lost knowledge.
+### Do bees like celery? On randomly lost knowledge.
 
 So today I was walking to get food and thinking: the api in apiculture -should mean *bee*- sounds a hell lot like *apio* (celery). And *apio* totally sounds Latin, like it should've been Apium or something way back when. So I wonder if bees are the apio-eating insect or whatever, and that was very common knowledge in ancient Rome but now a random person like me wouldn't know it.
 

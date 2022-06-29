@@ -16,5 +16,6 @@ for (const heading of headings) {
     linkIcon.setAttribute('href', `#${heading.id}`);
     linkIcon.innerHTML = linkContent;
     heading.appendChild(linkIcon);
+    heading.appendChild(document.createElement('hr'))
 }
 </script>

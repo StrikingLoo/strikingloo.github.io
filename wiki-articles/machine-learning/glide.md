@@ -15,11 +15,12 @@ In a **diffusion model**, an image is iteratively added Gaussian noise ~N(0, (1 
 ![](image/diffusion.png)
 [Source](https://lilianweng.github.io/lil-log/2021/07/11/diffusion-models.html)
 
-**Guided diffusion** additionally conditions reconstruction on a label y, using a classifier so that µθ(xt\|y) = µθ(xt\|y) + s · Σθ(xt\|y)∇xt \* log pφ(y\|xt). 
+**Guided diffusion** additionally conditions reconstruction on a label y, using a classifier so that {% raw %} \\\( µ_θ(x_t\|y) = µ_θ(x_t\|y) + s · Σ_θ(x_t\|y)∇_{x_t} · log p_φ(y\|x_t) \\\) {% endraw %} . 
 
 **Classifier free guidance** additionally masks out X% of the labels for a null label (in CLIP this is replaced with the embedding for empty sequence) and trains on the difference between the classifier predicting y vs empty.
 
-eˆθ(xt\|c) = eθ(xt\|∅) + s · (eθ(xt\|c) − eθ(xt\|∅))
+{% raw %} \\\( e_θ(x_t\|c) = e_θ(x_t\|∅) + s · (e_θ(x_t\|c) − e_θ(x_t\|∅)) \\\) {% endraw %}
+
 
 Where s is always >1.
 
@@ -27,7 +28,7 @@ For **CLIP guidance**, they do the same as in guided diffusion but use the cosin
 
 They get very good results and beat DALL-E.
 
-## See also:
+## Additional Reading
 
 - [Good explanation of diffusion models](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/#reverse-diffusion-process)
 
@@ -40,5 +41,5 @@ In a diffusion model, you assume your noise sample N(0, I) corresponds to the re
 
 The gaussian added at each step of the Markov chain is predicted using a [PixelCNN++ neural network](https://arxiv.org/pdf/1701.05517.pdf) to generate the whole vector (which has the same dimensionality as the picture) given the input and conditioned on t.
 
-Interestingly, DDIM makes the process faster by only taking some S steps out of the T diffusion iterations, and then multiplies by a whole jump (scaled by a hyperparameter) making everything faster. Better explanation under [DDIM](wiki-articles/machine-learning/ddim)
+Interestingly, DDIM makes the process faster by only taking some S steps out of the T diffusion iterations, and then multiplies by a whole jump (scaled by a hyperparameter) making everything faster. Better explanation under [DDIM](wiki-articles/machine-learning/ddim).
 
