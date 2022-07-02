@@ -10,9 +10,10 @@ layout: default
 
 <script>
 const headings = document.querySelectorAll('h2[id],h3[id]'); 
-const linkContent = ' #';
+const linkContent = '#';
 for (const heading of headings) { 
     const linkIcon = document.createElement('a');
+    linkIcon.classList.add('moveLeft');
     linkIcon.setAttribute('href', `#${heading.id}`);
     linkIcon.innerHTML = linkContent;
     heading.appendChild(linkIcon);

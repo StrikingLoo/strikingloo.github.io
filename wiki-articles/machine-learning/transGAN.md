@@ -3,12 +3,10 @@ layout: post
 date: 2021-03-15
 title: "transGAN"
 tags: deep learning, transformers, NLP, computer vision
-description: "Notes on a the paper proposing TransGAN, a GAN rchitecture without convolutions, purely based on transformers."
+description: "Notes on a the paper proposing TransGAN, a GAN architecture without convolutions, purely based on transformers."
 ---
 
 <https://arxiv.org/pdf/2102.07074.pdf> 
-
-## Notes on transGAN
 
 "We have proposed TransGAN, a new GAN paradigm based on pure transformers. We have carefully crafted the architectures and thoughtfully designed training techniques. As a result, TransGAN has achieved comparable performance to some state-of-the-art CNN-based GAN methods across multiple popular datasets. We show that **the traditional reliance on CNN backbones and many specialized modules may not be necessary for GANs, and pure transformers can be sufficiently capable for image generation.**"
 
