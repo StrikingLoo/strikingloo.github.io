@@ -40,6 +40,7 @@ h3, h3 a {
     word-spacing: 3px;
     line-height: 1.5;}
 h1,h2,h3, h1 a, h2 a, h3 a {
+    position: relative;
     color:#0C6291;
 }
 footer {
@@ -82,8 +83,10 @@ strong { font-weight: bolder;}
 img { height:70%; width:70%;}
 blockquote p {color:#7E1946; font-family: Courier, 'Lato' }
 
-h3:after, h2:after {
-  border-bottom: 1px dotted black;
-  content: '';
-  flex: 1;
+a.moveLeft{
+    position: absolute;
+    left: -5%;
+    /*top: 0px;*/
+    display: inline; 
 }
+
