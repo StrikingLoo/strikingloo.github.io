@@ -179,7 +179,20 @@ LYT is a way to take in, process, and link captured information in order to turn
 
 [bobdoto](https://writing.bobdoto.computer/zettelkasten-linking-your-thinking-and-nick-milos-search-for-ground/)
 
+---
+### Personal Knowledge Base by TKainRad
+
+"Preserving information that is often needed but doesn’t fit in any proper documentation project
+In my case, these are things like the following:
+- **Command-lines with multiple parameters, complex options, and paths**: I keep them in my notes so that I can quickly copy-paste them in the potentially distant future.
+- **Instructions for tasks that will likely have to be repeated in the future**: for example setting up a development environment for a specific tech stack, deploying a project on a specific hosting service.
+- **Questions:** Sometimes I think of a question that I would like to ask someone specific, who is not available at the moment. The question and its eventual answer are a nice use case for a note."
+
+[Managing my personal knowledge base](https://tkainrad.dev/posts/managing-my-personal-knowledge-base/)
+
+
 ### Related Links
 
 - [Sad Infra](https://beepb00p.xyz/sad-infra.html): Imagine if all the data we generate was easily exportable and mergeable instead of being in distributed silos? Here's some tools the author wishes existed.
+
 
