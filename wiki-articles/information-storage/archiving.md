@@ -178,3 +178,8 @@ However, its internal file structure would have to be built to accept growth, ch
 LYT is a way to take in, process, and link captured information in order to turn that information into knowledge, with the expressed purpose of bettering one's life. Though, a zettelkasten regularly benefits the user in the same way—far beyond its expressed purpose—LYT comes with a much taller order. What are beneficial byproducts in zettelkasten are centered in LYT. And, it's what's centered in LYT that drew Nick into new note-taking territory.
 
 [bobdoto](https://writing.bobdoto.computer/zettelkasten-linking-your-thinking-and-nick-milos-search-for-ground/)
+
+### Related Links
+
+- [Sad Infra](https://beepb00p.xyz/sad-infra.html): Imagine if all the data we generate was easily exportable and mergeable instead of being in distributed silos? Here's some tools the author wishes existed.
+

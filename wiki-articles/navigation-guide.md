@@ -16,11 +16,12 @@ The reader is encouraged to message me if any doubts arose about anything in thi
 
 ### Book Reviews
 
-I store every quote I found especially interesting in each book on a separate page of this wiki. Here are presented the books where the notes were abundant enough to be interesting. [articles under tag : *book*]
+I store every quote I found especially interesting in each book on a separate page of this wiki. Here are presented the books where the notes were abundant enough to be interesting. [articles under tag : *book*. See also [books category page]((/wiki-articles/books/)]
 
 - [“A Short History of Nearly Everything”, by Bill Bryson](/wiki-articles/books/a-short-history-of-nearly-everything)
 - [“Soonish”, by Zach and Kelly Weinersmith](/wiki-articles/books/soonish)
 - [“The Restless Republic”, by Anna Keay](/wiki-articles/books/the-restless-republic)
+- ["A Discovery of France", by Graham Robb](/wiki-articles/books/a-discovery-of-france): A book about France's rural or non-Parisian population, its history and culture. It goes from the medieval age through the early modernity up to the 19th century. This article contains my favorite quotes and the ones I found most surprising, of which there were quite a few.
 
 ### Papers
 
