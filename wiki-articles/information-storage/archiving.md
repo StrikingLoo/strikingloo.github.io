@@ -93,7 +93,7 @@ In the things you write in school you are, in theory, merely explaining yourself
 
 ---
 
-Nikita Voloboev's [list of personal wikis](https://github.com/nikitavoloboev/knowledge/blob/master/other/wiki-workflow.md#similar-wikis-i-liked)
+Nikita Voloboev's [list of personal wikis](https://wiki.nikiv.dev/other/wiki-workflow#similar-wikis-i-liked)
 
 --- 
 
