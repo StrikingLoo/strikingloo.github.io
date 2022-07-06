@@ -191,7 +191,7 @@ In my case, these are things like the following:
 [Managing my personal knowledge base](https://tkainrad.dev/posts/managing-my-personal-knowledge-base/)
 
 
-### Related Links
+### Related Links
 
 - [Sad Infra](https://beepb00p.xyz/sad-infra.html): Imagine if all the data we generate was easily exportable and mergeable instead of being in distributed silos? Here's some tools the author wishes existed.
 

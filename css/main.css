@@ -78,12 +78,6 @@ strong { font-weight: bolder;}
 }
 img { height:70%; width:70%;}
 blockquote p {color:#7E1946; font-family: Courier, 'Lato' }
-
-a.moveLeft{
-    position: absolute;
-    left: -5%;
-    display: inline; 
-}
 a.backButton{
   position:fixed; 
   top:90%;

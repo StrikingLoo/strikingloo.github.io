@@ -10,13 +10,8 @@ layout: default
 <a class="backButton" href="/wiki">[<- Back to wiki]</a>
 <script>
 const headings = document.querySelectorAll('h2[id],h3[id]'); 
-const linkContent = '#';
-for (const heading of headings) { 
-    const linkIcon = document.createElement('a');
-    linkIcon.classList.add('moveLeft');
-    linkIcon.setAttribute('href', `#${heading.id}`);
-    linkIcon.innerHTML = linkContent;
-    heading.appendChild(linkIcon);
+for (var heading of headings) {
+    heading.innerHTML = `<a href=#${heading.id}># ${heading.innerHTML}</a>`;
     heading.appendChild(document.createElement('hr'))
 }
 </script>
