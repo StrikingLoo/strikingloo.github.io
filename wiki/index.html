@@ -25,10 +25,10 @@ title: StrikingLoo's Haphazard Repository of Knowledge, Opinions and Trivia
 {% for item in folder1 %}
 {% if item.path contains 'index' %}
 {% else %}
-<a href="{{ item.url }}" class="wiki-item" title="{{ item.description }}">{{item.path | split: "/" | last | remove_first: ".md" }}</a>
+<a href="{{ item.url }}" class="wiki-item" title="{{ item.description }}">{{ item.title }}</a>
 {% endif %}
 {% endfor %}
-   </ul>
+ </ul>
    
 </div>
 <br/>

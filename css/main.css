@@ -67,10 +67,11 @@ nav a, footer a {
 strong { font-weight: bolder;}
 
 .wiki-item {
-  border-radius: 25%;
-  background-color: #cfebfb;
+  border-radius: 10%;
   padding: 10px;
+  background-color: #cfebfb;
   display:inline-block;
+  width:45%;
   margin:3px;
 }
 .wiki-item:hover {
