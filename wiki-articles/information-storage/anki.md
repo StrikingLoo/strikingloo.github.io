@@ -6,7 +6,15 @@ tags: [productivity, quotes]
 description: "Mostly just a summary of tfft, Gwern and augmenting cognition articles. Also a collection of Anki related tips and quotes."
 ---
 
-## Helping Develop Virtuoso Skills with Personal Memory Systems
+I've been using Anki for language studying (especially for Japanese) daily for 2 years.
+
+I've had mixed results using custom decks for concepts I learned in university, where I found anki really helped me memorize things but I generally didn't have a lot I needed memorizing in the first place (I wonder which subjects present a memory bottleneck instead of a, for instance, understanding bottleneck).
+
+Where Anki has really shone for me is vocabulary acquisition in Japanese. I studied Japanese using the [DJT method](https://djtguide.neocities.org/guide.html), where I first memorized a big deck of vocabulary cards (mostly N3 words, for those who care), and then started reading a Light Novel daily (in my case, [Kumo Desuga Nanika](https://en.wikipedia.org/wiki/So_I%27m_a_Spider,_So_What%3F)) and "mining" for new words: every time I found a word I didn't know, I would add a card to my vocab deck with the sentence where I first found it (sometimes edited for brevity, leaving out superfluous words). I do daily reading sessions of one hour, and daily anki reviews, and after one year of this I can safely say I went from lower-N3 (JLPT3) level to a place where I can confortably read a light novel or watch anime without subs (my current average is two unknown words every 3 light novel pages read).
+
+What follow are quotes and opinions on using Spaced Repetition for studying, collected from diverse sources: Michael Nielsen's essay, Gwern's amazing essay, and a few others. Feel free to contact me if you think of a different resource, quote or tip that could fit here! I will probably keep updating this post if I come up with anything worthwhile.
+
+## Michael Nielsen: Helping Develop Virtuoso Skills with Personal Memory Systems
 "As we'll see, Anki can be used to remember almost anything. That is, **Anki makes memory a choice**, rather than a haphazard event, to be left to chance. I'll discuss how to use Anki to understand research papers, books, and much else. And I'll describe numerous patterns and anti-patterns for Anki use. While Anki is an extremely simple program, it's possible to develop virtuoso skill using Anki, a skill aimed at understanding complex material in depth, not just memorizing simple facts.
 
 I therefore have two rules of thumb. First, if memorizing a fact seems worth 10 minutes of my time in the future, then I do it. Second, and superseding the first, if a fact seems striking then into Anki it goes, regardless of whether it seems worth 10 minutes of my future time or not. The reason for the exception is that many of the most important things we know are things we're not sure are going to be important, but which our intuitions tell us matter. This doesn't mean we should memorize everything. But it's worth cultivating taste in what to memorize.
