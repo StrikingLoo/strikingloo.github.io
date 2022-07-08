@@ -4,6 +4,7 @@ title: "Permutation Importance"
 date: 2021-09-10
 tags: metrics, ml, xgboost, feature importance
 description: "A metric for feature importance that doesn't require multiple trainings, preprocessing and is model independent."
+language: English
 ---
 
 <https://explained.ai/rf-importance/index.html>

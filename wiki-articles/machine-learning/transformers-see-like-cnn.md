@@ -4,6 +4,7 @@ date: 2021-09-07
 title: "Do Vision Transformers See Like Convolutional Neural Networks?"
 tags: deep learning,convolutional neural networks,cnn,vit,transformer,transformers,NLP,paper
 description: "Notes on a 2021 Google Brain paper comparing Visual Transformer to ResNet CNN in terms of layer similarity and linear probes."
+language: English
 ---
 
 <https://arxiv.org/pdf/2108.08810.pdf>

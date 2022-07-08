@@ -4,6 +4,7 @@ title: "Genetics"
 date: 2020-12-12
 description: "Notes on anything I read about genetics, be it news or essays. This is far from my area of expertise."
 tags: genetics, DNA, scale, science
+language: English
 ---
 
 ## [Notes on genetics](#notes-on-genetics)

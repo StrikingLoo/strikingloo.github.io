@@ -4,6 +4,7 @@ title: "Directed Controller Synthesis for Discrete Events Systems"
 date: 2021-09-21
 tags: UBA, spanish, español, cs, algorithms, LTS, DCS, paper
 description: "Notas para la tesis, tomadas mientras leia el segundo paper del material de lectura. (Tesis doctoral de Daniel Alfredo Ciolek)"
+language: Spanish
 ---
 " Interestingly, the three disciplines share
 the important characteristic that input specifications are given via compact

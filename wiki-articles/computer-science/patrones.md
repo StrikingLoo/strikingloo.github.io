@@ -4,6 +4,7 @@ title: "Reconocimiento de Patrones - Notas para el coloquio"
 date: 2021-07-02
 tags: patrones, pattern recognition, UBA, spanish, español, cs
 description: "Notas para el final de Algo3. Basadas en los apuntes de la teorica. In Spanish."
+language: Spanish
 ---
 
 ## Modelos Lineales

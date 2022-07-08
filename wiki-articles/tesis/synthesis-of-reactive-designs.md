@@ -4,6 +4,7 @@ title: "Synthesis of General Reactive(1) Designs"
 date: 2021-10-11
 tags: UBA, cs, algorithms, LTS, DCS, paper, GR(1), LTL
 description: "Notes taken from the paper on Synthesis of Reactive(1) designs, introducing GR(1) and an algorithm for automatic controller synthesis for such LTL specifications"
+language: English
 ---
 
 One of the most ambitious and challenging problems in computer science is the automatic synthesis of programs and

@@ -3,7 +3,8 @@ layout: post
 title: "Loneliness"
 date: 2020-12-17
 description: "News, quotes, paper extracts and observations on the topic of loneliness and its impact in the brain and health."
-tags: studies 
+tags: studies, happiness
+language: English
 ---
 ### Loneliness
 

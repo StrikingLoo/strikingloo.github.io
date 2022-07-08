@@ -4,6 +4,7 @@ title: "Teoría de Lenguajes - Notas para el final"
 date: 2021-07-21
 tags: TLeng, UBA, spanish, español, cs, algorithms
 description: "Notas para el final de Tleng. Basadas en las teóricas de la materia, y adornadas luego al leer las preguntas tipicas de final. In Spanish."
+language: Spanish
 ---
 
 ## Definiciones

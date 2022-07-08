@@ -4,6 +4,7 @@ date: 2021-09-09
 title: "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"
 tags: deep learning,convolutional neural networks,cnn,vit,transformer,transformers,NLP,paper
 description: "Notes on the original 2021 June paper that introduced visual transformers, also comparing them to ResNet CNN."
+language: English
 ---
 
 <https://arxiv.org/pdf/2010.11929v2.pdf>

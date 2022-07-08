@@ -4,6 +4,7 @@ title: "Bases de Datos - Notas para el final"
 date: 2021-4-7
 tags: bases de datos, DB, Databases, SQL, UBA, spanish, español, cs, algorithms
 description: "Notas para el final de Bases de Datos. Basadas en las diapos teoricas en el campus. In Spanish."
+language: Spanish
 ---
 
 **Independencia fisica**: Abstraccion entre los datos que ve el usuario, y su almacenamiento fisico -optimizaciones del DBMS etc-.

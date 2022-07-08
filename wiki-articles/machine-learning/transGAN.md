@@ -4,6 +4,7 @@ date: 2021-03-15
 title: "transGAN"
 tags: deep learning, transformers, NLP, computer vision
 description: "Notes on a the paper proposing TransGAN, a GAN architecture without convolutions, purely based on transformers."
+language: English
 ---
 
 <https://arxiv.org/pdf/2102.07074.pdf> 

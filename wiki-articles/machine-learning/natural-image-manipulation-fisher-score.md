@@ -4,6 +4,7 @@ date: 2021-10-03
 title: "Natural Image Manipulation with Fisher Score"
 tags: deep learning, neural network, PixelCNN, unsupervised learning, convolutional neural networks, paper, autoregressive
 description: "Notes from a paper on using fisher scores to generate an embedding space given a generative model. Used to interpolate images semantically."
+language: English
 ---
 
 <https://arxiv.org/pdf/1912.05015.pdf>

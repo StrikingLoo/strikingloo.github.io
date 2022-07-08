@@ -3,6 +3,7 @@ layout: post
 date: 2020-10-02
 title: "Deep Learning for NLP"
 description: "My notes from Stanford's Deep Learning for NLP course, plus any papers from the recommended reading I went through."
+language: English
 ---
 Deep Learning + NLP
 _Based on the Stanford MOOC_

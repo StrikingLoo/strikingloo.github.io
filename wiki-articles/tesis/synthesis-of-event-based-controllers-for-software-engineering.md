@@ -4,6 +4,7 @@ title: "Synthesis of Event-Based Controllers for Software Engineering"
 date: 2021-10-14
 tags: UBA, cs, algorithms, LTS, DCS, paper, GR(1), LTL, mtsa
 description: "Taken from Dipi's paper on using (monolithic) DCS for DES to solve GR(1) goals, plus decoupling of assumptions and safeties and dealing with errors."
+language: English
 ---
 
 (Tesis de D'ipi.)

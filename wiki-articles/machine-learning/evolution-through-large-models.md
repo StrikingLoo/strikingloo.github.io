@@ -4,6 +4,7 @@ date: 2022-06-22
 title: "Evolution through Large Models, OpenAI"
 tags: deep learning, paper, LLMs, EC, genetic algorithms,sodaracer,MAPElites,ELM
 description: "Notes on the ELM paper, which uses a three-step invention pipeline combining LLM mutators, MAPElites (a genetic algorithm) and RL to design racing robots."
+language: English
 ---
 
 <https://arxiv.org/pdf/2206.08896.pdf>

@@ -4,6 +4,7 @@ title: "Paradigmas de Lenguajes de Programacion - Notas para el final"
 date: 2021-07-10
 tags: PLP, UBA, spanish, español, cs, algorithms
 description: "Notas para el final de PLP. Basadas en las teóricas de la materia, y adornadas luego al leer las preguntas tipicas de final. In Spanish."
+language: Spanish
 ---
 
 ## Calculo Lambda

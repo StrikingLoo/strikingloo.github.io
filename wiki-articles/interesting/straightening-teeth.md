@@ -4,6 +4,7 @@ title: "Troublesome facts about straightening teeth"
 date: 2020-12-17
 description: "Something happened 200 years ago and nobody has an edge-to-edge bite anymore. Experts have no idea why."
 tags: incels, dentistry, history, article
+language: English
 ---
 
 ### Troublesome facts about straightening teeth

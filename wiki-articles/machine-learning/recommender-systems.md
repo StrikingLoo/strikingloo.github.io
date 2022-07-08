@@ -3,6 +3,7 @@ layout: post
 date: 2020-11-05
 title: "Recommender Systems"
 description: "My notes from Andrew Ng's Lectures on Recommendation Systems, plus some papers and other sources."
+language: English
 ---
 
 ## Problem Statement

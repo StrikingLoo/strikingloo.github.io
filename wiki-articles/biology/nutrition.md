@@ -3,6 +3,7 @@ layout: post
 title: "Nutrition and Diets"
 date: 2020-06-17
 description: "Quotes, Facts and Tidbits related to Nutrition and Diets"
+language: English
 ---
 from [Karpathy's Biohacking Lite:](https://karpathy.github.io/2020/06/11/biohacking-lite/)
 "You might think that most of your energy output would come from movement, but in fact 1) your body is exceedingly efficient when it comes to movement, and 2) it is energetically unintuitively expensive to just exist."

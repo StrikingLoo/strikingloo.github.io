@@ -4,6 +4,7 @@ title: "Industrial Revolution"
 date: 2020-12-17
 description: "About industrial revolution. Definition, the supposed coming 4th industrial revolution, and its impact and characteristics."
 tags: history, technology, business, youtube, yt, industrial revolution
+language: English
 ---
 
 ### Industrial Revolution

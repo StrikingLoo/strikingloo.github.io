@@ -3,6 +3,7 @@ layout: post
 title: "Insect Extinction"
 date: 2021-05-06
 description: "starts with an excerpt from The Guardian about insect extinction"
+language: English
 ---
 
 More than 40% of insect species are declining and a third are endangered, the analysis found. The rate of extinction is eight times faster than that of mammals, birds and reptiles. The total mass of insects is falling by a precipitous 2.5% a year, according to the best data available, suggesting they could vanish within a century.
