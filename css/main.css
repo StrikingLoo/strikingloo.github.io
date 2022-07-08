@@ -71,8 +71,11 @@ strong { font-weight: bolder;}
   padding: 10px;
   background-color: #cfebfb;
   display:inline-block;
+  vertical-align: middle;
   width:45%;
+  height:3em;
   margin:3px;
+  border: 1px solid;
 }
 .wiki-item:hover {
   background-color:#E1F3FB;
