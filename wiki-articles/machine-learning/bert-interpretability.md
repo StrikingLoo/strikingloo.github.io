@@ -4,6 +4,7 @@ date: 2021-01-07
 title: "BERT Interpretability"
 tags: deep learning, neural network, NLP, BERT, interpretability, paper, notes, thegradient
 description: "Notes from a paper on BERT interpretability from thegradient.pub"
+language: English
 ---
 
 ### On BERT interpretability:

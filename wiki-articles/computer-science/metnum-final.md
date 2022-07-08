@@ -4,6 +4,7 @@ title: "Metodos Numericos - Notas para el final"
 date: 2020-12-14
 tags: metnum, UBA, spanish, español, cs, algorithms
 description: "Notas para el final de MetNum. Basadas en el apunte de Frizo y adornadas con fragmentos del Burden. In Spanish."
+language: Spanish
 ---
 
 ### Eliminacion Gaussiana

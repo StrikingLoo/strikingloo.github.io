@@ -3,6 +3,7 @@ layout: post
 title: "Designing dungeons"
 date: 2021-06-16
 description: "Tips and advice on writing dungeons. Taken from reddit and other places."
+language: English
 ---
 
 [Scavenger144](https://www.reddit.com/r/dndnext/comments/754kez/how_to_create_a_dungeon_crawl/) on how to create a Dungeon.

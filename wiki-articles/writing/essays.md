@@ -3,6 +3,7 @@ layout: post
 title: "Notes on Writing Essays"
 date: 2020-11-24
 description: "Quotes and advice on writing non-fiction. Especially about essays."
+language: English
 ---
 
 From [LeanAnki, Zettelkasten Method](https://leananki.com/zettelkasten-method-smart-notes/), I see he has this simple method for essay writing: 

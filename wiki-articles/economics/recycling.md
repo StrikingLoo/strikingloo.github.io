@@ -4,6 +4,7 @@ title: "Recycling"
 date: 2020-12-17
 description: "Recycling from an economic or ecological perspective."
 tags: economics, China, international politics, international, geopolitics, externality, logistics
+language: English
 ---
 ### Recycling (and China)
 

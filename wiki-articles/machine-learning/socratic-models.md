@@ -4,6 +4,7 @@ date: 2022-04-27
 title: "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language"
 tags: LMs,GPT-3,zero-shot,paper
 description: "Notes on paper on Socratic models"
+language: English
 ---
 
 <https://arxiv.org/pdf/2204.00598.pdf>

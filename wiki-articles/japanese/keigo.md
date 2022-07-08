@@ -3,6 +3,7 @@ layout: post
 title: "Summary of Keigo in Japanese"
 date: 2020-10-02
 description: "A summary of Japanese grammar's keigo, abridged from Wikipedia + formatting."
+language: English
 ---
 
 # Honorifics (keigo):

@@ -4,6 +4,7 @@ title: "Fundamentals of Computer Graphics"
 date: 2021-03-22
 tags: algo3, data structures, UBA, spanish, español, cs, algorithms
 description: "Based on Fundamentals of Computer Graphics 4th edition, by Marschner and Shirley. Taken while going through the corresponding elective."
+language: English
 ---
 
 ## Computer Graphics Areas
