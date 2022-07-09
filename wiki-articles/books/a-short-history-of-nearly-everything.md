@@ -7,7 +7,7 @@ description: "Notes and excerpts from 'A Short History of Nearly Everything', by
 language: English
 ---
 
-# Notes and excerpts from "A Short History of Nearly Everything", by Bill Bryson
+## Notes and excerpts from "A Short History of Nearly Everything", by Bill Bryson
 
 > Purely some quotes I found interesting, without dedicating too much thought to any of them. [Missing: Kindle quotes!]
 
