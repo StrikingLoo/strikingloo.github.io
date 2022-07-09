@@ -21,11 +21,14 @@ title: StrikingLoo's Haphazard Repository of Knowledge, Opinions and Trivia
       <h2>All Notes</h2>
 
 	<ul class="posts">
-{% assign folder1 = site.pages | where_exp: "item" , "item.path contains 'wiki-articles' and item.language == 'English'" | sort:"path" %}
+{% assign folder1 = site.pages | where_exp: "item" , "item.path contains 'wiki-articles' " | sort:"path" %}
+
 {% for item in folder1 %}
 {% if item.path contains 'index' %}
 {% else %}
+{% if item.language == 'English' %}
 <a href="{{ item.url }}" class="wiki-item" title="{{ item.description }}">{{ item.title }}</a>
+{% endif %}
 {% endif %}
 {% endfor %}
  </ul>
@@ -34,11 +37,13 @@ title: StrikingLoo's Haphazard Repository of Knowledge, Opinions and Trivia
  <h2>Notes in Spanish</h2>
 
   <ul class="posts">
-{% assign folder1 = site.pages | where_exp: "item" , "item.path contains 'wiki-articles' and item.language == 'Spanish'" | sort:"path" %}
+{% assign folder1 = site.pages | where_exp: "item" , "item.path contains 'wiki-articles' " | sort:"path" %}
 {% for item in folder1 %}
 {% if item.path contains 'index' %}
 {% else %}
+{% if item.language == 'Spanish' %}
 <a href="{{ item.url }}" class="wiki-item" title="{{ item.description }}">{{ item.title }}</a>
+{% endif %}
 {% endif %}
 {% endfor %}
  </ul>
