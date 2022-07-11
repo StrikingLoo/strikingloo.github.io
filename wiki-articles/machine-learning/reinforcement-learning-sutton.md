@@ -508,3 +508,35 @@ The REINFORCE method follows directly from the policy gradient theorem. Adding a
 ## Part III : Going Deeper
 
 I decided to skip the chapters on psychology and neuroscience. I started reading them but they didn't seem to relevant to my interests. Going straight to "Applications and Case Studies". I did not take notes on them though, but I found them entertaining.
+
+### How AlphaGo works
+"Where in addition to reinforcement learning, AlphaGo relied on supervised learning from a large database of expert human moves, AlphaGo Zero used only reinforcement
+learning and no human data or guidance beyond the basic rules of the game (hence the
+Zero in its name)."
+
+"The main innovation that made AlphaGo such a strong player is that it selected moves by a novel version of MCTS that was guided by both a policy and a value function learned by reinforcement learning with function approximation provided by deep convolutional ANNs."
+
+Each node of the tree was expanded with a node with a value that was a mixture between a value estimation for that state (calculated using a deep CNN) and the return from a monte carlo game (generated such that each decision made by either player was done from a linear rollout policy, also trained in a supervised manner from an expert play dataset).
+
+" APV-MCTS’s rollouts in AlphaGo were simulated games with both players using a fast rollout policy provided by a simple linear network, also trained by supervised learning before play."
+
+**For the value network**: They divided the process of training the value network into two stages. In the first stage,
+they created the best policy they could by using reinforcement learning to train an RL
+policy network. This was a deep convolutional ANN with the same structure as the SL
+policy network. It was initialized with the final weights of the SL policy network that
+were learned via supervised learning, and then policy-gradient reinforcement learning was
+used to improve upon the SL policy. In the second stage of training the value network,
+the team used Monte Carlo policy evaluation on data obtained from a large number of
+simulated self-play games with moves selected by the RL policy network.
+
+In testing the final RL policy, they found that it won more than 80%
+of games played against the SL policy, and it won 85% of games played against a Go
+program using MCTS that simulated 100,000 games per move.
+
+The rollout policy network allowed approximately 1,000
+complete game simulations per second to be run on each of the processing threads that
+AlphaGo used.
+
+**Summary**: If I understand correctly, the entire pipeline was: from current state, select next action using the SL-policy network. Then do rollout using the rollout policy (which is linear and simpler). Add the node to the tree with a value that is a mixture between the value network (the RL-policy network) and the return on the monte carlo rollout. Eventually the node with the highest return is chosen on decision time.   The best play resulted from setting the mixture parameter to 0.5.
+
+AlphaGo Zero, instead, did not have complex represenattions of the board (just the matrix of pieces and places) and used MCTS during self-play, combined with a CNN that predicted next move probabilities and a probability of winning, guiding MCTS but being gradient descended to iteratively predict closer to MCTS itself.

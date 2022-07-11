@@ -31,5 +31,4 @@ For example [AlphaGo](https://deepmind.com/alpha-go)[🌱] first uses supervised
 - [David Silver’s course](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)[🌱]
 - [John Schulmann’s lectures](https://www.youtube.com/watch?v=oPGVsoBonLM)[🌱]
 - [Building Machines That Learn and Think Like People](https://arxiv.org/abs/1604.00289)[🌱]
-
-
+- [Mnih et al. (2015)]()[🌱]: A paper where a Q-Learning algorithm is trained on ATARI 2600 dataset and beats human level performance. They used Q-learning with experience replay, where a "tape" of experiences is kept, storing (St, At, Rt+1, St+1) and those are replayed by sampling uniformly from the tape in a planning manner.
