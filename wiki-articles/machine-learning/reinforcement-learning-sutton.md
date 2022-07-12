@@ -540,3 +540,14 @@ AlphaGo used.
 **Summary**: If I understand correctly, the entire pipeline was: from current state, select next action using the SL-policy network. Then do rollout using the rollout policy (which is linear and simpler). Add the node to the tree with a value that is a mixture between the value network (the RL-policy network) and the return on the monte carlo rollout. Eventually the node with the highest return is chosen on decision time.   The best play resulted from setting the mixture parameter to 0.5.
 
 AlphaGo Zero, instead, did not have complex represenattions of the board (just the matrix of pieces and places) and used MCTS during self-play, combined with a CNN that predicted next move probabilities and a probability of winning, guiding MCTS but being gradient descended to iteratively predict closer to MCTS itself.
+
+"The DeepMind team also compared AlphaGo Zero with a program using an ANN with
+the same architecture but trained by supervised learning to predict human moves in a
+data set containing nearly 30 million positions from 160,000 games. They found that the supervised-learning player initially played better than AlphaGo Zero, and was better at predicting human expert moves, but played less well after AlphaGo Zero was trained for a day. **This suggested that AlphaGo Zero had discovered a strategy for playing that was different from how humans play.**" [Emphasis mine.]
+
+This makes me wonder, what novel strategies may we find in different games if we trained RL algorithms for them? What facets of the world are hidden, waiting to be found by a different AlphaX Zero? Could RL be applied in logistics, finance, maybe manufacturing processes? What is rewards were about designing clothes that people like or writing blog posts people find insightful? And what happens when "Reinforcement Learning as a Service" emerges as a B2B technology or even an app in say ~10 years when costs have gone down significantly? \[Maybe write an article on this with real examples and use-cases.\]
+
+"AlphaGo Zero soundly demonstrated that superhuman performance can be achieved
+by pure reinforcement learning, augmented by a simple version of MCTS, and deep ANNs
+with very minimal knowledge of the domain and no reliance on human data or guidance."
+
