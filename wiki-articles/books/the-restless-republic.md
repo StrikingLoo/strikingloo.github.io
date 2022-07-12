@@ -9,7 +9,7 @@ language: English
 
 “The Restless Republic.” by Anna Keay
 
-These are my notes on a book about the Interregnum. My biggest impression is just how chaotic the whole thing was. Cromwell only governed England for a part of the interregnum, preceded by a council presided by Bradshaw (a more likable, Republican individual) and succeeded by his son, and later a military junta.
+These are my notes on a book about the Interregnum. It follows the lives of different people from different parts of English society during the period: a religious figure, a Royalist noblewoman, a New Scientist and Cromwell himself. My biggest impression from it is just how chaotic the whole thing was. Cromwell only governed England for a part of the interregnum, preceded by a council presided by Bradshaw (a more likable, Republican individual) and succeeded by his son, and later a military junta.
 
 Monck is also an interesting character, quite forgotten despite his great deeds. He rules Scotland by the end and then uses the army to take back control of London and Parliament, then restoring the authority of the 'secluded' MPs for them to call for elections and the restoration of the House of Lords, eventually bringing back the monarchy.
 
