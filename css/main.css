@@ -82,6 +82,7 @@ strong { font-weight: bolder;}
 }
 img { height:70%; width:70%;}
 blockquote p {color:#7E1946; font-family: Courier, 'Lato' }
+pre, code {background-color: #444; color: #fff; font-family: Verdana; padding: 10px;}
 a.backButton{
   position:fixed; 
   top:90%;
