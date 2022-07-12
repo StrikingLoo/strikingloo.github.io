@@ -7,7 +7,13 @@ layout: default
 <div class="post">
   {{ content | toc }}
 </div>
-<a class="backButton" href="/wiki">[<- Back to wiki]</a>
+<div class="backButton">
+<a href="https://twitter.com/intent/tweet?text={{ page.title }}&url=https://strikingloo.github.io{{ page.url }}%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo"><i class="fab fa-twitter"></i>[Tweet this!]</a>
+<br/>
+<a href="/wiki">[<- Back to wiki]</a>
+
+</div>
+
 <script>
 const headings = document.querySelectorAll('h2[id],h3[id]'); 
 for (var heading of headings) {
