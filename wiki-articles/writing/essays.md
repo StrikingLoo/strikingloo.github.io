@@ -66,3 +66,18 @@ The public narrative has three steps, and is used a lot in speeches both in indu
 - The me part: talk about yourself.
 - The us part: talk about shared values and your listener.
 - The action part: a call to action appealing to shared values.
+
+### Writing: The Most Misunderstood Activity
+
+> "I used to misunderstand writing too, and my style suffered severely as a result." - Soliman Writes
+
+The author begins by pointing out writing is not just making a sequence of words, and describing how many knowledge workers 'expose their thought process' by how poorly they wrote.
+
+He lists misconceptions about writing:
+
+- **Writing only when told.** *"You’re doing it because you’re wrestling with a matter —maybe you’re (...) learning about something you deeply care about. Surprisingly, I realized you often get rewarded for writing willingly."*
+- **Writing only to document**: *"there’s a big difference between actually writing and merely producing text. (...) Text producers don’t add to the conversation. They don’t write to generate ideas, but to record existing ones."* *"That’s how I used to write: coming up with new ways of looking at things wasn’t the goal."*
+
+> _"A book stirred something in you? Go beyond highlighting paragraphs and write new ones. Instead of inertly listening to ideas, participate with your own. Make it a point to write only to create, rather than writing only to document."_
+
+[Writing: The Most Misunderstood Activity - Soliman Writes](https://www.solimanwrites.com/writing-the-most-misunderstood-activity/)
