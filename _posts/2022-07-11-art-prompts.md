@@ -20,7 +20,7 @@ I also hope seeing these prompts can give you a small hint of how to make better
 
 My general idea is that DALL-E mini can generate very satisfying results when the prompt is well-constructed enough, if asked to generate images of inanimate objects, landscapes, buildings and so on. However, illustrations containing animals, people, humanoids or anything that moves, or prompts that ask for a specific action or use verbs, usually get poor results. Bigger models usually deal better with humanoid or animal shapes, and construct scenes better when they include action.
 
-Feel free to steal any of these images and use them for anything, or share them on social media.
+Feel free to steal any of these images and use them for anything, or share them on social media. I mostly tried prompts that dealt with Biblical or mythological themes, because for some reason I found most people didn't do those sorts of prompts as much (or maybe because I'm a big fantasy/D&D geek).
 
 ## VQVAE (EleutherAI)
 
