@@ -8,10 +8,9 @@ layout: default
   {{ content | toc }}
 </div>
 <div class="backButton">
-<a href="https://twitter.com/intent/tweet?text={{ page.title }}&url=https://strikingloo.github.io{{ page.url }}%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo"><i class="fab fa-twitter"></i>[Tweet this!]</a>
+<a href="https://twitter.com/intent/tweet?text={{ page.title }}&url=https://strikingloo.github.io{{ page.url }}%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis'><i class="fab fa-twitter"></i>[Tweet this!]</a>
 <br/>
-<a href="/wiki">[<- Back to wiki]</a>
-
+<a href="/wiki" id='backToWiki'>[<- Back to wiki]</a>
 </div>
 
 <script>
@@ -19,5 +18,11 @@ const headings = document.querySelectorAll('h2[id],h3[id]');
 for (var heading of headings) {
     heading.innerHTML = `<a href=#${heading.id}># ${heading.innerHTML}</a>`;
     heading.appendChild(document.createElement('hr'))
+}
+var windowWidth = $(window).width();
+var maxDeviceWidth = 768;
+if (windowWidth < maxDeviceWidth) {
+	document.getElementById('tweetThis').innerHTML=`<i class="fab fa-twitter"></i>`
+	document.getElementById('backToWiki').innerHTML='[<-]'
 }
 </script>
