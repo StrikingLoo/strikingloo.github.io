@@ -26,6 +26,7 @@ Feel free to steal any of these images and use them for anything, or share them 
 Usually, what I do is write what I want (adjectives + nouns usually get better results than verbs or complex scenes), then append 
 - "Gorgeous/amazing/beautiful" + "digital painting/oil painting/digital art/canvas/3d render" + any of "unreal engine/unity engine"
 - Then I append "style clues" like "anime/Picasso/Giger -always good results-/Junji Ito"
+
 Using this simple framework often gets me results close to what I want. If you have any tips on how to do better, tell me!
 
 ## VQVAE (EleutherAI)
