@@ -19,10 +19,12 @@ for (var heading of headings) {
     heading.innerHTML = `<a href=#${heading.id}># ${heading.innerHTML}</a>`;
     heading.appendChild(document.createElement('hr'))
 }
-var windowWidth = $(window).width();
+var windowWidth = window.innerWidth;
+console.log(windowWidth);
+
 var maxDeviceWidth = 768;
 if (windowWidth < maxDeviceWidth) {
-	document.getElementById('tweetThis').innerHTML=`<i class="fab fa-twitter"></i>`
-	document.getElementById('backToWiki').innerHTML='[<-]'
+	document.getElementById('tweetThis').innerHTML=`[<i class="fab fa-twitter"></i>]`
+	document.getElementById('backToWiki').innerHTML=`[<i class="fa fa-arrow-left"></i>]`
 }
 </script>
