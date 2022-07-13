@@ -68,12 +68,12 @@ strong { font-weight: bolder;}
 
 .wiki-item {
   border-radius: 10%;
-  padding: 10px;
+  padding: .5em;
   background-color: #cfebfb;
   display:inline-block;
   vertical-align: middle;
   width:45%;
-  height:3em;
+  height:3.5em;
   margin:3px;
   border: 1px solid;
 }
@@ -82,7 +82,7 @@ strong { font-weight: bolder;}
 }
 img { height:70%; width:70%;}
 blockquote p {color:#7E1946; font-family: Courier, 'Lato' }
-pre, code {background-color: #444; color: #fff; font-family: Verdana; padding: 10px;}
+pre, code {background-color: #444; color: #fff; font-family: Verdana; padding: 10px; line-height: 1.8;}
 div.backButton{
   position:fixed; 
   top:87%;
