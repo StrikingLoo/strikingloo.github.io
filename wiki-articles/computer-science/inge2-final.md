@@ -206,7 +206,7 @@ Dynamic symbolic execution is akin to dynamic analysis itself: it is never repor
 
 ## SBST Search Based Software Testing
 
-Cuando las condiciones en los if son suficientemente complejas, usar un theorem prover para resolverlas puede ser lento o impracticable. En estos casos, recurrimos a algoritmos de hill climbing, [metaheurísticas](wiki-articles/computer-science/algo3-final) o genéticos para generar inputs que satisfagan una cierta condición.
+Cuando las condiciones en los if son suficientemente complejas, usar un theorem prover para resolverlas puede ser lento o impracticable. En estos casos, recurrimos a algoritmos de hill climbing, [metaheurísticas](/wiki-articles/computer-science/algo3-final) o genéticos para generar inputs que satisfagan una cierta condición.
 
 Usan **hill-climbing**, **algoritmos geneticos** o **metaheuristicas**.
 

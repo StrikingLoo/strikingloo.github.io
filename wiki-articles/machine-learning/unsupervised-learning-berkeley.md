@@ -125,7 +125,7 @@ The bayes ideal discriminator is always right (assigns prob 0 to fake and prob 1
 
 > **Bottom line**: Use BigGan for conditioned image generation, styleGAN for unconditioned or if you have an interest in interpolation. They require at least 16GB of VRAM anyway.
 
-**Pix2Pix**: Train a model G(x, z) where z is your (random) latent and x is an actual black and white image, such that a discriminator that takes D(x, G(x, z)) and D(x, y) can't tell which is which in an adversarial setting (where y = actual-colored-of(x) ). I think this approach is beautiful. It kind of reminds me of [contrastive learning](wiki-articles/machine-learning/clip)
+**Pix2Pix**: Train a model G(x, z) where z is your (random) latent and x is an actual black and white image, such that a discriminator that takes D(x, G(x, z)) and D(x, y) can't tell which is which in an adversarial setting (where y = actual-colored-of(x) ). I think this approach is beautiful. It kind of reminds me of [contrastive learning](/wiki-articles/machine-learning/clip)
 
 ![](unsupervised-learning-images/pix2pix-color.png) 
 

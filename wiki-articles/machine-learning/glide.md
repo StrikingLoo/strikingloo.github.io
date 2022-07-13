@@ -42,5 +42,5 @@ In a diffusion model, you assume your noise sample N(0, I) corresponds to the re
 
 The gaussian added at each step of the Markov chain is predicted using a [PixelCNN++ neural network](https://arxiv.org/pdf/1701.05517.pdf) to generate the whole vector (which has the same dimensionality as the picture) given the input and conditioned on t.
 
-Interestingly, DDIM makes the process faster by only taking some S steps out of the T diffusion iterations, and then multiplies by a whole jump (scaled by a hyperparameter) making everything faster. Better explanation under [DDIM](wiki-articles/machine-learning/ddim).
+Interestingly, DDIM makes the process faster by only taking some S steps out of the T diffusion iterations, and then multiplies by a whole jump (scaled by a hyperparameter) making everything faster. Better explanation under [DDIM](/wiki-articles/machine-learning/ddim).
 
