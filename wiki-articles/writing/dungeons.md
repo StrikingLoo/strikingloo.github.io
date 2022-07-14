@@ -2,6 +2,7 @@
 layout: post
 title: "Designing dungeons"
 date: 2021-06-16
+tags: dungeons and dragons, D&D, fantasy
 description: "Tips and advice on writing dungeons. Taken from reddit and other places."
 language: English
 ---
