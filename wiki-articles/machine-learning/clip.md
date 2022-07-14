@@ -7,6 +7,18 @@ description: "Notes on the CLIP paper, a very clever contrastive training regime
 language: English
 ---
 
+These are my notes and explanation on the [CLIP paper](https://arxiv.org/abs/2103.00020), a model that uses a very clever contrastive training regime that **maps both textual and image inputs into a shared latent universe**, to then apply semantically meaningful distance notions and generate images or text.
+
+The basic idea is: we have a model that maps text prompts to a latent space (like a sentence embedding. In this case, a Transformer). We also have a model that maps images into a latent space (here a ResNet or a Transformer) of the same dimension *d*. 
+
+Finally, what we do is take a (massive, crawled from the internet) dataset of images and their captions, and train both models to increase the cosine similarity between a caption and its corresponding image. After backpropagating for a long while, we obtain a new embedding space where a text's representation and its corresponding image's are 'close' in terms of cosine similarity (angle), and far from other arbitrary captions and pictures. 
+
+This is achieved through a similar loss as is used for word embeddings. It is **contrastive**: we take a pair *(image, caption)* and also make a spurious pair with the image and a random caption, and one with the caption and a random image. Then we use a loss that penalizes the true pair for diverging from a similarity of 1, and the spurious pairs for having a similarity bigger than 0.
+
+Here ends my explanation and begin the quotes and figures from the paper.
+
+## Paper quotes and summary 
+
 State-of-the-art computer vision systems are
 trained to predict a fixed set of predetermined
 object categories. This restricted form of supervision limits their generality and usability since
@@ -43,9 +55,9 @@ CLIP grows capable of competitive zero-shot transfer performance in a battery of
 - We also confirm these findings with linear-probe representation learning analysis and show that CLIP outperforms the best publicly available ImageNet model while also being more computationally efficient. 
 - We additionally find that zero-shot CLIP models are much more robust than equivalent accuracy supervised ImageNet models which suggests that zero-shot evaluation of task-agnostic models is much more representative of a model’s capability.
 
- we constructed a new dataset of 400 million (image,
+We constructed a new dataset of **400 million (image,
 text) pairs collected form a variety of publicly available
-sources on the Internet. To attempt to cover as broad a set
+sources on the Internet.** To attempt to cover as broad a set
 of visual concepts as possible, we search for (image, text)
 pairs as part of the construction process whose text includes
 one of a set of 500,000 queries (words occurring at least 100 times in
@@ -54,7 +66,7 @@ word count as the WebText dataset used to train GPT-2.
 
 > Recent work in contrastive representation learning for images has found that contrastive objectives can learn better representations than their equivalent predictive objective (predicting the embedding instead of the discrete word is better).
 
- Noting these findings, we explored training
+Noting these findings, we explored training
 a system to solve the potentially easier proxy task of predicting only which text as a whole is paired with which
 image and not the exact words of that text. Starting with
 the same bag-of-words encoding baseline, we swapped the
@@ -70,10 +82,10 @@ encoder and text encoder to maximize the cosine similarity of the image and text
 in the batch while minimizing the cosine similarity of the
 embeddings of the N2 − N incorrect pairings.
 
-We optimize a symmetric cross entropy loss over these similarity
-scores.
+**We optimize a symmetric cross entropy loss over these similarity
+scores.**
 
-## Architecture
+### Architecture
 
 Two versions for image encoder:
 - **ResNet-50**[🌱](https://arxiv.org/pdf/1512.03385.pdf) with a few modifications.
@@ -124,3 +136,12 @@ compute budget
 and use it for the majority of datasets.
 
 Note that by this point, a CLIP ViT has a transformer for textual representation, a transformer for image representation, and just does dot product between them, so it's transformers all the way down. Linear probe CLIP ViT beats other models in 21/27 tasks.
+
+### Related Reading
+
+For more reading see:
+- [Core NLP article](/wiki-articles/machine-learning/deep-learning-NLP#transformers) for an explanation on transformers.
+- [GLIDE](/wiki-articles/machine-learning/glide) for an application of CLIP in text-to-image generation (was state of the art until DALL-E 2 arrived). GLIDE uses CLIP for guided diffusion downstream.
+- [Do Transformers See like Convolutional Neural Networks?](/wiki-articles/machine-learning/transformers-see-like-cnn) for a more in-depth comparison between ViT and ResNet (and other CNNs) and their ways of modeling data.
+
+
