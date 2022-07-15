@@ -5,6 +5,7 @@ title: "Reinforcement Learning - Base Note and Bibliography"
 tags: deep learning,karpathy,reinforcement learning,policy gradient
 description: "Base note for my study of Reinforcement Learning, including my first reading list based on Karpathy's blog and links to my subsequent notes and observations."
 language: English
+importance: 7
 ---
 
 ## Karpathy 2016: Pong with Policy Gradients

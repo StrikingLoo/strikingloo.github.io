@@ -4,7 +4,8 @@ title: "Confidence Intervals through Bootstrapping in Python"
 date: 2022-07-13
 description: "A tutorial with an example gist on implementing Confidence Intervals through Bootstrapping in Python"
 language: English
-tags: bootstrapping
+tags: bootstrapping, python, statistics, math
+importance: 7
 ---
 
 Suppose you have data, and want to report a certain metric. For instance, you'd like to estimate the value of some KPI given a set of measures, or you're a physicist trying to estimate a constant from the readings of a sensor.

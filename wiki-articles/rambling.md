@@ -4,6 +4,7 @@ title: "Trains of Thought and Rambling. Low-effort Mini Essays."
 date: 2020-11-21
 description: "A cache for low-effort writing, newly formed ideas and small 1 or 2 paragraph long reflections"
 language: English
+importance: 4
 ---
 This section is just a place to put my unfinished ideas and rambles, and shouldn't be taken very seriously. Nor should you expect anything here to be comprehensible or coherent, and definitely not useful.
 

@@ -5,6 +5,7 @@ title: "Unsupervised Deep Learning -- Berkeley course"
 tags: pixelcnn, wavenet, autoregressive, flow models, berkeley
 description: "My notes from Berkeley's Unsupervised Deep Learning course, plus any papers from the recommended reading I went through -may be linked-."
 language: English
+importance: 10
 ---
 
 ## Autoregressive models

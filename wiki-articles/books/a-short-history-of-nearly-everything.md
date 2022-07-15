@@ -5,6 +5,7 @@ title: "Book Excerpts and Notes: A Short History of Nearly Everything"
 tags: science, books, book, notes, ashone, geology, biology
 description: "Notes and excerpts from 'A Short History of Nearly Everything', by Bill Bryson."
 language: English
+importance: 6
 ---
 
 ## Notes and excerpts from "A Short History of Nearly Everything", by Bill Bryson

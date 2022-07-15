@@ -4,6 +4,7 @@ title: "Information Storage and Archiving strategies"
 date: 2020-06-13
 description: "Since this is a Digital Garden to help me reflect and store information, I should ramp up my archiving skills."
 language: English
+importance: 8
 ---
 ## P.A.R.A Methodology
 "The four top-level categories of P.A.R.A. — Projects, Areas, Resources, and Archives — are designed to facilitate this process of forwarding knowledge through time.

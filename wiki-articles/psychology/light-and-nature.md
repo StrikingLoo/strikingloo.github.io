@@ -5,6 +5,7 @@ date: 2020-10-01
 description: "A small quote about the impact of light and nature in wellness"
 tags: studies, lesswrong, nature, ADHD
 language: English
+importance: 6
 ---
 
 > **Good illumination and a view of natural beauty** aren't just pleasant luxuries, but can make **important practical differences in your life.**

@@ -5,6 +5,7 @@ title: "CLIP: Learning Transferable Visual Models From Natural Language Supervis
 tags: deep learning,CNN,NLP,transformers,resnet,unsupervised learning,paper,generative models,generative
 description: "Notes on the CLIP paper, a very clever contrastive training regime that maps both textual and image inputs into a shared latent universe, to then apply semantically meaningful distance notions and generate images or text."
 language: English
+importance: 8
 ---
 
 These are my notes and explanation on the [CLIP paper](https://arxiv.org/abs/2103.00020), a model that uses a very clever contrastive training regime that **maps both textual and image inputs into a shared latent universe**, to then apply semantically meaningful distance notions and generate images or text.

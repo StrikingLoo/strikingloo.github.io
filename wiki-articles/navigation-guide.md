@@ -5,6 +5,7 @@ title: "Navigation Guide"
 tags: meta, navigation
 description: "A helper to navigate this personal wiki, linking the articles by type."
 language: English
+importance: 11
 ---
 
 This [personal wiki](/wiki) is first and foremost for my own personal use. A place where I collect notes, clippings and thoughts about what I read, be it papers or books.

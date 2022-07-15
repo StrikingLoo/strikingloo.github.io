@@ -5,6 +5,7 @@ title: "Reinforcement Learning - Sutton"
 tags: deep learning,sutton,reinforcement learning,policy gradient,TD
 description: "Notes, summary and reflections about Sutton's Reinforcement Learning book"
 language: English
+importance: 10
 ---
 
 In 2022, through late june and early july I read the book "Reinforcement Learning" by Richard S. Sutton and Andrew G. Barto.

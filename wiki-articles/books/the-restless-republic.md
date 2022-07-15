@@ -5,6 +5,7 @@ title: "Book Excerpts and Notes: The Restless Republic - Anna Keay"
 tags: history, books, book, notes, RR, 17th century England, English history, Cromwell
 description: "Notes and excerpts from 'The Restless Republic', by Anna Keay."
 language: English
+importance: 8
 ---
 
 “The Restless Republic.” by Anna Keay
