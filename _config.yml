@@ -7,3 +7,10 @@ markdown: kramdown
 kramdown:
   input: GFM
   auto_ids: true
+
+defaults:
+  -
+    scope:
+      path: "wiki-articles" # an empty string here means all files in the project
+    values:
+      importance: 5
