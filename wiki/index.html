@@ -1,8 +1,9 @@
 ---
 layout: default
-title: StrikingLoo's Haphazard Repository of Knowledge, Opinions and Trivia
+title: My Haphazard Repository of Knowledge
 ---
 	<h1>{{ page.title }}</h1>
+  <h3>Personal Wiki / Digital Garden</h3>
 
    <p>
    "Your machine is a library, not a publication device. You have copies of documents in there that you control directly, that you can annotate, change, add links to, summarize, and this is because the memex is a tool to think with, not a tool to publish with." -- <a href="https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/">Mike Caulfield</a>
@@ -10,11 +11,11 @@ title: StrikingLoo's Haphazard Repository of Knowledge, Opinions and Trivia
 
 <p>This is my Personal Wiki/Digital Garden. 
 
-Below is every article in this wiki. If you don't know where to start or what you're looking for, or want to know more about these notes' contents, see the garden's <a href="/wiki-articles/navigation-guide">navigation guide</a>.</p>
+Below is every article in this wiki. If you don't know where to start or what you're looking for, or want to know more about these notes, see the garden's <a href="/wiki-articles/navigation-guide"><b>navigation guide</b></a>.</p>
 
 <div style = 'text-align:center;'>
 <!-- Html Elements for Search -->
-<input type="text" id="search-input" placeholder="Search my personal wiki... (tag-based search)" style='font-size: 1.1rem;text-align:center;min-width:500px;'>
+<input type="text" id="search-input" placeholder="Search the Wiki... (tag-based search)" style='font-size: 1.1rem;text-align:center;min-width:75%;'>
 
 <div id="search-container">
 <ul id="results-container" style='list-style-type:none;'></ul>
@@ -39,7 +40,7 @@ Below is every article in this wiki. If you don't know where to start or what yo
  <h2>Notes in Spanish</h2>
 
   <ul class="posts">
-{% assign folder1 = site.pages | where_exp: "item" , "item.path contains 'wiki-articles' " | sort:"path" %}
+{% assign folder1 = site.pages | where_exp: "item" , "item.path contains 'wiki-articles' " | sort:"importance" | reverse %}
 {% for item in folder1 %}
 {% if item.path contains 'index' %}
 {% else %}
