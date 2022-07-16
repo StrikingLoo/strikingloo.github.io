@@ -7,8 +7,11 @@ language: English
 importance: 10
 ---
 Deep Learning + NLP
+
 _Based on the Stanford MOOC_
+
 [http://web.stanford.edu/class/cs224n/index.html](http://web.stanford.edu/class/cs224n/index.html#schedule) # Syllabus
+
 ## Word2Vec
 
 Word2Vec optimizes for dot product between similar words (softmax(UWi)).
