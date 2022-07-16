@@ -10,6 +10,8 @@ importance: 10
 
 ## Autoregressive models
 
+Given the first n elements of a sequence, predict the n+1st one. E.g., given the first n tokens, produce the next one in a sentence.
+
 On a general, generic case you may approach this problem with an autoregressive RNN. This can for instance generate plausible samples for MNIST, and improves drastically if you also provide it with metadata on pixel position (so you pass it the RNN state, and the X and Y coordinates).
 
 **PixelCNN**: User a 2d-filter over pixels above, and a different 1d one over pixels to the left, condition on both and do softmax.
@@ -19,7 +21,8 @@ On a general, generic case you may approach this problem with an autoregressive 
 **WaveNet**: We actually read the paper, but dillated causal convolutions + tanh\*sigmoid activation+ residual connections. It's interesting that it generalizes to images, but it *needs* the pixel coordinates as metadata to work.
 
 ## Flow models
-En una dimension, mappear distribuciones arbitrarias a otras mas conocidas usando una funcion aprendida, que maximice log likelihood y sea inversible. E.g., tomo una distribucion cualquiera, le tomo la CDF y la mappeo a la CDF de una gaussiana. 
+In one dimension, map arbitrary distributions to some better-known ones using a learned function, that maximizes log likelihood and is invertible. E.g., I take an arbitrary distribution, take its CDF and map it into a Gaussian's CDF.
+
 ### autoregressive flow vs inverse autoregressive flow
 Autoregressive flow: train fast, sample slow (linearly on pixel quantity).
 Inverse: train slow (depends on sampled pixels), but sample very fast (just sample N variables from your prior and then run the f(z...) autoregressively.
@@ -38,15 +41,15 @@ Inverse: train slow (depends on sampled pixels), but sample very fast (just samp
 We add a random number uniformly sampled from -.5 to .5 to our discrete data every time, so that flow doesn't learn to use discrete data and overfit by asigning too much mass to too few points.
 
 ### RealNVP / NICE
-Mappeo de x -> Z tq X0:n/2 quedan iguales en z, y Xn/2:n = Xn/2:n * s(x0:d/2) + t(x0:d/2).
-Osea que la mitad de los x los dejo iguales, la otra mitad los transformo con una transformacion afin donde los pesos lineales son funcion de la primera mitad.
-Tipicamente partis alternando pixeles (el famoso checkerboard) pero tambien se probo imagen partida vertical u horizontalmente. Esto ultimo empeora resultados.
- Las funciones s y t son arbitrarias con que fitteen, no necesitas reversibilidad porque ya conocias x0...n/2.
+Map from x -> Z such that X0:n/2 stay the same in z, and Xn/2:n = Xn/2:n * s(x0:d/2) + t(x0:d/2).
+
+This means half of x are left the same, the other half are transformed with an affine transformation where linear weights are a function of the first half.
+Typically you'd start by alternating the pixels (checkerboard pattern) but vertical or horizontal partitioning of the image in half has also been tried. This usually gets worse results. Functions s and t are arbitrary as long as they fit, you don't need them to be reversible as you already know x0...n/2.
 
 ![](unsupervised-learning-images/real-nvp.png)
 
-Otros modelos que funcionan pero no se cubren en detalle:
-- [Glow](https://openai.com/blog/glow/) [🌿](/wiki-articles/machine-learning/flow-based-models-glow)
+Other models that work but are not covered in detail:
+- [Glow](https://openai.com/blog/glow/) [my notes🌿](/wiki-articles/machine-learning/flow-based-models-glow)
 - [FFJORD](https://arxiv.org/abs/1810.01367) 🌱
 
 
@@ -86,7 +89,7 @@ The Inception score ends up being the DKL between p(y\|x) and p(y), where p(y) i
 
 Equivalent to entropy of labels for generated samples - entropy of labels for each sample.
 
-FID is a more complicated metric based on inception score that uses an embedding space from some classifier, and compares the embedding for generated image vs average embedding. [🌿](/wiki-articles/machine-learning/fid)
+FID is a more complicated metric based on inception score that uses an embedding space from some classifier, and compares the embedding for generated image vs average embedding. [_notes on FID 🌿_](/wiki-articles/machine-learning/fid)
 
 ### Discriminator Saturation
 The bayes ideal discriminator is always right (assigns prob 0 to fake and prob 1 to true). However if our discriminator is too good too fast, since the gradient tends to be very close to zero for high confidence predictions (the landscape is flat around the edges, think of a sigmoid), the generator gets little information to work with.
@@ -166,7 +169,7 @@ MoCo and SimCLR do the same, but they keep a stash of all previous instances in 
 
 **CycleGAN**: Image to Image GAN that uses a triple loss for its generator: given two domains X and Y, you have your typical adversarial loss (how well the discriminator is fooled by genY(x) ) + cycle loss (how well GenX(GenY(x)) matches x) + identity loss (error reconstruction of GenX(x) vs x) plus their analogs with y as input. The example in the paper turns pictures of zebras into pictures of horses with moderate success, and it can also be used for summer to winter or night to day.
 
-Excellent [Keras Documentation on CycleGAN with code](https://keras.io/examples/generative/cyclegan/).
+Excellent [Keras Documentation on CycleGAN with code 🌱](https://keras.io/examples/generative/cyclegan/).
 
 ## Semi-Supervised Learning
 
@@ -191,7 +194,7 @@ A small aside: a matrix W is orthogonalized by solving the following constrained
 
 One can show that this problem can be solved by taking the singular value decomposition (SVD) of W and replacing the singular values to ones.
 
-### Notes from <title>
+### Notes from "Normalized Word Embedding and Orthogonal Transform for Bilingual Word Translation"
 
 [Paper](https://aclanthology.org/N15-1104.pdf)
 
