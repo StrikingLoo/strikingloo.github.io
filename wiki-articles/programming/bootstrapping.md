@@ -6,6 +6,7 @@ description: "A tutorial with an example gist on implementing Confidence Interva
 language: English
 tags: bootstrapping, python, statistics, math
 importance: 7
+uses_mathjax: true
 ---
 
 Suppose you have data, and want to report a certain metric. For instance, you'd like to estimate the value of some KPI given a set of measures, or you're a physicist trying to estimate a constant from the readings of a sensor.

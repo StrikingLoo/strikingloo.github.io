@@ -5,6 +5,7 @@ date: 2021-05-30
 tags: LyC, Logica, Computabilidad, UBA, spanish, español, cs, algorithms, Turing
 description: "Notas para el final de LyC. Basadas en los apuntes de la teorica. In Spanish."
 language: Spanish
+uses_mathjax: true
 ---
 
 ## Turing Machine

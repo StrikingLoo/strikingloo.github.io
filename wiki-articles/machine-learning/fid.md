@@ -5,6 +5,7 @@ title: "FID: Fréchet Inception Distance"
 tags: deep learning,unsupervised learning,generative models,generative,GAN,metric
 description: "A description and characterization of FID metric used for evaluating generative models."
 language: English
+uses_mathjax: true
 ---
 
 _Quoth Wikipedia:_

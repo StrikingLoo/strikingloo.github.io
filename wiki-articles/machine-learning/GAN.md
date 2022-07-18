@@ -5,6 +5,7 @@ title: "Generative Adversarial Networks"
 tags: wip,deep learning,unsupervised learning,GAN,generative,image processing,game theory
 description: "Notes on Generative Adversarial Networks, combining summaries and excerpts from different papers, books, etc. A work in progress."
 language: English
+abstract: ""
 ---
 
 ## Resources I already read
@@ -55,7 +56,7 @@ difficulties with evaluating generative models.
 - [Machine Vision Unsupervised Task](https://arxiv.org/abs/1807.03748) A task that's a language model equivalent for images (but not literally language modelling like [ViT](/wiki-articles/machine-learning/visual-transformer) does now). Was relevant back in 2019 and seems interesting. 🌱
 - [Notes on GANs](http://joschu.net/docs/gan-notes.pdf) Recommended reading from the Berkeley course.🌱
 
-### Related Reading
+### Related Reading
 
 - [TransGan](/wiki-articles/machine-learning/transGAN)
 - [Visual Transformer](/wiki-articles/machine-learning/visual-transformer)

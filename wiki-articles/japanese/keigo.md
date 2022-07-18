@@ -33,13 +33,13 @@ _nasaru_, or _hanasu_ by _ossharu_ when the subject is a person of respect. Some
 transformations are many-to-one: _iku_, _kuru_, and _iru_ all become _irassharu_, and _taberu_ and _nomu_ both become _meshiagaru_.
 
 **Verbs may also be changed to respectful forms**. One respectful form is a modification of the verb
-with a prefix and a polite suffix. For example, _yomu_ becomes _o-yomi ni naru_, with the **prefix**
+with a prefix and a polite suffix. For example, _読む_ becomes _お読みになる_, with the **prefix**
 **_o-_** **added to the i-form of the verb**, **and the verb ending** **_ni naru_**. The **verb ending** **_-(r)areru_** **can
-also be used, such as** **_yomareru_**.
+also be used, such as** **_読まれる_**.
 
 **Nouns also undergo substitution to express respect**. The normal Japanese word for person,
 _hito_, 人, becomes _kata_, 方, in respectful language. Thus a customer would normally be expected to
-be referred to as a _kata_ rather than a _hito_.
+be referred to as a _方_ rather than a _人_.
 
 ## Humble language (kenjōgo)
 
@@ -52,12 +52,12 @@ forms**. For example: **suru becomes itasu, and morau becomes itadaku**. These t
 also seen in set phrases such as dō itashimashite and いただきます.
 
 Similar to respectful language, **verbs can also change their form by adding a prefix and the verb
-"suru" or "itasu".** For example, _motsu_ becomes _o mochi shimasu_. The use of humble forms
+"する" or "いたす".** For example, _もつ_ becomes _おもちします_. The use of humble forms
 may imply doing something for the other person; thus a Japanese person might offer to carry
-something for someone else by saying _o mochi shimasu_. This type of humble form also appears in
-the set phrase _o matase shimashita_, "I am sorry to have kept you waiting".
+something for someone else by saying _おもちします_. This type of humble form also appears in
+the set phrase _おまたせしました_, "I am sorry to have kept you waiting".
 
-Even more politely, the form _motasete_ **_itadaku_** literally means "**humbly be allowed to** carry". This
+Even more politely, the form _もたせて_ **_いただく_** literally means "**humbly be allowed to** carry". This
 phrase would be used to express the idea that "I will carry it if you please."
 
 ---
@@ -88,9 +88,9 @@ phrase would be used to express the idea that "I will carry it if you please."
 
 While keeping tense:
 
-**sonkeigo (honorific):** o- (i-form) - ni naru
+**sonkeigo (honorific):** お- (i-form) - になる
 
-**kenjōgo (humble):** o- (i-form) - suru / itasu (humbler)
+**kenjōgo (humble):**　お- (i-form) - する / いたす (humbler)
 
 Unless it’s an irregular verb, in which case, see chart above.
 

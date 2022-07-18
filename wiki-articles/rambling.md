@@ -14,12 +14,6 @@ If you find a typo anywhere in here, please make a PR to add a fix to it! You ca
 
 ---
 
-### Bill Gates' hidden agenda?
-
-Whenever Bill Gates releases his yearly 'books to read' list, I find that none of the books he recommends are interesting or seem useful to me. I wonder if he just uses the enormous influence he has in this regard to signal-boost whatever books reflect his worldview or opinions the most, instead of actually trying to do the recommendations which provide the most value. It may also be that since this is annual, he recommends books under time constraints (books that came out in the last year) instead of sampling from his "global" books list, which contains the best books ever.
-
----
-
 ### Overdoing it as fault tolerance
 
 This came to me due to my current Japanese studying schedule of 1.30hs a day, every day of the week. My smart goal is to keep learning 15 new words from JLPT3 deck every day. 
@@ -57,3 +51,8 @@ Bears were the first Lord Voldemort.
 ---
 
 When checking out a new hot unsupervised learning algorithm, something the Berkeley course guys do is test it with a 1d pair of variables. Like "oh does this GAN/distribution alignment thingamagig work? Let's imagine X and Y are 1d random variables and see how that would work". I take this as a very good first principles approach to understanding the algorithm, and would extend it to 2d for visualization too. I just think reducing example problems to small ones is a nice trick I keep stumbling upon in many different areas and it would be good to have this mapping of "for X domain, typical small problem is Y" like how in graph theory you always start induction with a K1 graph, or in DCS you use a small LTS with maybe 3 states.
+
+---
+### Bill Gates' hidden agenda?
+
+Whenever Bill Gates releases his yearly 'books to read' list, I find that none of the books he recommends are interesting or seem useful to me. I wonder if he just uses the enormous influence he has in this regard to signal-boost whatever books reflect his worldview or opinions the most, instead of actually trying to do the recommendations which provide the most value. It may also be that since this is annual, he recommends books under time constraints (books that came out in the last year) instead of sampling from his "global" books list, which contains the best books ever.
