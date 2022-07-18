@@ -5,6 +5,19 @@ date: 2020-11-24
 description: "Quotes and advice on writing non-fiction. Especially about essays."
 language: English
 importance: 6
+abstract: "Collected quotes and advice on writing non-fiction. Especially about essays."
+---
+
+from **Trying** by [Paul Graham](http://paulgraham.com/essay.html)
+
+To understand what a real essay is, we have to reach back into history again, though this time not so far. To Michel de Montaigne, who in 1580 published a book of what he called "essais." He was doing something quite different from what lawyers do, and the difference is embodied in the name. Essayer is the French verb meaning "to try" and an essai is an attempt. **An essay is something you write to try to figure something out.**
+
+Figure out what? You don't know yet. And so you can't begin with a thesis, because you don't have one, and may never have one. An essay doesn't begin with a statement, but with a question. In a real essay, you don't take a position and defend it. You notice a door that's ajar, and you open it and walk in to see what's inside.
+
+If all you want to do is figure things out, why do you need to write anything, though? Why not just sit and think? Well, there precisely is Montaigne's great discovery. **Expressing ideas helps to form them.** Indeed, helps is far too weak a word. Most of what ends up in my essays I only thought of when I sat down to write them. That's why I write them.
+
+In the things you write in school you are, in theory, merely explaining yourself to the reader. In a real essay you're writing for yourself. You're thinking out loud.
+
 ---
 
 From [LeanAnki, Zettelkasten Method](https://leananki.com/zettelkasten-method-smart-notes/), I see he has this simple method for essay writing: 
@@ -82,3 +95,4 @@ He lists misconceptions about writing:
 > _"A book stirred something in you? Go beyond highlighting paragraphs and write new ones. Instead of inertly listening to ideas, participate with your own. Make it a point to write only to create, rather than writing only to document."_
 
 [Writing: The Most Misunderstood Activity - Soliman Writes](https://www.solimanwrites.com/writing-the-most-misunderstood-activity/)
+

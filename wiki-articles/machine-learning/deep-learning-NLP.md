@@ -253,13 +253,13 @@ All words in a same sentence can run through an attention head in parallel, maki
 
 ![Screen_Shot_2021-01-07_at_18-40-02.png](image/Screen_Shot_2021-01-07_at_18-40-02.png){: style="height:70%; width:70%"}
 
-The attention mechanism can be scaled horizontally to add more semantic/syntactic interpretations of a word in-context.
+The attention mechanism can be scaled horizontally to add more semantic/syntactic interpretations of a word in-context. Notice the skip connections that make the final output the sum of all intermediate layers.
 
 Here's the attention function for embeddings Q, K, V:
 
 ![Screen_Shot_2021-01-07_at_19-17-51.png](image/Screen_Shot_2021-01-07_at_19-17-51.png){: style="height:70%; width:70%"}
 
-The FF layer is a 2-layer MLP with ReLU.
+The feed-forward layer is a 2-layer MLP with ReLU.
 
 ![Screen_Shot_2021-01-07_at_18-40-30.png](image/Screen_Shot_2021-01-07_at_18-40-30.png){: style="height:70%; width:70%"}
 
@@ -320,7 +320,6 @@ Transformers have been used on image generation tasks (either feeding them a ras
 
 They have also been used for music generation, where the "tokens" were start note, end note, move clock forward, and a volume indicator.
 
----
 
 ## Natural Language Generation
 

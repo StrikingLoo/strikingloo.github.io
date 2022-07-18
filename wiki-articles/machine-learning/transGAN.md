@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2021-03-15
-title: "transGAN"
+title: "TransGAN"
 tags: deep learning, transformers, NLP, computer vision
 description: "Notes on a the paper proposing TransGAN, a GAN architecture without convolutions, purely based on transformers."
 language: English
@@ -14,12 +14,21 @@ language: English
 They reach sota on STL-10 which is bigger, but not on cifar 10. They come to the conclusion that TransGANs are very data-hungry.
 They try mixing CNN based discriminator with transformer based generators and vice versa, and these are the results:
 
-![](image/Screen%20Shot%202021-03-15%20at%2023.15.53.png){: style="height:70%; width:70%"}
+![](image/Screen%20Shot%202021-03-15%20at%2023.15.53.png)
 
-![](image/Screen%20Shot%202021-03-15%20at%2023.16.05.png){: style="height:70%; width:70%"}
+### Architecture
 
-"the discriminator takes the patches of an image as inputs. we split the input images into 8 × 8 patches where each patch can
-be regarded as a “word” The 8 × 8 patches are then converted to the 1D sequence of token embeddings through a
-linear flatten layer, with token number N = 8 × 8 = 64 and embedding dimension equal to C. After that, the learnable positional encoding is added and a [cls] token isappended at the beginning of the 1D sequence. After passing through the transformer encoders, only [cls] token is taken by the classification head to output the real/fake prediction."
+This is what the generator and discriminator architectures look like for TransGAN.
 
-Relates to [Deep Learning with NLP](/wiki-articles/machine-learning/deep-learning-NLP)
+![](image/Screen%20Shot%202021-03-15%20at%2023.16.05.png)
+
+"The discriminator takes the patches of an image as inputs. We split the input images into 8 × 8 patches where each patch can be regarded as a “word”.
+The 8 × 8 patches are then converted to the 1D sequence of token embeddings through a
+linear flatten layer, with token number N = 8 × 8 = 64 and embedding dimension equal to C. 
+
+After that, the learnable positional encoding is added and a [cls] token is appended at the beginning of the 1D sequence. After passing through the transformer encoders, only [cls] token is taken by the classification head to output the real/fake prediction."
+
+### Related Reading
+
+- My notes on [Deep Learning with NLP: Transformers](/wiki-articles/machine-learning/deep-learning-NLP#transformers)
+- On the "Transformers for Everything" theme: [Do Transformers See Like Convolutional Neural Networks?](/wiki-articles/machine-learning/transformers-see-like-cnn), [ViT: Transformers for Image Recognition at Scale](/wiki-articles/machine-learning/visual-transformer)
