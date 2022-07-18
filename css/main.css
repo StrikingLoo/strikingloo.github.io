@@ -5,7 +5,7 @@ body {
 }
 
 p, a, ul li {
-    font-family: 'Lato', 'Helvetica', Verdana;
+    font-family: 'Helvetica', Verdana;
     font-size: 1.1rem;
     line-height: 1.75;
     color: #000;
@@ -22,11 +22,11 @@ a:hover {
 
 h1, h1 a {
     font-size: 3em;
-    font-family:'Lato', 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Helvetica','Arial', 'Sans-Serif';
 }
 
 h2, h3, h2 a, h3 a {
-    font-family: 'Lato', Verdana;
+    font-family: 'Helvetica', Verdana;
 }
 h2, h2 a {font-size: 2.7rem;}
 h3, h3 a {
@@ -82,7 +82,7 @@ strong { font-weight: bolder;}
   background-color:#E1F3FB;
 }
 img { height:70%; width:70%;}
-blockquote p {color:#7E1946; font-family: Courier, 'Lato' }
+blockquote p {color:#7E1946; font-family: Courier }
 pre, code {background-color: #444; color: #fff; font-family: Verdana; padding: 10px; line-height: 1.8;}
 div.backButton{
   position:fixed; 
