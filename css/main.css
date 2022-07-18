@@ -90,6 +90,12 @@ strong { font-weight: bolder;}
 .wiki-item:hover {
   background-color:var(--wiki-bkg-color-hover);
 }
+.abstract {background-color:#f1ddb6;
+border:2px solid;
+font-style:italic;
+margin:5%;
+padding:2%;
+}
 img { height:70%; width:70%;}
 
 blockquote p {color:var(--anchor-hover-color); font-family: Courier }
