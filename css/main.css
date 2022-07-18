@@ -1,6 +1,15 @@
+:root {
+  --bkg: #FFFFFF;
+  --font-color: #000;
+  --header-anchor-color: #0C6291;
+  --anchor-hover-color: #7E1946;
+  --wiki-bkg-color: #cfebfb;
+  --wiki-bkg-color-hover: #E1F3FB;
+}
+
 body {
     margin: 60px auto;
-    background-color: #FFFFFF;
+    background-color: var(--bkg);
     width: 70%;
 }
 
@@ -8,15 +17,15 @@ p, a, ul li {
     font-family: 'Helvetica', Verdana;
     font-size: 1.1rem;
     line-height: 1.75;
-    color: #000;
+    color: var(--font-color);
 }
 
 a {
     text-decoration: none;
-    color: #0C6291;
+    color: var(--header-anchor-color);
 }
 a:hover {
-    color: #7E1946;
+    color: var(--anchor-hover-color);
     text-decoration: underline;
 }
 
@@ -28,25 +37,25 @@ h1, h1 a {
 h2, h3, h2 a, h3 a {
     font-family: 'Helvetica', Verdana;
 }
-h2, h2 a {font-size: 2.7rem;}
+h2, h2 a {font-size: 2.3rem;}
 h3, h3 a {
     font-weight: bolder;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     letter-spacing: 1px;
     word-spacing: 3px;
     line-height: 1.5;}
 h1,h2,h3, h1 a, h2 a, h3 a {
     position: relative;
-    color:#0C6291;
+    color:var(--header-anchor-color);
 }
 footer {
-    border-top: 1px solid #7E1946;
+    border-top: 1px solid var(--anchor-hover-color);
     font-size: .8em;
 }
 
 nav {
-color: #7E1946;
-border-bottom:2px dashed #A63446;
+color: var(--anchor-hover-color);
+border-bottom:2px dashed var(--anchor-hover-color);
 }
 
 nav ul, footer ul {
@@ -56,20 +65,20 @@ nav ul, footer ul {
     font-weight: bold;
 }
 nav ul li, footer ul li {
-    color: #7E1946;
+    color: var(--anchor-hover-color);
     display: inline;
     margin-right: 20px;
 }
 nav a, footer a {
     text-decoration: none;
-    color: #7E1946;
+    color: var(--anchor-hover-color);
 }
 strong { font-weight: bolder;}
 
 .wiki-item {
   border-radius: 10%;
   padding: .5em;
-  background-color: #cfebfb;
+  background-color: var(--wiki-bkg-color);
   display:inline-block;
   vertical-align: middle;
   width:45%;
@@ -79,10 +88,12 @@ strong { font-weight: bolder;}
 }
 .wide {width:95%; height:6em;}
 .wiki-item:hover {
-  background-color:#E1F3FB;
+  background-color:var(--wiki-bkg-color-hover);
 }
 img { height:70%; width:70%;}
-blockquote p {color:#7E1946; font-family: Courier }
+
+blockquote p {color:var(--anchor-hover-color); font-family: Courier }
+
 pre, code {background-color: #444; color: #fff; font-family: Verdana; padding: 10px; line-height: 1.8;}
 div.backButton{
   position:fixed; 
