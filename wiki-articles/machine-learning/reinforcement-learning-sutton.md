@@ -18,8 +18,45 @@ My first introduction to Reinforcement Learning came from [Karpathy's blog post]
 
 All in all I found Sutton's explanations very intuitive, not needing any very specific brackground besides being used to mathematical notation, linear algebra and multivariate calculus. Most of the chapters had quite concrete examples and very clear explanations, and I don't think I had a hard time understanding anything that wasn't marked with a '\*'. I was so fascinated by this book that I don't really have any negative criticisms. For any reader's sake, here's where [Sutton has uploaded his Reinforcement Learning book for free](http://incompleteideas.net/book/RLbook2020.pdf).
 
-What follow are my notes for this book, which summarize parts I and II (Reinforcement Learning and Approximate Learning), mostly for my own memory and eyes as this is my personal wiki, but also for anyone who may find it useful. All images are partial screenshots of the book, part of the text is quotes and other parts are my rephrasing.
+What follow are my notes for this book, which summarize parts I and II (Tabular Reinforcement Learning and Approximate Learning), mostly for my own memory and eyes as this is my personal wiki, but also for anyone who may find it useful. All images are partial screenshots of the book, part of the text is quotes and other parts are my rephrasing.
 
+## Book Summary
+
+"Introduction to Reinforcement Learning" has two parts.
+
+Part I covers [tabular methods](/wiki-articles/machine-learning/reinforcement-learning-sutton#part-i-tabular-solution-methods), and concepts applicable to Reinforcement Learning in general. 
+
+It defines an agent and environment and a [Markov Decision Process](/wiki-articles/machine-learning/reinforcement-learning-sutton#finite-markov-decision-processes). This is the model used for the environment, where only the current state and the taken action are enough to predict the following state and reward, or their distribution if stochastic.
+
+There is a short coverage of [muti-armed bandit problems](/wiki-articles/machine-learning/reinforcement-learning-sutton#multi-armed-bandits), where we only take actions with no state memory (one could say, in a single unchanging state) and try to maximize total reward by estimating each action's value.
+
+It then introduces [Bellman's equations](/wiki-articles/machine-learning/reinforcement-learning-sutton#optimal-policy-state-value), which dictate the optimum value for each state or state-action pair. **The goal of an agent is to always take the action that maximizes value (total expected rewards).** The bellman equations set the value for each state as the expected return, which is the convex sum of the values of the next states (each weighted by their probability of being reached under a certain policy).
+
+**Tasks can be _episodic_ or _continuing_**, where episodic tasks have a beginning and an end, like playing chess matches, and continuing ones are ongoing (like managing a business). In the former ones, reward can be delayed until the end of the episode and undiscounted, whereas in the latter returns are a sum of discounted rewards, each multiplied by a power of a discounting factor. E.g., if the factor is 0.9, the return of taking 5 actions with reward 1 would be 1+0.9+.81...etc.
+
+The algorithms presented for tabular Reinforcement Learning all fall into the **GPI** (generalized policy iteration) paradigm: they **estimate the value of each state under a certain initial policy, and then iteratively improve upon it by switching the chosen action for a certain state to one that has a higher expected value.** This iterative greedy improvement guarantees convergence to a global optimum due to an improvement in one state never leading a different state to see its expected returns reduced.
+
+There are **Dynamic Programming methods**, which take as part of the input a model of distributions for each state and reward given a state and taken action. They solve the Bellman Equations directly using an iterative method like Gauss-Seidel (solving them in closed-form should be possible, but intractable for large enough state space).
+[_More on dynamic programming methods_](/wiki-articles/machine-learning/reinforcement-learning-sutton#dynamic-programming)
+
+**Monte-Carlo methods** estimate the value of a certain state or state-action pair by repeatedly sampling trajectories under a given policy, and aggregating the returns. They then improve the policy using these new values, and so on until convergence. They do away with the  requirement for a model of next-state distributions for each current state, which makes them more fitting for arbitrary systems for which a probability distribution is not easy to calculate, but simulation is viable. They basically operate like Dr. Strange in _Infinity War_.
+[_More on Monte-Carlo methods_](/wiki-articles/machine-learning/reinforcement-learning-sutton#monte-carlo-methods)
+
+**Temporal Difference methods** stop depending on finishing the episode or having a model of state probabilities. They use _bootstrapping_, where for each action _a_ taken from a state _s_, the value _q(s,a)_ of taking it on that state is updated with a target called 'TD-error' (Temporal Difference error): we use the reward obtained, plus the discounted value of the next state as an estimate for the return, and calculate the difference between this return and the current estimated _q(s,a)_.
+[_More on Monte-Carlo methods_](/wiki-articles/machine-learning/reinforcement-learning-sutton#temporal-difference-methods)
+
+**n-Step Methods** are similar to Temporal Difference ones, but they use a TD-error where multiple steps are taken into account (each reward appropriately discounted, plus the n-th state visited). [_More on Monte-Carlo methods_](/wiki-articles/machine-learning/reinforcement-learning-sutton#n-step-temporal-difference-methods)
+
+
+The book then covers [planning](/wiki-articles/machine-learning/reinforcement-learning-sutton#planning-and-learning-with-tabular-methods), where state-values are repeatedly updated using already seen TD returns to reutilize gathered information.
+
+Part II covers [approximate methods](/wiki-articles/machine-learning/reinforcement-learning-sutton#part-2-approximate-solution-methods), where state-spaces are too big for tabular ones, and generalization is desirable and possible. This approach maps states to a feature vector space, and uses function approximators to estimate each state's (or state-action pair's) value. These approximators can be linear regressors (the ones most covered by the book) or Deep Neural Networks (not discussed a lot as there are less theoretical results for them, but of practical importance). 
+
+The parameters for the value estimation model are updated using gradient descent with the difference between currently estimated value and the found return. Many approaches are presented but they are esentially similar to the tabular ones, shifted to an approximate version.
+
+Finally [Policy Gradient methods](/wiki-articles/machine-learning/reinforcement-learning-sutton#policy-gradient-methods) are discussed, which do away with value estimation altogether and simply choose actions given a state's features, and simply try to maximize returns given the current state by changing the policy. 
+
+Both on-policy and off-policy solution methods are presented. On-policy methods estimate the value of a policy and improve upon it, whereas off-policy methods use the returns of a policy to improve a different one, by using importance sampling (where the returns for a state are weighted by the odds of it happening on the different policy). Off-policy methods are provably and numerically unstable, but when they do converge they allow for a more exploratory policy to estimate the value of a different, typically greedy policy.
 
 ## Sutton 2nd Edition
 
