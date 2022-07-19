@@ -5,6 +5,7 @@ date: 2020-06-13
 description: "Since this is a Digital Garden to help me reflect and store information, I should ramp up my archiving skills."
 language: English
 importance: 8
+tag: notes, note making, journal
 ---
 
 
