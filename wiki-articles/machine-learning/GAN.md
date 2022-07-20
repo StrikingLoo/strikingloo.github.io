@@ -60,3 +60,4 @@ difficulties with evaluating generative models.
 
 - [TransGan](/wiki-articles/machine-learning/transGAN)
 - [Visual Transformer](/wiki-articles/machine-learning/visual-transformer)
+- [This Food Does Not Exist](https://nyx-ai.github.io/stylegan2-flax-tpu/): StyleGAN trained on TPU for food image generation. Replicate later maybe?

@@ -47,3 +47,7 @@ grid-template: auto 1fr auto / auto 1fr auto
 ### [WebGL Water](#webgl-water)
 Peruse at my leisure
 <https://github.com/evanw/webgl-water>
+
+### Build your own X
+A collection of DIY tutorials that are project-based.
+<https://github.com/codecrafters-io/build-your-own-x>
