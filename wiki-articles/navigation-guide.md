@@ -18,7 +18,7 @@ The reader is encouraged to message me if any doubts arose about anything in thi
 
 ### Book Reviews
 
-I store every quote I found especially interesting in each book on a separate page of this wiki. Here are presented the books where the notes were abundant enough to be interesting. [articles under tag : *book*. See also [books category page]((/wiki-articles/books/)]
+I store every quote I found especially interesting in each book on a separate page of this wiki. Here are presented the books where the notes were abundant enough to be interesting. [articles under tag : *book*. See also [books category page](/wiki-articles/books/)]
 
 - [“A Short History of Nearly Everything”, by Bill Bryson](/wiki-articles/books/a-short-history-of-nearly-everything)
 - [“Soonish”, by Zach and Kelly Weinersmith](/wiki-articles/books/soonish)
