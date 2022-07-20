@@ -25,6 +25,15 @@ I store every quote I found especially interesting in each book on a separate pa
 - [“The Restless Republic”, by Anna Keay](/wiki-articles/books/the-restless-republic)
 - ["A Discovery of France", by Graham Robb](/wiki-articles/books/a-discovery-of-france): A book about France's rural or non-Parisian population, its history and culture. It goes from the medieval age through the early modernity up to the 19th century. This article contains my favorite quotes and the ones I found most surprising, of which there were quite a few.
 
+### Big Notes (MOOCs)
+
+Big Notes encompass multiples sources, but usually form around a MOOC and then get updated as I go through the further readings.
+
+- [Deep Learning for Natural Language Processing, Stanford MOOC](/wiki-articles/machine-learning/deep-learning-NLP): Covers RNNs, LSTMs, Word2Vec, BERT, Transformers.
+- [Unsupervised Learning, Berkeley MOOC](/wiki-articles/machine-learning/unsupervised-learning-berkeley): An amazing course covering different techniques of Unsupervised Deep Learning, generative models, GANs, VAEs, etc.
+- [Recommender Systems](/wiki-articles/machine-learning/recommender-systems) : A summary of the Google course on the subject (under TensorFlow documentation), plus a few other articles covering Matrix Factorization and colaborative filtering.
+- [Reinforcement Learning, an Introduction by Richard Sutton](/wiki-articles/machine-learning/reinforcement-learning-sutton): My notes and excerpts from the book, covering parts I and II (part III is examples and related topics). I summarize Dynamic Programming, Monte Carlo, Temporal Difference, Function Approximation and n-step methods, along with all their combinations.
+
 ### Papers
 
 If I read a paper, find it interesting, and think I will want to think about it again in the future (especially if I plan on reading related papers later), I will write a summary of it and save the most important bits here. These are the papers I've read so far (mostly in the Machine Learning/Deep Learning space). [under tag: *paper*]
@@ -42,12 +51,3 @@ If I read a paper, find it interesting, and think I will want to think about it 
 - [Evolution through Large Models](/wiki-articles/machine-learning/evolution-through-large-models): A new approach where a LLM is trained on synthetic data generated through an evolutionary process (MAP-Elites), to produce programs that solve an out-of-distribution task -Sodaracing-. RL is then used to create a generator of programs conditioned on terrains (so each problem gets a custom solution).
 - [Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language](/wiki-articles/machine-learning/socratic-models): An attempt at a more general agent by using multiples LLMs and making them interact in a zero-shot context to improve egocentric perception, video summarization, storytelling and question-answering. Not AGI, but not as far as it may be expected.
 - [Distilling the Knowledge in a Neural Network](/wiki-articles/machine-learning/distilling-knowledge-nn): It is possible to compress the knowledge in an ensemble into a single model which is much easier to deploy.
-
-### Big Notes (MOOCs)
-
-Big Notes encompass multiples sources, but usually form around a MOOC and then get updated as I go through the further readings.
-
-- [Deep Learning for Natural Language Processing, Stanford MOOC](/wiki-articles/machine-learning/deep-learning-NLP): Covers RNNs, LSTMs, Word2Vec, BERT, Transformers.
-- [Unsupervised Learning, Berkeley MOOC](/wiki-articles/machine-learning/unsupervised-learning-berkeley): An amazing course covering different techniques of Unsupervised Deep Learning, generative models, GANs, VAEs, etc.
-- [Recommender Systems](/wiki-articles/machine-learning/recommender-systems) : A summary of the Google course on the subject (under TensorFlow documentation), plus a few other articles covering Matrix Factorization and colaborative filtering.
-- [Reinforcement Learning, an Introduction by Richard Sutton](/wiki-articles/machine-learning/reinforcement-learning-sutton): My notes and excerpts from the book, covering parts I and II (part III is examples and related topics). I summarize Dynamic Programming, Monte Carlo, Temporal Difference, Function Approximation and n-step methods, along with all their combinations.
