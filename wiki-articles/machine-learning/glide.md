@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-01-07
-title: "GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models"
+title: "GLIDE: Text-Guided Diffusion Models"
 tags: deep learning,unsupervised learning,paper,generative models,generative,diffusion,guided diffusion,glide,CLIP,clip
 description: "Notes on the GLIDE paper, a generative model that outperforms DALL-E using similar compute by training a diffusion model using a CLIP-aware loss + CFG"
 language: English
