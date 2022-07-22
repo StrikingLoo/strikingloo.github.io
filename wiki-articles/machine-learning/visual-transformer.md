@@ -50,7 +50,7 @@ et al., 2019; Wang et al., 2020a). Many of these specialized attention architect
 promising results on computer vision tasks, but require complex engineering to be implemented
 efficiently on hardware accelerators.
 
-![](image/vit-architecture.png)
+![](image/vit-architecture.png){: alt="" loading="lazy"}
 
 The residual skip-connection is **additive**.
 
@@ -69,8 +69,8 @@ When considering the computational cost of pre-training the
 model, ViT performs very favourably, attaining state of the art on most recognition benchmarks at
 a lower pre-training cost.
 
-![](image/vit-benchmarks.png)
-![](image/vit-comparison-size.png)
+![](image/vit-benchmarks.png){: alt="" loading="lazy"}
+![](image/vit-comparison-size.png){: alt="" loading="lazy"}
 
  Vision Transformers overfit more than ResNets with
 comparable computational cost on smaller datasets. For example, ViT-B/32 is slightly faster than
@@ -82,7 +82,7 @@ since one might expect convolutional local feature processing to assist ViT at a
 
 In the appendices, there's a nice summary of [Attention](/wiki-articles/machine-learning/deep-learning-NLP) (we need to read AiayN!).
 
-![](image/vit-summary-attention.png)
+![](image/vit-summary-attention.png){: alt="" loading="lazy"}
 
 ### Related links (May read later):
 - [iGPT (GPT autoregression of pixels, OpenAI, 2020)](https://openai.com/blog/image-gpt/) 🌱

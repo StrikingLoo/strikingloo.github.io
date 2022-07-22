@@ -46,4 +46,4 @@ I love how weird and sectarian Protestantism gets in the 17th century in England
 
 “It was in order to demonstrate their innocence and independence of the rambunctious Fifth Monarchists that George Fox published the Quaker ‘peace testimony’, A Declaration from the Harmles & Innocent People of God, called Quakers in February 1661. This definitive denunciation of war and conflict ‘for any end or under any pretence whatsoever’ marked the movement’s abandonment of political agitation and began the explicit pacifism which endures to this day.”
 
-![](image/cromwell.png)
+![](image/cromwell.png){: alt="" loading="lazy"}

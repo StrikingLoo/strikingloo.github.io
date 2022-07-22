@@ -28,15 +28,15 @@ In one dimension, map arbitrary distributions to some better-known ones using a 
 Autoregressive flow: train fast, sample slow (linearly on pixel quantity).
 Inverse: train slow (depends on sampled pixels), but sample very fast (just sample N variables from your prior and then run the f(z...) autoregressively.
 
-![](unsupervised-learning-images/flow-1d-1.png)
-![](unsupervised-learning-images/flow-1d-2.png)
-![](unsupervised-learning-images/flow-1d-3.png)
-![](unsupervised-learning-images/flow-1d-4.png)
-![](unsupervised-learning-images/flow-1d-5.png)
-![](unsupervised-learning-images/flow-1d-5.png)
-![](unsupervised-learning-images/flow-nd.png)
-![](unsupervised-learning-images/flow-nd-0.png)
-![](unsupervised-learning-images/flow-nd-1.png)
+![](unsupervised-learning-images/flow-1d-1.png){: alt="" loading="lazy"}
+![](unsupervised-learning-images/flow-1d-2.png){: alt="" loading="lazy"}
+![](unsupervised-learning-images/flow-1d-3.png){: alt="" loading="lazy"}
+![](unsupervised-learning-images/flow-1d-4.png){: alt="" loading="lazy"}
+![](unsupervised-learning-images/flow-1d-5.png){: alt="" loading="lazy"}
+![](unsupervised-learning-images/flow-1d-5.png){: alt="" loading="lazy"}
+![](unsupervised-learning-images/flow-nd.png){: alt="" loading="lazy"}
+![](unsupervised-learning-images/flow-nd-0.png){: alt="" loading="lazy"}
+![](unsupervised-learning-images/flow-nd-1.png){: alt="" loading="lazy"}
 
 ### (Uniform) Dequantization
 We add a random number uniformly sampled from -.5 to .5 to our discrete data every time, so that flow doesn't learn to use discrete data and overfit by asigning too much mass to too few points.
@@ -47,7 +47,7 @@ Map from x -> Z such that X0:n/2 stay the same in z, and Xn/2:n = Xn/2:n * s(x0:
 This means half of x are left the same, the other half are transformed with an affine transformation where linear weights are a function of the first half.
 Typically you'd start by alternating the pixels (checkerboard pattern) but vertical or horizontal partitioning of the image in half has also been tried. This usually gets worse results. Functions s and t are arbitrary as long as they fit, you don't need them to be reversible as you already know x0...n/2.
 
-![](unsupervised-learning-images/real-nvp.png)
+![](unsupervised-learning-images/real-nvp.png){: alt="" loading="lazy"}
 
 Other models that work but are not covered in detail:
 - [Glow](https://openai.com/blog/glow/) [my notes🌿](/wiki-articles/machine-learning/flow-based-models-glow)
@@ -60,21 +60,21 @@ In a latent variable model, you have a distribution of data X, and you assume it
 
 In a way this is similar to flow models, but here we make no strong constraints on the relationship between X and Z, we may not know the intermediate values for Z and the mapping needs not be invertible. 
 
-![](unsupervised-learning-images/exact-likelihood-objective.png)
+![](unsupervised-learning-images/exact-likelihood-objective.png){: alt="" loading="lazy"}
 
 ### Variational AutoEncoders
 **Principle of Variational Approach**: We can't directly use the *p* we want, so instead we propose a parameterized distribution *q* we know we can work with (sample from, estimate likelihood) easily, and try to find a parameter setting that makes it as good as possible.
 
 This works because we're doing importance sampling: we could be sampling from our random latent space and doing maximum likelihood of X given Z (without fitting Z, we only fit P(X\|Z)), but then for Z st P(X\|Z) is ~0, we're doing the work pointlessly (because the gradient is 0 and there's no information to propagate). Whereas if we make sure to only sample from points where X given Z is likely, we get more bang for our buck. However if we already had P(Z\|X) to calculate this we wouldn't be going through this in the first place (because Bayes) and this is usually intractable (if Z is gaussian or generally not enumerable), so instead we try to get this to be "as good as possible" and that's that.
 
-![](unsupervised-learning-images/variational-equation.png)
+![](unsupervised-learning-images/variational-equation.png){: alt="" loading="lazy"}
 
-![](unsupervised-learning-images/VLB-derivation.png)
-![](unsupervised-learning-images/VLB-consequences.png)
+![](unsupervised-learning-images/VLB-derivation.png){: alt="" loading="lazy"}
+![](unsupervised-learning-images/VLB-consequences.png){: alt="" loading="lazy"}
 
 
-![](unsupervised-learning-images/vae-1-loss.png)
-![](unsupervised-learning-images/vae-2-loss.png)
+![](unsupervised-learning-images/vae-1-loss.png){: alt="" loading="lazy"}
+![](unsupervised-learning-images/vae-2-loss.png){: alt="" loading="lazy"}
 
 ## GANs
 The course introduces GANs, following Goodfellow et al. closely, so I won't reproduce what they say as it overlaps with [GANs](/wiki-articles/machine-learning/GAN).
@@ -97,7 +97,7 @@ The bayes ideal discriminator is always right (assigns prob 0 to fake and prob 1
 
 **Ways to address Discriminator Saturation**: Use a different, non-zero-sum objective where you switch the log(1 - D(G(z))) with a -log(D(G(z))). This changes the regime of the game so it stops being zero sum, and also makes it so that the gradient goes to 0 when the generator is already winning, which is far less terrible. Otherwise a generator may get stuck on a bad initialization. The other way to prevent this is alternating updates between generator and discriminator.
 
-![](unsupervised-learning-images/dcgan-archi.png)
+![](unsupervised-learning-images/dcgan-archi.png){: alt="" loading="lazy"}
 
 ### Other techniques
 
@@ -120,19 +120,19 @@ The bayes ideal discriminator is always right (assigns prob 0 to fake and prob 1
 
 **SAGAN**: Adds self attention to SNGAN. Applies spectral norm in both discriminator and generator. (Instead of just discriminator).
 
-![](unsupervised-learning-images/sagan-self-attention.png)
+![](unsupervised-learning-images/sagan-self-attention.png){: alt="" loading="lazy"}
 
 **BigGAN**: Just makes everything bigger (wider and deeper), Orthonormal regularization -make each W close to I- & Truncation Trick -at test time only, sample from truncated normal instead of standard one-.
 
 **StyleGAN**: Very big GAN with a MLP that turns gaussian latent into a different vector, and feeds it into every layer. Also adds noise to inputs 100 times (100 different noise vectors) and uses *that* to generate the statistics for batch norm, which it does individually for each sample and for each channel (averaging over all WxH). This is called AdaIN. 
 
-![](unsupervised-learning-images/stylegan-architecture.png)
+![](unsupervised-learning-images/stylegan-architecture.png){: alt="" loading="lazy"}
 
 > **Bottom line**: Use BigGan for conditioned image generation, styleGAN for unconditioned or if you have an interest in interpolation. They require at least 16GB of VRAM anyway.
 
 **Pix2Pix**: Train a model G(x, z) where z is your (random) latent and x is an actual black and white image, such that a discriminator that takes D(x, G(x, z)) and D(x, y) can't tell which is which in an adversarial setting (where y = actual-colored-of(x) ). I think this approach is beautiful. It kind of reminds me of [contrastive learning](/wiki-articles/machine-learning/clip)
 
-![](unsupervised-learning-images/pix2pix-color.png) 
+![](unsupervised-learning-images/pix2pix-color.png) {: alt="" loading="lazy"}
 
 In the objective, besides the shared loss function they add a term for L1 reconstruction loss (L1-norm of difference between G(x,z) and y) -between the generated translation of the source image and the expected target image-.
 
@@ -147,7 +147,7 @@ Interestingly, the code can be discrete and fed in a random way (e.g., uniformCa
 You could then take any image and map it into the representational space z'. This reaches state of the art in linear probe for top 1 accuracy in some datasets at the time.
 Also you can do a weird autoencoder (which was never in the objective!) x' = G(E(x)), where x' is the optimal confounder for a given discriminator. Pretty neat! (and pure nightmare fuel for human faces apparently).
 
-![](unsupervised-learning-images/bigbigan.png)
+![](unsupervised-learning-images/bigbigan.png){: alt="" loading="lazy"}
 
 **IMLE (Implicit Maximum Likelihood Estimation)**: initialize theta on random. for k = 1 to K: sample X1'...Xn' from P'(x), pick a random batch S of X (real), L times repeat: update theta with gradient where cost is distance between a random sample of size n from the batch S, and the generated samples, but you compare generated vector to the one closest to it in the real batch (for some definition of distance).
 This evenually converges preventing mode collapse.

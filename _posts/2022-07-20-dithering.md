@@ -44,11 +44,11 @@ A smarter approach to build a palette of k colors may have been running K-means 
 
 As an experiment to see how fast the algorithm was and how much smaller the file could get, I ran dithering compression on this image of a red panda (source: [pixabay](pixabay.com)).
 
-![](/resources/post_image/red-panda.jpg)
+![](/resources/post_image/red-panda.jpg){: alt="" loading="lazy"}
 
 Here are the compressed versions after using palettes of evenly spaced colors (as described above) with k = 2, 4, 8 and 16. Note that for k=2, the palette is very simple (only 0, 128 or 255 in each value of the color) and for k=16 we're closer to representing every color (over 5000 different colors out of 256^3=\~16M).
 
-![](/resources/post_image/red-panda-2.jpg)
+![](/resources/post_image/red-panda-2.jpg){: alt="" loading="lazy"}
 
 *Compressed image with very small palette (k=2)*
 
@@ -57,15 +57,15 @@ The picture went from 580Kb to 264Kb in size, but at what cost!
 
 We can see how the image loses less information as we increase palette size:
 
-![](/resources/post_image/red-panda-4.jpg)
+![](/resources/post_image/red-panda-4.jpg){: alt="" loading="lazy"}
 
 *Compressed image with k = 4*
 
-![](/resources/post_image/red-panda-8.jpg)
+![](/resources/post_image/red-panda-8.jpg){: alt="" loading="lazy"}
 
 *Compressed image with k = 8*
 
-![](/resources/post_image/red-panda-16.jpg)
+![](/resources/post_image/red-panda-16.jpg){: alt="" loading="lazy"}
 
 *Compressed image with k = 16*
 
@@ -73,13 +73,13 @@ The image with the biggest palette looks pretty similar to the original (except 
 
 Just to make sure, let's try a different image.
 
-![](/resources/post_image/avenue.jpg)
+![](/resources/post_image/avenue.jpg){: alt="" loading="lazy"}
 
 _source: [pixabay](https://pixabay.com/photos/avenue-trees-path-sunbeams-sunrays-815297/)_
 
 Again with k=16 (palette of \~5800 colors), this is what we obtain:
 
-![](/resources/post_image/avenue-16.jpg)
+![](/resources/post_image/avenue-16.jpg){: alt="" loading="lazy"}
 
 This time, I'd say the image looks about the same! But now the size went down from 962Kb to 534Kb. 
 

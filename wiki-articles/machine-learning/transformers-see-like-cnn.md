@@ -21,14 +21,14 @@ study these questions, uncovering insights about key differences between ViTs an
 - Nevertheless, we find that incorporating local information at lower layers remains vital, with large-scale pre-training data helping early attention layers learn to do this.
 - We study the uniform internal structure of ViT, finding that skip connections in ViT are even more influential than in ResNets, having strong effects on performance and representation similarity.
 
-![](image/cnn-vs-vit1.png)
+![](image/cnn-vs-vit1.png){: alt="" loading="lazy"}
 
 The right pane, which has line plots of these norm ratios across ResNet50, the ViT CLS token and the ViT
 spatial tokens additionally demonstrates that skip connection is much more influential in ViT compared to
 ResNet: we observe much higher norm ratios for ViT throughout, along with the phase transition from CLS to
 spatial token propagation (shown for the MLP and self-attention layers.)
 
-![](image/cnn-vs-vit2.png)
+![](image/cnn-vs-vit2.png){: alt="" loading="lazy"}
 
 Given the central role of convolutional neural networks in computer vision breakthroughs, it is remarkable
 that Transformer architectures (almost identical to those used in language) are capable of similar performance.

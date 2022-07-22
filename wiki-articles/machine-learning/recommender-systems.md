@@ -16,7 +16,7 @@ For instance, we could cluster or categorize the movies, then give to a movie of
 
 ## Content Based Recommendation 
 
-![](recommender_systems_img/reco1.png){: style="height:70%; width:70%"}
+![](recommender_systems_img/reco1.png){: style="height:70%; width:70%" alt="" loading="lazy"}
 
 For each user, we train a small linear regression from a set of precomputed features for each movie they rated, and use that to predict ratings for new movies. This shouldn't work for a user with no previous ratings, and is only as good as the features we use. 
 
@@ -44,7 +44,7 @@ A way to improve this: You only have the ratings, and don't ask anything from th
 
 Note that this is equivalent to factoring the ratings matrix into two smaller matrices (one of user vectors, one of movie vectors) and that each have a dimension in common of arbitrary size (let's call it K), which is the "latent" dimension.
 
-![](recommender_systems_img/reco1.png){: style="height:70%; width:70%"}
+![](recommender_systems_img/reco1.png){: style="height:70%; width:70%" alt="" loading="lazy"}
 
 ### Things you can add to improve this:
 
@@ -89,7 +89,7 @@ Primary components of a recommender system
 Candidate Generation
 --------------------
 
-![](recommender_systems_img/reco3.png){: style="height:70%; width:70%"}
+![](recommender_systems_img/reco3.png){: style="height:70%; width:70%" alt="" loading="lazy"}
 
 Both map items and users to an embedding space (link to NLP notes).
 
@@ -133,7 +133,7 @@ To generate the component matrices:
 -   You could just do singular values decomposition in K dimensions, but then given how sparse the matrix is, you'd have most embeddings very close to 0 (and derive less valuable information).
 -   Better approach: **weighted matrix factorization**.
 
-![](recommender_systems_img/reco4.png){: style="height:90%; width:90%"}
+![](recommender_systems_img/reco4.png){: style="height:90%; width:90%" alt="" loading="lazy"}
 
 W_0 is tuned as a hyperparameter.
 

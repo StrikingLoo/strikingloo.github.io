@@ -18,7 +18,7 @@ In the case of pong, we take a matrix of pixel diffs between two consecutive tim
 
 This, simple as it is, amazingly works.
 
-![Screen_Shot_2022-06-06_at_14-52-00.png](image_rl/Screen_Shot_2022-06-06_at_14-52-00.png)
+![Screen_Shot_2022-06-06_at_14-52-00.png](image_rl/Screen_Shot_2022-06-06_at_14-52-00.png){: alt="" loading="lazy"}
 
 "For a more thorough derivation and discussion I recommend [John Schulman’s lecture](https://www.youtube.com/watch?v=oPGVsoBonLM)."  [🌱]
 

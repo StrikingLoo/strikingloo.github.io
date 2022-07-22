@@ -14,7 +14,7 @@ abstract: ""
 ### GAN Survey, Goodfellow 2016
 [Goodfellow GAN Survey 2016 NIPS](https://arxiv.org/pdf/1701.00160.pdf)
 
-![](image/gan1.png)
+![](image/gan1.png){: alt="" loading="lazy"}
 
 GANs were designed to be unbiased, in the sense that with a large enough model and infinite data, the Nash equilibrium for a GAN game corresponds to recovering pdata exactly. In practice, variational methods often obtain very good likelihood, but are regarded as producing lower quality samples. There is not a good method of quantitatively measuring sample quality, so this is a subjective opinion, not an empirical fact."
 
@@ -28,7 +28,7 @@ In summary, GANs were designed to avoid many disadvantages associated with other
 At the same time, GANs have taken on a new disadvantage: training them requires finding the Nash equilibrium of a game, which is a more difficult problem
 than optimizing an objective function.
 
-![](image/gan2.png)
+![](image/gan2.png){: alt="" loading="lazy"}
 
 "we can also think of them as
 cooperative, in the sense that the discriminator estimates this ratio of densities
@@ -37,7 +37,7 @@ view, the discriminator is more like a teacher instructing the generator in how
 to improve than an adversary. So far, this cooperative view has not led to any
 particular change in the development of the mathematics."
 
-![](image/gan3.png)
+![](image/gan3.png){: alt="" loading="lazy"}
 
 Another highly important research area related to GANs is that it is not clear
 how to quantitatively evaluate generative models. Models that obtain good

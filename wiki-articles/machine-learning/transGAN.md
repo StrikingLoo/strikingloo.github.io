@@ -14,13 +14,13 @@ language: English
 They reach sota on STL-10 which is bigger, but not on cifar 10. They come to the conclusion that TransGANs are very data-hungry.
 They try mixing CNN based discriminator with transformer based generators and vice versa, and these are the results:
 
-![](image/Screen%20Shot%202021-03-15%20at%2023.15.53.png)
+![](image/Screen%20Shot%202021-03-15%20at%2023.15.53.png){: alt="" loading="lazy"}
 
 ### Architecture
 
 This is what the generator and discriminator architectures look like for TransGAN.
 
-![](image/Screen%20Shot%202021-03-15%20at%2023.16.05.png)
+![](image/Screen%20Shot%202021-03-15%20at%2023.16.05.png){: alt="" loading="lazy"}
 
 "The discriminator takes the patches of an image as inputs. We split the input images into 8 × 8 patches where each patch can be regarded as a “word”.
 The 8 × 8 patches are then converted to the 1D sequence of token embeddings through a

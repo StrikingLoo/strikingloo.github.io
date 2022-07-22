@@ -150,7 +150,7 @@ as a goal and upon discovering a marked CCC.
 - The undetermined status is propagated when closing a loop over a state that does not belong to a marked CCC, but from which there could still be unexplored paths leading to such a goal. We do this in an orderly fashion propagating the status information from e back to its ancestors.
 
 **Definition of CCC**
-![](image/definition_CCC.png)
+![](image/definition_CCC.png){: alt="" loading="lazy"}
 
 The heuristic function takes a state e and the ES, and returns a ranking
 of the events enabled from e. Heuristic functions may extract useful
@@ -158,7 +158,7 @@ information from the ES, such as the marked states visited in the path
 from the initial state to e.
 
 **Definition of predecessors**:
-![](image/predecessors_definition.png)
+![](image/predecessors_definition.png){: alt="" loading="lazy"}
 
 all reachable uncontrollable transitions are included in fully uncontrollable
 states, and at least one controllable transition is included in fully controllable
