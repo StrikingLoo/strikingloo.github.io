@@ -18,15 +18,15 @@ Just an awesome quote from the book:
 
 > "I advocate doing all computations with floats until you find evidence that double precision is needed in a particular part of the code. —S.M."
 
----
 
-### Debugging Computer Graphics Programs
+
+### Debugging Computer Graphics Programs
 
 **The Scientific Method** : Try an image output, see what's wrong about it. Make a hypothesis as to the reason, change the program accordingly. Repeat until you find the error. According to the book "Typically only a few trials are needed to track things down, and this type of debugging is enjoyable."
 
 **Images as Coded Debugging Output**:  If you want to know the value of some variable for part of a computation that runs for every pixel, you can just modify your program temporarily to copy that value directly to the output image and skip the rest of the calculations that would normally be done. Like painting any pixel that leaves its legal range a bright (255,0,0).
 
----
+
 ## Raster vs Vectorial
 
 **Raster**: We represent an image as a matrix of pixels.
@@ -58,7 +58,7 @@ Error Dithering: uses one of a list of colors for each pixel upon compression, b
 
 Consists of superposing to images, keeping a piece of each as per opacity values.
 
-![](image/alpha-compositing.png)
+![](image/alpha-compositing.png){: load="lazy"}
 
 ## Bezier Curves
 
@@ -66,7 +66,7 @@ Bezier curves allow us to model curves in three dimensional or bidimensional spa
 
 They take this form:
 
-![](image/bezier.png)
+![](image/bezier.png){: load="lazy"}
 
 ### Casteljau's Algorithm
 
@@ -124,6 +124,6 @@ void main() {
 
 ## Good Links
 
-- [Intro to OpenGL](https://engineering.monstar-lab.com/en/post/2022/03/01/Introduction-To-GPUs-With-OpenGL/): a very simple tutorial but contains all the snippets you need to bootstrap a project.
-
+- [Intro to OpenGL](https://engineering.monstar-lab.com/en/post/2022/03/01/Introduction-To-GPUs-With-OpenGL/): a simple tutorial but contains all the snippets you need to bootstrap a project.
+- [The Book of Shaders](https://thebookofshaders.com/): A great book on shaders, I've read about halfway through and it's fun and clear.
 
