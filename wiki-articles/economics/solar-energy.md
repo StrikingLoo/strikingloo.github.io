@@ -1,6 +1,6 @@
 ---
 title: Solar Energy (notes and future)
-tags: ecology, solar energy, tech, technology, economies of scale
+tags: ecology, solar energy, tech, technology, economies of scale, optimism
 date: 2022-07-22
 description: "Notes on different articles, mostly from HN that discuss Solar Energy"
 language: English
