@@ -4,9 +4,13 @@ title: Proximal Policy Optimization
 tags: RL, reinforcement learning, openAI, deep learning, PPO, ppo
 language: English
 date: 2022-07-21
-description: "Notes on OpenAI's new RL algorithm: Proximal Policy Optimization"
+description: "Notes on OpenAI's RL algorithm: Proximal Policy Optimization"
 importance: 7
 ---
+
+PPO is the current SotA in Reinforcement Learning in terms of sample efficiency, ease of implementation and quality of results. Developed by OpenAI, here are my notes on the article and the paper. 
+
+The biggest change is how the loss is defined, adding a penalty to constrain how much the policy can vary between iterations.
 
 <https://openai.com/blog/openai-baselines-ppo/>
 
