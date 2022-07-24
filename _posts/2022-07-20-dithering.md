@@ -85,6 +85,31 @@ This time, I'd say the image looks about the same! But now the size went down fr
 
 That's a reduction of 41% for a difference that we mostly don't notice.
 
+## Extending to .png
+
+User @gakxd on [Reddit](https://www.reddit.com/r/programming/comments/w6b8ia/lossy_image_compression_with_dithering/) remarks correctly that, since JPEG is a lossy format in itself, we can't make such a direct conclusion from the reduction in size seen after applying dithering. In fact dithering may interact poorly with JPEG compression. Due to that, I thought it was worth repeating the experiment with a .png image. In this case I am using this site's twitter card image, and compressing it with a palette of k=16 again (5800 colors).
+
+Since .png is a lossless format, it will save the colors exactly the way this program leaves them, and we can compare results more directly this way.
+The only modifications I had to add to the program were for dealing with RGBA instead of RGB images, and my solution has simply been to leave the 'A' channel unchanged (keeping identical transparency) and only propagate errors forward if the A value is bigger than 0. I am not including the code itself as it would be pretty redundant.
+
+Here are the results!
+
+![](/resources/post_image/potted-tree.png){: alt="" loading="lazy" style="height:30%; width:30%"}
+![](/resources/post_image/potted-tree-16.png){: alt="" loading="lazy" style="height:30%; width:30%"}
+
+_original image, image with a reduced palette (k=16)_
+
+Again, the images look pretty similar (only the fruits in the tree suffered a little from the compression), and this time the file size went from 160Kb to 92Kb, for a reduction of 42% again! And this time, we can appreciate exactly how the image changed, and know that all the gains were solely from the use of dithering, and no other changes to the image itself. 
+
+I am not sure what compression algorithms the PNG format uses so I'm not sure if reducing the palette and avoiding contiguous areas of the same color, which is what dithering does, will contribute possitively to them or not. I leave that for the community to discuss.
+
+For fun, I tried the .png version on a bigger file (3.4MB) and it got to 885Kb with our k=16 palette! It's even less than half the size now!
+
+![](/resources/post_image/large-tree.png){: alt="" loading="lazy"}
+![](/resources/post_image/large-tree-16.png){: alt="" loading="lazy"}
+
+_before and after_
+
 ## Conclusion
 
 We made a very simple image compressor that runs sequentially over an image's pixels mapping them to their closest color in a reduced palette. This way we can constrain it to a smaller color-space and reduce its size significantly.
