@@ -2,7 +2,7 @@
 layout: post
 title: "SRS and Anki: Advice, tips and quotes."
 date: 2020-10-04
-tags: [productivity, quotes]
+tags: productivity, quotes, ttft
 description: "Mostly just a summary of ttft, Gwern and augmenting cognition articles. Also a collection of Anki related tips and quotes."
 language: English
 importance: 8
