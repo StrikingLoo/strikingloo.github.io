@@ -41,238 +41,236 @@ As you can see, just appending _"\| oil painting high resolution 4k"_ will impro
 
 _Steampunk inventor's library \| Gorgeous digital painting with sober colours amazing art mesmerizing, captivating, artstation 3, cozy_
 
-![image-1.png](/resources/ai-generated-images/image-1.png)
+![image-1.png](/resources/ai-generated-images/image-1.png){: alt="" load="lazy"}
 
 mechanical clockwork flying machine renaissance \| Gorgeous digital painting with sober colours amazing art mesmerizing, captivating, artstation 3, realistic, render materials
 
-![image-2.png](/resources/ai-generated-images/image-2.png)
+![image-2.png](/resources/ai-generated-images/image-2.png){: alt="" load="lazy"}
 
 
 A beautiful painting of waves crashing on a cliff by Thomas Cole
 
-![1640231078_A_beautiful_painting_of_waves_crashing_on_a_cliff_by_Thomas_Cole.jpg](/resources/ai-generated-images/1640231078_A_beautiful_painting_of_waves_crashing_on_a_cliff_by_Thomas_Cole.jpg)
+![1640231078_A_beautiful_painting_of_waves_crashing_on_a_cliff_by_Thomas_Cole.jpg](/resources/ai-generated-images/1640231078_A_beautiful_painting_of_waves_crashing_on_a_cliff_by_Thomas_Cole.jpg){: alt="" load="lazy"}
 
 A beautiful painting of waves crashing on a cliff by Thomas Cole
 
-![1640231297_A_beautiful_painting_of_an_Austrian_Palace_by_Thomas_Cole-cityscape.jpg](/resources/ai-generated-images/1640231297_A_beautiful_painting_of_an_Austrian_Palace_by_Thomas_Cole-cityscape.jpg)
-
-
+![1640231297_A_beautiful_painting_of_an_Austrian_Palace_by_Thomas_Cole-cityscape.jpg](/resources/ai-generated-images/1640231297_A_beautiful_painting_of_an_Austrian_Palace_by_Thomas_Cole-cityscape.jpg){: alt="" load="lazy"}
 
 
 A glade under the stars \| Gorgeous digital painting with sober colours amazing art mesmerizing, captivating, artstation 3, cottagecore, cozy
 
 
-![1640234361_A_glade_under_the_stars-Gorgeous_digital_painting_with_sober_colours_amazing_art_mesmerizing_capt.jpg](/resources/ai-generated-images/1640234361_A_glade_under_the_stars-Gorgeous_digital_painting_with_sober_colours_amazing_art_mesmerizing_capt.jpg)
+![1640234361_A_glade_under_the_stars-Gorgeous_digital_painting_with_sober_colours_amazing_art_mesmerizing_capt.jpg](/resources/ai-generated-images/1640234361_A_glade_under_the_stars-Gorgeous_digital_painting_with_sober_colours_amazing_art_mesmerizing_capt.jpg){: alt="" load="lazy"}
 
 A disco coral reef underwater \| Gorgeous digital painting with aggressive colours amazing art mesmerizing, captivating, artstation 3, cozy, lo-fi
 
-![1640234860_A_disco_coral_reef_underwater-Gorgeous_digital_painting_with_aggressive_colours_amazing_art_mesmer.jpg](/resources/ai-generated-images/1640234860_A_disco_coral_reef_underwater-Gorgeous_digital_painting_with_aggressive_colours_amazing_art_mesmer.jpg)
+![1640234860_A_disco_coral_reef_underwater-Gorgeous_digital_painting_with_aggressive_colours_amazing_art_mesmer.jpg](/resources/ai-generated-images/1640234860_A_disco_coral_reef_underwater-Gorgeous_digital_painting_with_aggressive_colours_amazing_art_mesmer.jpg){: alt="" load="lazy"}
 
 
 The sunken city of R'lyeh lies dormant \| Breath-taking digital painting with dark colours amazing art mesmerizing, captivating, artstation 3, Lovecraftian, eldritch
 
-![1640234962_The_sunken_city_of_Rlyeh_lies_dormant-Breath-taking_digital_painting_with_dark_colours_amazing_ar.jpg](/resources/ai-generated-images/1640234962_The_sunken_city_of_Rlyeh_lies_dormant-Breath-taking_digital_painting_with_dark_colours_amazing_ar.jpg)
+![1640234962_The_sunken_city_of_Rlyeh_lies_dormant-Breath-taking_digital_painting_with_dark_colours_amazing_ar.jpg](/resources/ai-generated-images/1640234962_The_sunken_city_of_Rlyeh_lies_dormant-Breath-taking_digital_painting_with_dark_colours_amazing_ar.jpg){: alt="" load="lazy"}
 
 The white fox in the Arcadian praerie \| Breath-taking digital painting with vivid colours amazing art mesmerizing, captivating, artstation 3, japanese style
 
-![1640235251_The_white_fox_in_the_Arcadian_praerie-Breath-taking_digital_painting_with_vivid_colours_amazing_ar.jpg](/resources/ai-generated-images/1640235251_The_white_fox_in_the_Arcadian_praerie-Breath-taking_digital_painting_with_vivid_colours_amazing_ar.jpg)
+![1640235251_The_white_fox_in_the_Arcadian_praerie-Breath-taking_digital_painting_with_vivid_colours_amazing_ar.jpg](/resources/ai-generated-images/1640235251_The_white_fox_in_the_Arcadian_praerie-Breath-taking_digital_painting_with_vivid_colours_amazing_ar.jpg){: alt="" load="lazy"}
 
 The green idyllic Arcadian praerie with sheep \| Breath-taking digital painting with placid colours amazing art mesmerizing, captivating, artstation 3, cottagecore
 A beautiful painting of the Garden of Eden by Thomas Cole
 
-![1640235438_The_green_idyllic_Arcadian_praerie_with_sheep-Breath-taking_digital_painting_with_placid_colours_a.jpg](/resources/ai-generated-images/1640235438_The_green_idyllic_Arcadian_praerie_with_sheep-Breath-taking_digital_painting_with_placid_colours_a.jpg)
+![1640235438_The_green_idyllic_Arcadian_praerie_with_sheep-Breath-taking_digital_painting_with_placid_colours_a.jpg](/resources/ai-generated-images/1640235438_The_green_idyllic_Arcadian_praerie_with_sheep-Breath-taking_digital_painting_with_placid_colours_a.jpg){: alt="" load="lazy"}
 
 ### Biblical References
 
 A beautiful painting of the Tower of Babel by Thomas Cole
 
-![1640270061_A_beautiful_painting_of_the_Garden_of_Eden_by_Thomas_Cole.jpg](/resources/ai-generated-images/1640270061_A_beautiful_painting_of_the_Garden_of_Eden_by_Thomas_Cole.jpg)
+![1640270061_A_beautiful_painting_of_the_Garden_of_Eden_by_Thomas_Cole.jpg](/resources/ai-generated-images/1640270061_A_beautiful_painting_of_the_Garden_of_Eden_by_Thomas_Cole.jpg){: alt="" load="lazy"}
 
 the Tower of Babel by beeple gurney richter \| 3D Depth Shader;special effects;production values;movie FX;VFX;sci-fi;4K resolution;high dynamic range;Dolby Vision;hdr10;atmos;3 dimensional;vray; ray tracing;hyperrealistic;
 
-![1640270742_the_Tower_of_Babel_by_beeple_gurney_richter-3D_Depth_Shaderspecial_effectsproduction_valuesmovi.jpg](/resources/ai-generated-images/1640270742_the_Tower_of_Babel_by_beeple_gurney_richter-3D_Depth_Shaderspecial_effectsproduction_valuesmovi.jpg)
+![1640270742_the_Tower_of_Babel_by_beeple_gurney_richter-3D_Depth_Shaderspecial_effectsproduction_valuesmovi.jpg](/resources/ai-generated-images/1640270742_the_Tower_of_Babel_by_beeple_gurney_richter-3D_Depth_Shaderspecial_effectsproduction_valuesmovi.jpg){: alt="" load="lazy"}
 
 the Garden of Eden by beeple gurney richter \| 3D Depth Shader;special effects;production values;movie FX;VFX;sci-fi;4K resolution;high dynamic range;Dolby Vision;hdr10;atmos;3 dimensional;vray; ray tracing;hyperrealistic;matte painting
 
-![1640270435_the_Garden_of_Eden_by_beeple_gurney_richter-3D_Depth_Shaderspecial_effectsproduction_valuesmovi.jpg](/resources/ai-generated-images/1640270435_the_Garden_of_Eden_by_beeple_gurney_richter-3D_Depth_Shaderspecial_effectsproduction_valuesmovi.jpg)
+![1640270435_the_Garden_of_Eden_by_beeple_gurney_richter-3D_Depth_Shaderspecial_effectsproduction_valuesmovi.jpg](/resources/ai-generated-images/1640270435_the_Garden_of_Eden_by_beeple_gurney_richter-3D_Depth_Shaderspecial_effectsproduction_valuesmovi.jpg){: alt="" load="lazy"}
 
 ### Fantasy Prompts
 
 A breath-taking painting of an eldritch beetle god that should not be by Thomas Cole \| old masters, artstation 3
 
-![1640231439_A_breath-taking_painting_of_an_eldritch_beetle_god_that_should_not_be_by_Thomas_Cole-old_masters_.jpg](/resources/ai-generated-images/1640231439_A_breath-taking_painting_of_an_eldritch_beetle_god_that_should_not_be_by_Thomas_Cole-old_masters_.jpg)
+![1640231439_A_breath-taking_painting_of_an_eldritch_beetle_god_that_should_not_be_by_Thomas_Cole-old_masters_.jpg](/resources/ai-generated-images/1640231439_A_breath-taking_painting_of_an_eldritch_beetle_god_that_should_not_be_by_Thomas_Cole-old_masters_.jpg){: alt="" load="lazy"}
 
 A breath-taking painting of Valkyries riding pegasi on the clouds over cliff by Thomas Cole \| old masters, artstation 3
 
-![1640231675_A_breath-taking_painting_of_Valkyries_riding_pegasi_on_the_clouds_over_cliff_by_Thomas_Cole-old_ma.jpg](/resources/ai-generated-images/1640231675_A_breath-taking_painting_of_Valkyries_riding_pegasi_on_the_clouds_over_cliff_by_Thomas_Cole-old_ma.jpg)
+![1640231675_A_breath-taking_painting_of_Valkyries_riding_pegasi_on_the_clouds_over_cliff_by_Thomas_Cole-old_ma.jpg](/resources/ai-generated-images/1640231675_A_breath-taking_painting_of_Valkyries_riding_pegasi_on_the_clouds_over_cliff_by_Thomas_Cole-old_ma.jpg){: alt="" load="lazy"}
 
 golden fae stands on flower at night \| Gorgeous digital painting with rich colours amazing art mesmerizing, captivating, artstation 3, cottagecore aesthetic
 
-![image.png](/resources/ai-generated-images/image.png)
+![image.png](/resources/ai-generated-images/image.png){: alt="" load="lazy"}
 
 Fae Blessing \| Breath-taking digital painting with placid colours amazing art mesmerizing, captivating, artstation 3
 
-![1640276542_Fae_Blessing-Breath-taking_digital_painting_with_placid_colours_amazing_art_mesmerizing_captivati.jpg](/resources/ai-generated-images/1640276542_Fae_Blessing-Breath-taking_digital_painting_with_placid_colours_amazing_art_mesmerizing_captivati.jpg)
+![1640276542_Fae_Blessing-Breath-taking_digital_painting_with_placid_colours_amazing_art_mesmerizing_captivati.jpg](/resources/ai-generated-images/1640276542_Fae_Blessing-Breath-taking_digital_painting_with_placid_colours_amazing_art_mesmerizing_captivati.jpg){: alt="" load="lazy"}
 
 
-![1640232053_A_painting_of_an_Eldrazi_God_with_a_nova_background_by_Thomas_Cole-artstation_3.jpg](/resources/ai-generated-images/1640232053_A_painting_of_an_Eldrazi_God_with_a_nova_background_by_Thomas_Cole-artstation_3.jpg)
+![1640232053_A_painting_of_an_Eldrazi_God_with_a_nova_background_by_Thomas_Cole-artstation_3.jpg](/resources/ai-generated-images/1640232053_A_painting_of_an_Eldrazi_God_with_a_nova_background_by_Thomas_Cole-artstation_3.jpg){: alt="" load="lazy"}
 
 
 An etching of a Troll with a grin by Gustave Doré \| artstation 3
 
-![1640233029_An_etching_of_a_Troll_with_a_grin_by_Gustave_Dore-artstation_3.jpg](/resources/ai-generated-images/1640233029_An_etching_of_a_Troll_with_a_grin_by_Gustave_Dore-artstation_3.jpg)
+![1640233029_An_etching_of_a_Troll_with_a_grin_by_Gustave_Dore-artstation_3.jpg](/resources/ai-generated-images/1640233029_An_etching_of_a_Troll_with_a_grin_by_Gustave_Dore-artstation_3.jpg){: alt="" load="lazy"}
 
 A wood engraving of Goblins by Gustave Doré
 
-![1640233240_A_wood_engraving_of_Goblins_by_Gustave_Dore.jpg](/resources/ai-generated-images/1640233240_A_wood_engraving_of_Goblins_by_Gustave_Dore.jpg)
+![1640233240_A_wood_engraving_of_Goblins_by_Gustave_Dore.jpg](/resources/ai-generated-images/1640233240_A_wood_engraving_of_Goblins_by_Gustave_Dore.jpg){: alt="" load="lazy"}
 
 Refreshing composition, thick texture. Grotesque Centaur by Zdzisław Beksiński and Geiger inspired
 
-![1640233456_Refreshing_composition_thick_texture-Grotesque_Centaur_by_Zdzisaw_Beksinski_and_Geiger_inspired.jpg](/resources/ai-generated-images/1640233456_Refreshing_composition_thick_texture-Grotesque_Centaur_by_Zdzisaw_Beksinski_and_Geiger_inspired.jpg)
+![1640233456_Refreshing_composition_thick_texture-Grotesque_Centaur_by_Zdzisaw_Beksinski_and_Geiger_inspired.jpg](/resources/ai-generated-images/1640233456_Refreshing_composition_thick_texture-Grotesque_Centaur_by_Zdzisaw_Beksinski_and_Geiger_inspired.jpg){: alt="" load="lazy"}
 
 Grotesque Centaur by Zdzisław Beksiński and Geiger inspired
 A centaur in a glade under the stars \| Gorgeous digital painting with sober colours amazing art mesmerizing, captivating, artstation 3, cottagecore, cozy
 
-![1640233735_Grotesque_Centaur_by_Zdzisaw_Beksinski_and_Geiger_inspired.jpg](/resources/ai-generated-images/1640233735_Grotesque_Centaur_by_Zdzisaw_Beksinski_and_Geiger_inspired.jpg)
+![1640233735_Grotesque_Centaur_by_Zdzisaw_Beksinski_and_Geiger_inspired.jpg](/resources/ai-generated-images/1640233735_Grotesque_Centaur_by_Zdzisaw_Beksinski_and_Geiger_inspired.jpg){: alt="" load="lazy"}
 
 fantasy tavern \| Breath-taking digital painting with warm colours amazing art mesmerizing, captivating, artstation 3, cottagecore
 
-![1640277186_fantasy_tavern-Breath-taking_digital_painting_with_warm_colours_amazing_art_mesmerizing_captivati.jpg](/resources/ai-generated-images/1640277186_fantasy_tavern-Breath-taking_digital_painting_with_warm_colours_amazing_art_mesmerizing_captivati.jpg)
+![1640277186_fantasy_tavern-Breath-taking_digital_painting_with_warm_colours_amazing_art_mesmerizing_captivati.jpg](/resources/ai-generated-images/1640277186_fantasy_tavern-Breath-taking_digital_painting_with_warm_colours_amazing_art_mesmerizing_captivati.jpg){: alt="" load="lazy"}
 
 fantasy tavern interior \| Breath-taking digital painting with warm colours amazing art mesmerizing, captivating, artstation 3
 
-![1640277448_fantasy_tavern_interior-Breath-taking_digital_painting_with_warm_colours_amazing_art_mesmerizing_.jpg](/resources/ai-generated-images/1640277448_fantasy_tavern_interior-Breath-taking_digital_painting_with_warm_colours_amazing_art_mesmerizing_.jpg)
+![1640277448_fantasy_tavern_interior-Breath-taking_digital_painting_with_warm_colours_amazing_art_mesmerizing_.jpg](/resources/ai-generated-images/1640277448_fantasy_tavern_interior-Breath-taking_digital_painting_with_warm_colours_amazing_art_mesmerizing_.jpg){: alt="" load="lazy"}
 
 fantasy tavern interior \| Breath-taking digital illustration with warm colours amazing art mesmerizing, captivating, artstation 3, D&D Style
 
-![1640277481_fantasy_tavern_interior-Breath-taking_digital_illustration_with_warm_colours_amazing_art_mesmerizi.jpg](/resources/ai-generated-images/1640277481_fantasy_tavern_interior-Breath-taking_digital_illustration_with_warm_colours_amazing_art_mesmerizi.jpg)
+![1640277481_fantasy_tavern_interior-Breath-taking_digital_illustration_with_warm_colours_amazing_art_mesmerizi.jpg](/resources/ai-generated-images/1640277481_fantasy_tavern_interior-Breath-taking_digital_illustration_with_warm_colours_amazing_art_mesmerizi.jpg){: alt="" load="lazy"}
 
 purple Fungi from Yuggoth \| Gorgeous digital painting with intense colours amazing art mesmerizing, captivating, artstation 3, thought-provoking, dark
 
-![1640281351_purple_Fungi_from_Yuggoth-Gorgeous_digital_painting_with_intense_colours_amazing_art_mesmerizing_.jpg](/resources/ai-generated-images/1640281351_purple_Fungi_from_Yuggoth-Gorgeous_digital_painting_with_intense_colours_amazing_art_mesmerizing_.jpg)
+![1640281351_purple_Fungi_from_Yuggoth-Gorgeous_digital_painting_with_intense_colours_amazing_art_mesmerizing_.jpg](/resources/ai-generated-images/1640281351_purple_Fungi_from_Yuggoth-Gorgeous_digital_painting_with_intense_colours_amazing_art_mesmerizing_.jpg){: alt="" load="lazy"}
 
 3D hyperrealistic materials and soft warm lighting \| 3d render amazing graphics shaders 4k UHD\| An amazing digital illustration depicting Archangel Michael spread enormous wings at night \| artstation 3, hyperrealist, realistic
 
-![1640232675_3D_hyperrealistic_materials_and_soft_warm_lighting-3d_render_amazing_graphics_shaders_4k_UHD_An_a.jpg](/resources/ai-generated-images/1640232675_3D_hyperrealistic_materials_and_soft_warm_lighting-3d_render_amazing_graphics_shaders_4k_UHD_An_a.jpg)
+![1640232675_3D_hyperrealistic_materials_and_soft_warm_lighting-3d_render_amazing_graphics_shaders_4k_UHD_An_a.jpg](/resources/ai-generated-images/1640232675_3D_hyperrealistic_materials_and_soft_warm_lighting-3d_render_amazing_graphics_shaders_4k_UHD_An_a.jpg){: alt="" load="lazy"}
 
 ## DALL-E Mini
 
-![dallemini_2022-7-5_15-38-42.png](/resources/ai-generated-images/dallemini_2022-7-5_15-38-42.png)
+![dallemini_2022-7-5_15-38-42.png](/resources/ai-generated-images/dallemini_2022-7-5_15-38-42.png){: alt="" load="lazy"}
 
-![dallemini_2022-7-5_15-44-51.png](/resources/ai-generated-images/dallemini_2022-7-5_15-44-51.png)
+![dallemini_2022-7-5_15-44-51.png](/resources/ai-generated-images/dallemini_2022-7-5_15-44-51.png){: alt="" load="lazy"}
 
-![dallemini_2022-7-5_15-47-52.png](/resources/ai-generated-images/dallemini_2022-7-5_15-47-52.png)
+![dallemini_2022-7-5_15-47-52.png](/resources/ai-generated-images/dallemini_2022-7-5_15-47-52.png){: alt="" load="lazy"}
 
-![dallemini_2022-7-5_18-14-38.png](/resources/ai-generated-images/dallemini_2022-7-5_18-14-38.png)
+![dallemini_2022-7-5_18-14-38.png](/resources/ai-generated-images/dallemini_2022-7-5_18-14-38.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-28_20-23-36.png](/resources/ai-generated-images/dallemini_2022-6-28_20-23-36.png)
+![dallemini_2022-6-28_20-23-36.png](/resources/ai-generated-images/dallemini_2022-6-28_20-23-36.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-28_20-20-14.png](/resources/ai-generated-images/dallemini_2022-6-28_20-20-14.png)
+![dallemini_2022-6-28_20-20-14.png](/resources/ai-generated-images/dallemini_2022-6-28_20-20-14.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-28_20-21-57.png](/resources/ai-generated-images/dallemini_2022-6-28_20-21-57.png)
+![dallemini_2022-6-28_20-21-57.png](/resources/ai-generated-images/dallemini_2022-6-28_20-21-57.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-29_0-19-26.png](/resources/ai-generated-images/dallemini_2022-6-29_0-19-26.png)
+![dallemini_2022-6-29_0-19-26.png](/resources/ai-generated-images/dallemini_2022-6-29_0-19-26.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-29_0-27-2.png](/resources/ai-generated-images/dallemini_2022-6-29_0-27-2.png)
+![dallemini_2022-6-29_0-27-2.png](/resources/ai-generated-images/dallemini_2022-6-29_0-27-2.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-29_2-56-55.png](/resources/ai-generated-images/dallemini_2022-6-29_2-56-55.png)
+![dallemini_2022-6-29_2-56-55.png](/resources/ai-generated-images/dallemini_2022-6-29_2-56-55.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-28_20-27-30.png](/resources/ai-generated-images/dallemini_2022-6-28_20-27-30.png)
+![dallemini_2022-6-28_20-27-30.png](/resources/ai-generated-images/dallemini_2022-6-28_20-27-30.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-28_20-31-26.png](/resources/ai-generated-images/dallemini_2022-6-28_20-31-26.png)
+![dallemini_2022-6-28_20-31-26.png](/resources/ai-generated-images/dallemini_2022-6-28_20-31-26.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-29_2-59-32.png](/resources/ai-generated-images/dallemini_2022-6-29_2-59-32.png)
+![dallemini_2022-6-29_2-59-32.png](/resources/ai-generated-images/dallemini_2022-6-29_2-59-32.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-29_3-3-45.png](/resources/ai-generated-images/dallemini_2022-6-29_3-3-45.png)
+![dallemini_2022-6-29_3-3-45.png](/resources/ai-generated-images/dallemini_2022-6-29_3-3-45.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-29_3-2-3.png](/resources/ai-generated-images/dallemini_2022-6-29_3-2-3.png)
+![dallemini_2022-6-29_3-2-3.png](/resources/ai-generated-images/dallemini_2022-6-29_3-2-3.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-29_14-30-15.png](/resources/ai-generated-images/dallemini_2022-6-29_14-30-15.png)
+![dallemini_2022-6-29_14-30-15.png](/resources/ai-generated-images/dallemini_2022-6-29_14-30-15.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-29_2-59-23.png](/resources/ai-generated-images/dallemini_2022-6-29_2-59-23.png)
+![dallemini_2022-6-29_2-59-23.png](/resources/ai-generated-images/dallemini_2022-6-29_2-59-23.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-17_15-54-37.png](/resources/ai-generated-images/dallemini_2022-6-17_15-54-37.png)
+![dallemini_2022-6-17_15-54-37.png](/resources/ai-generated-images/dallemini_2022-6-17_15-54-37.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-29_16-14-15.png](/resources/ai-generated-images/dallemini_2022-6-29_16-14-15.png)
+![dallemini_2022-6-29_16-14-15.png](/resources/ai-generated-images/dallemini_2022-6-29_16-14-15.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-17_18-15-1.png](/resources/ai-generated-images/dallemini_2022-6-17_18-15-1.png)
+![dallemini_2022-6-17_18-15-1.png](/resources/ai-generated-images/dallemini_2022-6-17_18-15-1.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-17_15-51-0.png](/resources/ai-generated-images/dallemini_2022-6-17_15-51-0.png)
+![dallemini_2022-6-17_15-51-0.png](/resources/ai-generated-images/dallemini_2022-6-17_15-51-0.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-29_14-38-38.png](/resources/ai-generated-images/dallemini_2022-6-29_14-38-38.png)
+![dallemini_2022-6-29_14-38-38.png](/resources/ai-generated-images/dallemini_2022-6-29_14-38-38.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-18_15-46-26.png](/resources/ai-generated-images/dallemini_2022-6-18_15-46-26.png)
+![dallemini_2022-6-18_15-46-26.png](/resources/ai-generated-images/dallemini_2022-6-18_15-46-26.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-18_16-6-12.png](/resources/ai-generated-images/dallemini_2022-6-18_16-6-12.png)
+![dallemini_2022-6-18_16-6-12.png](/resources/ai-generated-images/dallemini_2022-6-18_16-6-12.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-18_15-58-12.png](/resources/ai-generated-images/dallemini_2022-6-18_15-58-12.png)
+![dallemini_2022-6-18_15-58-12.png](/resources/ai-generated-images/dallemini_2022-6-18_15-58-12.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-18_15-42-38.png](/resources/ai-generated-images/dallemini_2022-6-18_15-42-38.png)
+![dallemini_2022-6-18_15-42-38.png](/resources/ai-generated-images/dallemini_2022-6-18_15-42-38.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-18_16-11-16.png](/resources/ai-generated-images/dallemini_2022-6-18_16-11-16.png)
+![dallemini_2022-6-18_16-11-16.png](/resources/ai-generated-images/dallemini_2022-6-18_16-11-16.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-18_20-49-47.png](/resources/ai-generated-images/dallemini_2022-6-18_20-49-47.png)
+![dallemini_2022-6-18_20-49-47.png](/resources/ai-generated-images/dallemini_2022-6-18_20-49-47.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-18_16-23-50.png](/resources/ai-generated-images/dallemini_2022-6-18_16-23-50.png)
+![dallemini_2022-6-18_16-23-50.png](/resources/ai-generated-images/dallemini_2022-6-18_16-23-50.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-18_16-31-15.png](/resources/ai-generated-images/dallemini_2022-6-18_16-31-15.png)
+![dallemini_2022-6-18_16-31-15.png](/resources/ai-generated-images/dallemini_2022-6-18_16-31-15.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-18_20-41-34.png](/resources/ai-generated-images/dallemini_2022-6-18_20-41-34.png)
+![dallemini_2022-6-18_20-41-34.png](/resources/ai-generated-images/dallemini_2022-6-18_20-41-34.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-18_16-35-53.png](/resources/ai-generated-images/dallemini_2022-6-18_16-35-53.png)
+![dallemini_2022-6-18_16-35-53.png](/resources/ai-generated-images/dallemini_2022-6-18_16-35-53.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-23_0-21-57.png](/resources/ai-generated-images/dallemini_2022-6-23_0-21-57.png)
+![dallemini_2022-6-23_0-21-57.png](/resources/ai-generated-images/dallemini_2022-6-23_0-21-57.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-18_20-56-31.png](/resources/ai-generated-images/dallemini_2022-6-18_20-56-31.png)
+![dallemini_2022-6-18_20-56-31.png](/resources/ai-generated-images/dallemini_2022-6-18_20-56-31.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-18_21-3-57.png](/resources/ai-generated-images/dallemini_2022-6-18_21-3-57.png)
+![dallemini_2022-6-18_21-3-57.png](/resources/ai-generated-images/dallemini_2022-6-18_21-3-57.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-22_12-18-38.png](/resources/ai-generated-images/dallemini_2022-6-22_12-18-38.png)
+![dallemini_2022-6-22_12-18-38.png](/resources/ai-generated-images/dallemini_2022-6-22_12-18-38.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-22_11-50-10.png](/resources/ai-generated-images/dallemini_2022-6-22_11-50-10.png)
+![dallemini_2022-6-22_11-50-10.png](/resources/ai-generated-images/dallemini_2022-6-22_11-50-10.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-23_0-36-27.png](/resources/ai-generated-images/dallemini_2022-6-23_0-36-27.png)
+![dallemini_2022-6-23_0-36-27.png](/resources/ai-generated-images/dallemini_2022-6-23_0-36-27.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-23_0-47-9.png](/resources/ai-generated-images/dallemini_2022-6-23_0-47-9.png)
+![dallemini_2022-6-23_0-47-9.png](/resources/ai-generated-images/dallemini_2022-6-23_0-47-9.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-23_0-26-39.png](/resources/ai-generated-images/dallemini_2022-6-23_0-26-39.png)
+![dallemini_2022-6-23_0-26-39.png](/resources/ai-generated-images/dallemini_2022-6-23_0-26-39.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-23_0-38-59.png](/resources/ai-generated-images/dallemini_2022-6-23_0-38-59.png)
+![dallemini_2022-6-23_0-38-59.png](/resources/ai-generated-images/dallemini_2022-6-23_0-38-59.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-23_0-33-40.png](/resources/ai-generated-images/dallemini_2022-6-23_0-33-40.png)
+![dallemini_2022-6-23_0-33-40.png](/resources/ai-generated-images/dallemini_2022-6-23_0-33-40.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-23_0-54-37.png](/resources/ai-generated-images/dallemini_2022-6-23_0-54-37.png)
+![dallemini_2022-6-23_0-54-37.png](/resources/ai-generated-images/dallemini_2022-6-23_0-54-37.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-23_1-0-19.png](/resources/ai-generated-images/dallemini_2022-6-23_1-0-19.png)
+![dallemini_2022-6-23_1-0-19.png](/resources/ai-generated-images/dallemini_2022-6-23_1-0-19.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-23_1-57-32.png](/resources/ai-generated-images/dallemini_2022-6-23_1-57-32.png)
+![dallemini_2022-6-23_1-57-32.png](/resources/ai-generated-images/dallemini_2022-6-23_1-57-32.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-23_1-9-58.png](/resources/ai-generated-images/dallemini_2022-6-23_1-9-58.png)
+![dallemini_2022-6-23_1-9-58.png](/resources/ai-generated-images/dallemini_2022-6-23_1-9-58.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-23_1-3-0.png](/resources/ai-generated-images/dallemini_2022-6-23_1-3-0.png)
+![dallemini_2022-6-23_1-3-0.png](/resources/ai-generated-images/dallemini_2022-6-23_1-3-0.png){: alt="" load="lazy"}
 
-![dallemini_2022-7-10_23-40-42.png](/resources/ai-generated-images/dallemini_2022-7-10_23-40-42.png)
+![dallemini_2022-7-10_23-40-42.png](/resources/ai-generated-images/dallemini_2022-7-10_23-40-42.png){: alt="" load="lazy"}
 
-![dallemini_2022-7-10_23-40-34.png](/resources/ai-generated-images/dallemini_2022-7-10_23-40-34.png)
+![dallemini_2022-7-10_23-40-34.png](/resources/ai-generated-images/dallemini_2022-7-10_23-40-34.png){: alt="" load="lazy"}
 
-![dallemini_2022-7-10_23-42-24.png](/resources/ai-generated-images/dallemini_2022-7-10_23-42-24.png)
+![dallemini_2022-7-10_23-42-24.png](/resources/ai-generated-images/dallemini_2022-7-10_23-42-24.png){: alt="" load="lazy"}
 
-![dallemini_2022-7-10_23-42-58.png](/resources/ai-generated-images/dallemini_2022-7-10_23-42-58.png)
+![dallemini_2022-7-10_23-42-58.png](/resources/ai-generated-images/dallemini_2022-7-10_23-42-58.png){: alt="" load="lazy"}
 
-![dallemini_2022-7-10_23-46-8.png](/resources/ai-generated-images/dallemini_2022-7-10_23-46-8.png)
+![dallemini_2022-7-10_23-46-8.png](/resources/ai-generated-images/dallemini_2022-7-10_23-46-8.png){: alt="" load="lazy"}
 
-![dallemini_2022-7-10_23-46-15.png](/resources/ai-generated-images/dallemini_2022-7-10_23-46-15.png)
+![dallemini_2022-7-10_23-46-15.png](/resources/ai-generated-images/dallemini_2022-7-10_23-46-15.png){: alt="" load="lazy"}
 
-![dallemini_2022-7-10_23-46-20.png](/resources/ai-generated-images/dallemini_2022-7-10_23-46-20.png)
+![dallemini_2022-7-10_23-46-20.png](/resources/ai-generated-images/dallemini_2022-7-10_23-46-20.png){: alt="" load="lazy"}
 
-![dallemini_2022-7-10_23-46-29.png](/resources/ai-generated-images/dallemini_2022-7-10_23-46-29.png)
+![dallemini_2022-7-10_23-46-29.png](/resources/ai-generated-images/dallemini_2022-7-10_23-46-29.png){: alt="" load="lazy"}
 
-![dallemini_2022-7-10_23-46-34.png](/resources/ai-generated-images/dallemini_2022-7-10_23-46-34.png)
+![dallemini_2022-7-10_23-46-34.png](/resources/ai-generated-images/dallemini_2022-7-10_23-46-34.png){: alt="" load="lazy"}
 
-![dallemini_2022-7-10_23-46-38.png](/resources/ai-generated-images/dallemini_2022-7-10_23-46-38.png)
+![dallemini_2022-7-10_23-46-38.png](/resources/ai-generated-images/dallemini_2022-7-10_23-46-38.png){: alt="" load="lazy"}
 
-![dallemini_2022-7-10_23-46-46.png](/resources/ai-generated-images/dallemini_2022-7-10_23-46-46.png)
+![dallemini_2022-7-10_23-46-46.png](/resources/ai-generated-images/dallemini_2022-7-10_23-46-46.png){: alt="" load="lazy"}
 
-![dallemini_2022-7-10_23-48-26.png](/resources/ai-generated-images/dallemini_2022-7-10_23-48-26.png)
+![dallemini_2022-7-10_23-48-26.png](/resources/ai-generated-images/dallemini_2022-7-10_23-48-26.png){: alt="" load="lazy"}
 
-![dallemini_2022-7-10_23-48-31.png](/resources/ai-generated-images/dallemini_2022-7-10_23-48-31.png)
+![dallemini_2022-7-10_23-48-31.png](/resources/ai-generated-images/dallemini_2022-7-10_23-48-31.png){: alt="" load="lazy"}
