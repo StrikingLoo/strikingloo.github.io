@@ -221,8 +221,6 @@ purple Fungi from Yuggoth \| Gorgeous digital painting with intense colours amaz
 
 ![dallemini_2022-6-23_0-21-57.png](/resources/ai-generated-images/dallemini_2022-6-23_0-21-57.png){: alt="" load="lazy"}
 
-![dallemini_2022-6-18_20-56-31.png](/resources/ai-generated-images/dallemini_2022-6-18_20-56-31.png){: alt="" load="lazy"}
-
 ![dallemini_2022-6-18_21-3-57.png](/resources/ai-generated-images/dallemini_2022-6-18_21-3-57.png){: alt="" load="lazy"}
 
 ![dallemini_2022-6-22_12-18-38.png](/resources/ai-generated-images/dallemini_2022-6-22_12-18-38.png){: alt="" load="lazy"}
@@ -240,8 +238,6 @@ purple Fungi from Yuggoth \| Gorgeous digital painting with intense colours amaz
 ![dallemini_2022-6-23_0-33-40.png](/resources/ai-generated-images/dallemini_2022-6-23_0-33-40.png){: alt="" load="lazy"}
 
 ![dallemini_2022-6-23_0-54-37.png](/resources/ai-generated-images/dallemini_2022-6-23_0-54-37.png){: alt="" load="lazy"}
-
-![dallemini_2022-6-23_1-0-19.png](/resources/ai-generated-images/dallemini_2022-6-23_1-0-19.png){: alt="" load="lazy"}
 
 ![dallemini_2022-6-23_1-57-32.png](/resources/ai-generated-images/dallemini_2022-6-23_1-57-32.png){: alt="" load="lazy"}
 
