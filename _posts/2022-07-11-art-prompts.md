@@ -33,7 +33,7 @@ For example, this is a prompt that gave me very good results in Craiyon.
 
 'Cluttered house in the woods \| anime oil painting high resolution cottagecore ghibli inspired 4k'
 
-![ghibli style house in the woods by Craiyon](/resources/ai-generated-images/ghibli-house-craiyon.png)
+![ghibli style house in the woods by Craiyon](/resources/ai-generated-images/ghibli-house-craiyon.png){: alt="" load="lazy"}
 
 As you can see, just appending _"\| oil painting high resolution 4k"_ will improve most of your results. You can then also add a style cue like 'Ghibli inspired', 'Giger' or 'Salvador Dali'.
 
