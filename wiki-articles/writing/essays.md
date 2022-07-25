@@ -96,3 +96,18 @@ He lists misconceptions about writing:
 
 [Writing: The Most Misunderstood Activity - Soliman Writes](https://www.solimanwrites.com/writing-the-most-misunderstood-activity/)
 
+### Tom Critchlow on "You're not Blogging and that's a Problem"
+
+"So what’s the lesson here? **Blog on topics you’re thinking about - but remember you don’t need to finish the thought to put the post live.**
+ 
+Here’s my best trick for writing blog posts. It’s simple: **write a blog post, think about who cares about that topic, email it to them asking for their thoughts.**
+ 
+Could be an old boss, a friend, someone you met at a conference - it doesn’t matter. Write something they’d find interesting and email them a thoughtful email. Don’t send more than 5 of these per blog post. 
+ 
+it’s a great routine to get into because it **forces you to write a blog post so that at least one person cares about it.**"
+
+---
+When writing a textbook: start with the cool stuff! Explain later.
+
+---
+

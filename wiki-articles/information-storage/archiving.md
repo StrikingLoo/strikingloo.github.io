@@ -39,6 +39,12 @@ In 1685 the English Enlightenment philosopher John Locke wrote a treatise in Fre
 
 [Transformative Tools for Thought](https://numinous.productions/ttft)
 
+Essay (or tech?) idea: LLM meets TTFT to auto generate questions and answers and map them to anki, turning any text into mnemonic medium. How far are we from this being doable?
+ 
+Prediction: No app based on the mnemonic medium will come in 5 years that reaches a critical amount of users. No "transformative" tool for thought coming in the near future. Defined as 1M+ users or more.
+
+"Let’s return to the question that began the essay: how to build transformative tools for thought? Of course, we haven’t even precisely defined what such transformative tools are! But they’re the kind of tools where relatively low cost changes in practice produce transformative changes in outcome – non-linear returns and qualitative shifts in thinking. This is in contrast with the usual situation, where a small change in practice causes a small change in results."
+
 ---
 
 **Capture everything**: Do not assume your brain will remember anything. Write it down ASAP. Use whatever will let you capture it quickest, whether that's pen and paper or a digital solution.
@@ -84,6 +90,30 @@ As a summary, the Zettelkasten method follows a workflow with three steps:
 Zettelkasten relies more heavily on linking than tags/searching. This is because of the use of smaller, more granulated Zettels which interlink to represent a "thought trail" (a linked list of Zettels). 
 
 In my case I prefer big chunky notes + search, but we'll see.
+
+---
+### Ideas from "Backlinks are Bad Links"
+From [Backlinks are Bad Links](https://zettelkasten.de/posts/backlinks-are-bad-links/)
+
+Connecting notes is very simple. Place a link, use the Folgezettel Technique, create a tag or something like that. But this does not connect knowledge. On the other hand, **connecting conclusions and premises creates arguments which is some kind of knowledge.**
+ 
+Capturing this explicit reasoning [of relating contexts] is the very thing that makes linking truly productive by creating a network of meaningful connected knowledge. Without explanation, without reason why there is connection at all, there is just mindless linking without knowledge connection.
+ 
+Argues that **the importance of links between notes lies in "link context"**: the text surrounding or composing the link, that hopefully describes the relationship and comparison between concepts, etc.
+ 
+It also argues **a deep zettelkasten will make you pay cognitive overhead and opportunity cost on deciding whether to click each link or not**, reducing your overall productivity.
+
+"You see, built into every single note in Luhmann's system is one requirement: he must decide where the note belongs. It forces associations, and associations stand as the fundamental building block of human memory. One must decide if the note is associated with this or something else. It is a comparative schema built into the very root of Luhmann's antinet zettelkasten, which surfaces the magic of his system."
+
+### Notes from Luhmann's Original Paper on the Zettelkasten
+
+The entirety of these notes can only be described as a disorder, but at the very least it is a disorder with non-arbitrary internal structure. Some things will get lost (versickern), some notes we will never see again. 
+
+On the other hand, there will be preferred centers, formation of lumps and regions with which we will work more often than with others. There will be complexes of ideas that are conceived at large, but which will never be completed; **there will be incidental ideas which started as links from secondary passages and which are continuously enriched and expand so that they will tend increasingly to dominate system.** To sum up: this technique guarantees that its order which is merely formal does not become a hindrance but adapts to the conceptual development.
+ 
+The second mind needs a number of years in order to reach critical mass. Until then, it functions as a mere container from which we can retrieve what we put in. This changes with its growth in size and complexity. On the one hand, the **number of approaches and occasions for questions increases**. The notebox becomes a universal instrument. You can place almost everything in it, and this not just ad hoc and in isolation, but with internal possibilities of connections [with other contents].
+ 
+Me: maybe this made more sense pre google?
 
 ### Having a short-term and a long-term cache with nightly batch processing
 "In Taking Smart Notes, Luhmann is described as **transferring the important thoughts from the day into Zettel every evening**. Sheffler, on the other hand, keeps a gap of at least 24 hours between taking down engagement notes and deciding what belongs in the long-term store. A gap of time allows the initial excitement over an idea to pass, so that only the things which still seem important the next day get into long-term notes. He also points out that this system enforces a small amount of spaced repetition, making it more likely that content is recalled later."
@@ -184,6 +214,20 @@ To find a book if it's on the public domain, easily look for it on archive.org w
 site:archive.org intitle:full/text/of intext:Lovecraft
 ```
 
+---
+
+### Popova
+
+Around thirty-one minutes into the interview, Popova explains how she takes notes on books:
+ 
+As she reads, she creates an index at the front of the book that lists its most interesting ideas.
+Every time she encounters a passage relevant to one of these ideas she adds the page to the relevant line in the index. If its a new idea, she creates a new line for it.
+As she reads more, the index grows.
+
+---
+"I now read with a mind towards synthesis and distillation, where **the idea of reading something without taking notes from it seems absurd.**"
+
+---
 
 ### Related Links
 
