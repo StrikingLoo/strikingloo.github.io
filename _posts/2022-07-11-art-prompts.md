@@ -29,6 +29,14 @@ Usually, what I do is write what I want (adjectives + nouns usually get better r
 
 Using this simple framework often gets me results close to what I want. If you have any tips on how to do better, tell me!
 
+For example, this is a prompt that gave me very good results in Craiyon.
+
+'Cluttered house in the woods \| anime oil painting high resolution cottagecore ghibli inspired 4k'
+
+![ghibli style house in the woods by Craiyon](/resources/ai-generated-images/ghibli-house-craiyon.png)
+
+As you can see, just appending _"\| oil painting high resolution 4k"_ will improve most of your results. You can then also add a style cue like 'Ghibli inspired', 'Giger' or 'Salvador Dali'.
+
 ## VQVAE (EleutherAI)
 
 _Steampunk inventor's library \| Gorgeous digital painting with sober colours amazing art mesmerizing, captivating, artstation 3, cozy_
