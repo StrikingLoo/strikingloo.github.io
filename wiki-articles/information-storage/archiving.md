@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Information Storage and Archiving strategies"
+title: "Note Making: Information Storage and Archiving strategies"
 date: 2020-06-13
-description: "Since this is a Digital Garden to help me reflect and store information, I should ramp up my archiving skills."
+description: "Since this is a Digital Garden to help me reflect and store information, I should ramp up my note-taking skills. Here's every interesting quote or idea I found about taking notes, capturing information, and connecting ideas."
+abstract: "Since this is a Digital Garden to help me reflect and store information, I should ramp up my note-taking skills. Here's every interesting quote or idea I found about taking notes, capturing information, and connecting ideas. Every Personal Knowledge Management quote I found interesting."
 language: English
 importance: 8
 tag: notes, note making, journal, zettelkasten, commonplace book, luhman, tags
