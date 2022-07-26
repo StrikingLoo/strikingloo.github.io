@@ -52,4 +52,4 @@ If I read a paper, find it interesting, and think I will want to think about it 
 - [Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language](/wiki-articles/machine-learning/socratic-models): An attempt at a more general agent by using multiples LLMs and making them interact in a zero-shot context to improve egocentric perception, video summarization, storytelling and question-answering. Not AGI, but not as far as it may be expected.
 - [Distilling the Knowledge in a Neural Network](/wiki-articles/machine-learning/distilling-knowledge-nn): It is possible to compress the knowledge in an ensemble into a single model which is much easier to deploy.
 - [Proximal Policy Optimization](/wiki-articles/machine-learning/proximal-policy-optimization): My description of the SotA RL Algorithm proposed by OpenAI and a summary of the ideas proposed in its paper.
-
+- [Fast String Searching](/wiki-articles/programming/fast-string-searching): Describes the string search algorithm underpinning grep and others. Not ML, but very interesting and a fun little algorithm.
