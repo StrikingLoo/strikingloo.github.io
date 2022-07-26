@@ -110,13 +110,15 @@ It also argues **a deep zettelkasten will make you pay cognitive overhead and op
 
 ### Notes from Luhmann's Original Paper on the Zettelkasten
 
+["Communicating with Letterboxes"](https://luhmann.surge.sh/communicating-with-slip-boxes)
+
 The entirety of these notes can only be described as a disorder, but at the very least it is a disorder with non-arbitrary internal structure. Some things will get lost (versickern), some notes we will never see again. 
 
 On the other hand, there will be preferred centers, formation of lumps and regions with which we will work more often than with others. There will be complexes of ideas that are conceived at large, but which will never be completed; **there will be incidental ideas which started as links from secondary passages and which are continuously enriched and expand so that they will tend increasingly to dominate system.** To sum up: this technique guarantees that its order which is merely formal does not become a hindrance but adapts to the conceptual development.
  
 The second mind needs a number of years in order to reach critical mass. Until then, it functions as a mere container from which we can retrieve what we put in. This changes with its growth in size and complexity. On the one hand, the **number of approaches and occasions for questions increases**. The notebox becomes a universal instrument. You can place almost everything in it, and this not just ad hoc and in isolation, but with internal possibilities of connections [with other contents].
  
-Me: maybe this made more sense pre google?
+Me: maybe this made more sense pre google? Luhmann makes a big emphasis in the zettelkasten as an opportunity for introducing noise and dialogue (he calls it a conversational partner multiple times) into reflection. This is kinda lost in a personal wiki, but how valuable is dialogue if the work we want to do is not as creative? 
 
 ### Having a short-term and a long-term cache with nightly batch processing
 "In Taking Smart Notes, Luhmann is described as **transferring the important thoughts from the day into Zettel every evening**. Sheffler, on the other hand, keeps a gap of at least 24 hours between taking down engagement notes and deciding what belongs in the long-term store. A gap of time allows the initial excitement over an idea to pass, so that only the things which still seem important the next day get into long-term notes. He also points out that this system enforces a small amount of spaced repetition, making it more likely that content is recalled later."
@@ -217,8 +219,6 @@ To find a book if it's on the public domain, easily look for it on archive.org w
 site:archive.org intitle:full/text/of intext:Lovecraft
 ```
 
----
-
 ### Popova
 
 Around thirty-one minutes into the interview, Popova explains how she takes notes on books:
@@ -230,7 +230,15 @@ As she reads more, the index grows.
 ---
 "I now read with a mind towards synthesis and distillation, where **the idea of reading something without taking notes from it seems absurd.**"
 
----
+### Synthesize things as you read.
+
+Synthesize things as you read. Just because you’ve read something, doesn’t mean you’ve understood it; your brain has to come up with its own encoding. Whatever understanding things is, it’s related to compression. Which implies that you want to read and then restate in your own words, so that your mind is forced to compress the thing. Ideally several times, in varying ways.
+
+Once you’ve done this, you are much more likely to retain the thing, and to actually grasp it; and if you’re struggling with this exercise, then you don’t understand the thing and should go back and look at it again. (This is also a useful bullshit filter -- try and restate someone’s claim in a different way, and see if it still holds up).
+
+When I say ‘restate it in several different ways’, one useful way would be drawing it. Just draw a schematic representation of what you thing is being said. Another would be to state it as though you’re writing an article for simple words Wikipedia.  
+
+Source: [Nabeelqu's Advice post](https://nabeelqu.co/advice)
 
 ### Related Links
 
