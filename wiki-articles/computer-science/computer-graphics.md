@@ -58,7 +58,7 @@ Error Dithering: uses one of a list of colors for each pixel upon compression, b
 
 Consists of superposing to images, keeping a piece of each as per opacity values.
 
-![](image/alpha-compositing.png){: load="lazy"}
+![](image/alpha-compositing.png){: loading="lazy"}
 
 ## Bezier Curves
 
@@ -66,7 +66,7 @@ Bezier curves allow us to model curves in three dimensional or bidimensional spa
 
 They take this form:
 
-![](image/bezier.png){: load="lazy"}
+![](image/bezier.png){: loading="lazy"}
 
 ### Casteljau's Algorithm
 
