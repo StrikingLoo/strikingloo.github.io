@@ -13,20 +13,22 @@ description: Notes on the paper for Fast String Searching, which outlines the al
 
 [Fast String Searching, Hume and Sunday](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.13.9460&rep=rep1&type=pdf)
 
-Partially because the best algorithms presented in the literature are
-difficult to understand and to implement, knowledge of fast and practical algorithms is not commonplace. In this paper we present a taxonomy and an organizational framework for categorizing and constructing string search algorithms, and show how the best known algorithms are classified within it.
+"Partially because the best algorithms presented in the literature are
+difficult to understand and to implement, knowledge of fast and practical algorithms is not commonplace. In this paper we present a taxonomy and an organizational framework for categorizing and constructing string search algorithms, and show how the best known algorithms are classified within it."
 
-A variant of Boyer-Moore designed by Apostolic and Giancarlo achieved a bound of C(n, m) >= 2n – m + 1. (n text length, m input length).
+> A variant of Boyer-Moore designed by Apostolic and Giancarlo achieved a bound of C(n, m) >= 2n – m + 1. (n text length, m input length).
 
 Boyer and Moore described two algorithms. A simpler ('classic') one and a faster one, but the posterior literature usually focused on the simpler one instead of the other one as benchmark.
 
+General string search algorithm:
+
 ![](text-search1.png){: alt="" loading="lazy"}
 
-They identify and vary three different components of a string search algorithm: Skip Loops, Match algorithms and Shift Functions.
+In their taxonomy, the authors identify and vary three different components of a string search algorithm: **Skip Loops, Match algorithms and Shift Functions.**
 
 The skip loop quickly searches forward to see which characters it can skip (like checking only for the first character), the match algorithm compares text to pat, and the shift function dictates how many positions forward to move after a match (or a fail).
 
-Classic BM is described by {None\|rev\|d1^d2}. 
+Classic BM is described by {None \| rev \| d1^d2}. 
 
 ## Fast Boyer Moore
 
@@ -81,30 +83,28 @@ never break out of the skip loop, and would thus run faster."
 
 Something I found interesting: "There are additional fine tuning refinements that may be architecture dependent. One such variant changes the type of the d0 skip table from int to char. As shown below, this runs faster on the two RISC architectures ( mips, sparc) but slower on the others.
 
-Examination of the generated code reveals that the mips code had shrunk by one instruction because it no longer had to multiply the index by 4 to get a byte address for a skip table entry. The vax code, on the other hand, grew because it cannot add a byte to an integer directly. The following execution times were for match= fwd and shift= inc."
+Examination of the generated code reveals that the mips code had shrunk by one instruction because it no longer had to multiply the index by 4 to get a byte address for a skip table entry. The vax code, on the other hand, grew because it cannot add a byte to an integer directly."
 
 ---
 
 
-"For our test set, the average number of characters compared in the above om loop is 1.05.
+"For our test set, the average number of characters compared in the above *om loop* is 1.05.
 
-Thus, we can gain 95% of the benefits of the om match by simply testing for the rarest character of the pattern first before doing a full match test. "
+"Thus, we can gain 95% of the benefits of the om match by simply testing for the rarest character of the pattern first before doing a full match test."
 
-Finally they conclude "combining fwd with a guard is a clear winner."
+Finally they conclude "combining **_fwd_ with a guard is a clear winner.**"
 
-"Of the shifts and systems we measured, md2 is the fastest shift."
+Later:
 
-**md2**: "If we use a skip loop (other than none), then text [ i + k ] = pat [ k ] where pat [ k ] is the skip
-loop character. A mini sd2, or md2, shift aligns the rightmost occurrence of pat [k] left of
-pat [ k ] with text [ i + k ]. If there isn’t one, the shift is k + 1. This shift is simple to precompute and should always outperform inc since it is as easy to apply but typically will be much
-greater than 1 and roughly equal to sdk
-, the distance that the skip character must skip to
-match itself."
+"Of the shifts and systems we measured, **_md2_ is the fastest shift.**"
+
+**md2**: "If we use a skip loop (other than none), then text[ i + k ] = pat[k] where pat[k] is the skip loop character. A mini sd2, or md2, shift aligns the rightmost occurrence of pat[k] left of pat[k] with text[ i + k ]. If there isn’t one, the shift is k + 1. This shift is simple to precompute and should always outperform inc since it is as easy to apply but typically will be much greater than 1 and roughly equal to sdk, the distance that the skip character must skip to match itself."
 
 ## Recommended Searching Algorithms
 
-The recommended algorithm is the TBM (_Tuned Boyer-Moore_) algorithm. 
+The recommended algorithm is the **TBM (_Tuned Boyer-Moore_) algorithm**. 
 It is { _ufast_ | _fwd + g_ | _md2_ }.
+
 It is compact and fast and can be made independent of frequency data by eliminating the guard. _ufast_ is just the BM delta with an unroll (in this case of 3).
 
 The code for the algorithm, excluding preprocess, is:
