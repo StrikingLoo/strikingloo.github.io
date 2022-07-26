@@ -4,8 +4,8 @@ date: 2022-07-26
 title: Fast String Searching, Hume and Sunday
 tags: paper, algorithms, grep, computer science, boyer, moore
 language: English
-importance: 6
-abstract: " Notes on the paper for Fast String Searching, which outlines the algorithm used by grep and others, and improves on the results of Boyer-Moore by emphasizing empirical performance rather than theoretical measures like number of comparisons. 
+importance: 7
+abstract: "Notes on the paper for Fast String Searching, which outlines the algorithm used by grep and others, and improves on the results of Boyer-Moore by emphasizing empirical performance rather than theoretical measures like number of comparisons. 
 
 Since the Boyer-Moore algorithm was described in 1977, it had been the standard benchmark for the practical string search literature. Yet this yardstick compares badly with current practice. Hume and Sunday describe two algorithms that perform 47% fewer comparisons and are about 4.5 times faster across a wide range of architectures and compilers. These new variants are members of a family of algorithms based on the skip loop structure of the preferred, but often neglected, fast form of Boyer-Moore."
 description: Notes on the paper for Fast String Searching, which outlines the algorithm used by grep and others, and improves on the results of Boyer-Moore by emphasizing empirical performance rather than theoretical measures like number of comparisons.
