@@ -22,7 +22,7 @@ My general idea is that DALL-E mini can generate very satisfying results when th
 
 Feel free to steal any of these images and use them for anything, or share them on social media. I mostly tried prompts that dealt with Biblical or mythological themes, because for some reason I found most people didn't do those sorts of prompts as much (or maybe because I'm a big fantasy/D&D geek).
 
-__ **Update**: Besides Craiyon, I've found [Dall-E Flow](https://github.com/jina-ai/dalle-flow), a colab notebook that uses [Jina-AI](https://github.com/jina-ai/jina) to be the best tool for generating beautiful DALL-E images, and I recommend everyone to give it a spin. It's free and open source, and I'm loving it.__
+_**Update**: Besides Craiyon, I've found [Dall-E Flow](https://github.com/jina-ai/dalle-flow), a colab notebook that uses [Jina-AI](https://github.com/jina-ai/jina) to be the best tool for generating beautiful DALL-E images, and I recommend everyone to give it a spin. It's free and open source, and I'm loving it._
 
 
 ### How to write prompts for DALL-E: a crash course
