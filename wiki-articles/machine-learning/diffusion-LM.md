@@ -7,6 +7,7 @@ description: "Notes on the Diffusion LM paper from Stanford."
 language: English
 uses_mathjax: true
 abstract: "These are my notes on Stanford's paper that proposed Diffusion models for Language Generation."
+importance: 6
 ---
 
 <https://arxiv.org/pdf/2205.14217.pdf>
