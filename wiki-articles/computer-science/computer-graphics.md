@@ -126,4 +126,4 @@ void main() {
 
 - [Intro to OpenGL](https://engineering.monstar-lab.com/en/post/2022/03/01/Introduction-To-GPUs-With-OpenGL/): a simple tutorial but contains all the snippets you need to bootstrap a project.
 - [The Book of Shaders](https://thebookofshaders.com/): A great book on shaders, I've read about halfway through and it's fun and clear.
-
+- [Animation and Rendering of Complex Water Surfaces](https://graphics.stanford.edu/papers/water-sg02/): A stanford paper I haven't checked yet. 
