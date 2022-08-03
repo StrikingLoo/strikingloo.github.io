@@ -127,6 +127,14 @@ The author himself remarks he doesn't do this, and writes directly in the zettel
 
 -- [The Zettelkasten Method](https://www.lesswrong.com/posts/NfdHG6oHBJ8Qxc26s/the-zettelkasten-method-1) 
 
+### Interpreting Other People's Ideas when Connecting Zettels
+
+Without knowing what you're working on it's really hard for you to know why an idea is interesting to you. It has no context.
+
+The linking comes when you interpret the ideas for your own work. While you're reading you'll think "oh, this reminds me of that other idea I had about xyz." That's when you write your new zettel, interpreting the work of someone else in light of what you're working on, and link it to notes of a similar thought line already stored in your zettelkasten.
+
+Source: [Writing.Bobdoto.Computer](https://writing.bobdoto.computer/question-i-just-finished-reading-a-book-and-took-lots-of-notes-now-what)
+
 
 ## Johnny Decimal
 
