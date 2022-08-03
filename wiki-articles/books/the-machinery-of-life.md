@@ -101,4 +101,24 @@ of specialized proteins that are inserted into the membrane.
 
 **Polysaccharides**: Long chains of sugars, used by organisms to make resilient and malleable structures like cellulose (wood, paper), insect carapaces or exoskeletons (chitin), and structural material in general.
 
+## Chapter 3
+
+"To make things even more challenging, cells must also be able to make all of their component molecular machines using only the resources that are available in the local environment. Think of the magnitude of this accomplishment. Many bacteria are able to build all of their own molecules from the a few simple raw materials like carbon dioxide, oxygen, and ammonia. A single bacterial cell knows how to build several thousand types of proteins, including motors, girders, toxins, catalysts, and construction machinery. This cell also builds hundreds of RNA molecules with different orderings of nucleotides, as well as a diverse collection of lipids, sugar polymers, and a bewildering collection of exotic small molecules. All of these different molecules must be created from scratch, using only the molecules that the cell eats, drinks, and breathes."
+
+> At a rate of about 20 amino acids per second, an average protein takes about 20 seconds to build.
+
+"As with the breakdown of sugar, molecular machines perform  energetic processes in small steps. Chemical energy is obtained through reactions of single molecules. Electrochemical energy is stored by moving individual ions, light is captured one photon at a time, and electrons are moved one-by-one along a string of molecular electron carriers. This allows a level of control, and efficiency, that is rarely seen in our familiar macroscale world."
+
+## Chapter 4
+
+About E. Coli, a very common, easy to grow and fast growing bacteria that's been widely studied (with its whole genome and proteinome mapped).
+
+The outer membrane also anchors many *fimbriae*. These long, thin protein complexes are extruded piece-by-piece through special gateway proteins in
+the outer membrane. Fimbriae have sticky ends, and when the bacterium finds an amenable place to rest, they glue it in place. The type of
+fimbriae made by a particular strain is important. The fimbriae of
+pathogenic bacteria allow them to attach to human cells and resist
+attack by the cells of immune system.
+
+Many important antibiotics, such as penicillin, kill bacterial cells by attacking the enzymes that build the peptidoglycan layer. When treated with penicillin, bacterial cells lose their
+shape and ultimately explode under the osmotic pressure.
 
