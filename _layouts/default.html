@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 	<html lang="en">
 		<head>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" type="image/png" href="/potted-plant-icon.png"/>
             <title>{{ page.title }}</title>
-			
+			<link rel="canonical" href="https://strikingloo.github.io{{ page.url }}">
+			  <meta name="description" content="{% if page.description %}{{ page.description | strip | strip_newlines | truncate: 160 }}{% else %}{{ page.title }}{% endif %}">
+  			<meta property="og:site_name" content="{{ page.title }}">
+
             <!-- link rel="preconnect" href="https://fonts.googleapis.com"-->
 			<!-- link rel="preconnect" href="https://fonts.gstatic.com" crossorigin -->
             <!-- link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"-->
@@ -19,6 +23,27 @@
 
 			  gtag('config', 'UA-52642322-5');
 			</script>
+			{% if page.description %}
+			  <meta property="og:description" content="{{ page.description | strip_newlines | strip | truncate: 160 }}">
+			{% else %}
+			  <meta property="og:description" content="{{ page.title | strip_newlines | truncate: 160 }}">
+	  		{% endif %}
+	  		<meta property="og:locale" content="en_US">
+	  		{% if page.date %}
+			  <meta property="og:title" content="{{ page.title }}">
+			  <meta property="og:type" content="article">
+		  	  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+		      <meta property="article:author" content="{{ site.url }}/">
+
+		  	{% endif %}
+		  	{% if page.url == "/" %}
+  				<meta property="og:url" content="https://strikingloo.github.io">
+  			{% else %}
+  				<meta property="og:url" content="https://strikingloo.github.io{{ page.url }}">
+  			{% endif %}
+  			<meta content="index,follow" name="robots"><!-- All Search Engines -->
+  			<meta content="index,follow" name="googlebot"><!-- Google Specific -->
+
 		</head>
 		<body>
 			<nav>
