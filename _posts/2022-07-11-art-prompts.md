@@ -40,6 +40,12 @@ For example, this is a prompt that gave me very good results in Craiyon.
 
 As you can see, just appending _"\| oil painting high resolution 4k"_ will improve most of your results. You can then also add a style cue like 'Ghibli inspired', 'Giger' or 'Salvador Dali'.
 
+Other templates for future use:
+
+> Pixar style 3D render of X
+> Subdivision control mesh of X
+> award-winning, detailed photo/photograph, 4k detail
+
 ## VQVAE (EleutherAI)
 
 _Steampunk inventor's library \| Gorgeous digital painting with sober colours amazing art mesmerizing, captivating, artstation 3, cozy_
