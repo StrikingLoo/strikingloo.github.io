@@ -8,7 +8,7 @@ language: English
 importance: 6
 ---
 
-"Soonish" is a book by Zach and Kelly Weinersmith. He is the author of [SMBC comics](www.smbc-comics.com), which I read daily and love deeply.
+"Soonish" is a book by Zach and Kelly Weinersmith. He is the author of [SMBC comics](http://www.smbc-comics.com), which I read daily and love deeply.
 Each chapter deals with a piece of technology that would be disruptive if it went massive, and may come to market/existence in the near future. For each technology, they analyse what's holding it back, what its consequences could be and what makes it potentially problematic. I found the book to be very fun, a bit too shallow at times (maybe I was expecting something a little more technical) but generally a very easy and interesting read.
 
 The technologies covered include:

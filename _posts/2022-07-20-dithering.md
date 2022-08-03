@@ -42,7 +42,7 @@ A smarter approach to build a palette of k colors may have been running K-means 
 
 ### Experiments and Results
 
-As an experiment to see how fast the algorithm was and how much smaller the file could get, I ran dithering compression on this image of a red panda (source: [pixabay](pixabay.com)).
+As an experiment to see how fast the algorithm was and how much smaller the file could get, I ran dithering compression on this image of a red panda (source: [pixabay](http://pixabay.com)).
 
 ![](/resources/post_image/red-panda.jpg){: alt="" loading="lazy"}
 
