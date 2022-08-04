@@ -122,3 +122,12 @@ attack by the cells of immune system.
 Many important antibiotics, such as penicillin, kill bacterial cells by attacking the enzymes that build the peptidoglycan layer. When treated with penicillin, bacterial cells lose their
 shape and ultimately explode under the osmotic pressure.
 
+DNA polymerase adds about 800 new nucleotides every second, taking about
+50 min to duplicate the entire circle [of DNA\]. However, in a rapidly growing
+Escherichia coli culture, the cells divide every half hour. This doesn’t
+allow enough time to duplicate the entire genome of DNA before each
+division. Escherichia coli cells resolve this problem by starting new
+DNA duplications before the previous round has finished. When a
+round of duplication is completed and the two circles fall apart, each
+new circle is already about half way through the next round of replication. Bacterial cells are truly adapted to exploit their environment!
+

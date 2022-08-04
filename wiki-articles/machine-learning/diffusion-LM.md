@@ -23,11 +23,11 @@ In these experiments, text is generated directly in embedding space, allowing fo
 
 These gradual denoising steps produce a hierarchy of continuous latent representations. We find that this hierarchical and continuous latent variable enables simple, gradient-based methods to perform complex control tasks such as constraining the parse tree of a generated sequence."
 
-![](image/diffusion-lm1.png)
+![](image/diffusion-lm1.png){: alt="" loading="lazy"}
 
 The paper then does a good job of explaining [Diffusion models](/wiki-articles/machine-learning/glide).
 
-![](image/diffusion-lm2.png)
+![](image/diffusion-lm2.png){: alt="" loading="lazy"}
 
 ## Diffusion-LM: Continuous Diffusion Language Modeling
 
@@ -47,7 +47,7 @@ To make a mapper from Gaussian noise to some x<sub>0</sub>, they train a mapper 
 
 Instead of performing control directly on the discrete text, they perform control on the sequence of continuous latent variables x0:T defined by Diffusion-LM, and apply the rounding step to convert these latents into text.
 
-![](image/diffusion-lm3.png)
+![](image/diffusion-lm3.png){: alt="" loading="lazy"}
 
 They run gradient updates on a control objective with *fluency regularization*:
 
