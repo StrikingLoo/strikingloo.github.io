@@ -1,8 +1,8 @@
 :root {
-  --bkg: #FFFFFF;
-  --font-color: #000;
-  --header-anchor-color: #0C6291;
-  --anchor-hover-color: #7E1946;
+  --bkg: #FFFDFB;
+  --font-color: #24272B;
+  --header-anchor-color: #6E8DD5;
+  --anchor-hover-color: #CA7081;
   --wiki-bkg-color: #cfebfb;
   --wiki-bkg-color-hover: #E1F3FB;
 }
