@@ -11,3 +11,4 @@ Mostly used as my personal wiki, with notes from MOOCs, books and youtube videos
 
 For LaTeX enclose markdown in `{% raw %} \\\(  \\\) {% endraw %} `.
 
+Colors were selected from [Penumbra](https://github.com/nealmckee/penumbra)
