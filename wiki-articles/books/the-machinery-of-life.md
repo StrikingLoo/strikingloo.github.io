@@ -170,3 +170,43 @@ action. A constant dialogue of cytokines allows cells to discuss the
 current state of the tissue, determining if it is time to grow or time to
 rest. Cytokines are also used to warn of danger. For instance, cells
 build alpha-interferon as a warning that there may be viruses in the vicinity.
+
+Red blood cells are unselfishly dedicated to their work of
+carrying oxygen from the lungs to the tissues. In fact, they can do little
+else. Red blood cells are created from stem cells in the bone marrow.
+As they develop, they gradually shift their resources almost entirely to
+the building of hemoglobin, and allow all of their other functions to
+atrophy. The cell membrane loses much of its machinery for communication and selective transport, and is braced only by a rudimentary
+scaffolding that helps the cell hold its distinctive disk-like shape.
+Finally, the cell makes the ultimate sacrifice. It concentrates all of its
+normal molecular machinery—mitochondria, nucleus, ribosomes—
+into one corner and ejects it all from its body. The mature red blood
+cell, now a directionless automaton, is then placed into the bloodstream where it carries oxygen through the blood for about 4 months. [Kyou mo hakobu yo sanso sanso!]
+
+Instead of carrying them
+one by one inside a protein like serum albumin, they are carried in
+small globules called lipoproteins. Each lipoprotein is composed of a
+collection of fat or lipid molecules surrounded by a ring of protein.
+These lipoproteins are absorbed by cells lining the circulatory system
+and disassembled inside. **There are two major types of lipoproteins
+circulating in the blood: low-density lipoproteins (LDL) and highdensity lipoproteins (HDL).**
+
+Low-density lipoproteins are larger and
+contain more lipids, thus giving them the lower density. Both forms are
+important for the transport of cholesterol around the body. LDL,
+however, has gotten a bad reputation as ‘‘bad cholesterol,’’ since it
+has a tendency to build up on the walls of arteries that feed the heart
+and the brain, leading to atherosclerosis. High levels of HDL, on the
+other hand, appear to correlate with a reduced risk of heart disease,
+and have been dubbed ‘‘good cholesterol.’’ The exact mechanism of
+this protection is still a matter of controversy, but it may be due to the
+ability of HDL to transport of cholesterol away from plaques and back
+into storage in the liver.
+
+## Chapter 7: Life and Death
+
+> "Decay and death are an inevitable consequence of the world that we
+live in. The forces of entropy wage a slow but implacable battle of
+erosion on everything. The major discovery made by the earliest cells,
+which allows life in our world of entropy, is the ability to maintain
+order when challenged by this inevitable decay into equilibrium"
