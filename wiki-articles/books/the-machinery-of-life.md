@@ -109,7 +109,7 @@ of specialized proteins that are inserted into the membrane.
 
 "As with the breakdown of sugar, molecular machines perform  energetic processes in small steps. Chemical energy is obtained through reactions of single molecules. Electrochemical energy is stored by moving individual ions, light is captured one photon at a time, and electrons are moved one-by-one along a string of molecular electron carriers. This allows a level of control, and efficiency, that is rarely seen in our familiar macroscale world."
 
-## Chapter 4
+## Chapter 4: E. Coli
 
 About E. Coli, a very common, easy to grow and fast growing bacteria that's been widely studied (with its whole genome and proteinome mapped).
 
@@ -130,4 +130,36 @@ division. Escherichia coli cells resolve this problem by starting new
 DNA duplications before the previous round has finished. When a
 round of duplication is completed and the two circles fall apart, each
 new circle is already about half way through the next round of replication. Bacterial cells are truly adapted to exploit their environment!
+
+If oxygen is available, Escherichia coli cells use a multistep system
+very similar to our own central system of energy production. It starts
+with glycolysis, a series of 10 enzymes that take glucose and break it
+into two pieces. As with all of the cell’s chemical transformations,
+glycolysis is performed in many steps, each under careful control.
+Two of these steps are particularly energetic, and they are used to
+create two molecules of ATP. Many organisms stop at this point, using
+the ATP for energy and discarding the pieces as alcohol (this is how the
+alcohol in wine and beer is created by yeast).
+
+A bacterial cell can’t look at a distance and see what direction food lies. Instead, Escherichia coli cells use an effective combination of the swimming and tumbling properties of their flagella. Each
+cell uses an array of sensors to determine the level of food in theimmediate vicinity. Then it swims in a random direction, and measures
+the level of nutrients there. If the levels are increasing, it keeps swimming in that direction, since things are getting better. If not, the
+sensory array sends a signal to the flagellar motor, telling it to reverse
+direction. This causes the cell to tumble, picking a new (and hopefully
+better) direction to swim. [I love that bacteria basically move through gradient ascent].
+
+## Chapter 6: The Human Body
+
+This diversity creates an informational problem not encountered by
+simpler organisms. Since all of the cells in the human body are created
+from a single fertilized egg cell, the single copy of DNA from each parent
+must hold all of the information needed by every type of cell. Thus, nerve
+cells carry the information needed to build hemoglobin, and blood cells
+could conceivably make neurotransmitters. Clearly, however, this must
+not occur, or the result would be chaos. Each cell must be able to decide
+which proteins it makes and which ones it ignores, focusing on its role in
+the blood, brain or elsewhere.
+
+Structurally, there are proteins like cadherin, juntional molecules, that help cells stick together and remain fixed in tissues and organs. There are also filaments and microtubules for more complex structure, like the keratin in hair or the microtubules that make up sperm's flagella or neuron's axons.
+
 
