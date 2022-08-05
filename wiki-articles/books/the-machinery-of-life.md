@@ -131,3 +131,15 @@ DNA duplications before the previous round has finished. When a
 round of duplication is completed and the two circles fall apart, each
 new circle is already about half way through the next round of replication. Bacterial cells are truly adapted to exploit their environment!
 
+
+## Chapter 5
+
+Messages are also passed between cells in a local neighborhood
+using molecular messengers, termed cytokines. These are small proteins that are built by one cell and then dropped outside the cell. They
+diffuse to a neighbor and are captured by receptors on the cell surface.
+This triggers a signal inside the cell, causing it to take appropriate
+action. A constant dialogue of cytokines allows cells to discuss the
+current state of the tissue, determining if it is time to grow or time to
+rest. Cytokines are also used to warn of danger. For instance, cells
+build alpha-interferon as a warning that there may be viruses in the
+vicinity.
