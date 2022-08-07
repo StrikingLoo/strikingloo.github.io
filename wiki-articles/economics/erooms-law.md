@@ -3,18 +3,18 @@ layout: post
 title: "Eroom's Law - When things take a turn for the worse"
 date: 2020-12-21
 description: "Eroom's Law is an opposite of Moore's Law: discovering new medically relevant drugs tends to cost exponentially more over time. Also included: an analysis on the reasons behind this."
-tags: medicine, economy, Economics, moore's law, matters of scale, healthcare, trends
+tags: medicine, economy, Economics, moore's law, matters of scale, healthcare, trends, eroom
 language: English
 abstract: "Eroom's Law is an opposite of Moore's Law: discovering new medically relevant drugs tends to cost exponentially more over time. Also included: an analysis on the reasons behind this."
 ---
 
-Eroom’s law is the observation that **the cost of developing a new drug roughly doubled every nine years from 1950 through 2010.** All in all, it shows a roughly 80-fold decline in the productivity of drug R&D. This law is named in contrast to Moore's law of course, which states that the compute speed you can get for a fixed dollar amount doubles every 18 months.
+Eroom's law is the observation that **the cost of developing a new drug roughly doubled every nine years from 1950 through 2010.** All in all, it shows a roughly 80-fold decline in the productivity of drug R&D. This law is named in contrast to Moore's law of course, which states that the compute speed you can get for a fixed dollar amount doubles every 18 months.
 
-It’s hard to say what's worse, the staggering decline, or the fact that it went on unchecked for six decades.
+It’s hard to say what's worse, the staggering decline, or the fact that Eroom's Law went on unchecked for six decades.
 
 By 2010, the total R&D spend per drug approved was about a hundred times higher, in real dollars, than it was in 1950.
 
-Although some aspects of this disturbing trend line were known since the 1980s, Eroom’s law was formally articulated in 2012, at the tail end of the long decline, in a seminal paper published in *Nature* Reviews Drug Discovery by four co-authors led by Jack Scannell.
+Although some aspects of this disturbing trend line were known since the 1980s, Eroom's law was formally articulated in 2012, at the tail end of the long decline, in a seminal paper published in *Nature* Reviews Drug Discovery by four co-authors led by Jack Scannell.
 
 "While the financial returns on R&D may be poor, the idea that you brag about slashing R&D costs has been largely discredited. No one wants to look like Valeant."
 
