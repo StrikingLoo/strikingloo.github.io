@@ -4,6 +4,7 @@ layout: post
 tags: programming, python, image compression, image processing
 date: 2022-07-20
 importance: 6
+description: "In this post I explain Floyd–Steinberg dithering and how to create a version of an image that uses a reduced palette."
 ---
 
 Last year I took an elective on Computer Graphics ([course notes](/wiki-articles/computer-science/computer-graphics)) where I learned about OpenGL shaders, and image compression algorithms.
