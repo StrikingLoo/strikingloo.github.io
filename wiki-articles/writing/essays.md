@@ -111,3 +111,8 @@ When writing a textbook: start with the cool stuff! Explain later.
 
 ---
 
+### Advice from Monica Lent's Blogging Newsletter
+
+- Maintain an idea log
+- Determine the best medium (social media vs. search). Social media is for funny, relatable or inspirational content. Google will drive traffic to content like tutorials on how to solve a problem, and informational content.
+- Do keyword research
