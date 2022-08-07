@@ -111,8 +111,17 @@ When writing a textbook: start with the cool stuff! Explain later.
 
 ---
 
-### Advice from Monica Lent's Blogging Newsletter
+### Advice from Monica Lent's Blogging Newsletter
 
 - Maintain an idea log
 - Determine the best medium (social media vs. search). Social media is for funny, relatable or inspirational content. Google will drive traffic to content like tutorials on how to solve a problem, and informational content.
 - Do keyword research
+
+Examples of SEO catchy good titles for "React Router Typescript":
+
+- React Router with TypeScript: The Complete Guide - Completion is important!
+- How to use React Router with TypeScript - Simple and straightforward
+- Step-by-step: How to use React Router with TypeScript - Promises to approach the topic in small steps
+- Use React Router with TypeScript (2020 Guide) - Tells you the material is up-to-date
+
+She also mentions using the "keywords everywhere" chrome extension to evaluate keywords, and looking at adding about 10\~20 longtail keywords.
