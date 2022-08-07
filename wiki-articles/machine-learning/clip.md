@@ -144,6 +144,6 @@ For more reading see:
 - [Core NLP article](/wiki-articles/machine-learning/deep-learning-NLP#transformers) for an explanation on transformers.
 - [GLIDE](/wiki-articles/machine-learning/glide) for an application of CLIP in text-to-image generation (was state of the art until DALL-E 2 arrived). GLIDE uses CLIP for guided diffusion downstream.
 - [Do Transformers See like Convolutional Neural Networks?](/wiki-articles/machine-learning/transformers-see-like-cnn) for a more in-depth comparison between ViT and ResNet (and other CNNs) and their ways of modeling data.
-- See [Open CLIP](https://github.com/mlfoundations/open_clip) for an open-source implementation of CLIP you can play with.
+- See [Open CLIP](https://github.com/mlfoundations/open_clip) for an open-source CLIP model is available to play with.
 
 
