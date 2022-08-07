@@ -8,9 +8,6 @@ language: English
 abstract: ""
 ---
 
-## Resources I already read
-[DC-GAN TensorFlow tutorial (it works fine) with MNIST](https://www.tensorflow.org/tutorials/generative/dcgan)
-
 ### GAN Survey, Goodfellow 2016
 [Goodfellow GAN Survey 2016 NIPS](https://arxiv.org/pdf/1701.00160.pdf)
 
@@ -48,6 +45,7 @@ models because it can be difficult to estimate the likelihood for GANs. [Theis e
 difficulties with evaluating generative models.
 
 ## Read Later
+- [DC-GAN TensorFlow tutorial with MNIST](https://www.tensorflow.org/tutorials/generative/dcgan) for a more practical approach.
 - [Survey on Computer Vision (1 decade later)](https://www.gwern.net/docs/ai/2008-golle.pdf) 🌱
 - [Diffusion models beat GANs](https://arxiv.org/abs/2105.05233#openai) 🌱
 - [Diffusion models intro](https://yang-song.github.io/blog/2021/score/) 🌱
@@ -57,7 +55,7 @@ difficulties with evaluating generative models.
 - [Notes on GANs](http://joschu.net/docs/gan-notes.pdf) Recommended reading from the Berkeley course.🌱
 
 ### Related Reading
-
 - [TransGan](/wiki-articles/machine-learning/transGAN)
 - [Visual Transformer](/wiki-articles/machine-learning/visual-transformer)
 - [This Food Does Not Exist](https://nyx-ai.github.io/stylegan2-flax-tpu/): StyleGAN trained on TPU for food image generation. Replicate later maybe?
+- [GLIDE](/wiki-articles/machine-learning/glide) to see how diffusion models end up beating GANs in image generation, and outperform any other models in Text-To-Image.
