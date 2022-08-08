@@ -1,7 +1,5 @@
 name: Luciano Strika (@StrikingLoo)'s Personal Site
 permalink: /:title
-plugins:
-  - jekyll-toc
 
 markdown: kramdown
 kramdown:

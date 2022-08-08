@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "Text to Image Art: My Experiments with mini DALL-E"
+title: "Text to Image Art: My Experiments with mini DALL-E and other models"
+description: "I discuss how to write better prompts for dalle mini, and other models that are even better."
 date: 2022-07-11
 ---
 
-Ever since [DALL-E](https://openai.com/blog/dall-e/) came out in January 2021, or even before that with [PixelRNN](https://arxiv.org/pdf/1601.06759.pdf), I've found generative models, especially for images, amazing.
+Ever since [DALL-E](https://openai.com/blog/dall-e/) came out in January 2021, or even before that with [PixelRNN](https://arxiv.org/pdf/1601.06759.pdf), I've found generative models, especially for images, amazing. But what I was interested in was how could I write better prompts that yielded the most beautiful images?
 
 The idea of text-to-image generators like [CLIP](/wiki-articles/machine-learning/clip) or [GLIDE](/wiki-articles/machine-learning/glide) is even more astounding, and I love being able to play with them and trying to get a glimpse of the way they "perceive" textual and image inputs. I think interpretability is a very interesting field of study, and understanding a model's representations may yield ideas for better models in the future (though usually the simplest way to make a better model is training a bigger one with more compute).
 
 Giving a model a prompt to generate an image out-of becomes sort of addictive, and I've spent longer than I am proud to admit fiddling around with these. Here are some of the images I made with [EleutherAI's](https://www.eleuther.ai/) `.imagine` model (which I think is a VQVAE like DALL-E) and some I made using everyone's favorite viral text-to-image generator, [DALL-E Mini](https://huggingface.co/spaces/dalle-mini/dalle-mini) (a small open source version of DALL-E 2, a guided diffusion model with extra steps).
 
-What follow are the prompts I used for generating images, and the images I obtained. These were cherrypicked, as they were the ones I liked the most.
+What follow are a small guide on prompt engineering for dall-e mini and other text-to-image models. Then a showcase of the prompts I used for generating images, and the images I obtained. These were cherrypicked, as they were the ones I liked the most.
 
 The first batch is all made with EleutherAI's imagine model, and the second one was made with DALL-E Mini, which can be told from the screenshot's visible UI.
 
@@ -25,7 +26,7 @@ Feel free to steal any of these images and use them for anything, or share them 
 _**Update**: Besides Craiyon, I've found [Dall-E Flow](https://github.com/jina-ai/dalle-flow), a colab notebook that uses [Jina-AI](https://github.com/jina-ai/jina) to be the best tool for generating beautiful DALL-E images, and I recommend everyone to give it a spin. It's free and open source, and I'm loving it._
 
 
-### How to write prompts for DALL-E: a crash course
+### How to write prompts for DALL-E / Craiyon: a crash course
 Usually, what I do is write what I want (adjectives + nouns usually get better results than verbs or complex scenes), then append 
 - "Gorgeous/amazing/beautiful" + "digital painting/oil painting/digital art/canvas/3d render" + any of "unreal engine/unity engine"
 - Then I append "style clues" like "anime/Picasso/Giger -always good results-/Junji Ito"
@@ -34,17 +35,19 @@ Using this simple framework often gets me results close to what I want. If you h
 
 For example, this is a prompt that gave me very good results in Craiyon.
 
-'Cluttered house in the woods \| anime oil painting high resolution cottagecore ghibli inspired 4k'
+'Cluttered house in the woods \| anime oil painting high resolution cottagecore ghibli inspired 4k'
 
 ![ghibli style house in the woods by Craiyon](/resources/ai-generated-images/ghibli-house-craiyon.png){: alt="" loading="lazy"}
 
 As you can see, just appending _"\| oil painting high resolution 4k"_ will improve most of your results. You can then also add a style cue like 'Ghibli inspired', 'Giger' or 'Salvador Dali'.
 
-Other templates for future use:
+Other dalle/craiyon prompt templates for future use:
+
 
 - Pixar style 3D render of X
 - Subdivision control mesh of X
 - award-winning, detailed photo/photograph, 4k detail
+- Low-poly render of X | high resolution, 4k
 
 ## VQVAE (EleutherAI)
 
