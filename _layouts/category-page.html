@@ -9,7 +9,7 @@ layout: default
 
 </div>
         <ul class="posts">
-{% assign folder1 = site.pages | where_exp: "item" , "item.path contains page.category or item.tags contains page.category" | sort:"importance" | reverse %}
+{% assign folder1 = site.pages | where_exp: "item" , "item.path contains page.category" | sort:"importance" | reverse %}
 {% for item in folder1 %}
 {% if item.path contains 'index.md' %}
 {% else %}

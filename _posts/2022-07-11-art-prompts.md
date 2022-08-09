@@ -43,9 +43,10 @@ As you can see, just appending _"\| oil painting high resolution 4k"_ will impro
 
 Other dalle/craiyon prompt templates for future use:
 
-> Pixar style 3D render of X
-> Subdivision control mesh of X
-> X \| award-winning, detailed photo/photograph, 4k detail
+- Pixar style 3D render of X
+- Subdivision control mesh of X
+- award-winning, detailed photo/photograph, 4k detail
+- Low-poly render of X; high resolution, 4k
 
 ## VQVAE (EleutherAI)
 
