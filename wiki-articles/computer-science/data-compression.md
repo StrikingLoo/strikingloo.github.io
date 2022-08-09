@@ -36,8 +36,3 @@ It can be shown that H(s\|c) <= H(s) and the bound is only tight if context and 
 
 
 
-
-
-
-
-
