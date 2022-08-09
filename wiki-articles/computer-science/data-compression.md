@@ -9,7 +9,7 @@ tags: algorithms, compression, statistics, programming
 ---
 
 
-<https://www.cs.cmu.edu/~guyb/realworld/compression.pdf>
+['Introduction to Data Compression' by Guy E. Blelloch.](https://www.cs.cmu.edu/~guyb/realworld/compression.pdf)
 
 Compression algorithms map a message (for example, a file) to a reduced version. They are composed of a pair of encoding and decoding procedures, such that a message is compressed by the former and recovered by the latter. The process can be lossless, where the recovered message is exactly the same as before, or lossy, where a part of the message (hopefully one deemed less important) may be lost in the process.
 
@@ -28,9 +28,62 @@ It can be shown that the best compression rate possible would be using only as m
 
 There is also conditional entropy (H(s\|c)): the entropy of the distribution of p(s\|c), weighted by the distribution of c over all possible contexts and s over all possible messages.
 
-![](image/compression1.png)
+![](image/compression1.png){: loading="lazy"}
 
 It can be shown that H(s\|c) <= H(s) and the bound is only tight if context and messages are completely independent. An example of context could be the previous n pixels before the current one, or surrounding n words, etc. 
+
+### Huffman Codes
+
+Huffman codes are optimal prefix codes generated from a set of probabilities by a particular algorithm, the Huffman Coding Algorithm. 
+
+"The Huffman algorithm is very simple and is most easily described in terms of how it generates
+the prefix-code tree."
+
+```
+Start with a forest of trees, one for each message (=token). Each tree contains a single vertex with
+weight wi = pi.
+
+Repeat until only a single tree remains:
+	1) Select two trees with the lowest weight roots (w1 and w2). 
+	2) Combine them into a single tree by adding a new root with weight w1+w2,
+	 and making the two trees its children. 
+	 It does not matter which is the left or right child, 
+	 but our convention will be to put the lower weight root on the left if w1 != w2.
+
+```
+
+If I'm seeing this correctly, the most likely codes will end up nearer to the final root, and the least likely ones closer to the leaves. The algorithm is greedy in a way, as it always links the two least likely contenders until there is a single tree.
+
+"For a code of size *n* this algorithm will require *n−1* steps since every complete binary tree with
+n leaves has *n−1* internal nodes, and each step creates one internal node. If we use a priority queue
+with *O(log n)* time insertions and find-mins (e.g., a heap) the algorithm will run in *O(n log n)* time.
+The key property of Huffman codes is that they generate optimal prefix codes."
+
+Example: 
+
+```
+a .2, b .3, c .3, d .1, e .1
+
+=>
+t(d e) .2
+a .2
+
+=>
+t(a , t(d, e)) .4
+t(b, c) .6
+
+=>
+t( t(a , t(d, e)) , t(b, c) )
+```
+
+Even though all Huffman codes have the same average (minimum) length, it can be good if average message variance is also reduced (for buffering, speed guarantees, etc.). 
+
+To ensure this, a simple modification is breaking ties when picking which trees to merge using the two earliest created nodes. All leaves are assumed to have been created first. So if 3 nodes tie in weight, we join the two that were created earlier first. This way, trees diverge less from the average length.
+
+### Arithmetic Coding
+
+![](image/compression2.png){: loading="lazy"}
+![](image/compression3.png){: loading="lazy"}
 
 
 
