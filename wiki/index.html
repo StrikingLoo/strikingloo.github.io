@@ -12,7 +12,7 @@ title: Personal Wiki / Digital Garden
 <p>This is my Personal Wiki/Digital Garden. 
 
 Below is every article in this wiki. If you don't know where to start or what you're looking for, or want to know more about these notes, see the garden's <a href="/wiki-articles/navigation-guide"><b>navigation guide</b></a>.</p>
-<p>Notes importance guide: 🌱 < 🌿 < 🌲</p>
+<p>Notes importance guide: 🌱 < 🌿 < 🌻 </p>
 <div style = 'text-align:center;'>
 <!-- Html Elements for Search -->
 <input type="text" id="search-input" placeholder="Search the Wiki... (tag-based search)" style='font-size: 1.1rem;text-align:center;min-width:75%;'>
@@ -31,7 +31,7 @@ Below is every article in this wiki. If you don't know where to start or what yo
 {% else %}
 {% if item.language == 'English' %}
 <a href="{{ item.url }}" class="wiki-item" title="{{ item.description }}">
-{% if item.importance >= 7 %}🌲{% elsif item.importance >= 5 %}🌿{% else %}🌱
+{% if item.importance >= 7 %}🌻{% elsif item.importance >= 5 %}🌿{% else %}🌱
 {% endif %} {{ item.title }}</a>
 {% endif %}
 {% endif %}
