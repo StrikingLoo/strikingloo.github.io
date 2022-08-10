@@ -104,3 +104,57 @@ This can either be done by
 
 *Example* : Think of an image, where characters are channel values. The alphabet has 256 values, and since similar pixels have similar colors channels may repeat. Maybe if we combine it with run-length so it goes closer to 0? It wouldn't work with 256\^3 values for colors, I guess, since it's such a big alphabet.
 
+### Residual Coding: JPEG-Lossless (LS)
+
+In residual coding, our model outputs a guess for the correct value of the next message, and then we store only the residual (by how much we missed the mark). Hopefully the model will be good, and then the residuals will tend to gather close to 0, reducing entropy. Finally we do a pass of Huffman encoding after this step, and it's all done.
+
+For images, we typically divide them into their three channels and compress each separately (as channel values are more correlated and less varied than pixel values).
+
+**Context Coding: JBIG** is a very naive autoregressive algorithm, but only scales well to black and white (like fax) images or very low entropy greyscales (think 6 bits). Again, we output probability residuals and huffman encode them first.
+
+### Context Coding: PPM - Prediction by Partial Matching
+
+Variants of this algorithm have consistently given either the best or close to the best compression ratios recently.
+
+We keep a table of last j characters seen, for each j from 0 to k, and occurrences of next character for each (like in a markov chain model). For each character we are encoding, we output its probability given the current model and previous k characters, and then update it with the new information. However if this character has never been seen within this context, we output a probability of finding a new character (estimated as #different characters / total occurrences of this context) and move one level below in the table, to contexts of length k-1. And so on until we reach context 0, which is just individual character probabilities up to now.
+
+### Lempel-Ziv Algorithms
+
+The Lempel-Ziv algorithms code groups of characters of varying lengths by building a dictionary of previously seen strings.
+
+At the highest level the algorithms can be described as follows. *Given a position in a file,
+look through the preceeding part of the file to find the longest match to the string starting at the
+current position, and output some code that refers to that match. Now move the finger past the
+match.*
+
+This is the algorithm used in gzip, except it also includes information about probabilities for each substring.
+
+**Lempel-Ziv 77** is the one used in gzip, and it involves a sliding window.
+
+The LZ77 algorithm and its variants use a sliding window that moves along with the cursor. The
+window can be divided into two parts, the part before the cursor, called the dictionary, and the part
+starting at the cursor, called the lookahead buffer. The size of these two parts are parameters of the
+program and are fixed during execution of the algorithm. The basic algorithm is very simple, and
+loops executing the following steps:
+
+- Find the longest match of a string starting at the cursor and completely contained in the lookahead buffer to a string starting in the dictionary.
+- Output a triple *(p, n, c)* containing the position p of the occurence in the window, the length
+n of the match and the next character *c* past the match in the buffer.
+- Move the cursor n + 1 characters forward.
+
+A possible improvement is called LZSS variant, which uses two formats: if no match of length >2 is found, it turns on a bit and then outputs the character alone. Else it keeps it off. This way we avoid wasting two fields on an empty match.
+
+Gzip uses separate huffman codes for the offset, the length and the character. Each uses adaptive Huffman codes.
+
+
+
+
+
+
+
+
+
+
+
+
+
