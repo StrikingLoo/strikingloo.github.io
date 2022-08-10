@@ -146,8 +146,11 @@ A possible improvement is called LZSS variant, which uses two formats: if no mat
 
 Gzip uses separate huffman codes for the offset, the length and the character. Each uses adaptive Huffman codes.
 
+It also makes matching **non-greedy**: It tries matching the string beginning from the next character besides the current one, then if that match is longer than the greedy one, it will append a single character and the second, longer match's tuple. 
 
+Pseudocode for LZW is as follows (note that this version doesn't do LZSS, or non-greediness).
 
+![](image/compression4.png){: loading="lazy"}
 
 
 
