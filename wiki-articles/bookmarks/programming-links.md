@@ -49,5 +49,7 @@ Peruse at my leisure
 <https://github.com/evanw/webgl-water>
 
 ### Build your own X
-A collection of DIY tutorials that are project-based.
-<https://github.com/codecrafters-io/build-your-own-x>
+[A collection of DIY tutorials that are project-based.](https://github.com/codecrafters-io/build-your-own-x)
+
+### jnumpy
+[Make Python run faster using C / Julia extensions](https://github.com/Suzhou-Tongyuan/jnumpy).
