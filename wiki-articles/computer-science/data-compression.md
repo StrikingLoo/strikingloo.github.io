@@ -86,6 +86,21 @@ To ensure this, a simple modification is breaking ties when picking which trees 
 ![](image/compression3.png){: loading="lazy"}
 
 
+This method seems impractical due to floating point arithmetic's quirks.
 
+### Applications of Probability Coding
 
+The simplest message distribution model we can make is based on counting. This is unsophisticated and most likely suboptimal.
+
+More sophisticated models are used in real-world applications. All these techniques take advantage of the “context” in some way.
+
+This can either be done by
+- **Transforming the data before coding** (e.g., run-length coding, move-to-front coding, and residual coding)
+- **Directly using conditional probabilities based on a context** (JBIG and PPM).
+
+**Run Length Coding**: In this coding procedure, a sequence is coded as a sequence of tuples, repetitions where repeated symbols are summed up. E.g. aaaabb => a;4,b;2. The tuples are usually Huffman encoded later, to compress things even further.
+
+**Move-To-Front Coding**: We start with a preordered alphabet, and for each character in the message we a) shift that character to the beginning of the alphabet and b) output how many positions it moved. Hopefully the same characters tend to cluster together and therefore most times we will output small values.
+
+*Example* : Think of an image, where characters are channel values. The alphabet has 256 values, and since similar pixels have similar colors channels may repeat. Maybe if we combine it with run-length so it goes closer to 0? It wouldn't work with 256\^3 values for colors, I guess, since it's such a big alphabet.
 

@@ -34,7 +34,7 @@ To turn .enex notes from Evernote into .md files directly: [evernote2md](https:/
 ---
 
 To find all files containing a given expression. 
-``` grep -rnw '/path/to/somewhere/' -e 'pattern' ```
+```grep -rnw '/path/to/somewhere/' -e 'pattern'```
 
 ---
 
@@ -42,11 +42,11 @@ To find all files containing a given expression.
 
 To extract a tarfile:
 
-``` tar -xzf myfile.tar.gz ```
+```tar -xzf myfile.tar.gz```
 
 x for extract, z for zip, f for file. -v for verbose, is optional.
 
-``` tar -czf new_name.tar.gz source_directory ```
+```tar -czf new_name.tar.gz source_directory```
 
 c for create, z for zip, v for verbose (optional) and f for file. 
 
@@ -56,15 +56,15 @@ c for create, z for zip, v for verbose (optional) and f for file.
 
 ### Basic sed use case
 
-``` echo 'this-is-a-path' | sed 's/-/\//g' ```
+```echo 'this-is-a-path' | sed 's/-/\//g'```
 output:
-` this/is/a/path `
+`this/is/a/path`
 
 ---
 
 ### Redshift copy from S3
 
-``` 
+```
 copy $TABLE\_NAME
 from 'S3\_PATH'
 iam\_role '$iam\_role'
@@ -80,7 +80,7 @@ IGNOREHEADER 1
 ---
 
 Watch example:
-``` watch -n 10 ls -lAhF ```
+```watch -n 10 ls -lAhF ```
 
 ---
 
