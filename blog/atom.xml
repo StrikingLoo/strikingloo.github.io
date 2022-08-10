@@ -4,14 +4,14 @@ layout: feed
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-	<title>StrikingLoo's Personal Blog</title>
+	<title>StrikingLoo's Blog</title>
 	<link href="http://strikingloo.github.io/blog/atom.xml" rel="self"/>
 	<link href="http://strikingloo.github.io/blog"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<id>http://strikingloo.github.io/blog</id>
 	<author>
 		<name>Luciano Strika</name>
-		<email>admin@datastuff.tech</email>
+		<email>lucianostrika44@gmail.com</email>
 	</author>
 
 	{% for post in site.posts %}
