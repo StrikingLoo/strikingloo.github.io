@@ -290,3 +290,9 @@ through. Many are harmless, but as we grow older and older, more and
 more of them build up. If just the right combination of mutations occurs
 in a single cell, it becomes a cancer cell and grows into a tumor."
 
+### Aging
+
+One of the many mechanisms behind aging is the accumulation of dangerously reactive variants of oxygen, like superoxide and hydroxyl. Cytochrome c Oxidase is the protein which generates them when it fails in its task. It performs the last step in respiration,
+placing the electrons extracted from food molecules onto oxygen.
+
+Antioxidants help in the task of stabilizing these molecules. These include Vitamin C, A, E and others.
