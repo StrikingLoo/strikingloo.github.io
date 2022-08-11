@@ -24,6 +24,7 @@ I store every quote I found especially interesting in each book on a separate pa
 - [“The Restless Republic”, by Anna Keay](/wiki-articles/books/the-restless-republic): About Britain's Interregnum period and Oliver Cromwell, a beautiful book of history and biographies.
 - [“Soonish”, by Zach and Kelly Weinersmith](/wiki-articles/books/soonish): About technology in the frontier of knowledge.
 - [“A Short History of Nearly Everything”, by Bill Bryson](/wiki-articles/books/a-short-history-of-nearly-everything)
+- ["The Machinery of Life", by David S. Goodsell](/wiki-articles/books/the-machinery-of-life): The author depicts with vivid illustrations and detailed descriptions what the inside of a cell (either human or bacterial) looks like, and various mechanisms underpinning life. This was one of the few books on biology I've read so far.
 
 ### Big Notes (MOOCs)
 
