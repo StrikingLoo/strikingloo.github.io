@@ -6,6 +6,7 @@ tags: history, books, book, notes, RR, 17th century England, English history, Cr
 description: "Notes and excerpts from 'The Restless Republic', by Anna Keay."
 language: English
 importance: 8
+note_category: book-notes
 ---
 
 “The Restless Republic.” by Anna Keay

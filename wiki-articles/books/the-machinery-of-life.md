@@ -7,6 +7,7 @@ description: "Notes and excerpts from 'The Machinery of Life', by David S. Goods
 language: English
 importance: 7
 abstract: "These are my notes and excerpts from 'The Machinery of Life', by David S. Goodsell. This was one of the few books on biology -not my field of expertise- I read."
+note_category: book-notes
 ---
 
 *The Machinery of Life* is a short book packed full of beautiful illustrations, which I feel gave me a better intuition of what a cell looks like under a microscope than the typically simplified diagrams I would see in highschool. I loved the illustrations but the pictures of standalone proteins sometimes felt like they didn't add anything to the conversation and turned a bit repetitive. 

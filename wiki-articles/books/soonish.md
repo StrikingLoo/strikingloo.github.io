@@ -6,6 +6,7 @@ tags: science, books, book, notes, tech, biology, bce, space
 description: "Notes and excerpts from Soonish, by Zach and Kelly Weinersmith."
 language: English
 importance: 6
+note_category: book-notes
 ---
 
 "Soonish" is a book by Zach and Kelly Weinersmith. He is the author of [SMBC comics](http://www.smbc-comics.com), which I read daily and love deeply.

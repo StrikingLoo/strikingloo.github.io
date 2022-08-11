@@ -3,11 +3,17 @@ layout: default
 ---
 <h1>{{ page.title }}</h1>
 <p class="meta">{{ page.date | date_to_string }} - importance: {{ page.importance }} </p>
-
-{% if page.abstract.size > 0 %}
-<p class="abstract"> {{ page.abstract }}</p>
+{% if page.note_category.size > 0 %}
+{% if page.note_category == "book-notes" %}
+<p><i>These are literature notes that I took while I read a book. Go to <a href='/wiki-articles/books'>books I've annotated</a> to see more like it.</i></p>
 <hr/>
 {% endif %}
+{% endif %}
+{% if page.abstract.size > 0 %}
+<p class="abstract">{{ page.abstract }}</p>
+<hr/>
+{% endif %}
+
 
 <div class="post">
   {{ content | toc }}

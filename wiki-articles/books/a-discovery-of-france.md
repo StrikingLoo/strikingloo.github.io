@@ -6,6 +6,7 @@ tags: books, book, notes, France, history, geography
 description: "Notes and excerpts from 'A Discovery of France', by Graham Robb."
 language: English
 importance: 9
+note_category: book-notes
 ---
 
 I first came upon this book among [Gwern's book reviews](https://www.gwern.net/reviews/Books#the-discovery-of-france-robb-2007), and decided to give it a try since he gave it five stars. I found the first half to be very interesting, full of anecdotes and stories about France's mostly rural population, and painting a broad-stroked image of several aspects of the average French life, during medieval and mostly early modern periods. I loved that first half, and most of the quotes below come from it. I feel like I left this book with a better sense of what a peasant's life may have been like, and a lot of ideas for more vivid and accurate descriptions for D&D sessions and such. 
