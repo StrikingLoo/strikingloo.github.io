@@ -10,24 +10,24 @@ importance: 11
 
 This [personal wiki](/wiki) is first and foremost for my own personal use. A place where I collect notes, clippings and thoughts about what I read, be it papers or books.
 
-Unlike a blog, I don't usually write my opinions or present new information here. Rather, I use this site to organize what I learn and want to link to other ideas (my private notes are more of a commonplace book, for quotes, extracts and small isolated paragraphs), maintaining evergreen notes in the way of Andy Matuschak and others.
+Unlike a blog, I don't usually write my opinions or present new information here. Rather, I use this site to organize what I learn and want to link to other ideas, maintaining evergreen notes in the way of Andy Matuschak and others.
 
-Readers who wish to browse this wiki could click any random article in the base page, or use the search bar (tag-based search is implemented, but it also greps titles). 
+Readers who wish to browse this wiki could click any random article in the base page, or use the search bar (tag-based search is implemented, but it also _greps_ titles). 
 
-The reader is encouraged to message me if any doubts arose about anything in this site, if further discussion is desired or if they came upon an interesting reflection on the same topics presented here.
+The reader is encouraged to message me if any doubts arose about anything in this site, if further discussion is desired or if they have reflected on the topics presented here before.
 
 ### Book Reviews
 
-I store every quote I found especially interesting in each book on a separate page of this wiki. Here are presented the books where the notes were abundant enough to be interesting. [articles under tag : *book*. See also [books category page](/wiki-articles/books/)]
+I store every quote I found especially interesting in each book on a separate page of this wiki. Here are presented the books where the notes were abundant enough to be interesting. \[articles under tag : *book*. See also [books category page](/wiki-articles/books/).]
 
-- [“A Short History of Nearly Everything”, by Bill Bryson](/wiki-articles/books/a-short-history-of-nearly-everything)
-- [“Soonish”, by Zach and Kelly Weinersmith](/wiki-articles/books/soonish)
-- [“The Restless Republic”, by Anna Keay](/wiki-articles/books/the-restless-republic)
 - ["A Discovery of France", by Graham Robb](/wiki-articles/books/a-discovery-of-france): A book about France's rural or non-Parisian population, its history and culture. It goes from the medieval age through the early modernity up to the 19th century. This article contains my favorite quotes and the ones I found most surprising, of which there were quite a few.
+- [“The Restless Republic”, by Anna Keay](/wiki-articles/books/the-restless-republic): About Britain's Interregnum period and Oliver Cromwell, a beautiful book of history and biographies.
+- [“Soonish”, by Zach and Kelly Weinersmith](/wiki-articles/books/soonish): About technology in the frontier of knowledge.
+- [“A Short History of Nearly Everything”, by Bill Bryson](/wiki-articles/books/a-short-history-of-nearly-everything)
 
 ### Big Notes (MOOCs)
 
-Big Notes encompass multiples sources, but usually form around a MOOC and then get updated as I go through the further readings.
+Big Notes encompass multiples sources, but usually form around a MOOC and then get updated as I go through the recommended reading.
 
 - [Deep Learning for Natural Language Processing, Stanford MOOC](/wiki-articles/machine-learning/deep-learning-NLP): Covers RNNs, LSTMs, Word2Vec, BERT, Transformers.
 - [Unsupervised Learning, Berkeley MOOC](/wiki-articles/machine-learning/unsupervised-learning-berkeley): An amazing course covering different techniques of Unsupervised Deep Learning, generative models, GANs, VAEs, etc.
@@ -36,7 +36,7 @@ Big Notes encompass multiples sources, but usually form around a MOOC and then g
 
 ### Papers
 
-If I read a paper, find it interesting, and think I will want to think about it again in the future (especially if I plan on reading related papers later), I will write a summary of it and save the most important bits here. These are the papers I've read so far (mostly in the Machine Learning/Deep Learning space). [under tag: *paper*]
+If I read a paper, find it interesting, and think I will want to think about it again in the future (especially if I plan on reading related papers later), I will write a summary of it and save the most important bits here. These are the papers I've read so far (mostly in the Machine Learning/Deep Learning space). \[under tag: [paper](/tagged?q=paper) ]
 
 - [GAN Survey, Goodfellow 2016](/wiki-articles/machine-learning/GAN) : A survey on Generative Adversarial Networks by Ian Goodfellow. That article also works as a hub for GAN related articles.
 - [CLIP: Learning Transferable Visual Models From Natural Language Supervision](/wiki-articles/machine-learning/clip)
