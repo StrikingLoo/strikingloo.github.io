@@ -11,3 +11,7 @@ gem 'jekyll-toc'
 
 gem "webrick", "~> 1.7"
 gem "nokogiri", ">= 1.12.5"
+
+group :jekyll_plugins do
+  gem "jekyll-last-modified-at"
+end

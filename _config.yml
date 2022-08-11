@@ -12,3 +12,10 @@ defaults:
       path: "wiki-articles" # an empty string here means all files in the project
     values:
       importance: 5
+
+plugins:
+  - jekyll-last-modified-at
+
+# Optional. The default date format, used if none is specified in the tag.
+last-modified-at:
+    date-format: '%d-%b-%y'
