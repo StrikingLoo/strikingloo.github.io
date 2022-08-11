@@ -5,9 +5,17 @@ title: "Book Excerpts and Notes: The Machinery of Life"
 tags: books, book, notes, biology, cell biology, molecular biology, biochemistry, science
 description: "Notes and excerpts from 'The Machinery of Life', by David S. Goodsell."
 language: English
-importance: 6
-abstract: "Since I am currently reading this book, this page is still a very rough sketch and work in progress."
+importance: 7
+abstract: "These are my notes and excerpts from 'The Machinery of Life', by David S. Goodsell. This was one of the few books on biology -not my field of expertise- I read."
 ---
+
+*The Machinery of Life* is a short book packed full of beautiful illustrations, which I feel gave me a better intuition of what a cell looks like under a microscope than the typically simplified diagrams I would see in highschool. I loved the illustrations but the pictures of molecules sometimes felt like they didn't add anything to the conversation and turned a bit repetitive. 
+
+The text itself was full of interesting descriptions and explained some key mechanisms in cellular life, like protein synthesis, the actions of the immune system, and the importance of certain nutrients or proteins. I felt at times that I would've liked a more detailed explanation of some mechanisms, like with cellular death or the impact of hydroxils and superoxygen in proteins, but the book was generally satisfactory as a shallow dive into biology for someone who is not too acquainted with the field.
+
+I give it a 7/10.
+
+What follow are my notes for each chapter. They consist mostly of quotes or rephrasings of key explanations and interesting facts, in the order they were presented in the book.
 
 ## Chapter 1: Introduction
 
@@ -32,7 +40,7 @@ through the cell, will encounter almost every other molecule in a
 matter of seconds."*
 
 
-## Chapter 2
+## Chapter 2: Molecular Machines
 
 *"Modern cells use four basic plans for combining atoms to make
 molecular machines. Whereas our familiar machines are built of
@@ -101,7 +109,7 @@ of specialized proteins that are inserted into the membrane.
 
 **Polysaccharides**: Long chains of sugars, used by organisms to make resilient and malleable structures like cellulose (wood, paper), insect carapaces or exoskeletons (chitin), and structural material in general.
 
-## Chapter 3
+## Chapter 3: The Processes of Living
 
 "To make things even more challenging, cells must also be able to make all of their component molecular machines using only the resources that are available in the local environment. Think of the magnitude of this accomplishment. Many bacteria are able to build all of their own molecules from the a few simple raw materials like carbon dioxide, oxygen, and ammonia. A single bacterial cell knows how to build several thousand types of proteins, including motors, girders, toxins, catalysts, and construction machinery. This cell also builds hundreds of RNA molecules with different orderings of nucleotides, as well as a diverse collection of lipids, sugar polymers, and a bewildering collection of exotic small molecules. All of these different molecules must be created from scratch, using only the molecules that the cell eats, drinks, and breathes."
 
@@ -296,3 +304,69 @@ One of the many mechanisms behind aging is the accumulation of dangerously react
 placing the electrons extracted from food molecules onto oxygen.
 
 Antioxidants help in the task of stabilizing these molecules. These include Vitamin C, A, E and others.
+
+## Chapter 8: Viruses
+
+"Viruses are completely selfish. They break into cells, overpower
+their normal functioning, and coerce them to one task: the production
+of more viruses."
+
+Viruses have a particularly simple way of creating new viruses, a
+way that requires only a minimal investment of molecular machinery.
+All they need to do is get a copy of a viral messenger RNA into a cell.
+This messenger RNA encodes all of the proteins needed to manufacture and assemble the component parts of the virus.
+
+Poliovirus and
+rhinovirus take a shortcut and avoid DNA altogether. They inject a
+viral RNA into the cell, which contains instructions for making a special
+RNA-dependent RNA polymerase. This viral polymerase builds RNA
+strands using the viral RNA strand as the template. Thus, they don’t
+need DNA at all—the viral RNA is copied directly to make more viral
+RNA. 
+
+The genomes of the poliovirus and rhinovirus are so small that only
+a few proteins may be encoded. 
+
+These include 
+- four proteins that together make up the capsid
+- two proteases that cut the viral proteins into the proper lengths
+- a special RNA-dependent RNA polymerase that makes new RNA strands based on the viral RNA
+- a few small proteins to assist the process. 
+
+The virus finds a target cell through receptors in its capsid, then injects its RNA.
+
+Once the RNA is inside, the cell’s own ribosomes translate the RNA
+into a long polyprotein. This polyprotein is composed of all the viral
+proteins, strung together like a string of beads. The two proteases then
+cut themselves out of the polyprotein, and proceed to cut the rest of the
+proteins apart. Then, the major activity begins.
+
+The new viral polymerase quickly begins making new copies of the
+viral RNA, using the cell’s reservoir of nucleotides. 
+
+One of the viral proteases seeks out
+a particular initiation factor used by the cell, and cuts it in half. This
+initiation factor is essential for protein synthesis with the cell’s own
+messenger RNA, so all normal protein synthesis stops.
+
+new
+viruses spontaneously begin to assemble. Each one contains a new
+RNA molecule packaged in a coat of newly built proteins.
+
+Finally, the cell
+ruptures and new viruses swarm out to infect other cells, and the cycle
+begins again, leaving behind all polymerase.
+
+## Chapter 9: You and your Molecules
+
+> Vitamin D is formed from cholesterol in a reaction that
+requires ultraviolet light.
+
+Since it binds
+so tightly, carbon monoxide is difficult to remove from poisoned
+blood. An hour of breathing pure oxygen will reduce the level of
+bound carbon monoxide by only one half. Cyanide also binds similarly to oxygen, this time to oxigenase, preventing cellular respiration.
+
+
+
+
