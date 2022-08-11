@@ -148,7 +148,7 @@ sensory array sends a signal to the flagellar motor, telling it to reverse
 direction. This causes the cell to tumble, picking a new (and hopefully
 better) direction to swim. [I love that bacteria basically move through gradient ascent].
 
-## Chapter 6: The Human Body
+## Chapter 6: The Human Body
 
 This diversity creates an informational problem not encountered by
 simpler organisms. Since all of the cells in the human body are created
@@ -203,10 +203,90 @@ this protection is still a matter of controversy, but it may be due to the
 ability of HDL to transport of cholesterol away from plaques and back
 into storage in the liver.
 
-## Chapter 7: Life and Death
+## Chapter 7: Life and Death
 
 > "Decay and death are an inevitable consequence of the world that we
 live in. The forces of entropy wage a slow but implacable battle of
 erosion on everything. The major discovery made by the earliest cells,
 which allows life in our world of entropy, is the ability to maintain
 order when challenged by this inevitable decay into equilibrium"
+
+### Ubiquitin and the Proteasome
+
+Proteasomes are voracious protein
+shredders, but the protein-cutting machinery is carefully hidden
+away inside a barrel-shaped structure. So, the proteasome is able
+to wander freely inside the cell, and only the proper proteins are
+fed into its hungry maw.
+
+The small protein ubiquitin plays a central role in this
+process. It is attached to old proteins, signaling to the cell that they are
+ready to be disassembled and recycled. The tricky part of this process is
+making sure that ubiquitin is only attached to the proper proteins.
+
+### Repairing DNA
+
+DNA is damaged by UV rays, gamma rays and others. Even by unstable oxigen molecules.
+
+Homologous recombination is the primary method for repairing
+breaks in the DNA. It relies on the fact that each cell carries a duplicate
+set of DNA. The break is repaired by using the duplicate set as a
+template to match and connect the broken strands. The central step
+of the process is called synapsis, where the two homologous strands—
+the damaged one and the undamaged template—are brought together
+in perfect alignment.
+
+This amazing
+process is performed in our cells by the protein Rad51.
+
+### Telomeres 
+As cells divide, the DNA copy process can potentially be corrupted, and data is not copied to the end. Many bacteria combat this problem by getting rid
+of the ends entirely: they close their DNA into a big circle. Our cells,
+however, contain 46 linear strands, each with two ends that must be
+protected.
+
+To solve this problem, our DNA strands have a special nucleotide
+sequence at each end, called a telomere. The telomere is composed of
+the sequence GGGTTA repeated over and over, about a thousand
+times in a row. After division, a random amount of telomeres may be lost. Then the enzyme telomerase binds to the telomere, and using its own internal RNA template, it extends the telomere with new copies of the repeated sequence.
+
+Embryonic cells and stem cells, like the ones that continually produce blood cells throughout our lives, have an active telomerase that protects their DNA during replication. However, most of our cells have turned off their ability to extend telomeres. 
+
+This may help protect us from cancer, as normal cells then can only divide about 60 times before irrepairable damage occurs and the cell dies, preventing unchecked growth.
+
+### Programmed Cell Death
+
+The process of  programmed cell death or apoptosis, allows the cell to disassemble itself in an orderly fashion and notify the immune system that it
+is ready to be recycled. 
+
+Cells trigger apoptosis for many different reasons. 
+- If they are damaged --for instance, if the DNA is broken in many places or if the cell is infected with a virus.
+- It is also important in development. For instance, our toes
+were created when we were still embryos through programmed
+cell death: **a flat flipper-like appendage is created first, then small patches of cells died cleanly to separate the toes.**
+
+> Programmed cell death also plays an important role in protecting us from cancer, since cells that show abnormal growth are usually forced to die.
+
+### Cancer
+
+In cancer, a cell grows aberrantly, and may even hijack the signaling processes to make neighboring cells give out resources, or even direct tissue to create blood vessels that direct nutrients to cancer tissue.
+
+This happens when some key mutations take place simultaneously.
+
+"For instance, one of the central oncogenes in
+many cancer cells is a mutation in the p53 tumor suppressor protein. It
+normally watches the cell for damage to the DNA and other changes that
+might lead to aberrant growth. If it finds damage, it can freeze the
+division of cells or even cause programmed cell death. Many cancer
+cells, however, have a mutated form of p53 tumor suppressor that is no
+longer effective, so the cancer is free to grow without control."
+
+"We start out life with a clean set of genes, all of which support the
+normal growth and maintenance of tissues. As we grow older, however,
+our genes are continually attacked by sunlight and chemicals, causing
+mutations at random places in the DNA. As described above, many of
+these mutations are corrected by our repair mechanisms, but some slip
+through. Many are harmless, but as we grow older and older, more and
+more of them build up. If just the right combination of mutations occurs
+in a single cell, it becomes a cancer cell and grows into a tumor."
+
