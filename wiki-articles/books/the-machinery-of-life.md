@@ -9,7 +9,7 @@ importance: 7
 abstract: "These are my notes and excerpts from 'The Machinery of Life', by David S. Goodsell. This was one of the few books on biology -not my field of expertise- I read."
 ---
 
-*The Machinery of Life* is a short book packed full of beautiful illustrations, which I feel gave me a better intuition of what a cell looks like under a microscope than the typically simplified diagrams I would see in highschool. I loved the illustrations but the pictures of molecules sometimes felt like they didn't add anything to the conversation and turned a bit repetitive. 
+*The Machinery of Life* is a short book packed full of beautiful illustrations, which I feel gave me a better intuition of what a cell looks like under a microscope than the typically simplified diagrams I would see in highschool. I loved the illustrations but the pictures of standalone proteins sometimes felt like they didn't add anything to the conversation and turned a bit repetitive. 
 
 The text itself was full of interesting descriptions and explained some key mechanisms in cellular life, like protein synthesis, the actions of the immune system, and the importance of certain nutrients or proteins. I felt at times that I would've liked a more detailed explanation of some mechanisms, like with cellular death or the impact of hydroxils and superoxygen in proteins, but the book was generally satisfactory as a shallow dive into biology for someone who is not too acquainted with the field.
 
@@ -19,7 +19,7 @@ What follow are my notes for each chapter. They consist mostly of quotes or reph
 
 ## Chapter 1: Introduction
 
-The last joint in your finger is about 1000 cells long. A similar proportion to how many grains of rice fit in a room. The same way, the quantity of proteins that fit in a cell is also around 1M.
+The last joint in your finger is about 1000 cells long. A similar proportion to how many grains of rice fit accross the side of a room. The same way, the quantity of proteins that fit in a cell is also around 1M.
 
 However, a protein moves through a cell (in a completely random walk) at about a million times its own length every second.
 
