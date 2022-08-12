@@ -3,8 +3,8 @@ title: "Making Notes Work for Me: Reflections after 2 Years of Digital Gardening
 layout: post
 tags: note making, note taking, notes, digital garden, personal wiki, archiving
 date: 2022-08-12
-importance: 6
-description: "My thoughts on note taking, personal wikis, digital gardens and zettelkastens"
+importance: 8
+description: "My thoughts on note taking, personal wikis, digital gardens and zettelkastens."
 ---
 
 I have been maintaining a Personal Wiki / Digital Garden for two years. Throughout all this time, I've reflected a lot on how I keep my notes, why I do it and what I get from doing it. Here is what I have learned.
@@ -85,3 +85,11 @@ There's something very rewarding to being asked for advice or how to solve an is
 All in all, I think most knowledge workers and scholars should take notes in the way that best suits them, and that this space deserves [lots of experimentation](https://numinous.productions/ttft/), especially on an individual level to see what works for each person.
 
 _If you liked this post, please let me know by upvoting on HackerNews or sharing on Tweeter/Reddit! Knowing people read me is my biggest driver for writing more._
+
+### Related Reading
+
+- [How Can We Develop Transformative Tools for Thought?](https://numinous.productions/ttft/)
+- [The Age of the Essay](http://paulgraham.com/essay.html)
+- [About this Website - Gwern](https://www.gwern.net/About) (definitely an inspiration for my wiki)
+- [My blog is a digital garden, not a blog](https://joelhooks.com/digital-garden)
+- [A Brief History & Ethos of the Digital Garden - Maggie Appleton](https://maggieappleton.com/garden-history)
