@@ -20,7 +20,9 @@ What follow are my notes for each chapter. They consist mostly of quotes or reph
 
 ## Chapter 1: Introduction
 
-The last joint in your finger is about 1000 cells long. A similar proportion to how many grains of rice fit accross the side of a room. The same way, the quantity of proteins that fit in a cell is also around 1M.
+The last joint in your finger is about 1000 cells long. A similar proportion to how many grains of rice fit accross the side of a room --you could say a room is 1000 rice grains long. The same way, the quantity of proteins that fit in a cell is also around 1 billion -1000 proteins long, 1000 wide, 1000 tall-.
+
+> A cell full of proteins is like a room full of rice.
 
 However, a protein moves through a cell (in a completely random walk) at about a million times its own length every second.
 
@@ -367,7 +369,6 @@ Since it binds
 so tightly, carbon monoxide is difficult to remove from poisoned
 blood. An hour of breathing pure oxygen will reduce the level of
 bound carbon monoxide by only one half. Cyanide also binds similarly to oxygen, this time to oxigenase, preventing cellular respiration.
-
 
 
 
