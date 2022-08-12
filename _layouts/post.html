@@ -3,17 +3,11 @@ layout: default
 ---
 <h1>{{ page.title }}</h1>
 <p class="meta">{{ page.date | date_to_string }} - importance: {{ page.importance }} </p>
-{% if page.note_category.size > 0 %}
-{% if page.note_category == "book-notes" %}
-<p><i>These are literature notes that I took while I read a book. Go to <a href='/wiki-articles/books'>books I've annotated</a> to see more like it.</i></p>
-<hr/>
-{% endif %}
-{% endif %}
-{% if page.abstract.size > 0 %}
-<p class="abstract">{{ page.abstract }}</p>
-<hr/>
-{% endif %}
 
+{% if page.abstract.size > 0 %}
+<p class="abstract"> {{ page.abstract }}</p>
+<hr/>
+{% endif %}
 
 <div class="post">
   {{ content | toc }}
@@ -21,9 +15,7 @@ layout: default
 <div class="backButton">
 <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url=https://strikingloo.github.io{{ page.url }}%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis'><i class="fab fa-twitter"></i>[Tweet this!]</a>
 <br/>
-<a href="/wiki-articles/navigation-guide?utm_medium=tocButton" id='tocButton'><i class="fa fa-map-signs" aria-hidden="true"></i>[Contents]</a>
-<br/>
-<a href="/wiki?utm_medium=backButton" id='backToWiki'><-[Back to wiki]</a>
+<a href="/wiki?utm_medium=backButton" id='backToWiki'>[<- Back to wiki]</a>
 </div>
 
 <script>
@@ -36,7 +28,6 @@ var windowWidth = window.innerWidth;
 var maxDeviceWidth = 768;
 if (windowWidth < maxDeviceWidth) {
 	document.getElementById('tweetThis').innerHTML=`[<i class="fab fa-twitter"></i>]`
-  document.getElementById('tocButton').innerHTML=`[<i class="fa fa-map-signs" aria-hidden="true"></i>]`
 	document.getElementById('backToWiki').innerHTML=`[<i class="fa fa-arrow-left"></i>]`
 }
 
@@ -46,4 +37,8 @@ if (windowWidth < maxDeviceWidth) {
 <meta name="twitter:site" content="@StrikingLoo" />
 <meta name="twitter:title" content="{{ page.title }}" />
 <meta name="twitter:description" content="{{ page.description }}" />
+{% if page.twitter_image.size > 0 %}
+<meta name="twitter:image:src" content="{{ page.twitter_image }}" />
+{% else %}
 <meta name="twitter:image:src" content="https://strikingloo.github.io/resources/potted-tree.png" />
+{% endif %}
