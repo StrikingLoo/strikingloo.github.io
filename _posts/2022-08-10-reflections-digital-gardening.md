@@ -10,9 +10,9 @@ twitter_image: "https://strikingloo.github.io/resources/post_image/pathway.jpg"
 
 I have been maintaining a Personal Wiki / Digital Garden for two years. Throughout all this time, I've reflected a lot on how I keep my notes, why I do it and what I get from doing it. Here is what I have learned.
 
-To save you time, I will start by stating my conclusion. It could be summarized as: Keeping notes is great, definitely do it. Maybe use a personal wiki?
+To save you time, I will start by stating my conclusion. It could be summarized as: **Keeping notes is great, definitely do it. Maybe use a personal wiki?**
 
-Before I started running this site, I basically kept no notes, except the odd random paper scribble, unless it was for college related things. Even then, I just wrote things down on a notebook, never to be seen 6 months later. 
+Before I started running this site, I basically kept no notes, except the odd random paper scribble, unless it was for college related things. Even then, I just wrote things down on a notebook, never to be seen again. 
 
 I was already using [Spaced Repetition systems](/wiki-articles/information-storage/anki) for language learning, but I wasn't that deliberate about my memory in other areas of my life like programming.
 
@@ -26,7 +26,7 @@ It's a lot easier to prepare for an exam when you have all of the relevant knowl
 
 As for search, my criteria for adding things to my wiki is usually "will I want to review this fact in the future eventually, and will I have probably forgotten it if I don't write it down?"
 
-That is why most of my notes are either literature notes or paper summaries: I mostly find myself going back to impressing facts I read, or wanting to recall that pesky equation from that one diffusion paper I read 6 months ago and can't quite put my finger on. In those cases, having all that information in a single place has been a life-saver. The same goes for remembering the exact flags of a bash command, or a few useful bookmarks.
+That is why most of my notes are either literature notes or paper summaries: I mostly find myself going back to impressing facts I read, or wanting to recall that pesky equation from that one diffusion paper I read and can't quite put my finger on. In those cases, having all that information in a single place has been a life-saver. The same goes for remembering the exact flags of a bash command, or a few useful bookmarks.
 
 ## How I set up my personal wiki
 
@@ -49,7 +49,12 @@ The features I added to the site over time were:
 - **Importance scores** for the articles in my wiki. This was mostly for other readers, as I am pretty aware of what's going on with each article, but I like making things more transparent for others. They mostly reflect how polished or relevant an article is.
 - **Category pages** and **support for mathematical notation**. These two weren't that hard, but importing MathJax into my workflow made for much sleeker interfaces when writing down equations from papers or textbooks. I was getting very tired of "\<sub\>" HTML tags and writing greek letters by hand. With MathJax you basically get LaTeX support for HTML.
 
-If you want to start your own personal wiki, I recommend you head over to [Tom Critchlow's guide](https://tomcritchlow.com/2019/02/17/building-digital-garden/), or you can just fork [this site's Github repository](https://github.com/StrikingLoo/strikingloo.github.io) and host it in a free GitHub page (you can customize the CSS!). 
+### Starting Your Own Personal Wiki
+
+If you want to start your own personal wiki, I recommend you head over to [Tom Critchlow's guide](https://tomcritchlow.com/2019/02/17/building-digital-garden/) for a step by step on setting up a jekyll static web site where each markdown file is a note. 
+You can alternatively fork [this site's Github repository](https://github.com/StrikingLoo/strikingloo.github.io) and host it in a free GitHub page (you can customize the CSS!), following the instructions on the README to build your own wiki. 
+
+Either way, it's about one afternoon's work if you're not too picky with the design (or a potentially infinite time sink otherwise).
 
 ## How I take notes
 
@@ -89,8 +94,8 @@ _If you liked this post, please let me know by upvoting on HackerNews or sharing
 
 ### Related Reading
 
-- [How Can We Develop Transformative Tools for Thought?](https://numinous.productions/ttft/)
-- [The Age of the Essay](http://paulgraham.com/essay.html)
-- [About this Website - Gwern](https://www.gwern.net/About) (definitely an inspiration for my wiki)
-- [My blog is a digital garden, not a blog](https://joelhooks.com/digital-garden)
-- [A Brief History & Ethos of the Digital Garden - Maggie Appleton](https://maggieappleton.com/garden-history)
+- [How Can We Develop Transformative Tools for Thought?](https://numinous.productions/ttft/): A very good long form essay about tools that help us think. Much of the current craze around personal wikis or digital gardens originated here, and it's also a very entertaining read (if you're the kind of person who finds this sort of content fun).
+- [The Age of the Essay](http://paulgraham.com/essay.html): A great essay by Paul Graham on the history of the essay, and general writing tips. It touches on how writing helps us think.
+- [My blog is a digital garden, not a blog](https://joelhooks.com/digital-garden): One of the original essays that started the digital garden movement. A call to go back to the Old Ways of the web, do away with timelines (the stream) and move back to evergreen pages that are continually being tended.
+- [A Brief History & Ethos of the Digital Garden - Maggie Appleton](https://maggieappleton.com/garden-history): A great summary of the Digital Garden movement with beautiful illustrations.
+- [About this Website - Gwern](https://www.gwern.net/About): Definitely an inspiration for my wiki.
