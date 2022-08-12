@@ -17,7 +17,7 @@ I was already using [Spaced Repetition systems](/wiki-articles/information-stora
 
 In the time since I set up [this site's wiki](/wiki), I finished my degree in Computer Science, and also aced a few key interviews. I am not saying my successes were completely or even mainly dependent on note-taking, but they definitely helped with my final exams. So after hitting the 80 notes benchmark, I thought I would write this post as a way to look back and do a little retro.
 
-![](/resources/post_image/pathway.jpg)
+![](/resources/post_image/pathway.jpg){: loading="lazy"}
 
 I would say the main advantages of note taking, to me at least, have been in improving my search capabilities over my own memory (a filesystem definitely beats a chunk of electric meat), and helping me be more organized and procrastinate less.
 
@@ -35,22 +35,22 @@ Every wiki article is a single markdown, rendered by jekyll as an HTML, and the 
 
 This is what my personal wiki looked like initially:
 
-![](/resources/post_image/screenshot1.png)
+![](/resources/post_image/screenshot1.png){: loading="lazy"}
 
 Notice the monochromatic, very rustic design compared to what it is now. And this what it looked after my first round of modifications:
 
-![](/resources/post_image/screenshot2.png)
+![](/resources/post_image/screenshot2.png){: loading="lazy"}
 
-/* add more description \*/
+I was very married to the idea of a "cloud of ideas", but I think the file names weren't descriptive enough and anone besides me who entered that site would not have known where to click at all. Even now I'm not sure how to present the wiki's articles to make them more appealing, as design is not my strong point.
 
 The features I added to the site over time were:
 - **Search** which I implemented based on tags and also matching queries to titles. This was very easy to set up by making a big JSON which has each article's metadata (title, tags, description, abstract).
 - **Importance scores** for the articles in my wiki. This was mostly for other readers, as I am pretty aware of what's going on with each article, but I like making things more transparent for others. They mostly reflect how polished or relevant an article is.
 - **Category pages** and **support for mathematical notation**. These two weren't that hard, but importing MathJax into my workflow made for much sleeker interfaces when writing down equations from papers or textbooks. I was getting very tired of "\<sub\>" HTML tags and writing greek letters by hand. With MathJax you basically get LaTeX support for HTML.
 
-If you want to start your own personal wiki, I recommend you head over to [Tom Critchlow's guide](https://tomcritchlow.com/2019/02/17/building-digital-garden/), or you can just fork [this site's Github repository](https://github.com/StrikingLoo/strikingloo.github.io) and host it in a free GitHub page. 
+If you want to start your own personal wiki, I recommend you head over to [Tom Critchlow's guide](https://tomcritchlow.com/2019/02/17/building-digital-garden/), or you can just fork [this site's Github repository](https://github.com/StrikingLoo/strikingloo.github.io) and host it in a free GitHub page (you can customize the CSS!). 
 
-## How I take notes
+## How I take notes
 
 I have spent more time than I am proud of reading articles about the ZettelKasten Method, posts in the zettelkasten forum and subreddit, and browsing other peoples Digital Gardens from [Maggie Appleton's Digital Gardeners Repo](https://github.com/MaggieAppleton/digital-gardeners) for inspiration (or, calling it like it is, procrastination). 
 
