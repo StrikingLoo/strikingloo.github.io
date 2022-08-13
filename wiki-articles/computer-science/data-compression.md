@@ -152,12 +152,6 @@ Pseudocode for LZW is as follows (note that this version doesn't do LZSS, or non
 
 ![](image/compression4.png){: loading="lazy"}
 
-
-
-
-
-
-
-
+The dictionary operations can be implemented very efficiently using a trie, or just a hash table for each prefix if memory is an issue (which happens quick as the trie grows in memory exponentially in the key length -with a base proportional to alphabet size-, and keys can get long).
 
 
