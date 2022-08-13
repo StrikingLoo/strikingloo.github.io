@@ -26,7 +26,13 @@ It's a lot easier to prepare for an exam when you have all of the relevant knowl
 
 As for search, my criteria for adding things to my wiki is usually "will I want to review this fact in the future eventually, and will I have probably forgotten it if I don't write it down?"
 
-That is why most of my notes are either literature notes or paper summaries: I mostly find myself going back to impressing facts I read, or wanting to recall that pesky equation from that one diffusion paper I read and can't quite put my finger on. In those cases, having all that information in a single place has been a life-saver. The same goes for remembering the exact flags of a bash command, or a few useful bookmarks.
+That is why most of my notes are either **literature notes or paper summaries**: I mostly find myself going back to impressing facts I read, or wanting to recall that pesky equation from that one diffusion paper I read and can't quite put my finger on. In those cases, having all that information in a single place has been a life-saver. The same goes for remembering the exact flags of a bash command, or a few useful bookmarks.
+
+There is also the benefit of being able to read all the sections and paragraphs I highlighted from a book right after finishing it. Being able to do a 'flash review' of all the relevant contents helps me tie the introductory ideas to the more advanced concepts presented later on. 
+
+This first review session also doubles as my polishing phase, where I take a raw note and edit it into something less context-dependent (each section should be understandable even if you haven't read the book) and ideally succint, clear and relevant.
+
+**Many powerful insights about a topic come not when reading a textbook for the first time, but when I review the main concepts later.** This shouldn't be too surprising, I guess, but it's still a benefit worth mentioning.
 
 ## How I set up my personal wiki
 
@@ -74,7 +80,9 @@ I'm not saying it's better, it just works better for me. I'd rather be able to r
 
 I think if I was more writing or content-generation oriented instead of writing notes for future search, making more atomic notes and linking them could be better, but then each note itself would be further from being an essay.
 
-I mostly write the notes as I go, for instance by rephrasing an interesting paragraph from a paper just after I read it, or summarizing a book one chapter at a time. Whenever I copy or restate a point from an essay or blog post, I add a link to it as a source. If an idea relates relevantly to a different note and I think the connection is worth expanding upon, I will link to it, but also if I think I will want to have the other note on hand when reading this one.
+I mostly write the notes as I go, for instance by rephrasing an interesting paragraph from a paper just after I read it, or summarizing a book one chapter at a time. Whenever I copy or restate a point from an essay or blog post, I add a link to it as a source. If an idea relates relevantly to a different note and I think the connection is worth expanding upon, I will link to it, but also if I think I will want to have the other note on hand when reading this one. 
+
+The fact that I do most of my reading in a digital format helps a lot with this workflow, and I usually paste quotes into a telegram chat or similar dumping ground if I'm on mobile before doing the final editing from my PC. For physical books, I guess I would mark pages and then find the PDF online to transcribe highlights, but I don't really do this.
 
 ## Conclusions
 
