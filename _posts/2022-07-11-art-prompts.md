@@ -41,12 +41,15 @@ For example, this is a prompt that gave me very good results in Craiyon.
 
 As you can see, just appending _"\| oil painting high resolution 4k"_ will improve most of your results. You can then also add a style cue like 'Ghibli inspired', 'Giger' or 'Salvador Dali'.
 
-Other dalle/craiyon prompt templates for future use:
+Other DALL-E/craiyon prompt templates for future use:
 
 - Pixar style 3D render of X
 - Subdivision control mesh of X
-- award-winning, detailed photo/photograph, 4k detail
+- A photograph of X, 4k, detailed
 - Low-poly render of X; high resolution, 4k
+- A digital illustration of X, 4k, detailed, trending in artstation, fantasy vivid colors
+
+That last one has worked very well for me for almost any prompt that describes a simple static scene (like houses, cities, landscapes or interiors) or a single humanoid/animal/plant. You can append styles to these in the end too (Eldritch, disco, lo-fi, etc.).
 
 ## VQVAE (EleutherAI)
 
