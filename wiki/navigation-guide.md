@@ -22,7 +22,7 @@ The notes in the Garden are divided into certain kinds, and the following are th
 
 ## Book Reviews
 
-I store every quote I found especially interesting in each book on a separate page of this wiki. Here are presented the books where the notes were abundant enough to be interesting. \[articles under tag : *book*. See also [books category page](/wiki/).]
+I store every quote I found especially interesting in each book on a separate page of this wiki. Here are presented the books where the notes were abundant enough to be interesting. \[articles under tag : *book*. See also [books category page](/tagged?q=books).]
 
 - **["A Discovery of France", by Graham Robb](/wiki/a-discovery-of-france)**: A book about France's rural or non-Parisian population, its history and culture. It goes from the medieval age through the early modernity up to the 19th century. This article contains my favorite quotes and the ones I found most surprising, of which there were quite a few.
 - **[“The Restless Republic”, by Anna Keay](/wiki/the-restless-republic)**: About Britain's Interregnum period and Oliver Cromwell, a beautiful book of history and biographies.
