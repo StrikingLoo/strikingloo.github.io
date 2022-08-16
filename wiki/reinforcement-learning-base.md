@@ -28,8 +28,8 @@ For example [AlphaGo](https://deepmind.com/alpha-go)[🌱] first uses supervised
 
 ## Additional Reading:
 
-- [Richard Sutton’s book](http://incompleteideas.net/book/RLbook2020.pdf)[🌿]: I finished this book and found it extremely clear, entertaining and illuminating. Probably the book that taught me the most in a while, and one of my favorite reads in 2022. Spawned my [notes on Sutton's Reinforcement Learning book](/wiki-articles/machine-learning/reinforcement-learning-sutton).
-- [My notes on Proximal Policy Optimization](/wiki-articles/machine-learning/proximal-policy-optimization)[🌿]: The current state of the art in Reinforcement Learning, developed by OpenAI, consisting of policy gradient + regularization that limits how much the policy can vary from epoch to epoch.
+- [Richard Sutton’s book](http://incompleteideas.net/book/RLbook2020.pdf)[🌿]: I finished this book and found it extremely clear, entertaining and illuminating. Probably the book that taught me the most in a while, and one of my favorite reads in 2022. Spawned my [notes on Sutton's Reinforcement Learning book](/wiki/reinforcement-learning-sutton).
+- [My notes on Proximal Policy Optimization](/wiki/proximal-policy-optimization)[🌿]: The current state of the art in Reinforcement Learning, developed by OpenAI, consisting of policy gradient + regularization that limits how much the policy can vary from epoch to epoch.
 - [David Silver’s course](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)[🌱]
 - [John Schulmann’s lectures](https://www.youtube.com/watch?v=oPGVsoBonLM)[🌱]
 - [Building Machines That Learn and Think Like People](https://arxiv.org/abs/1604.00289)[🌱]

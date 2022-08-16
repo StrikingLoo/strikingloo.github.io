@@ -70,4 +70,4 @@ To assign a cluster to a new instance, you may take the closest k-neighbors to i
 
 ## See also
 
-- [Deep Unsupervised Learning](/wiki-articles/machine-learning/unsupervised-learning-berkeley)
+- [Deep Unsupervised Learning](/wiki/unsupervised-learning-berkeley)

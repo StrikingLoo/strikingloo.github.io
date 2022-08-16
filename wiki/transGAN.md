@@ -32,6 +32,6 @@ After that, the learnable positional encoding is added and a \[cls] token is app
 
 ### Related Reading
 
-- My notes on [Deep Learning with NLP: Transformers](/wiki-articles/machine-learning/deep-learning-NLP#transformers)
-- On the "Transformers for Everything" theme: [Do Transformers See Like Convolutional Neural Networks?](/wiki-articles/machine-learning/transformers-see-like-cnn), [ViT: Transformers for Image Recognition at Scale](/wiki-articles/machine-learning/visual-transformer).
-- See also my [notes on GANs](/wiki-articles/machine-learning/GAN), where I summarize Goodfellow's survey of the field.
+- My notes on [Deep Learning with NLP: Transformers](/wiki/deep-learning-NLP#transformers)
+- On the "Transformers for Everything" theme: [Do Transformers See Like Convolutional Neural Networks?](/wiki/visual-transformer).
+- See also my [notes on GANs](/wiki/GAN), where I summarize Goodfellow's survey of the field.

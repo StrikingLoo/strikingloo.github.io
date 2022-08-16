@@ -29,4 +29,4 @@ All this means that **we still have more questions than answers about how BERT a
 
 ### See Also
 
-- [Deep Learning for NLP](/wiki-articles/machine-learning/deep-learning-NLP)
+- [Deep Learning for NLP](/wiki/deep-learning-NLP)

@@ -194,7 +194,7 @@ In my case, these are things like the following:
 
 
 ## P.A.R.A Methodology
-"The four top-level categories of P.A.R.A. — Projects, Areas, Resources, and Archives — are designed to facilitate this process of forwarding knowledge through time.
+"The four top-level categories of P.A.R.A. — Projects, Areas, Resources, and Archives — are designed to facilitate this process of forwarding knowledge through time.
 
 - By placing a note in a project folder, you are essentially scheduling it for review on the short time horizon of an individual project.
 - Notes in area folders are scheduled for less frequent review, whenever you evaluate that area of your work or life.

@@ -7,7 +7,7 @@ importance: 6
 description: "Floyd–Steinberg dithering and how to create a version of an image that uses a reduced color palette."
 ---
 
-Last year I took an elective on Computer Graphics ([course notes](/wiki-articles/computer-science/computer-graphics)) where I learned about OpenGL shaders, and image compression algorithms.
+Last year I took an elective on Computer Graphics ([course notes](/wiki/computer-graphics)) where I learned about OpenGL shaders, and image compression algorithms.
 
 One of the algorithms I learned about was [Floyd–Steinberg dithering](https://en.wikipedia.org/wiki/Floyd%E2%80%93Steinberg_dithering). This algorithm compresses images lossily: it creates a new version of them using a reduced palette (provided by the user), hopefully with a smaller filesize.
 

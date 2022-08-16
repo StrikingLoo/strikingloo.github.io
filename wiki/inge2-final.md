@@ -144,7 +144,7 @@ Pros: Can be a lot easier to use than manual testing, cheaper and more efficient
 
 > Automatic testing should complement, not replace manual testing.
 
-Podemos usar alguna [gramática formal](/wiki-articles/computer-science/tleng-final) para generar inputs aleatorios que sean validos. De esta forma, especialmente en programas de mayor complejidad, los inputs generados tienen mas chances (idealmente 100%) de cumplir las precondiciones del programa a testear, siendo mucho mas eficiente la generacion de tests.
+Podemos usar alguna [gramática formal](/wiki/tleng-final) para generar inputs aleatorios que sean validos. De esta forma, especialmente en programas de mayor complejidad, los inputs generados tienen mas chances (idealmente 100%) de cumplir las precondiciones del programa a testear, siendo mucho mas eficiente la generacion de tests.
 
 ## Automated Testing
 
@@ -206,7 +206,7 @@ Dynamic symbolic execution is akin to dynamic analysis itself: it is never repor
 
 ## SBST Search Based Software Testing
 
-Cuando las condiciones en los if son suficientemente complejas, usar un theorem prover para resolverlas puede ser lento o impracticable. En estos casos, recurrimos a algoritmos de hill climbing, [metaheurísticas](/wiki-articles/computer-science/algo3-final) o genéticos para generar inputs que satisfagan una cierta condición.
+Cuando las condiciones en los if son suficientemente complejas, usar un theorem prover para resolverlas puede ser lento o impracticable. En estos casos, recurrimos a algoritmos de hill climbing, [metaheurísticas](/wiki/algo3-final) o genéticos para generar inputs que satisfagan una cierta condición.
 
 Usan **hill-climbing**, **algoritmos geneticos** o **metaheuristicas**.
 
@@ -222,7 +222,7 @@ Se normaliza para que sea entre 0 y 1, pero no veo que usen un maximo, es mas v 
 
 3 niveles de concurrencia: concurrencia, paralelismo y distribucion.
 
-Para modelar sistemas concurrentes usamos **LTS (Labelled Transition Systems)**: [automatas finitos deterministicos](/wiki-articles/computer-science/tleng-final) tq hay n estados y entre dos estados la transición es un evento (el alfabeto es un set de eventos). Llamamos una ejecución valida a toda cadena de eventos+estados resultantes que sea aceptada por el automata. Una traza, en cambio, es meramente la cadena de eventos pura aceptada.
+Para modelar sistemas concurrentes usamos **LTS (Labelled Transition Systems)**: [automatas finitos deterministicos](/wiki/tleng-final) tq hay n estados y entre dos estados la transición es un evento (el alfabeto es un set de eventos). Llamamos una ejecución valida a toda cadena de eventos+estados resultantes que sea aceptada por el automata. Una traza, en cambio, es meramente la cadena de eventos pura aceptada.
 
 **FSP (Finite Sequential Processes)**: Nos deja describir un LTS a traves de una gramatica formal. e.g., CONTROLLER = INACTIVE; INACTIVE = (on -> ACTIVE)\|(burn -> ONFIRE);&c.
 

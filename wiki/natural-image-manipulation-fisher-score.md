@@ -63,5 +63,5 @@ I love this approach and wonder whether it would work for other spaces (like aud
 
 ### [See also](#see-also)
 
-- [GLOW: Flow-Based Models](/wiki-articles/machine-learning/flow-based-models-glow)
-- [Unsupervised Learning](/wiki-articles/machine-learning/unsupervised-learning-berkeley)
+- [GLOW: Flow-Based Models](/wiki/flow-based-models-glow)
+- [Unsupervised Learning](/wiki/unsupervised-learning-berkeley)

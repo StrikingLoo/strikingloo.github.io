@@ -80,11 +80,11 @@ bias is useful for smaller datasets, but for larger ones, learning the relevant 
 data is sufficient, even beneficial. The result that hybrid models only outperform ViT for smaller datasets is somewhat surprising,
 since one might expect convolutional local feature processing to assist ViT at any size.
 
-In the appendices, there's a nice summary of [Attention](/wiki-articles/machine-learning/deep-learning-NLP) (we need to read AiayN!).
+In the appendices, there's a nice summary of [Attention](/wiki/deep-learning-NLP) (we need to read AiayN!).
 
 ![](image/vit-summary-attention.png){: alt="" loading="lazy"}
 
 ### Related links (May read later):
 - [iGPT (GPT autoregression of pixels, OpenAI, 2020)](https://openai.com/blog/image-gpt/) 🌱
 - [Model itself to play around with](https://github.com/google-research/vision_transformer#installation) 🌱
-- [Understanding ViT vs ResNet](/wiki-articles/machine-learning/transformers-see-like-cnn) : Transformers see like a CNN.
+- [Understanding ViT vs ResNet](/wiki/transformers-see-like-cnn) : Transformers see like a CNN.
