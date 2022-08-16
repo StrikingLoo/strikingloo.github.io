@@ -14,7 +14,7 @@ To save you time, I will start by stating my conclusion. It could be summarized 
 
 Before I started running this site, I basically kept no notes, except the odd random paper scribble, unless it was for college related things. Even then, I just wrote things down on a notebook, never to be seen again. 
 
-I was already using [Spaced Repetition systems](/wiki-articles/information-storage/anki) for language learning, but I wasn't that deliberate about my memory in other areas of my life like programming.
+I was already using [Spaced Repetition systems](/wiki/anki) for language learning, but I wasn't that deliberate about my memory in other areas of my life like programming.
 
 In the time since I set up [this site's wiki](/wiki), I finished my degree in Computer Science, and also aced a few key interviews. I am not saying my successes were completely or even mainly dependent on note-taking, but they definitely helped with my final exams. So after hitting the 80 notes benchmark, I thought I would write this post as a way to look back and do a little retro.
 
@@ -68,11 +68,11 @@ I have spent more time than I am proud of reading articles about the ZettelKaste
 
 By now I could say thinking of note-taking systems is a bit of a hobby of mine. And anyone who knows me can tell you I am a bit obsessive about productivity and workflows.
 
-So the first thing I will say is, my wiki is not a [zettelkasten](/wiki-articles/information-storage/archiving#zettelkasten). 
+So the first thing I will say is, my wiki is not a [zettelkasten](/wiki/archiving#zettelkasten). 
 
 Zettelkastens, very briefly, are based around the idea of using many atomic notes (usually short pieces of text), and interlinking them heavily, where a train of thought can be reconstructed by following a trail of multiple notes (zettels). This is supposed to make you a more prolific writer and help you develop essays, and zettels are expected to be mostly written in your own words as opposed to quotes and excerpts. The zettelkasten methodology also assumes you will start your trails from some particular zettel, and not just see the whole wiki as a big thing with search and tags, etc.
 
-There is also a big emphasis in most of the online digital gardening / note making community in networked thought: link your new notes to as many existing notes as possible, and find patterns and connections between concepts you learn. I don't do this as much, as I don't think there is that much value in linking (I especially dislike the idea of automatic backlinks for notes, and [some in the zettelkasten community agree](/wiki-articles/information-storage/archiving#ideas-from-backlinks-are-bad-links)).
+There is also a big emphasis in most of the online digital gardening / note making community in networked thought: link your new notes to as many existing notes as possible, and find patterns and connections between concepts you learn. I don't do this as much, as I don't think there is that much value in linking (I especially dislike the idea of automatic backlinks for notes, and [some in the zettelkasten community agree](/wiki/archiving#ideas-from-backlinks-are-bad-links)).
 
 Instead, I prefer to take a slightly **monolitical approach**, where I write big notes of 500\~1000 lines or more for a single topic, and make each atomic idea a paragraph or subheading. If necessary, I can then just link to headings through their *id* instead of the whole note -like my link to the zettelkasten section of my wiki just now-.
 

@@ -13,7 +13,7 @@ importance: 6
 <https://arxiv.org/pdf/2205.14217.pdf>
 
 
-This paper uses diffusion models, which have been used successfully for image and audio generation (see my notes on [Glide](/wiki-articles/machine-learning/glide), [DDIM](/wiki-articles/machine-learning/ddim)), to generate text in a *controllable* way. 
+This paper uses diffusion models, which have been used successfully for image and audio generation (see my notes on [Glide](/wiki/ddim)), to generate text in a *controllable* way. 
 
 Given a set of constraints, like syntactic structures, sentiment, or topics, this approach allows for text generation conditioned on them, balancing coherence / fluency (through the language model itself) and constraint satisfaction (through a different, supervised model).
 
@@ -25,7 +25,7 @@ These gradual denoising steps produce a hierarchy of continuous latent represent
 
 ![](image/diffusion-lm1.png){: alt="" loading="lazy"}
 
-The paper then does a good job of explaining [Diffusion models](/wiki-articles/machine-learning/glide).
+The paper then does a good job of explaining [Diffusion models](/wiki/glide).
 
 ![](image/diffusion-lm2.png){: alt="" loading="lazy"}
 
@@ -33,7 +33,7 @@ The paper then does a good job of explaining [Diffusion models](/wiki-articles/m
 
 They define a training method for the embeddings, and a rounding process to get back to token space.
 
-"We found that [pretrained fixed embeddings](/wiki-articles/machine-learning/deep-learning-NLP#word2vec) are suboptimal for Diffusion-LM compared to end-to-end training". 
+"We found that [pretrained fixed embeddings](/wiki/deep-learning-NLP#word2vec) are suboptimal for Diffusion-LM compared to end-to-end training". 
 
 They instead map tokens to Gaussian variables centered around their embeddings. Then for the rounding process, they calculate probability of a sequence *w* of words as the product between the probabilities of each individual word, conditioned solely on that word's embedding, without any autoregression. This probability is modeled with a softmax.
 

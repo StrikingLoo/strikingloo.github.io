@@ -90,7 +90,7 @@ scores.**
 
 Two versions for image encoder:
 - **ResNet-50**[🌱](https://arxiv.org/pdf/1512.03385.pdf) with a few modifications.
-- **ViT**: closely following [previous implementation](/wiki-articles/machine-learning/visual-transformer).
+- **ViT**: closely following [previous implementation](/wiki/visual-transformer).
 
 The text encoder is a Transformer with input capped at 76 characters. The text sequence is bracketed with [SOS] and [EOS] tokens and the activations of the highest layer of the transformer at the [EOS] token are treated as the feature representation of the text which is layer normalized and then linearly projected into the multi-modal embedding space.
 
@@ -141,9 +141,9 @@ Note that by this point, a CLIP ViT has a transformer for textual representation
 ### Related Reading
 
 For more reading see:
-- [Core NLP article](/wiki-articles/machine-learning/deep-learning-NLP#transformers) for an explanation on transformers.
-- [GLIDE](/wiki-articles/machine-learning/glide) for an application of CLIP in text-to-image generation (was state of the art until DALL-E 2 arrived). GLIDE uses CLIP for guided diffusion downstream.
-- [Do Transformers See like Convolutional Neural Networks?](/wiki-articles/machine-learning/transformers-see-like-cnn) for a more in-depth comparison between ViT and ResNet (and other CNNs) and their ways of modeling data.
+- [Core NLP article](/wiki/deep-learning-NLP#transformers) for an explanation on transformers.
+- [GLIDE](/wiki/glide) for an application of CLIP in text-to-image generation (was state of the art until DALL-E 2 arrived). GLIDE uses CLIP for guided diffusion downstream.
+- [Do Transformers See like Convolutional Neural Networks?](/wiki/transformers-see-like-cnn) for a more in-depth comparison between ViT and ResNet (and other CNNs) and their ways of modeling data.
 - See [Open CLIP](https://github.com/mlfoundations/open_clip) for an open-source CLIP model is available to play with.
 
 

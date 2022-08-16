@@ -47,6 +47,6 @@ This paper uses HSIC to compare activations of layers given a batch of inputs. I
 
 ### See Also
 
-- [Visual Transformer](/wiki-articles/machine-learning/visual-transformer)
-- [transGAN](/wiki-articles/machine-learning/transGAN)
-- [Unsupervised Learning Core](/wiki-articles/machine-learning/unsupervised-learning-berkeley)
+- [Visual Transformer](/wiki/visual-transformer)
+- [transGAN](/wiki/transGAN)
+- [Unsupervised Learning Core](/wiki/unsupervised-learning-berkeley)

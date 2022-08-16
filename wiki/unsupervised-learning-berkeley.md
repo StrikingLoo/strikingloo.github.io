@@ -50,7 +50,7 @@ Typically you'd start by alternating the pixels (checkerboard pattern) but verti
 ![](unsupervised-learning-images/real-nvp.png){: alt="" loading="lazy"}
 
 Other models that work but are not covered in detail:
-- [Glow](https://openai.com/blog/glow/) [my notes🌿](/wiki-articles/machine-learning/flow-based-models-glow)
+- [Glow](https://openai.com/blog/glow/) [my notes🌿](/wiki/flow-based-models-glow)
 - [FFJORD](https://arxiv.org/abs/1810.01367) 🌱
 
 
@@ -77,7 +77,7 @@ This works because we're doing importance sampling: we could be sampling from ou
 ![](unsupervised-learning-images/vae-2-loss.png){: alt="" loading="lazy"}
 
 ## GANs
-The course introduces GANs, following Goodfellow et al. closely, so I won't reproduce what they say as it overlaps with [GANs](/wiki-articles/machine-learning/GAN).
+The course introduces GANs, following Goodfellow et al. closely, so I won't reproduce what they say as it overlaps with [GANs](/wiki/GAN).
 
 It then discusses the difficulties in measuring GAN performance, as human judgement over samples is not enough (though it is the original propeller of GANs in a way).
 
@@ -90,7 +90,7 @@ The Inception score ends up being the DKL between p(y\|x) and p(y), where p(y) i
 
 Equivalent to entropy of labels for generated samples - entropy of labels for each sample.
 
-FID is a more complicated metric based on inception score that uses an embedding space from some classifier, and compares the embedding for generated image vs average embedding. [_notes on FID 🌿_](/wiki-articles/machine-learning/fid)
+FID is a more complicated metric based on inception score that uses an embedding space from some classifier, and compares the embedding for generated image vs average embedding. [_notes on FID 🌿_](/wiki/fid)
 
 ### Discriminator Saturation
 The bayes ideal discriminator is always right (assigns prob 0 to fake and prob 1 to true). However if our discriminator is too good too fast, since the gradient tends to be very close to zero for high confidence predictions (the landscape is flat around the edges, think of a sigmoid), the generator gets little information to work with.
@@ -116,7 +116,7 @@ The bayes ideal discriminator is always right (assigns prob 0 to fake and prob 1
 
 **WGAN-GP**: Same idea, achieves the same without weight clipping (which is subpar in many ways and gets ugly results). Just add a term to loss that punishes the gradient of the discriminator from diverging from norm 1. Keeps the gradient in a more docile regime and generally gets better and more robust results. The only code change is adding this term to the loss. Interestingly, the gradient is computed for an interpolation (convex sum) between generated and real samples.
 
-**SNGAN**: You normalize each layer of the discriminator by the [spectral norm](/wiki-articles/computer-science/metnum-final) (value of biggest eigenvalue) of its weight matrix W. You do this to guarantee lipschitz-ness of the network, restricting the optimization problem to min G: max \|\|f\|\|Lip <= K V(G,D).
+**SNGAN**: You normalize each layer of the discriminator by the [spectral norm](/wiki/metnum-final) (value of biggest eigenvalue) of its weight matrix W. You do this to guarantee lipschitz-ness of the network, restricting the optimization problem to min G: max \|\|f\|\|Lip <= K V(G,D).
 
 **SAGAN**: Adds self attention to SNGAN. Applies spectral norm in both discriminator and generator. (Instead of just discriminator).
 
@@ -130,7 +130,7 @@ The bayes ideal discriminator is always right (assigns prob 0 to fake and prob 1
 
 > **Bottom line**: Use BigGan for conditioned image generation, styleGAN for unconditioned or if you have an interest in interpolation. They require at least 16GB of VRAM anyway.
 
-**Pix2Pix**: Train a model G(x, z) where z is your (random) latent and x is an actual black and white image, such that a discriminator that takes D(x, G(x, z)) and D(x, y) can't tell which is which in an adversarial setting (where y = actual-colored-of(x) ). I think this approach is beautiful. It kind of reminds me of [contrastive learning](/wiki-articles/machine-learning/clip)
+**Pix2Pix**: Train a model G(x, z) where z is your (random) latent and x is an actual black and white image, such that a discriminator that takes D(x, G(x, z)) and D(x, y) can't tell which is which in an adversarial setting (where y = actual-colored-of(x) ). I think this approach is beautiful. It kind of reminds me of [contrastive learning](/wiki/clip)
 
 ![](unsupervised-learning-images/pix2pix-color.png) {: alt="" loading="lazy"}
 

@@ -23,7 +23,7 @@ In summary, GANs were designed to avoid many disadvantages associated with other
 - No variational bound is needed, and specific model families usable within the GAN framework are already known to be universal approximators, so GANs are already known to be asymptotically consistent. Some VAEs are conjectured to be asymptotically consistent, but this is not yet proven.
 - GANs are subjectively regarded as producing better samples than other methods.
 
-On [Variational Autoencoders](/wiki-articles/machine-learning/unsupervised-learning-berkeley#variational-autoencoders):
+On [Variational Autoencoders](/wiki/unsupervised-learning-berkeley#variational-autoencoders):
 
 ![](image/gan1.png){: alt="" loading="lazy"}
 
@@ -49,7 +49,7 @@ score samples. GANs are somewhat harder to evaluate than other generative
 models because it can be difficult to estimate the likelihood for GANs. [Theis et al. (2015)](https://arxiv.org/pdf/1511.01844.pdf) describe many of the
 difficulties with evaluating generative models.
 
-I cover GANs in more detail in my [notes on Unsupervised Learning: GAN](/wiki-articles/machine-learning/unsupervised-learning-berkeley#gans) from Berkeley's Unsupervised Learning course.
+I cover GANs in more detail in my [notes on Unsupervised Learning: GAN](/wiki/unsupervised-learning-berkeley#gans) from Berkeley's Unsupervised Learning course.
 
 ## Read Later
 - [DC-GAN TensorFlow tutorial with MNIST](https://www.tensorflow.org/tutorials/generative/dcgan) for a more practical approach.
@@ -58,11 +58,11 @@ I cover GANs in more detail in my [notes on Unsupervised Learning: GAN](/wiki-ar
 - [Diffusion models intro](https://yang-song.github.io/blog/2021/score/) 🌱
 - [BigGAN](https://arxiv.org/abs/1809.11096#deepmind) 🌱
 - [Tips, tricks and hacks for training a GAN](https://github.com/soumith/ganhacks) 🌱
-- [Machine Vision Unsupervised Task](https://arxiv.org/abs/1807.03748) A task that's a language model equivalent for images (but not literally language modelling like [ViT](/wiki-articles/machine-learning/visual-transformer) does now). Was relevant back in 2019 and seems interesting. 🌱
+- [Machine Vision Unsupervised Task](https://arxiv.org/abs/1807.03748) A task that's a language model equivalent for images (but not literally language modelling like [ViT](/wiki/visual-transformer) does now). Was relevant back in 2019 and seems interesting. 🌱
 - [Notes on GANs](http://joschu.net/docs/gan-notes.pdf) Recommended reading from the Berkeley course.🌱
 
 ### Related Reading
-- [TransGan](/wiki-articles/machine-learning/transGAN)
-- [Visual Transformer](/wiki-articles/machine-learning/visual-transformer)
+- [TransGan](/wiki/transGAN)
+- [Visual Transformer](/wiki/visual-transformer)
 - [This Food Does Not Exist](https://nyx-ai.github.io/stylegan2-flax-tpu/): StyleGAN trained on TPU for food image generation. Replicate later maybe?
-- [GLIDE](/wiki-articles/machine-learning/glide) to see how diffusion models end up beating GANs in image generation, and outperform any other models in Text-To-Image.
+- [GLIDE](/wiki/glide) to see how diffusion models end up beating GANs in image generation, and outperform any other models in Text-To-Image.

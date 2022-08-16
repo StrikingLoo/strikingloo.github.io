@@ -1,7 +1,7 @@
 ---
 ---
 
-{% assign folder1 = site.pages | where_exp: "item" , "item.path contains 'wiki-articles'" | sort:"importance" | reverse %}
+{% assign folder1 = site.pages | where_exp: "item" , "item.path contains 'wiki'" | sort:"importance" | reverse %}
 
 tag_data = [
   {% for item in folder1 %}

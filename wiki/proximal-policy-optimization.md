@@ -16,7 +16,7 @@ The biggest change is how the loss is defined, adding a penalty to constrain how
 
 > _"We’re releasing a new class of reinforcement learning algorithms, Proximal Policy Optimization (PPO), which perform comparably or better than state-of-the-art approaches while being much simpler to implement and tune. PPO has become the default reinforcement learning algorithm at OpenAI because of its ease of use and good performance."_
 
-Getting good results via [policy gradient methods](/wiki-articles/machine-learning/reinforcement-learning-sutton#policy-gradient-methods) is challenging because they are **sensitive to the choice of stepsize** — too small, and progress is hopelessly slow; too large and the signal is overwhelmed by the noise, or one might see catastrophic drops in performance.
+Getting good results via [policy gradient methods](/wiki/reinforcement-learning-sutton#policy-gradient-methods) is challenging because they are **sensitive to the choice of stepsize** — too small, and progress is hopelessly slow; too large and the signal is overwhelmed by the noise, or one might see catastrophic drops in performance.
 
 They also often have **very poor sample efficiency**, taking millions (or billions) of timesteps to learn simple tasks.
 
