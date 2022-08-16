@@ -3,6 +3,9 @@ layout: default
 ---
 <h1>{{ page.title }}</h1>
 <p class="meta">{{ page.date | date_to_string }} - importance: {{ page.importance }} </p>
+{% if page.note_category == 'book-notes' %}
+<p><i>These are my notes and review for this book. For other reading notes see <a href="/tagged/?q=book">tag: books</a></i><p>
+{% endif %}
 
 {% if page.abstract.size > 0 %}
 <p class="abstract"> {{ page.abstract }}</p>
