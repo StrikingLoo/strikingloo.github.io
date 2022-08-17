@@ -9,6 +9,6 @@ kramdown:
 defaults:
   -
     scope:
-      path: "wiki-articles" # an empty string here means all files in the project
+      path: "wiki" # an empty string here means all files in the project
     values:
       importance: 5
