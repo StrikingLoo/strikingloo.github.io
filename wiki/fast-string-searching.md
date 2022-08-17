@@ -22,7 +22,7 @@ Boyer and Moore described two algorithms. A simpler ('classic') one and a faster
 
 General string search algorithm:
 
-![](text-search1.png){: alt="" loading="lazy"}
+![](image/text-search1.png){: alt="" loading="lazy"}
 
 In their taxonomy, the authors identify and vary three different components of a string search algorithm: **Skip Loops, Match algorithms and Shift Functions.**
 
@@ -57,11 +57,13 @@ The **good suffix rule** is markedly more complex in both concept and implementa
 
 Suppose for a given alignment of P and T, a substring t of T matches a suffix of P, but a mismatch occurs at the next comparison to the left.
 
-1. Then find, if it exists, the right-most copy t' of t in P such that t' is not a suffix of P and the character to the left of t' in P differs from the character to the left of t in P. Shift P to the right so that substring t' in P aligns with substring t in T.
-2. If t' does not exist, then shift the left end of P past the left end of t in T by the least amount so that a prefix of the shifted pattern matches a suffix of t in T.
-3. If no such shift is possible, then shift P by m (length of P) places to the right.
-4. If an occurrence of P is found, then shift P by the least amount so that a proper prefix of the shifted P matches a suffix of the occurrence of P in T.
-5. If no such shift is possible, then shift P by m places, that is, shift P past t.
+
+- Then find, if it exists, the right-most copy t' of t in P such that t' is not a suffix of P and the character to the left of t' in P differs from the character to the left of t in P. Shift P to the right so that substring t' in P aligns with substring t in T.
+- If t' does not exist, then shift the left end of P past the left end of t in T by the least amount so that a prefix of the shifted pattern matches a suffix of t in T.
+- If no such shift is possible, then shift P by m (length of P) places to the right.
+- If an occurrence of P is found, then shift P by the least amount so that a proper prefix of the shifted P matches a suffix of the occurrence of P in T.
+- If no such shift is possible, then shift P by m places, that is, shift P past t.
+
 
 The good suffix rule uses two tables, also made during preprocessing.
 
@@ -109,7 +111,7 @@ It is compact and fast and can be made independent of frequency data by eliminat
 
 The code for the algorithm, excluding preprocess, is:
 
-![](text-search2.png){: alt="" loading="lazy"}
+![](image/text-search2.png){: alt="" loading="lazy"}
 
 **md2** is distance between first leftward reoccurrence of last character, and len.
 
