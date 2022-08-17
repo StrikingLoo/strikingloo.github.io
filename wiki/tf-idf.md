@@ -6,6 +6,7 @@ description: "How tf-idf works"
 tags: NLP,nlp,tf-idf,metrics,metric,statistics,word embeddings
 language: English
 uses_mathjax: true
+importance: 4
 ---
 
 TF-IDF of a word t in a document d is defined as the product between the term's frequency in the document, and its inverse document frequency.

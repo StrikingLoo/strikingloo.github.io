@@ -5,6 +5,7 @@ date: 2020-12-21
 description: "A place to dump any financially relevant stuff I come accross."
 tags: stock, economy, Economics, trends, investment
 language: English
+importance: 4
 ---
 
 The challenge is, while the data I’ve just shared may be accurate over very long periods of time, it tells us nearly nothing about what to expect in any given year, or even in any given decade. For example, while the average equity risk premium across the past 118 years may have been a little over 4%, the story changes dramatically if we look at rolling 10-year periods during that same timeframe.

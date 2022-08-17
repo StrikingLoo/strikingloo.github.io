@@ -6,6 +6,7 @@ tags: deep learning,unsupervised learning,generative models,generative,GAN,metri
 description: "A description and characterization of FID metric used for evaluating generative models."
 language: English
 uses_mathjax: true
+importance: 6
 ---
 
 _Quoth Wikipedia:_

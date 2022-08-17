@@ -5,6 +5,7 @@ date: 2020-06-13
 tags: metafiction
 description: "HunterxHunter stuff. So far very brief."
 language: English
+importance: 4
 ---
 
 ## Comparison between both anime and the manga on each particularly gory's scene level of censorship.

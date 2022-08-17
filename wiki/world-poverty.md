@@ -5,6 +5,7 @@ date: 2022-01-25
 description: "Interesting stats and facts on world poverty"
 tags: economy, Economics, trends, world modeling
 language: English
+importance: 4
 ---
 
 The author sets a poverty line at 30 daily international dollars (which adjust for cost of living and inflation) and mentions the UN tracks extreme poverty at 2 IUSD.

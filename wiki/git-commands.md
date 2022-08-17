@@ -4,6 +4,7 @@ title: "Useful git commands"
 date: 2020-06-13
 description: "Just a series of git commands I found helpful."
 language: English
+importance: 3
 ---
 Just a series of git commands I found useful. 
 

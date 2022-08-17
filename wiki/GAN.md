@@ -6,6 +6,7 @@ tags: wip,deep learning,unsupervised learning,GAN,generative,image processing,ga
 description: "Notes on Generative Adversarial Networks, combining summaries and excerpts from different papers, books, etc. A work in progress."
 language: English
 abstract: ""
+importance: 7
 ---
 
 ### GAN Survey, Goodfellow 2016

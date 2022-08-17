@@ -4,7 +4,7 @@ title: "Notes on Writing Essays"
 date: 2020-11-24
 description: "Quotes and advice on writing non-fiction. Especially about essays."
 language: English
-importance: 6
+importance: 7
 abstract: "Collected quotes and advice on writing non-fiction. Especially about essays."
 ---
 

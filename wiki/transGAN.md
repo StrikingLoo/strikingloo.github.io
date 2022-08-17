@@ -6,6 +6,7 @@ tags: deep learning, transformers, NLP, computer vision
 description: "Notes on the paper proposing TransGAN, a GAN architecture without convolutions, purely based on transformers."
 language: English
 abstract: "Notes on the paper proposing TransGAN, a GAN architecture without convolutions, purely based on transformers."
+importance: 6
 ---
 
 <https://arxiv.org/pdf/2102.07074.pdf> 

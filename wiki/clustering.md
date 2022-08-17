@@ -5,6 +5,7 @@ title: "Clustering"
 tags: wip,clustering,unsupervised learning,k-means,dbscan
 description: "My notes from O'Reilly's Hands-on Machine Learning's Clustering chapter, plus other sources (like Bishop)."
 language: English
+importance: 7
 ---
 > Notes from the Hands-on Machine Learning O'Reilly book on the Clustering section (Unsupervised Learning chapter).
 

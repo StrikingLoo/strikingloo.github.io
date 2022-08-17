@@ -5,6 +5,7 @@ date: 2020-12-03
 description: "Lego as an ecosystem, product decisions"
 tags: autocatalytic processes, network effects
 language: English
+importance: 4
 ---
 
 ### [The Lego System of Play](#the-lego-system-of-play)

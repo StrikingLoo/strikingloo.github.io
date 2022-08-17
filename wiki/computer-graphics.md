@@ -5,6 +5,8 @@ date: 2021-03-22
 tags: algo3, data structures, UBA, spanish, español, cs, algorithms
 description: "Based on Fundamentals of Computer Graphics 4th edition, by Marschner and Shirley. Taken while going through the corresponding elective."
 language: English
+importance: 6
+abstract: "Based on Fundamentals of Computer Graphics 4th edition, by Marschner and Shirley. Taken while going through the corresponding elective."
 ---
 
 ## Computer Graphics Areas
@@ -17,7 +19,6 @@ Just an awesome quote from the book:
 "Modern architecture suggests that keeping memory use down and maintaining coherent memory access are the keys to efficiency. This suggests using single precision data. However, avoiding numerical problems suggests using doubleprecision arithmetic. The tradeoffs depend on the program, but it is nice to have a default in your class definitions."
 
 > "I advocate doing all computations with floats until you find evidence that double precision is needed in a particular part of the code. —S.M."
-
 
 
 ### Debugging Computer Graphics Programs

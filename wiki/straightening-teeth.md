@@ -5,6 +5,7 @@ date: 2020-12-17
 description: "Something happened 200 years ago and nobody has an edge-to-edge bite anymore. Experts have no idea why."
 tags: incels, dentistry, history, article
 language: English
+importance: 4
 ---
 
 ### Troublesome facts about straightening teeth

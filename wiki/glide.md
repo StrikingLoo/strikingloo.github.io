@@ -6,6 +6,7 @@ tags: deep learning,unsupervised learning,paper,generative models,generative,dif
 description: "Notes on the GLIDE paper, a generative model that outperforms DALL-E using similar compute by training a diffusion model using a CLIP-aware loss + CFG"
 language: English
 uses_mathjax: true
+importance: 7
 ---
 
 <https://arxiv.org/pdf/2112.10741.pdf>
