@@ -41,10 +41,12 @@ For my first set of prompts, I tried doing some 3D renders. I had seen somewhere
 
 I also tried a low-poly prompt, but it didn't have a satisfying result so I shelved those for next time.
 
+Note that all images are actually in very high resolution, I am just choosing to render them small so they fit in the screen better. If you like one, you can open it in a new tab to see its full, high resolution glory.
+
 > "Pixar style 3D render of a baby hippo, 4k, high resolution, trending in artstation"
 
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.49.06_-_Pixar_style_3D_render_of_a_baby_hippo,_4k,_high_resolution,_trending_in_artstation.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.49.35_-_Pixar_style_3D_render_of_a_baby_hippo,_4k,_high_resolution,_trending_in_artstation.png){: loading="lazy" width = "25%" height = "25%"} 
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.49.39_-_Pixar_style_3D_render_of_a_baby_hippo,_4k,_high_resolution,_trending_in_artstation.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.49.41_-_Pixar_style_3D_render_of_a_baby_hippo,_4k,_high_resolution,_trending_in_artstation.png){: loading="lazy" width = "25%" height = "25%"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.49.06_-_Pixar_style_3D_render_of_a_baby_hippo,_4k,_high_resolution,_trending_in_artstation.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.49.35_-_Pixar_style_3D_render_of_a_baby_hippo,_4k,_high_resolution,_trending_in_artstation.png){: loading="lazy" style="height:12em; width:12em"} 
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.49.39_-_Pixar_style_3D_render_of_a_baby_hippo,_4k,_high_resolution,_trending_in_artstation.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.49.41_-_Pixar_style_3D_render_of_a_baby_hippo,_4k,_high_resolution,_trending_in_artstation.png){: loading="lazy" style="height:12em; width:12em"}
 
 Right away, I was blown away by the quality of the render, and the picture's resolution. I was not expecting, nor was I used to my first prompt already working so well. It's like suddenly I didn't have to make an effort!
 
@@ -52,8 +54,8 @@ So I jumped to compositions right away.
 
 > "Pixar style 3D render of a fox wearing a tophat, 4k, high resolution, trending in artstation"
 
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.49.44_-_Pixar_style_3D_render_of_a_fox_wearing_a_tophat,_4k,_high_resolution,_trending_in_artstation.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.49.49_-_Pixar_style_3D_render_of_a_fox_wearing_a_tophat,_4k,_high_resolution,_trending_in_artstation.png){: loading="lazy" width = "25%" height = "25%"}
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.49.51_-_Pixar_style_3D_render_of_a_fox_wearing_a_tophat,_4k,_high_resolution,_trending_in_artstation.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.24.46_-_Pixar_style_3D_render_of_a_fox_wearing_a_tophat,_4k,_high_resolution,_trending_in_artstation.png){: loading="lazy" width = "25%" height = "25%"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.49.44_-_Pixar_style_3D_render_of_a_fox_wearing_a_tophat,_4k,_high_resolution,_trending_in_artstation.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.49.49_-_Pixar_style_3D_render_of_a_fox_wearing_a_tophat,_4k,_high_resolution,_trending_in_artstation.png){: loading="lazy" style="height:12em; width:12em"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.49.51_-_Pixar_style_3D_render_of_a_fox_wearing_a_tophat,_4k,_high_resolution,_trending_in_artstation.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.24.46_-_Pixar_style_3D_render_of_a_fox_wearing_a_tophat,_4k,_high_resolution,_trending_in_artstation.png){: loading="lazy" style="height:12em; width:12em"}
 
 
 ## Wallpaper Material: Scenes and Landscapes
@@ -66,8 +68,8 @@ Here are some of the most beaufitul images I got using these sorts of prompts, a
 
 > "An oil painting of a mechanical clockwork flying machine from the renaissance, Gorgeous digital painting, amazing art, artstation 3, realistic"
 
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.50.46_-_An_oil_painting_of_a_mechanical_clockwork_flying_machine_from_the_renaissance,_Gorgeous_digital_painting,_amazing_art,_artstation_3,_realistic.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.50.50_-_An_oil_painting_of_a_mechanical_clockwork_flying_machine_from_the_renaissance,_Gorgeous_digital_painting,_amazing_art,_artstation_3,_realistic.png){: loading="lazy" width = "25%" height = "25%"}
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.50.53_-_An_oil_painting_of_a_mechanical_clockwork_flying_machine_from_the_renaissance,_Gorgeous_digital_painting,_amazing_art,_artstation_3,_realistic.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.50.58_-_An_oil_painting_of_a_mechanical_clockwork_flying_machine_from_the_renaissance,_Gorgeous_digital_painting,_amazing_art,_artstation_3,_realistic.png){: loading="lazy" width = "25%" height = "25%"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.50.46_-_An_oil_painting_of_a_mechanical_clockwork_flying_machine_from_the_renaissance,_Gorgeous_digital_painting,_amazing_art,_artstation_3,_realistic.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.50.50_-_An_oil_painting_of_a_mechanical_clockwork_flying_machine_from_the_renaissance,_Gorgeous_digital_painting,_amazing_art,_artstation_3,_realistic.png){: loading="lazy" style="height:12em; width:12em"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.50.53_-_An_oil_painting_of_a_mechanical_clockwork_flying_machine_from_the_renaissance,_Gorgeous_digital_painting,_amazing_art,_artstation_3,_realistic.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.50.58_-_An_oil_painting_of_a_mechanical_clockwork_flying_machine_from_the_renaissance,_Gorgeous_digital_painting,_amazing_art,_artstation_3,_realistic.png){: loading="lazy" style="height:12em; width:12em"}
 
 I reproduced this prompt almost verbatim from one I tried on eleutherAI's .imagine model (and also on craiyon/DALL-E mini). We've come a long way since then!
 
@@ -83,8 +85,8 @@ First, I tried drawing some interior scenes.
 
 > "fantasy tavern interior \| Breath-taking digital painting with warm colours amazing art mesmerizing, captivating, artstation 3"
 
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.22_-_fantasy_tavern_interior___Breath-taking_digital_painting_with_warm_colours_amazing_art_mesmerizing,_captivating,_artstation_3.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.25_-_fantasy_tavern_interior___Breath-taking_digital_painting_with_warm_colours_amazing_art_mesmerizing,_captivating,_artstation_3.png){: loading="lazy" width = "25%" height = "25%"}
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.28_-_fantasy_tavern_interior___Breath-taking_digital_painting_with_warm_colours_amazing_art_mesmerizing,_captivating,_artstation_3.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.31_-_fantasy_tavern_interior___Breath-taking_digital_painting_with_warm_colours_amazing_art_mesmerizing,_captivating,_artstation_3.png){: loading="lazy" width = "25%" height = "25%"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.22_-_fantasy_tavern_interior___Breath-taking_digital_painting_with_warm_colours_amazing_art_mesmerizing,_captivating,_artstation_3.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.25_-_fantasy_tavern_interior___Breath-taking_digital_painting_with_warm_colours_amazing_art_mesmerizing,_captivating,_artstation_3.png){: loading="lazy" style="height:12em; width:12em"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.28_-_fantasy_tavern_interior___Breath-taking_digital_painting_with_warm_colours_amazing_art_mesmerizing,_captivating,_artstation_3.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.31_-_fantasy_tavern_interior___Breath-taking_digital_painting_with_warm_colours_amazing_art_mesmerizing,_captivating,_artstation_3.png){: loading="lazy" style="height:12em; width:12em"}
 
 I'm happy it got the tables and rafters right, it looks amazing!
 
@@ -92,8 +94,8 @@ And then a classic, our cluttered ghibli style cabin in the woods.
 
 > "Cluttered house in the woods \| anime oil painting high resolution cottagecore ghibli inspired 4k"
 
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.42_-_Cluttered_house_in_the_woods___anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.39_-_Cluttered_house_in_the_woods___anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k.png){: loading="lazy" width = "25%" height = "25%"}
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.37_-_Cluttered_house_in_the_woods___anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.36_-_Cluttered_house_in_the_woods___anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k.png){: loading="lazy" width = "25%" height = "25%"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.42_-_Cluttered_house_in_the_woods___anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.39_-_Cluttered_house_in_the_woods___anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k.png){: loading="lazy" style="height:12em; width:12em"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.37_-_Cluttered_house_in_the_woods___anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.36_-_Cluttered_house_in_the_woods___anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k.png){: loading="lazy" style="height:12em; width:12em"}
 
 As before, I can't help but find a big improvement versus the old ones.
 
@@ -101,18 +103,18 @@ As before, I can't help but find a big improvement versus the old ones.
 
 > "German palace gardens and towers \| oil painting, trending in artstation, anime"
 
-![](resources/ai-generated-images/dalle_2/german1.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/german2.png){: loading="lazy" width = "25%" height = "25%"}
+![](resources/ai-generated-images/dalle_2/german1.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/german2.png){: loading="lazy" style="height:12em; width:12em"}
 
 > "The green idyllic Arcadian prairie with sheep by Thomas Cole, Breath-taking digital painting with placid colours, amazing art, artstation 3, cottagecore"
 
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.45.50_-_The_green_idyllic_Arcadian_prairie_with_sheep_by_Thomas_Cole,_Breath-taking_digital_painting_with_placid_colours,_amazing_art,_artstation_3,_cottageco.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.45.39_-_The_green_idyllic_Arcadian_prairie_with_sheep_by_Thomas_Cole,_Breath-taking_digital_painting_with_placid_colours,_amazing_art,_artstation_3,_cottageco.png){: loading="lazy" width = "25%" height = "25%"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.45.50_-_The_green_idyllic_Arcadian_prairie_with_sheep_by_Thomas_Cole,_Breath-taking_digital_painting_with_placid_colours,_amazing_art,_artstation_3,_cottageco.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.45.39_-_The_green_idyllic_Arcadian_prairie_with_sheep_by_Thomas_Cole,_Breath-taking_digital_painting_with_placid_colours,_amazing_art,_artstation_3,_cottageco.png){: loading="lazy" style="height:12em; width:12em"}
 
 Loving what it did with the sky on the first one. It's a different style from the second one, too.
 
 > "A digital illustration of glowing toadstools beside a pond with lilypads, 4k, detailed, trending in artstation"
 
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.46.01_-_A_digital_illustration_of_glowing_toadstools_beside_a_pond_with_lilypads,_4k,_detailed,_trending_in_artstation.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.46.03_-_A_digital_illustration_of_glowing_toadstools_beside_a_pond_with_lilypads,_4k,_detailed,_trending_in_artstation.png){: loading="lazy" width = "25%" height = "25%"}
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.46.05_-_A_digital_illustration_of_glowing_toadstools_beside_a_pond_with_lilypads,_4k,_detailed,_trending_in_artstation.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.46.08_-_A_digital_illustration_of_glowing_toadstools_beside_a_pond_with_lilypads,_4k,_detailed,_trending_in_artstation.png){: loading="lazy" width = "25%" height = "25%"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.46.01_-_A_digital_illustration_of_glowing_toadstools_beside_a_pond_with_lilypads,_4k,_detailed,_trending_in_artstation.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.46.03_-_A_digital_illustration_of_glowing_toadstools_beside_a_pond_with_lilypads,_4k,_detailed,_trending_in_artstation.png){: loading="lazy" style="height:12em; width:12em"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.46.05_-_A_digital_illustration_of_glowing_toadstools_beside_a_pond_with_lilypads,_4k,_detailed,_trending_in_artstation.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.46.08_-_A_digital_illustration_of_glowing_toadstools_beside_a_pond_with_lilypads,_4k,_detailed,_trending_in_artstation.png){: loading="lazy" style="height:12em; width:12em"}
 
 These reminded me of Magic: The Gathering illustrations (maybe for a Swamp) and the first one looks amazing with the fungi is actually reflecting on the pond.
 
@@ -126,30 +128,30 @@ Here come my results for different values of X.
 
 > "A digital illustration of a medieval town, 4k, detailed, trending in artstation, fantasy"
 
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.24_-_A_digital_illustration_of_a_medieval_town,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.26_-_A_digital_illustration_of_a_medieval_town,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" width = "25%" height = "25%"}
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.30_-_A_digital_illustration_of_a_medieval_town,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.32_-_A_digital_illustration_of_a_medieval_town,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" width = "25%" height = "25%"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.24_-_A_digital_illustration_of_a_medieval_town,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.26_-_A_digital_illustration_of_a_medieval_town,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" style="height:12em; width:12em"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.30_-_A_digital_illustration_of_a_medieval_town,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.32_-_A_digital_illustration_of_a_medieval_town,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" style="height:12em; width:12em"}
 
 These look almost like concept art for a game, and I would be happy using them as imagination fodder for a D&D campaign.
 
 > "A digital illustration of the Babel tower, 4k, detailed, trending in artstation, fantasy vivid colors"
 
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.34_-_A_digital_illustration_of_the_Babel_tower,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.42_-_A_digital_illustration_of_the_Babel_tower,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" width = "25%" height = "25%"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.34_-_A_digital_illustration_of_the_Babel_tower,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.42_-_A_digital_illustration_of_the_Babel_tower,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" style="height:12em; width:12em"}
 
 > "A digital illustration of a steampunk library with clockwork machines, 4k, detailed, trending in artstation, fantasy vivid colors"
 
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.45_-_A_digital_illustration_of_a_steampunk_library_with_clockwork_machines,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.47_-_A_digital_illustration_of_a_steampunk_library_with_clockwork_machines,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" width = "25%" height = "25%"}
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.49_-_A_digital_illustration_of_a_steampunk_library_with_clockwork_machines,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.52_-_A_digital_illustration_of_a_steampunk_library_with_clockwork_machines,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" width = "25%" height = "25%"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.45_-_A_digital_illustration_of_a_steampunk_library_with_clockwork_machines,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.47_-_A_digital_illustration_of_a_steampunk_library_with_clockwork_machines,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" style="height:12em; width:12em"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.49_-_A_digital_illustration_of_a_steampunk_library_with_clockwork_machines,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.53.52_-_A_digital_illustration_of_a_steampunk_library_with_clockwork_machines,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" style="height:12em; width:12em"}
 
 
 > "A digital illustration of Lothlorien houses on treetops with fireflies, 4k, detailed, trending in artstation, fantasy vivid colors, organic and bent"
 
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.54.08_-_A_digital_illustration_of_Lothlorien_houses_on_treetops_with_fireflies,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" width = "25%" height = "25%"}
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.54.12_-_A_digital_illustration_of_Lothlorien_houses_on_treetops_with_fireflies,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.54.14_-_A_digital_illustration_of_Lothlorien_houses_on_treetops_with_fireflies,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" width = "25%" height = "25%"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.54.08_-_A_digital_illustration_of_Lothlorien_houses_on_treetops_with_fireflies,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" style="height:12em; width:12em"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.54.12_-_A_digital_illustration_of_Lothlorien_houses_on_treetops_with_fireflies,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.54.14_-_A_digital_illustration_of_Lothlorien_houses_on_treetops_with_fireflies,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" style="height:12em; width:12em"}
 
 > "A digital illustration of a steampunk flying machine in the sky with cogs and mechanisms, 4k, detailed, trending in artstation, fantasy vivid colors"
 
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.54.30_-_A_digital_illustration_of_a_steampunk_flying_machine_in_the_sky_with_cogs_and_mechanisms,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" width = "25%" height = "25%"}
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.54.36_-_A_digital_illustration_of_a_steampunk_flying_machine_in_the_sky_with_cogs_and_mechanisms,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" width = "25%" height = "25%"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.54.30_-_A_digital_illustration_of_a_steampunk_flying_machine_in_the_sky_with_cogs_and_mechanisms,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" style="height:12em; width:12em"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.54.36_-_A_digital_illustration_of_a_steampunk_flying_machine_in_the_sky_with_cogs_and_mechanisms,_4k,_detailed,_trending_in_artstation,_fantasy_vivid_colors.png){: loading="lazy" style="height:12em; width:12em"}
 
 ---
 
@@ -157,7 +159,7 @@ Lastly, for another throwback to old times, I tried:
 
 > "The white fox in the Arcadian praerie \| Breath-taking digital painting with vivid colours amazing art mesmerizing, captivating, artstation 3, japanese style"
 
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.09_-_The_white_fox_in_the_Arcadian_praerie___Breath-taking_digital_painting_with_vivid_colours_amazing_art_mesmerizing,_captivating,_artstation_3,_japanese.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.14_-_The_white_fox_in_the_Arcadian_praerie___Breath-taking_digital_painting_with_vivid_colours_amazing_art_mesmerizing,_captivating,_artstation_3,_japanese.png){: loading="lazy" width = "25%" height = "25%"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.09_-_The_white_fox_in_the_Arcadian_praerie___Breath-taking_digital_painting_with_vivid_colours_amazing_art_mesmerizing,_captivating,_artstation_3,_japanese.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.51.14_-_The_white_fox_in_the_Arcadian_praerie___Breath-taking_digital_painting_with_vivid_colours_amazing_art_mesmerizing,_captivating,_artstation_3,_japanese.png){: loading="lazy" style="height:12em; width:12em"}
 
 The scene's composition got so much better, and now it actually looks like an illustration of a fox. This is what the old model did:
 
@@ -167,7 +169,7 @@ It's hard to believe the jump that only took a single year is so significant. Ev
 
 And how could I forget the site's mascot: a cute anime otter (oil painting).
 
-![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_19.03.05_-_An_cute_anime_otter,_oil_painting.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_19.03.10_-_An_cute_anime_otter,_oil_painting.png){: loading="lazy" width = "25%" height = "25%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_19.03.12_-_An_cute_anime_otter,_oil_painting.png){: loading="lazy" width = "25%" height = "25%"}
+![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_19.03.05_-_An_cute_anime_otter,_oil_painting.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_19.03.10_-_An_cute_anime_otter,_oil_painting.png){: loading="lazy" style="height:12em; width:12em"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_19.03.12_-_An_cute_anime_otter,_oil_painting.png){: loading="lazy" style="height:12em; width:12em"}
 
 
 ## Conclusions
