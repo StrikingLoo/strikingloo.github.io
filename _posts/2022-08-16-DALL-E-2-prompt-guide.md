@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "DALL-E 2 Art: My Experiments with Prompts or How I Got My New Wallpaper"
+title: "DALL-E 2 Art: Experiments with Prompts or How I Got My New Wallpaper"
 description: "A curated collection of images I made with DALL-E 2, together with prompt writing tips and tricks. Mostly fantasy illustrations."
 tags: dall-e, image generation, unsupervised learning, AI, art, prompts
 date: 2022-08-16
