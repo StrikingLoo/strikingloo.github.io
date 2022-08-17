@@ -4,7 +4,7 @@ title: "DALL-E 2 Art: My Experiments with Prompts or How I Got My New Wallpaper"
 description: "A curated collection of images I made with DALL-E 2, together with prompt writing tips and tricks. Mostly fantasy illustrations."
 tags: dall-e, image generation, unsupervised learning, AI, art, prompts
 date: 2022-08-16
-twitter_image: "https://strikingloo.github.io/resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_17.50.58_-_An_oil_painting_of_a_mechanical_clockwork_flying_machine_from_the_renaissance,_Gorgeous_digital_painting,_amazing_art,_artstation_3,_realistic.png"
+twitter_image: "https://strikingloo.github.io/resources/ai-generated-images/dalle_2/clockwork_tw.png"
 ---
 
 OpenAI's [Dall-E 2 became available in beta](https://openai.com/blog/dall-e-now-available-in-beta/) a month ago, and as a big fan of generative text-to-image models I instantly joined the waitlist.
