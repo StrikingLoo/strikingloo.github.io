@@ -3,6 +3,7 @@ layout: post
 title: "Text to Image Art: My Experiments with mini DALL-E and other models"
 description: "I discuss how to write better prompts for dalle mini, and other models that are even better."
 date: 2022-07-11
+importance: 7
 ---
 
 Ever since [DALL-E](https://openai.com/blog/dall-e/) came out in January 2021, or even before that with [PixelRNN](https://arxiv.org/pdf/1601.06759.pdf), I've found generative models, especially for images, amazing. But what I was interested in was how could I write better prompts that yielded the most beautiful images?
