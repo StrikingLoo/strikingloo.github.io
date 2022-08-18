@@ -7,7 +7,9 @@ language: English
 importance: 10
 ---
 
-_Based on the [Stanford MOOC](http://web.stanford.edu/class/cs224n/index.html)_
+_These are my notes for the [Stanford MOOC](http://web.stanford.edu/class/cs224n/index.html)_. 
+
+I have explained most concepts by rephrasing and summarizing them, and also added references to other material, like articles, papers and internal links when relevant.
 
 ## Word2Vec
 
