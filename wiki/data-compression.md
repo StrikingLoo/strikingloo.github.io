@@ -1,6 +1,7 @@
 ---
 layout: post
 importance: 7
+date: 2022-08-07
 title: "Introduction to Data Compression"
 abstract: "Notes on 'Introduction to Data Compression' by Guy E. Blelloch, Computer Science Department, Carnegie Mellon University. Including how Huffman Encoding, Arithmetic Coding, PPM, LZ, ZIP, JPEG and MPEG work."
 description: "Notes on 'Introduction to Data Compression' by Guy E. Blelloch, Computer Science Department, Carnegie Mellon University."
