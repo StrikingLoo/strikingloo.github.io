@@ -6,28 +6,29 @@ description: "My notes from Stanford's Deep Learning for NLP course, plus any pa
 language: English
 importance: 10
 ---
-Deep Learning + NLP
 
-_Based on the Stanford MOOC_
-
-[http://web.stanford.edu/class/cs224n/index.html](http://web.stanford.edu/class/cs224n/index.html#schedule) # Syllabus
+_Based on the [Stanford MOOC](http://web.stanford.edu/class/cs224n/index.html)_
 
 ## Word2Vec
 
-Word2Vec optimizes for dot product between similar words (softmax(UWi)).
+In Word2Vec, we create a mapping between a language's tokens, and a semantically meaningful, dense space (of much lower dimensionality). For instance, in this space we would expect words that have similar meanings to be close (for a notion of vector distance), and words that are generally unrelated to be far away. These spaces are usually normalized (no vector has a length > 1).
 
-But you can also make it sigmoid(WiUj) for each word, for each context embedding Uj in a window, and then that + sigmoid(-WiUk) for k chosen randomly. Similar to a Boltzmann Machine’s unlearning, in a way.
+To train Word2Vec, each instance will be a context (a set of N consecutive tokens in a training sample) where we will use as a loss the dot product between pairs of words (softmax(UWi)). This penalizes assigning a higher probability to other words, or a low probability to this pair.
 
-Hyperparam magics: performance plateaus at d=300 (but doesn’t fall apart, even at 10k!! -nips, 2018-). Seems to have something to do with PCA.
+You can also make it sigmoid(WiUj) for each pair of words in a context, for each context embedding Uj in a window, and then that + sigmoid(-WiUk) for k chosen randomly. 
 
-Then another thing: data quality matters like crazy. Model with "small" Wikipedia dataset outperforms model with BIG news scraped dataset.
+This is a contrastive loss, like that used in [CLIP](/wiki/clip), or in a Boltzmann Machine. The random words would represent an "unlearning phase" in Boltzmann Machine parlance.
 
-Evaluating Word Embeddings: You can evaluate analogies (with accuracy over premade datasets, using semantic or syntactic analogy), or cosine distance/similarity vs psych-undergrad-driven mechanical turk similarity.
+_Hyperparam magics_: performance plateaus at embedding dimension d=300 (but doesn’t fall apart, even at 10k!! -nips, 2018-). Seems to have something to do with PCA.
+
+For these models, data quality matters a lot. Model with "small" Wikipedia dataset outperforms model with BIG news scraped dataset.
+
+_Evaluating Word Embeddings_: You can evaluate analogies (with accuracy over premade datasets, using semantic or syntactic analogy), or cosine distance/similarity vs human-rated (e.g., mechanical-turk) similarity.
 
 ## Language Modeling:
-Train a model to predict the t+1th word based on the previous n words.
+Train a model to predict the n+1th word based on the previous n words. This is an [autoregressive task](/wiki/unsupervised-learning-berkeley#autoregressive-models).
 
-**Fixed-window:**
+### Fixed-window models
 
 predict using the previous fixed k words. E.g., use a Markov chain or a co-occurrence matrix. You can train a fully connected MLP using one-hot encoding of the words (super sparse vectors as inputs -actually passed as indices in any sane implementation-).
 
@@ -35,17 +36,21 @@ predict using the previous fixed k words. E.g., use a Markov chain or a co-occur
 
 Semantically similar words should produce similar "next word" distributions, but normal window models don’t leverage that! Let’s add some embeddings into the mix.
 
-**Arbitrary length window:** 
+### Arbitrary length window models
 
-Train an RNN. This means divide your dataset into sequences (usually sentences, paragraphs, or whole texts from your corpus).
-For every sequence, you initialize a hidden state h with zeroes (or a reasonable prior). You take each i-th word in order, get its embedding, concat that with h, make that go through an affine layer, plus bias, and use that to predict the i+1-th word (through your typical affine + softmax layer). After doing this for every word in your batch, you backpropagate the binary cross entropy loss of the generated probabilities, for every word, and thus get a better W matrix for both the hidden state and the embeddings (you can train h0 too. You could also train the embeddings if your corpus was large enough).
+Train a **Recurrent Neural Network** (RNN). This means divide your dataset into sequences (usually sentences, paragraphs, or whole texts from your corpus).
 
-**Perplexity:**
+For every sequence, you initialize a hidden state h with zeroes (or a reasonable prior). You take each i-th word in order, get its embedding, concat that with h, make that go through an affine layer, plus bias, and use that to predict the i+1-th word (through your typical affine + softmax layer). 
+
+After doing this for every word in your batch, you backpropagate the binary cross entropy loss of the generated probabilities, for every word, and thus get a better W matrix for both the hidden state and the embeddings. (You can train h0 too. You could also train the embeddings if your corpus was large enough).
+
+### Perplexity
 
 Defined as the inverse of the probability of the corpus, normalized by ^1/N. Another way to look at it: take the geometric average of the inverse probability your model gives to each t+1-th word, given the previous t of them.
-GPT-3 gets about 20 as a perplexity value (so mean probability is about .05. Not bad).
 
-**Vanishing vs Exploding Gradient:**
+GPT-3 gets about 20 as a perplexity value on test corpus (so mean probability is about .05. Not bad).
+
+### Vanishing vs Exploding Gradient
 
 The gradient for the t-th word is the productorial of the gradients of the previous t-1 words, which means if the norm of the Jacobian is <1 then it will be exponentially small on the amount of words, and the opposite will happen for a Jacobian >1.
 This means a word a few spaces in the future, won’t make a big enough impact in decisions in the past.
@@ -53,16 +58,19 @@ We solve exploding gradients with clipping gradient: if gradient norm > e, then 
 
 To solve vanishing gradients, two architectures were invented: LSTM and GRU, which is just a streamlined LSTM (a few less gates, converges faster and has less parameters). They usually perform similarly, or LSTM a bit better since it has more parameters.
 
-**LSTM**
+### LSTM
+
 LSTMs have Cell States aside from hidden states, and they save information in the cell state and decide which parts to pass along with hidden states.
 They have forget, input and output gates, each a sigmoid of an affine transformation of the concatenation of the inputs (for word t) and the hidden state (t-1).
-You make your cell state^ be tanh(another affine transform from input and hidden state t-1).
+You make your cell state be tanh (another affine transform from input and hidden state t-1).
+
 Then your actual cell state is input gate * that cell state + forget gate * last cell state.
-Finally, you update your hidden state as output_gate * tanh( cell).
+
+Finally, you update your hidden state as output_gate * tanh(cell).
 
 ![](image/Screen%20Shot%202020-09-26%20at%2019.12.09.png){: style="height:70%; width:70%" alt="" loading="lazy"}
 
-**GRU**
+### GRU
 They work similarly, but have less gates. Instead of output gate and tanh of cell, you just make a convex sum between update gate times previous hidden state, and 1- update gate times tanh of affine of inputs + hidden state t-1 (times a reset_gate that’s kinda like a forget gate).
 
 ![](image/Screen%20Shot%202020-09-26%20at%2019.13.48.png){: style="height:70%; width:70%" alt="" loading="lazy"}
@@ -77,8 +85,9 @@ They work similarly, but have less gates. Instead of output gate and tanh of cel
 
 ![](image/Screen%20Shot%202020-10-03%20at%2016.25.41.png){: alt="" loading="lazy"}
 
-You train an encoder RNN (With the usual chirimbolos: Word Embeddings, usually you could use an LSTM or GRU etc.) on the source language, and then train a different decoder RNN that has as its starting hidden state not a random or 0s vector, but the hidden state for the last word in the source sentence.
-It then has to generate all the words in the target sentence. You backpropagate the error in each word using cross entropy on softmax (with the same tricks you used for, say, word embeddings for the big vocab size).
+We train an encoder RNN (With the usual gizmos: Word Embeddings, usually we could use an LSTM or GRU, etc.) on the source language, and then train a different decoder RNN that has as its starting hidden state not a random or 0s vector, but the hidden state for the last word in the source sentence. We expect this value to encapsulate all the meaning in the source sentence.
+
+The decoder then has to generate all the words in the target sentence using the source encoding as an input. We backpropagate the error in each word using cross entropy on softmax (with the same tricks you used for, say, word embeddings for the big vocab size).
 
 ![](image/Screen%20Shot%202020-10-03%20at%2016.26.00.png){: alt="" loading="lazy"}
 
@@ -92,12 +101,14 @@ But how do we solve for the fact that the last hidden state may not contain all 
 
 ![](image/Screen%20Shot%202020-10-03%20at%2016.28.05.png){: alt="" loading="lazy"}
 
-We add attention! Here’s how it works:
-* You take the hidden state for your i-th word on the target sentence.
-* Take dot product with each hidden state on the source sentence.
-* Take vector of inner products (they’re each a scalar) and do softmax on it. You now have a probability (attention) distribution.
-* Take the convex sum of encoder hidden states weighted by the attention each one gets. Concatenate that with the decoder hidden state and use that for the affine layer before softmax.
-It can also get more general: instead of convex sum of dot products, you could do dot product between the states and a matrix in the middle, or do crazy things with tanh and a different vector for attention allocation.
+We add attention! Here's how it works:
+
+- We take the hidden state for our i-th word on the target sentence, Hi.
+- Take the dot product with each hidden state Hj on the source sentence.
+- Take the vector of inner products (they’re each a scalar) and do softmax on it. We now have a probability (attention) distribution.
+- Take the convex sum of encoder hidden states Hj, weighted by the attention each one gets. Concatenate that with the decoder hidden state and use that for the affine layer before the softmax.
+
+It can also get more general: instead of a convex sum of dot products, we could do dot product between the states and a matrix in the middle, or do crazy things with tanh and a different vector for attention allocation.
 
 ![](image/Screen%20Shot%202020-10-03%20at%2016.28.14.png){: style="height:70%; width:70%" alt="" loading="lazy"}
 
@@ -107,9 +118,9 @@ It can also get more general: instead of convex sum of dot products, you could d
 
 A few quotes I liked:
 
-"A lot of the last two years of NLP can be summed up as "people have found a lot of clever ways to use attention and that’s been pairing just about all the advances." "
+> "A lot of the last two years of NLP can be summed up as "people have found a lot of clever ways to use attention and that’s been pairing just about all the advances." "
 
-"Many times in research, you get the best performance with a simple model, then over time people come up with more complex architectures and they perform even better, and eventually someone realizes if you tune the parameters for the simpler model just right you can beat them again." [paraphrased by me]
+_"Many times in research, you get the best performance with a simple model, then over time people come up with more complex architectures and they perform even better, and eventually someone realizes if you tune the parameters for the simpler model just right you can beat them again."_ \[paraphrased by me]
 
 ### Question Answering definition
 
@@ -125,7 +136,7 @@ Models were bad at noticing if no answer was present, until researchers came up 
 
 ### Stanford attentive reader
 
-This model beats traditional (non-neural) NLP models by a factor of almost 30 F1 points in SQuAD. It loses to BERT &c. But it's kind of simple.
+This model beats traditional (non-neural) NLP models by a factor of almost 30 F1 points in SQuAD. It loses to BERT and other transformers, but it's simpler.
 
 - Feed the Question through a bi-directional LSTM with word embeddings. 
 - Concatenate both end states (one for each network, so one for first word of reverse and one for last of right way).
@@ -134,7 +145,7 @@ This model beats traditional (non-neural) NLP models by a factor of almost 30 F1
 
 ![](image/start_end_attentive_reader.png){: alt="" loading="lazy"}
 
-You may say we're missing the information about words in the middle, but actually we're training the LSTM to push that information to the edges (and this is bidirectional so it works both ways).
+It could be thought that we're missing the information about words in the middle, but actually we're training the LSTM to push that information to the edges (and this is bidirectional so it works both ways).
 
 Here's what we actually gained by using neural networks:
 
@@ -153,11 +164,11 @@ Here's what we actually gained by using neural networks:
 
 Word embeddings can be composed from character embeddings:
 
-* Generates **embeddings for unknown words**. 
-* Similar spellings share similar embeddings. 
-* Solves **OOV problem** (usually you'll keep your word embeddings, and use average of character embeddings when OOV.
+- Generates **embeddings for unknown words**. 
+- Similar spellings share similar embeddings. 
+- Solves **OOV problem** (usually you'll keep your word embeddings, and use average of character embeddings when OOV).
 
-**Connected language** (such as Japanese) can be processed as characters.
+A **connected language** (such as Japanese) can be processed as characters.
 
 Both methods have proven to work very successfully!
 
@@ -217,33 +228,41 @@ We sort of did this with hidden states on RNNs/LSTMs: their values depend on pre
 
 Train a separate Language Model in an unsupervised manner, which allows you to use a huge corpus (say, Wikipedia). Also derive your word embeddings from it.
 
-Then feed to your main model both a char-RNN rep'n, a word embedding and, after going through a bi-directional LSTM, concatenate hidden states with the concatenated hidden states of the (now pre-trained and frozen) language model.
+Then feed to your main model both a char-RNN reppresentation, a word embedding and, after going through a bi-directional LSTM, concatenate hidden states with the concatenated hidden states of the (now pre-trained and frozen) language model.
 
-This beat SOTA by a narrow margin (0.3) but it was a much simpler model than the competition. 
+This beat SotA by a narrow margin in perplexity but it was a much simpler model than the competition. 
 
 ### ELMo
 
-ELMo beat SOTA in a wide range of tasks by a big margin, whereas most academics work all year to beat SOTA on a single task by about 1%. 
+ELMo beat SotA in a wide range of tasks by a big margin, whereas most academics work all year to beat SotA on a single task by about 1%. 
 
-This was ground-breaking, and the paper won Best Paper Award at NAACL 2018 (maybe read the best paper awards from the last few years?).
+This was ground-breaking, and the paper won Best Paper Award at NAACL 2018. \[maybe read the best paper awards from the last few years?]\[🌱]
 
-ELMo works similarly to TagLM, but:
+ELMo works similarly to TagLM. The architecture of the language model is:
 
-* Use 2 Bi-LSTM layers
-* Use only a char-CNN to build initial word representations (only): 2048 char n-gram filters, 2 highway layers, 512 dim projection space.
-* Use 4096 hidden state cells with 512 dim projections for next layer.
+- Use 2 Bi-LSTM layers.
+- Use only a char-CNN to build initial word representations: 2048 char n-gram filters, 2 highway layers, 512 dim projection space.
+- Use 4096 hidden state cells with 512 dim projections for next layer.
 
-Then they added:
+Then they added different weights per LSTM layer's hidden state, and different weight to the whole LM's hidden states per task. 
+
+This way ELMo only uses the LM where it matters, and assigns different importance to each layer (reportedly the lowest layer is better for syntactic information, and is more useful for NER or POS-tag, whereas the second layer carries more semantic data, and works better for Question Answering, Sentiment Analysis, etc.).
 
 ![Screen_Shot_2021-01-07_at_17-57-49.png](image/Screen_Shot_2021-01-07_at_17-57-49.png){: style="height:70%; width:70%" alt="" loading="lazy"}
 
-Different weights per LSTM layer's hidden state. Different weight to the whole LM's hidden states per task. This way ELMo only uses the LM where it matters, and assigns different importance to each layer (reportedly the lowest layer is better for syntactic information, and is more useful for NER or POS-tag, whereas the second layer carries more semantic data, and works better for Question Answering, Sentiment Analysis, etc.).
+
 
 ## Transformers
 
+Transformers revolutionized natural language processing, then any autoregressive problem, and are now used for image, audio, text and many other tasks where modelling is required.
+
+They do away with recurrent layers, and instead take a whole batch of consecutive temporal inputs (say, a sequence of tokens) and make them go through "attention heads" which map each token's embedding to a new embedding space that contains contextual information by attending to the embeddings of all other tokens in the context window.
+
+On the one hand, we lose the unlimited window size. On the other, they can be trained much faster and more cheaply, and window sizes can be big enough (though limited) for the problem to be less relevant.
+
 ### GPT
 
-"Attention is all you need": What if we drop the Recurrent part, and just keep the attention to maintain long-term information and context?
+"[Attention is all you need](https://arxiv.org/abs/1706.03762)": What if we drop the Recurrent part, and just keep the attention to maintain long-term information and context?
 
 This is how a transformer's Encoder works:
 
@@ -251,7 +270,7 @@ You take the whole sentence, and make each word go through an "atttention head".
 
 All words in a same sentence can run through an attention head in parallel, making transformers train a lot faster in GPU.
 
-![Screen_Shot_2021-01-07_at_18-40-02.png](image/Screen_Shot_2021-01-07_at_18-40-02.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![Screen_Shot_2021-01-07_at_18-40-02.png](image/Screen_Shot_2021-01-07_at_18-40-02.png){: style="height:50%; width:50%" alt="" loading="lazy"}
 
 The attention mechanism can be scaled horizontally to add more semantic/syntactic interpretations of a word in-context. Notice the skip connections that make the final output the sum of all intermediate layers.
 
@@ -273,10 +292,18 @@ Multi-headed attention nodes are composed (vertically) and finally you can run y
 
 The decoder is left as an exercise for the reader. For LM you can skip it.
 
-*Related reading*: 
+**Related reading**: 
+
+An excellent visual explanation of transformers is available at [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/).
+
+There is also Karpathy's [MinGPT](https://github.com/karpathy/minGPT) for a clean implementation.
+
+**See also**: 
 - [TransGAN](/wiki/transGAN)
 - [Visual Transformer](/wiki/visual-transformer)
 - [Transformers see like CNNs](/wiki/transformers-see-like-cnn)
+
+And [many more articles tagged _transformer_](/tagged?q=transformer) in this wiki.
 
 ### BERT (Bidirectional Encoder Representations from Transformers)
 
@@ -284,9 +311,9 @@ Problem: LM's are unidirectional, but language understanding is bidirectional.
 
 Why? Because you can't learn to predict the future by seeing it.
 
-Solution: Train a LM by removing k=15% (they never change this) of words from each sentence and predicting them from bidirectional context. 
+Solution: Train a LM by removing _k_=15% (a somewhat arbitrary value, but they never change this) of words from each sentence and predicting them from bidirectional context. 
 
-Setting k is a trade-off: too much and you don't see context, too little and you train too slowly.
+Setting _k_ is a trade-off: too much and you don't see context, too little and you train too slowly.
 
 In a way, OpenAI's GPT used unidirectional transformers, and ELMo took advantage of bidirectionality with its pre-trained LM.
 
@@ -310,9 +337,7 @@ On BERT, you multiply by the whole sentence's embeddings on each layer, then go 
 
 On GPT, you were doing first a product for the first word, then one for the first two, and so on, for every layer. This wasn't as good -though it was still better than going full recurrent-.
 
-![decoder-transformer](image/decoder-transformer.png){: style="height:70%; width:70%" alt="" loading="lazy"}
-
-For transformers for NMT, you send the last layer of the encoder, plus the last in the decoder, into an encoder-decoder attention layer which lets you model interaction between words.
+For transformers for Neural Machine Translation, you send the last layer of the encoder, plus the last in the decoder, into an encoder-decoder attention layer which lets you model interaction between words.
 
 You also make sure the decoder is trained on predicting unidirectionally, as opposed to the encoder which is bidirectional. This is, you feed the decoder only the first n words, and do prediction for the n+1-th one.
 
@@ -320,11 +345,11 @@ Transformers have been used on image generation tasks (either feeding them a ras
 
 They have also been used for music generation, where the "tokens" were start note, end note, move clock forward, and a volume indicator.
 
-
 ## Natural Language Generation
 
-Teacher Forcing: during training we feed the decoder with the right words from the supervised decoded sentence, regardless of what it is actually predicting on each step. 
+Given an already trained language model, how do we sample a sequence of tokens from it?
 
+Teacher Forcing: during training we feed the decoder with the right words from the supervised decoded sentence, regardless of what it is actually predicting on each step. 
 
 ![Screen_Shot_2021-01-14_at_18-31-12.png](image/Screen_Shot_2021-01-14_at_18-31-12.png){: alt="" loading="lazy"}
 
@@ -332,13 +357,13 @@ Teacher Forcing: during training we feed the decoder with the right words from t
 
 ### Decoding Algorithms
 
-* Greedy Decoding: take the most probable word at every step (until producing <END> token). Lacks backtracking and can generate poor results. Think Markov chain.
-* Beam-Search Decoding: Find a high-probability sequence by tracking k most probable partial sequences (called hypotheses) so far. You choose sequence with highest probability, adjusted for length.  (= greedy if k = 1. Ungrammatical, nonsensical, etc. Larger k: reduces some of the problems, but is more computationally expensive. It also makes more generic dialogue on chit-chat tasks, and less BLEU score due to short sentences).
+- **Greedy Decoding**: take the most probable word at every step (until producing \<END\> token). Lacks backtracking and can generate poor results. Think Markov chain.
+- **Beam-Search Decoding**: Find a high-probability sequence by tracking k most probable partial sequences (called hypotheses) so far. You choose sequence with highest probability, adjusted for length. (= greedy if k = 1\. Ungrammatical, nonsensical, etc. Larger k: reduces some of the problems, but is more computationally expensive. It also makes more generic dialogue on chit-chat tasks, and less BLEU score due to short sentences).
 
 ### Sampling-based Decoding
 
-* Pure Sampling: sample from probability distribution for next word, greedily.
-* Top-n Sampling: sample from probability distribution for next word (greedy), but only take into account the top n most likely words.
+- **Pure Sampling**: sample from probability distribution for next word, greedily.
+- **Top-n Sampling**: sample from probability distribution for next word (greedy), but only take into account the top n most likely words.
 
 ![Screen_Shot_2021-01-14_at_18-51-54.png](image/Screen_Shot_2021-01-14_at_18-51-54.png){: alt="" loading="lazy"}
 
@@ -390,21 +415,16 @@ This problem hasn't been solved yet! -as of the lecture-.
 
 Final takeaway: NLG is the wild west of NLP, and there's a lot of new stuff to uncover. 
 
-1. The more open-ended the task, the harder everything becomes. • Constraints are sometimes welcome! 
+Conclusions taken from slide:
 
-2. Aiming for a specific improvement can be more manageable than aiming to improve overall generation quality. 
-
-3. If you're using a LM for NLG: improving the LM (i.e. perplexity) will most likely improve generation quality... but it's not the only way to improve generation quality. 
-
-4. Look at your output, a lot.
-
-5. You need an automatic metric, even if it's imperfect. • You probably need several automatic metrics. 
-
-6. If you do human eval, make the questions as focused as possible. 
-
-7. Reproducibility is a huge problem in today's NLP + Deep Learning, and a huger problem in NLG. Please, publicly release all your generated output along with your paper! 
-
-8. Working in NLG can be very frustrating. But also very funny...
+- The more open-ended the task, the harder everything becomes. • Constraints are sometimes welcome! 
+- Aiming for a specific improvement can be more manageable than aiming to improve overall generation quality. 
+- If you're using a LM for NLG: improving the LM (i.e. perplexity) will most likely improve generation quality... but it's not the only way to improve generation quality. 
+- Look at your output, a lot.
+- You need an automatic metric, even if it's imperfect. • You probably need several automatic metrics. 
+- If you do human eval, make the questions as focused as possible. 
+- Reproducibility is a huge problem in today's NLP + Deep Learning, and a huger problem in NLG. Please, publicly release all your generated output along with your paper! 
+- Working in NLG can be very frustrating. But also very funny...
 
 ---
 
@@ -416,9 +436,11 @@ Part of the improvement seen on BERT comes from next-sentence prediction task, a
 An interesting emerging effect is BERT beat SotA models in small datasets too, which violates common rules of thumb. 
 
 ### Distillation 
+Distillation is an instance of [semi-supervised learning](/wiki/unsupervised-learning-berkeley#semi-supervised-learning). 
+
 - Train a "teacher" which is just a SotA model
 - Label a large amount of unlabeled inputs with teacher on the specific task you want to distill
-- Train student with smaller (e.g., ~50x smaller) size and bigger dataset, on cross entropy
+- Train student with smaller (e.g., \~50x smaller) size and bigger dataset, on cross entropy
 
 Now you have a small trained model for your problem.
 
