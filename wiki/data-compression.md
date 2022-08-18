@@ -1,11 +1,11 @@
 ---
 layout: post
-importance: 3
+importance: 7
 title: "Introduction to Data Compression"
-abstract: "Notes on 'Introduction to Data Compression' by Guy E. Blelloch, Computer Science Department, Carnegie Mellon University. Currently a work in progress."
-description: "Notes on 'Introduction to Data Compression' by Guy E. Blelloch, Computer Science Department, Carnegie Mellon University. Currently a work in progress."
+abstract: "Notes on 'Introduction to Data Compression' by Guy E. Blelloch, Computer Science Department, Carnegie Mellon University. Including how Huffman Encoding, Arithmetic Coding, PPM, LZ, ZIP, JPEG and MPEG work."
+description: "Notes on 'Introduction to Data Compression' by Guy E. Blelloch, Computer Science Department, Carnegie Mellon University."
 language: English
-tags: algorithms, compression, statistics, programming
+tags: algorithms, compression, statistics, programming, data compression, zip, jpeg, mpeg
 ---
 
 
@@ -153,5 +153,99 @@ Pseudocode for LZW is as follows (note that this version doesn't do LZSS, or non
 ![](image/compression4.png){: loading="lazy"}
 
 The dictionary operations can be implemented very efficiently using a trie, or just a hash table for each prefix if memory is an issue (which happens quick as the trie grows in memory exponentially in the key length -with a base proportional to alphabet size-, and keys can get long).
+
+
+## Lossy Compression
+
+In lossy compression, the resulting message may be significantly smaller in size than the original, but after reconstruction a portion of the information is lost.
+
+Thus lossy algorithms can compress data almost arbitrarily efficiently, with human perceived degradation as the constraint.
+
+**Vector Quantization**: We assign all vectors in our population to a set of clusters, and map each point to its closest cluster centroid. This allows for a very efficient encoding of, for instance, image pixels (using a reduced palette as I covered in [dithering](/dithering)). 
+
+For a lossless alternative, we could store each pixel's centroid ID plus the residue, which if the data are sufficiently clustered should tend to be small and thus encode efficiently through e.g. Huffman encoding or others.
+
+**Transform Coding**: For a set of _n_ values, transforms can
+be expressed as an _n × n_ matrix _T_. Multiplying the input by this matrix _T_ gives, the transformed coefficients. Multiplying the coefficients by _T^−1_ will convert the data back to the original form.
+
+For example, the coefficients for the discrete cosine transform (DCT) are:
+
+![](image/compression5.png)
+
+For the purpose of compression, the properties we would like of a transform are (1) to decorrelate the data, (2) have many of the transformed coefficients be small, and (3) have it so that from
+the point of view of perception, some of the terms are more important than others (so dropping the unimportant ones is viable).
+
+### JPEG
+
+JPEG is a lossy compression scheme for color and gray-scale images.
+
+JPEG is designed so that the loss factor can be tuned by the user to tradeoff image size and
+image quality, and is designed so that the loss has the least effect on human perception.
+
+It is optimized for naturalistic images, not line drawings or pictures with big smooth monochromatic surfaces.
+
+The first step of JPEG
+compression, which is optional, is to convert these into YIQ color planes.
+
+The Y plane is designed to represent the brightness (luminance) of the image. It
+is a weighted average of red, blue and green (0.59 Green + 0.30 Red + 0.11 Blue), weighted according to human eye perception of brightness.
+
+The I (interphase) and Q (quadrature) components represent the color hue (chrominance).
+
+JPEG keeps all pixels for the intensity, but typically down samples the two color planes by a factor of 2 in each dimension (a total factor of 4). This is the first lossy component of JPEG and gives a factor of 2 compression: (1 + 2 * .25)/3 = .5.
+
+Then each plane is divided into 8x8 blocks, to each of which we apply a cosine
+transform across both dimensions. This returns an 8x8 block of 8-bit frequency terms. So far this
+does not introduce any loss, or compression.
+
+"After the cosine transform, the next step applied to the blocks is to use uniform scalar quantization on each of the frequency terms. This quantization is controllable based on user parameters and is the main source of information loss in JPEG compression. Since the human eye is more perceptive to certain frequency components than to others, JPEG allows the quantization scaling
+factor to be different for each frequency component. The scaling factors are specified using an
+8x8 table that simply is used to element-wise divide the 8x8 table of frequency components."
+
+The frequency table is then traversed in zig zag, and run length encoded so that there are many similar consecutive values (especially 0, due to obscure transform-related reasons).
+
+This last sequence is compressed with Huffman coding.
+
+A more visual explanation can be found in this [introduction to JPEG compression](https://www.tutorialspoint.com/dip/Introduction_to_JPEG_compression.htm).
+
+### MPEG
+
+> Correlation improves compression. This is a recurring theme in all of the approaches we have seen; the more effectively a technique is able to exploit correlations in the data, the more effectively it will be able to compress that data.
+
+Each frame in an MPEG image stream is encoded using one of three schemes:
+
+- **I-frame**, or intra-frame: are coded as isolated images.
+- **P-frame**, or predictive coded frame, are based on the previous I- or P-frame.
+- **B-frame**, or bidirectionally predictive coded frame, are based on either or both the previous and next I- or P-frame.
+
+In an MPEG stream, I-frames and P-frames
+appear in an MPEG stream in simple, chronological order. However, B-frames are moved so that
+they appear after their neighboring I- and P-frames. This guarantees that each frame appears after
+any frame upon which it may depend. An MPEG encoder can decode any frame by buffering the
+two most recent I- or P-frames encountered in the data stream.
+
+Since **I-frames are independent images**, they can be encoded as if they were still images. The
+particular technique used by MPEG is a variant of the JPEG technique.
+
+To decode any frame we need only find its closest previous I-frame and go from
+there. This is important for allowing reverse playback, skip-ahead, or error-recovery.
+
+To **encode a P-frame**, for each target block in the P-frame the encoder finds a reference block in the previous P- or I-frame that most closely matches it. The reference block need not be aligned on a 16-pixel boundary and can potentially be anywhere in the image. In practice, however, the x-y offset is typically small. The offset is called the motion vector.
+
+Once the match is found, the pixels of the reference block are
+subtracted from the corresponding pixels in the target block. **This gives a residual which ideally is close to zero everywhere.** This residual is coded using a scheme similar to JPEG encoding, but will ideally get a much better compression ratio because of the low intensities. In addition to sending the coded residual, the coder also needs to send the motion vector. This vector is Huffman coded.
+
+> The motivation for searching other locations in the reference image for a match is to allow for the efficient encoding of motion.
+
+In practice, the search for good matches for each target block is the most computationally
+expensive part of MPEG encoding. Decoding however is cheap.
+
+**B-frames look for reusable data in both directions.** The overall technique is very similar to that
+used in P-frames, but instead of just searching in the previous I- or P-frame for a match, it also
+searches in the next I- or P-frame. This works for cases where, for instance, an object is occluded and appears from behind another, then moves and hides behind a second one or disappears out of scene.
+
+The coder needs to send some information on which reference(s) is (are)
+used, and potentially needs to send two motion vectors, if it chooses to average next and previous I/P- frame.
+
 
 
