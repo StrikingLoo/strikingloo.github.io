@@ -23,3 +23,4 @@ If you want to build your own personal wiki / personal site using mine as a temp
 - Go to `_layouts` to see the HTML templates for each page kind. You can fiddle around with them, but please remember to change the google analytics code on default.html to yours so your traffic and mine don't get mixed up.
 - Customize `wiki/index.html`, the index.html on base directory (homepage) and the social networking links on `_layouts/default.html`'s footer.
 - To change up the style, just edit `css/main.css` and run `minify_css.sh` to minify (or change the default layout to import the unminified css instead).
+
