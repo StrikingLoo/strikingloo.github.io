@@ -135,6 +135,27 @@ The linking comes when you interpret the ideas for your own work. While you're r
 
 Source: [Writing.Bobdoto.Computer](https://writing.bobdoto.computer/question-i-just-finished-reading-a-book-and-took-lots-of-notes-now-what)
 
+## WebSeitz on the uses for a Wiki
+
+"Suppose you’re thinking deeply about something. You’ll stop often. Get stuck... You’ll pull ideas from all kinds of places, often including technical ideas only a tiny handful of people can be expected to know. And you’ll want to use those ideas as rapidly as you are able, freely associating. And yet almost all of these actions violate the conventional wisdom about how to build an audience and engagement.
+
+A natural response to the above is: well, why not just do the thinking in private, then? Why impose it on the public at large?
+
+This is a false dichotomy. There’s a very large gap between “think and write for just oneself”, and “try to write for the largest possible audience”. And different types of creative work are best done at different places within that gap.
+
+There’s something strangely difficult in writing just for oneself. As far as I can tell, almost no-one can do it productively. **Most people find this: you think you understand something, then try to explain it to others, and find your understanding has important holes. Or you find that when you speak to others you naturally improve your explanations.**"
+
+As a summary to WebSeitz's Wiki philosophy, he proposes Wiki notes can be used for projects (with project logs and spinning off new notes), goals (tracking them and the steps we take to reach them), values, reflections on topics, and tracking areas of your life. 
+
+He also proposes [tracking ideas in an Idea List](http://webseitz.fluxent.com/wiki/IdeaList):
+
+Whenever you:
+- Have an idea you think is worth remembering, even if it is quite random
+- Read something and it makes you go "hmm..." 
+
+Then you should capture it in its own note.
+
+I think this is a lower bar than I use for my own notes, but I will try this method for a while and see where it leads me. I like the idea of capturing all things I find surprising, and don't think I have that many creative ideas in a day, but let's see where it leads me.
 
 ## Johnny Decimal
 
