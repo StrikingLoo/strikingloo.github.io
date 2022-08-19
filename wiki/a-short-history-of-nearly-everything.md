@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-03-22
-title: "Book Excerpts and Notes: A Short History of Nearly Everything"
+title: "A Short History of Nearly Everything - Excerpts and Notes"
 tags: science, books, book, notes, ashone, geology, biology
 description: "Notes and excerpts from 'A Short History of Nearly Everything', by Bill Bryson."
 language: English

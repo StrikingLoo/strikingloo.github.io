@@ -40,6 +40,27 @@ Describing his uncle:
 
 ---
 
+**Benjamin Vaughan's Letter:**
+
+> "How compatible it is to be great and domestic, enviable and yet good-humored."
+
+“though the event is flattering, the means are as simple as wisdom could make them; that is, depending upon nature, virtue, thought and habit.”
+
+“For the furtherance of human happiness, I have always maintained that it is necessary to prove that man is not even at present a vicious and detestable animal; and still more to prove that good management may greatly amend him; and it is for much the same reason, that I am anxious to see the opinion established, that there are fair characters existing among the individuals of the race; for the moment that all men, without exception, shall be conceived abandoned, good people will cease efforts deemed to be hopeless, and perhaps think of taking their share in the scramble of life, or at least of making it comfortable principally for themselves. ”
+
+I find it a delightful surprise that he refers, even without alluding to it by name, to a coordination problem of morality. Some of society's problems are universal, even through the ages.
+
+---
+
+“The objections and reluctances I met with in soliciting the subscriptions, made me soon feel the impropriety of presenting one's self as the proposer of any useful project, that might be suppos'd to raise one's reputation in the smallest degree above that of one's neighbors, when one has need of their assistance to accomplish that project. I therefore put myself as much as I could out of sight, and stated it as a scheme of a number of friends, who had requested me to go about and propose it to such as they thought lovers of reading. In this way my affair went on more smoothly, and I ever after practis'd it on such occasions; and, from my frequent successes, can heartily recommend it.”
+
+“This library afforded me the means of improvement by constant study, for which I set apart an hour or two each day, and thus repair'd in some degree the loss of the learned education my father once intended for me. Reading was the only amusement I allow'd myself. I spent no time in taverns, games, or frolicks of any kind; and my industry in my business continu'd as indefatigable as it was necessary.”
+
+“ made a little book, in which I allotted a page for each of the virtues. I rul'd each page with red ink, so as to have seven columns, one for each day of the week, marking each column with a letter for the day. I cross'd these columns with thirteen red lines, marking the beginning of each line with the first letter of one of the virtues, on which line, and in its proper column, I might mark, by a little black spot, every fault I found upon examination to have been committed respecting that virtue upon that day.
+
+I determined to give a week's strict attention to each of the virtues successively. Thus, in the first week, my great guard was to avoid every the least offence against Temperance, leaving the other virtues to their ordinary chance, only marking every evening the faults of the day. Thus, if in the first week I could keep my first line, marked T, clear of spots, I suppos'd the habit of that virtue so much strengthen'd and its opposite weaken'd, that I might venture extending my attention to include the next, and for the following week keep both lines clear of spots. Proceeding thus to the last, I could go thro' a course compleat in thirteen weeks, and four courses in a year. And like him who, having a garden to weed, does not attempt to eradicate all the bad herbs at once, which would exceed his reach and his strength, but works on one of the beds at a time, and, having accomplish'd the first, proceeds to a second, so I should have, I hoped, the encouraging pleasure of seeing on my pages the progress I made in virtue, by clearing successively my lines of their spots, till in the end, by a number of courses, I should he happy in viewing a clean book, after a thirteen weeks' daily examination.”
+
+---
 Exploding words: scrivener
 
 Cute words (words that are frequently used and may improve my vocabulary): induce, declare against, fall short, endeavor at, state the advantages, afford a better prospect.

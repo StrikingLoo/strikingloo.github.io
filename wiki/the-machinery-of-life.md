@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-08-02
-title: "Book Excerpts and Notes: The Machinery of Life"
+title: "The Machinery of Life - Excerpts and Notes"
 tags: books, book, notes, biology, cell biology, molecular biology, biochemistry, science
 description: "Notes and excerpts from 'The Machinery of Life', by David S. Goodsell."
 language: English

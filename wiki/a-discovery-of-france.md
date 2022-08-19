@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-07-04
-title: "Book Excerpts and Notes: A Discovery of France"
+title: "A Discovery of France - Excerpts and Notes"
 tags: books, book, notes, France, history, geography
 description: "Notes and excerpts from 'A Discovery of France', by Graham Robb."
 language: English
