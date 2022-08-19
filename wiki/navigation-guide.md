@@ -45,14 +45,14 @@ If I read a paper, find it interesting, and think I will want to think about it 
 
 - **[GAN Survey, Goodfellow 2016](/wiki/GAN)**: A survey on Generative Adversarial Networks by Ian Goodfellow. That article also works as a hub for GAN related articles.
 - **[CLIP: Learning Transferable Visual Models From Natural Language Supervision](/wiki/clip)**
-- **[Denoising Diffusion Implicit Models](/wiki/ddim)
 - **[GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models](/wiki/glide)**: OpenAI's GLIDE combines a diffusion model with CLIP embedding conditioning to generate photorealistic images, conditioned on text prompts, that compare favorably to DALL-E when judged by humans.
+- **[Denoising Diffusion Implicit Models](/wiki/ddim)**
 - **[Glow: Generative Flow with Invertible 1×1 Convolutions](/wiki/flow-based-models-glow)**: An OpenAI flow model for image generation.  
 - **[Natural Image Manipulation with Fisher Score](/wiki/natural-image-manipulation-fisher-score)**: A somewhat dated way of interpolating between images semantically, with an arbitrary generator.
 - **[BERT Interpretability, Frankle and Carbin 2019](/wiki/bert-interpretability)**.
 - **[TransGAN](/wiki/transGAN)**: A GAN purely based on transformers, trained using an adversarial objective.
 - **[ViT: Transformers for Image Recognition](/wiki/visual-transformer)**: A pure transformer is used for image recognition tasks without any sort of convolutional layers and reaches state-of-the-art performance on multiple image recognition benchmarks.
-- **[Vision Transformers See Like Convolutional Neural Networks](/wiki/visual-transformer) where activation distribution over different layers is observed and compared with ResNet and other CNNs. Correlations are measured, finding similar semantic extraction in the first layers of a CNN and ViT, and higher-order features that also shared a big mutual information in later layers, although ViT ultimately outperformed ResNet.
+- **[Vision Transformers See Like Convolutional Neural Networks](/wiki/visual-transformer)** where activation distribution over different layers is observed and compared with ResNet and other CNNs. Correlations are measured, finding similar semantic extraction in the first layers of a CNN and ViT, and higher-order features that also shared a big mutual information in later layers, although ViT ultimately outperformed ResNet.
 - **[Evolution through Large Models](/wiki/evolution-through-large-models)**: A new approach where a LLM is trained on synthetic data generated through an evolutionary process (MAP-Elites), to produce programs that solve an out-of-distribution task -Sodaracing-. RL is then used to create a generator of programs conditioned on terrains (so each problem gets a custom solution).
 - **[Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language](/wiki/socratic-models)**: An attempt at a more general agent by using multiples LLMs and making them interact in a zero-shot context to improve egocentric perception, video summarization, storytelling and question-answering. Not AGI, but not as far as it may be expected.
 - **[Distilling the Knowledge in a Neural Network](/wiki/distilling-knowledge-nn)**: It is possible to compress the knowledge in an ensemble into a single model which is much easier to deploy.
