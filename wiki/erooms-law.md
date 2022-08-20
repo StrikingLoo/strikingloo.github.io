@@ -5,6 +5,7 @@ date: 2020-12-21
 description: "Eroom's Law is an opposite of Moore's Law: discovering new medically relevant drugs tends to cost exponentially more over time. Also included: an analysis on the reasons behind this."
 tags: medicine, economy, Economics, moore's law, matters of scale, healthcare, trends, eroom
 language: English
+importance: 5
 abstract: "Eroom's Law is an opposite of Moore's Law: discovering new medically relevant drugs tends to cost exponentially more over time. Also included: an analysis on the reasons behind this."
 ---
 
