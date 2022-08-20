@@ -1,1 +1,1 @@
-echo "---\nlayout: redirected\nredirect_to:\"https://strikingloo.github.io/wiki/$1\"\n---" > $2
+echo "---\nlayout: redirected\nredirect_to: /wiki/$1\nsitemap: false\n---" > $2

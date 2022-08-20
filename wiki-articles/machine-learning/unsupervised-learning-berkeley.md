@@ -1,4 +1,5 @@
 ---
 layout: redirected
-redirect_to:"https://strikingloo.github.io/wiki/unsupervised-learning-berkeley"
+sitemap: false
+redirect_to: /wiki/unsupervised-learning-berkeley
 ---

@@ -1,4 +1,5 @@
 ---
 layout: redirected
-redirect_to: 'https://strikingloo.github.io/wiki/keigo'
+redirect_to: /wiki/keigo
+sitemap: false
 ---

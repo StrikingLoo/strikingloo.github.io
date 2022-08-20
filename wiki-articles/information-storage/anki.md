@@ -1,4 +1,5 @@
 ---
 layout: redirected
-redirect_to: "https://strikingloo.github.io/wiki/anki"
+redirect_to: /wiki/anki
+sitemap:false
 ---

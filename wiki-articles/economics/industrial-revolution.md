@@ -1,4 +1,5 @@
 ---
 layout: redirected
-redirect_to: "https://strikingloo.github.io/wiki/industrial-revolution"
+redirect_to: /wiki/industrial-revolution
+sitemap: false
 ---

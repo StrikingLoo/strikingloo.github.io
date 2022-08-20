@@ -1,4 +1,5 @@
 ---
 layout: redirected
-redirect_to:"https://strikingloo.github.io/wiki/erooms-law"
+redirect_to: /wiki/erooms-law
+sitemap: false
 ---

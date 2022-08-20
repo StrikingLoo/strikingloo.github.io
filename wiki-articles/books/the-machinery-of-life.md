@@ -1,4 +1,5 @@
 ---
 layout: redirected
-redirect_to: "https://strikingloo.github.io/wiki/the-machinery-of-life"
+redirect_to: /wiki/the-machinery-of-life
+sitemap: false
 ---
