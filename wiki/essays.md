@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "Notes on Writing Essays"
+title: "Writing Essays"
 date: 2020-11-24
 description: "Quotes and advice on writing non-fiction. Especially about essays."
 language: English
 importance: 7
 abstract: "Collected quotes and advice on writing non-fiction. Especially about essays."
+tags: graham, advice, writing, thinking
 ---
 
 from **Trying** by [Paul Graham](http://paulgraham.com/essay.html)
@@ -44,8 +45,21 @@ From [Andy Matuschak's Executable strategy for writing](https://notes.andymatusc
 As is, it works better with a Zettelkasten kind of note-taking space, but each separate note could be replaced with a new paragraph or header in a big note in a system like this personal wiki. Then I could maintain an "outline" folder for essays-to-be, where they could grow organically. This may start with my small 'how to make a static site and host it on the web' and grow slowly from there, as a growing place for posts before I publish them on my actual blog (or on this site's blog, I guess).
 
 ---
+**From [Truth of Fact, Truth of Feeling](https://devonzuegel.com/post/the-truth-of-fact-the-truth-of-feeling-by-ted-chiang-subterranean-press)**
 
-From [Matt Might's blog](http://matt.might.net/#blog)
+"Writing was not just a way to record what someone said; it could help you decide what you would say before you said it. And words were not just the pieces of speaking; they were the pieces of thinking. When you wrote them down, you could grasp your thoughts like bricks in your hands and push them into different arrangements. Writing let you look at your thoughts in a way you couldn’t if you were just talking, and having seen them, you could improve them, make them stronger and more elaborate."
+
+I love the idea of thoughts becoming persistent vs a thing that fades with human memory, and how that shaped future developments in history.
+
+There is the sensation when writing a long piece, especially of non-fiction but I guess also in a novel, of moving around chapters, sections or paragraphs like they are self-supporting objects.
+
+It is my opinion that we exercise a certain level of abstraction when dealing with a portion of a written text that is very similar to that which we apply to a method, class or module when we would restructure a big software project.
+
+That is, being able to say 'I will move the chapter on X nearer to the end, before the conclusion' instead of having to hold the whole context and information of that chapter in your head to make the decision, is similar to knowing a certain function maps inputs to outputs in a way, without having to remember its exact implementation when deciding how to use it or where to put it.
+
+---
+
+**From [Matt Might's blog](http://matt.might.net/#blog)**
 
 " The secret to low-cost academic blogging is to make blogging a natural byproduct of all the things that academics already do.
 
