@@ -2,7 +2,7 @@
   --bkg: #FFFDFB;
   --font-color: #24272B;
   --header-anchor-color: #6E8DD5;
-  --anchor-hover-color: #CA7081;
+  --anchor-hover-color: #c34;
   --wiki-bkg-color: #cfebfb;
   --wiki-bkg-color-hover: #E1F3FB;
 }
@@ -32,6 +32,7 @@ a:hover {
 h1, h1 a {
     font-size: 3em;
     font-family: 'Helvetica','Arial', 'Sans-Serif';
+    text-align: center;
 }
 
 h2, h3, h2 a, h3 a {
@@ -87,6 +88,7 @@ strong { font-weight: bolder;}
   border: 1px solid;
 }
 .wide {width:95%; height:6em;}
+.meta {font-style:italic; text-align: center;}
 .wiki-item:hover {
   background-color:var(--wiki-bkg-color-hover);
 }
@@ -96,9 +98,34 @@ font-style:italic;
 margin:5%;
 padding:2%;
 }
-img { height:70%; width:70%;}
+img { height:70%; width:70%;   margin-left: auto;
+  margin-right: auto; display: block;}
 
+blockquote {
+  width:75%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: var(--font-color);
+
+  background:#EfEfEf;
+
+  padding:1.2em 1.4em 1.2em 1.4em;
+  border-left:10px solid var(--header-anchor-color) ;
+  position: relative;
+  
+}
+
+blockquote::after{
+  content: '';
+}
+
+/*
 blockquote p {color:var(--anchor-hover-color); font-family: Courier }
+*/
 
 pre, code {background-color: #444; color: #fff; font-family: Verdana; padding: 10px; line-height: 1.8;}
 div.backButton{
