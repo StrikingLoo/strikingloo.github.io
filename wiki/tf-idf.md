@@ -3,7 +3,7 @@ layout: post
 date: 2021-12-09
 title: "tf-idf"
 description: "How tf-idf works"
-tags: NLP,nlp,tf-idf,metrics,metric,statistics,word embeddings
+tags: NLP,nlp,tf-idf,metrics,metric,statistics,word embeddings,programming
 language: English
 uses_mathjax: true
 importance: 4

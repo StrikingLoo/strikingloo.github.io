@@ -4,7 +4,7 @@ title: "Confidence Intervals through Bootstrapping in Python"
 date: 2022-07-13
 description: "A tutorial with an example gist on implementing Confidence Intervals through Bootstrapping in Python"
 language: English
-tags: bootstrapping, python, statistics, math
+tags: bootstrapping, python, statistics, math, programming
 importance: 7
 uses_mathjax: true
 ---

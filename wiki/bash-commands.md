@@ -4,7 +4,7 @@ title: "Useful Bash Commands"
 date: 2020-11-04
 description: "A series of bash commands I found useful, usually the product of some minutes of research or tinkering."
 language: English
-tags: linux, image compression
+tags: linux, image compression, programming
 ---
 
 how many lines with a given extension?
