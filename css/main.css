@@ -123,10 +123,6 @@ blockquote::after{
   content: '';
 }
 
-/*
-blockquote p {color:var(--anchor-hover-color); font-family: Courier }
-*/
-
 pre, code {background-color: #444; color: #fff; font-family: Verdana; padding: 10px; line-height: 1.8;}
 div.backButton{
   position:fixed; 
