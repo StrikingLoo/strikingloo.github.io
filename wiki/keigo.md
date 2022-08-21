@@ -5,6 +5,7 @@ date: 2020-10-02
 description: "A summary of Japanese grammar's keigo, including general usage, sonkeigo, kenjougo and irregular verbs chart."
 language: English
 importance: 6
+abstract: "Keigo is used in formal Japanese. Considered the polite form of the language, this is my summary of how it works (taken from wikipedia and the genki books)."
 ---
 
 # Honorifics (keigo):
@@ -60,7 +61,7 @@ the set phrase _おまたせしました_, "I am sorry to have kept you waiting"
 Even more politely, the form _もたせて_ **_いただく_** literally means "**humbly be allowed to** carry". This
 phrase would be used to express the idea that "I will carry it if you please."
 
----
+
 ## Irregular Verbs that Morph on keigo
 
 | meaning| dictionary form| respectful (sonkeigo) | humble (kenjōgo)|

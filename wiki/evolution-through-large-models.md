@@ -208,3 +208,6 @@ A few years ago, the idea that the mutation operator could “know” how to
 perturb such programs in reasonable and promising ways would be fanciful, but,
 as shown in this paper, the emergence of LLMs has now made such capabilities
 a reality.
+
+### Related Links
+- [Code completion with GPT-3](https://news.ycombinator.com/item?id=32532875), a HackerNews thread with a nice example + template.
