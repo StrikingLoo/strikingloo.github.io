@@ -12,13 +12,11 @@ I maintain this [personal wiki](/wiki) for me and you.
 
 It is a place where I collect notes, clippings and thoughts about what I read, be it papers or books.
 
-Unlike a blog, I don't usually write my opinions or present new information here. Rather, I use this site to organize what I learn and want to link to other ideas, maintaining evergreen notes in the way of Andy Matuschak and others.
+Unlike a blog, I don't usually write my opinions or present new information in the wiki. Rather, I use this part of the site to organize what I learn and want to link to other ideas, maintaining evergreen notes in the way of [Andy Matuschak](https://notes.andymatuschak.org/Evergreen_notes) and others.
 
-If you wish to browse this wiki, you could also click any random article in the base page, or use the search bar (tag-based search is implemented, but it also _greps_ titles). 
+The notes in the Garden are divided into certain kinds, and the following are the ones I think you will like best.
 
-You are encouraged to message me if any doubts arose about anything in this site, if further discussion is desired or if you have reflected on the topics presented here before.
-
-The notes in the Garden are divided into certain kinds, and the following are the ones I think a reader may enjoy the most.
+If you wish to browse this wiki, you could also click any random article in the base page, or use the search bar (tag-based search is implemented, but it also _greps_ titles). Recommended tags: [paper](/tagged?q=paper), [programming](/tagged?q=programming), [book](/tagged?q=book).
 
 ## Book Reviews
 
@@ -59,3 +57,5 @@ If I read a paper, find it interesting, and think I will want to think about it 
 - **[Proximal Policy Optimization](/wiki/proximal-policy-optimization)**: My description of the State-of-the-Art Reinforcement Learning Algorithm proposed by OpenAI and a summary of the ideas proposed in its paper.
 - **[Fast String Searching](/wiki/fast-string-searching)**: Describes the string search algorithm underpinning grep and others. Not ML, but very interesting and a fun little algorithm.
 - **[Diffusion Language Models](/wiki/diffusion-LM)**: A Stanford paper describing a new architecture and training method to make language models that are diffusion based instead of autoregressive. They allow for more controlled text synthesis albeit sacrificing perplexity (so far).
+
+If you have anything to say about one of the articles, you find an error in one of them or just like something you read and want to chat, don't be afraid to tweet at me or send me an email. I will reply kindly, and be happy if you reach out!
