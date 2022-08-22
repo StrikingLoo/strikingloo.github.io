@@ -28,15 +28,6 @@ His wiki is a marvelous example of a note-taking system on its own.
 
 ## Zettelkasten
 
-> "Notes (both your notes and highlights) should be **turned into explicit form as soon as possible.** As of now, your notes are implicit at best, and would therefore lose meaning & context quickly.
-
-Think of it like jotting down “pencil” to remind yourself to return a pencil to your classmate. After a couple of days, seeing that reminder “pencil” won’t make sense anymore. Otherwise, if you put it this way: “Return pencil to Sara” then you won’t have any problems no matter how much time has passed.
-
-The point is, every bit of implicit-ness must be stated clearly in words. (You can say this actually future-proofs your notes)"
-
-" To counteract [the bias of being overconfident about your memory], **write as if you’re writing for others.** If only the current you can understand what you’re saying in your notes, then the notes won’t be usable in the future. Technically speaking, you are going to become a different person in the future, so you might as well write as if you’re trying to talk to someone else. "
--- [LeanAnki](https://leananki.com/zettelkasten-method-smart-notes/)
-
 As a summary, the Zettelkasten method follows a workflow with three steps:
 - **Capture** (get input from your books, articles or whatever you're consuming, and persist it)
 - **Elaborate** (add your own opinions, summaries, headlines, bolding, etc.)
@@ -46,7 +37,15 @@ Zettelkasten relies more heavily on linking than tags/searching. This is because
 
 In my case I prefer big chunky notes + search, but we'll see.
 
----
+> "Notes (both your notes and highlights) should be **turned into explicit form as soon as possible.** As of now, your notes are implicit at best, and would therefore lose meaning & context quickly.
+
+Think of it like jotting down “pencil” to remind yourself to return a pencil to your classmate. After a couple of days, seeing that reminder “pencil” won’t make sense anymore. Otherwise, if you put it this way: “Return pencil to Sara” then you won’t have any problems no matter how much time has passed.
+
+The point is, every bit of implicit-ness must be stated clearly in words. (You can say this actually future-proofs your notes)"
+
+"To counteract [the bias of being overconfident about your memory], **write as if you’re writing for others.** If only the current you can understand what you’re saying in your notes, then the notes won’t be usable in the future. Technically speaking, you are going to become a different person in the future, so you might as well write as if you’re trying to talk to someone else. "
+-- [LeanAnki](https://leananki.com/zettelkasten-method-smart-notes/)
+
 ### Ideas from "Backlinks are Bad Links"
 From [Backlinks are Bad Links](https://zettelkasten.de/posts/backlinks-are-bad-links/)
 
@@ -64,13 +63,13 @@ It also argues **a deep zettelkasten will make you pay cognitive overhead and op
 
 ["Communicating with Letterboxes"](https://luhmann.surge.sh/communicating-with-slip-boxes)
 
-The entirety of these notes can only be described as a disorder, but at the very least it is a disorder with non-arbitrary internal structure. Some things will get lost (versickern), some notes we will never see again. 
+> The entirety of these notes can only be described as a disorder, but at the very least it is a disorder with non-arbitrary internal structure. Some things will get lost (versickern), some notes we will never see again. 
 
-On the other hand, there will be preferred centers, formation of lumps and regions with which we will work more often than with others. There will be complexes of ideas that are conceived at large, but which will never be completed; **there will be incidental ideas which started as links from secondary passages and which are continuously enriched and expand so that they will tend increasingly to dominate system.** To sum up: this technique guarantees that its order which is merely formal does not become a hindrance but adapts to the conceptual development.
+> On the other hand, there will be preferred centers, formation of lumps and regions with which we will work more often than with others. There will be complexes of ideas that are conceived at large, but which will never be completed; **there will be incidental ideas which started as links from secondary passages and which are continuously enriched and expand so that they will tend increasingly to dominate system.** To sum up: this technique guarantees that its order which is merely formal does not become a hindrance but adapts to the conceptual development.
  
-The second mind needs a number of years in order to reach critical mass. Until then, it functions as a mere container from which we can retrieve what we put in. This changes with its growth in size and complexity. On the one hand, the **number of approaches and occasions for questions increases**. The notebox becomes a universal instrument. You can place almost everything in it, and this not just ad hoc and in isolation, but with internal possibilities of connections [with other contents].
+> The second mind needs a number of years in order to reach critical mass. Until then, it functions as a mere container from which we can retrieve what we put in. This changes with its growth in size and complexity. On the one hand, the **number of approaches and occasions for questions increases**. The notebox becomes a universal instrument. You can place almost everything in it, and this not just ad hoc and in isolation, but with internal possibilities of connections [with other contents].
  
-Me: maybe this made more sense pre google? Luhmann makes a big emphasis in the zettelkasten as an opportunity for introducing noise and dialogue (he calls it a conversational partner multiple times) into reflection. This is kinda lost in a personal wiki, but how valuable is dialogue if the work we want to do is not as creative? 
+Me: maybe this made more sense pre google? **Luhmann makes a big emphasis in the zettelkasten as an opportunity for introducing noise and dialogue** (he calls it a _conversational partner_ multiple times) into reflection. This is kinda lost in a personal wiki, but how valuable is dialogue if the work we want to do is not as creative? 
 
 ### Having a short-term and a long-term cache with nightly batch processing
 "In Taking Smart Notes, Luhmann is described as **transferring the important thoughts from the day into Zettel every evening**. Sheffler, on the other hand, keeps a gap of at least 24 hours between taking down engagement notes and deciding what belongs in the long-term store. A gap of time allows the initial excitement over an idea to pass, so that only the things which still seem important the next day get into long-term notes. He also points out that this system enforces a small amount of spaced repetition, making it more likely that content is recalled later."
@@ -97,7 +96,7 @@ This is a false dichotomy. There’s a very large gap between “think and write
 
 There’s something strangely difficult in writing just for oneself. As far as I can tell, almost no-one can do it productively. **Most people find this: you think you understand something, then try to explain it to others, and find your understanding has important holes. Or you find that when you speak to others you naturally improve your explanations.**"
 
-As a summary to WebSeitz's Wiki philosophy, he proposes Wiki notes can be used for projects (with project logs and spinning off new notes), goals (tracking them and the steps we take to reach them), values, reflections on topics, and tracking areas of your life. 
+As a summary to WebSeitz's Wiki philosophy, he proposes Wiki notes can be used for **projects** (with project logs and spinning off new notes), **goals** (tracking them and the steps we take to reach them), **values**, **reflections** on topics, and tracking **areas of your life**. 
 
 He also proposes [tracking ideas in an Idea List](http://webseitz.fluxent.com/wiki/IdeaList):
 
@@ -116,6 +115,7 @@ I think this is a lower bar than I use for my own notes, but I will try this met
 [Transformative Tools for Thought](https://numinous.productions/ttft)
 
 **On the Mnemonic Medium:**
+
 **Memory systems can be used to build genuine conceptual understanding**, not just learn facts: we can achieve this in part through the aspiration to virtuoso card writing, and in part through a narrative embedding of spaced repetition that gradually builds context and understanding.
 
 **Mnemonic techniques such as memory palaces are great, but not versatile enough to build genuine conceptual understanding**: Such techniques are very specialized, and emphasize artificial connections, not the inherent connections present in much conceptual knowledge. The mnemonic techniques are, however, useful for bootstrapping knowledge with an ad hoc structure.
@@ -127,11 +127,9 @@ Essay (or tech?) idea: LLM meets TTFT to auto generate questions and answers and
 Prediction: No app based on the mnemonic medium will come in 5 years that reaches a critical amount of users. No "transformative" tool for thought coming in the near future. Defined as 1M+ users or more.
 
 ## 'Thoughts On' Journal
-"There are certain subjects in your life you think about a lot. People, places, hobbies, health, plans, finances.
+> "There are certain subjects in your life you think about a lot. People, places, hobbies, health, plans, finances. For each subject that you might have ongoing thoughts about, start a separate “Thoughts On” journal. Whenever you have some thoughts on this subject, open up that file, write today’s date, then start writing."
 
-For each subject that you might have ongoing thoughts about, start a separate “Thoughts On” journal. Whenever you have some thoughts on this subject, open up that file, write today’s date, then start writing."
-
-"I find it so useful to keep my thoughts on each subject together, because I can see my past thoughts and current thoughts in one place. I can see how my thoughts on this subject have evolved or keep repeating. Sometimes I think I have a new thought on a subject, so I open up the file and write it down, then afterwards I see I had that same thought a year ago and had forgotten about it. **If you care about your thoughts, keep them.**"
+> "I find it so useful to keep my thoughts on each subject together, because I can see my past thoughts and current thoughts in one place. I can see how my thoughts on this subject have evolved or keep repeating. Sometimes I think I have a new thought on a subject, so I open up the file and write it down, then afterwards I see I had that same thought a year ago and had forgotten about it. **If you care about your thoughts, keep them.**"
 
 [Daily Journal, Derek Sivers](https://sivers.org/dj)
 
@@ -210,34 +208,6 @@ In my case, these are things like the following:
 
 [Managing my personal knowledge base](https://tkainrad.dev/posts/managing-my-personal-knowledge-base/)
 
-
-## P.A.R.A Methodology
-"The four top-level categories of P.A.R.A. — Projects, Areas, Resources, and Archives — are designed to facilitate this process of forwarding knowledge through time.
-
-- By placing a note in a project folder, you are essentially scheduling it for review on the short time horizon of an individual project.
-- Notes in area folders are scheduled for less frequent review, whenever you evaluate that area of your work or life.
-- Notes in resource folders stand ready for review if and when you decide to take action on that topic.
-- "Notes in archive folders are in “cold storage,” available if needed but not scheduled for review at any particular time." 
-source: [progressive summarization @fortelabs](https://fortelabs.co/blog/progressive-summarization-a-practical-technique-for-designing-discoverable-notes/)
-
-- Think lossy, context vs discoverability trade-off.
-- Take key fragments, summarize them, iterate.
-
-**Why**: Keep a list of problems you're interested in (I'm not really buying this one)
-
-**What**: Raise the bar: does what you capture serve a purpose in one of your 12 (in our case N) problems? If so, keep. Else, discard.
-
-**How**: PARA: 
-- **Projects**: for projects with a clear deliverable and deadline,
-- **Areas**: for ongoing study/actionable topics, like health, finances, etc. Here these guys make a distinction between public and private notes, therefore...
-- **Resources**: Here's where you put interesting documents, quotes, tidbits and data that you'd like to show to other people, or consult afterwards. Typical notes you'd share with everyone. Public notes.
-- Archive: for deprecated notes.
-I don't completely like this system. Especially the archive part, but also it's mostly designed for writers or generators of content. This becomes more obvious once you read the next part:
-
-The final piece of the puzzle. Once you have the information captured and organized, you need to actually do something with it. There are two parts to the **creation stage: divergence and convergence. Divergence** is where you take what you have captured and begin to **explore the ideas, extracting useful tidbits, and discovering the best** of what you have. **Convergence** is where you then **compile those best ideas into something structured and concrete** that you can send out into the world. And of course, there are several strategies for each.
-
-So even though my main goal isn't writing or making content, I do believe extracting insights from data, or finding creative ways to connect different areas will prove useful, or at least fun. I'm keeping the idea of separating things into resources (shareable) and areas (personal), and also the idea of going through notes for convergence and divergence.
-
 ### Popova
 
 Around thirty-one minutes into the interview, Popova explains how she takes notes on books:
@@ -246,12 +216,17 @@ As she reads, she creates an index at the front of the book that lists its most 
 Every time she encounters a passage relevant to one of these ideas she adds the page to the relevant line in the index. If its a new idea, she creates a new line for it.
 As she reads more, the index grows.
 
+[_Get More Out of the Books You Read_, LifeHacker](https://lifehacker.com/get-more-out-of-the-books-you-read-with-an-idea-index-1650296391)
+
 ---
-"I now read with a mind towards synthesis and distillation, where **the idea of reading something without taking notes from it seems absurd.**"
+
+> "I now read with a mind towards synthesis and distillation, where **the idea of reading something without taking notes from it seems absurd.**"
+
+[Nate Liason](https://www.nateliason.com/blog/roam)
 
 ### Synthesize things as you read.
 
-Synthesize things as you read. Just because you’ve read something, doesn’t mean you’ve understood it; your brain has to come up with its own encoding. Whatever understanding things is, it’s related to compression. Which implies that you want to read and then restate in your own words, so that your mind is forced to compress the thing. Ideally several times, in varying ways.
+Synthesize things as you read. **Just because you’ve read something, doesn’t mean you’ve understood it;** your brain has to come up with its own encoding. Whatever understanding things is, it’s related to compression. Which implies that you want to read and then restate in your own words, so that your mind is forced to compress the thing. Ideally several times, in varying ways.
 
 Once you’ve done this, you are much more likely to retain the thing, and to actually grasp it; and if you’re struggling with this exercise, then you don’t understand the thing and should go back and look at it again. (This is also a useful bullshit filter -- try and restate someone’s claim in a different way, and see if it still holds up).
 
