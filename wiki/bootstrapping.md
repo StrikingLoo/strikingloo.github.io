@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Confidence Intervals through Bootstrapping in Python"
+title: "Confidence Intervals in Python using Bootstrapping"
 date: 2022-07-13
-description: "A tutorial with an example gist on implementing Confidence Intervals through Bootstrapping in Python"
+description: "A tutorial showing how to implement Confidence Intervals in Python using Bootstrapping, with example code."
 language: English
 tags: bootstrapping, python, statistics, math, programming
-importance: 7
+importance: 8
 uses_mathjax: true
 ---
 
