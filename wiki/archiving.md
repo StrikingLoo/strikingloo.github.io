@@ -9,16 +9,6 @@ importance: 8
 tag: notes, note making, journal, zettelkasten, commonplace book, luhman, tags
 ---
 
-
-## 'Thoughts On' Journal
-"There are certain subjects in your life you think about a lot. People, places, hobbies, health, plans, finances.
-
-For each subject that you might have ongoing thoughts about, start a separate “Thoughts On” journal. Whenever you have some thoughts on this subject, open up that file, write today’s date, then start writing."
-
-"I find it so useful to keep my thoughts on each subject together, because I can see my past thoughts and current thoughts in one place. I can see how my thoughts on this subject have evolved or keep repeating. Sometimes I think I have a new thought on a subject, so I open up the file and write it down, then afterwards I see I had that same thought a year ago and had forgotten about it. **If you care about your thoughts, keep them.**"
-
-[Daily Journal, Derek Sivers](https://sivers.org/dj)
-
 ## Commonplace Books
 
 Commonplace books (or *commonplaces*) are a way to compile knowledge, usually by writing information into books. They have been kept from antiquity, and were kept particularly during the Renaissance and in the nineteenth century. Such books are essentially scrapbooks filled with items of every kind: recipes, quotes, letters, poems, tables of weights and measures, proverbs, prayers, legal formulas. Commonplaces are used by readers, writers, students, and scholars as an aid for remembering useful concepts or facts. **Each one is unique to its creator's particular interests but they almost always include passages found in other texts**, sometimes accompanied by the compiler's responses. They became significant in Early Modern Europe.
@@ -32,47 +22,9 @@ In 1685 the English Enlightenment philosopher John Locke wrote a treatise in Fre
 
 ---
 
-## Notes on "Transformative Tools for Thought"
+**For inspiration and ideas:** Nikita Voloboev's [list of personal wikis](https://wiki.nikiv.dev/other/wiki-workflow#similar-wikis-i-liked). 
 
-**Memory systems can be used to build genuine conceptual understanding**, not just learn facts: we can achieve this in part through the aspiration to virtuoso card writing, and in part through a narrative embedding of spaced repetition that gradually builds context and understanding.
-
-**Mnemonic techniques such as memory palaces are great, but not versatile enough to build genuine conceptual understanding**: Such techniques are very specialized, and emphasize artificial connections, not the inherent connections present in much conceptual knowledge. The mnemonic techniques are, however, useful for bootstrapping knowledge with an ad hoc structure.
-
-**Memory is far more important than people tend to think**: It plays a role in nearly every part of cognition, including problem-solving, creative work, and meta-cognition. The flip side is that memory systems themselves want to grow into other types of tools – tools for reading, tools for problem-solving, tools for creating, tools for attention management. That said, we don’t yet know what memory systems want to be. To reiterate: memory systems are in their infancy.
-
-[Transformative Tools for Thought](https://numinous.productions/ttft)
-
-Essay (or tech?) idea: LLM meets TTFT to auto generate questions and answers and map them to anki, turning any text into mnemonic medium. How far are we from this being doable?
- 
-Prediction: No app based on the mnemonic medium will come in 5 years that reaches a critical amount of users. No "transformative" tool for thought coming in the near future. Defined as 1M+ users or more.
-
-"Let’s return to the question that began the essay: how to build transformative tools for thought? Of course, we haven’t even precisely defined what such transformative tools are! But they’re the kind of tools where relatively low cost changes in practice produce transformative changes in outcome – non-linear returns and qualitative shifts in thinking. This is in contrast with the usual situation, where a small change in practice causes a small change in results."
-
----
-
-**Capture everything**: Do not assume your brain will remember anything. Write it down ASAP. Use whatever will let you capture it quickest, whether that's pen and paper or a digital solution.
-
-**Review and process**: Make sure you actually look at the things you wrote down regularly and organize it. If it was an idea you need to act on (e.g. a topic for a blog post, or a reminder to look up a particular concept), add it to your task manager. If it was a thought for reference, add it to your 'second brain'/note-taking/archive system, and add tags so you can find it easily later. Once processed, archive or delete the item from your capture system. 
-
-[rosiecam, LessWrong](https://www.lesswrong.com/posts/mbG3CZaX6657ttnCa/what-is-your-personal-knowledge-management-system?commentId=sMyFJewkqTujRgxpT)
-
-
----
-
-Nikita Voloboev's [list of personal wikis](https://wiki.nikiv.dev/other/wiki-workflow#similar-wikis-i-liked)
-
---- 
-
-"I have been using plain text documents since 2001.
-I just make a new file with a YYYY-MM format and dump everything in there, and on the next month I start a new file. I keep them all in 1 folder.
-
-It's really simple to use and very searchable with grep. I like it because it's all offline and doesn't get in the way.
-
-It becomes a brain dump of interesting links, notes about certain things I'm doing or whatever else I feel is worth jotting down at the time."
-	
-nickjj on HackerNews (I just thought it was neat)
-
-
+His wiki is a marvelous example of a note-taking system on its own.
 
 ## Zettelkasten
 
@@ -157,6 +109,51 @@ Then you should capture it in its own note.
 
 I think this is a lower bar than I use for my own notes, but I will try this method for a while and see where it leads me. I like the idea of capturing all things I find surprising, and don't think I have that many creative ideas in a day, but let's see where it leads me.
 
+## Notes on "Transformative Tools for Thought"
+
+> "Let’s return to the question that began the essay: how to build transformative tools for thought? Of course, we haven’t even precisely defined what such transformative tools are! But they’re the kind of tools where relatively low cost changes in practice produce transformative changes in outcome – non-linear returns and qualitative shifts in thinking. This is in contrast with the usual situation, where a small change in practice causes a small change in results."
+
+[Transformative Tools for Thought](https://numinous.productions/ttft)
+
+**On the Mnemonic Medium:**
+**Memory systems can be used to build genuine conceptual understanding**, not just learn facts: we can achieve this in part through the aspiration to virtuoso card writing, and in part through a narrative embedding of spaced repetition that gradually builds context and understanding.
+
+**Mnemonic techniques such as memory palaces are great, but not versatile enough to build genuine conceptual understanding**: Such techniques are very specialized, and emphasize artificial connections, not the inherent connections present in much conceptual knowledge. The mnemonic techniques are, however, useful for bootstrapping knowledge with an ad hoc structure.
+
+**Memory is far more important than people tend to think**: It plays a role in nearly every part of cognition, including problem-solving, creative work, and meta-cognition. The flip side is that memory systems themselves want to grow into other types of tools – tools for reading, tools for problem-solving, tools for creating, tools for attention management. That said, we don’t yet know what memory systems want to be. To reiterate: memory systems are in their infancy.
+
+Essay (or tech?) idea: LLM meets TTFT to auto generate questions and answers and map them to anki, turning any text into mnemonic medium. How far are we from this being doable?
+ 
+Prediction: No app based on the mnemonic medium will come in 5 years that reaches a critical amount of users. No "transformative" tool for thought coming in the near future. Defined as 1M+ users or more.
+
+## 'Thoughts On' Journal
+"There are certain subjects in your life you think about a lot. People, places, hobbies, health, plans, finances.
+
+For each subject that you might have ongoing thoughts about, start a separate “Thoughts On” journal. Whenever you have some thoughts on this subject, open up that file, write today’s date, then start writing."
+
+"I find it so useful to keep my thoughts on each subject together, because I can see my past thoughts and current thoughts in one place. I can see how my thoughts on this subject have evolved or keep repeating. Sometimes I think I have a new thought on a subject, so I open up the file and write it down, then afterwards I see I had that same thought a year ago and had forgotten about it. **If you care about your thoughts, keep them.**"
+
+[Daily Journal, Derek Sivers](https://sivers.org/dj)
+
+## Assorted notes about notes and connected thought
+
+**Capture everything**: Do not assume your brain will remember anything. Write it down ASAP. Use whatever will let you capture it quickest, whether that's pen and paper or a digital solution.
+
+**Review and process**: Make sure you actually look at the things you wrote down regularly and organize it. If it was an idea you need to act on (e.g. a topic for a blog post, or a reminder to look up a particular concept), add it to your task manager. If it was a thought for reference, add it to your 'second brain'/note-taking/archive system, and add tags so you can find it easily later. Once processed, archive or delete the item from your capture system. 
+
+[rosiecam, LessWrong](https://www.lesswrong.com/posts/mbG3CZaX6657ttnCa/what-is-your-personal-knowledge-management-system?commentId=sMyFJewkqTujRgxpT)
+
+--- 
+
+"I have been using plain text documents since 2001.
+I just make a new file with a YYYY-MM format and dump everything in there, and on the next month I start a new file. I keep them all in 1 folder.
+
+It's really simple to use and very searchable with grep. I like it because it's all offline and doesn't get in the way.
+
+It becomes a brain dump of interesting links, notes about certain things I'm doing or whatever else I feel is worth jotting down at the time."
+	
+nickjj on HackerNews (I just thought it was neat)
+
 ## Johnny Decimal
 
 From [Johnny Decimal, A system to organise projects](https://johnnydecimal.com/)
@@ -183,15 +180,15 @@ But maybe a small squad system could work.
 
 ## Hypertext
 
-Let me introduce the word "hypertext" to mean a body of written or pictorial material interconnected in such a complex way that it could not conveniently be presented or represented on paper.
+> "Let me introduce the word "hypertext" to mean a body of written or pictorial material interconnected in such a complex way that it could not conveniently be presented or represented on paper."
 
-It may contain summaries, or maps of its contents and their interrelations; it may contain annotations, additions and footnotes from scholars who have examined it. 
+> "It may contain summaries, or maps of its contents and their interrelations; it may contain annotations, additions and footnotes from scholars who have examined it."
 
-Let me suggest that such an object and
-system, properly designed and administered, could have great potential for education, increasing the student's range of choices, his sense of freedom, his motivation, and his intellectual grasp. 
+> "Let me suggest that such an object and
+system, properly designed and administered, could have great potential for education, increasing the student's range of choices, his sense of freedom, his motivation, and his intellectual grasp."
 
-Such a system could grow indefinitely, gradually including more and more of the world's written knowledge.
-However, its internal file structure would have to be built to accept growth, change and complex informational arrangements. The ELF is such a file structure.
+> "Such a system could grow indefinitely, gradually including more and more of the world's written knowledge.
+However, its internal file structure would have to be built to accept growth, change and complex informational arrangements. The ELF is such a file structure."
 
 [Nelson](http://csis.pace.edu/~marchese/CS835/Lec3/nelson.pdf)
 
@@ -240,13 +237,6 @@ I don't completely like this system. Especially the archive part, but also it's 
 The final piece of the puzzle. Once you have the information captured and organized, you need to actually do something with it. There are two parts to the **creation stage: divergence and convergence. Divergence** is where you take what you have captured and begin to **explore the ideas, extracting useful tidbits, and discovering the best** of what you have. **Convergence** is where you then **compile those best ideas into something structured and concrete** that you can send out into the world. And of course, there are several strategies for each.
 
 So even though my main goal isn't writing or making content, I do believe extracting insights from data, or finding creative ways to connect different areas will prove useful, or at least fun. I'm keeping the idea of separating things into resources (shareable) and areas (personal), and also the idea of going through notes for convergence and divergence.
-
----
-
-To find a book if it's on the public domain, easily look for it on archive.org with this google search:
-```
-site:archive.org intitle:full/text/of intext:Lovecraft
-```
 
 ### Popova
 

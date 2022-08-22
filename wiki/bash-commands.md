@@ -105,3 +105,8 @@ npm i -g @funboxteam/optimizt
 find . -iname \*.png -exec optimizt --lossless {} +
 ```
 
+---
+To find a book if it's on the public domain, easily look for it on archive.org with this google search:
+```
+site:archive.org intitle:full/text/of intext:Lovecraft
+```
