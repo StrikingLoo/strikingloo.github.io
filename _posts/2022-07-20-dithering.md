@@ -4,14 +4,24 @@ layout: post
 tags: programming, python, image compression, image processing
 date: 2022-07-20
 importance: 6
-description: "Floyd–Steinberg dithering and how to create a version of an image that uses a reduced color palette."
+description: "Floyd–Steinberg dithering and how to create a version of an image that uses a reduced color palette, preserving quality."
 ---
 
 Last year I took an elective on Computer Graphics ([course notes](/wiki/computer-graphics)) where I learned about OpenGL shaders, and image compression algorithms.
 
-One of the algorithms I learned about was [Floyd–Steinberg dithering](https://en.wikipedia.org/wiki/Floyd%E2%80%93Steinberg_dithering). This algorithm compresses images lossily: it creates a new version of them using a reduced palette (provided by the user), hopefully with a smaller filesize.
+One of the algorithms I learned about was [Floyd–Steinberg dithering](https://en.wikipedia.org/wiki/Floyd%E2%80%93Steinberg_dithering). 
 
-By reducing the possible different colors in the image, dithering makes compression easier and reduces the total maximum entropy in an image, albeit also affecting image quality. What's novel about this method is that it carries over the difference between each pixel and its new in-palette assigned color, propagating it to its neighbors. This way, if for instance I map a pixel to a darker color from my palette, I will make the next neighboring pixels brighter to compensate in average. This prevents artifacts that look like monochromatic flat areas and preserves nuance better.
+Sometimes when storing an image, we want to compress it lossily: we create a new version of it that loses a part of the information and quality, but is significantly smaller in filesize.
+
+One way of achieving this, is using a reduced palette. The GIF format does this, for instance, by limiting the available colors in a single file to 256. 
+
+Mapping colors to the most similar one available in a palette is called [_vector quantization_](/wiki/data-compression#lossy-compression), since we are effectively subdividing the whole color space into regions and assigning one color to each. 
+
+Mapping pixels from the entire color space (which has 256\^3 possibilities) to a reduced set of values can generate a problem, though: regions of neighboring pixels tend to have similar colors, and the most straightforward way of mapping them, where **each pixel goes to the most similar color available in the reduced palette**, will generate **large regions of a single flat color in an image**, producing artifacts. This looks quite ugly to human eyes.
+
+Dithering aims to solve the problem of large flat areas by altering the colors of neighboring pixels after mapping one to a color from the palette. What's novel about this method is that it **carries over the difference between each pixel and its new in-palette assigned color, propagating it to its neighbors.** This way, if for instance I map a pixel to a darker color from my palette, I will make the next neighboring pixels brighter to compensate in average, since I will end up nudging them closer to different elements from the palette. This system prevents artifacts that look like monochromatic flat areas and preserves nuance better. 
+
+However, since we will effectively be adding noise so the pixels in the surrounding region after changing each pixel, this will tend to increase entropy in the resulting image, making compression less effective. **Generally we will need to evaluate the trade-off between image quality and compression.**
 
 The exact way the error is propagated is a bit arbitrary: just a convex distribution with most of it going to the neighbors below or to the right, and some in diagonal. What's interesting is that this way we can take an image that has lots of different colors, and obtain one that has a very reduced palette but keeps most of the information, at least perceptually.
 
