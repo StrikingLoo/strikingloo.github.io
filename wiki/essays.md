@@ -123,7 +123,6 @@ it’s a great routine to get into because it **forces you to write a blog post 
 ---
 When writing a textbook: start with the cool stuff! Explain later.
 
----
 
 ### Advice from Monica Lent's Blogging Newsletter
 
@@ -139,3 +138,27 @@ Examples of SEO catchy good titles for "React Router Typescript":
 - Use React Router with TypeScript (2020 Guide) - Tells you the material is up-to-date
 
 She also mentions using the "keywords everywhere" chrome extension to evaluate keywords, and looking at adding about 10\~20 longtail keywords.
+
+### TheSephist's "How I Write"
+
+Notes from [How I Write, by @theSephist](https://thesephist.com/posts/how-i-write/).
+
+Usually, idea “sparks” are things like:
+
+- An analogy I think is interesting
+- An underappreciated trend in the world / industry
+- A technical topic I want to deep-dive
+- A new approach / perspective to an established problem
+
+> "\[I will] keep it in my mental periphery so that the idea has the time and space to grow and snowball into something more interesting and meaty."
+
+He then goes on to discuss 'expression callibration', where he will usually collect material surrounding the idea he wants to write about (taking notes of relevant links, etc.) to then expand upon the topic and add adjacent ideas to it. He also discusses the idea and his thoughts on it with multiple smart people, to find the best fitting words to express it, the appropriate order for different points, and this way he can start thinking of a prototype of how he would write it down.
+
+He writes an outline: a list of ideas in the order he wants to write about them. 
+
+> "The rest is pretty straightforward drafting. I’ll just sit down and crank it out. At this point, if I’ve done my job right, it feels less like writing from scratch and more like filling in the blanks and expanding on existing ideas, because I’ve already figured out which topics I want to talk about, in what order, in what specific way, and I’ve marked it on my doc with headings."
+
+This approach to writing reminds me of the difference between generating text with an autoregressive [transformer](/wiki/deep-learning-NLP#transformers) versus using [diffusion-LM](/wiki/diffusion-LM): In one you write one word/token at a time and can only look back, what's written is written. In the other you roughly define how long your text is going to be, you start with a very noisy representation and polish it iteratively until you have a final product. 
+
+He mentions a thing that really contributes to his writing is: "Investing more time **thinking about how to communicate an idea**, rather than just settling on the first expression of it I think of". I wonder if thinking of 3\~5 ways to restate the main ideas of a post may help it sound better.
+
