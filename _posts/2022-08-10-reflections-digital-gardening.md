@@ -34,6 +34,8 @@ This first review session also doubles as my polishing phase, where I take a raw
 
 **Many powerful insights about a topic come not when reading a textbook for the first time, but when I review the main concepts later.** This shouldn't be too surprising, I guess, but it's still a benefit worth mentioning.
 
+_In case you want to do a deeper dive into personal wikis and note-taking, here's [every thought I've had about personal knowledge management](/wiki/archiving)._
+
 ## How I set up my personal wiki
 
 First, let me tell you about my digital garden set up. It is actually very simple: a **jekyll static site**, running on github pages because I wasn't going to pay for a domain and hosting for something I'm not interested in profiting from.
@@ -90,9 +92,9 @@ Taking notes and keeping them tidy in a single place has helped me a lot when re
 
 Linking them has helped insofar as it makes the site's navigation easier, but I don't think particularly deep insights come from just interlinking notes or sections, and don't feel my wiki is an insight-generating machine or anything like some people see the Zettelkasten (even though I think 80 big notes should count as 'critical mass').
 
-Being able to reflect on things while writing about them, and review my thoughts on a matter months down the line in an ordered, persistent and friendly way has definitely improved my thinking and retention of technical material, and knowing my source for each thing I jot down has been a godsend when directing other people to it. I am not as bullish as [Paul Graham](http://paulgraham.com/essay.html) on this, but I think sitting down to write ideas helps expand them and solidify them into something better. 
+Being able to reflect on things while writing about them, and review my thoughts on a matter months down the line in an ordered, persistent and friendly way has definitely improved my thinking and retention of technical material, and knowing my source for each thing I jot down has been a godsend when directing other people to it. I am not as bullish as [Paul Graham](http://paulgraham.com/essay.html) on this, but I think [sitting down to write ideas helps expand them](/wiki/idea-space) and solidify them into something better. 
 
-I also think this relates to the Feynman method of learning: if you can explain an idea you just read, you probably understood it. If you can't go reread.
+I also think this relates to the Feynman method of learning: if you can explain an idea you just read, you probably understood it. If you can't, go reread.
 
 There's something very rewarding to being asked for advice or how to solve an issue and saying "oh don't worry, that's on my wiki". It's even more rewarding when you yourself are the one with the issue.
 
