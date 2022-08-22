@@ -3,28 +3,17 @@ layout: post
 title: "Note Making: Information Storage and Archiving strategies"
 date: 2020-06-13
 description: "Since this is a Digital Garden to help me reflect and store information, I should ramp up my note-taking skills. Here's every interesting quote or idea I found about taking notes, capturing information, and connecting ideas."
-abstract: "Since this is a Digital Garden to help me reflect and store information, I should ramp up my note-taking skills. Here's every interesting quote or idea I found about taking notes, capturing information, and connecting ideas. Every Personal Knowledge Management quote I found interesting."
+abstract: "Since this is a Digital Garden to help me reflect and store information, I should ramp up my note-taking skills. Here's every interesting quote or idea I found about taking notes, capturing information, and connecting ideas."
 language: English
 importance: 8
 tag: notes, note making, journal, zettelkasten, commonplace book, luhman, tags
 ---
 
-## Commonplace Books
+Every Personal Knowledge Management quote I found interesting.
 
-Commonplace books (or *commonplaces*) are a way to compile knowledge, usually by writing information into books. They have been kept from antiquity, and were kept particularly during the Renaissance and in the nineteenth century. Such books are essentially scrapbooks filled with items of every kind: recipes, quotes, letters, poems, tables of weights and measures, proverbs, prayers, legal formulas. Commonplaces are used by readers, writers, students, and scholars as an aid for remembering useful concepts or facts. **Each one is unique to its creator's particular interests but they almost always include passages found in other texts**, sometimes accompanied by the compiler's responses. They became significant in Early Modern Europe.
+Reading about note-taking and personal knowledge management has been my hobby and prefered method of procrastination for a couple years now. It has resulted in this wiki, and in my opinion made me significantly more productive in both my studies and my job.
 
-"Commonplace" is a translation of the Latin term *locus communis* (from Greek tópos koinós, see literary topos) which means "a general or common topic", such as a statement of proverbial wisdom. In this original sense, commonplace books were collections of such sayings, such as John Milton's example. Scholars now understand them to include manuscripts in which an individual collects material which have a common theme, such as ethics, or exploring several themes in one volume. Commonplace books are private collections of information, but they are not diaries or travelogues.
-
-In 1685 the English Enlightenment philosopher John Locke wrote a treatise in French on commonplace books, translated into English in 1706 as A New Method of Making Common-Place-Books, "in which techniques for entering proverbs, quotations, ideas, speeches were formulated. Locke gave specific advice on how to arrange material by subject and category, using such key topics as love, politics, or religion. Commonplace books, it must be stressed, are not journals, which are chronological and introspective.
-[source: wikipedia](https://en.wikipedia.org/wiki/Commonplace_book)
-
-**Related Reading**: [Differentiating online variations of the Commonplace Book: Digital Gardens, Wikis, Zettlekasten, Waste Books, Florilegia, and Second Brains](https://boffosocko.com/2021/07/03/differentiating-online-variations-of-the-commonplace-book-digital-gardens-wikis-zettlekasten-waste-books-florilegia-and-second-brains/)
-
----
-
-**For inspiration and ideas:** Nikita Voloboev's [list of personal wikis](https://wiki.nikiv.dev/other/wiki-workflow#similar-wikis-i-liked). 
-
-His wiki is a marvelous example of a note-taking system on its own.
+A summary of my approach to note-taking is available in my [Personal Wiki blog post](/reflections-digital-gardening), but this article is a deep dive into different kinds of note-taking (like zettelkasten, commonplace books), different approaches to capturing, editing and organizing data that I found interesting from around the web, and even links to more resources and inspiration like Maggie Appleton's list of Digital Gardens, or Nikita Voloboev's [list of personal wikis](https://wiki.nikiv.dev/other/wiki-workflow#similar-wikis-i-liked) (his wiki is a marvelous example of a note-taking system on its own, and greatly inspired this site).
 
 ## Zettelkasten
 
@@ -86,6 +75,17 @@ The linking comes when you interpret the ideas for your own work. While you're r
 
 Source: [Writing.Bobdoto.Computer](https://writing.bobdoto.computer/question-i-just-finished-reading-a-book-and-took-lots-of-notes-now-what)
 
+## Commonplace Books
+
+Commonplace books (or *commonplaces*) are a way to compile knowledge, usually by writing information into books. They have been kept from antiquity, and were kept particularly during the Renaissance and in the nineteenth century. Such books are essentially scrapbooks filled with items of every kind: recipes, quotes, letters, poems, tables of weights and measures, proverbs, prayers, legal formulas. Commonplaces are used by readers, writers, students, and scholars as an aid for remembering useful concepts or facts. **Each one is unique to its creator's particular interests but they almost always include passages found in other texts**, sometimes accompanied by the compiler's responses. They became significant in Early Modern Europe.
+
+"Commonplace" is a translation of the Latin term *locus communis* (from Greek tópos koinós, see literary topos) which means "a general or common topic", such as a statement of proverbial wisdom. In this original sense, commonplace books were collections of such sayings, such as John Milton's example. Scholars now understand them to include manuscripts in which an individual collects material which have a common theme, such as ethics, or exploring several themes in one volume. Commonplace books are private collections of information, but they are not diaries or travelogues.
+
+In 1685 the English Enlightenment philosopher John Locke wrote a treatise in French on commonplace books, translated into English in 1706 as A New Method of Making Common-Place-Books, "in which techniques for entering proverbs, quotations, ideas, speeches were formulated. Locke gave specific advice on how to arrange material by subject and category, using such key topics as love, politics, or religion. Commonplace books, it must be stressed, are not journals, which are chronological and introspective.
+[source: wikipedia](https://en.wikipedia.org/wiki/Commonplace_book)
+
+**Related Reading**: [Differentiating online variations of the Commonplace Book: Digital Gardens, Wikis, Zettlekasten, Waste Books, Florilegia, and Second Brains](https://boffosocko.com/2021/07/03/differentiating-online-variations-of-the-commonplace-book-digital-gardens-wikis-zettlekasten-waste-books-florilegia-and-second-brains/)
+
 ## WebSeitz on the uses for a Wiki
 
 "Suppose you’re thinking deeply about something. You’ll stop often. Get stuck... You’ll pull ideas from all kinds of places, often including technical ideas only a tiny handful of people can be expected to know. And you’ll want to use those ideas as rapidly as you are able, freely associating. And yet almost all of these actions violate the conventional wisdom about how to build an audience and engagement.
@@ -108,7 +108,7 @@ Then you should capture it in its own note.
 
 I think this is a lower bar than I use for my own notes, but I will try this method for a while and see where it leads me. I like the idea of capturing all things I find surprising, and don't think I have that many creative ideas in a day, but let's see where it leads me.
 
-## Notes on "Transformative Tools for Thought"
+## "Transformative Tools for Thought"
 
 > "Let’s return to the question that began the essay: how to build transformative tools for thought? Of course, we haven’t even precisely defined what such transformative tools are! But they’re the kind of tools where relatively low cost changes in practice produce transformative changes in outcome – non-linear returns and qualitative shifts in thinking. This is in contrast with the usual situation, where a small change in practice causes a small change in results."
 
