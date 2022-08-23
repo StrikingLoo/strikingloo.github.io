@@ -27,6 +27,7 @@ If you want to build your own personal wiki / personal site using mine as a temp
 To run the site locally, run
 
 ```
+export PATH="/usr/local/opt/ruby/bin:$PATH"
 sudo gem install rails
 sudo gem install jekyll
 sudo gem install jekyll bundler
