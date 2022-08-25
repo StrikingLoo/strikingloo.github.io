@@ -34,9 +34,11 @@ Below is every article in this wiki. If you don't know where to start or what yo
 {% elsif item.path contains 'category' %}
 {% else %}
 {% if item.language == 'English' %}
+{% if item.importance > 0 %}
 <a href="{{ item.url }}" class="wiki-item" title="{{ item.description }}">
 {% if item.importance >= 7 %}🌻{% elsif item.importance >= 5 %}🌿{% else %}🌱
 {% endif %} {{ item.title }}</a>
+{% endif %}
 {% endif %}
 {% endif %}
 {% endfor %}
