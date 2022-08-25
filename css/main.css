@@ -129,3 +129,9 @@ div.backButton{
   top:80%;
   right: 5%;
 }
+
+.footer-img {
+    height: 1em;
+    width: 1em;
+    display: inline;
+}
