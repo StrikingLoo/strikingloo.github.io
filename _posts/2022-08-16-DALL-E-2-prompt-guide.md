@@ -117,7 +117,7 @@ Loving what it did with the sky on the first one. It's a different style from th
 ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.46.01_-_A_digital_illustration_of_glowing_toadstools_beside_a_pond_with_lilypads,_4k,_detailed,_trending_in_artstation.png){: loading="lazy" style="height:50%; width:50%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.46.03_-_A_digital_illustration_of_glowing_toadstools_beside_a_pond_with_lilypads,_4k,_detailed,_trending_in_artstation.png){: loading="lazy" style="height:50%; width:50%"}
 ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.46.05_-_A_digital_illustration_of_glowing_toadstools_beside_a_pond_with_lilypads,_4k,_detailed,_trending_in_artstation.png){: loading="lazy" style="height:50%; width:50%"} ![](resources/ai-generated-images/dalle_2/DALL_E_2022-08-16_18.46.08_-_A_digital_illustration_of_glowing_toadstools_beside_a_pond_with_lilypads,_4k,_detailed,_trending_in_artstation.png){: loading="lazy" style="height:50%; width:50%"}
 
-These reminded me of Magic: The Gathering illustrations (maybe for a Swamp) and the first one looks amazing with the fungi is actually reflecting on the pond.
+These reminded me of Magic: The Gathering illustrations (maybe for a Swamp) and the first one looks amazing with the fungi that is actually reflecting on the pond.
 
 ## Fantasy Illustrations
 
