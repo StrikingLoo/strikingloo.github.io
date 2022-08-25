@@ -101,3 +101,7 @@ If there are any steps that are unclear to you or you couldn't make the site or 
 And if you found this post entertaining or useful, share it on Twitter! Let's pave the web with wikis everywhere.
 
 _Follow me on [Twitter](https://twitter.com/strikingloo) to know when I write a new article._
+
+### Further Reading
+
+- [TiddlyWiki Beginner Tutorial](https://nesslabs.com/tiddlywiki-beginner-tutorial): If you don't want to have a whole personal website and don't feel that the level of customization afforded by a static website beats the ease of using a tool, I recommend you try TiddlyWiki instead. It is pretty plug and play and will give you most of the basic features you want for a personal wiki. As inspiration, this is one [Digital Garden made with TiddlyWiki](https://wiki.waifu.haus/#Root) that I find fascinating.
