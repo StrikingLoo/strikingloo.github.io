@@ -16,11 +16,11 @@ layout: default
   {{ content | toc }}
 </div>
 <div class="backButton">
-<a href="https://twitter.com/intent/tweet?text={{ page.title }}&url=https://strikingloo.github.io{{ page.url }}%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis'><i class="fab fa-twitter"></i>[Tweet this!]</a>
+<a href="https://twitter.com/intent/tweet?text={{ page.title }}&url=https://strikingloo.github.io{{ page.url }}%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis'><img src='/resources/twitter.png' class='footer-img' loading="lazy"></img>[Share]</a>
 <br/>
-<a href="/wiki/navigation-guide?utm_medium=tocButton" id='tocButton'><i class="fa fa-map-signs" aria-hidden="true"></i>[Contents]</a>
+<a href="/wiki/navigation-guide?utm_medium=tocButton" id='tocButton'><img src='/resources/sign.png' class='footer-img' loading="lazy"></img>[Contents]</a>
 <br/>
-<a href="/wiki?utm_medium=backButton" id='backToWiki'><-[Back to wiki]</a>
+<a href="/wiki?utm_medium=backButton" id='backToWiki'>←[Back to wiki]</a>
 </div>
 
 <script>
@@ -32,9 +32,9 @@ for (var heading of headings) {
 var windowWidth = window.innerWidth;
 var maxDeviceWidth = 768;
 if (windowWidth < maxDeviceWidth) {
-	document.getElementById('tweetThis').innerHTML=`[<i class="fab fa-twitter"></i>]`
-  document.getElementById('tocButton').innerHTML=`[<i class="fa fa-map-signs" aria-hidden="true"></i>]`
-	document.getElementById('backToWiki').innerHTML=`[<i class="fa fa-arrow-left"></i>]`
+	document.getElementById('tweetThis').innerHTML=`[<img src='/resources/twitter.png' class='footer-img' loading="lazy"></img>]`
+  document.getElementById('tocButton').innerHTML=`[<img src='/resources/sign.png' class='footer-img' loading="lazy"></img>]`
+	document.getElementById('backToWiki').innerHTML=`[←]`
 }
 
 

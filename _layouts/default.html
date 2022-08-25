@@ -3,17 +3,16 @@
 		<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="image/png" href="/potted-plant-icon.png"/>
+		
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪴</text></svg>">
             <title>{{ page.title }}</title>
 			<link rel="canonical" href="https://strikingloo.github.io{{ page.url }}">
 			  <meta name="description" content="{% if page.description %}{{ page.description | strip | strip_newlines | truncate: 160 }}{% else %}{{ page.title }}{% endif %}">
   			<meta property="og:site_name" content="{{ page.title }}">
 
-            <!-- link rel="preconnect" href="https://fonts.googleapis.com"-->
-			<!-- link rel="preconnect" href="https://fonts.gstatic.com" crossorigin -->
-            <!-- link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"-->
+            
 			<link rel="stylesheet" type="text/css" href="/css/main-min.css">
-        	<!-- Global site tag (gtag.js) - Google Analytics -->
+        	
 			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
 
 			<script>
@@ -50,10 +49,9 @@
 	    		<ul>
 	        		<li><a href="/">Home</a></li>
 		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/resources/Luciano_Strika.pdf">CV</a></li>
 	        		<li><a href="/wiki">Garden</a></li>
 	        		<li><a href="/blog">Blog</a></li>
-	        		<li><a href="https://www.medium.com/@StrikingLoo">Medium</a></li>
+	        		<li><a href="/resources/Luciano_Strika.pdf">CV</a></li>
 	    		</ul>
 			</nav>
 			<div class="container">
@@ -63,17 +61,14 @@
 			</div><!-- /.container -->
 			<footer>
 	    		<ul>
-	        		<li><a href="mailto:lucianostrika44@gmail.com" rel="me"><i class="far fa-envelope"></i></a></li>
-	        		<li><a href="https://github.com/strikingloo" rel="me"><i class="fab fa-github"></i></a></li>
-			        <li><a href="http://twitter.com/strikingloo" rel="me"><i class="fab fa-twitter"></i></a></li>
-			        <li><a href="http://dev.to/strikingloo" rel="me"><i class="fab fa-dev"></i></a></li>
-			        <li><a href="http://www.linkedin.com/in/luciano-strika" rel="me"><i class="fab fa-linkedin"></i></a></li>
-				<li><a href="https://www.medium.com/@StrikingLoo" rel="me"> <i class="fab fa-medium"></i> </a></li>
+	        		<li><a href="mailto:lucianostrika44@gmail.com" rel="me">✉️</a></li>
+	        		<li><a href="https://github.com/strikingloo" rel="me"><img src='/resources/github.png' class='footer-img' loading="lazy" alt="github"></img></a></li>
+			        <li><a href="http://twitter.com/strikingloo" rel="me"><img src='/resources/twitter.png' class='footer-img' loading="lazy" alt="twitter"></img></a></li>
+			        <li><a href="http://www.linkedin.com/in/luciano-strika" rel="me"><img src='/resources/linkedin.png' class='footer-img' loading="lazy" alt="linkedin"></img></a></li>
 				</ul>
 				<p><i>Built with ❤️ by <a href="https://strikingloo.github.io/">Strikingloo</a>.</i></p>
 			</footer>
-			
-			<script defer src="https://kit.fontawesome.com/695103c91f.js" crossorigin="anonymous"></script>
+
 			{% if page.uses_mathjax %}
 			<script defer src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 			{% endif %}
