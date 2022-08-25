@@ -61,7 +61,7 @@ The features I added to the site over time were:
 
 If you want to start your own personal wiki, I recommend you head over to [Tom Critchlow's guide](https://tomcritchlow.com/2019/02/17/building-digital-garden/) for a step by step on setting up a jekyll static web site where each markdown file is a note.
 
-You can alternatively fork [my Personal Wiki Setup Github repository](https://github.com/StrikingLoo/Personal-Wiki-Site-Setup) and host it in a free GitHub page (you can customize the CSS to make a completely different design maintaining the same functionalities as this site), following the instructions on the README to build your own wiki. 
+You can alternatively fork [my Personal Wiki Setup Github repository](https://github.com/StrikingLoo/Personal-Wiki-Site-Setup) and host it in a free GitHub page (you can customize the CSS to make a completely different design maintaining the same functionalities as this site), following the instructions on the README to build your own wiki. I wrote a different post with a detailed [step-by-step guide on how to set up a Digital Garden using my template](/personal-wiki-set-up).
 
 Another easy way to set up a wiki is to use TiddlyWiki, which is free and easy to set up,but won't allow you the same level of customization.
 
