@@ -46,7 +46,7 @@ To edit your own copy go to its URL (you can also find it in your profile) and _
 
 This is what it will look like in the beginning:
 
-![](resources/post_image/pw_screen1.png)
+![](resources/post_image/pw_screen1.png){: loading="lazy" alt="screenshot of personal wiki"}
 
 It's a stripped out version of this same website, except I changed the palette to something greener (because it's supposed to be a garden, get it?).
 
