@@ -41,17 +41,19 @@ Describing his uncle:
 
 > “Plutarch's Lives there was in which I read abundantly, and I still think that time spent to great advantage.” He also mentions he read “De Foe's \[book], called an Essay on Projects”
 
-> “But as prose writing bad been of great use to me in the course of my life, and was a principal means of my advancement, I shall tell you how, in such a situation, I acquired what little ability I have in that way.”
+> “But as prose writing had been of great use to me in the course of my life, and was a principal means of my advancement, I shall tell you how, in such a situation, I acquired what little ability I have in that way.”
  
 ---
 > “I should have mentioned before, that, in the autumn of the preceding year, I had form'd most of my ingenious acquaintance into a club of mutual improvement, which we called the JUNTO; we met on Friday evenings. The rules that I drew up required that every member, in his turn, should produce one or more queries on any point of Morals, Politics, or Natural Philosophy, to be discuss'd by the company; and once in three months produce and read an essay of his own writing, on any subject he pleased.”
 
+This is like a 18th century blogging circle.
+
 ---
 > “And now I set on foot my first project of a public nature, that for a subscription library. I drew up the proposals, got them put into form by our great scrivener, Brockden, and, by the help of my friends in the Junto, procured fifty subscribers of forty shillings each to begin with, and ten shillings a year for fifty years, the term our company was to continue.”
 
----
+### Benjamin Vaughan's Letter
 
-**Benjamin Vaughan's Letter:**
+Franklin cites a friend's letter where he is entreated to write his autobiography, in part as justification for this exercise in vanity. 
 
 > "How compatible it is to be great and domestic, enviable and yet good-humored."
 
@@ -91,16 +93,15 @@ I find it a delightful surprise that he refers, even without alluding to it by n
 
 > “I inquir'd concerning the Moravian marriages, whether the report was true that they were by lot. I was told that lots were us'd only in particular cases; that generally, when a young man found himself dispos'd to marry, he inform'd the elders of his class, who consulted the elder ladies that govern'd the young women. As these elders of the different sexes were well acquainted with the tempers and dispositions of their respective pupils, they could best judge what matches were suitable, and their judgments were generally acquiesc'd in; but if, for example, it should happen that two or three young women were found to be equally proper for the young man, the lot was then recurred to. I objected, if the matches are not made by the mutual choice of the parties, some of them may chance to be very unhappy. **"And so they may," answer'd my informer, "if you let the parties chuse for themselves;"** which, indeed, I could not deny.”
 
-> “What gave my book the more sudden and general celebrity, was the success of one of its proposed experiments, made by Messrs. Dalibard and De Lor at Marly, for drawing lightning from the clouds. This engag'd the public attention every where. M. de Lor, who had an apparatus for experimental philosophy, and lectur'd in that branch of science, undertook to repeat what he called the Philadelphia Experiments; and, after they were performed before the king and court, all the curious of Paris flocked to see them. I will not swell this narrative with an account of that capital experiment, nor of the infinite pleasure I receiv'd in the success of a similar one I made soon after with a kite at Philadelphia, as both are to be found in the histories of electricity.”
+> “What gave my book the more sudden and general celebrity, was the success of one of its proposed experiments, made by Messrs. Dalibard and De Lor at Marly, for **drawing lightning from the clouds.** This engag'd the public attention every where. M. de Lor, who had an apparatus for experimental philosophy, and lectur'd in that branch of science, undertook to repeat what he called the Philadelphia Experiments; and, after they were performed before the king and court, all the curious of Paris flocked to see them. I will not swell this narrative with an account of that capital experiment, nor of the infinite pleasure I receiv'd in the success of a similar one I made soon after with a kite at Philadelphia, as both are to be found in the histories of electricity.”
 
-> “On the whole, I wonder'd much how such a man came to be intrusted with so important a business as the conduct of a great army; but, having since seen more of the great world, and the means of obtaining, and motives for giving places, my wonder is diminished.”
+> “On the whole, I wonder'd much how such a man came to be intrusted with so important a business as the conduct of a great army; but, **having since seen more of the great world, and the means of obtaining, and motives for giving places, my wonder is diminished.**”
 
-> “I made frequent demands of an answer from the proprietaries, but without obtaining any other than that they had not yet received the opinion of the Attorney and Solicitor-General. What it was when they did receive it I never learnt, for they did not communicate it to me, but sent a long message to the Assembly drawn and signed by Paris, reciting my paper, complaining of its want of formality, as a rudeness on my part, and giving a flimsy justification of their conduct, adding that they should be willing to accommodate matters if the Assembly would send out some person of candour to treat with them for that purpose, intimating thereby that I was not such.
+> “I made frequent demands of an answer from the proprietaries, but without obtaining any other than that they had not yet received the opinion of the Attorney and Solicitor-General. What it was when they did receive it I never learnt, for they did not communicate it to me, but sent a long message to the Assembly drawn and signed by Paris, reciting my paper, complaining of its want of formality, as a rudeness on my part, and giving a flimsy justification of their conduct, adding that they should be willing to accommodate matters if the Assembly would send out some person of candour to treat with them for that purpose, intimating thereby that I was not such. 
+The want of formality or rudeness was, probably, **my not having address'd the paper to them with their assum'd titles of True and Absolute Proprietaries of the Province of Pennsylvania**, which I omitted as not thinking it necessary in a paper, the intention of which was only to reduce to a certainty by writing, what in conversation I had delivered viva voce.”
 
-> The want of formality or rudeness was, probably, my not having address'd the paper to them with their assum'd titles of True and Absolute Proprietaries of the Province of Pennsylvania, which I omitted as not thinking it necessary in a paper, the intention of which was only to reduce to a certainty by writing, what in conversation I had delivered viva voce.”
+### Turns of Phrase I Liked
 
----
-
-**Cute words (words that are frequently used and may improve my vocabulary):** induce, declare against, fall short, endeavor at, state the advantages, afford a better prospect, to my no small mortification, drawn up in strength of judgement.
+**Words that are frequently used and may improve my vocabulary:** induce, declare against, fall short, endeavor at, state the advantages, afford a better prospect, to my no small mortification, drawn up in strength of judgement.
 
 > "I had not been previously acquainted with the project, or I should have prevented it, being naturally averse to the assuming of state on any occasion"
