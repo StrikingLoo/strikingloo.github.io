@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-07-10
-title: "Reinforcement Learning - Sutton (Nook Notes)"
+title: "Reinforcement Learning - Sutton (Book Notes)"
 tags: deep learning,sutton,reinforcement learning,policy gradient,TD
 description: "Notes, summary and reflections about Sutton's Reinforcement Learning book"
 language: English
