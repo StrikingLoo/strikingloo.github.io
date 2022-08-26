@@ -44,6 +44,12 @@ To fork, simply go to the project's URL and click on _fork_ if you have a GitHub
 
 To edit your own copy go to its URL (you can also find it in your profile) and _clone_ the project to your computer. Alternatively you could edit each file from the browser directly through Github's UI, though you will probably be less happy doing it that way.
 
+This is what it will look like in the beginning:
+
+![](resources/post_image/pw_screen1.png)
+
+It's a stripped out version of this same website, except I changed the palette to something greener (because it's supposed to be a garden, get it?).
+
 All of the style and design is packed into a file called `css/main.css`, which you are free to edit and customize as you prefer, until it suits your aesthetic sensibilities. Right now it has a very simple design, but you can do whatever you want to it like changing the font or color palette, background design, etc. 
 
 Here is some inspiration for [web design templates](https://jekyllthemes.io/free), and [color palettes](https://colorhunt.co/).
@@ -105,3 +111,4 @@ _Follow me on [Twitter](https://twitter.com/strikingloo) to know when I write a 
 ### Further Reading
 
 - [TiddlyWiki Beginner Tutorial](https://nesslabs.com/tiddlywiki-beginner-tutorial): If you don't want to have a whole personal website and don't feel that the level of customization afforded by a static website beats the ease of using a tool, I recommend you try TiddlyWiki instead. It is pretty plug and play and will give you most of the basic features you want for a personal wiki. As inspiration, this is one [Digital Garden made with TiddlyWiki](https://wiki.waifu.haus/#Root) that I find fascinating.
+- [SadGrl's Layout Directory](https://sadgrl.online/webmastery/layouts/) is a great resource to get new HTML templates if you want to change the layout of some of the pages (or add new ones) after forking. These designs are great, and they have that old web, indie feel I like so much, like you would see in a blogspot from 2008.

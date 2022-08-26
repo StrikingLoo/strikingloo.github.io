@@ -48,9 +48,9 @@
 			<nav>
 	    		<ul>
 	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/wiki">Garden</a></li>
-	        		<li><a href="/blog">Blog</a></li>
+		        	<li><a href="/about/">About</a></li>
+	        		<li><a href="/wiki/">Garden</a></li>
+	        		<li><a href="/blog/">Blog</a></li>
 	        		<li><a href="/resources/Luciano_Strika.pdf">CV</a></li>
 	    		</ul>
 			</nav>
@@ -70,7 +70,31 @@
 			</footer>
 
 			{% if page.uses_mathjax %}
-			<script defer src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+			<script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+			{% endif %}
+
+			{% if page.is_wiki %}
+			
+			<!-- Script pointing to search-script.js -->
+			<script src="/js/search-script.js" type="text/javascript"></script>
+
+			<!-- Configuration -->
+			<script>
+			SimpleJekyllSearch({
+			  searchInput: document.getElementById('search-input'),
+			  resultsContainer: document.getElementById('results-container'),
+			  json: '/search.json'
+			})
+
+			const windowWidth = window.innerWidth;
+			const maxDeviceWidth = 768;
+			if (windowWidth < maxDeviceWidth) {
+			  var wiki_list = document.querySelectorAll('.wiki-item');
+			  for (var wiki_item of wiki_list) {
+			    wiki_item.classList.add('wide');
+			  }
+			}
+			</script>
 			{% endif %}
 		</body>
 	</html>
