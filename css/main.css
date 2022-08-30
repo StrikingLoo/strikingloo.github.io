@@ -78,10 +78,11 @@ strong { font-weight: bolder;}
 
 .wiki-item {
   border-radius: 10%;
-  padding: .5em;
+  padding: .3em;
   background-color: var(--wiki-bkg-color);
   display:inline-block;
   vertical-align: middle;
+  color: var(--font-color);
   width:45%;
   height:3.5em;
   margin:3px;
