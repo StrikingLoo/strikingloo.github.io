@@ -4,20 +4,14 @@ title: Personal Wiki / Digital Garden
 is_wiki: true
 ---
 	<h1>{{ page.title }}</h1>
-  <h3 style="text-align: center;">My Haphazard Repository of Knowledge</h3>
+  <h3 style="text-align: center;">My Repository of Knowledge</h3>
 
-   <blockquote>
-   <p>
-   "Your machine is a library, not a publication device. You have copies of documents in there that you control directly, that you can annotate, change, add links to, summarize, and this is because the memex is a tool to think with, not a tool to publish with." <br/>-- <a href="https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/">Mike Caulfield</a>
-</p></blockquote>
-
-<p>This is my Personal Wiki/Digital Garden. 
-
-Below is every article in this wiki. If you don't know where to start or what you're looking for, or want to know more about these notes, see the garden's <a href="/wiki/navigation-guide"><b>table of contents 🧭</b></a>.</p>
-<p>Notes importance guide: 🌱 < 🌿 < 🌻.<br>
+<p>
+Below is every article in the wiki, sorted by importance.<br/>If you want to browse and don't know where to start, see the garden's <a href="/wiki/navigation-guide"><b>table of contents 🧭</b></a>.</p>
+<p>Notes hierarchy: 🌱 < 🌿 < 🌻.<br>
 🌱: Stub or unimportant, 🌿: curious, usually a single idea, 🌻: interesting, more fleshed out, usually finished. </p>
 <div style = 'text-align:center;'>
-<!-- Html Elements for Search -->
+
 <input type="text" id="search-input" placeholder="Search the Wiki... (tag-based search)" style='font-size: 1.1rem;text-align:center;min-width:75%;'>
 
 <div id="search-container">
@@ -33,6 +27,7 @@ Below is every article in this wiki. If you don't know where to start or what yo
 {% for item in folder1 %}
 {% if item.path contains 'index' %}
 {% elsif item.path contains 'category' %}
+{% elsif item.importance < 3 %}
 {% else %}
 {% if item.language == 'English' %}
 <a href="{{ item.url }}" class="wiki-item" title="{{ item.description }}">
@@ -43,22 +38,6 @@ Below is every article in this wiki. If you don't know where to start or what yo
 {% endfor %}
  </ul>
 
- <h2>Notes in Spanish</h2>
-
-  <ul class="posts">
-{% assign folder1 = site.pages | where_exp: "item" , "item.path contains 'wiki' " | sort:"importance" | reverse %}
-{% for item in folder1 %}
-{% if item.path contains 'index' %}
-{% elsif item.path contains 'category' %}
-{% else %}
-{% if item.language == 'Spanish' %}
-<a href="{{ item.url }}" class="wiki-item" title="{{ item.description }}">{{ item.title }}</a>
-{% endif %}
-{% endif %}
-{% endfor %}
- </ul>
-   
-</div>
 <br/>
 
 <p>Idea and a bit of the code were taken from <a href='https://tomcritchlow.com/wiki/'>Tom Critchlow's Digital Garden</a>. </p>
