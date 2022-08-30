@@ -19,7 +19,16 @@ I've tried multiple different prompts, style cues, etc., and I'll keep adding th
 
 To anyone on the fence about trying DALL-E 2, I can genuinely recommend it. Prompting the model and seeing what it comes up with is almost addictive, and creates this beautiful dopamine feedback loop that just keeps you glued to your keyboard until you've spent all your credits. Or at least that's kind of how it went for me.
 
-I personally like asking these models for fantasy illustrations, landscapes and that kind of stuff, as I find that area less explored than, say, hyper realistic renders or popular media characters. However given how good DALL-E 2 is at photorealism, I did try my hand at some photograph prompts.
+I personally like asking these models for fantasy illustrations, landscapes and that kind of stuff, as I find that area less explored than, say, hyper realistic renders or popular media characters. However given **how good DALL-E 2 is at photorealism**, I did try my hand at some photograph prompts.
+
+As a summary, here are some of the **prompt templates that have yielded the best results** for me:
+
+- Pixar style 3D render of X
+- A photograph of X, 4k, detailed, \[vivid colors]
+- Low-poly render of X; high resolution, 4k
+- A digital illustration of X, 4k, detailed, trending in artstation, \[fantasy vivid colors/painter name for style/ghibli/cottagecore/steampunk]
+
+Generally, remember to describe the thing you want as specifically as you can. For instance if you want a red panda knight, instead of red panda knight you may want to write "A digital illustration of a red panda wearing a knight armor, with sword". Otherwise in the worst case scenario, you may get a red panda behind a helmet that covers its furry face and nobody will know its secret!
 
 The first thing that surprised me with this new model is how, unlike older ones like mini DALL-E, it generally understands prepositions and simple scene composition. 
 
@@ -29,13 +38,15 @@ Because of that, many of my first experiments were about composing scenes with s
 
 One thing I do is trying many prompts out on Craiyon or other free models first, and then sending the ones that perform better (to my taste) to DALL-E 2, as I had a limited budget in comparison. I expect this will be less necessary as models get cheaper and better. In fact DALL-E 2 gave me satisfying images for all prompts except one **on the first try**, though they not always fit the description well if it is complex enough (more on that later). This was **not possible 6 months ago** and I was not expecting it to happen so quick.
 
+Given how much better DALL-E 2 is, you won't need to do that much prompt engineering as in previous models, so this is why my guide is a lot simpler this time around.
+
 With that said, in general I found DALL-E 2 to be eerily effective, a lot better than I would have predicted a neural network to be even a year ago, and I really can't imagine what we will have in 2 or 3 years, available for free download and consumer use. 
 
 I hear stable diffusion, which is roughly equivalent in performance to DALL-E 2, already runs on 5GB of VRAM, and even though that is still above my budget (I think my GPU has 4GB), I find it extremely impressive.
 
 But I won't try to predict the capabilities or effects future models will have, I'll leave that to more experienced people on twitter.
 
-Without further ado, here are some cool images I drew with DALL-E 2!
+Without further ado, here are some cool images I drew with DALL-E 2! I hope if you needed some inspiration for prompts, you will be able to copy the ones you like the most and tune them to your own needs.
 
 ## DALL-E 2 Experiments: 3D Animation
 
