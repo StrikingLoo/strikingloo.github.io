@@ -6,6 +6,7 @@ date: 2022-08-12
 importance: 8
 description: "My thoughts on note taking, personal wikis, digital gardens and zettelkastens."
 twitter_image: "https://strikingloo.github.io/resources/post_image/pathway.jpg"
+sitemap: true
 ---
 
 I have been maintaining a Personal Wiki / Digital Garden for two years. Throughout all this time, I've reflected a lot on how I keep my notes, why I do it and what I get from doing it. Here is what I have learned.

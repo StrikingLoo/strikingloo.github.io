@@ -6,6 +6,7 @@ tags: dall-e, image generation, unsupervised learning, AI, art, prompts
 date: 2022-08-16
 twitter_image: "https://strikingloo.github.io/resources/ai-generated-images/dalle_2/clockwork_tw.png"
 importance: 7
+sitemap: true
 ---
 
 OpenAI's [Dall-E 2 became available in beta](https://openai.com/blog/dall-e-now-available-in-beta/) a month ago, and as a big fan of generative text-to-image models I instantly joined the waitlist.

@@ -7,6 +7,7 @@ importance: 7
 description: "Tutorial on how to make a digital garden / personal wiki using my template. Step-by-Step, not too hard even if you are not a programmer by trade."
 abstract: "This is a tutorial on how to make a digital garden / personal wiki using my template. Step-by-Step, not too hard even if you are not a programmer by trade. "
 twitter_image: "https://strikingloo.github.io/resources/ai-generated-images/dalle_2/steampunk_library.png"
+sitemap: true
 ---
 
 I have been using a personal wiki for note-taking and studying for 2 years. In that time, it has helped me a lot when preparing exams or job interviews, and generally made studying from books or papers feel more productive and enjoyable.
