@@ -259,6 +259,8 @@ StableDiffusion was the first AI art model where I have successfully got a centa
 
 I honestly made a lot more illustrations I loved (like 400 total, I think?) but I guess most readers will get bored long before they finish scrolling this post, so I will not keep you any longer.
 
+Before we reach the end, I want to raise a concern and propose a challenge. No matter what I tried, I could *not* make either DALL-E 2, or StableDiffusion make characters in the style of Jojo's Bizarre Adventure (or Araki, in general). I tried the obvious style cues and others, and none worked. So if any of you manages to make one of these models draw Spongebob Squarepants in the style of Jojo's, or any other recognizable character, you will get a thousand internet points from me.
+
 ## Recommended Reading
 
 Given how much has happened lately (even John Oliver is talking about DALL-E!), here are some other articles you amy want to read.
@@ -266,7 +268,7 @@ Given how much has happened lately (even John Oliver is talking about DALL-E!), 
 - [Stable Diffusion: The Most Important AI Art Model Ever](https://thealgorithmicbridge.substack.com/p/stable-diffusion-is-the-most-important) covering the more social/economic side of this.
 - [A traveler's guide to the latent space](https://sweet-hall-e72.notion.site/A-Traveler-s-Guide-to-the-Latent-Space-85efba7e5e6a40e5bd3cae980f30235f): a guide on prompt engineering that goes *really* in depth. I haven't actually read the whole thing.
 - [A guide to Writing Prompts for Text-to-Image AI](https://docs.google.com/document/d/17VPu3U2qXthOpt2zWczFvf-AH6z37hxUbvEe1rJTsEc/): The best quick primer I've found on prompt engineering and writing prompts for DALL-E 2/StableDiffusion or any other text-to-image AI.
-- [Art Prompts: My Experiments with Mini-DALLE](/art-prompts): My first post on text-to-image AI, where I included my own prompt guide. Here you can see how far we've come and how fast.
+- [Art Prompts: My Experiments with Mini-DALLE](/art-prompts): My first post on text-to-image AI, where I included my own AI art prompt guide. Here you can see how far we've come and how fast.
 - [DALL-E 2 Experiments](/dall-e-2-prompt-guide): The post I wrote two weeks ago when DALL-E 2 beta release was news and StableDiffusion hadn't come out yet. See if you can spot the same prompts' different results!
 
 _If you liked this article, please share it with someone you think will like reading it too. I wrote this for you guys._
