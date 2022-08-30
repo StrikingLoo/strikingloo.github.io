@@ -270,5 +270,6 @@ Given how much has happened lately (even John Oliver is talking about DALL-E!), 
 - [A guide to Writing Prompts for Text-to-Image AI](https://docs.google.com/document/d/17VPu3U2qXthOpt2zWczFvf-AH6z37hxUbvEe1rJTsEc/): The best quick primer I've found on prompt engineering and writing prompts for DALL-E 2/StableDiffusion or any other text-to-image AI.
 - [Art Prompts: My Experiments with Mini-DALLE](/art-prompts): My first post on text-to-image AI, where I included my own AI art prompt guide. Here you can see how far we've come and how fast.
 - [DALL-E 2 Experiments](/dall-e-2-prompt-guide): The post I wrote two weeks ago when DALL-E 2 beta release was news and StableDiffusion hadn't come out yet. See if you can spot the same prompts' different results!
+- [How to Draw](https://andys.page/posts/how-to-draw/): Where a user uses StableDiffusion's img2img version to convert an MSPaint drawing into a realistic sci-fi image.
 
 _If you liked this article, please share it with someone you think will like reading it too. I wrote this for you guys._
