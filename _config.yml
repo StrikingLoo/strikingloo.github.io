@@ -12,3 +12,7 @@ defaults:
       path: "wiki/" # an empty string here means all files in the project
     values:
       importance: 5
+    scope:
+      path: "_posts/" # an empty string here means all files in the project
+    values:
+      sitemap: false
