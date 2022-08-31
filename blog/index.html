@@ -8,9 +8,9 @@ title: Strikingloo's Blog
 	  {% for post in site.posts %}
 
 	  {% if post.sitemap %}
-	    <li class='post-item'><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <br/> <span><i>{{ post.date | date_to_string }}</i></span>
-	    	<br/><p><i>{{ post.description }}</i></p>
-	    </li>
+	  <li class='post-item'><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <br/> <span><i>{{ post.date | date_to_string }}</i></span>
+	    <br/><p><i>{{ post.description }}</i></p>
+	  </li>
 	    {% endif %}
 	  {% endfor %}
 	</ul>
@@ -23,7 +23,7 @@ title: Strikingloo's Blog
 			  var wiki_list = document.querySelectorAll('.post-item');
 			  for (var wiki_item of wiki_list) {
 			    wiki_item.style.width="100%";
-			    wiki_item.style.height="24em";
+			    wiki_item.style.height="auto";
 			  }
 			}
 			</script>
