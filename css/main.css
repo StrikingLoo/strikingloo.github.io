@@ -3,8 +3,7 @@
   --font-color: #24272B;
   --header-anchor-color: #6E8DD5;
   --anchor-hover-color: #c34;
-  --wiki-bkg-color: #cfebfb;
-  --wiki-bkg-color-hover: #E1F3FB;
+  --wiki-bkg-color-hover: #eee;
 }
 
 body {
@@ -77,16 +76,15 @@ nav a, footer a {
 strong { font-weight: bolder;}
 
 .wiki-item {
-  border-radius: 10%;
-  padding: .3em;
-  background-color: var(--wiki-bkg-color);
+    padding: .3em;
   display:inline-block;
   vertical-align: middle;
-  color: var(--font-color);
+  text-align: center;
   width:45%;
-  height:3.5em;
+  height:4em;
   margin:3px;
-  border: 1px solid;
+  border:.3em solid var(--header-anchor-color);
+  border-radius: 2%;
 }
 .wide {width:95%; height:auto;}
 .meta {font-style:italic; text-align: center;}
