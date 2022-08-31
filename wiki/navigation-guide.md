@@ -10,7 +10,7 @@ importance: 11
 
 Welcome to my [personal wiki](/wiki/).
 
-This is a place where I collect notes, clippings and thoughts about what I read, be it papers or books. I tend to it with love and care, and hope you will enjoy it too. 
+This is a place where I collect notes, clippings and thoughts about what I read, be it papers or books. I tend to this wiki with love and care, and I am its main user, but I hope you will enjoy it too. 
 
 Unlike a blog, I don't usually write my opinions in the wiki. Rather, I use this part of the site to organize what I learn and want to link to other ideas, maintaining evergreen notes in the way of [Andy Matuschak](https://notes.andymatuschak.org/Evergreen_notes) and others.
 
