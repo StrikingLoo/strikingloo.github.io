@@ -4,7 +4,7 @@ title: "Stable Diffusion: Prompt Examples and Experiments"
 description: "I tried similar prompts in Stable Diffusion as I had tried in DALL-E 2 and saw what I got. I also wrote advice on prompt engineering."
 tags: dall-e, image generation, unsupervised learning, AI, art, prompts, stable diffusion, guided diffusion
 date: 2022-08-30
-twitter_image: "https://strikingloo.github.io/resources/ai-generated-images/tw_flying_machine1.png"
+twitter_image: "https://strikingloo.github.io/resources/tw_fm1.png"
 importance: 7
 sitemap: true
 ---
