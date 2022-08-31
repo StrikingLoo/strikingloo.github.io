@@ -32,7 +32,7 @@ Train a model to predict the n+1th word based on the previous n words. This is a
 
 ### Fixed-window models
 
-predict using the previous fixed k words. E.g., use a Markov chain or a co-occurrence matrix. You can train a fully connected MLP using one-hot encoding of the words (super sparse vectors as inputs -actually passed as indices in any sane implementation-).
+Predict the next token using the previous fixed k words. E.g., use a Markov chain or a co-occurrence matrix. You can train a fully connected MLP using one-hot encoding of the words (super sparse vectors as inputs -actually passed as indices in any sane implementation-).
 
 **Insight:**
 

@@ -3,8 +3,7 @@
   --font-color: #24272B;
   --header-anchor-color: #6E8DD5;
   --anchor-hover-color: #c34;
-  --wiki-bkg-color: #cfebfb;
-  --wiki-bkg-color-hover: #E1F3FB;
+  --wiki-bkg-color-hover: #eee;
 }
 
 body {
@@ -15,7 +14,7 @@ body {
 
 p, a, ul li {
     font-family: 'Helvetica', Verdana;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     line-height: 1.75;
     color: var(--font-color);
 }
@@ -30,18 +29,20 @@ a:hover {
 }
 
 h1, h1 a {
-    font-size: 3em;
+    font-size: 2.2em;
     font-family: 'Georgia','Helvetica','Arial', 'Sans-Serif';
     text-align: center;
+    text-decoration: none;
+    line-height: 1.5em;
 }
 
 h2, h3, h2 a, h3 a {
     font-family: 'Georgia','Helvetica', Verdana;
 }
-h2, h2 a {font-size: 2.3rem;}
+h2, h2 a {font-size: 1.4em;}
 h3, h3 a {
     font-weight: bolder;
-    font-size: 1.8rem;
+    font-size: 1.2em;
     letter-spacing: 1px;
     word-spacing: 3px;
     line-height: 1.5;}
@@ -77,18 +78,17 @@ nav a, footer a {
 strong { font-weight: bolder;}
 
 .wiki-item {
-  border-radius: 10%;
-  padding: .3em;
-  background-color: var(--wiki-bkg-color);
+    padding: .3em;
   display:inline-block;
   vertical-align: middle;
-  color: var(--font-color);
+  text-align: center;
   width:45%;
-  height:3.5em;
+  height:4em;
   margin:3px;
-  border: 1px solid;
+  border:.3em solid var(--header-anchor-color);
+  border-radius: 2%;
 }
-.wide {width:95%; height:6em;}
+.wide {width:95%; height:auto;}
 .meta {font-style:italic; text-align: center;}
 .wiki-item:hover {
   background-color:var(--wiki-bkg-color-hover);
