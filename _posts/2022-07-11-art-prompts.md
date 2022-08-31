@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Text to Image Art: My Experiments with mini DALL-E and other models"
-description: "I discuss how to write better prompts for dalle mini, and other models that are even better."
+description: "I discuss how to write better prompts for DALL-E mini, and other models that are even better."
 date: 2022-07-11
 importance: 7
 sitemap: true
