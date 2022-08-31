@@ -2,13 +2,16 @@
 layout: default
 title: Strikingloo's Blog
 ---
-	<h1>Welcome to my Blog</h1>
+	<h1>Welcome to my Blog!</h1>
 	<ul class="posts">
 
 	  {% for post in site.posts %}
 
 	  {% if post.sitemap %}
-	    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> - <span>{{ post.date | date_to_string }}</span></li>
+	    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <br/> <span><i>{{ post.date | date_to_string }}</i></span>
+	    	<br/><p><i>{{ post.description }}</i></p>
+	    </li>
 	    {% endif %}
 	  {% endfor %}
 	</ul>
+
