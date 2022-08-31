@@ -63,3 +63,38 @@ Ideas can also be incentivized (publicly or privately) by funding inputs or outp
 
 The course mentions ideas as a function of population, incentives and average individual "creativity", multiplicatively.
 
+## Savings, Investment and the Financial System
+
+Over time, a person's income will fluctuate. In the American case it is typical for expenses to rise dramatically in college years as income is very low, then income peaks as people accrue work experience, and finally in retirement it shrinks again. To keep a relativaly stable standard of living, society uses borrowing (to compensate the difference in spending vs earning) and investing.
+
+The price of borrowing is an interest ([finances are trading with the future](https://www.conradbastable.com/essays/financialism-you-dont-need-surpluses-if-you-can-trade-with-the-future)) and this interest will fluctuate as any other price, due to changes in the supply and demand of capital. Supply depends on how much people save, demand on how much they spend, and these are the markets that banking and other financial institutions regulate with interest rates.
+
+### Financial Intermediaries 
+
+Financial Intermediaries are institutions that receive savers money and distribute it to lenders in different ways.
+
+**Banks** coordinate the lending of everyone's deposits, and evaluate loan applications assessing risks.
+
+**Bonds** can be issued by large enough institutions to directly raise capital bypassing banks. Their interest rate will be shifted as the government issues more or less bonds, since it is a big issuer in a market.
+
+**Stock** allows a company to sell a share of ownership and use that capital for investment and growth. In this case we are talking about IPOs or dillutions, not later stock trading.
+
+### Reasons Financial Intermediaries Fail
+
+Many failures of financial intermediaries come down to bad institutions. 
+
+- **Insecure property rights**: If you put your money in the bank, you expect to be able to take it out (yeah, right, *cries in Argentina*).
+- **Controls on interest rates**: Usury laws act as a price ceiling for interest rates, with expected effects.
+- **politicized lending**: Share of government banking vs total banking for a country predicts growth and finance.
+- **runs panics and scandals**: These undermine confidence in banks and can lead to a crisis. One way of preventing them is an institution like the [FDIC (Link to Kalzumeus' amazing explanation)](https://bam.kalzumeus.com/archive/deposit-insurance/)
+
+### 2008 Financial Crisis
+
+The course also discusses the 2008 Financial Crisis, explaining it as in big part due to overleverage in mortgages (the ratio of equity to total debt was too small -Lehman Brother's on average had 44 more in debt than in equity for mortgages. This is called a leverage ratio.-). 
+
+Other factors were bad incentives for managers (which made them less risk averse than optimal and not personally impacted by second order effects), overconfidence in the housing market, and securitization.
+
+In summary the factors that led to the crisis were: **high leverage in houses and banks**, **risky mortgage securities** and the **shadow banking system** not covered by FDIC, thus subject to more risk. This made banks insolvent as house prices fell, which made them be considered riskier, making obtaining loans harder, leading to a general of business that depended on credit to subsist.
+
+## Personal Finance
+
