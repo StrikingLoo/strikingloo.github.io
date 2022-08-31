@@ -32,12 +32,14 @@ h1, h1 a {
     font-size: 2.2em;
     font-family: 'Georgia','Helvetica','Arial', 'Sans-Serif';
     text-align: center;
+    text-decoration: none;
+    line-height: 1.5em;
 }
 
 h2, h3, h2 a, h3 a {
     font-family: 'Georgia','Helvetica', Verdana;
 }
-h2, h2 a {font-size: 1.5em;}
+h2, h2 a {font-size: 1.4em;}
 h3, h3 a {
     font-weight: bolder;
     font-size: 1.2em;
