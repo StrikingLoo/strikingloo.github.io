@@ -13,7 +13,7 @@ sitemap: true
 
 What a week, huh? A few days ago, [Stability.ai](https://stability.ai) released the new AI art model Stable Diffusion. It is similarly powerful to [DALL-E 2](/dall-e-2-prompt-guide), but open source, and open to the public through [Dream Studio](https://beta.dreamstudio.ai/dream), where anyone gets 50 free uses just by signing up with an email address.
 
-Since it is open source and anyone who has 5GB of GPU VRAM can download it (and Emad Mostaque, Stability.ai's founder has come out and said more efficient models are coming), expect to keep seeing headlines about AI art for a while.
+Since it is open source and anyone who has 5GB of GPU VRAM can download it (and Emad Mostaque, Stability.ai's founder has come out and said more efficient models are coming) to get unlimited uses, expect to keep seeing headlines about AI art for a while.
 
 I am tired of repeating the same old speech, but _thinking back to how primitive models were just a year and a half ago with DALL-E and other VQVAE, this is completely insane_. I can only imagine what applications artists and other users will come up with in the near future by leveraging StableDiffusion's embeddings and its text-to-image capabilities, let alone whatever the next generation of models will be able to do. 
 
