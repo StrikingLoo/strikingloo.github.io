@@ -31,12 +31,12 @@ a:hover {
 
 h1, h1 a {
     font-size: 3em;
-    font-family: 'Helvetica','Arial', 'Sans-Serif';
+    font-family: 'Georgia','Helvetica','Arial', 'Sans-Serif';
     text-align: center;
 }
 
 h2, h3, h2 a, h3 a {
-    font-family: 'Helvetica', Verdana;
+    font-family: 'Georgia','Helvetica', Verdana;
 }
 h2, h2 a {font-size: 2.3rem;}
 h3, h3 a {
@@ -135,4 +135,21 @@ div.backButton{
     height: 1em;
     width: 1em;
     display: inline;
+}
+
+.posts li {
+  padding: .3em;
+  display:inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width:45%;
+  height:16em;
+  margin:3px;
+  border:.3em solid var(--header-anchor-color);
+}
+
+.posts li a {
+    font-family: Georgia, Helvetica;
+    font-size: 1.5em;
+    font-weight: bold;
 }
