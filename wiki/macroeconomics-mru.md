@@ -98,3 +98,10 @@ In summary the factors that led to the crisis were: **high leverage in houses an
 
 ## Personal Finance
 
+Most privately managed mutual funds don't beat passively managed (like index) funds on a given year. None beat them consistently over time, not even Warren Buffet.
+
+One reason is the **Efficient Market Hypothesis**: that prices embed all publicly known information about something, so thinking you can profit from knowing public information is wrong (unless you assume others are incorrectly valuing that information or are less competent, which is usually not the case). This is also referred to as the Wisdom of the Crowds.
+
+I found this part of the course to be very basic and introductory, and it matches r/personalfinance, r/FIRE and infinitely many more finance blogs and sites, so I won't add too much here.
+
+
