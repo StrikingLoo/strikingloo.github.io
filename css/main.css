@@ -143,7 +143,7 @@ div.backButton{
   vertical-align: middle;
   text-align: center;
   width:45%;
-  height:16em;
+  height:18em;
   margin:3px;
   border:.3em solid var(--header-anchor-color);
 }

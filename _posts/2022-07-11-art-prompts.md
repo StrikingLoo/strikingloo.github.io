@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Text to Image Art: Experiments and Prompt Guide for DALL-E Mini, Craiyon and other AI Art Models"
+title: "Text to Image Art: Experiments and Prompt Guide for DALL-E Mini and Other AI Art Models"
 description: "I discuss how to write better prompts for DALL-E mini, and bigger models."
 date: 2022-07-11
 importance: 7
