@@ -15,6 +15,8 @@ layout: default
 <div class="post">
   {{ content | toc }}
 </div>
+
+<template id="post-delayed-content">
 <div class="backButton">
 <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url=https://strikingloo.github.io{{ page.url }}%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis'><img src='/resources/twitter.png' class='footer-img' loading="lazy"></img>[Share]</a>
 <br/>
@@ -22,6 +24,7 @@ layout: default
 <br/>
 <a href="/wiki?utm_medium=backButton" id='backToWiki'>←[Back to wiki]</a>
 </div>
+</template>
 
 <script>
 const headings = document.querySelectorAll('h2[id],h3[id]');
@@ -29,14 +32,34 @@ for (var heading of headings) {
     heading.innerHTML = `<a href=#${heading.id}># ${heading.innerHTML}</a>`;
     heading.appendChild(document.createElement('hr'))
 }
-var windowWidth = window.innerWidth;
-var maxDeviceWidth = 768;
-if (windowWidth < maxDeviceWidth) {
-	document.getElementById('tweetThis').innerHTML=`[<img src='/resources/twitter.png' class='footer-img' loading="lazy"></img>]`
-  document.getElementById('tocButton').innerHTML=`[<img src='/resources/sign.png' class='footer-img' loading="lazy"></img>]`
-	document.getElementById('backToWiki').innerHTML=`[←]`
+
+// set onload event listener to fire when document loaded 
+
+function renderBottomButtons(){
+  const templateNode = document.getElementById('post-delayed-content')
+  const templateContentClone = templateNode.content.cloneNode(true) // perform a deep copy
+  document.body.appendChild(templateContentClone)
+  var windowWidth = window.innerWidth;
+  var maxDeviceWidth = 768;
+  if (windowWidth < maxDeviceWidth) {
+    document.getElementById('tweetThis').innerHTML=`[<img src='/resources/twitter.png' class='footer-img' loading="lazy"></img>]`
+    document.getElementById('tocButton').innerHTML=`[<img src='/resources/sign.png' class='footer-img' loading="lazy"></img>]`
+    document.getElementById('backToWiki').innerHTML=`[←]`
+  }
 }
 
+function scrollEventHandler(){
+ const scrollOffset = window.pageYOffset
+ const browserViewHeight = window.innerHeight
+ if (scrollOffset > browserViewHeight/2) {
+    console.log('done')
+    renderBottomButtons();
+    window.removeEventListener('scroll', scrollEventHandler)
+ }
+
+}
+
+window.addEventListener('scroll', scrollEventHandler)
 
 </script>
 <meta name="twitter:card" content="summary_large_image" />
