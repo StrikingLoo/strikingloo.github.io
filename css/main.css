@@ -88,7 +88,7 @@ strong { font-weight: bolder;}
   margin:3px;
   border: 1px solid;
 }
-.wide {width:95%; height:6em;}
+.wide {width:95%; height:auto;}
 .meta {font-style:italic; text-align: center;}
 .wiki-item:hover {
   background-color:var(--wiki-bkg-color-hover);
