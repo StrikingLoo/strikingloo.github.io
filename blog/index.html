@@ -3,15 +3,28 @@ layout: default
 title: Strikingloo's Blog
 ---
 	<h1>Welcome to my Blog!</h1>
-	<ul class="posts">
+	<ul class="posts" style='text-align: center;'>
 
 	  {% for post in site.posts %}
 
 	  {% if post.sitemap %}
-	    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <br/> <span><i>{{ post.date | date_to_string }}</i></span>
+	    <li class='post-item'><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <br/> <span><i>{{ post.date | date_to_string }}</i></span>
 	    	<br/><p><i>{{ post.description }}</i></p>
 	    </li>
 	    {% endif %}
 	  {% endfor %}
 	</ul>
+
+	<script>
+			
+			const windowWidth = window.innerWidth;
+			const maxDeviceWidth = 768;
+			if (windowWidth < maxDeviceWidth) {
+			  var wiki_list = document.querySelectorAll('.post-item');
+			  for (var wiki_item of wiki_list) {
+			    wiki_item.style.width="100%";
+			    wiki_item.style.height="24em";
+			  }
+			}
+			</script>
 
