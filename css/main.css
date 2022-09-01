@@ -92,9 +92,9 @@ strong { font-weight: bolder;}
   display:inline-block;
   vertical-align: middle;
   text-align: center;
+  margin:3px;
   width:95%; 
   height:auto;
-  margin:3px;
   border:.3em solid var(--header-anchor-color);
 }
 
@@ -102,18 +102,6 @@ strong { font-weight: bolder;}
     font-family: Georgia, Helvetica;
     font-size: 1.5em;
     font-weight: bold;
-}
-
-@media only screen and (min-width: 768px) {
-  .wiki-item {
-    width:45%;
-    height:4em;
-    }
-
-  .posts li {
-    width:45%;
-    height:18em;
-    }
 }
 
 .meta {font-style:italic; text-align: center;}
@@ -125,6 +113,11 @@ border:2px solid;
 font-style:italic;
 margin:5%;
 padding:2%;
+}
+
+.slim {
+    width:45%;
+    height:4em;
 }
 
 img { height:70%; width:70%;   margin-left: auto;
