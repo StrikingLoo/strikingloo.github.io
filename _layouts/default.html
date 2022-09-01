@@ -12,7 +12,16 @@
 
             
 			<link rel="stylesheet" type="text/css" href="/css/main-min.css">
-        	
+        	{% if page.is_post %}
+        	<link rel="stylesheet" type="text/css" href="/css/post-min.css">
+        	{% endif %}
+        	{% if page.is_blog %}
+        	<link rel="stylesheet" type="text/css" href="/css/blog-min.css">
+        	{% endif %}
+        	{% if page.is_wiki %}
+        	<link rel="stylesheet" type="text/css" href="/css/wiki-min.css">
+        	{% endif %}
+
 			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
 
 			<script>
@@ -83,6 +92,7 @@
 
 			<!-- Configuration -->
 			<script>
+			
 			SimpleJekyllSearch({
 			  searchInput: document.getElementById('search-input'),
 			  resultsContainer: document.getElementById('results-container'),
@@ -97,6 +107,8 @@
 			    wiki_item.classList.add('slim');
 			  }
 			}
+
+			
 
 			</script>
 			{% endif %}
