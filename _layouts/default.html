@@ -86,15 +86,7 @@
 			  resultsContainer: document.getElementById('results-container'),
 			  json: '/search.json'
 			})
-
-			const windowWidth = window.innerWidth;
-			const maxDeviceWidth = 768;
-			if (windowWidth < maxDeviceWidth) {
-			  var wiki_list = document.querySelectorAll('.wiki-item');
-			  for (var wiki_item of wiki_list) {
-			    wiki_item.classList.add('wide');
-			  }
-			}
+			
 			</script>
 			{% endif %}
 		</body>

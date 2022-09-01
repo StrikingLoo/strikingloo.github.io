@@ -77,17 +77,46 @@ nav a, footer a {
 strong { font-weight: bolder;}
 
 .wiki-item {
-    padding: .3em;
+  padding: .3em;
   display:inline-block;
   vertical-align: middle;
   text-align: center;
-  width:45%;
-  height:4em;
   margin:3px;
   border:.3em solid var(--header-anchor-color);
   border-radius: 2%;
+  width:95%; height:auto;
 }
-.wide {width:95%; height:auto;}
+
+.posts li {
+  padding: .3em;
+  display:inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width:95%; 
+  height:auto;
+  margin:3px;
+  border:.3em solid var(--header-anchor-color);
+}
+
+.posts li a {
+    font-family: Georgia, Helvetica;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .wiki-item {
+    width:45%;
+    height:4em;
+    }
+
+  .posts li {
+    width:45%;
+    height:18em;
+    }
+}
+
+
 .meta {font-style:italic; text-align: center;}
 .wiki-item:hover {
   background-color:var(--wiki-bkg-color-hover);
@@ -98,6 +127,7 @@ font-style:italic;
 margin:5%;
 padding:2%;
 }
+
 img { height:70%; width:70%;   margin-left: auto;
   margin-right: auto; display: block;}
 
@@ -134,21 +164,4 @@ div.backButton{
     height: 1em;
     width: 1em;
     display: inline;
-}
-
-.posts li {
-  padding: .3em;
-  display:inline-block;
-  vertical-align: middle;
-  text-align: center;
-  width:45%;
-  height:18em;
-  margin:3px;
-  border:.3em solid var(--header-anchor-color);
-}
-
-.posts li a {
-    font-family: Georgia, Helvetica;
-    font-size: 1.5em;
-    font-weight: bold;
 }

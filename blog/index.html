@@ -14,17 +14,3 @@ title: Strikingloo's Blog
 	    {% endif %}
 	  {% endfor %}
 	</ul>
-
-	<script>
-			
-			const windowWidth = window.innerWidth;
-			const maxDeviceWidth = 768;
-			if (windowWidth < maxDeviceWidth) {
-			  var wiki_list = document.querySelectorAll('.post-item');
-			  for (var wiki_item of wiki_list) {
-			    wiki_item.style.width="100%";
-			    wiki_item.style.height="auto";
-			  }
-			}
-			</script>
-
