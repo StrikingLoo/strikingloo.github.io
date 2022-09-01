@@ -9,7 +9,7 @@ sitemap: true
 
 Ever since [DALL-E](https://openai.com/blog/dall-e/) came out in January 2021, or even before that with [PixelRNN](https://arxiv.org/pdf/1601.06759.pdf), I've found generative models, especially for images, amazing. But what I was interested in was how could I write better prompts that yielded the most beautiful images?
 
-The idea of text-to-image generators like [CLIP](/wiki/glide) is even more astounding, and I love being able to play with them and trying to get a glimpse of the way they "perceive" textual and image inputs. I think interpretability is a very interesting field of study, and understanding a model's representations may yield ideas for better models in the future (though usually the simplest way to make a better model is training a bigger one with more compute).
+The idea of text-to-image generators like [CLIP](/wiki/clip) or [GLIDE](/wiki/glide) is even more astounding, and I love being able to play with them and trying to get a glimpse of the way they "perceive" textual and image inputs. I think interpretability is a very interesting field of study, and understanding a model's representations may yield ideas for better models in the future (though usually the simplest way to make a better model is training a bigger one with more compute).
 
 Giving a model a prompt to generate an image out-of becomes sort of addictive, and I've spent longer than I am proud to admit fiddling around with these. Here are some of the images I made with [EleutherAI's](https://www.eleuther.ai/) `.imagine` model (which I think is a VQVAE like DALL-E) and some I made using everyone's favorite viral text-to-image generator, [DALL-E Mini](https://huggingface.co/spaces/dalle-mini/dalle-mini) (a small open source version of DALL-E 2, a guided diffusion model with extra steps).
 
@@ -27,6 +27,7 @@ Feel free to steal any of these images and use them for anything, or share them 
 
 _**Update**: Besides Craiyon, I've found [Dall-E Flow](https://github.com/jina-ai/dalle-flow), a colab notebook that uses [Jina-AI](https://github.com/jina-ai/jina) to be the best tool for generating beautiful DALL-E images, and I recommend everyone to give it a spin. It's free and open source, and I'm loving it._
 
+I also wrote separate articles after experimenting with [OpenAI's DALL-E 2](/dall-e-2-prompt-guide) and its [open source competition, StableDiffusion](/stable-diffusion-vs-dalle-2) both of which blew my mind and made me think of the future differently.
 
 ### How to write prompts for DALL-E / Craiyon: a crash course
 Usually, what I do is write what I want (adjectives + nouns usually get better results than verbs or complex scenes), then append 
