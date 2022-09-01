@@ -29,11 +29,9 @@ layout: default
 <script>
 const headings = document.querySelectorAll('h2[id],h3[id]');
 for (var heading of headings) {
-    heading.innerHTML = `<a href=#${heading.id}># ${heading.innerHTML}</a>`;
+    heading.innerHTML = `<a href=#${heading.id}>${heading.innerHTML}</a>`;
     heading.appendChild(document.createElement('hr'))
 }
-
-// set onload event listener to fire when document loaded 
 
 function renderBottomButtons(){
   const templateNode = document.getElementById('post-delayed-content')
