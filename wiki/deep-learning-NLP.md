@@ -27,7 +27,7 @@ For these models, data quality matters a lot. Model with "small" Wikipedia datas
 
 _Evaluating Word Embeddings_: You can evaluate analogies (with accuracy over premade datasets, using semantic or syntactic analogy), or cosine distance/similarity vs human-rated (e.g., mechanical-turk) similarity.
 
-## Language Modeling:
+## Language Modeling
 Train a model to predict the n+1th word based on the previous n words. This is an [autoregressive task](/wiki/unsupervised-learning-berkeley#autoregressive-models).
 
 ### Fixed-window models
@@ -116,7 +116,7 @@ It can also get more general: instead of a convex sum of dot products, we could 
 
 ![](image/Screen%20Shot%202020-10-03%20at%2016.28.26.png){: style="height:70%; width:70%" alt="" loading="lazy"}
 
-## Question Answering.
+## Question Answering
 
 A few quotes I liked:
 

@@ -21,9 +21,9 @@ A x = b,
 
 pero yo tengo que 
 
-A x = ~b, y resulta que aunque 
-||~b - b|| < \epsilon,
- ~x muy lejos de x.
+A x = \~b, y resulta que aunque 
+\|\|\~b - b\|\| < \epsilon,
+ \~x muy lejos de x.
 
 Error hacia adelante: el error en x.
 
@@ -31,18 +31,18 @@ Error hacia atras: el error en b.
 
 Tipicamente partimos de un error hacia atras, y eso nos genera un error hacia adelante (la veniamos cagando y eso promueve cagadas futuras).
 
-![Screen_Shot_2020-12-11_at_21-30-42.png](image/Screen_Shot_2020-12-11_at_21-30-42.png){: alt="" loading="lazy"}
+![Screen_Shot_2020-12-11_at_21-30-42.png](image/Screen_Shot_2020-12-11_at_21-30-42.png){: alt="" loading="lazy" style="width:50%;height:50%"}
 
 Numero de condición de la matriz
 
-![Screen_Shot_2020-12-12_at_17-33-38.png](image/Screen_Shot_2020-12-12_at_17-33-38.png){: alt="" loading="lazy"}
+![Screen_Shot_2020-12-12_at_17-33-38.png](image/Screen_Shot_2020-12-12_at_17-33-38.png){: alt="" loading="lazy" style="width:50%;height:50%"}
 
 Si A es **simetrica, inversible y tiene LU**, entonces **tiene LDL**.
 
 ### Descomposición de Cholesky:
 
 
-![Screen_Shot_2020-12-12_at_17-26-16.png](image/Screen_Shot_2020-12-12_at_17-26-16.png){: alt="" loading="lazy"}
+![Screen_Shot_2020-12-12_at_17-26-16.png](image/Screen_Shot_2020-12-12_at_17-26-16.png){: alt="" loading="lazy" style="width:50%;height:50%"}
 
 **L es triangular inferior** con positivos en la diagonal (no necesariamente 1).
 
@@ -50,7 +50,7 @@ A tiene **Cholesky** <-> A es **simétrica definida positiva**.
 
 A es **definida positiva** si
 
-![Screen_Shot_2020-12-12_at_17-27-26.png](image/Screen_Shot_2020-12-12_at_17-27-26.png){: alt="" loading="lazy"}
+![Screen_Shot_2020-12-12_at_17-27-26.png](image/Screen_Shot_2020-12-12_at_17-27-26.png){: alt="" loading="lazy" style="width:50%;height:50%"}
 
 para todo x.
 
@@ -82,16 +82,16 @@ Para hacer esto, uso reflexiones: muevo el vector de la columna de diagonal haci
 
 Si tengo el vector ortogonal al hiperplano en el que hago la reflexion, mi matriz ortogonal para esta transformación será:
 
-![Screen_Shot_2020-12-12_at_18-18-24.png](image/Screen_Shot_2020-12-12_at_18-18-24.png){: alt="" loading="lazy"}
+![Screen_Shot_2020-12-12_at_18-18-24.png](image/Screen_Shot_2020-12-12_at_18-18-24.png){: alt="" loading="lazy" style="width:40%;height:40%"}
 
 Pero cómo obtengo u? Simplemente parto de un vector que quiero que se refleje a otro. Sean v que quiero reflejar en w, obtengo u:
 
 
-![Screen_Shot_2020-12-12_at_18-18-34.png](image/Screen_Shot_2020-12-12_at_18-18-34.png){: alt="" loading="lazy"}
+![Screen_Shot_2020-12-12_at_18-18-34.png](image/Screen_Shot_2020-12-12_at_18-18-34.png){: alt="" loading="lazy" style="width:40%;height:40%"}
 
 Luego si tengo mi columna, como la quiero mappear conservando la norma, mis v y w serán:
 
-![Screen_Shot_2020-12-12_at_18-18-52.png](image/Screen_Shot_2020-12-12_at_18-18-52.png){: alt="" loading="lazy"}
+![Screen_Shot_2020-12-12_at_18-18-52.png](image/Screen_Shot_2020-12-12_at_18-18-52.png){: alt="" loading="lazy" style="width:50%;height:50%"}
 
 Y repito esto iterativamente. No ahorro complejidad pero tengo mas estabilidad numérica.
 
@@ -111,15 +111,15 @@ La complejidad termina siendo la misma que con HouseHolder, pero con un factor c
 
 Descompongo a A tq:
 
-![Screen_Shot_2020-12-12_at_19-00-21.png](image/Screen_Shot_2020-12-12_at_19-00-21.png){: alt="" loading="lazy"}
+![Screen_Shot_2020-12-12_at_19-00-21.png](image/Screen_Shot_2020-12-12_at_19-00-21.png){: alt="" loading="lazy" style="width:50%;height:50%"}
 
 Donde 
 
-![Screen_Shot_2020-12-12_at_19-02-45.png](image/Screen_Shot_2020-12-12_at_19-02-45.png){: style="height:90%; width:90%" alt="" loading="lazy"}
+![Screen_Shot_2020-12-12_at_19-02-45.png](image/Screen_Shot_2020-12-12_at_19-02-45.png){: style="height:70%; width:70%" alt="" loading="lazy"}
 
 Toda matriz tiene SVD.
 
-Para generarla, tengo que computar  A^t * A.
+Para generarla, tengo que computar A^t * A.
 
 Los PC (sigma_i) son las raíces cuadradas de los eigenvalues de A^t * A (que son todos no negativos por ser A^t * A semi definida positiva).
 
@@ -127,7 +127,7 @@ Los vectores de V son los eigenvectors -de norma 1-.
 
 Los vectores de U salen por esta ecuación:
 
-![Screen_Shot_2020-12-12_at_19-22-51.png](image/Screen_Shot_2020-12-12_at_19-22-51.png){: alt="" loading="lazy"}
+![Screen_Shot_2020-12-12_at_19-22-51.png](image/Screen_Shot_2020-12-12_at_19-22-51.png){: alt="" loading="lazy" style="width:30%;height:30%"}
 
 Si la matriz no era cuadrada, U_i para i > r, se definen para hacer una base ortonormal de Nul(A^t). Asi cumplimos todas las propiedades.
 
@@ -178,11 +178,11 @@ Ademas, podemos acotar el error de la interpolación si tenemos una idea de la n
 
 El polinomio de Lagrange es el único polinomio de grado n-1 que interpola estos n puntos.
 
-### Diferencias divididas
+### Diferencias divididas 
 
 Con diferencias divididas puedo computar un polinomio de Lagrange de forma recursiva para n puntos desde los anteriores n-1, en tiempo lineal. Esto permite agrandar el polinomio para ir fitteando mas puntos a medida que surgen.
 
-![Screen_Shot_2020-12-13_at_22-43-25.png](image/Screen_Shot_2020-12-13_at_22-43-25.png){: style="height:90%; width:90%" alt="" loading="lazy"}
+![Screen_Shot_2020-12-13_at_22-43-25.png](image/Screen_Shot_2020-12-13_at_22-43-25.png){: style="height:80%; width:80%" alt="" loading="lazy"}
 
 También se le dice método de Newton.
 
@@ -253,11 +253,11 @@ Tengo que poder calcular f y f' en un intervalo [a,b].
 
 En particular hallo un punto fijo de la función
 
-![Screen_Shot_2020-12-14_at_21-11-33.png](image/Screen_Shot_2020-12-14_at_21-11-33.png){: alt="" loading="lazy"}
+![Screen_Shot_2020-12-14_at_21-11-33.png](image/Screen_Shot_2020-12-14_at_21-11-33.png){: alt="" loading="lazy" style="width:50%;height:50%"}
 
 Usando el método del punto fijo, mi iteración es simplemente:
 
-![Screen_Shot_2020-12-14_at_21-11-40.png](image/Screen_Shot_2020-12-14_at_21-11-40.png){: alt="" loading="lazy"}
+![Screen_Shot_2020-12-14_at_21-11-40.png](image/Screen_Shot_2020-12-14_at_21-11-40.png){: alt="" loading="lazy" style="width:50%;height:50%"}
 
 Es importante que g esté bien definida en un entorno de x\*. Esto es, **f' no puede ser 0 en x\*\.**
 
@@ -290,7 +290,7 @@ Puede verse que esto proyecta b al espacio vectorial generado por A (osea, elimi
 
  _"A^t \* b es la proyección en la imagen de A de b"_.
 
-![](image/ata.png){: alt="" loading="lazy"}
+![](image/ata.png){: alt="" loading="lazy" style="width:50%;height:50%"}
 
 El sistema permite usar Cholesky, porque A^t\*A es una matriz sdp. Pero, la estabilidad numérica puede ser muy mala.
 
@@ -311,7 +311,7 @@ Aca una vez más separamos en casos:
 
 Si A es rango columna completa, hay una forma cerrada para x:
  
-![](image/svd_sol_1.png){: alt="" loading="lazy"}
+![](image/svd_sol_1.png){: alt="" loading="lazy" style="width:50%;height:50%"}
 
 Sino, la forma cerrada es esta:
 
@@ -319,7 +319,7 @@ Sino, la forma cerrada es esta:
 
 Donde los y_k pueden ser cualquier real. Se suele usar que sean todos 0 para minimizar la norma.
 
-### Complejidades
+### Complejidades Computacionales
 
 Factorizacion de Cholesky : O(n^3) -aunque mas rápida-
 
