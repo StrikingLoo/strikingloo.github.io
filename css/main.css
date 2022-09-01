@@ -116,7 +116,6 @@ strong { font-weight: bolder;}
     }
 }
 
-
 .meta {font-style:italic; text-align: center;}
 .wiki-item:hover {
   background-color:var(--wiki-bkg-color-hover);
