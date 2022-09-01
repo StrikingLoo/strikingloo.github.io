@@ -46,6 +46,8 @@ I hear stable diffusion, which is roughly equivalent in performance to DALL-E 2,
 
 But I won't try to predict the capabilities or effects future models will have, I'll leave that to more experienced people on twitter.
 
+_\[Edit: I wrote a separate [post about StableDiffusion](/stable-diffusion-vs-dalle-2), how it compares against DALL-E 2 and my very rough reflections and predictions for this space. It also contains most of the interesting resources and links I found about AI art.]_
+
 Without further ado, here are some cool images I drew with DALL-E 2! I hope if you needed some inspiration for prompts, you will be able to copy the ones you like the most and tune them to your own needs.
 
 ## DALL-E 2 Experiments: 3D Animation
