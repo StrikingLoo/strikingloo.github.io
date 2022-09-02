@@ -12,7 +12,7 @@ body {
     width: 70%;
 }
 
-p, a, ul li {
+p, a, ul li, ol li {
     font-family: 'Helvetica', Verdana;
     font-size: 1.1em;
     line-height: 1.75;
