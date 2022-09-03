@@ -105,3 +105,37 @@ One reason is the **Efficient Market Hypothesis**: that prices embed all publicl
 I found this part of the course to be very basic and introductory, and it matches r/personalfinance, r/FIRE and infinitely many more finance blogs and sites, so I won't add too much here.
 
 
+## Employment
+
+The unemployed population is defined as that which is able to work, wants to work (defined as 'made active efforts to find a job in last 28 days') but is unemployed.
+
+The share of female working population is increasing over time since 1940, and the male one is decreasing. This is partly due to societal factors, and also to factory jobs skewing male (and disappearing due to automation) and service work skewing female (service jobs are increasing). women also skew more educated.
+
+In recessions, unemployment peaks as the economy shrinks. 
+
+Unemployment can be frictional (lasts only a short period of time, e.g. if you're between jobs, and shows a vibrant changing economy), structural (long term, fixed) and cyclical (the rest).
+
+European countries have stronger labor protection against layoffs and such, and in exchange have higher unemployment rates (\~10% vs \~4% in USA).
+
+Labor participation rates also change unemployment. Some people just leave the labor market altogether, especially retirees.
+
+## Inflation and Quantity Theory of Money
+
+Inflation is produced when the quantity of money increases. An extreme example would be Zimbabwe.
+
+MV = PY : Total money supply times average velocity (how many jumps it makes) should equal average goods price times total sold finished goods and services quantity.
+
+By dividing both sides by Y, we get that P increases if M and V increase or decreases as P grows, ceteris paribus. Since Y is real GDP it doesn't fluctuate very much, nor should V fluctuate much (empirically for the USA it is around 7). This leaves M as the main culprit for inflation (not unexpected, as an Argentinian).
+
+Empirically, inflation correlates very well with money supply. Typically a doubling of the money supply, for instance, predicts a doubling of nominal prices. In other words, a linear approximation fits very well.
+
+### Costs of Inflation
+
+Inflation is especially bad because it is unpredictable. This generates **price confusion** and **money illusion**. Price confusion masks signals in prices, as we cannot separate real price increases from inflation. This is exacerbated by volatility.
+
+Money illusion happens when people are unaware of inflation and mistake changes in nominal prices with changes in real ones. This is a problem people in Argentina don't have as much, but I guess it happens in the first world.
+
+Inflation also **makes long term contracting riskier**, since real interest rates are harder to calculate if prices are more volatile. The Fisher effect predicts that interest rates will rise with predicted inflation, to try to match desired real interest rates. This also punishes long-term borrowers who contract their debt in high inflation contexts.
+
+Volatile inflation rates make both borrowing and lending riskier (the former due to possible decrease of inflation, the latter due to possible increase). Price volatility then is bad for the whole coordination system between saving and investing.
+
