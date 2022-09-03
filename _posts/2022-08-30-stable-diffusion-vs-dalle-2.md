@@ -265,7 +265,14 @@ StableDiffusion was the first AI art model where I have successfully got a centa
 
 I honestly made a lot more illustrations I loved (like 400 total, I think?) but I guess most readers will get bored long before they finish scrolling this post, so I will not keep you any longer.
 
+These are the last ones, I swear!
+
+![](resources/ai-generated-images/stable-diffusion/selected/1621667580_A_digital_illustration_of_a_steampunk_inventor_s_desk__4k__detailed__trending_in_artstation__fantasy_vivid_colors-add.png){: loading="lazy" style="display:inline;height:40%; width:40%"}![](resources/ai-generated-images/stable-diffusion/selected/3418018944_A_treasure_chest_with_glowing_jeewels_and_gems__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ-add.png){: loading="lazy" style="display:inline;height:40%; width:40%"}
+
+
 Before we reach the end, I want to raise a concern and propose a challenge. No matter what I tried, I could *not* make either DALL-E 2, or StableDiffusion make characters in the style of Jojo's Bizarre Adventure (or Araki, in general). I tried the obvious style cues and others, and none worked. So if any of you manages to make one of these models draw Spongebob Squarepants in the style of Jojo's, or any other recognizable character, you will get a thousand internet points from me.
+
+
 
 ## Resources and Links
 
