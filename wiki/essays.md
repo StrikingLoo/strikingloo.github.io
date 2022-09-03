@@ -162,3 +162,11 @@ This approach to writing reminds me of the difference between generating text wi
 
 He mentions a thing that really contributes to his writing is: "Investing more time **thinking about how to communicate an idea**, rather than just settling on the first expression of it I think of". I wonder if thinking of 3\~5 ways to restate the main ideas of a post may help it sound better.
 
+## From Google's Content Policy (Yeah, really)
+
+- Does the content provide **original information, reporting, research or analysis**?
+- Does the content provide a **substantial, complete or comprehensive description** of the topic?
+- Does the content provide **insightful analysis or interesting information** that is beyond obvious?
+- If the content draws on other sources, does it avoid simply copying or rewriting those sources and instead **provide substantial additional value and originality**?
+- Is this the sort of page you'd want to bookmark, share with a friend, or recommend?
+

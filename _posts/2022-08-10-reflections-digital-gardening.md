@@ -64,7 +64,7 @@ If you want to start your own personal wiki, I recommend you head over to [Tom C
 
 You can alternatively fork [my Personal Wiki Setup Github repository](https://github.com/StrikingLoo/Personal-Wiki-Site-Setup) and host it in a free GitHub page (you can customize the CSS to make a completely different design maintaining the same functionalities as this site), following the instructions on the README to build your own wiki. I wrote a different post with a detailed [step-by-step guide on how to set up a Digital Garden using my template](/personal-wiki-set-up).
 
-Another easy way to set up a wiki is to use TiddlyWiki, which is free and easy to set up,but won't allow you the same level of customization.
+Another easy way to set up a wiki is to use TiddlyWiki, which is free and easy to get started with, but won't allow you the same level of customization. Here is [Nesslab's guide to start using TiddlyWiki](https://nesslabs.com/tiddlywiki-beginner-tutorial), but it mostly just amounts to downloading the software.
 
 Either way, it's about one afternoon's work if you're not too picky with the design (or a potentially infinite time sink otherwise).
 
