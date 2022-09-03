@@ -7,6 +7,7 @@
   display:inline-block;
   vertical-align: middle;
   text-align: center;
+  font-size: 1.1em;
   margin:3px;
   border:.3em solid var(--header-anchor-color);
   border-radius: 2%;

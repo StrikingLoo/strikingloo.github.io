@@ -1,1 +1,1 @@
-.wiki-item:hover{background-color:var(--wiki-bkg-color-hover)}.wiki-item{padding:.3em;display:inline-block;vertical-align:middle;text-align:center;margin:3px;border:.3em solid var(--header-anchor-color);border-radius:2%;width:95%;height:auto}.slim{width:45%;height:4em}
+.wiki-item:hover{background-color:var(--wiki-bkg-color-hover)}.wiki-item{padding:.3em;display:inline-block;vertical-align:middle;text-align:center;font-size:1.1em;margin:3px;border:.3em solid var(--header-anchor-color);border-radius:2%;width:95%;height:auto}.slim{width:45%;height:4em}
