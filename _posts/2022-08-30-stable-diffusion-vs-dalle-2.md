@@ -5,7 +5,7 @@ description: "I tried similar prompts in Stable Diffusion as I had tried in DALL
 tags: dall-e, image generation, unsupervised learning, AI, art, prompts, stable diffusion, guided diffusion
 date: 2022-08-30
 twitter_image: "https://strikingloo.github.io/resources/tw_fm1.png"
-importance: 7
+importance: 8
 sitemap: true
 ---
 
@@ -56,6 +56,10 @@ My focus was on fantasy, science fiction, and steampunk illustrations, because t
 As with DALL-E 2, I found the model yields much better results for prompts that do not ask for a certain action or verb to be performed, but rather static scenes, especially if there are no humanoids or moving characters in them.
 
 For everything else though, the results were astounding. I feel like StableDiffusion beats DALL-E 2 in character design and realism, but loses in the beauty of its landscapes and backgrounds, but take this with a 10% certainty as it is only my intuition and is likely be biased by my prompt choices.
+
+One thing I've found helps a lot in getting more beautiful results is thinking of which exact visual effect would add to the picture, and specifying it. For instance, for fantasy illustrations usually adding fireflies or sparkles helps. For landscapes, I like naming specific flowers like azaleas, and for buildings naming features like a column, a fountain, or anything else to ground the picture in a certain time and place, even if the detail is only tangential to the whole picture. 
+
+In my opinion these details can steer the model even better than many vague cues like "4k", in this generation of models -unlike in [CLIP](/wiki/clip) or [GLIDE](/wiki/glide)-.
 
 I will begin with some scenes that I already tried with other models.
 
@@ -252,8 +256,10 @@ Because of that, and my love for moss, I made many forest scenes with abundant g
 ![](resources/ai-generated-images/stable-diffusion/selected/1537772634_A_Centaur_in_a_glade_under_the_stars_by_Zdzis_aw_Beksi_ski__Gorgeous_digital_painting_with_sober_colours_amazing_art_mesmerizing__captivating__artstation_3-centaur-xx.png){: loading="lazy" style="height:50%; width:50%"}
 ![](resources/ai-generated-images/stable-diffusion/selected/3401078383_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy" style="height:50%; width:50%"}
 ![](resources/ai-generated-images/stable-diffusion/selected/3650187890_A_giant_fire_bear_with_moss_and_azaleas_in_forest__fantasy__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy" style="height:50%; width:50%"}
+![](resources/ai-generated-images/stable-diffusion/selected/2835514280_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-add.png){: loading="lazy" style="height:50%; width:50%"}
 ![](resources/ai-generated-images/stable-diffusion/selected/738606398_A_magnificent_elk_made_of_azaleas_and_moss_in_the_woods__fantasy__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy" style="height:50%; width:50%"}
 ![](resources/ai-generated-images/stable-diffusion/selected/975594345_A_giant_boar_made_of_moss_and_azaleas_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy" style="height:50%; width:50%"}
+
 
 StableDiffusion was the first AI art model where I have successfully got a centaur. Not a deformed monstrosity, not a horse, not a weird human. A real centaur! So that made me happy and I had to share it.
 
