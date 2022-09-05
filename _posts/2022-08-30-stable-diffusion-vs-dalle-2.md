@@ -9,7 +9,7 @@ importance: 8
 sitemap: true
 ---
 
-![](resources/ai-generated-images/stable-diffusion/selected/173935242_A_digital_illustration_of_a_steampunk_flying_machine__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy" style="height:50%; width:50%"}
+![](resources/ai-generated-images/stable-diffusion/mini_steampunk_flying_machine_small.png){: style="height:50%; width:50%"}
 
 What a week, huh? A few days ago, [Stability.ai](https://stability.ai) released the new AI art model Stable Diffusion. It is similarly powerful to [DALL-E 2](/dall-e-2-prompt-guide), but open source, and open to the public through [Dream Studio](https://beta.dreamstudio.ai/dream), where anyone gets 50 free uses just by signing up with an email address.
 
@@ -76,8 +76,6 @@ I like the last one especially.
 > "A digital illustration of a steampunk flying machine in the sky with cogs and mechanisms, 4k, detailed, trending in artstation, fantasy vivid colors"
 
 ![](resources/ai-generated-images/stable-diffusion/selected/1113348597__A_digital_illustration_of_a_steampunk_flying_machine_in_the_sky_with_cogs_and_mechanisms__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png){: loading="lazy" style="height:50%; width:50%"} 
-
-![](resources/ai-generated-images/stable-diffusion/selected/173935242_A_digital_illustration_of_a_steampunk_flying_machine__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy" style="height:50%; width:50%"} 
 
 ![](resources/ai-generated-images/stable-diffusion/selected/1839163504__A_digital_illustration_of_a_steampunk_flying_machine_in_the_sky_with_cogs_and_mechanisms__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png){: loading="lazy" style="height:50%; width:50%"} 
 
