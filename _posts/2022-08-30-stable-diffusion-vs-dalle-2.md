@@ -9,8 +9,6 @@ importance: 8
 sitemap: true
 ---
 
-![](resources/ai-generated-images/stable-diffusion/mini_steampunk_flying_machine_small.png){: style="height:50%; width:50%"}
-
 What a week, huh? A few days ago, [Stability.ai](https://stability.ai) released the new AI art model Stable Diffusion. It is similarly powerful to [DALL-E 2](/dall-e-2-prompt-guide), but open source, and open to the public through [Dream Studio](https://beta.dreamstudio.ai/dream), where anyone gets 50 free uses just by signing up with an email address.
 
 Since it is open source and anyone who has 5GB of GPU VRAM can download it (and Emad Mostaque, Stability.ai's founder has come out and said more efficient models are coming) to get unlimited uses, expect to keep seeing headlines about AI art for a while.
@@ -22,6 +20,8 @@ Extrapolating from how much this field has grown in the last 18 months, I wouldn
 Are we really that close to something so big? I feel like the technology is there if enough compute and budget were allocated, but I am not sure whether someone will do it. I don't see any obvious blockers or barriers to the next generation of models being even bigger or understanding style better.
 
 Given this context, many people are concerned some artists may lose their jobs. After lots of discussion in reddit and at parties, I will try to summarize my current opinion on that topic.
+
+![](resources/ai-generated-images/stable-diffusion/mini_steampunk_flying_machine_small.png){: style="height:50%; width:50%"}
 
 For use-cases where having a human artist brings the least value, I think text-to-image models will dominate the market. However, for those cases I think we already had stock images. For instance if I am adorning a random blog post, I'd rather get a free stock image in the header than pay an artist for a new professional photo, as I don't think my readers care that much (see ["I replaced all our blog thumbnails using DALL·E 2"](https://deephaven.io/blog/2022/08/08/AI-generated-blog-thumbnails/) for an example). 
 
