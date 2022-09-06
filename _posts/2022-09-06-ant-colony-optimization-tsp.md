@@ -107,7 +107,7 @@ I used that site's Berlin dataset for most of my benchmarking and hyperparameter
 
 I was very happy to see that, while Networkx's _TSP solve_ took 2 seconds and this program took a couple minutes, my solution for that dataset had a weight of \~44000 whereas Networkx's was around 46k. This proves for some cases, even though slower, ACO algorithms could be a good approach for solving TSP problems.
 
-## Conclusions and Further Reading
+## Conclusions
 
 We showed that Ant Colony Optimization can be implemented quite easily in Python, and since many of its operations can be vectorized or parallelized it should not be too slow, though not as fast as Christofides's algorithm or others.
 
