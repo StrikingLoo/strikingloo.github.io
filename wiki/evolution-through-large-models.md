@@ -122,8 +122,7 @@ such an achievement, though it is possible in nature.
 They discuss DCTs (Detached Conditional Things), things that don't evolve organically but the agents can manipulate, create or move in multiple ways.
 
 While any QD algorithm can work with ELM, the specific algorithm in the
-experiment in this paper is MAP-Elites [🌱](http://arxiv.org/
-abs/1504.04909),[🌱](https://doi.org/10.1145/3321707.3321799).
+experiment in this paper is MAP-Elites [🌱](https://arxiv.org/abs/1504.04909),[🌱](https://doi.org/10.1145/3321707.3321799).
 
 The core of MAPElites is a uniformly-spaced grid of niches (called the map), that spans user-specified dimensions of solution diversity, called the behavior characterization.
 

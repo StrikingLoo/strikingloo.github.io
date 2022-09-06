@@ -20,11 +20,11 @@ This, simple as it is, amazingly works.
 
 ![Screen_Shot_2022-06-06_at_14-52-00.png](image_rl/Screen_Shot_2022-06-06_at_14-52-00.png){: alt="" loading="lazy"}
 
-"For a more thorough derivation and discussion I recommend [John Schulman’s lecture](https://www.youtube.com/watch?v=oPGVsoBonLM)."  [🌱]
+"For a more thorough derivation and discussion I recommend [John Schulman’s lecture](https://www.youtube.com/watch?v=oPGVsoBonLM)." [🌱]
 
 The current consensus is that PG works well only in settings where there are a few discrete choices so that one is not hopelessly sampling through huge search spaces.
 
-For example [AlphaGo](https://deepmind.com/alpha-go)[🌱] first uses supervised learning to predict human moves from expert Go games and the resulting human mimicking policy is later finetuned with policy gradients on the “real” objective of winning the game.
+For example [AlphaGo](https://www.deepmind.com/alpha-go)[🌱] first uses supervised learning to predict human moves from expert Go games and the resulting human mimicking policy is later finetuned with policy gradients on the “real” objective of winning the game.
 
 ## Additional Reading:
 

@@ -32,7 +32,7 @@ Then it moves on to speculate on the future of some tools for thought, by extend
 
 _[A GPS for the mind, @thesephist](https://thesephist.com/posts/nav/)_
 
-The last two quoted paragraphs lead me to [reader generated essays](/wiki/ideaspace#reader-generated-essays).
+The last two quoted paragraphs lead me to [reader generated essays](/wiki/idea-space#reader-generated-essays).
 
 ### Reader Generated Essays 
 

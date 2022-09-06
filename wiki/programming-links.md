@@ -13,7 +13,7 @@ I'll use this as a long-lived bookmarks page for technical or programming-adjace
 
 ---
 
-### [css layouts](#css-layouts)
+### css layouts
 
 Classic Holy Grail Layout
 grid-template: auto 1fr auto / auto 1fr auto
@@ -22,12 +22,7 @@ grid-template: auto 1fr auto / auto 1fr auto
 
 
 ---
-### [A ton of programming books for free. Really a ton. Grab a few when you're free.](#a-ton-of-books) {a-ton-of-books}
-
-<https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md>
-
----
-### [Skill tree React component](#skill-tree-react-component)
+### Skill tree React component
 
 <https://github.com/andrico1234/beautiful-skill-tree#examples>
 
@@ -35,16 +30,16 @@ grid-template: auto 1fr auto / auto 1fr auto
 
 ---
 
-### [Good zsh theme](#good-zsh-theme)
+### Good zsh theme
 
 <https://github.com/romkatv/powerlevel10k>
 
 ---
-### [Permutation importance](#permutation-importance)
+### Permutation importance
 <https://explained.ai/rf-importance/index.html>
 
 ---
-### [WebGL Water](#webgl-water)
+### WebGL Water
 Peruse at my leisure
 <https://github.com/evanw/webgl-water>
 

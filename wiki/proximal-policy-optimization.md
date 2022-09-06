@@ -8,7 +8,7 @@ description: "OpenAI's Reinforcement Learning algorithm: Proximal Policy Optimiz
 importance: 7
 ---
 
-PPO is the current SotA in [Reinforcement Learning](/wiki/renforcement-learning-base) in terms of sample efficiency, ease of implementation and quality of results. Developed by OpenAI, here are my notes on the article and the paper. 
+PPO is the current SotA in [Reinforcement Learning](/wiki/reinforcement-learning-base) in terms of sample efficiency, ease of implementation and quality of results. Developed by OpenAI, here are my notes on the article and the paper. 
 
 The biggest change is how the loss is defined, adding a penalty to constrain how much the policy can vary between iterations.
 
