@@ -23,6 +23,16 @@ One especially important use-case for Ant Colony Optimization (ACO from now on) 
 
 This problem is defined as follows: _Given a complete graph G with weighted edges, find the minimum weight Hamiltonian cycle. That is, a cycle that passes through each node exactly once and minimizes the total weight sum._
 
+Note that the graph needs to be *complete*: there needs to exist an edge conecting each possible pair of nodes. For graphs based in real places, this makes sense: you can just connect two places with an edge with a weight equal to their distance, or their estimated travel time. 
+
+For a concrete example, look at the following graph.
+
+![an image of a graph for travelling salesman problem](resources/post_image/TSP-graph-example.png){: loading="lazy" style="height:40%; width:40%"}
+
+In this case, the salesman wants to visit every home once and get back to where it started. Each edge joining two houses has a numeric label, representing the travel time between them in minutes. The salesman is a busy man, and would prefer to take as little time as possible in visiting all the houses. What would be the most efficient route?
+
+As an example, if we started from the house on the top left, we would want to go bottom, right, center, left again for a total of 80 minutes of travel. You can take a little time to convince yourself that is the right answer by hand, since this is a small case. Try to find a different route that would take less time to visit the four houses.
+
 Why is the Travelling Salesman Problem important? Many reasons. 
 
 First of all, **TSP appears everywhere in logistics**. Imagine you need to make multiple deliveries with a truck. You have packages, each of which has to go to a different place. What is the most time-efficient order to deliver them in and then go back to the warehouse? You just found the Travelling Salesman Problem.
@@ -31,7 +41,7 @@ First of all, **TSP appears everywhere in logistics**. Imagine you need to make 
 
 Finding TSP can be solved in polynomial time would prove P=NP. This would be huge. To the point of being considered one of this century's biggest questions. Suddenly swathes of hard problems would become easier to solve, and many new applications would open up, with multiple kinds of software becoming vastly more efficient. What it would do for logistics would probably contribute significantly to the world's GDP and global trade.
 
-But before I digress further, now that we know what TSP is, let's see how to solve it.
+But before I digress further, now that we know what TSP is, let's see how to solve it. For more information, I recommend the [Wikipedia article on TSP](https://en.wikipedia.org/wiki/Travelling_salesman_problem).
 
 ## Ant Colony Optimization: Solving TSP
 
@@ -69,7 +79,7 @@ First of all, I designed a minimal Graph class, whose code I will not include he
 
 Then I coded the `traverse_graph` function, which represents a single ant going through the graph one node at a time, constrained to move in a cycle. It will choose from among every node it has not stepped on yet, with a weighted distribution that assigns preference proportional to an edge's pheromone load and to the inverse of its distance.
 
-![weight equation for ant colony optimization](resources/post_image/weight.png){: loading="lazy" style="height:40%; width:40%"}
+![weight equation for ant colony optimization](resources/post_image/weight.png){: loading="lazy" style="height:25%; width:25%"}
 
 {% raw %}<script src="https://gist.github.com/StrikingLoo/432302f114822d24504cf6bab0ab3964.js"></script>{% endraw %}
 
@@ -82,7 +92,11 @@ After that, the optimization procedure itself consists of:
 - All pheromone levels are multiplied by a _degradation constant_, another hyperparameter between 0 and 1 that represents the passage of time and prevents bad past solutions to influence good recent ones too much.
 - Repeat for a certain number of iterations, or until convergence.
 
-Additional to this, I tried a few more modifications: the 'elite' or best candidate can be specified manually at the start (as that allows for reusing of the best solution from other runs) and I designed a protocol for increasing the amount of pheromones everywhere by a constant if progress stagnated -no new best cycle found after _patience_ iterations-, though I did not achieve better results through that. Also, after running _k_ ants, I only updated the pheromone trails with the best _k/2_ ants' traversals instead of using them all. This did improve results quite significantly, as did using elite candidates --not keeping them made the algorithm more unstable and it converged a lot more slowly.
+Intuitively, this converges to short cycles because **each ant is leaving more pheromones in the edges on its cycle the shorter it is** and, as old pheromones fade over time, and new ants favor edges with more pheromones in them, **new cycles will tend to be ever shorter**. Crucially, as each ant is choosing its next step at random, even though they will *tend* to pick the candidates with the most pheromone every time, they will also have a non-negligible probability of picking a different edge and going off exploring. Should that lead to a better cycle overall, then that ant will tell future ants about it by leaving even more pheromones, as the cycle is shorter.
+
+Over time, we would expect the average ant traversal to get shorter and shorter.
+
+Additionally, I tried a few more modifications to the algorithm: the 'elite' or best candidate can be specified manually at the start (as that allows for reusing of the best solution from other runs) and I designed a protocol for increasing the amount of pheromones everywhere by a constant if progress stagnated -no new best cycle found after _patience_ iterations-, though I did not achieve better results through that. Also, after running _k_ ants, I only updated the pheromone trails with the best _k/2_ ants' traversals instead of using them all. This did improve results quite significantly, as did using elite candidates --not keeping them made the algorithm more unstable and it converged a lot more slowly.
 
 Here is the whole function in all its glory (with comments for sanity).
 

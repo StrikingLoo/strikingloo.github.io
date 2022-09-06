@@ -150,7 +150,7 @@ Usually, idea “sparks” are things like:
 - A technical topic I want to deep-dive
 - A new approach / perspective to an established problem
 
-> "\[I will] keep it in my mental periphery so that the idea has the time and space to grow and snowball into something more interesting and meaty."
+> "\[I will] keep it in my mental periphery so that the idea has the time and space to grow and snowball into something more interesting and meaty."
 
 He then goes on to discuss 'expression callibration', where he will usually collect material surrounding the idea he wants to write about (taking notes of relevant links, etc.) to then expand upon the topic and add adjacent ideas to it. He also discusses the idea and his thoughts on it with multiple smart people, to find the best fitting words to express it, the appropriate order for different points, and this way he can start thinking of a prototype of how he would write it down.
 
@@ -170,3 +170,16 @@ He mentions a thing that really contributes to his writing is: "Investing more t
 - If the content draws on other sources, does it avoid simply copying or rewriting those sources and instead **provide substantial additional value and originality**?
 - Is this the sort of page you'd want to bookmark, share with a friend, or recommend?
 
+## From Gwern's About Page
+
+> I believe that someone who has been well-educated will think of something worth writing at least once a week; to a surprising extent, this has been true. (I added \~130 documents to this repository over the first 3 years.)
+
+> I am attempting to explain things to my future self, who is intelligent and interested, but has forgotten. What I am doing is explaining why I decided what I did to myself and noting down everything I found interesting about it for future reference. I hope my other readers, whomever they may be, might find the topic as interesting as I found it, and the essay useful or at least entertaining–but the intended audience is my future self.
+
+> I am attempting to explain things to my future self, who is intelligent and interested, but has forgotten. What I am doing is explaining why I decided what I did to myself and noting down everything I found interesting about it for future reference. I hope my other readers, whomever they may be, might find the topic as interesting as I found it, and the essay useful or at least entertaining–but the intended audience is my future self.
+
+> One of my personal interests is applying the idea of the Long Now. What and how do you write a personal site with the long-term in mind? We live most of our lives in the future, and the actuarial tables give me until the 2070–2080s.(...) It is a common-place in science fiction that longevity would cause widespread risk aversion. But on the other hand, it could do the opposite: the longer you live, the more long-shots you can afford to invest in. Someone with a timespan of 70 years has reason to protect against black swans—but also time to look for them.
+
+>  Knowing your site will survive for decades to come gives you the mental wherewithal to tackle long-term tasks like gathering information for years, and such persistence can be useful—if one holds onto every glimmer of genius for years, then even the dullest person may look a bit like a genius himself. (Even experienced professionals can only write at their peak for a few hours a day).
+
+[Source: Gwern's About](https://www.gwern.net/About)
