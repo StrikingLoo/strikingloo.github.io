@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Ant Colony Optimization to Solve the Travelling Salesman Problem"
-description: "After some research and reading, I coded an Ant Colony Optimization-based TSP solver in Python. I share the code, insights and benchmarks vs other algorithms."
+title: "Ant Colony Optimization for the Travelling Salesman Problem"
+description: "After some research and reading, I coded an Ant Colony Optimization-based TSP solver in Python. I share the code, insights and benchmarks versus other algorithms."
 tags: programming, python, optimization, TSP, np-hard, cs, algorithms
 date: 2022-09-06
 twitter_image: "https://strikingloo.github.io/resources/post_image/black-ant.jpg"
