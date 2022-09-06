@@ -21,7 +21,7 @@ Are we really that close to something so big? I feel like the technology is ther
 
 Given this context, many people are concerned some artists may lose their jobs. After lots of discussion in reddit and at parties, I will try to summarize my current opinion on that topic.
 
-![](resources/ai-generated-images/stable-diffusion/mini_steampunk_flying_machine_small.png){: style="height:50%; width:50%"}
+![](resources/ai-generated-images/stable-diffusion/mini_steampunk_flying_machine_small.png){: style="height:50%; width:50%" loading="lazy"}
 
 For use-cases where having a human artist brings the least value, I think text-to-image models will dominate the market. However, for those cases I think we already had stock images. For instance if I am adorning a random blog post, I'd rather get a free stock image in the header than pay an artist for a new professional photo, as I don't think my readers care that much (see ["I replaced all our blog thumbnails using DALL·E 2"](https://deephaven.io/blog/2022/08/08/AI-generated-blog-thumbnails/) for an example). 
 
