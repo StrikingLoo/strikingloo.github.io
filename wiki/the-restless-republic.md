@@ -17,8 +17,8 @@ Monck is also an interesting character, quite forgotten despite his great deeds.
 
 I love how weird and sectarian Protestantism gets in the 17th century in England, and this made me want to read the [book on alchemists and new science that Gwern recommends](https://www.gwern.net/reviews/Books#the-dark-side-of-the-enlightenment-fleming-2013), to see a different side of this same period. Between Quakers (who quake in ecstassy on sermons), Diggers (proto-communists taking control of the cultivable land, who justify their actions by quoting the bible!) and 5th monarchists, plus Puritans who always carry old testament names, everything gets very muddled in religion. It's interesting how the army didn't really mind the Communism, but nobody dared do blasphemy. So you can talk about abolishing private property but God forbid you say you're not Christian. Sorry, antescripturean (!).
 
----
-## Excerpts:
+
+## Favorite Passages
 
 
 “For decades, indeed centuries, the English legal system had been decried for its unfairness. The lists of its shortcomings varied, but most included the sheer time it took to resolve any case and the eye-watering cost in lawyers’ fees of legal action. The indefinite imprisonment of debtors and the power of the central courts in London were also causes for repeated complaint, as was the fact that **the law was a closed shop, conducted in Latin and French, to the absolute exclusion of non-professionals.**”

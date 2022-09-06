@@ -26,7 +26,7 @@ p a, ul li a, h2 a, h3 a {
 }
 
 p a:hover, ul li a:hover, h2 a:hover, h3 a:hover {
-    border-bottom: 3px dashed var(--header-anchor-color);
+    border-bottom: 3px solid var(--font-color);
 }
 
 h1, h1 a {
