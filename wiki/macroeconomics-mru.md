@@ -129,7 +129,7 @@ By dividing both sides by Y, we get that P increases if M and V increase or decr
 
 Empirically, inflation correlates very well with money supply. Typically a doubling of the money supply, for instance, predicts a doubling of nominal prices. In other words, a linear approximation fits very well.
 
-### Costs of Inflation
+### Costs of Inflation
 
 Inflation is especially bad because it is unpredictable. This generates **price confusion** and **money illusion**. Price confusion masks signals in prices, as we cannot separate real price increases from inflation. This is exacerbated by volatility.
 
@@ -139,3 +139,48 @@ Inflation also **makes long term contracting riskier**, since real interest rate
 
 Volatile inflation rates make both borrowing and lending riskier (the former due to possible decrease of inflation, the latter due to possible increase). Price volatility then is bad for the whole coordination system between saving and investing.
 
+## Business Cycles
+
+Business fluctuates cyclically. We get recessions and growth, that ebb and flow over time.
+
+The aggregate demand curve is the equation from before: MV = PY. This time, we plot the aggregate demand curve as a constraint system where inflation + real growth are nominal growth (P + Y), and they match dMV/dt which serves as a constraint giving us a straight line.
+
+The Long-run aggregate *supply* curve dictates real GDP growth -it is a constant-, constraining inflation to a certain value (as they add up to aggregate demand).
+
+The short-run aggregate supply curve is curvier and goes up from the left, so that when the money supply increases there is a period where the aggregate demand curve shifts to the right, but then if long-run aggregate supply curve doesn't move this just creates more inflation and a higher *nominal* GDP growth.
+
+## Business Cycle Theories
+
+### Keynesian
+
+Keynesians look at aggregate demand (divided into Nx, I, C, G) and assume salaries are sticky, which predicts unemployment will rise if aggregate demand shrinks.
+
+Central banks should expand money supply, lower interest rates and easy conditions for credit, government deficit, put people to work, fund by borrowing.
+
+In summary, they will want to **restore the flow of aggregate demand**. A problem with this is there may be an underlying cause for aggregate demand fall, which monetary policy will not address.
+
+### Monetarism
+
+**Monetarism**, based in the quantity theory of money, emphasizes money.
+
+It was especially popular in the '70s after stagflation, and puts an emphasis in keeping inflation possitive but small. Usually through a constant rate of money supply growth, which may not be completely optimal but rules out high inflation or deflation, which are the worst cases.
+
+Its biggest flaw is it is an incomplete model, since some crisis are not monetary in nature. There is also the question of how to measure and define the money supply in practice.
+
+### Real Business Cycle 
+
+In Real Business Cycle theory, a crisis comes from reduction in real aggregate supply. An economic shock that makes the economy worse, disrupting supply chains or reducing access to resources, causes a crisis. An example would be the increase in oil prices in the 70s, or Brazil's GDP falling when commodities fall. 
+
+In general, this theory predicts crises come from a shift to the left of the supply curve.
+
+Not all crises are based in real business, and some may come from monetary issues altogether, etc. A way to prevent real business cycle crisis is to diversify the economy.
+
+### Austrian School of Economics
+
+The Austrian School of Economics emphasizes price signals and postulates that **central banking or government action distort these signals and create a boom-bust cycle**.
+
+It dictates that the bank should not regulate the interest rate, as that makes for **artificial (self-reversing) businesses or investments**, which then bust when interest rates go down. 
+
+Some problems with it are that it fails to explain unemployment (after resources are redirected) and overestimates entrepreneurs (why are they not aware that the interest rates are fake?).
+
+The Austrian theory is not considered mainstream.
