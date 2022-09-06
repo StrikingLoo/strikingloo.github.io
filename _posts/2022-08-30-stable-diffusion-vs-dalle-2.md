@@ -232,7 +232,7 @@ I tried adding the name of the painter [Beksinski](https://es.wikipedia.org/wiki
 
 One thing I struggled to get right with other models was antropomorphic animals, especially if I also asked for medieval, steampunk or fantasy clothes. My dream of drawing a Mouseguard party with DALL-E would never come to fruition. With StableDiffusion one trick that worked for me was, instead of, say, prompting "ferret with pirate clothes/dressed as a pirate", using the prompt "ferret wearing a pirate costume". 
 
-Then I also got a prompt from twitter and iterated it, which was "cute and adorable \[animal], wearing \[clothes], steampunk/clockpunk/fantasy... " plus style prompts.
+Then I also got a prompt from twitter and iterated it, which was "cute and adorable \[animal], wearing \[clothes], steampunk/clockpunk/fantasy..." plus style prompts.
 
 This one worked like a charm. Rather than telling you the prompt I used for each individual picture, I will jsut show you the ones I liked best, so you can see what possibilities exist by tweaking a prompt like that one (I guess you can deduce the animal, etc. from the images themselves).
 
