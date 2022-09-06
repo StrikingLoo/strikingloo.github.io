@@ -120,6 +120,7 @@ I would like to try ACO for problems other than TSP in the future, so if you kno
 ## Suggested Further Reading
 
 - [_Shake and Pull Gently_, Kazimuth](https://kazimuth.github.io/blog/post/shake-and-pull-gently/): This post reminded me of my love for search and optimization algorithms, and I recommend it full-heartedly.
+- Reddit User _/u/git_'s comments on [Ant Behavior](https://www.reddit.com/r/programming/comments/wx69fs/comment/ilplkgs/) and [Ant Trails](https://www.reddit.com/r/funny/comments/wt1fcr/comment/il1w9u2/), which originally inspired me to write this post.
 - [Solving the Large-Scale TSP Problem in 1 h: Santa Claus Challenge 2020](https://www.frontiersin.org/articles/10.3389/frobt.2021.689908/full): A fun challenge and a good explanation of TSP.
 - [Automatic Relation-aware Graph Network Proliferation](https://arxiv.org/pdf/2205.15678v1.pdf): Using Graph Neural Networks to solve, among other things, TSP.
 - [TSP Genetic Python](https://github.com/maoaiz/tsp-genetic-python): A genetic algorithm for solving TSP.
