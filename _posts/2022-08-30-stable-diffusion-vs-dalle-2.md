@@ -248,7 +248,7 @@ I really went crazy with these, and these are my selection, so you can imagine h
 
 Another thing that I love about StableDiffusion (Which DALL-E 2 also gets right) is how well it renders textures. I can imagine how a 3d artist may use one of these models to enhance their own 3d objects by creating many different textures very fast and combining them with domain knowledge.
 
-Because of that, and my love for moss, I made many forest scenes with abundant growth and moss. Many of these look like a MAgic: the Gathering illustration. I will not post the propts as each one was different, but they mostly followed my digiatl fantasy illustration template.
+Because of that, and my love for moss, I made many forest scenes with abundant growth and moss. Many of these look like a MAgic: the Gathering illustration. I will not post the propts as each one was different, but they mostly followed my digital fantasy illustration template.
 
 ![](resources/ai-generated-images/stable-diffusion/selected/1394321457_A_giant_boar_made_of_moss_and_azaleas_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy" style="height:50%; width:50%"}
 ![](resources/ai-generated-images/stable-diffusion/selected/1537772634_A_Centaur_in_a_glade_under_the_stars_by_Zdzis_aw_Beksi_ski__Gorgeous_digital_painting_with_sober_colours_amazing_art_mesmerizing__captivating__artstation_3-centaur-xx.png){: loading="lazy" style="height:50%; width:50%"}
