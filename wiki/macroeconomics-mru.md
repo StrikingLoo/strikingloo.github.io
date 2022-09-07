@@ -4,9 +4,9 @@ date: 2022-08-29
 title: "Macroeconomics (Notes on MOOC by MRU)"
 tags: mooc, economics, macroeconomics, gdp, world modeling
 description: "Notes for the course on Macroeconomics by Marginal Revolution University. These are still in early stages as I am going through the course."
-abstract: "Notes for the course on Macroeconomics by Marginal Revolution University. These are still in early stages as I am going through the course."
+abstract: "Notes for the course on Macroeconomics by Marginal Revolution University."
 language: English
-importance: 1
+importance: 7
 ---
 
 ## GDP
@@ -184,3 +184,46 @@ It dictates that the bank should not regulate the interest rate, as that makes f
 Some problems with it are that it fails to explain unemployment (after resources are redirected) and overestimates entrepreneurs (why are they not aware that the interest rates are fake?).
 
 The Austrian theory is not considered mainstream.
+
+## Monetary Policy and the Federal Reserve
+
+The Federal Reserve holds a lot of power by being able to regulate the supply of money and interest rates.
+
+Remembering M\*V = P\*Y, the Fed can influence the economy greatly in the short term by moving M, but this will result in a change in P in the long run, though it could move Y in the short-run due to sticky prices.
+
+Money is any **widely accepted means of payment**. This includes paper money, checking and savings accounts, and anything you can use for payments without much work. It also includes what is **easily** converted into a means of payment.
+
+Some money supplies are: **MB** (paper + reserve deposits -banks' checking accounts-), **MR1** (currency + checkable deposits) and **MR2** which is an extension of M1.
+
+In **fractional reserve banking**, banks need to hold a certain % of savings in their vaults at all times. In the USA that fraction is currently 10%, called the reserve ratio. This also affects the money supply.
+
+The **Money multiplier** is the inverse of the reserve ratio, and due to exponential groth dictates how much M1 money emerges from an amount of MB money. E.g. if I deposit 100$ in my account, and the bank keeps 10% but lends 90%, which is deposited in banks, so it is lent again, etc.
+
+The Fed can move interest rates, especially for Federal Funds rate (how much banks are paid for lending overnight to other banks so they meet deposits requirements). The biggest way the Fed regulated interest rates prior to 2008 was through Expansionary Open Market Operations OMO: buying treasury bills from banks. This stimulates the economy by making it easier for banks to loan, reducing interest rates.
+
+Other loan rates adjust to the federal funds rate noisily.
+
+**After 2008**: The Fed conducted **Quantitative Easing**: Swapping money for assets other than t-bills. This allows the Fed to target different rates and parts of the economy, like mortgage securities or college loans. This also increases liquidity (and the money supply).
+
+The fed also started paying **interest rates on reserves**, increasing the incentives for banks to keep bigger reserves and stabilizing the economy, but also disincentivizing investments.
+
+**Repurchase and reverse purchase agreements** are like overnight OMO (in OMO the t bills are just bought 'permanently', in repos it is done for a night). This also regulates interest rates and market temperature, as buying more bonds will incentivize investing in them in lieu of other riskier investments.
+
+In a panic, there is a trade-off between preventing systemic risk and checking moral hazard: do I bial out insolvent banks which took too much risk, deemed too big to fail, to prevent every domino from falling down? Will that incentivize more risk-taking in the future, and signal to banks that they will be bailed out again in the next panic, increasing the chances of a crisis in the first place?
+
+## Fiscal Policy
+
+Fiscal Policy arguably aims at **reducing the impact of the booms and busts of the business cycle.**
+
+This can be achieved, for instance, by expansionary fiscal policy during a recession.
+
+The fiscal multiplier refers to the extra contribution to GDP after the government adds fiscal stimulus through, for instance, hiring unemployed workers to build infrastructure. Interestingly, this only stimulates the economy if unemployment is high enough, as otherwise the government will merely be crowding out the private sector.
+
+The oposite of expansionary policy is contractionary fiscal policy, especially during a boom, though that is less common.
+
+The government can use spending to stimulate the economy when aggregate demand falls, leading to temporary increase in short-term aggregate supply, which can keep the real aggregate supply from falling (triggering a recession or even a depression).
+
+An ideal stimulus is **timely, targeted and temporary**. 
+
+- **Timely** to avoid delays, both in government process and in the effect to take place.
+- **Targeted**: we would prefer to target unemployed workers, which can be hard when they belong to a specific part of the workforce (it is easier for the government to hire construction workers than retail ones).
