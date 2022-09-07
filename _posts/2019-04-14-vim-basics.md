@@ -1,9 +1,9 @@
 ---
 title: "Vim: How to Start Using The Text Editor for Developers"
 layout: post
-tags: programming, linux, productivity, text editor
+tags: programming,linux,productivity,text editor
 date: 2019-04-14
-importance: 5
+importance: 4
 sitemap: true
 ---
 
