@@ -77,9 +77,15 @@ I used numpy for the traversals and other numerical operations, and pytest for t
 
 First of all, I designed a minimal Graph class, whose code I will not include here since it is very simple. Suffice it to say that the _.distance_ property holds an adjacency matrix with the weight -distance- for each edge.
 
-Then I coded the `traverse_graph` function, which represents a single ant going through the graph one node at a time, constrained to move in a cycle. It will choose from among every node it has not stepped on yet, with a weighted distribution that assigns preference proportional to an edge's pheromone load and to the inverse of its distance.
+Then I coded the `traverse_graph` function, which represents a single ant going through the graph one node at a time, constrained to move in a cycle. 
+
+The ant starts from a given node, and will at each step choose from among every node it has not stepped on yet, with a weighted distribution that assigns preference proportional to an edge's pheromone load and to the inverse of its distance, each raised to a power that is a hyperparameter coefficient (_alpha_ and _beta_ respectively).
+
+That is, the probability of choosing a certain edge will be proportional to:
 
 ![weight equation for ant colony optimization](resources/post_image/weight.png){: loading="lazy" style="height:25%; width:25%"}
+
+Where P is the level of pheromones in that edge, and D the distance the edge covers. To get the distribution we sample from at each random jump, we normalize these weight coefficients so they add up to one.
 
 {% raw %}<script src="https://gist.github.com/StrikingLoo/432302f114822d24504cf6bab0ab3964.js"></script>{% endraw %}
 
