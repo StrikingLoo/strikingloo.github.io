@@ -182,4 +182,11 @@ He mentions a thing that really contributes to his writing is: "Investing more t
 
 >  Knowing your site will survive for decades to come gives you the mental wherewithal to tackle long-term tasks like gathering information for years, and such persistence can be useful—if one holds onto every glimmer of genius for years, then even the dullest person may look a bit like a genius himself. (Even experienced professionals can only write at their peak for a few hours a day).
 
+As he writes more, the writing/research process becomes autocatalytic. He:
+- Internalizes a habit of noticing interesting questions that flit accross his brain.
+- Writes down useful links or quotes so they 'slowly accrete'.
+- Learns to use new tools that give power to his writing.
+
+
+
 [Source: Gwern's About](https://www.gwern.net/About)

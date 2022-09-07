@@ -1,10 +1,10 @@
 ---
-title: "FuzzyWuzzy: How to Measure String Distance on Python"
+title: "FuzzyWuzzy: How to Measure String Distance in Python"
 description: "Fuzzy string matching and string similarity. This is how FuzzyWuzzy works and how you can use it."
 layout: post
 tags: programming,computer science,feature engineering,python
 date: 2019-04-15
-importance: 4
+importance: 5
 sitemap: true
 twitter_image: "https://strikingloo.github.io/resources/post_image/fuzzyplant.jpeg"
 ---
