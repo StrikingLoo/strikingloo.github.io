@@ -13,10 +13,13 @@
   text-decoration: none;
   border:.3em solid var(--header-anchor-color);
   border-radius: 2%;
-  width:95%; height:auto;
+  width:95%; 
+  height:auto;
 }
 
 .slim {
     width:45%;
     height:4em;
 }
+
+.posts {padding-left: 0;}

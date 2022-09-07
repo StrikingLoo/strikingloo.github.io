@@ -1,4 +1,5 @@
 /* blog only */
+.posts {padding-left: 0;}
 .posts li {
   padding: .5em;
   display:inline-block;
@@ -13,6 +14,7 @@
 .posts li a {
     font-family: Georgia, Helvetica;
     font-size: 1.5em;
+    text-align: center;
     font-weight: bold;
     color: var(--header-anchor-color);
 }

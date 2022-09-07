@@ -32,7 +32,7 @@ p a:hover, ul li a:hover, h2 a:hover, h3 a:hover {
 h1, h1 a {
     font-size: 2.2em;
     text-align: center;
-    line-height: 2.2em;
+    line-height: 1.4em;
 }
 
 h2, h3, h2 a, h3 a, h1, h1 a{

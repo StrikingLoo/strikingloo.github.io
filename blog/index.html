@@ -5,13 +5,11 @@ is_blog: true
 ---
 	<h1>Welcome to my Blog!</h1>
 	<ul class="posts" style='text-align: center;'>
-
 	  {% for post in site.posts %}
-
 	  {% if post.sitemap %}
-	  <li class='post-item' style='text-align: center;'><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <br/> <span><i>{{ post.date | date_to_string }}</i></span>
-	    <br/><p><i>{{ post.description }}</i></p>
-	  </li>
+<li class='post-item' style='text-align: center;'><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <br/> <span><i>{{ post.date | date_to_string }}</i></span>
+<br/><p><i>{{ post.description }}</i></p>
+</li>
 	    {% endif %}
 	  {% endfor %}
 	</ul>
