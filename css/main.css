@@ -7,7 +7,7 @@
 }
 
 body {
-    margin: 60px auto;
+    margin: 2em auto;
     background-color: var(--bkg);
     width: 70%;
 }
@@ -51,12 +51,8 @@ h1,h2,h3, h1 a, h2 a, h3 a {
     color:var(--header-anchor-color);
 }
 footer {
-    border-top: 1px solid var(--anchor-hover-color);
+    border-top: 1px solid var(--header-anchor-color);
     font-size: .8em;
-}
-
-nav {
-border-bottom:2px dashed var(--anchor-hover-color);
 }
 
 nav ul, footer ul {
@@ -65,14 +61,15 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
 }
+
 nav ul li, footer ul li {
     display: inline;
-    margin-right: 20px;
 }
-nav a, footer a {
+footer ul li {margin-right: 1em;}
+footer a {
     text-decoration: none;
     border-bottom: none;
-    color: var(--anchor-hover-color);
+    color: var(--header-anchor-color);
 }
 
 nav ul li a, footer ul li a {border-bottom: none;}
@@ -80,10 +77,43 @@ nav ul li a:hover, footer ul li a:hover {
     border-bottom: none;
     text-decoration: underline;
 }
+
+nav {float: right;}
+
+nav a {
+    padding: 0.6em;
+    border-radius: 5%;
+    background-color: var(--header-anchor-color);
+    color: var(--bkg);
+    text-decoration: none;
+    border-bottom: none;}
+
+@media only screen and (max-width: 419px) {
+  nav ul li { display:inline-block; margin-bottom:0.8em; width: 40%; }
+}
+
 strong { font-weight: bolder;}
 
 .footer-img {
     height: 1em;
     width: 1em;
     display: inline;
+}
+
+.head-banner {
+    padding-left: .5em;
+    padding-bottom: .1em;
+    display: block;
+    border-bottom: 2px dashed var(--header-anchor-color);
+}
+
+.head-banner p {
+    float: left;
+    color: var(--font-color);
+    padding: 0px;
+    margin: 0px;
+    font-size: 2em;
+    text-decoration: none;
+    font-family: 'Georgia';
+    font-weight: bold;
 }
