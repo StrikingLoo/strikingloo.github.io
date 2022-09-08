@@ -58,6 +58,8 @@ window.addEventListener('scroll', scrollEventHandler)
 <meta name="twitter:description" content="{{ page.description }}" />
 {% if page.twitter_image.size > 0 %}
 <meta name="twitter:image:src" content="{{ page.twitter_image }}" />
+<meta property="og:image" content="{{ page.twitter_image }}"/>
 {% else %}
-<meta name="twitter:image:src" content="https://strikingloo.github.io/resources/book-tw.jpg" />
+<meta name="twitter:image:src" content="https://strikingloo.github.io/resources/book-tw.jpg"/>
+<meta property="og:image" content="https://strikingloo.github.io/resources/preview-image-terrarium.png"/>
 {% endif %}
