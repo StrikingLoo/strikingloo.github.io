@@ -1,9 +1,9 @@
 :root {
-  --bkg: #F1F1F1; /*#FFFDFB;*/
-  --font-color: #100F0F; /*#24272B;*/
-  --header-anchor-color: #0F3D3E; /*#6E8DD5; 256D85*/
-  --anchor-hover-color: #5bb ; /* #c34; */ 8FE3CF
-  --wiki-bkg-color-hover: #E2DCC8; /*#eee;*/
+  --bkg: #F1F1F1; 
+  --font-color: #100F0F; 
+  --header-anchor-color: #0F3D3E; 
+  --anchor-hover-color: #5bb; 
+  --wiki-bkg-color-hover: #E2DCC8; 
 }
 
 body {
@@ -89,10 +89,6 @@ nav a {
     text-decoration: none;
     border-bottom: none;}
 
-@media only screen and (max-width: 419px) {
-  nav ul li { display:inline-block; margin-bottom:0.8em; width: 40%; }
-}
-
 strong { font-weight: bolder;}
 
 .footer-img {
@@ -117,4 +113,9 @@ strong { font-weight: bolder;}
     text-decoration: none;
     font-family: 'Georgia';
     font-weight: bold;
+}
+
+@media only screen and (max-width: 419px) {
+  nav ul li { display:inline-block; margin-bottom:0.8em;}
+  .head-banner {text-align: center;}
 }
