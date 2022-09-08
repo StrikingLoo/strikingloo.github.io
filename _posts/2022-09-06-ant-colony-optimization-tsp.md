@@ -127,13 +127,47 @@ I used that site's Berlin dataset for most of my benchmarking and hyperparameter
 
 I was very happy to see that, while Networkx's _TSP solve_ took 2 seconds and this program took a couple minutes, my solution for that dataset had a weight of \~44000 whereas Networkx's was around 46k. This proves for some cases, even though slower, ACO algorithms could be a good approach for solving TSP problems.
 
+## Experiments
+
+Encouraged by the comments in Reddit, I decided to experiment further and see how the optimization behaved in different situations. 
+
+Particularly, since ACO can be updated online, it is supposed to perform very well in dynamic network or logistics problems where the graph is shifting in real time, in comparison with other algorithms which need to be re-run from scratch.
+
+Since the ants update their pheromone trails in real time, whenever there is a shift in the edge's distances they should eventually notice it and change their path to reflect it. For instance if two nodes got closer (the distance value in the edge joining them was reduced) then more ants should want to cross between them, and its pheromone load should grow larger. Alternatively if two nodes grow farther apart, the ants should shun them more.
+
+To test whether this was the case, I tried two experiments. In both of them I started with the Berlin graph I had looked at earlier, which I knew the algorithm converged in after about 500 iterations of 50 ants each.
+
+For the first experiment, after the 500th iteration I selected the edge with the highest amount of pheromones, and made its weight 10 times bigger. That is, if the edge was joining nodes i and j, then the distance between them grew 10 times larger.
+
+I wanted to see how quickly the swarm would respond to this change, so I plotted the pheromone load for that edge from iteration 500 onwards for 500 more iterations.
+
+![An image depicting a graph of decreasing pheromone trails after an edge's weight grew bigger](resources/post_image/ant_trail_smaller.png){: loading="lazy"}
+
+As you can see, the ants don't respond instantaneously to the changes, but after 30 iterations they have adapted to them and do not visit that edge nearly as often as before. Its pheromone level remains very low afterward, with occasional peaks probably due to some of the exploration incentives I set.
+
+For the second experiment, I took a random hamiltonian cycle and divided all of its edges by 10. This way, this cycle suddenly became tempting for the ants, as it was a cheap way of traversing the whole graph, smaller by an order of magnitude. Again this change took place in the 500th iteration, so I wanted to see how the ants reacted.
+
+I looked at the mean pheromone load for edges in the diminished cycle, and this is what it looked like.
+
+![An image depicting a graph of increasing pheromone trails after a cycle grew shorter, incentivizing ants to explore it](resources/post_image/ant_trail_mean.png){: loading="lazy"}
+
+As expected, the ants were highly incentivized to deviate from their known paths and explore this cycle (it had a third of the weight of the next smallest cycle that the colony had found so far). After a single iteration, the average pheromone levels for that cycle had increased dramatically. 
+
+This shows that, as long as the algorithm contemplates the possibility of change by always encouraging a minimum level of exploration, new opportunities can be exploited as they arise. 
+
+Interestingly, if the minimum level of pheromones was plotted instead of the mean, it did not rise very much. I think this is because even after dividing by ten, a few of the edges in the best solution were still not included in this cycle. This can further be attested by the dip in average pheromone levels by the end of the graph above. I believe in the last 50 iterations a cycle was found that contained an edge that had not been diminished, but was nonetheless small enough to present an improvement.
+
 ## Conclusions
 
-We showed that Ant Colony Optimization can be implemented quite easily in Python, and since many of its operations can be vectorized or parallelized it should not be too slow, though not as fast as Christofides's algorithm or others.
+We showed that Ant Colony Optimization can be implemented quite easily in Python, and since many of its operations can be vectorized or parallelized it should not be too slow, though not it is not as fast as Christofides's algorithm or others.
 
-More importantly, we showed than in many datasets, ACO can converge to the optimal solution, and in many others its flexibility allows it to find better solutions (shorter traversals) than other algorithms.
+More importantly, we showed that in many datasets, ACO can converge to the optimal solution, and in many others its flexibility allows it to find better solutions (shorter traversals) than simpler algorithms.
 
-I would like to try ACO for problems other than TSP in the future, so if you know of any other applications where ACO shines, let me know! I also didn't try this feature, but since ACO can be updated online, they perform very well in dynamic network or logistics problems where the graph is shifting in real time and other algorithms need to be re-run from scratch.
+Additionally, it could be seen that one of the best properties of Ant Colony Optimization over other algorithms is its capability for online adaptation to changes in the system. In certain situations this could prove critical for performance, especially if rapid response is encouraged.
+
+On a more philosophical level, I think it is beautiful how by specifying a large set of simple agents that each follow very few rules, we could solve a problem that is known to be hard.
+
+I would like to try Ant Colony Optimization for problems other than TSP in the future, so if you know of any other applications where ACO shines, let me know! 
 
 **If you enjoyed this article, please share it on Twitter or with a friend.** I write these for you and would be happy if more people can read them and share my love for algorithms.
 
