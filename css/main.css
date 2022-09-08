@@ -1,9 +1,9 @@
 :root {
-  --bkg: #FFFDFB;
-  --font-color: #24272B;
-  --header-anchor-color: #6E8DD5; /*#6E8DD5;*/
-  --anchor-hover-color: #6E8DD5; /* #c34; */
-  --wiki-bkg-color-hover: #eee;
+  --bkg: #F1F1F1; /*#FFFDFB;*/
+  --font-color: #100F0F; /*#24272B;*/
+  --header-anchor-color: #0F3D3E; /*#6E8DD5; 256D85*/
+  --anchor-hover-color: #5bb ; /* #c34; */ 8FE3CF
+  --wiki-bkg-color-hover: #E2DCC8; /*#eee;*/
 }
 
 body {
@@ -22,7 +22,7 @@ p, a, ul li, ol li {
 p a, ul li a, h2 a, h3 a {
     text-decoration: none;
     font-size: 1em;
-    border-bottom: 3px solid var(--header-anchor-color);
+    border-bottom: 3px solid var(--anchor-hover-color);
 }
 
 p a:hover, ul li a:hover, h2 a:hover, h3 a:hover {
@@ -52,7 +52,7 @@ h1,h2,h3, h1 a, h2 a, h3 a {
 }
 
 footer {
-    border-top: 1px solid var(--anchor-hover-color);
+    border-top: 1px solid var(--header-anchor-color);
     font-size: .8em;
 }
 
@@ -70,7 +70,7 @@ footer ul li {margin-right: 1em;}
 footer a {
     text-decoration: none;
     border-bottom: none;
-    color: var(--anchor-hover-color);
+    color: var(--header-anchor-color);
 }
 
 nav ul li a, footer ul li a {border-bottom: none;}
@@ -84,7 +84,7 @@ nav {float: right;}
 nav a {
     padding: 0.6em;
     border-radius: 5%;
-    background-color: var(--anchor-hover-color);
+    background-color: var(--header-anchor-color);
     color: var(--bkg);
     text-decoration: none;
     border-bottom: none;}
