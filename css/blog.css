@@ -16,7 +16,7 @@
     font-size: 1.5em;
     text-align: center;
     font-weight: bold;
-    color: var(--header-anchor-color);
+    color: var(--font-color);
 }
 
 .slim {
