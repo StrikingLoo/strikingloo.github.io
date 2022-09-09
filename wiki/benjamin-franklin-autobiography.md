@@ -6,7 +6,7 @@ tags: ben franklin, history, biography, 18th century, modern, USA, america, scho
 description: "Notes, quotes and reflections about Benjamin Franklin's autobiography. Also a small list of words he uses and I found endearing."
 language: English
 importance: 6
-abstract: "Notes, quotes and reflections about Benjamin Franklin's autobiography. Also a small list of words he uses and I found endearing. Currently a work in progress as I am still reading the book."
+abstract: "Notes, quotes and reflections about Benjamin Franklin's autobiography. Also a small list of words he uses and I found endearing."
 note_category: book-notes
 ---
 

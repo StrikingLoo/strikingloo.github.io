@@ -1,12 +1,11 @@
 ---
 layout: post
-date: 2022-08-18
-title: "Benjamin Franklin's Autobiography - Excerpts and Notes"
-tags: ben franklin, history, biography, 18th century, modern, USA, america, scholar, book, books
-description: "Notes, quotes and reflections about Benjamin Franklin's autobiography. Also a small list of words he uses and I found endearing."
+date: 2022-09-08
+title: "The Clock of the Long Now - Quotes and Notes"
+tags: book, books, sci-fi, technology, future, science
+description: "Notes, quotes and reflections about the Clock of the Long Now book."
 language: English
 importance: 1
-abstract: "Notes, quotes and reflections about Benjamin Franklin's autobiography. Also a small list of words he uses and I found endearing. Currently a work in progress as I am still reading the book."
 note_category: book-notes
 ---
 
