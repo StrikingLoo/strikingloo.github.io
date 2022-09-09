@@ -123,4 +123,7 @@ strong { font-weight: bolder;}
   nav ul {width: 100%;}
   nav a {padding: 0;}
   .head-banner {text-align: center;}
+  h1 { font-size: 1.8em;
+    line-height: normal;}
+
 }
