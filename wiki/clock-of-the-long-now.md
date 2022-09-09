@@ -1,0 +1,25 @@
+---
+layout: post
+date: 2022-08-18
+title: "Benjamin Franklin's Autobiography - Excerpts and Notes"
+tags: ben franklin, history, biography, 18th century, modern, USA, america, scholar, book, books
+description: "Notes, quotes and reflections about Benjamin Franklin's autobiography. Also a small list of words he uses and I found endearing."
+language: English
+importance: 1
+abstract: "Notes, quotes and reflections about Benjamin Franklin's autobiography. Also a small list of words he uses and I found endearing. Currently a work in progress as I am still reading the book."
+note_category: book-notes
+---
+
+“Nobody can save the world, but any of us can help set in motion a self-saving world—if we are willing to engage the processes of centuries, because that is where the real power is.”
+
+“What came to be known as Moore’s Law was a small graph and explanation buried in his Electronics paper. From 1965 Moore looked back to the beginnings of integrated circuits in 1959 and noted that the number of components (transistors) that could be fit on a chip had doubled every year for six years. He predicted that the trend would continue for another ten years, permitting an astonishing sixty-five thousand components on a chip by 1975. (The actual numbers by 1975 were around twelve thousand, so the formula was later adjusted to predict doubling every eighteen months.)”
+
+> thirty-seven doublings, about a 137 billionfold increase of power in fifty-six years.
+
+“If taking thought for the future was essential in steady times, how much more important is it in accelerating times, and how much harder? It becomes both crucial and seemingly impossible. There are so many new varieties of short-term opportunity, and the pace of events buffets our attention with so many surprises, it is as if the old dialogue between opportunistic kairos and durational chronos has become a monologue, just a shriek of joy into the gale of freefall.”
+
+“After years of working with alcoholics the anthropologist and psychologist Gregory Bateson observed, “If the hangover preceded the binge, drunkenness would be considered a virtue and not a vice.” Drunks disbelieve in the inevitability of the hangover and the harm they cause while drunk. Their vice is dismissing the future and surrendering to the rewards of the moment, the binge. Bateson’s idea of hangover-first would reward and teach patience. The reality of binge-first annihilates both patience and memory.”
+
+> “The destiny of our species is shaped by the imperatives of survival on six distinct time scales. To survive means to compete successfully on all six time scales. But the unit of survival is different at each of the six time scales. On a time scale of years, the unit is the individual. On a time scale of decades, the unit is the family. On a time scale of centuries, the unit is the tribe or nation. On a time scale of millennia, the unit is the culture. On a time scale of tens of millennia, the unit is the species. On a time scale of eons, the unit is the whole web of life on our planet. Every human being is the product of adaptation to the demands of all six time scales. That is why conflicting loyalties are deep in our nature. In order to survive, we have needed to be loyal to ourselves, to our families, to our tribes, to our cultures, to our species, to our planet. If our psychological impulses are complicated, it is because they were shaped by complicated and conflicting demands.” --Freeman Dyson
+
+“Quiet music stops people talking. It makes people aware that they may be intruding on someone else’s experience if they talk loudly. It slows them down, makes them realize they’re having an experience which exists in time, has duration, and that therefore they might want to stop shuffling around and sit still for a bit to wait for the experience to unfold.”

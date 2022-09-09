@@ -187,6 +187,7 @@ As he writes more, the writing/research process becomes autocatalytic. He:
 - Writes down useful links or quotes so they 'slowly accrete'.
 - Learns to use new tools that give power to his writing.
 
+> I originally used last file modification time but this turned out to be confusing to readers, because I so regularly add or update links or add new formatting features that the file modification time was usually quite recent, and so it was meaningless.
 
 
 [Source: Gwern's About](https://www.gwern.net/About)
