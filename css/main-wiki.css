@@ -82,7 +82,7 @@ nav ul li a:hover, footer ul li a:hover {
 nav {float: right;}
 
 nav a {
-    padding: 0.6em;
+    padding: 0.8em;
     border-radius: 5%;
     background-color: var(--header-anchor-color);
     color: var(--bkg);
