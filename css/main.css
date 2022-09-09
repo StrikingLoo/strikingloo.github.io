@@ -116,12 +116,13 @@ strong { font-weight: bolder;}
 }
 
 @media only screen and (max-width: 500px) {
-    nav {float: none; text-align: center;}
+    nav, .head-banner p {float: none; text-align: center;}
   nav ul li {display:inline-block; margin-bottom:0.8em; width: 45%;
     background-color: var(--header-anchor-color);
     padding: .2em; border-radius: 5%;}
   nav ul {width: 100%;}
   nav a {padding: 0;}
+  .head-banner p {font-size: 1.5em;}
   .head-banner {text-align: center;}
   h1 { font-size: 1.8em;
     line-height: normal;}
