@@ -53,7 +53,7 @@ Due to this, instead of looking for the exact solution for a graph, what most fr
 
 The algorithm we will see today is one such way of approximating a solution. 
 
-In **[Ant Colony Optimization](https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms)**, we will run a simulation of "ants" traversing the graph, constrained to only move in cycles, visiting each node exactly once. Each ant will leave, after finishing its traversal, a trail of pheromones that is proportional to the inverse weight of the discovered cycle (that is, if the cycle the ant encountered is twice as big, it will leave half the pheromones on each edge of the graph it went through, and so on). 
+In **[Ant Colony Optimization Algorithms](https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms)**, we will run a simulation of "ants" traversing the graph, constrained to only move in cycles, visiting each node exactly once. Each ant will leave, after finishing its traversal, a trail of pheromones that is proportional to the inverse weight of the discovered cycle (that is, if the cycle the ant encountered is twice as big, it will leave half the pheromones on each edge of the graph it went through, and so on). 
 
 Finally, though we will make ants choose which edge to go through on each step of their traversal randomly, they will assign more preference to edges with more pheromones on them, and less preference to those with less pheromones. Additionally, if an edge is longer, it will receive less preference, since it implies higher travel times.
 
@@ -71,7 +71,7 @@ procedure ACO_MetaHeuristic is
 end procedure
 ```
 
-For this post, I coded Ant Colony Optimization from scratch in Python using the Wikipedia article as a reference.
+For this post, I coded Ant Colony Optimization (initially proposed by Marco Dorigo in 1992 in his PhD thesis) from scratch in Python using the Wikipedia article as a reference. I then ran a few experiments with it and benchmarked it against other algorithms for different problem instances.
 
 I used numpy for the traversals and other numerical operations, and pytest for testing. The whole code is [available on GitHub](https://github.com/StrikingLoo/ant-colony-optimization), but I will show you the main parts step-by-step now. If you're not interested in how the Ant Colony Optimization algorithm works in detail, you can skip straight to the [results and benchmarks](#tests-and-results).
 
