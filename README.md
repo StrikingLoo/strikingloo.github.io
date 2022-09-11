@@ -38,3 +38,5 @@ bundle install
 bundle add jekyll
 bundle exec jekyll serve
 ```
+
+⭐🤖
