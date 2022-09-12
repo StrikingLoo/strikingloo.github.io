@@ -17,7 +17,7 @@ I am tired of repeating the same old speech, but _thinking back to how primitive
 
 Extrapolating from how much this field has grown in the last 18 months, I wouldn't be surprised if in 2 more years you can write a script for a comic book, feed it to some large language encoder and a text-to-image model like this, and get a fully illustrated, style-coherent graphic novel. This would also apply for frames for an animated movie or a storyboard.
 
-![](resources/ai-generated-images/stable-diffusion/selected/2964893163_A_beautiful_greek_temple_with_flowered_gardens_and_a_marble_statue__painting__oil_on_canvas__4k__detailed__bokeh.png){: style="height:60%; width:60%" loading="lazy"}
+![](resources/ai-generated-images/stable-diffusion/selected/2835514280_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-add.png){: loading="lazy" style="height:70%; width:70%"}
 
 Are we really that close to something so big? I feel like the technology is there if enough compute and budget were allocated, but I am not sure whether someone will do it. I don't see any obvious blockers or barriers to the next generation of models being even bigger or understanding style better.
 
