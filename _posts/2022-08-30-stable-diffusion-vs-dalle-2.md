@@ -21,7 +21,7 @@ Extrapolating from how much this field has grown in the last 18 months, I wouldn
 
 Are we really that close to something so big? I feel like the technology is there if enough compute and budget were allocated, but I am not sure whether someone will do it. I don't see any obvious blockers or barriers to the next generation of models being even bigger or understanding style better.
 
-Given this context, many people are concerned some artists may lose their jobs. After lots of discussion in reddit and at parties, I will try to summarize my current opinion on that topic.
+Given this context, many people are concerned some artists may lose their jobs. After lots of discussion in Reddit and at parties, I will try to summarize my current opinion on that topic.
 
 For use-cases where having a human artist brings the least value, I think text-to-image models will dominate the market. However, for those cases I think we already had stock images. For instance if I am adorning a random blog post, I'd rather get a free stock image in the header than pay an artist for a new professional photo, as I don't think my readers care that much (see ["I replaced all our blog thumbnails using DALL·E 2"](https://deephaven.io/blog/2022/08/08/AI-generated-blog-thumbnails/) for an example). 
 
@@ -29,7 +29,7 @@ Especially if this site was monetized and the big picture was just there to make
 
 For cases where the artist's vision matters, like original paintings for decorating my home, or the panels for a graphic novel, I think StableDiffusion or DALL-E 2 for that matter are far away from beating humans. So far.
 
-However, I guess many freelance artists who work for commissions may find less demand for their work as bloggers or random people get their art itch scratched by AI art. I would love to hear the opinion of artists from that sort of market on this, as I am quite ignorant of how the whole process works (for instance, what kind of people comission art in the first place).
+However, I guess many freelance artists who work for commissions may find less demand for their work as bloggers or random people get their art itch scratched by AI art. I would love to hear the opinion of artists from that sort of market on this, as I am quite ignorant of how the whole process works (for instance, what kind of people commission art in the first place).
 
 I think models like this can also enhance artists' work. Say you are asked to draw 5 illustrations of a character doing different things. You could use dall-e to get 5 relevant background scenes in 5 minutes, then use your time to add in the characters and some details on top of them. AI art models are significantly better at drawing background scenes than action and characters, so this is a combination of the best capabilities of both human and machine.
 
@@ -220,13 +220,13 @@ I tried adding the name of the painter [Beksinski](https://es.wikipedia.org/wiki
 ![](resources/ai-generated-images/stable-diffusion/selected/3790635847_An_astronaut_being_surrounded_by_eldritch_tentacles_in_the_void_of_space_with_stars__beksinski__4k__detailed__oil_on_canvas.png){: loading="lazy" style="height:60%; width:60%"}  
 
 
-### Antropomorphic Animals (Mostly dressed as adventurers)
+### Anthropomorphic Animals (Mostly dressed as adventurers)
 
-One thing I struggled to get right with other models was antropomorphic animals, especially if I also asked for medieval, steampunk or fantasy clothes. My dream of drawing a Mouseguard party with DALL-E would never come to fruition. With StableDiffusion one trick that worked for me was, instead of, say, prompting "ferret with pirate clothes/dressed as a pirate", using the prompt "ferret wearing a pirate costume". 
+One thing I struggled to get right with other models was anthropomorphic animals, especially if I also asked for medieval, steampunk or fantasy clothes. My dream of drawing a Mouseguard party with DALL-E would never come to fruition. With StableDiffusion one trick that worked for me was, instead of, say, prompting "ferret with pirate clothes/dressed as a pirate", using the prompt "ferret wearing a pirate costume". 
 
 Then I also got a prompt from twitter and iterated it, which was "cute and adorable \[animal], wearing \[clothes], steampunk/clockpunk/fantasy..." plus style prompts.
 
-This one worked like a charm. Rather than telling you the prompt I used for each individual picture, I will jsut show you the ones I liked best, so you can see what possibilities exist by tweaking a prompt like that one (I guess you can deduce the animal, etc. from the images themselves).
+This one worked like a charm. Rather than telling you the prompt I used for each individual picture, I will just show you the ones I liked best, so you can see what possibilities exist by tweaking a prompt like that one (I guess you can deduce the animal, etc. from the images themselves).
 
 > Example prompt: "Cute and adorable ferret wizard, wearing coat and suit, steampunk, lantern, anthromorphic, Jean paptiste monge, oil painting"
 
@@ -240,7 +240,7 @@ I really went crazy with these, and these are my selection, so you can imagine h
 
 Another thing that I love about StableDiffusion (Which DALL-E 2 also gets right) is how well it renders textures. I can imagine how a 3d artist may use one of these models to enhance their own 3d objects by creating many different textures very fast and combining them with domain knowledge.
 
-Because of that, and my love for moss, I made many forest scenes with abundant growth and moss. Many of these look like a MAgic: the Gathering illustration. I will not post the propts as each one was different, but they mostly followed my digital fantasy illustration template.
+Because of that, and my love for moss, I made many forest scenes with abundant growth and moss. Many of these look like a Magic: the Gathering illustration. I will not post the prompts as each one was different, but they mostly followed my digital fantasy illustration template.
 
 ![](resources/ai-generated-images/stable-diffusion/selected/1394321457_A_giant_boar_made_of_moss_and_azaleas_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy" style="height:60%; width:60%"}
 ![](resources/ai-generated-images/stable-diffusion/selected/1537772634_A_Centaur_in_a_glade_under_the_stars_by_Zdzis_aw_Beksi_ski__Gorgeous_digital_painting_with_sober_colours_amazing_art_mesmerizing__captivating__artstation_3-centaur-xx.png){: loading="lazy" style="height:60%; width:60%"}
