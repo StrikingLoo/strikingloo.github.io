@@ -2,11 +2,11 @@
 layout: post
 title: "Eroom's Law - When things take a turn for the worse"
 date: 2020-12-21
-description: "Eroom's Law is an opposite of Moore's Law: discovering new medically relevant drugs tends to cost exponentially more over time. Also included: an analysis on the reasons behind this."
+description: "Eroom's Law is an opposite of Moore's Law: discovering new medically relevant drugs tends to cost exponentially more over time. An analysis on the phenomenon and possible reasons behind it."
 tags: medicine, economy, Economics, moore's law, matters of scale, healthcare, trends, eroom
 language: English
 importance: 5
-abstract: "Eroom's Law is an opposite of Moore's Law: discovering new medically relevant drugs tends to cost exponentially more over time. Also included: an analysis on the reasons behind this."
+abstract: "Eroom's Law is an opposite of Moore's Law: discovering new medically relevant drugs tends to cost exponentially more over time. An analysis on the phenomenon and possible reasons behind it."
 ---
 
 Eroom's law is the observation that **the cost of developing a new drug roughly doubled every nine years from 1950 through 2010.** All in all, it shows a roughly 80-fold decline in the productivity of drug R&D. This law is named in contrast to Moore's law of course, which states that the compute speed you can get for a fixed dollar amount doubles every 18 months.
