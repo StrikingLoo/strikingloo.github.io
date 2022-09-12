@@ -9,7 +9,7 @@ abstract: "Notes from a paper by Facebook Research where an embedding model is t
 language: English
 ---
 
-<https://ai.facebook.com/blog/ai-speech-brain-activity/>
+Source: <https://ai.facebook.com/blog/ai-speech-brain-activity/>
 
 > From three seconds of brain activity, our results show that our model can decode the corresponding speech segments with up to 73 percent top-10 accuracy from a vocabulary of 793 words, i.e., a large portion of the words we typically use on a day-to-day basis. <br>(...)<br>
 Other, more invasive devices provide clearer signals than noninvasive methods but require neurosurgical interventions. While results from that work suggest that decoding speech from recordings of brain activity is feasible, decoding speech with noninvasive approaches would provide a safer, more scalable solution that could ultimately benefit many more people.<br>(...)<br>
