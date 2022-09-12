@@ -21,7 +21,7 @@ In the time since I set up [this site's wiki](/wiki), I finished my degree in Co
 
 ![](/resources/post_image/pathway.jpg){: loading="lazy"}
 
-I would say the main advantages of note taking, to me at least, have been in improving my search capabilities over my own memory (a filesystem definitely beats a chunk of electric meat), and helping me be more organized and procrastinate less.
+I would say the main advantages of note taking, to me at least, have been in improving my search capabilities over my own memory (a file-system definitely beats a chunk of electric meat), and helping me be more organized and procrastinate less.
 
 It's a lot easier to prepare for an exam when you have all of the relevant knowledge in a single markdown file, waiting to be reviewed. 
 
@@ -31,7 +31,7 @@ That is why most of my notes are either **literature notes or paper summaries**:
 
 There is also the benefit of being able to read all the sections and paragraphs I highlighted from a book right after finishing it. Being able to do a 'flash review' of all the relevant contents helps me tie the introductory ideas to the more advanced concepts presented later on. 
 
-This first review session also doubles as my polishing phase, where I take a raw note and edit it into something less context-dependent (each section should be understandable even if you haven't read the book) and ideally succint, clear and relevant.
+This first review session also doubles as my polishing phase, where I take a raw note and edit it into something less context-dependent (each section should be understandable even if you haven't read the book) and ideally succinct, clear and relevant.
 
 **Many powerful insights about a topic come not when reading a textbook for the first time, but when I review the main concepts later.** This shouldn't be too surprising, I guess, but it's still a benefit worth mentioning.
 
@@ -39,9 +39,9 @@ _In case you want to do a deeper dive into personal wikis and note-taking, here'
 
 ## How I set up my personal wiki
 
-First, let me tell you about my digital garden set up. It is actually very simple: a **jekyll static site**, running on github pages because I wasn't going to pay for a domain and hosting for something I'm not interested in profiting from.
+First, let me tell you about my digital garden set up. It is actually very simple: a **Jekyll static site**, running on github pages because I wasn't going to pay for a domain and hosting for something I'm not interested in profiting from.
 
-Every wiki article is a single markdown, rendered by jekyll as an HTML, and the most I've engineered things on is just adding social media buttons (which, by the way, if reading this is fun, click them!), and putting a lot of thought and effort into interlinking my notes.
+Every wiki article is a single markdown, rendered by Jekyll as an HTML, and the most I've engineered things on is just adding social media buttons (which, by the way, if reading this is fun, click them!), and putting a lot of thought and effort into interlinking my notes.
 
 This is what my personal wiki looked like initially:
 
@@ -51,7 +51,7 @@ Notice the monochromatic, very rustic design compared to what it is now. And thi
 
 ![](/resources/post_image/screenshot2.png){: loading="lazy"}
 
-I was very married to the idea of a "cloud of ideas", but I think the file names weren't descriptive enough and anone besides me who entered that site would not have known where to click at all. Even now I'm not sure how to present the wiki's articles to make them more appealing, as design is not my strong point.
+I was very married to the idea of a "cloud of ideas", but I think the file names weren't descriptive enough and anyone besides me who entered that site would not have known where to click at all. Even now I'm not sure how to present the wiki's articles to make them more appealing, as design is not my strong point.
 
 The features I added to the site over time were:
 - **Search** which I implemented based on tags and also matching queries to titles. This was very easy to set up by making a big JSON which has each article's metadata (title, tags, description, abstract).
@@ -60,7 +60,7 @@ The features I added to the site over time were:
 
 ### Starting Your Own Personal Wiki
 
-If you want to start your own personal wiki, I recommend you head over to [Tom Critchlow's guide](https://tomcritchlow.com/2019/02/17/building-digital-garden/) for a step by step on setting up a jekyll static web site where each markdown file is a note.
+If you want to start your own personal wiki, I recommend you head over to [Tom Critchlow's guide](https://tomcritchlow.com/2019/02/17/building-digital-garden/) for a step by step on setting up a Jekyll static web site where each markdown file is a note.
 
 You can alternatively fork [my Personal Wiki Setup Github repository](https://github.com/StrikingLoo/Personal-Wiki-Site-Setup) and host it in a free GitHub page (you can customize the CSS to make a completely different design maintaining the same functionalities as this site), following the instructions on the README to build your own wiki. I wrote a different post with a detailed [step-by-step guide on how to set up a Digital Garden using my template](/personal-wiki-set-up).
 
@@ -80,9 +80,9 @@ Zettelkastens, very briefly, are based around the idea of using many atomic note
 
 There is also a big emphasis in most of the online digital gardening / note making community in networked thought: link your new notes to as many existing notes as possible, and find patterns and connections between concepts you learn. I don't do this as much, as I don't think there is that much value in linking (I especially dislike the idea of automatic backlinks for notes, and [some in the zettelkasten community agree](/wiki/archiving#ideas-from-backlinks-are-bad-links)).
 
-Instead, I prefer to take a slightly **monolitical approach**, where I write big notes of 500\~1000 lines or more for a single topic, and make each atomic idea a paragraph or subheading. If necessary, I can then just link to headings through their *id* instead of the whole note -like my link to the zettelkasten section of my wiki just now-.
+Instead, I prefer to take a slightly **monolithic approach**, where I write big notes of 500\~1000 lines or more for a single topic, and make each atomic idea a paragraph or subheading. If necessary, I can then just link to headings through their *id* instead of the whole note -like my link to the zettelkasten section of my wiki just now-.
 
-I'm not saying it's better, it just works better for me. I'd rather be able to review a whole subject in a few minutes by reading a single page instead of opening a hundred tabs every time. This is the part where I tell you to @ me in Twitter or hackernews and tell me what you prefer doing and how you think it works better, because I love hearing about other people's methodologies. 
+I'm not saying it's better, it just works better for me. I'd rather be able to review a whole subject in a few minutes by reading a single page instead of opening a hundred tabs every time. This is the part where I tell you to @ me in Twitter or HackerNews and tell me what you prefer doing and how you think it works better, because I love hearing about other people's methodologies. 
 
 I think if I was more writing or content-generation oriented instead of writing notes for future search, making more atomic notes and linking them could be better, but then each note itself would be further from being an essay.
 
