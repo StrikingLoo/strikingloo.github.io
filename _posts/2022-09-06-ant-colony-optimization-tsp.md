@@ -23,7 +23,7 @@ One especially important use-case for Ant Colony Optimization (ACO from now on) 
 
 This problem is defined as follows: _Given a complete graph G with weighted edges, find the minimum weight Hamiltonian cycle. That is, a cycle that passes through each node exactly once and minimizes the total weight sum._
 
-Note that the graph needs to be *complete*: there needs to exist an edge conecting each possible pair of nodes. For graphs based in real places, this makes sense: you can just connect two places with an edge with a weight equal to their distance, or their estimated travel time. 
+Note that the graph needs to be *complete*: there needs to exist an edge connecting each possible pair of nodes. For graphs based in real places, this makes sense: you can just connect two places with an edge with a weight equal to their distance, or their estimated travel time. 
 
 For a concrete example, look at the following graph.
 
@@ -145,7 +145,7 @@ I wanted to see how quickly the swarm would respond to this change, so I plotted
 
 As you can see, the ants don't respond instantaneously to the changes, but after 30 iterations they have adapted to them and do not visit that edge nearly as often as before. Its pheromone level remains very low afterward, with occasional peaks probably due to some of the exploration incentives I set.
 
-For the second experiment, I took a random hamiltonian cycle and divided all of its edges by 10. This way, this cycle suddenly became tempting for the ants, as it was a cheap way of traversing the whole graph, smaller by an order of magnitude. Again this change took place in the 500th iteration, so I wanted to see how the ants reacted.
+For the second experiment, I took a random Hamiltonian cycle and divided all of its edges by 10. This way, this cycle suddenly became tempting for the ants, as it was a cheap way of traversing the whole graph, smaller by an order of magnitude. Again this change took place in the 500th iteration, so I wanted to see how the ants reacted.
 
 I looked at the mean pheromone load for edges in the diminished cycle, and this is what it looked like.
 
