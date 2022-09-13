@@ -191,3 +191,11 @@ As he writes more, the writing/research process becomes autocatalytic. He:
 
 
 [Source: Gwern's About](https://www.gwern.net/About)
+
+### Linkbuilding for Small Businesses, Patio11
+There is easily explainable value to linking to a post which is useful (“My readers will find this useful”), emotionally resonant (“Wow, this is emotionally resonant and I want to share this experience with other people”), well-written, funny, etc. 
+
+- Create resources your readers or people like them can use.
+- Do it with style. Visually engage readers.
+
+[Linkbuilding for Small Businesses, Patio11](https://www.kalzumeus.com/2008/04/08/linkbuilding-for-small-businesses/)
