@@ -21,13 +21,13 @@ Are we really that close to something so big? I feel like the technology is ther
 
 Given this context, many people are concerned some artists may lose their jobs. After lots of discussion in Reddit and at parties, I will try to summarize my current opinion on that topic.
 
-![](resources/ai-generated-images/stable-diffusion/selected/2835514280_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-add.png){: loading="lazy" style="height:70%; width:70%"}
-
 For use-cases where having a human artist brings the least value, I think text-to-image models will dominate the market. However, for those cases I think we already had stock images. For instance if I am adorning a random blog post, I'd rather get a free stock image in the header than pay an artist for a new professional photo, as I don't think my readers care that much (see ["I replaced all our blog thumbnails using DALL·E 2"](https://deephaven.io/blog/2022/08/08/AI-generated-blog-thumbnails/) for an example). 
 
 Especially if this site was monetized and the big picture was just there to make you scroll further down and get more engagement and ad views.
 
 For cases where the artist's vision matters, like original paintings for decorating my home, or the panels for a graphic novel, I think StableDiffusion or DALL-E 2 for that matter are far away from beating humans. So far.
+
+![](resources/ai-generated-images/stable-diffusion/selected/2835514280_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-add.png){: loading="lazy" style="height:70%; width:70%"}
 
 However, I guess many freelance artists who work for commissions may find less demand for their work as bloggers or random people get their art itch scratched by AI art. I would love to hear the opinion of artists from that sort of market on this, as I am quite ignorant of how the whole process works (for instance, what kind of people commission art in the first place).
 
