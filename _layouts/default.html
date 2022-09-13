@@ -3,15 +3,12 @@
 		<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪴</text></svg>">
+		<link rel="icon" type="image/png" href="/potted-plant-icon-1.png"/>
             <title>{{ page.title }}</title>
 			<link rel="canonical" href="https://strikingloo.github.io{{ page.url }}">
 			  <meta name="description" content="{% if page.description %}{{ page.description | strip | strip_newlines | truncate: 160 }}{% else %}{{ page.title }}{% endif %}">
   			<meta property="og:site_name" content="{{ page.title }}">
 
-            
-			
         	{% if page.layout == "post" %}
         	<link rel="stylesheet" type="text/css" href="/css/post-min.css">
         	{% elsif page.is_blog %}
@@ -55,12 +52,12 @@
 		</head>
 		<body>
 			<div class="head-banner">
-			<p>Strikingloo's Garden</p>
+			<p>Strikingloo</p>
 			<nav>
 	    		<ul>
 	        		<li><a href="/">Home</a></li>
 		        	<li><a href="/about/">About</a></li>
-	        		<li><a href="/wiki/">Notes</a></li>
+	        		<li><a href="/wiki/">Wiki</a></li>
 	        		<li><a href="/blog/">Blog </a></li>
 	    		</ul>
 			</nav>
