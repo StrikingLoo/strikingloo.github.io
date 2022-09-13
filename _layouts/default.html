@@ -9,8 +9,6 @@
 			  <meta name="description" content="{% if page.description %}{{ page.description | strip | strip_newlines | truncate: 160 }}{% else %}{{ page.title }}{% endif %}">
   			<meta property="og:site_name" content="{{ page.title }}">
 
-            
-			
         	{% if page.layout == "post" %}
         	<link rel="stylesheet" type="text/css" href="/css/post-min.css">
         	{% elsif page.is_blog %}
@@ -59,7 +57,7 @@
 	    		<ul>
 	        		<li><a href="/">Home</a></li>
 		        	<li><a href="/about/">About</a></li>
-	        		<li><a href="/wiki/">Notes</a></li>
+	        		<li><a href="/wiki/">Wiki</a></li>
 	        		<li><a href="/blog/">Blog </a></li>
 	    		</ul>
 			</nav>
