@@ -4,7 +4,7 @@ title: "What Are the Most Common Onomatopoeia in Japanese?"
 description: "I looked into the most frequently used onomatopoeia in the Japanese language, both gitaigo and giongo, using a big web corpus."
 tags: statistics, Japanese, data, languages
 date: 2022-09-14
-twitter_image: ""
+twitter_image: "https://strikingloo.github.io/resources/post_image/temple.jpg"
 importance: 5
 sitemap: true
 ---
