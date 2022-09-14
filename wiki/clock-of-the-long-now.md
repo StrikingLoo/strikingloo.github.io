@@ -85,8 +85,6 @@ An example of spontaneous reframing occurred in 01969, when the Apollo program b
 > “One area in which governments and other institutions seem comfortable thinking in the long term is the realm of infrastructure, even though there is no formal economics of infrastructure benefits and costs. (There should be and could be.) We feel good about investing huge amounts in transportation systems, utility grids, and buildings. <br/>
 Infrastructure thinking is directly transferable to natural systems. Lucky for us, we don’t have to build the atmosphere that sustains us, the soils, the aquifers, the wild fisheries, the forests, the rich biological complexity that keeps the whole thing resilient. All we have to do is defend these systems—from ourselves. It doesn’t take much money. It doesn’t even take much knowledge, though knowledge certainly helps.”
 
----
-
 ### Slow Science
 
 > “No one has yet studied the entire life span of a termite nest, which may extend to a hundred years or more, with several queens reigning in succession.”
