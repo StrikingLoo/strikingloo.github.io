@@ -28,7 +28,7 @@ note_category: book-notes
 
 > “The ingenuity in the Clock is late twentieth century and so are the materials. The process of constructing a prototype Millennial Clock in 1998 led the builders into direct encounters with deep time. The challenge was to build a prototype that not only worked but would keep working for ten thousand years. Exotic materials were sought for maximum longevity and minimal friction: Monel (nickel-copper alloy) and tungsten carbide for hardness, diamond coating for further hardness, Invar alloy for temperature independence, metallic glass for a potentially inexhaustible pendulum ribbon.”
 
-### The Library of Alexandria 
+### The Library of Alexandria 
 
 >“The legendary stature of the Library of Alexandria is justifiable. In its prime (290 B.C.E. to 88 B.C.E.) the library was the fount of the Hellenistic Greek Renaissance, and the classics it preserved helped inspire the fifteenth-century European Renaissance. Then the largest city in the world, Alexandria remained the intellectual capital of the Mediterranean for most of the duration of the Roman Empire. The famous library and museum at its peak may have held six hundred thousand scrolls—the equivalent of one hundred twenty thousand modern books. Alexandria’s library was an intensely productive community of writers, translators, editors, historians, mathematicians, astronomers, geographers, and physicians. Its librarians included Apollonius of Rhodes (poet of The Argonauts), Callimachus (the father of bibliography), Eratosthenes (who estimated the diameter of the Earth), Aristarchus of Samos (a Sun-centered Copernican eighteen centuries before Copernicus), and Hipparchus (discoverer of the precession of the equinoxes).”
 
@@ -48,7 +48,7 @@ note_category: book-notes
 
 > “The problem of the acceleration of high technology is that its headlong urgency routinely displaces what is important in the long term. Digital industries must shift from being the main source of society’s ever-shortening attention span to becoming a reliable guarantor of long-term perspective. We’ll know the shift has happened when programmers begin to anticipate the Year 10,000 problem and assign five digits instead of four to year dates. “02002,” they’ll write, at first frivolously, then seriously.”
 
-### 10000 Year Library for the Future
+### 10000 Year Library for the Future
 
 > “One canon I would like to see established is that of the great textbooks. Just knowing the current list—The Cell in microbiology, The Art of Computer Programming, Renfrew’s Archaeology—would enable anyone to pursue top-level education on their own. All the best textbooks in combination would nearly add up to Lovelock’s primer of civilization. Study of the evolution of the most influential textbooks over time would yield peerless insight into intellectual history. Comparative analysis of what makes the best contemporary textbooks so good might lead to even better textbooks being written.”
 
