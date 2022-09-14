@@ -29,7 +29,7 @@ _**Update**: Besides Craiyon, I've found [Dall-E Flow](https://github.com/jina-a
 
 I also wrote separate articles after experimenting with [OpenAI's DALL-E 2](/dall-e-2-prompt-guide) and its [open source competition, StableDiffusion](/stable-diffusion-vs-dalle-2) both of which blew my mind and made me think of the future differently.
 
-### How to write prompts for DALL-E / Craiyon: a crash course
+### How to write prompts for DALL-E / StableDiffusion
 Usually, what I do is write what I want (adjectives + nouns usually get better results than verbs or complex scenes), then append 
 - "Gorgeous/amazing/beautiful" + "digital painting/oil painting/digital art/canvas/3d render" + any of "unreal engine/unity engine"
 - Then I append "style clues" like "anime/Picasso/Giger -always good results-/Junji Ito"
