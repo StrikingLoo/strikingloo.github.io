@@ -9,7 +9,7 @@ importance: 5
 sitemap: true
 ---
 
-The Japanese language has many quirks that make it alluring for students. After studying it for almost 8 years, one of the things I like the most about it is its rich pool of onomatopoeic expressions.
+The Japanese language has many quirks that make it alluring for students. After studying it for almost 8 years, one of the things that fascinates me is its rich pool of onomatopoeic expressions.
 
 English is not lacking in this respect: we have words like bang, clang, clatter and sputter which sound like the verbs they describe. Riffraff, whippersnapper and so on also have the property of alliteration. But Japanese, in my opinion, takes this to a whole new level.
 
