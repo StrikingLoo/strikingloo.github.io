@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SRS and Anki: Advice, Tips and Resources"
+title: "Anki: Advice, Tips and Resources for Spaced Repetition"
 date: 2020-10-04
 tags: productivity, quotes, ttft
 description: "I've been using Anki for language studying (especially Japanese) daily for 2 years. This is a collection of Anki advice and resources from around the web."
