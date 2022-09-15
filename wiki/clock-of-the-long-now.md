@@ -44,8 +44,6 @@ note_category: book-notes
 
 ### Preserving Digital Media
 
-> “What we can do is convert the design of software from brittle to resilient, from heedlessly headlong to responsible, and from time corrupted to time embracing. Achieving each of these qualities is known to be an approximately intractable problem. To be sure none can be solved in a year, but all can yield to decades of focused work if we understand that the health of civilization is at stake.”
-
 > “The problem of the acceleration of high technology is that its headlong urgency routinely displaces what is important in the long term. Digital industries must shift from being the main source of society’s ever-shortening attention span to becoming a reliable guarantor of long-term perspective. We’ll know the shift has happened when programmers begin to anticipate the Year 10,000 problem and assign five digits instead of four to year dates. “02002,” they’ll write, at first frivolously, then seriously.”
 
 ### 10000 Year Library for the Future
