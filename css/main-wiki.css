@@ -58,27 +58,6 @@ h1,h2,h3, h1 a, h2 a, h3 a {
     position: relative;
     color:var(--header-anchor-color);
 }
-h2, h3 {
-    padding-bottom: .3em;
-    border-bottom: 3px solid rgba(0, 0, 0, .3);}
-
-h2::after, h3::after {
-    content: "#";
-    position: relative;
-    top: 0em;
-    left: 0.5em;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-h2::after {font-size: 1.4em;}
-h3::after {font-size: 1.2em;}
-
-h2:hover::after, h3:hover::after {
-    visibility: visible;
-    opacity: 1;
-}
-
 
 footer {
     border-top: 1px solid var(--header-anchor-color);
