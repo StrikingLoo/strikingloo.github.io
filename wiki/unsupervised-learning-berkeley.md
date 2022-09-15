@@ -132,7 +132,7 @@ The bayes ideal discriminator is always right (assigns prob 0 to fake and prob 1
 
 **Pix2Pix**: Train a model G(x, z) where z is your (random) latent and x is an actual black and white image, such that a discriminator that takes D(x, G(x, z)) and D(x, y) can't tell which is which in an adversarial setting (where y = actual-colored-of(x) ). I think this approach is beautiful. It kind of reminds me of [contrastive learning](/wiki/clip)
 
-![](unsupervised-learning-images/pix2pix-color.png) {: alt="" loading="lazy"}
+![](unsupervised-learning-images/pix2pix-color.png){: alt="" loading="lazy"}
 
 In the objective, besides the shared loss function they add a term for L1 reconstruction loss (L1-norm of difference between G(x,z) and y) -between the generated translation of the source image and the expected target image-.
 
