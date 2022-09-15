@@ -80,10 +80,6 @@
 				<p><i>Built with ❤️ by <a href="https://strikingloo.github.io/">Strikingloo</a>.</i></p>
 			</footer>
 
-			{% if page.uses_mathjax %}
-			<script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-			{% endif %}
-
 			{% if page.is_wiki %}
 			<script>
 			const windowWidth = window.innerWidth;
@@ -105,6 +101,10 @@
 			}));
 			
 			</script>
+			{% endif %}
+
+			{% if page.uses_mathjax %}
+			<script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 			{% endif %}
 		</body>
 	</html>
