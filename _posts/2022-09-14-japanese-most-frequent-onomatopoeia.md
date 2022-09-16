@@ -50,4 +50,8 @@ Also feel free to use either image any way you want, as a consultation chart or 
 
 Corpus Source: [Ninjal LWP for BCCWJ](https://nlb.ninjal.ac.jp/search/)
 
+### Further Reading
+
+For a more thorough list of onomatopoeia and mimetic words in Japanese, refer to [Tofugu's Japanese Onomatopoeia Guide](https://www.tofugu.com/japanese/japanese-onomatopoeia/). I think the list here is so big it becomes sort of overwhelming, and I wish it were presented in a more pallatable way (maybe an Anki deck?). But I think this is a great resource to study at your leisure, perhaps in chunks.
+
 *This is a slight departure from my usual programming related posts, so if you liked it please share it on Twitter or with your friends, so I know if I should keep making these too!*
