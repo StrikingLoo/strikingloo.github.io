@@ -61,20 +61,7 @@ One thing I've found helps a lot in getting more beautiful results is thinking o
 
 In my opinion these details can steer the model even better than many vague cues like "4k", in this generation of models -unlike in [CLIP](/wiki/clip) or [GLIDE](/wiki/glide)-.
 
-### StableDiffusion Prompt Guide
-In general, a good prompt will have the form:
-
-> "A *\[type of picture]* of a *\[main subject, mostly composed of adjectives and nouns -avoid verbs-]*, *\[style cues]\**"
-
-Some *types of picture* include *digital illustration, oil painting (usually good results), matte painting, 3d render, medieval map*.
-
-The *main subject* can be anything you're thinking of, but StableDiffusion still struggles with compositionality, so it shouldn't be more than one or two main things (say, *a beaver wearing a suit*, or *a cat samurai with a pet pug*). 
-
-Style cues can be anything you want to condition the image on. I wouldn't add too many, maybe only 1 to 3. These can really vary a lot but some good ones are: *concept art, steampunk, trending in artstation, good composition, hyper realistic, oil on canvas, vivid colors*. 
-
-Additionally, adding the name of an artist as a cue will make the picture look like something that artist made, though it may condition the image's contents, especially if that artist had very narrow themes (Beatrix Potter gets you spurious rabbits, for instance).
-
-### Experimenting with Prompts
+### Prompt Examples and Experiments
 
 I will begin with some scenes that I already tried with other models.
 
@@ -277,9 +264,21 @@ These are the last ones, I swear!
 
 Before we reach the end, I want to raise a concern and propose a challenge. No matter what I tried, I could *not* make either DALL-E 2, or StableDiffusion make characters in the style of Jojo's Bizarre Adventure (or Araki, in general). I tried the obvious style cues and others, and none worked. So if any of you manages to make one of these models draw Spongebob Squarepants in the style of Jojo's, or any other recognizable character, you will get a thousand internet points from me.
 
+### Appendix A: StableDiffusion Prompt Guide
+In general, a good prompt will have the form:
+
+> "A *\[type of picture]* of a *\[main subject, mostly composed of adjectives and nouns -avoid verbs-]*, *\[style cues]\**"
+
+Some *types of picture* include *digital illustration, oil painting (usually good results), matte painting, 3d render, medieval map*.
+
+The *main subject* can be anything you're thinking of, but StableDiffusion still struggles with compositionality, so it shouldn't be more than one or two main things (say, *a beaver wearing a suit*, or *a cat samurai with a pet pug*). 
+
+Style cues can be anything you want to condition the image on. I wouldn't add too many, maybe only 1 to 3. These can really vary a lot but some good ones are: *concept art, steampunk, trending in artstation, good composition, hyper realistic, oil on canvas, vivid colors*. 
+
+Additionally, adding the name of an artist as a cue will make the picture look like something that artist made, though it may condition the image's contents, especially if that artist had very narrow themes (Beatrix Potter gets you spurious rabbits, for instance).
 
 
-## Resources and Links
+## Appendix B: Resources and Links
 
 Given how much has happened lately (even John Oliver is talking about DALL-E!), here are some other articles you may want to read.
 
