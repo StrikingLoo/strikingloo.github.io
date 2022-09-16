@@ -74,7 +74,7 @@ Style cues can be anything you want to condition the image on. I wouldn't add to
 
 Additionally, adding the name of an artist as a cue will make the picture look like something that artist made, though it may condition the image's contents, especially if that artist had very narrow themes (Beatrix Potter gets you spurious rabbits, for instance).
 
-### The Results
+### Experimenting with Prompts
 
 I will begin with some scenes that I already tried with other models.
 
