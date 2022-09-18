@@ -3,13 +3,13 @@ layout: post
 date: 2022-09-18
 title: "The Alberta Plan for AI Research"
 tags: deep learning, papers,reinforcement learning,machine learning,AGI,artificial intelligence
-description: "Notes on the Alberta Plan paper by Richard Sutton, describing the next steps for AI research in the Reinforcement Learning area, for the next 5 to 10 years."
-abstract: "Notes on the Alberta Plan paper by Richard Sutton, describing the next steps for AI research in the Reinforcement Learning area, for the next 5 to 10 years. Work in progress as I am still reading the paper."
+description: "Notes on the Alberta Plan paper by Richard Sutton, describing the next steps for AI research in the Reinforcement Learning field, for the next 5 to 10 years."
+abstract: "Notes on the Alberta Plan paper by Richard Sutton, describing the next steps for AI research in the Reinforcement Learning field, for the next 5 to 10 years. Work in progress as I am still reading the paper."
 language: English
 importance: 1
 ---
 
-The [Alberta Plan Paper in Arxiv](https://arxiv.org/pdf/2208.11173.pdf)
+The [Alberta Plan Paper in Arxiv](https://arxiv.org/pdf/2208.11173.pdf).
 
 The Alberta Plan is a long-term plan oriented toward basic understanding of computational
 intelligence. It is a plan for the next 5–10 years. It is not concerned with immediate applications of what we currently know how to do, but rather with filling in the gaps in our current
@@ -91,3 +91,10 @@ All four components
 are updated by learning processes operating in the foreground using the most recent events
 together with short-term credit-assignment memories such as eligibility traces.
 
+## Roadmap for AI Research
+
+They propose a 12 step roadmap that should not be taken too rigidly.
+
+The steps progress from the development of novel algorithms for core abilities (for representation, prediction, planning, and control) toward the combination of those algorithms to produce complete prototype systems for continual, model-based AI.
+An eternal dilemma in AI is that of “the parts and the whole.” A complete AI system cannot
+be built until effective algorithms for the core abilities exist, but exactly which core abilities are required cannot be known until a complete system has been assembled. To solve this chicken-and-egg problem, we must work on both chickens and eggs, systems and component algorithms, parts and wholes, in parallel. The result is imperfect, with wasted effort, but probably unavoidably so.
