@@ -11,13 +11,13 @@ sitemap: true
 
 OpenAI's [Dall-E 2 became available in beta](https://openai.com/blog/dall-e-now-available-in-beta/) a month ago, and as a big fan of generative text-to-image models I instantly joined the waitlist.
 
-After a little less than a month, the email arrived and I was notified I was finally allowed to use DALL-E 2! OpenAI gave me 50 free credits, with a monthly refill of 15 more from september onwards.
+After a little less than a month, the email arrived and I was notified I was finally allowed to use DALL-E 2! OpenAI gave me 50 free credits, with a monthly refill of 15 more from September onwards.
 
-I won't go into how text-to-image models work here, and for how to write prompts for DALL-E I recommend you see my [prompt guide for AI art](/art-prompts#how-to-write-prompts-for-dall-e--craiyon-a-crash-course), where I also keep adding new 'tried and tested' prompts as I discover them. 
+I won't go into how text-to-image models work here, and for how to write prompts for DALL-E I recommend you see my [prompt guide for AI art](/art-prompts#how-to-write-prompts-for-dall-e--craiyon-a-crash-course) (or my [StableDiffusion prompt guide](/stable-diffusion-vs-dalle-2), where I also keep adding new 'tried and tested' prompts as I discover them. 
 
 I've tried multiple different prompts, style cues, etc., and I'll keep adding the ones that generate the coolest images there.
 
-To anyone on the fence about trying DALL-E 2, I can genuinely recommend it. Prompting the model and seeing what it comes up with is almost addictive, and creates this beautiful dopamine feedback loop that just keeps you glued to your keyboard until you've spent all your credits. Or at least that's kind of how it went for me.
+To anyone on the fence about trying DALL-E 2, I can genuinely recommend it. Prompting the model and seeing what it comes up with is almost addictive, and creates this beautiful dopamine feedback loop that just keeps you glued to your keyboard until you've spent all your credits. Or at least that's how it went for me.
 
 I personally like asking these models for fantasy illustrations, landscapes and that kind of stuff, as I find that area less explored than, say, hyper realistic renders or popular media characters. However given **how good DALL-E 2 is at photorealism**, I did try my hand at some photograph prompts.
 
@@ -30,13 +30,13 @@ As a summary, here are some of the **prompt templates that have yielded the best
 
 Generally, remember to describe the thing you want as specifically as you can. For instance if you want a red panda knight, instead of red panda knight you may want to write "A digital illustration of a red panda wearing a knight armor, with sword". Otherwise in the worst case scenario, you may get a red panda behind a helmet that covers its furry face and nobody will know its secret!
 
-The first thing that surprised me with this new model is how, unlike older ones like mini DALL-E, it generally understands prepositions and simple scene composition. 
+The first thing that surprised me with this new model is how, unlike older ones like DALL-E mini, it generally understands prepositions and simple scene composition. 
 
 The hat goes in the head, these are two characters and each has its own adjectives, blue sphere over green cube, etc.
 
 Because of that, many of my first experiments were about composing scenes with several modifiers and seeing how the model handled each piece of the input. I also played around a lot with style cues, usually keeping the ones that yielded the most endearing pictures.
 
-One thing I do is trying many prompts out on Craiyon or other free models first, and then sending the ones that perform better (to my taste) to DALL-E 2, as I had a limited budget in comparison. I expect this will be less necessary as models get cheaper and better. In fact DALL-E 2 gave me satisfying images for all prompts except one **on the first try**, though they not always fit the description well if it is complex enough (more on that later). This was **not possible 6 months ago** and I was not expecting it to happen so quick.
+One thing I do is trying many prompts out on Craiyon or other free models first, and then sending the ones that perform better (to my taste) to DALL-E 2, as I had a limited budget in comparison. I expect this will be less necessary as models get cheaper and better *\[Update: this prediction realized a week later after StableDiffusion's release]*. In fact DALL-E 2 gave me satisfying images for all prompts except one **on the first try**, though they not always fit the description well if it is complex enough (more on that later). This was **not possible 6 months ago** and I was not expecting it to happen so quick.
 
 Given how much better DALL-E 2 is, you won't need to do that much prompt engineering as in previous models, so this is why my guide is a lot simpler this time around.
 
@@ -199,5 +199,5 @@ I am very interested in seeing where this will go, and which commercial applicat
 
 _If you liked this post, please share it on Twitter, Reddit, or whatever you like!_
 
-_All images in this article were made with DALL-E 2, you can use them for free but if you do please link to this post._
+_All images in this article were made with DALL-E 2, you can use them for free. If you do please link to this post._
 

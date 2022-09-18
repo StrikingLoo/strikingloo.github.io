@@ -9,7 +9,7 @@ importance: 8
 sitemap: true
 ---
 
-What a week, huh? A few days ago, [Stability.ai](https://stability.ai) released the new AI art model Stable Diffusion. It is similarly powerful to [DALL-E 2](/dall-e-2-prompt-guide), but open source, and open to the public through [Dream Studio](https://beta.dreamstudio.ai/dream), where anyone gets 50 free uses just by signing up with an email address.
+What a week, huh? A few days ago, [Stability.ai](https://stability.ai) released the new AI art model Stable Diffusion. It is similarly powerful to [DALL-E 2](/DALL-E-2-prompt-guide), but open source, and open to the public through [Dream Studio](https://beta.dreamstudio.ai/dream), where anyone gets 50 free uses just by signing up with an email address.
 
 Since it is open source and anyone who has 5GB of GPU VRAM can download it (and Emad Mostaque, Stability.ai's founder has come out and said more efficient models are coming) to get unlimited uses, expect to keep seeing headlines about AI art for a while.
 
@@ -49,7 +49,7 @@ Speculate away, please!
 
 ## Stable Diffusion Art
 
-As in my [DALL-E 2 article](/dall-e-2-prompt-guide), I tried the same prompts I had already tried in [Craiyon or Guided diffusion](/art-prompts) (I know, that's *so* early 2022!) to show just how much these systems have improved.
+As in my [DALL-E 2 article](/DALL-E-2-prompt-guide), I tried the same prompts I had already tried in [Craiyon or Guided diffusion](/art-prompts) (I know, that's *so* early 2022!) to show just how much these systems have improved.
 
 My focus was on fantasy, science fiction, and steampunk illustrations, because that is what I like, but I also experimented with more complex scenes and descriptions, to see how well StableDiffusion understands things like scene composition, prepositions and element interactions.
 
@@ -61,20 +61,7 @@ One thing I've found helps a lot in getting more beautiful results is thinking o
 
 In my opinion these details can steer the model even better than many vague cues like "4k", in this generation of models -unlike in [CLIP](/wiki/clip) or [GLIDE](/wiki/glide)-.
 
-### StableDiffusion Prompt Guide
-In general, a good prompt will have the form:
-
-> "A *\[type of picture]* of a *\[main subject, mostly composed of adjectives and nouns -avoid verbs-]*, *\[style cues]\**"
-
-Some *types of picture* include *digital illustration, oil painting (usually good results), matte painting, 3d render, medieval map*.
-
-The *main subject* can be anything you're thinking of, but StableDiffusion still struggles with compositionality, so it shouldn't be more than one or two main things (say, *a beaver wearing a suit*, or *a cat samurai with a pet pug*). 
-
-Style cues can be anything you want to condition the image on. I wouldn't add too many, maybe only 1 to 3. These can really vary a lot but some good ones are: *concept art, steampunk, trending in artstation, good composition, hyper realistic, oil on canvas, vivid colors*. 
-
-Additionally, adding the name of an artist as a cue will make the picture look like something that artist made, though it may condition the image's contents, especially if that artist had very narrow themes (Beatrix Potter gets you spurious rabbits, for instance).
-
-### The Results
+### Prompt Examples and Experiments
 
 I will begin with some scenes that I already tried with other models.
 
@@ -277,17 +264,29 @@ These are the last ones, I swear!
 
 Before we reach the end, I want to raise a concern and propose a challenge. No matter what I tried, I could *not* make either DALL-E 2, or StableDiffusion make characters in the style of Jojo's Bizarre Adventure (or Araki, in general). I tried the obvious style cues and others, and none worked. So if any of you manages to make one of these models draw Spongebob Squarepants in the style of Jojo's, or any other recognizable character, you will get a thousand internet points from me.
 
+### Appendix A: StableDiffusion Prompt Guide
+In general, a good prompt will have the form:
+
+> "A *\[type of picture]* of a *\[main subject, mostly composed of adjectives and nouns -avoid verbs-]*, *\[style cues]\**"
+
+Some *types of picture* include *digital illustration, oil painting (usually good results), matte painting, 3d render, medieval map*.
+
+The *main subject* can be anything you're thinking of, but StableDiffusion still struggles with compositionality, so it shouldn't be more than one or two main things (say, *a beaver wearing a suit*, or *a cat samurai with a pet pug*). 
+
+Style cues can be anything you want to condition the image on. I wouldn't add too many, maybe only 1 to 3. These can really vary a lot but some good ones are: *concept art, steampunk, trending in artstation, good composition, hyper realistic, oil on canvas, vivid colors*. 
+
+Additionally, adding the name of an artist as a cue will make the picture look like something that artist made, though it may condition the image's contents, especially if that artist had very narrow themes (Beatrix Potter gets you spurious rabbits, for instance).
 
 
-## Resources and Links
+## Appendix B: Resources and Links
 
 Given how much has happened lately (even John Oliver is talking about DALL-E!), here are some other articles you may want to read.
 
 - [Stable Diffusion: The Most Important AI Art Model Ever](https://thealgorithmicbridge.substack.com/p/stable-diffusion-is-the-most-important) covering the more social/economic side of this.
 - [A traveler's guide to the latent space](https://sweet-hall-e72.notion.site/A-Traveler-s-Guide-to-the-Latent-Space-85efba7e5e6a40e5bd3cae980f30235f): a guide on prompt engineering that goes *really* in depth. I haven't actually read the whole thing.
 - [A guide to Writing Prompts for Text-to-Image AI](https://docs.google.com/document/d/17VPu3U2qXthOpt2zWczFvf-AH6z37hxUbvEe1rJTsEc/): The best quick primer I've found on prompt engineering and writing prompts for DALL-E 2/StableDiffusion or any other text-to-image AI.
-- [Art Prompts: My Experiments with Mini-DALLE](/art-prompts): My first post on text-to-image AI, where I included my own AI art prompt guide. Here you can see how far we've come and how fast.
-- [DALL-E 2 Experiments](/dall-e-2-prompt-guide): The post I wrote two weeks ago when DALL-E 2 beta release was news and StableDiffusion hadn't come out yet. See if you can spot the same prompts' different results!
+- [Art Prompts: My Experiments with Mini DALL-E](/art-prompts): My first post on text-to-image AI, where I included my own AI art prompt guide. Here you can see how far we've come and how fast.
+- [DALL-E 2 Experiments](/DALL-E-2-prompt-guide): The post I wrote two weeks ago when DALL-E 2 beta release was news and StableDiffusion hadn't come out yet. See if you can spot the same prompts' different results!
 - [How to Draw](https://andys.page/posts/how-to-draw/): Where a user uses StableDiffusion's img2img version to convert an MSPaint drawing into a realistic sci-fi image.
 - [Stable Diffusion is a really big deal, Simon Willison](https://simonwillison.net/2022/Aug/29/stable-diffusion/): This came out a little after I wrote this post, when Stability.ai released the img2img StableDiffusion model. It is amazing! You can make a sketch in MSPaint (Or JsPaint) and make the AI turn it into a painting or illustration in the style you want. [Image2Image StableDiffusion is available on Replicate for free](https://replicate.com/stability-ai/stable-diffusion).
 - If you like anime, [**Waifu Diffusion**](https://huggingface.co/hakurei/waifu-diffusion) is a text-to-image diffusion model that was conditioned on high-quality anime images through fine-tuning, using Stable Diffusion as a starting point. It generates anime illustrations and it's awesome.
