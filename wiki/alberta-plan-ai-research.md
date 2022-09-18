@@ -98,3 +98,12 @@ They propose a 12 step roadmap that should not be taken too rigidly.
 The steps progress from the development of novel algorithms for core abilities (for representation, prediction, planning, and control) toward the combination of those algorithms to produce complete prototype systems for continual, model-based AI.
 An eternal dilemma in AI is that of “the parts and the whole.” A complete AI system cannot
 be built until effective algorithms for the core abilities exist, but exactly which core abilities are required cannot be known until a complete system has been assembled. To solve this chicken-and-egg problem, we must work on both chickens and eggs, systems and component algorithms, parts and wholes, in parallel. The result is imperfect, with wasted effort, but probably unavoidably so.
+
+### Step 1: Continual supervised learning with given features
+
+The overall idea of Step 1 is to design as powerful an algorithm as possible given a
+fixed feature representation. It should include all the most important issues of nonstationarity in the problem (for a fixed set of linear features), including the tracking of
+changes in feature relevance. It should include the meta-learning of feature relevance, a
+challenging issue in representation learning—arguably the most challenging issue—but
+it does not include actually changing the set of features under consideration; that is
+explored in Step 2.
