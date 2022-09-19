@@ -30,6 +30,7 @@ For example [AlphaGo](https://www.deepmind.com/alpha-go)[🌱] first uses superv
 
 - [Richard Sutton’s book](http://incompleteideas.net/book/RLbook2020.pdf)[🌿]: I finished this book and found it extremely clear, entertaining and illuminating. Probably the book that taught me the most in a while, and one of my favorite reads in 2022. Spawned my [notes on Sutton's Reinforcement Learning book](/wiki/reinforcement-learning-sutton).
 - [My notes on Proximal Policy Optimization](/wiki/proximal-policy-optimization)[🌿]: The current state of the art in Reinforcement Learning, developed by OpenAI, consisting of policy gradient + regularization that limits how much the policy can vary from epoch to epoch.
+- [My notes on Sutton's Alberta Research Plan](/wiki/alberta-plan-ai-research)[🌿]: Richard Sutton et al., lay down the foundations for the next 5\~10 years of AI (particularly Reinforcement Learning) research.
 - [David Silver’s course](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)[🌱]
 - [John Schulmann’s lectures](https://www.youtube.com/watch?v=oPGVsoBonLM)[🌱]
 - [Building Machines That Learn and Think Like People](https://arxiv.org/abs/1604.00289)[🌱]

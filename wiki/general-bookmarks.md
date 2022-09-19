@@ -87,3 +87,8 @@ A nice resource on Roman Naming Practices, and the origin of Modern Surnames:
 ---
 1MB club
 <https://1mb.club/>
+
+---
+Make low-poly images (they look nice for some post's header image).
+
+<https://cojdev.github.io/lowpoly/>
