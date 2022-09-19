@@ -7,7 +7,7 @@ date: 2019-04-14
 importance: 6
 sitemap: true
 abstract: "I apply K-Means Clustering to a Magic: The Gathering deck dataset and find whether it predicts the meta. Included is an explanation of how k-means works. This is a post from my old blog, so some parts may not represent my current opinions."
-twitter_image: ""
+twitter_image: "https://strikingloo.github.io/resources/post_image/brain.jpg"
 ---
 
 Unsupervised Learning has been called the closest thing we have to “actual” Artificial Intelligence, in the sense of General AI, with K-Means Clustering one of its simplest, but most powerful applications.
