@@ -128,8 +128,8 @@ At first I wanted to check if the results made any sense. This was my first time
 
 {% raw %}<script src="https://gist.github.com/StrikingLoo/f8df3b441fdefb7808474015b54c4753.js"></script>{% endraw %}
 
-If you’re interested in the results, here’s a [separate article about them](http://www.datastuff.tech/data-analysis/magic-the-gathering-meets-data-science/). I just didn’t want to mix my M:tG findings with this tutorial so that readers who are into Data Science but not into the game won’t be bored.
-In case you’re interested, I later wrote about a completely different application for K-Means Clustering: [image filters](http://www.datastuff.tech/machine-learning/k-means-clustering-with-dask-editing-pictures-of-kittens/).
+If you’re interested in the results, here’s a [separate article about them](https://towardsdatascience.com/magic-the-gathering-meets-data-science-2a0367c724fe). I just didn’t want to mix my M:tG findings with this tutorial so that readers who are into Data Science but not into the game won’t be bored.
+In case you’re interested, I later wrote about a completely different application for K-Means Clustering: [image filters](https://dev.to/strikingloo/k-means-clustering-with-dask-image-filters-for-pictures-of-kittens-ip7).
 
 I also strongly encourage you to download the notebook from the GitHub project and play with it, it’s honest fun!
 
