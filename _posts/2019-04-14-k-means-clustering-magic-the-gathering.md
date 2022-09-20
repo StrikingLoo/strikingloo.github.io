@@ -58,6 +58,8 @@ Here is a gif showing the algorithm in action, courtesy of Wikimedia Commons.
 
 ![K-means convergence, Chire, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons](resources/post_image/k-means-convergence.gif){: loading="lazy" style="width:60%;height:60%"}
 
+The crosses represent the position of each cluster's centroid, and you can see how they start moving until they become stable. Notice also how they move more initially, and less over time.
+
 ### Applications for K-means clustering
 
 Like many other unsupervised learning algorithms, K-means clustering can work wonders if used as a way to generate inputs for a supervised Machine Learning algorithm (for instance, a classifier).
