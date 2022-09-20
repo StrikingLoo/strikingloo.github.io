@@ -3,9 +3,12 @@ layout: default
 title: Strikingloo's Blog
 is_blog: true
 ---
-	<h1>Welcome to my Blog</h1>
-	<ul class="posts" style='text-align: center;'>
-	  {% for post in site.posts %}
+	<h1>Blog</h1>
+	<p>To see all the articles in list format, visit <a href="/archive">the Archives</a>. </p>
+	<div style='text-align: center;'>
+	<h2>Recent Articles</h2>
+	<ul class="posts">
+	  {% for post in site.posts limit: 10 %}
 	  {% if post.sitemap %}
 <li class='post-item' style='text-align: center;'><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <br/> <span><i>{{ post.date | date_to_string }}</i></span>
 <br/><p><i>{{ post.description }}</i></p>
@@ -13,7 +16,7 @@ is_blog: true
 	    {% endif %}
 	  {% endfor %}
 	</ul>
-
+</div>
 	<script>
 			const windowWidth = window.innerWidth;
 			const maxDeviceWidth = 1024;

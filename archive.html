@@ -1,0 +1,35 @@
+---
+layout: default
+title: The Archives
+---
+	<h1>The Archives</h1>
+	<p>These are all the articles in this site. To see them with their descriptions, visit the <a href="/blog/">Blog</a>.</p>
+	<div>
+	<h2>Articles</h2>
+	<ul style='list-style-type: none;'>
+	  {% for post in site.posts %}
+	  {% if post.sitemap %}
+	  {% capture posttime %}{{post.date | date: '%Y'}}{% endcapture %}
+	  {% if posttime > '2020' %}
+<li><i>{{ post.date | date: '%Y-%m-%d' }}</i> - <a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a>
+</li>
+	    {% endif %}
+	    {% endif %}
+	  {% endfor %}
+	</ul>
+</div>
+
+<div>
+	<h2>Older Articles (From my Old Blog)</h2>
+	<ul style='list-style-type: none;'>
+	  {% for post in site.posts %}
+	  {% if post.sitemap %}
+	  {% capture posttime %}{{post.date | date: '%Y'}}{% endcapture %}
+	  {% if posttime <= '2020' %}
+<li><i>{{ post.date | date: '%Y-%m-%d' }}</i> - <a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a>
+</li>
+	    {% endif %}
+	    {% endif %}
+	  {% endfor %}
+	</ul>
+</div>
