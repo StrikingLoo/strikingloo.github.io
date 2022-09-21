@@ -3,7 +3,7 @@ layout: post
 date: 2022-09-12
 importance: 2
 title: Brain Activity to Speech
-tags: deep learning, neural network, paper, audio, facebook, brain, science
+tags: deep learning, neural network, paper, audio, brain, science
 description: "Notes from a paper by Facebook Research where an embedding model is trained using a contrastive loss to align audio and brain (MEG and EEG) recordings, achieving lossy brain to audio reading. They use non-invasive brain scanning methods."
 abstract: "Notes from a paper by Facebook Research where an embedding model is trained using a contrastive loss to align audio and brain (MEG and EEG) recordings, achieving lossy brain to audio reading. <br/>They use non-invasive brain scanning methods."
 language: English

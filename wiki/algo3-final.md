@@ -2,7 +2,7 @@
 layout: post
 title: "Algoritmos y Estructuras de Datos III - Notas para el final"
 date: 2021-02-22
-tags: algo3, data structures, UBA, spanish, español, cs, algorithms
+tags: algo3, data structures, UBA, spanish, español, cs, algorithms, computer science
 description: "Notas para el final de Algo3. Basadas en los apuntes de la teorica. In Spanish."
 ---
 

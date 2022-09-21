@@ -3,7 +3,7 @@ layout: post
 title: "Finances"
 date: 2020-12-21
 description: "A place to dump any financially relevant stuff I come accross."
-tags: stock, economy, Economics, trends, investment
+tags: stock, economy, Economics, investment
 language: English
 importance: 4
 ---

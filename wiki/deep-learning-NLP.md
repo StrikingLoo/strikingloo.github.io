@@ -5,6 +5,7 @@ title: "Deep Learning for Natural Language Processing"
 description: "My notes from Stanford's Deep Learning for NLP course, plus any papers from the recommended reading I went through."
 language: English
 importance: 10
+tags: LLM, transformers, computer science, machine learning, deep learning
 ---
 
 _These are my notes for the [Stanford MOOC](http://web.stanford.edu/class/cs224n/index.html)_. 

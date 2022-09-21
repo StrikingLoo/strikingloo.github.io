@@ -2,7 +2,7 @@
 layout: post
 date: 2022-01-07
 title: "GLIDE: Text-Guided Diffusion Models"
-tags: deep learning,unsupervised learning,paper,generative models,generative,diffusion,guided diffusion,glide,CLIP,clip
+tags: deep learning,unsupervised learning,paper,generative models,generative,diffusion,guided diffusion,glide,CLIP,clip,machine learning
 description: "Notes on the GLIDE paper, a generative model that outperforms DALL-E using similar compute by training a diffusion model using a CLIP-aware loss + CFG"
 language: English
 uses_mathjax: true

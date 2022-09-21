@@ -5,7 +5,7 @@ date: 2020-08-19
 description: "Notes and reflections around the idea that good tools for thought could lead us to think better by helping us traverse the space of ideas."
 language: English
 importance: 5
-tag: notes, note making, journal, mind, essays, GPT-3, tools for thought, wiki, writing
+tag: notes, note making, journal, mind, essays, GPT-3, tools for thought, wiki, writing, ttft
 ---
 
 The following are my notes and reflections around the idea that good tools for thought could lead us to think better by helping us traverse the space of ideas: if we write about what we are thinking deeply about, they could nudge us towards other related ideas from our past so that we can synthesize new knowledge, but also towards ideas others have found fruitful, associations nobody has made before through [mutation operations](/wiki/evolution-through-large-models) on our own essays, or even use predictions and noisy theorem proving to find conclusions and implications to an idea we come up with.

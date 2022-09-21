@@ -2,7 +2,7 @@
 layout: post
 date: 2022-07-26
 title: Fast String Searching, Hume and Sunday
-tags: paper, algorithms, grep, computer science, boyer, moore
+tags: paper, algorithms, grep, computer science, boyer, moore, OS
 language: English
 importance: 7
 abstract: "Notes on the paper for Fast String Searching, which outlines the algorithm used by grep and others, and improves on the results of Boyer-Moore by emphasizing empirical performance rather than theoretical measures like number of comparisons. 

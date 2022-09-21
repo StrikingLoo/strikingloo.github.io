@@ -6,7 +6,7 @@ description: "Quotes and advice on writing non-fiction. Especially about essays.
 language: English
 importance: 7
 abstract: "Collected quotes and advice on writing non-fiction. Especially about essays."
-tags: graham, advice, writing, thinking
+tags: paul graham, advice, writing, thinking
 ---
 
 from **Trying** by [Paul Graham](http://paulgraham.com/essay.html)

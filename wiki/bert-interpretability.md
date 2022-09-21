@@ -2,7 +2,7 @@
 layout: post
 date: 2021-01-07
 title: "BERT Interpretability"
-tags: deep learning, neural network, NLP, BERT, interpretability, paper, notes, thegradient, transformers, LLM
+tags: deep learning, neural network, NLP, BERT, paper, thegradient, transformers, LLM, machine learning
 description: "A paper on BERT interpretability from thegradient.pub, and my reflections on the lottery hypothesis and model distilling."
 language: English
 importance: 6

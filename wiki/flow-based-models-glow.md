@@ -2,7 +2,7 @@
 layout: post
 date: 2021-10-15
 title: "Glow: Generative Flow with Invertible 1×1 Convolutions"
-tags: deep learning,convolutional neural networks,cnn,flow,unsupervised learning,paper,generative models,generative
+tags: deep learning,convolutional neural networks,cnn,flow,unsupervised learning,paper,generative models,generative,machine learning
 description: "Notes on the Glow paper by OpenAI, a Flow model that synthesizes realistic images efficiently and has a meaningful latent space while efficiently allowing computation of likelihood"
 language: English
 importance: 6

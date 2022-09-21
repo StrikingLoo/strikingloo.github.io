@@ -2,7 +2,7 @@
 layout: post
 date: 2021-12-22
 title: "Distilling the Knowledge in a Neural Network"
-tags: deep learning, neural network, supervised learning, convolutional neural networks, paper, ensemble, ensamble
+tags: deep learning, neural network, supervised learning, convolutional neural networks, paper, ensemble
 description: "Notes from a paper by Geoffrey Hinton (Google Deep Mind) on training an ensemble of models for a task and then fitting a smaller single model to the emsemble's aggregated, softened (through softmax temperature) output, reaching a similar performance with a deployable model."
 language: English
 importance: 6

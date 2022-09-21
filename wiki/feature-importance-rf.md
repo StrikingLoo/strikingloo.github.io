@@ -2,7 +2,7 @@
 layout: post
 title: "Permutation Importance"
 date: 2021-09-10
-tags: metrics, ml, xgboost, feature importance, programming
+tags: metric, xgboost, feature importance, programming, machine learning, statistics
 description: "A metric for feature importance that doesn't require multiple trainings, preprocessing and is model independent."
 language: English
 ---

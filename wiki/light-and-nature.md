@@ -3,7 +3,7 @@ layout: post
 title: "Light and nature"
 date: 2020-10-01
 description: "A small quote about the impact of light and nature in wellness"
-tags: studies, lesswrong, nature, ADHD
+tags: studies, lesswrong, nature, ADHD, longevity
 language: English
 importance: 6
 ---

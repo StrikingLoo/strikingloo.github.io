@@ -2,7 +2,7 @@
 layout: post
 title: "HunterxHunter"
 date: 2020-06-13
-tags: metafiction
+tags: metafiction,anime
 description: "HunterxHunter stuff. So far very brief."
 language: English
 importance: 4

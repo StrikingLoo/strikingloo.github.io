@@ -2,7 +2,7 @@
 layout: post
 date: 2021-07-01
 title: "Clustering"
-tags: wip,clustering,unsupervised learning,k-means,dbscan
+tags: clustering,unsupervised learning,k-means,dbscan,machine learning
 description: "My notes from O'Reilly's Hands-on Machine Learning's Clustering chapter, plus other sources (like Bishop)."
 language: English
 importance: 7

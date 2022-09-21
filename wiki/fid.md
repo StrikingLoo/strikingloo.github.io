@@ -2,7 +2,7 @@
 layout: post
 date: 2022-04-27
 title: "FID: Fréchet Inception Distance"
-tags: deep learning,unsupervised learning,generative models,generative,GAN,metric
+tags: deep learning,unsupervised learning,generative models,generative,GAN,metric,machine learning
 description: "A description and characterization of FID metric used for evaluating generative models."
 language: English
 uses_mathjax: true

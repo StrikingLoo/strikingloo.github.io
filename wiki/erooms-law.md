@@ -3,7 +3,7 @@ layout: post
 title: "Eroom's Law - When things take a turn for the worse"
 date: 2020-12-21
 description: "Eroom's Law is an opposite of Moore's Law: discovering new medically relevant drugs tends to cost exponentially more over time. An analysis on the phenomenon and possible reasons behind it."
-tags: medicine, economy, Economics, moore's law, matters of scale, healthcare, trends, eroom
+tags: medicine, economy, Economics, moore's law, matters of scale, healthcare, trends
 language: English
 importance: 5
 abstract: "Eroom's Law is an opposite of Moore's Law: discovering new medically relevant drugs tends to cost exponentially more over time. An analysis on the phenomenon and possible reasons behind it."

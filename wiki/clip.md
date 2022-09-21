@@ -2,7 +2,7 @@
 layout: post
 date: 2021-10-25
 title: "CLIP: Learning Transferable Visual Models From Natural Language Supervision"
-tags: deep learning,CNN,NLP,transformers,resnet,unsupervised learning,paper,generative models,generative
+tags: deep learning,CNN,NLP,transformers,resnet,unsupervised learning,paper,generative models,machine learning
 description: "Notes on the CLIP paper, a very clever contrastive training regime that maps both textual and image inputs into a shared latent universe, to then apply semantically meaningful distance notions and generate images or text."
 language: English
 importance: 8
