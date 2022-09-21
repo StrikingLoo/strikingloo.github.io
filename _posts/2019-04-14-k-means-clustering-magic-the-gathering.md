@@ -42,17 +42,23 @@ Now that’s done, I hope you’re motivated, because it’s time to get our han
 
 K-Means Clustering receives a single hyperparameter: _k_, which specifies how many clusters we want to categorize our data into.
 
-The clusters won’t necessarily have all the same quantity of instances. However, they should each characterize a specific subset of our data. How will we achieve this? Let’s find out!
+The clusters won’t necessarily all have the same quantity of instances. However, they should each characterize a specific subset of our data. How will we achieve this? Let’s find out!
 
 First of all, the input for this algorithm needs to be a set of vectors. That is, all your features should be numerical, and in the same order. If you had any categorical features, my advice would be to use one-hot encode: convert each categorical variable into a vector of n-elements: one for each possible category, all set to 0 except the one for the given category.
 
-What the algorithm will do is initiate k random ‘centroids’ -points in the space defined by the dimensions of the dataset’s elements-, and then it will:
+What the algorithm will do is initiate _k_ random ‘centroids’ -points in the space defined by the dimensions of the dataset’s elements-, and then it will:
 
 - Assign each element to the centroid closest to it. 
 - Remap the centroid to the point lying on the average of all the elements assigned to it. 
-- Repeat steps 1 and 2, until convergence (or a stopping condition, such as doing N iterations for a given N) is met.
+- Repeat steps 1 and 2, until convergence (or a stopping condition, such as doing N iterations for a given N) is met. Convergence is usually defined as no instances changing their cluster label from one iteration to the next.
 
-In the end, each element will have been assigned to one of k clusters, such that the elements in the same cluster all lie closest to it.
+In the end, each element will have been assigned to one of _k_ clusters, such that the elements in the same cluster all lie closest to it.
+
+Here is a gif showing the algorithm in action, courtesy of Wikimedia Commons.
+
+![K-means convergence, Chire, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons](resources/post_image/k-means-convergence.gif){: loading="lazy" style="width:60%;height:60%"}
+
+The crosses represent the position of each cluster's centroid, and you can see how they start moving until they become stable. Notice also how they move more initially, and less over time.
 
 ### Applications for K-means clustering
 
