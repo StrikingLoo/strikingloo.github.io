@@ -166,6 +166,8 @@ Before training:
 After training:
 ![](resources/post_image/last_iter_5.gif){: loading='lazy' style="width:30%;height:30%"}
 
+In conclusion, this maze solver is a-mazing!
+
 As next steps, I think it could be fun to add enemies, like in super mario and the agent needs to avoid them (or it is sent back to square one), or maybe add more than one goal but they need to be fetched in a certain order. At any rate, I think this example has been enough to showcase Reinforcement Learning's capabilities, and it should be very easy to edit the Maze class in the GitHub project to add different mini games. 
 
 Feel free to do it and, if you do, make a Pull Request! You'll get credit and a link from me. I just want to see if anyone designs anything fun.
