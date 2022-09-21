@@ -117,7 +117,7 @@ The lookup table:
 The policy:
 {% raw %} <script src="https://gist.github.com/StrikingLoo/6055bf081061b74c3d71adaaf3155cdc.js"></script> {% endraw %}
 
-The main loop (minus the prints and after cleaning):
+The main loop (minus the prints and after cleaning). I used an *α* value of 0.5, and a *γ* of 0.9.
 {% raw %} <script src="https://gist.github.com/StrikingLoo/a73489773ca8c11028047d142b8024f2.js"></script> {% endraw %}
 
 I polished them a bit compared with the ones on GitHub, for clarity's sake.
