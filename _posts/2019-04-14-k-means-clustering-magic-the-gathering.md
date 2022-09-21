@@ -4,7 +4,7 @@ description: "Will the clusters that k-Means Clustering finds in a dataset of de
 layout: post
 tags: programming,python,data science,machine learning, clustering, k-means, dask
 date: 2019-04-14
-importance: 6
+importance: 7
 sitemap: true
 abstract: "I apply K-Means Clustering to a Magic: The Gathering deck dataset and find whether it predicts the meta. Included is an explanation of how k-means works. This is a post from my old blog, so some parts may not represent my current opinions."
 twitter_image: "https://strikingloo.github.io/resources/post_image/brain.jpg"

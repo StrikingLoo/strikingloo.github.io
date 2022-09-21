@@ -1,5 +1,5 @@
 ---
 layout: redirected
-redirect_to: /wiki/general-bookmarks
+redirect_to: /wiki/data-compression
 sitemap: false
 ---
