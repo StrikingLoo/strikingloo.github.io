@@ -55,7 +55,7 @@ If you want to learn Reinforcement Learning in more detail, I recommend you read
 
 For this article, we are going to focus on tabular methods for Reinforcement Learning.
 
-In tabular methods, the environment is modeled as a set of discrete states, where each possible state is assigned a unique identificator. If we go back to our chess example, each state would be a possible piece arrangement in the board. Depending on how we define things, we could include or exclude arrangements which are not really attainable in-game, like one player having 17 pieces, or 10 queens. 
+In tabular methods, the environment is modeled as a set of discrete states, where each possible state is assigned a unique identifier. If we go back to our chess example, each state would be a possible piece arrangement in the board. Depending on how we define things, we could include or exclude arrangements which are not really attainable in-game, like one player having 17 pieces, or 10 queens. 
 
 As the name implies, our value function will be very straightforward: a lookup table that maps each possible state into a (real numbered) value.
 
@@ -126,7 +126,7 @@ I polished them a bit compared with the ones on GitHub, for clarity's sake.
 
 I ran the code for multiple mazes, and all of the results were positive!
 
-Here is our agent solving a very simple maze: a wall running accross the middle. The agent is the blue square, the goal -an apple!- is the red one.
+Here is our agent solving a very simple maze: a wall running across the middle. The agent is the blue square, the goal -an apple!- is the red one.
 
 Before training:
 ![](resources/post_image/first_iter_1.gif){: loading='lazy' style="width:30%;height:30%"}
@@ -170,7 +170,7 @@ After training:
 
 In conclusion, this maze solver is a-mazing!
 
-As next steps, I think it could be fun to add moving enemies, like in super mario and the agent needs to avoid them (or it is sent back to square one), or maybe add more than one goal but they need to be fetched in a certain order. At any rate, I think this example has been enough to showcase Reinforcement Learning's capabilities, and it should be very easy to edit the Maze class in the GitHub project to add different mini games. 
+As next steps, I think it could be fun to add moving enemies, like in Super Mario, and the agent needs to avoid them (or it is sent back to square one), or maybe add more than one goal but they need to be fetched in a certain order. At any rate, I think this example has been enough to showcase Reinforcement Learning's capabilities, and it should be very easy to edit the Maze class in the GitHub project to add different mini games. 
 
 Feel free to do it and, if you do, make a Pull Request! You'll get credit and a link from me. I just want to see if anyone designs anything fun.
 
