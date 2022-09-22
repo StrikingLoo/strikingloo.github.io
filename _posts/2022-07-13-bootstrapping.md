@@ -6,6 +6,7 @@ description: "A tutorial showing how to implement Confidence Intervals in Python
 language: English
 tags: bootstrapping, python, statistics, math, programming
 importance: 6
+sitemap: true
 uses_mathjax: true
 ---
 
