@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Reinforcement Learning for Beginners - Maze Solver with Sarsa"
+title: "Reinforcement Learning for Beginners - Maze-solving with Sarsa"
 description: "Introduction to how Reinforcement Learning works, where I explain the Sarsa algorithm and code an example from scratch and teach an AI agent to solve mazes."
 tags: programming, python, machine learning, reinforcement learning
 date: 2022-09-21
