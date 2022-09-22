@@ -45,7 +45,7 @@ If we can make it choose actions better in each situation, it will perform bette
 
 The state (or state-action) value is the expected total reward from a given state (or state-action). That is, if we start on this state, and keep following the current policy, what will be the average sum (over many repetitions) of all our rewards? This takes into account the possible non-determinism of the environment (where taking the same action in the same state may not always lead to the same next state, or yield the same fixed reward).
 
-Choosing the best policy, then, will be about estimating as correctly as possible what the value of each state and action is, and then always choosing the state with the highest value.
+Choosing the best policy, then, will be about estimating as correctly as possible what the value of each state and action is, and then always choosing the state with the highest value -what we call following a greedy policy-.
 
 There are still further considerations to look into, which I will skip, like whether the environment itself can change behavior over time (imagine finding the optimal move in poker, but then all the other players realize you always make the same bluff and start not buying into it) or how to deal with the expected reward in a continuing task (if it was just the sum, it would diverge, so we normally use exponential discounting). 
 
