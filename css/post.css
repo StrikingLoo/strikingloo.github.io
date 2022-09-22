@@ -1,7 +1,7 @@
 /* posts only */
 .meta {font-style:italic; text-align: center;}
 
-.abstract {background-color:var(--wiki-bkg-color-hover);
+.abstract {background-color: #E2DCC8;
 border:2px solid;
 font-style:italic;
 margin:5%;

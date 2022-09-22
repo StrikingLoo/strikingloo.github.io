@@ -3,7 +3,7 @@
   --font-color: #100F0F; 
   --header-anchor-color: #0F3D3E; 
   --anchor-hover-color: #5bb; 
-  --wiki-bkg-color-hover: #E2DCC8; 
+  --wiki-bkg-color-hover: #2F5D5E; 
 }
 
 body {
@@ -138,7 +138,7 @@ strong { font-weight: bolder;}
 }/* posts only */
 .meta {font-style:italic; text-align: center;}
 
-.abstract {background-color:var(--wiki-bkg-color-hover);
+.abstract {background-color: #E2DCC8;
 border:2px solid;
 font-style:italic;
 margin:5%;

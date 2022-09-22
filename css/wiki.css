@@ -11,8 +11,11 @@
   font-size: 1.1em;
   margin:3px;
   text-decoration: none;
-  border:.3em solid var(--header-anchor-color);
-  border-radius: 2%;
+  font-weight: bold;
+  background-color: var(--header-anchor-color);
+  color: var(--bkg);
+  /*border:.3em solid var(--header-anchor-color);*/
+  border-radius: 4%;
   width:95%; 
   height:auto;
 }
