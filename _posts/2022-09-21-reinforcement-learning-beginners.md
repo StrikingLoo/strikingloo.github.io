@@ -17,7 +17,7 @@ That powerful question motivates Reinforcement Learning. Instead of programs tha
 
 The algorithms that train a Reinforcement Learning agent are very hands-off compared to other branches of Machine Learning: just provide the agent with features describing the environment (like the graphics for a game, or other users' recent posts for social media content), and give it rewards according to its actions. 
 
-The agent will work to maximize total reward over time, like a dog that's given treats until it learns to do a cartwheel.
+Following the algorithms, the agent will work to maximize total reward over time, like a dog that's given treats until it learns to do a cartwheel.
 
 This may not always work. At each time step (however we define our time steps), the agent will have to pick one of all possible actions, which can potentially form a huge universe of possibilities. There could also be delays between the time the action is chosen and when we learn if it was a good choice, or the environment could be hard or expensive to simulate --imagine simulating trades in the stock market, or Robotics tasks that deal with expensive equipment.
 
@@ -41,25 +41,25 @@ Tasks can be *episodic* or *continuing*, where episodic tasks have a beginning a
 
 The whole training process will be centered around **modifying the agent's policy**.
 
-If we can make it choose actions better in each situation, it will perform better at the given task. To achieve this, we will have a value function that assigns an expected value to each state, or state-pair action.
+If we can make it choose actions better in each situation, it will perform better at the given task. To achieve this, we will have a value function that assigns an expected value to each state, or state-pair action. If we know what state each action leads to, and how much reward we should expect from a given state, then the best policy will be the one that always picks the actions that lead to the highest rewards over time.
 
-The state (or state-action) value is the expected total reward from a given state (or state-action). That is, if we start on this state, and keep following the current policy, what will be the average sum (over many repetitions) of all our rewards? This takes into account the possible non-determinism of the environment (where taking the same action in the same state may not always lead to the same next state, or yield the same fixed reward).
+The state (or state-action) value is defined as the expected total reward from a given state (or state-action). That is, if we start on this state, and keep following the current policy, what will be the sum of all our rewards, averaged over many repetitions? This takes into account the possible non-determinism of the environment, where taking the same action in the same state may not always lead to the same next state, or yield the same fixed reward.
 
 Choosing the best policy, then, will be about estimating as correctly as possible what the value of each state and action is, and then always choosing the state with the highest value -what we call following a greedy policy-.
 
-There are still further considerations to look into, which I will skip, like whether the environment itself can change behavior over time (imagine finding the optimal move in poker, but then all the other players realize you always make the same bluff and start not buying into it) or how to deal with the expected reward in a continuing task (if it was just the sum, it would diverge, so we normally use exponential discounting). 
+There are still further considerations we might look into, which I will skip in this article, like whether the environment itself can change behavior over time (imagine finding the optimal move in poker, but then all the other players realize you always make the same bluff and start not buying into it) or how to deal with the expected reward in a continuing task (if it was just the sum, it would diverge, so we normally use exponential discounting). 
 
 If you want to learn Reinforcement Learning in more detail, I recommend you read [Introduction to Reinforcement Learning by Richard Sutton](http://incompleteideas.net/book/RLbook2020.pdf) -the book is free-, of which I wrote a [book summary here](/wiki/reinforcement-learning-sutton).
 
 ## Sarsa and Tabular Methods
 
-For this article, we are going to focus on Tabular methods for Reinforcement Learning.
+For this article, we are going to focus on tabular methods for Reinforcement Learning.
 
 In tabular methods, the environment is modeled as a set of discrete states, where each possible state is assigned a unique identificator. If we go back to our chess example, each state would be a possible piece arrangement in the board. Depending on how we define things, we could include or exclude arrangements which are not really attainable in-game, like one player having 17 pieces, or 10 queens. 
 
 As the name implies, our value function will be very straightforward: a lookup table that maps each possible state into a (real numbered) value.
 
-Remember that a state's value is the expected sum of all subsequent rewards. Alternatively, we can add a discounting factor (a number between 0 and 1) that multiplies each subsequent term in the sum, to give more weight to short-term rewards and avoid divergence of the sum.
+Remember that a state's value is the expected sum of all subsequent rewards. Alternatively, we can add a discounting factor (a number between 0 and 1) that multiplies each subsequent term in the sum, to give more weight to short-term rewards and avoid divergence of the sum. This is called exponential discounting, as we will estimate the value of transitioning to a state as the reward from that transition, plus the discounted (multiplied by this factor) value of the next state, which was estimated by taking into account the discounted value of the next one, and so on.
 
 Thus, when the agent is standing in a certain state, it will pick the action that makes it transition into the highest-valued state next, or the one that maximizes expected next-state value if transitions are non-deterministic. As an example, imagine you can either take action A, to go to a state of value 5, or action B where you flip a coin and land on either one of two states with values 10 and -5. In this case taking action A would be better in terms of maximizing value, so an optimal policy would pick A every time.
 
@@ -73,7 +73,7 @@ Instead, we resort to focusing our estimations into the values of states we trea
 
 In this context, **Temporal-Difference (TD) methods** emerge. 
 
-TD methods update their value estimates based in part on other value estimates. Instead of running a whole episode and then updating all value estimates by taking them closer to the sum of the discounted rewards, they take each action based on the policy, and then immediately update the previous state's value using the newly obtained information.
+TD methods update their value estimates based in part on other value estimates, a practice called bootstrapping. Instead of running a whole episode and then updating all value estimates by taking them closer to the sum of the discounted rewards, they take each action based on the policy, and then immediately update the previous state's value using the newly obtained information.
 
 Thus in Sarsa, the TD method we will use in this article, on each time step after taking an action the estimate for the action's value on the current state will be nudged towards the sum of 
 
@@ -89,6 +89,8 @@ In this case, *α* corresponds to the update size/learning rate, similar to the 
 Note that the bigger *γ* is, the more we will care about subsequent rewards (as estimated by the value for the next *state-action* pair). If *γ* was 0, then we would only estimate the value as the expected reward (and not take the long-term into account), whereas if *γ* is 1, then there is no incentive to rush: any reward, no matter how delayed, is as valuable as that which we could have obtained now. 
 
 In that case, if for instance we have a bird fetching a grape, it would have no incentive to fly in a straight line instead of going in lots of circles, as delaying the grape would not change the state value. If instead we add discounting, suddenly it is more valuable to grab the grape sooner rather than later. Nonetheless in many episodic tasks, *γ* is kept at 1 and the reward is only given at the end of the task if successfully completed, for instance when winning a game of chess -since no intermediate steps are certain to lead to victory-.
+
+Note also that this algorithm does not require any explicit estimation of the transition probabilities between states: we never need to estimate how likely it was that taking action *a* in state *s* led to state *s'*, which could be intractable (like in card games with lots of possibilities) or outright impossible (in environments based in Physics, for instance). Instead, we just sample the next state over and over, and trust that the law of great numbers will lead us to eventual convergence.
 
 I hope by now you have an intuition of how Tabular Methods work. Now I will show you how we can implement them from scratch in Python, so you too can teach your computer to play games.
 
@@ -168,7 +170,7 @@ After training:
 
 In conclusion, this maze solver is a-mazing!
 
-As next steps, I think it could be fun to add enemies, like in super mario and the agent needs to avoid them (or it is sent back to square one), or maybe add more than one goal but they need to be fetched in a certain order. At any rate, I think this example has been enough to showcase Reinforcement Learning's capabilities, and it should be very easy to edit the Maze class in the GitHub project to add different mini games. 
+As next steps, I think it could be fun to add moving enemies, like in super mario and the agent needs to avoid them (or it is sent back to square one), or maybe add more than one goal but they need to be fetched in a certain order. At any rate, I think this example has been enough to showcase Reinforcement Learning's capabilities, and it should be very easy to edit the Maze class in the GitHub project to add different mini games. 
 
 Feel free to do it and, if you do, make a Pull Request! You'll get credit and a link from me. I just want to see if anyone designs anything fun.
 
@@ -180,7 +182,7 @@ For more complex problems, or ones where partial knowledge of the state suffices
 
 I may write a follow-up showing how to use a convolutional neural network with Policy Gradient for this problem (plus moving obstacles or fog of war) if you guys are interested.
 
-One personal conclusion I arrived to is that bugs are a pain in the tummy. I spent about 2 hours fighting with the code because all the value estimates converged to the right values, but the agent was still moving in a very suboptimal way, until I discovered the policy code was correctly assessing the best action, and then choosing at random every time anyway, which was obviously a bug. I had misnamed a variable. Systematically debugging the code proved the best solution. 
+One personal conclusion I arrived to is that bugs are a big headache. I spent about 2 hours fighting with the code because all the value estimates converged to the right values, but the agent was still moving in a very suboptimal way, until I discovered the policy code was correctly assessing the best action, and then choosing at random every time anyway, which was obviously a bug. I had misnamed a variable. Systematically debugging the code proved the best solution. 
 
 Having added a test for every function in the Maze class was also liberating, as each new change could easily be verified to not break existing features.
 
