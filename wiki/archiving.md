@@ -237,6 +237,7 @@ Source: [Nabeelqu's Advice post](https://nabeelqu.co/advice)
 ### Related Links
 
 - [Sad Infra](https://beepb00p.xyz/sad-infra.html): Imagine if all the data we generate was easily exportable and mergeable instead of being in distributed silos? Here's some tools the author wishes existed.
+- [Edwin Wenink's Zettelkasten](https://www.edwinwenink.xyz/zettelkasten/) with 823 (!) entries.
 
 
 
