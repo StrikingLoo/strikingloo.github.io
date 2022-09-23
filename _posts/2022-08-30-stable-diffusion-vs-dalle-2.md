@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Stable Diffusion: Prompt Examples and Experiments"
+title: "Stable Diffusion: Prompt Guide and Examples"
 description: "I tried similar prompts in Stable Diffusion as I had tried in DALL-E 2 and saw what I got. I also wrote advice on prompt engineering."
 tags: dall-e, image generation, unsupervised learning, AI, art, prompts, stable diffusion, guided diffusion
 date: 2022-08-30
