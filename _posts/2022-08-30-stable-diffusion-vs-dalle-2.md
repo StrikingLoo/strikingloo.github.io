@@ -25,7 +25,7 @@ For use-cases where having a human artist brings the least value, I think text-t
 
 Especially if this site was monetized and the big picture was just there to make you scroll further down and get more engagement and ad views.
 
-![](resources/ai-generated-images/stable-diffusion/selected/2835514280_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-add.jpg){: loading="lazy" style="height:70%; width:70%"}
+![](resources/ai-generated-images/stable-diffusion/selected/2835514280_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-add.jpg){: loading="lazy" }
 
 For cases where the artist's vision matters, like original paintings for decorating my home, or the panels for a graphic novel, I think StableDiffusion or DALL-E 2 for that matter are far away from beating humans. So far.
 
@@ -67,80 +67,80 @@ I will begin with some scenes that I already tried with other models.
 
 > "A digital illustration of a steampunk library with clockwork machines, 4k, detailed, trending in artstation, fantasy vivid colors"
 
-![](resources/ai-generated-images/stable-diffusion/selected/1397887120__A_digital_illustration_of_a_steampunk_library_with_clockwork_machines__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png){: loading="lazy" style="height:60%; width:60%"} 
+![](resources/ai-generated-images/stable-diffusion/selected/1397887120__A_digital_illustration_of_a_steampunk_library_with_clockwork_machines__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png){: loading="lazy"} 
 
-![](resources/ai-generated-images/stable-diffusion/selected/18524077__A_digital_illustration_of_a_steampunk_library_with_clockwork_machines__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png){: loading="lazy" style="height:60%; width:60%"} 
+![](resources/ai-generated-images/stable-diffusion/selected/18524077__A_digital_illustration_of_a_steampunk_library_with_clockwork_machines__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png){: loading="lazy"} 
 
-![](resources/ai-generated-images/stable-diffusion/selected/2528743898__A_digital_illustration_of_a_steampunk_library_with_clockwork_machines__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png){: loading="lazy" style="height:60%; width:60%"} 
+![](resources/ai-generated-images/stable-diffusion/selected/2528743898__A_digital_illustration_of_a_steampunk_library_with_clockwork_machines__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png){: loading="lazy"} 
 
 I like the last one especially.
 
 > "A digital illustration of a steampunk flying machine in the sky with cogs and mechanisms, 4k, detailed, trending in artstation, fantasy vivid colors"
 
-![](resources/ai-generated-images/stable-diffusion/selected/1113348597__A_digital_illustration_of_a_steampunk_flying_machine_in_the_sky_with_cogs_and_mechanisms__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png){: loading="lazy" style="height:60%; width:60%"} 
+![](resources/ai-generated-images/stable-diffusion/selected/1113348597__A_digital_illustration_of_a_steampunk_flying_machine_in_the_sky_with_cogs_and_mechanisms__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png){: loading="lazy"} 
 
-![](resources/ai-generated-images/stable-diffusion/selected/1839163504__A_digital_illustration_of_a_steampunk_flying_machine_in_the_sky_with_cogs_and_mechanisms__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png){: loading="lazy" style="height:60%; width:60%"} 
+![](resources/ai-generated-images/stable-diffusion/selected/1839163504__A_digital_illustration_of_a_steampunk_flying_machine_in_the_sky_with_cogs_and_mechanisms__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png){: loading="lazy"} 
 
-![](resources/ai-generated-images/stable-diffusion/selected/1870656804_A_clockwork_flying_machine_from_the_renaissance__oil_painting_on_canvas__trending_on_artstation_HQ.png){: loading="lazy" style="height:60%; width:60%"} 
+![](resources/ai-generated-images/stable-diffusion/selected/1870656804_A_clockwork_flying_machine_from_the_renaissance__oil_painting_on_canvas__trending_on_artstation_HQ.png){: loading="lazy"} 
 
-![](resources/ai-generated-images/stable-diffusion/selected/2850435724__A_digital_illustration_of_a_steampunk_flying_machine_in_the_sky_with_cogs_and_mechanisms__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png){: loading="lazy" style="height:60%; width:60%"} 
+![](resources/ai-generated-images/stable-diffusion/selected/2850435724__A_digital_illustration_of_a_steampunk_flying_machine_in_the_sky_with_cogs_and_mechanisms__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png){: loading="lazy"} 
 
-![](resources/ai-generated-images/stable-diffusion/selected/79036762_A_digital_illustration_of_a_steampunk_flying_machine__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy" style="height:60%; width:60%"} 
+![](resources/ai-generated-images/stable-diffusion/selected/79036762_A_digital_illustration_of_a_steampunk_flying_machine__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy"} 
 
 For scene composition, it is still struggling. Here are a ferret and a badger (which the model turned into another ferret) fencing with swords.
 
-![](resources/ai-generated-images/stable-diffusion/selected/169820319_A_ferret_and_a_badger_fighting_with_swords__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/169820319_A_ferret_and_a_badger_fighting_with_swords__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy"}
 
 But some classic prompts that had worked for DALL-E 2 and Craiyon worked very well here too.
 
 > A digital Illustration of the Babel tower, 4k, detailed, trending in artstation, fantasy vivid colors  
 
-![](resources/ai-generated-images/stable-diffusion/selected/200385555_A_digital_illustration_of_the_Babel_tower__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/200385555_A_digital_illustration_of_the_Babel_tower__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/3059386456_A_digital_illustration_of_the_Babel_tower__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/3059386456_A_digital_illustration_of_the_Babel_tower__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/3565221494_A_digital_illustration_of_the_Babel_tower__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/3565221494_A_digital_illustration_of_the_Babel_tower__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy"}
 
 > Cluttered house in the woods, anime, oil painting, high resolution, cottagecore, ghibli inspired, 4k
 
-![](resources/ai-generated-images/stable-diffusion/selected/2159513123__Cluttered_house_in_the_woods__anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k_.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/2159513123__Cluttered_house_in_the_woods__anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k_.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/232013801__Cluttered_house_in_the_woods__anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/232013801__Cluttered_house_in_the_woods__anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/2391510358__Cluttered_house_in_the_woods__anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k_.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/2391510358__Cluttered_house_in_the_woods__anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k_.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/499419696__Cluttered_house_in_the_woods__anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k_.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/499419696__Cluttered_house_in_the_woods__anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k_.png){: loading="lazy"}
 
 In my opinion, both prompts yielded better images here than they did for DALLE-2, but you can be the judge of that.
 
 > A digital illustration of a medieval town, 4k, detailed, trending in artstation, fantasy
 
-![](resources/ai-generated-images/stable-diffusion/selected/1099736972__A_digital_illustration_of_a_medieval_town__4k__detailed__trending_in_artstation__fantasy_.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/1099736972__A_digital_illustration_of_a_medieval_town__4k__detailed__trending_in_artstation__fantasy_.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/1381417243__A_digital_illustration_of_a_medieval_town__4k__detailed__trending_in_artstation__fantasy_.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/1381417243__A_digital_illustration_of_a_medieval_town__4k__detailed__trending_in_artstation__fantasy_.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/3707234254__A_digital_illustration_of_a_medieval_town__4k__detailed__trending_in_artstation__fantasy_.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/3707234254__A_digital_illustration_of_a_medieval_town__4k__detailed__trending_in_artstation__fantasy_.png){: loading="lazy"}
 
 > A medieval town with disco lights and a fountain, by Josef Thoma, matte painting trending on artstation HQ, concept art
 
-![](resources/ai-generated-images/stable-diffusion/selected/1607022320_A_medieval_town_with_disco_lights_and_a_fountain__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/1607022320_A_medieval_town_with_disco_lights_and_a_fountain__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/1723824377_A_medieval_town_with_disco_lights_and_a_fountain__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/1723824377_A_medieval_town_with_disco_lights_and_a_fountain__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/2405556329_A_medieval_town_with_disco_lights_and_a_fountain__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/2405556329_A_medieval_town_with_disco_lights_and_a_fountain__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art.png){: loading="lazy"}
 
 > A digital illustration of a treetop house with fireflies, vivid colors, 4k, fantasy \[,/organic]
 
-![](resources/ai-generated-images/stable-diffusion/selected/1176496391_A_digital_illustration_of_a_treetop_house_with_fireflies__vivid_colors__4k__fantasy.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/1176496391_A_digital_illustration_of_a_treetop_house_with_fireflies__vivid_colors__4k__fantasy.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/1795930148_A_digital_illustration_of_a_treetop_house_with_fireflies__vivid_colors__4k__fantasy__organic.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/1795930148_A_digital_illustration_of_a_treetop_house_with_fireflies__vivid_colors__4k__fantasy__organic.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/1864580786_A_digital_illustration_of_a_treetop_house_with_fireflies__vivid_colors__4k__fantasy__organic.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/1864580786_A_digital_illustration_of_a_treetop_house_with_fireflies__vivid_colors__4k__fantasy__organic.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/3103402568_A_digital_illustration_of_a_treetop_house_with_fireflies__vivid_colors__4k__fantasy.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/3103402568_A_digital_illustration_of_a_treetop_house_with_fireflies__vivid_colors__4k__fantasy.png){: loading="lazy"}
 
 ![](resources/ai-generated-images/stable-diffusion/selected/3653447808_A_digital_illustration_of_a_treetop_house_with_fireflies__vivid_colors__4k__fantasy.png
-){: loading="lazy" style="height:60%; width:60%"}
+){: loading="lazy"}
 
 
 
@@ -151,75 +151,75 @@ more digital illustration like air of the images from before.
 
 > A beautiful castle beside a waterfall in the woods, by Josef Thoma, matte painting, trending on artstation HQ
 
-![](resources/ai-generated-images/stable-diffusion/selected/1495253853_A_beautiful_castle_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/1495253853_A_beautiful_castle_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/538903565_A_beautiful_castle_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/538903565_A_beautiful_castle_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/900548929_A_beautiful_castle_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/900548929_A_beautiful_castle_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy"}
 
 > A beautiful mansion with flowered gardens and a fountain, digital illustration, 4k, detailed, bokeh
 
-![](resources/ai-generated-images/stable-diffusion/selected/1190172094_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__digital_illustration__4k__detailed__bokeh.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/1190172094_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__digital_illustration__4k__detailed__bokeh.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/1214903560_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__bokeh.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/1214903560_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__bokeh.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/1460966951_A_beautiful_mansion_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/1460966951_A_beautiful_mansion_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy"}
 
 > A beautiful mansion beside a waterfall in the woods, by josef thoma, matte painting, trending on artstation HQ
 
-![](resources/ai-generated-images/stable-diffusion/selected/1963473302_A_beautiful_mansion_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/1963473302_A_beautiful_mansion_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/258823595_A_beautiful_mansion_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/258823595_A_beautiful_mansion_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy"}
 
 > A beautiful mansion with flowered gardens and a fountain, painting, oil on canvas, 4k, detailed, thomas cole
 
-![](resources/ai-generated-images/stable-diffusion/selected/2766143347_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__thomas_cole.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/2766143347_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__thomas_cole.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/768722554_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__thomas_cole.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/768722554_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__thomas_cole.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/829486673_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__thomas_cole.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/829486673_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__thomas_cole.png){: loading="lazy"}
 
 > A beautiful mansion with flowered gardens and a fountain, painting, oil on canvas, 4k, detailed, bokeh
 
-![](resources/ai-generated-images/stable-diffusion/selected/3425994411_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__digital_illustration__4k__detailed__bokeh.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/3425994411_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__digital_illustration__4k__detailed__bokeh.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/3746536288_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__digital_illustration__4k__detailed__bokeh.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/3746536288_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__digital_illustration__4k__detailed__bokeh.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/3853609176_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__bokeh.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/3853609176_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__bokeh.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/474726138_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__bokeh.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/474726138_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__bokeh.png){: loading="lazy"}
 
 ### Style cue: Steampunk / Clockpunk
 
 > A digital illustration of a steampunk robot \[/with cogs and clockwork y Josef Thoma], 4k, deatiled, trending in artstation, fantasy vivid colors
 
-![](resources/ai-generated-images/stable-diffusion/selected/1173280232_A_digital_illustration_of_a_steampunk_robot__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/1173280232_A_digital_illustration_of_a_steampunk_robot__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/733543897_A_digital_illustration_of_a_steampunk_robot__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/733543897_A_digital_illustration_of_a_steampunk_robot__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/2920284979_A_digital_illustration_of_a_steampunk_robot__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/2920284979_A_digital_illustration_of_a_steampunk_robot__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/1534798598_A_steampunk_robot_with_cogs_and_clockwork__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/1534798598_A_steampunk_robot_with_cogs_and_clockwork__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/2876423299_A_steampunk_robot_with_cogs_and_clockwork__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/2876423299_A_steampunk_robot_with_cogs_and_clockwork__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/2878664672_A_steampunk_robot_with_cogs_and_clockwork__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/2878664672_A_steampunk_robot_with_cogs_and_clockwork__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy"}
 
 ### Recommended Style Cue: Beksinski
 
 I tried adding the name of the painter [Beksinski](https://es.wikipedia.org/wiki/Zdzis%C5%82aw_Beksi%C5%84ski) as a style cue, and the results were mixed: many of them blocked by StableDiffusion's content policy, which I guess means there was something awful in them, but the survivors looked very good.
 
-![](resources/ai-generated-images/stable-diffusion/selected/2118950198_A_pile_of_computers_and_TVs_with_raining_sulfur__beksinski__4k__detailed__oil_on_canvas.png){: loading="lazy" style="height:60%; width:60%"} 
+![](resources/ai-generated-images/stable-diffusion/selected/2118950198_A_pile_of_computers_and_TVs_with_raining_sulfur__beksinski__4k__detailed__oil_on_canvas.png){: loading="lazy"} 
 
-![](resources/ai-generated-images/stable-diffusion/selected/2558887622_A_pile_of_computers_and_TVs__beksinski__4k__detailed__oil_on_canvas.png){: loading="lazy" style="height:60%; width:60%"} 
+![](resources/ai-generated-images/stable-diffusion/selected/2558887622_A_pile_of_computers_and_TVs__beksinski__4k__detailed__oil_on_canvas.png){: loading="lazy"} 
 
-![](resources/ai-generated-images/stable-diffusion/selected/3319505391_A_pile_of_computers_and_TVs_with_raining_sulfur__beksinski__4k__detailed__oil_on_canvas.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/3319505391_A_pile_of_computers_and_TVs_with_raining_sulfur__beksinski__4k__detailed__oil_on_canvas.png){: loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/3472481486_A_dark_gentleman_surrounded_by_piles_of_skulls_in_fog_hell__beksinski__4k__detailed__oil_on_canvas.png){: loading="lazy" style="height:60%; width:60%"} 
+![](resources/ai-generated-images/stable-diffusion/selected/3472481486_A_dark_gentleman_surrounded_by_piles_of_skulls_in_fog_hell__beksinski__4k__detailed__oil_on_canvas.png){: loading="lazy"} 
 
-![](resources/ai-generated-images/stable-diffusion/selected/37591142_A_pile_of_computers_and_TVs_with_raining_sulfur__beksinski__4k__detailed__oil_on_canvas.png){: loading="lazy" style="height:60%; width:60%"} 
+![](resources/ai-generated-images/stable-diffusion/selected/37591142_A_pile_of_computers_and_TVs_with_raining_sulfur__beksinski__4k__detailed__oil_on_canvas.png){: loading="lazy"} 
 
-![](resources/ai-generated-images/stable-diffusion/selected/3790635847_An_astronaut_being_surrounded_by_eldritch_tentacles_in_the_void_of_space_with_stars__beksinski__4k__detailed__oil_on_canvas.png){: loading="lazy" style="height:60%; width:60%"}  
+![](resources/ai-generated-images/stable-diffusion/selected/3790635847_An_astronaut_being_surrounded_by_eldritch_tentacles_in_the_void_of_space_with_stars__beksinski__4k__detailed__oil_on_canvas.png){: loading="lazy"}  
 
 
 ### Anthropomorphic Animals (Mostly dressed as adventurers)
@@ -244,13 +244,13 @@ Another thing that I love about StableDiffusion (Which DALL-E 2 also gets right)
 
 Because of that, and my love for moss, I made many forest scenes with abundant growth and moss. Many of these look like a Magic: the Gathering illustration. I will not post the prompts as each one was different, but they mostly followed my digital fantasy illustration template.
 
-![](resources/ai-generated-images/stable-diffusion/selected/1394321457_A_giant_boar_made_of_moss_and_azaleas_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy" style="height:60%; width:60%"}
-![](resources/ai-generated-images/stable-diffusion/selected/1537772634_A_Centaur_in_a_glade_under_the_stars_by_Zdzis_aw_Beksi_ski__Gorgeous_digital_painting_with_sober_colours_amazing_art_mesmerizing__captivating__artstation_3-centaur-xx.png){: loading="lazy" style="height:60%; width:60%"}
-![](resources/ai-generated-images/stable-diffusion/selected/3401078383_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy" style="height:60%; width:60%"}
-![](resources/ai-generated-images/stable-diffusion/selected/3650187890_A_giant_fire_bear_with_moss_and_azaleas_in_forest__fantasy__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy" style="height:60%; width:60%"}
-![](resources/ai-generated-images/stable-diffusion/selected/2835514280_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-add.png){: loading="lazy" style="height:60%; width:60%"}
-![](resources/ai-generated-images/stable-diffusion/selected/738606398_A_magnificent_elk_made_of_azaleas_and_moss_in_the_woods__fantasy__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy" style="height:60%; width:60%"}
-![](resources/ai-generated-images/stable-diffusion/selected/975594345_A_giant_boar_made_of_moss_and_azaleas_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy" style="height:60%; width:60%"}
+![](resources/ai-generated-images/stable-diffusion/selected/1394321457_A_giant_boar_made_of_moss_and_azaleas_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy"}
+![](resources/ai-generated-images/stable-diffusion/selected/1537772634_A_Centaur_in_a_glade_under_the_stars_by_Zdzis_aw_Beksi_ski__Gorgeous_digital_painting_with_sober_colours_amazing_art_mesmerizing__captivating__artstation_3-centaur-xx.png){: loading="lazy"}
+![](resources/ai-generated-images/stable-diffusion/selected/3401078383_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy"}
+![](resources/ai-generated-images/stable-diffusion/selected/3650187890_A_giant_fire_bear_with_moss_and_azaleas_in_forest__fantasy__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy"}
+![](resources/ai-generated-images/stable-diffusion/selected/2835514280_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-add.png){: loading="lazy"}
+![](resources/ai-generated-images/stable-diffusion/selected/738606398_A_magnificent_elk_made_of_azaleas_and_moss_in_the_woods__fantasy__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy"}
+![](resources/ai-generated-images/stable-diffusion/selected/975594345_A_giant_boar_made_of_moss_and_azaleas_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy"}
 
 
 StableDiffusion was the first AI art model where I have successfully got a centaur. Not a deformed monstrosity, not a horse, not a weird human. A real centaur! So that made me happy and I had to share it.
@@ -264,7 +264,7 @@ These are the last ones, I swear!
 
 Before we reach the end, I want to raise a concern and propose a challenge. No matter what I tried, I could *not* make either DALL-E 2, or StableDiffusion make characters in the style of Jojo's Bizarre Adventure (or Araki, in general). I tried the obvious style cues and others, and none worked. So if any of you manages to make one of these models draw Spongebob Squarepants in the style of Jojo's, or any other recognizable character, you will get a thousand internet points from me.
 
-### Appendix A: StableDiffusion Prompt Guide
+### Appendix A: Stable Diffusion Prompt Guide
 In general, a good prompt will have the form:
 
 > "A *\[type of picture]* of a *\[main subject, mostly composed of adjectives and nouns -avoid verbs-]*, *\[style cues]\**"
