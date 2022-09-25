@@ -10,9 +10,11 @@ is_blog: true
 	<ul class="posts">
 	  {% for post in site.posts limit: 10 %}
 	  {% if post.sitemap %}
+	  {% if post.importance > 4 %}
 <li class='post-item' style='text-align: center;'><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <br/> <span><i>{{ post.date | date_to_string }}</i></span>
 <br/><p><i>{{ post.description }}</i></p>
 </li>
+	    {% endif %}
 	    {% endif %}
 	  {% endfor %}
 	</ul>

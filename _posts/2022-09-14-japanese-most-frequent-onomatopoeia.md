@@ -5,7 +5,7 @@ description: "I looked into the most frequently used onomatopoeia in the Japanes
 tags: statistics, Japanese, data, languages
 date: 2022-09-14
 twitter_image: "https://strikingloo.github.io/resources/post_image/temple.jpg"
-importance: 5
+importance: 3
 sitemap: true
 ---
 
