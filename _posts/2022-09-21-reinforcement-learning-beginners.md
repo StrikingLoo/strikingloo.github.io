@@ -202,4 +202,13 @@ What other big things do you think could be automated by RL and how soon do you 
 
 If you liked this post, consider reading my summary of [Introduction to Reinforcement Learning](/wiki/reinforcement-learning-sutton), and if you prefer to see more Python code or Optimization discussion, see my post on [Ant Colony Optimization](/ant-colony-optimization-tsp).
 
+## Related Articles
+
+From the wiki:
+
+- [Introduction to Reinforcement Learning (book notes)](/wiki/reinforcement-learning-sutton) for a thorough review of the subject as I learned it.
+- A quick intro and roadmap in [Reinforcement Learning](/wiki/reinforcement-learning-base).
+- My article on [Proximal Policy Optimization](/wiki/proximal-policy-optimization) if you are looking for something more advanced. It covers a recent paper by OpenAI describing the current state of the art (as of 2022).
+
+
 _If this post was useful or interesting, please share it on social media!_
