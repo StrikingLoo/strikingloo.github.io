@@ -38,6 +38,8 @@ Big Notes encompass multiples sources, but usually form around a MOOC (_Massive 
 - **[Unsupervised Learning, Berkeley MOOC](/wiki/unsupervised-learning-berkeley)**: An amazing course covering different techniques of Unsupervised Deep Learning, generative models, GANs, VAEs, etc.
 - **[Recommender Systems](/wiki/recommender-systems)**: A summary of the Google course on the subject (under TensorFlow documentation), plus a few other articles covering Matrix Factorization and colaborative filtering.
 - **[Reinforcement Learning, an Introduction by Richard Sutton](/wiki/reinforcement-learning-sutton)**: My notes and excerpts from the book, covering parts I and II (part III is examples and related topics). I summarize Dynamic Programming, Monte Carlo, Temporal Difference, Function Approximation and n-step methods, along with all their combinations.
+- **[Benjamin Franklin's Autobiography](https://strikingloo.github.io/wiki/benjamin-franklin-autobiography)** which satisfied my need to read 18th century scholars.
+- **[The Clock of the Long Now](https://strikingloo.github.io/wiki/clock-of-the-long-now)**: A book that supports and exposes the long term view. A foundational text for long-termism, and one of the texts that inspired Gwern to build his site. Also a very engaging and fast read, being a collection of short essays on diverse topics all playing around the idea of thinking of the very long term.
 
 ## Papers
 
@@ -59,5 +61,6 @@ If I read a paper, find it interesting, and think I will want to onsider it agai
 - **[Proximal Policy Optimization](/wiki/proximal-policy-optimization)**: My description of the State-of-the-Art Reinforcement Learning Algorithm proposed by OpenAI and a summary of the ideas proposed in its paper.
 - **[Fast String Searching](/wiki/fast-string-searching)**: Describes the string search algorithm underpinning grep and others. Not ML, but very interesting and a fun little algorithm.
 - **[Diffusion Language Models](/wiki/diffusion-LM)**: A Stanford paper describing a new architecture and training method to make language models that are diffusion based instead of autoregressive. They allow for more controlled text synthesis albeit sacrificing perplexity (so far).
+- **[Brain Activity to Speech](/wiki/brain-activity-to-speech)**: a paper by Facebook Research where an embedding model is trained using a contrastive loss -like CLIP's- to align audio and brain (MEG and EEG) recordings, achieving lossy brain reading to audio conversion. They use non-invasive brain scanning methods.
 
 If you have anything to say about one of the articles, you find an error in one of them or just like something you read and want to chat, don't be afraid to tweet at me or send me an email. I will reply kindly, and be happy if you reach out! I also answer DMs on Reddit.
