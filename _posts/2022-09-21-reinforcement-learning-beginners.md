@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Reinforcement Learning for Beginners - Maze-solving with Sarsa"
-description: "Introduction to how Reinforcement Learning works, where I explain the Sarsa algorithm and code an example from scratch and teach an AI agent to solve mazes."
+title: "Reinforcement Learning for Beginners: Coding a Maze-solving Agent from Scratch"
+description: "Introduction to how Reinforcement Learning works, where I explain the Sarsa algorithm, code an example from scratch in Python, and teach an AI to solve mazes."
 tags: programming, python, machine learning, reinforcement learning
 date: 2022-09-21
 twitter_image: "https://strikingloo.github.io/resources/ai-generated-images/babel1.png"
