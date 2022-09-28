@@ -63,7 +63,7 @@ In my opinion these details can steer the model even better than many vague cues
 
 ### Prompt Examples and Experiments
 
-I will begin with some scenes that I already tried with other models.
+I will begin with some scenes that I already tried with other models. These are some of the stable diffusion prompts that I liked best.
 
 > "A digital illustration of a steampunk library with clockwork machines, 4k, detailed, trending in artstation, fantasy vivid colors"
 
@@ -91,7 +91,7 @@ For scene composition, it is still struggling. Here are a ferret and a badger (w
 
 ![](resources/ai-generated-images/stable-diffusion/selected/169820319_A_ferret_and_a_badger_fighting_with_swords__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy"}
 
-But some classic prompts that had worked for DALL-E 2 and Craiyon worked very well here too.
+But some of the best prompts that had worked for DALL-E 2 and Craiyon worked very well with stable diffusion too.
 
 > A digital Illustration of the Babel tower, 4k, detailed, trending in artstation, fantasy vivid colors  
 
@@ -265,7 +265,7 @@ These are the last ones, I swear!
 Before we reach the end, I want to raise a concern and propose a challenge. No matter what I tried, I could *not* make either DALL-E 2, or StableDiffusion make characters in the style of Jojo's Bizarre Adventure (or Araki, in general). I tried the obvious style cues and others, and none worked. So if any of you manages to make one of these models draw Spongebob Squarepants in the style of Jojo's, or any other recognizable character, you will get a thousand internet points from me.
 
 ### Appendix A: Stable Diffusion Prompt Guide
-In general, a good prompt will have the form:
+In general, a the best stable diffusion prompts will have this form:
 
 > "A *\[type of picture]* of a *\[main subject, mostly composed of adjectives and nouns -avoid verbs-]*, *\[style cues]\**"
 
@@ -277,7 +277,7 @@ Style cues can be anything you want to condition the image on. I wouldn't add to
 
 Additionally, adding the name of an artist as a cue will make the picture look like something that artist made, though it may condition the image's contents, especially if that artist had very narrow themes (Beatrix Potter gets you spurious rabbits, for instance). 
 
-For a very detailed guide to prompt crafting, see [A Guide to Writing Prompts for Text-to-image AI](https://docs.google.com/document/d/17VPu3U2qXthOpt2zWczFvf-AH6z37hxUbvEe1rJTsEc/edit) if you feel like you want to read more.
+For a very detailed guide to crafting the best stable diffusion prompts, see [A Guide to Writing Prompts for Text-to-image AI](https://docs.google.com/document/d/17VPu3U2qXthOpt2zWczFvf-AH6z37hxUbvEe1rJTsEc/edit) if you feel like you want to read more.
 
 ## Appendix B: Resources and Links
 
