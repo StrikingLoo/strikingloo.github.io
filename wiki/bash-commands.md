@@ -110,3 +110,11 @@ To find a book if it's on the public domain, easily look for it on archive.org w
 ```
 site:archive.org intitle:full/text/of intext:Lovecraft
 ```
+
+---
+
+### Values for *rel* attribute in anchor tags.
+
+- *rel="noopener"* you use on all links opening in new tabs using the target *_blank*. There are security implications if you don’t use the *noopener* value on your links opening in new tabs. A malicious attacker can use the window.opener object to change the content and location of the originating page.
+- *rel="noreferrer"* can serve a similar purpose as the *noopener*, especially in older browsers. Hence, it makes sense to use them both. Additionally, *noreferrer* can affect your analytics and report traffic as **direct instead of referral**.
+- *rel="nofollow"* will inform search engines **not to pass the link juice** to the linked page, and it will not pass PageRank. You can consider it as a value that is used when you want to link to another page but without "endorsing" it. It is the only rel value with a tangible effect on SEO efforts.
