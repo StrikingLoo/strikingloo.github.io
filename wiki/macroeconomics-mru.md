@@ -197,9 +197,9 @@ Some money supplies are: **MB** (paper + reserve deposits -banks' checking accou
 
 In **fractional reserve banking**, banks need to hold a certain % of savings in their vaults at all times. In the USA that fraction is currently 10%, called the reserve ratio. This also affects the money supply.
 
-The **Money multiplier** is the inverse of the reserve ratio, and due to exponential groth dictates how much M1 money emerges from an amount of MB money. E.g. if I deposit 100$ in my account, and the bank keeps 10% but lends 90%, which is deposited in banks, so it is lent again, etc.
+The **Money multiplier** is the inverse of the reserve ratio, and due to exponential growth dictates how much M1 money emerges from an amount of MB money. E.g. I deposit 100$ in my account, and the bank keeps 10% but lends 90%, which is deposited in banks, so it is lent again, etc.
 
-The Fed can move interest rates, especially for Federal Funds rate (how much banks are paid for lending overnight to other banks so they meet deposits requirements). The biggest way the Fed regulated interest rates prior to 2008 was through Expansionary Open Market Operations OMO: buying treasury bills from banks. This stimulates the economy by making it easier for banks to loan, reducing interest rates.
+The Fed can move interest rates, especially for Federal Funds rate (how much banks are paid for lending overnight to other banks so they meet deposits requirements). The biggest way the Fed regulated interest rates prior to 2008 was through Expansionary Open Market Operations (OMO): buying treasury bills from banks. This stimulates the economy by making it easier for banks to loan, reducing interest rates.
 
 Other loan rates adjust to the federal funds rate noisily.
 
@@ -207,11 +207,11 @@ Other loan rates adjust to the federal funds rate noisily.
 
 The fed also started paying **interest rates on reserves**, increasing the incentives for banks to keep bigger reserves and stabilizing the economy, but also disincentivizing investments.
 
-**Repurchase and reverse purchase agreements** are like overnight OMO (in OMO the t bills are just bought 'permanently', in repos it is done for a night). This also regulates interest rates and market temperature, as buying more bonds will incentivize investing in them in lieu of other riskier investments.
+**Repurchase and reverse purchase agreements** are like overnight OMO (in OMO the t-bills are just bought 'permanently', in repos it is done for a night). This also regulates interest rates and market temperature, as buying more bonds will incentivize investing in them in lieu of other riskier investments.
 
-In a panic, there is a trade-off between preventing systemic risk and checking moral hazard: do I bial out insolvent banks which took too much risk, deemed too big to fail, to prevent every domino from falling down? Will that incentivize more risk-taking in the future, and signal to banks that they will be bailed out again in the next panic, increasing the chances of a crisis in the first place?
+In a panic, there is a trade-off between preventing systemic risk and checking moral hazard: do I bail out insolvent banks which took too much risk, deemed "too big to fail", to prevent every domino from falling down? Will that incentivize more risk-taking in the future, and signal to banks that they will be bailed out again in the next panic, increasing the chances of a crisis in the first place?
 
-## Fiscal Policy
+## Fiscal Policy
 
 Fiscal Policy arguably aims at **reducing the impact of the booms and busts of the business cycle.**
 
