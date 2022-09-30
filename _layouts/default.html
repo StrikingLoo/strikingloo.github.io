@@ -106,5 +106,9 @@
 			{% if page.uses_mathjax %}
 			<script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 			{% endif %}
+
+			{% if page.layout == "post" %}
+        	<link rel="stylesheet" type="text/css" href="/css/non-critical-post-min.css">
+        	{% endif %}
 		</body>
 	</html>

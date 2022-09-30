@@ -55,7 +55,6 @@ h3, h3 a {
     line-height: 1.5;}
 h1,h2,h3, h1 a, h2 a, h3 a {
     font-weight: bold;
-    position: relative;
     color:var(--header-anchor-color);
 }
 
@@ -65,7 +64,6 @@ footer {
 }
 
 nav ul, footer ul {
-    font-family:'Roboto','Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;

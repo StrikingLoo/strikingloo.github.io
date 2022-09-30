@@ -6,3 +6,4 @@ cleancss -o main-min.css main.css
 cleancss -o wiki-min.css main-wiki.css
 cleancss -o post-min.css main-post.css
 cleancss -o blog-min.css main-blog.css
+cleancss -o non-critical-post-min.css non-critical-post.css
