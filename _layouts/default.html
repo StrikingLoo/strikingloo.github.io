@@ -108,7 +108,8 @@
 			{% endif %}
 
 			{% if page.layout == "post" %}
-        	<link rel="stylesheet" type="text/css" href="/css/non-critical-post-min.css">
+			<link rel="preload" href="/css/non-critical-post-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+			<noscript><link rel="stylesheet" href="/css/non-critical-post-min.css"></noscript>
         	{% endif %}
 		</body>
 	</html>
