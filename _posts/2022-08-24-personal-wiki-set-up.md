@@ -49,7 +49,7 @@ This is what it will look like in the beginning:
 
 ![](resources/post_image/pw_screen1.png){: loading="lazy" alt="screenshot of personal wiki"}
 
-It's a stripped out version of this same website, except I changed the palette to something greener (because it's supposed to be a garden, get it?).
+It's a stripped out version of this same website, except I changed the palette to something greener (because it's supposed to be a garden, get it?). I made it responsive so it looks well on mobile.
 
 All of the style and design is packed into a file called `css/main.css`, which you are free to edit and customize as you prefer, until it suits your aesthetic sensibilities. Right now it has a very simple design, but you can do whatever you want to it like changing the font or color palette, background design, etc. 
 
