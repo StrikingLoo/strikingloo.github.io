@@ -35,7 +35,7 @@ Say we want to give a 95% confidence interval for the mean of a variable, and we
 
 More concretely, if we wanted the 95% confidence interval for the mean of a variable _Y_, and we have N instances of that variable, we would take M smaller samples (of k elements each), compute the mean for each of them, then take the p2.5 and p97.5 for those means. We could then say we are 95% sure the true mean lies between those two percentile values. If we wanted to be 99% certain, we would take the p0.5 and p99.5, and so on. 
 
-Typically, _k_ is a very small number (like 30 or 100), and _M_ is bigger (like \~N/k).
+Typically, _k_ is a small number (like 30 or 100), and _M_ is bigger (like \~N/k).
 
 So, in case we want to add confidence intervals to our predictions or measurements, or we want to check how stable a prediction is over time / different population segments, bootstrapping may be the solution for us.
 

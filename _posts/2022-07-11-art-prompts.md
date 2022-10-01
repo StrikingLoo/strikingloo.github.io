@@ -9,7 +9,7 @@ sitemap: true
 
 Ever since [DALL-E](https://openai.com/blog/dall-e/) came out in January 2021, or even before that with [PixelRNN](https://arxiv.org/pdf/1601.06759.pdf), I've found generative models, especially for images, amazing. But what I was interested in was how could I write better prompts that yielded the most beautiful images?
 
-The idea of text-to-image generators like [CLIP](/wiki/clip) or [GLIDE](/wiki/glide) is even more astounding, and I love being able to play with them and trying to get a glimpse of the way they "perceive" textual and image inputs. I think interpretability is a very interesting field of study, and understanding a model's representations may yield ideas for better models in the future (though usually the simplest way to make a better model is training a bigger one with more compute).
+The idea of text-to-image generators like [CLIP](/wiki/clip) or [GLIDE](/wiki/glide) is even more astounding, and I love being able to play with them and trying to get a glimpse of the way they "perceive" textual and image inputs. I think interpretability is a fascinating field of study, and understanding a model's representations may yield ideas for better models in the future (though usually the simplest way to make a better model is training a bigger one with more compute).
 
 Giving a model a prompt to generate an image out-of becomes sort of addictive, and I've spent longer than I am proud to admit fiddling around with these. Here are some of the images I made with [EleutherAI's](https://www.eleuther.ai/) `.imagine` model (which I think is a VQVAE like DALL-E) and some I made using everyone's favorite viral text-to-image generator, [DALL-E Mini](https://huggingface.co/spaces/dalle-mini/dalle-mini) (a small open source version of DALL-E 2, a guided diffusion model with extra steps).
 
@@ -21,7 +21,7 @@ I found the comparisons where I used the same prompt in both models to be partic
 
 I also hope seeing these prompts can give you a small hint of how to make better prompts for your own ideas (usually, just appending 'digital painting' or 'oil painting' and 'artstation' in the end will do half of the trick).
 
-My general idea is that DALL-E mini can generate very satisfying results when the prompt is well-constructed enough, if asked to generate images of inanimate objects, landscapes, buildings and so on. However, illustrations containing animals, people, humanoids or anything that moves, or prompts that ask for a specific action or use verbs, usually get poor results. Bigger models usually deal better with humanoid or animal shapes, and construct scenes better when they include action.
+My general idea is that DALL-E mini can generate satisfying results when the prompt is well-constructed enough, if asked to generate images of inanimate objects, landscapes, buildings and so on. However, illustrations containing animals, people, humanoids or anything that moves, or prompts that ask for a specific action or use verbs, usually get poor results. Bigger models usually deal better with humanoid or animal shapes, and construct scenes better when they include action.
 
 Feel free to steal any of these images and use them for anything, or share them on social media. I mostly tried prompts that dealt with Biblical or mythological themes, because for some reason I found most people didn't do those sorts of prompts as much (or maybe because I'm a big fantasy/D&D geek).
 
@@ -34,9 +34,9 @@ Usually, what I do is write what I want (adjectives + nouns usually get better r
 - "Gorgeous/amazing/beautiful" + "digital painting/oil painting/digital art/canvas/3d render" + any of "unreal engine/unity engine"
 - Then I append "style clues" like "anime/Picasso/Giger -always good results-/Junji Ito"
 
-Using this simple framework often gets me results close to what I want. If you have any tips on how to do better, tell me!
+Using this simple framework often gets me results close to what I want. If you have any tips on how to do better, tell me on Twitter.
 
-For example, this is a prompt that gave me very good results in Craiyon.
+For example, this is a prompt that gave me great results in Craiyon.
 
 'Cluttered house in the woods \| anime oil painting high resolution cottagecore ghibli inspired 4k'
 
@@ -52,7 +52,7 @@ Other DALL-E/craiyon prompt templates for future use:
 - Low-poly render of X; high resolution, 4k
 - A digital illustration of X, 4k, detailed, trending in artstation, fantasy vivid colors
 
-That last one has worked very well for me for almost any prompt that describes a simple static scene (like houses, cities, landscapes or interiors) or a single humanoid/animal/plant. You can append styles to these in the end too (Eldritch, disco, lo-fi, etc.).
+That last one has worked well for me for almost any prompt that describes a simple static scene (like houses, cities, landscapes or interiors) or a single humanoid/animal/plant. You can append styles to these in the end too (Eldritch, disco, lo-fi, etc.).
 
 ## VQVAE (EleutherAI)
 

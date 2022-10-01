@@ -42,9 +42,9 @@ Now that’s done, I hope you’re motivated, because it’s time to get our han
 
 K-Means Clustering receives a single hyperparameter: _k_, which specifies how many clusters we want to categorize our data into.
 
-The clusters won’t necessarily all have the same quantity of instances. However, they should each characterize a specific subset of our data. How will we achieve this? Let’s find out!
+The clusters won’t necessarily all have the same quantity of instances. However, they should each characterize a specific subset of our data. How will we achieve this? Let’s find out.
 
-First of all, the input for this algorithm needs to be a set of vectors. That is, all your features should be numerical, and in the same order. If you had any categorical features, my advice would be to use one-hot encode: convert each categorical variable into a vector of n-elements: one for each possible category, all set to 0 except the one for the given category.
+First, the input for this algorithm needs to be a set of vectors. That is, all your features should be numerical, and in the same order. If you had any categorical features, my advice would be to use one-hot encode: convert each categorical variable into a vector of n-elements: one for each possible category, all set to 0 except the one for the given category.
 
 What the algorithm will do is initiate _k_ random ‘centroids’ -points in the space defined by the dimensions of the dataset’s elements-, and then it will:
 
@@ -137,7 +137,7 @@ At first I wanted to check if the results made any sense. This was my first time
 If you’re interested in the results, here’s a [separate article about them](https://towardsdatascience.com/magic-the-gathering-meets-data-science-2a0367c724fe). I just didn’t want to mix my M:tG findings with this tutorial so that readers who are into Data Science but not into the game won’t be bored.
 In case you’re interested, I later wrote about a completely different application for K-Means Clustering: [image filters](https://dev.to/strikingloo/k-means-clustering-with-dask-image-filters-for-pictures-of-kittens-ip7).
 
-I also strongly encourage you to download the notebook from the GitHub project and play with it, it’s honest fun!
+I also strongly encourage you to download the notebook from the GitHub project and play with it, it’s honest fun.
 
 ### Card Recommendations using K-Means Clustering
 
@@ -147,7 +147,7 @@ There are many ways we could have approached the recommendation problem: given a
 
 Think for a moment, how would you use the clusters data to generate the recommendations? I’m sure you could come up with a few ideas.
 
-If what you came up with is not what I’m about to do, please tell me in the comments! Creativity is more fun if it’s a team effort, and I really want to see what my dear readers come up with.
+If what you came up with is not what I’m about to do, please tell me. Creativity is more fun if it’s a team effort, and I really want to see what my dear readers come up with.
 
 Finally, here’s what I did:
 {% raw %}<script src="https://gist.github.com/StrikingLoo/d325dea2347f5f48cc0e4c16c2ef5cec.js"></script>{% endraw %}
@@ -156,7 +156,7 @@ As you can see, I omit how many times a card appears on a given deck for this pa
 
 I then return the cards with the most similar relative apparitions (defined by Euclidian distance).
 
-If you’re a Magic: The Gathering player, try out this code and see the results, it makes pretty good (though kinda conservative) recommendations!
+If you’re a Magic: The Gathering player, try out this code and see the results. It makes reasonably good (though kind of conservative) recommendations.
 
 ## Conclusion
 
@@ -164,12 +164,12 @@ K-Means clustering allowed us to approach a domain without really knowing a whol
 
 It let us do that by learning the underlying patterns in the data for us, only asking that we gave it the data in the correct format.
 
-I encourage you to play with the code here, and try making your own recommendation’s system with a different Dataset, or solving some other problem. If you do, please show me your results! I wanna see what you come up with.
+I encourage you to play with the code here, and try making your own recommendation’s system with a different Dataset, or solving some other problem. If you do, please show me your results. I wanna see what you come up with.
 
 In the future, I’d like to do this same analysis using non-professional decks. That way, I could make a recommendations engine for casual players (like me). I think it would be cool if it worked with almost any card, and not just 642.
 
 If you want to delve deeper into Unsupervised Learning, I can’t recommend [Introduction to Statistical Learning](https://amzn.to/3RSmJwT) enough. That’s the book I learned about K-Means Clustering from. It’s also the book thanks to which I finally understood Boosted Trees, though that’s a tale for another article.
 
-_Liked this article? Then please follow me on_ [_Twitter_](https://www.twitter.com/strikingloo), _and consider helping me_ [_maintain my website_](https://www.buymeacoffee.com/strikingloo)_. Let me know if you found the article helpful, or if any of it sounds wrong or doesn’t work!_
+_Liked this article? Then please follow me on_ [_Twitter_](https://www.twitter.com/strikingloo). Let me know if you found the article helpful, or if any of it sounds wrong or doesn’t work._
 
 Happy coding.

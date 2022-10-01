@@ -67,7 +67,7 @@ Thus emerge the Bellman equations, which predict the value of each state given t
 
 ![Bellman equation for state value](/wiki/image_rl/Screen_Shot_2022-06-16_at_11-04-16.png){: loading="lazy"}
 
-If we can make the Bellman equations converge for a system, then we've solved our Reinforcement Learning problem! The good news is, these converge if we use iterative linear equation solvers like Gauss-Seidel. The bad news is, for most interesting problems the state-space is so big, we can't just plug the matrix into a linear solver and call it a day, as it would take ages for it to converge.
+If we can make the Bellman equations converge for a system, then we've solved our Reinforcement Learning problem. The good news is, these converge if we use iterative linear equation solvers like Gauss-Seidel. The bad news is, for most interesting problems the state-space is so big, we can't just plug the matrix into a linear solver and call it a day, as it would take ages for it to converge.
 
 Instead, we resort to focusing our estimations into the values of states we tread on more often, like the first turns of a game, or the most likely moves an opponent would make. We will update a state's value as often as we land on it, thus naturally prioritizing the most likely states.
 
@@ -124,9 +124,9 @@ The main loop (minus the prints and after cleaning). I used an *α* value of 0.5
 
 I polished them a bit compared with the ones on GitHub, for clarity's sake.
 
-I ran the code for multiple mazes, and all of the results were positive!
+I ran the code for multiple mazes, and was happy to see all of the results were positive.
 
-Here is our agent solving a very simple maze: a wall running across the middle. The agent is the blue square, the goal -an apple!- is the red one.
+Here is our agent solving a very simple maze: a wall running across the middle. The agent is the blue square, the goal -an apple- is the red one.
 
 Before training:
 ![](resources/post_image/first_iter_1.gif){: loading='lazy' style="width:30%;height:30%"}
@@ -172,7 +172,7 @@ In conclusion, this maze solver is a-mazing!
 
 As next steps, I think it could be fun to add moving enemies, like in Super Mario, and the agent needs to avoid them (or it is sent back to square one), or maybe add more than one goal but they need to be fetched in a certain order. At any rate, I think this example has been enough to showcase Reinforcement Learning's capabilities, and it should be very easy to edit the Maze class in the GitHub project to add different mini games. 
 
-Feel free to do it and, if you do, make a Pull Request! You'll get credit and a link from me. I just want to see if anyone designs anything fun.
+Feel free to do it and, if you do, make a Pull Request. You'll get credit and a link from me. I just want to see if anyone designs anything fun.
 
 ## Conclusions
 
@@ -194,11 +194,11 @@ As for speculation: I think one area that has been researched lately and has a l
 - The new candidates generated through these genetic algorithms were used to train a new autoregressive language model, which now could create plausible candidates.
 - That last model was trained through Reinforcement Learning to make new candidates **conditioned on novel environments not seen by the previous models**, and rewarded with that same metric.
 
-Now in this particular paper, the task was sodaracing, a videogame where a simple Physics engine is used to create robots that move as far as possible in the X axis. But imagine applying this to other things! Automatically A/B testing the design of a blog, the layout of products in different branches of supermarkets to increase volume sold, or even military applications. Let alone making the jump from sodaracing to real world robots.
+Now in this particular paper, the task was sodaracing, a videogame where a simple Physics engine is used to create robots that move as far as possible in the X axis. But imagine applying this to other things: automatically A/B testing the design of a blog, the layout of products in different branches of supermarkets to increase volume sold, or even military applications. Let alone making the jump from sodaracing to real world robots.
 
 I think the capabilities Reinforcement Learning is about to unlock are enormous, and not enough attention is being put into this field. Additionally, Richard Sutton's team recently released a new [long-term strategy for AI](https://arxiv.org/pdf/2208.11173.pdf) with a focus on Reinforcement Learning, which proposes a roadmap towards AGI -human-level general AI-. I am not sure how far we are from that, but I think it deserves a big chunk of our attention.
 
-What other big things do you think could be automated by RL and how soon do you think they will impact the market? Let me know! 
+What other big things do you think could be automated by RL and how soon do you think they will impact the market? Let me know.
 
 If you liked this post, consider reading my summary of [Introduction to Reinforcement Learning](/wiki/reinforcement-learning-sutton), and if you prefer to see more Python code or Optimization discussion, see my post on [Ant Colony Optimization](/ant-colony-optimization-tsp).
 
@@ -211,4 +211,4 @@ From the wiki:
 - My article on [Proximal Policy Optimization](/wiki/proximal-policy-optimization) if you are looking for something more advanced. It covers a recent paper by OpenAI describing the current state of the art (as of 2022).
 
 
-_If this post was useful or interesting, please share it on social media!_
+_If this post was useful or interesting, please share it on social media._

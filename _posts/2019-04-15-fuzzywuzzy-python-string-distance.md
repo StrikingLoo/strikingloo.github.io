@@ -157,11 +157,11 @@ fuzz.token_set_ratio("Lord the Rings of",
 
 ## Conclusions
 
-Python's FuzzyWuzzy library can be a very useful tool to have under your belt. Both for customer’s names matching, or acting as a poor man’s word embedding, it can save you a lot of trouble or help with your Machine Learning model’s feature engineering.
+Python's FuzzyWuzzy library can be a useful tool to have under your belt. Both for customer’s names matching, or acting as a poor man’s word embedding, it can save you a lot of trouble or help with your Machine Learning model’s feature engineering.
 
 However, since it requires preprocessing (like turning both strings to lowercase) and doesn’t take synonyms into account, it may not be the best solution for cases where actual NLP or [Clustering methods](/wiki/clustering) may be needed.
 
-I hope you’ve found this article helpful, and let me know if you find another use for FuzzyWuzzy in your job!
+I hope you’ve found this article helpful, and let me know if you find another use for FuzzyWuzzy in your job.
 
 _Follow me on_ [_Twitter_](http://www.twitter.com/strikingloo) to stay up to date with more Python tutorials, tips and tricks._
 

@@ -19,7 +19,7 @@ I've tried multiple different prompts, style cues, etc., and I'll keep adding th
 
 To anyone on the fence about trying DALL-E 2, I can genuinely recommend it. Prompting the model and seeing what it comes up with is almost addictive, and creates this beautiful dopamine feedback loop that just keeps you glued to your keyboard until you've spent all your credits. Or at least that's how it went for me.
 
-I personally like asking these models for fantasy illustrations, landscapes and that kind of stuff, as I find that area less explored than, say, hyper realistic renders or popular media characters. However given **how good DALL-E 2 is at photorealism**, I did try my hand at some photograph prompts.
+Personally, I like asking these models for fantasy illustrations, landscapes and that kind of stuff, as I find that area less explored than, say, hyper realistic renders or popular media characters. However given **how good DALL-E 2 is at photorealism**, I did try my hand at some photograph prompts.
 
 As a summary, here are some of the **prompt templates that have yielded the best results** for me:
 
@@ -44,9 +44,9 @@ With that said, in general I found DALL-E 2 to be eerily effective, a lot better
 
 I hear stable diffusion, which is roughly equivalent in performance to DALL-E 2, already runs on 5GB of VRAM, and even though that is still above my budget (I think my GPU has 4GB), I find it extremely impressive.
 
-But I won't try to predict the capabilities or effects future models will have, I'll leave that to more experienced people on twitter.
+However, I won't try to predict the capabilities or effects future models will have, I'll leave that to more experienced people on twitter.
 
-_\[Edit: I wrote a separate [post about StableDiffusion](/stable-diffusion-vs-dalle-2), how it compares against DALL-E 2 and my very rough reflections and predictions for this space. It also contains most of the interesting resources and links I found about AI art.]_
+_\[Edit: I wrote a separate [post about StableDiffusion](/stable-diffusion-vs-dalle-2), how it compares against DALL-E 2 and my rough reflections and predictions for this space. It also contains most of the interesting resources and links I found about AI art.]_
 
 Without further ado, here are some cool images I drew with DALL-E 2! I hope if you needed some inspiration for prompts, you will be able to copy the ones you like the most and tune them to your own needs.
 
@@ -56,7 +56,7 @@ For my first set of prompts, I tried doing some 3D renders. I had seen somewhere
 
 I also tried a low-poly prompt, but it didn't have a satisfying result so I shelved those for next time.
 
-Note that all images are actually in very high resolution, I am just choosing to render them small so they fit in the screen better. If you like one, you can open it in a new tab to see its full, high resolution glory.
+Note that all images are actually in high resolution, I am just choosing to render them small so they fit in the screen better. If you like one, you can open it in a new tab to see its full, high resolution glory.
 
 > "Pixar style 3D render of a baby hippo, 4k, high resolution, trending in artstation"
 
@@ -195,7 +195,7 @@ If you're an artist, I don't think DALL-E 2 will replace you. But I honestly can
 
 Imagine what will happen when in \~5 years we have 30 times more compute due to Moore's law and suddenly synthesizing an image will take seconds in personal computers. What's more, who can tell what the next generation of text-to-image models will be like, or how much more resource effective they'll be? And what happens when generated images are so realistic and plausible (which arguably they already are) that they are as good as the training data, and suddenly we can do self-supervised learning and improve latent representations even more?
 
-I am very interested in seeing where this will go, and which commercial applications people will come up with for these models beside the obvious "monetize art generation and let the dopamine cycle go brrr" or "make stock images obsolete".
+I am deeply interested in seeing where this will go, and which commercial applications people will come up with for these models beside the obvious "monetize art generation and let the dopamine cycle go brrr" or "make stock images obsolete".
 
 _If you liked this post, please share it on Twitter, Reddit, or whatever you like!_
 

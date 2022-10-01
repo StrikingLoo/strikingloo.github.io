@@ -12,7 +12,7 @@ sitemap: true
 
 I have been using a personal wiki for note-taking and studying for 2 years. In that time, it has helped me a lot when preparing exams or job interviews, and generally made studying from books or papers feel more productive and enjoyable.
 
-A part of that is just emotional: it feels good to take notes and capture what you learn, knowing you will be able to find it again later. Being more deliberate about what you will remember in the long term, and what resources you have close to hand when writing an essay or programming, frees up a lot of cognitive load from day-to-day studying or processing, and lets you focus in the tasks themselves.
+A part of that is just emotional: it feels good to take notes and capture what you learn, knowing you will be able to find it again later. Being more deliberate about what you will remember in the long term, and what resources you have close to hand when writing an essay or programming, frees up a lot of cognitive load from day-to-day studying or processing, and lets you focus on the tasks themselves.
 
 Reviewing a whole topic from a set of notes instead of having to reopen an old book (or books, plural) is also a liberating feature.
 
@@ -20,14 +20,14 @@ After I wrote my previous article on [how I use my Personal Wiki for studying](/
 
 I am going out on a limb here and assuming some of my online readers also felt that way, so I am writing this guide for you.
 
-Want to try your hands at a personal wiki but don't know how to start? Follow along!
+Want to try your hands at a personal wiki but don't know how to start? Follow along.
 
 You can read this on your mobile phone and come back later if you want to try it out for yourself, but I think the most fun way of consuming this article will be from a computer, following along step by step and in the end having your very own personal site and wiki.
 
 In this post, I will show you
 - How to fork my personal site / wiki template, to create your own.
 - How to customize it so it fits your own profile.
-- How you can start capturing insights and facts from the content you consume, editing them and linking them so you end up with your very own garden of networked thought.
+- How you can start capturing insights and facts from the content you consume, editing them and linking them so you end up with your own garden of networked thought.
 
 The project you end up with will be a personal site in its own right, which you can host for free on [Github Pages](https://pages.github.com/) if you are so inclined. Then you can even use your wiki as a way to showcase your skills and a part of what you've learned and read to future employers. Plus it's a great sign of status, and I'm sure it will woo your potential significant others _\[citation needed]_.
 
@@ -51,7 +51,7 @@ This is what it will look like in the beginning:
 
 It's a stripped out version of this same website, except I changed the palette to something greener (because it's supposed to be a garden, get it?). I made it responsive so it looks well on mobile.
 
-All of the style and design is packed into a file called `css/main.css`, which you are free to edit and customize as you prefer, until it suits your aesthetic sensibilities. Right now it has a very simple design, but you can do whatever you want to it like changing the font or color palette, background design, etc. 
+All of the style and design is packed into a file called `css/main.css`, which you are free to edit and customize as you prefer, until it suits your aesthetic sensibilities. Right now it has a simple design, but you can do whatever you want to it like changing the font or color palette, background design, etc. 
 
 Here is some inspiration for [web design templates](https://jekyllthemes.io/free), and [color palettes](https://colorhunt.co/).
 
@@ -71,7 +71,7 @@ Also, if you make this site public and ever share it on Twitter, whatever image 
 
 ## Step 3: Using the Wiki
 
-Now this is where it gets fun!
+Now this is where it gets fun.
 
 Under the `wiki` folder, you will find a default, template article. You'll notice it is on markdown, an extension of plaintext that will let you format files nicely without having to learn how to code. You can do headings, subheadings, lists and links quite easily, and this example file has a little bit of each piece of syntax so you don't have to learn from scratch. You can visit [this Markdown guide](https://www.markdownguide.org/basic-syntax/) to learn more about the syntax, but there isn't that much more you are going to need.
 
@@ -79,7 +79,7 @@ Whenever you want to add a new article to your wiki, all you have to do is creat
 
 The _importance_ and _date_ fields serve mostly as metadata: the former ranks articles in the _/wiki_ base page, the latter just lets you know when you created an article first.
 
-If you want examples of how to use a wiki in general, I will direct you to my previous [article on my note-taking workflow and Digital Gardens](/reflections-digital-gardening), or my [wiki article on note-taking](wiki/archiving), but a very short summary would be: when you come up with an idea that you like, or read something that surprises you or you think you will want to use or review later, add it to your wiki. Ideally use your own words, but there is no shame in copying and pasting (though future-you will probably be happier if you link or cite your source). Finally, link the article to other articles in your wiki that you think will be relevant or related, so in future traversals you will see how it fits in the bigger picture (this step is optional and each person manages it in their own way).
+If you want examples of how to use a wiki in general, I will direct you to my previous [article on my note-taking workflow and Digital Gardens](/reflections-digital-gardening), or my [wiki article on note-taking](wiki/archiving), but a short summary would be: when you come up with an idea that you like, or read something that surprises you or you think you will want to use or review later, add it to your wiki. Ideally use your own words, but there is no shame in copying and pasting (though future-you will probably be happier if you link or cite your source). Finally, link the article to other articles in your wiki that you think will be relevant or related, so in future traversals you will see how it fits in the bigger picture (this step is optional and each person manages it in their own way).
 
 To read more about this, consider perusing all the resources I cite at the bottom of my previous links. There is a whole philosophy to planting notes in a digital garden, along with the idea of maintaining them so they are 'evergreen' (as opposed to a blog post which is often a temporary thing that loses relevance over time).
 
@@ -91,9 +91,9 @@ Many people have written about [why you should start blogging](https://guzey.com
 
 If you want to make your wiki public, you can host it for free in many places like [Github Pages](https://pages.github.com/) or [Netlify](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/). I think Github has the friendliest workflow for this, but they are both free providers and you can customize the subdomain in either of them, so I don't have a big preference for one of them. You can also buy your own domain and host it there, if you want to and can afford it.
 
-Here is a [tutorial on how to host a jekyll site like this on github pages](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_publishing_github_pages.html), though the whole process is very intuitive.
+Here is a [tutorial on how to host a jekyll site like this on github pages](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_publishing_github_pages.html), though the whole process is quite intuitive.
 
-Additionally, if you _do_ decide to host your wiki online, please let me know! You can send me the link on HackerNews, reddit or twitter, or do a Pull Request, and I will link to it in the project's README so other people can see how many beautiful personal wikis were added to the internet.
+Additionally, if you _do_ decide to host your wiki online, please let me know. You can send me the link on HackerNews, reddit or twitter, or do a Pull Request, and I will link to it in the project's README so other people can see how many beautiful personal wikis were added to the internet.
 
 Actually this whole thing is my evil plan because I like browsing personal wikis in my free time and I want to add new ones to the web so that I can keep finding new places to procrastinate in.
 
@@ -105,7 +105,7 @@ More directly, it has helped me a lot with studying and it may do the same for y
 
 If there are any steps that are unclear to you or you couldn't make the site or hosting work, don't be afraid to reach out to me. I may be a bit slow to respond, but I will eventually help you if I can.
 
-And if you found this post entertaining or useful, share it on Twitter! Let's pave the web with wikis everywhere.
+And if you found this post entertaining or useful, share it on Twitter. Let's pave the web with wikis everywhere.
 
 _Follow me on [Twitter](https://twitter.com/strikingloo) to know when I write a new article._
 

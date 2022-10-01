@@ -35,17 +35,17 @@ As an example, if we started from the house on the top left, we would want to go
 
 Why is the Travelling Salesman Problem important? Many reasons. 
 
-First of all, **TSP appears everywhere in logistics**. Imagine you need to make multiple deliveries with a truck. You have packages, each of which has to go to a different place. What is the most time-efficient order to deliver them in and then go back to the warehouse? You just found the Travelling Salesman Problem.
+First, **TSP appears everywhere in logistics**. Imagine you need to make multiple deliveries with a truck. You have packages, each of which has to go to a different place. What is the most time-efficient order to deliver them in and then go back to the warehouse? You just found the Travelling Salesman Problem.
 
-**TSP is also important because it is an NP-Complete problem**. That means in the family of NP (nondeterministic polynomial time) problems -those problems for which verification of a solution takes polynomial time, even if finding that solution is harder-, it is in the hardest category: if we found a polynomial time solution for it, then since any other NP problem can be transformed into a TSP problem (sometimes through very esoteric means, but still) in polynomial time too, we would have found a polynomial solution for all NP problems.
+**TSP is also important because it is an NP-Complete problem**. That means in the family of NP (nondeterministic polynomial time) problems -those problems for which verification of a solution takes polynomial time, even if finding that solution is harder-, it is in the hardest category: if we found a polynomial time solution for it, then since any other NP problem can be transformed into a TSP problem (sometimes through esoteric means, but still) in polynomial time too, we would have found a polynomial solution for all NP problems.
 
 Finding TSP can be solved in polynomial time would prove P=NP. This would be huge. To the point of being considered one of this century's biggest questions. Suddenly swathes of hard problems would become easier to solve, and many new applications would open up, with multiple kinds of software becoming vastly more efficient. What it would do for logistics would probably contribute significantly to the world's GDP and global trade.
 
-But before I digress further, now that we know what TSP is, let's see how to solve it. For more information, I recommend the [Wikipedia article on TSP](https://en.wikipedia.org/wiki/Travelling_salesman_problem).
+Before I digress further however, now that we know what TSP is, let's see how to solve it. For more information, I recommend the [Wikipedia article on TSP](https://en.wikipedia.org/wiki/Travelling_salesman_problem).
 
 ## Ant Colony Optimization: Solving TSP
 
-There are many possible ways to solve the Travelling Salesman Problem for a given graph. As discussed above, there is no fast way to get the best solution for an arbitrary graph for certain, at least not without it taking a very long time.
+There are many possible ways to solve the Travelling Salesman Problem for a given graph. As discussed above, there is no fast way to get the best solution for an arbitrary graph for certain, at least not without it taking a long time.
 
 The trivial way to solve TSP would be to look at all the possible Hamiltonian Cycles and keep the best one. This would imply looking at all possible orderings of nodes, which grow factorially -O(N!)- with the number N of nodes. Growing factorially is much worse than growing exponentially, for any base. It is so bad that even parallelism would not help: since adding a single node makes the problem N times harder, each extra node in the graph would require we grow the infrastructure superexponentially just to keep up. This would be extremely inefficient.
 
@@ -75,7 +75,7 @@ For this post, I coded Ant Colony Optimization (initially proposed by Marco Dori
 
 I used numpy for the traversals and other numerical operations, and pytest for testing. The whole code is [available on GitHub](https://github.com/StrikingLoo/ant-colony-optimization), but I will show you the main parts step-by-step now. If you're not interested in how the Ant Colony Optimization algorithm works in detail, you can skip straight to the [results and benchmarks](#tests-and-results).
 
-First of all, I designed a minimal Graph class, whose code I will not include here since it is very simple. Suffice it to say that the _.distance_ property holds an adjacency matrix with the weight -distance- for each edge.
+First, I designed a minimal Graph class, whose code I will not include here since it is quite simple. Suffice it to say that the _.distance_ property holds an adjacency matrix with the weight -distance- for each edge.
 
 Then I coded the `traverse_graph` function, which represents a single ant going through the graph one node at a time, constrained to move in a cycle. 
 
@@ -91,7 +91,7 @@ Where P is the level of pheromones in that edge, and D the distance the edge cov
 
 After that, the optimization procedure itself consists of:
 
-- Initialize the graph with a constant (typically initially very high, to encourage exploration) amount of pheromones on each edge.
+- Initialize the graph with a constant (typically initially high, to encourage exploration) amount of pheromones on each edge.
 - Make _k_ ants start from random nodes and traverse the graph using the procedure defined above.
 - For each traversal, update the level of pheromones in its edges according to the function _Q/total_weight_, where Q is a hyperparameter (a constant) and _total_weight_ is the sum of the distances of all the edges in the cycle. If using _elitism_, add to the list of traversals the best one we have encountered so far, to incentivize the ants not to deviate too far from it.
 - If a cycle was found that beats the best one so far, update it.
@@ -110,14 +110,14 @@ Here is the whole function in all its glory (with comments for sanity).
 
 Some possible improvements for this algorithm that I didn't have the time for:
 
-- Traversals could be trivially paralllelized since each ant is independent. This can be done very easily using the _multiprocessing_ Python module, but it doesn't work on Mac by default. In this tradeoff, I chose portability over speed.
+- Traversals could be trivially paralllelized since each ant is independent. This can be done easily using the _multiprocessing_ Python module, but it doesn't work on Mac by default. In this tradeoff, I chose portability over speed.
 - Choosing the next jump in a traversal can be done in parallel with numpy vector multiplication, which resulted in everything running about 5x faster. However due to numerical instability, a jump could be performed to the same node over and over, even though I was multiplying by zero, and solving this bug would have taken more time than I thought worth it. If you find a way to make this work for all cases, then feel free to make a pull request and you will get the credit and a link.
 
 ## Tests and Results
 
-After coding the algorithm and testing it in toy cases, I was very happy to find that the internet had provided me with a wealth of different graphs and TSP problems to try it on.
+After coding the algorithm and testing it in toy cases, I was happy to find that the internet had provided me with a wealth of different graphs and TSP problems to try it on.
 
-I got my first small but real test case from this [Medium Article](https://towardsdatascience.com/solving-the-travelling-salesman-problem-for-germany-using-networkx-in-python-2b181efd7b07) using real Germany cities data. I was happy to see ACO found the optimal solution in seconds! 
+I got my first small but real test case from this [Medium Article](https://towardsdatascience.com/solving-the-travelling-salesman-problem-for-germany-using-networkx-in-python-2b181efd7b07) using real Germany cities data. I was happy to see ACO found the optimal solution in seconds. 
 
 Then I found the huge [Santa Claus Challenge](http://cs.uef.fi/sipu/santa/data.html) with coordinates data representing millions of houses in Finland (for Santa to visit). The entire dataset did not fit in memory, so I could not verify how close my solution got to the best ones in the challenge, but taking ever bigger samples let me see how fast or slow each part of the program was for profiling. Go to the [challenge's article](https://www.frontiersin.org/articles/10.3389/frobt.2021.689908/full) for a fun read.
 
@@ -125,13 +125,13 @@ Finally, my favorite resource for finding TSP problems, often with their optimal
 
 I used that site's Berlin dataset for most of my benchmarking and hyperparameter optimization, from which I found the best _alpha_ and _beta_ values to be around _0.9_ and _1.5_.
 
-I was very happy to see that, while Networkx's _TSP solve_ took 2 seconds and this program took a couple minutes, my solution for that dataset had a weight of \~44000 whereas Networkx's was around 46k. This proves for some cases, even though slower, ACO algorithms could be a good approach for solving TSP problems.
+I was happy to see that, while Networkx's _TSP solve_ took 2 seconds and this program took a couple minutes, my solution for that dataset had a weight of \~44000 whereas Networkx's was around 46k. This proves for some cases, even though slower, ACO algorithms could be a good approach for solving TSP problems.
 
 ## Experiments
 
 Encouraged by the comments in Reddit, I decided to experiment further and see how the optimization behaved in different situations. 
 
-Particularly, since ACO can be updated online, it is supposed to perform very well in dynamic network or logistics problems where the graph is shifting in real time, in comparison with other algorithms which need to be re-run from scratch.
+Particularly, since ACO can be updated online, it is supposed to perform well in dynamic network or logistics problems where the graph is shifting in real time, in comparison with other algorithms which need to be re-run from scratch.
 
 Since the ants update their pheromone trails in real time, whenever there is a shift in the edge's distances they should eventually notice it and change their path to reflect it. For instance if two nodes got closer (the distance value in the edge joining them was reduced) then more ants should want to cross between them, and its pheromone load should grow larger. Alternatively if two nodes grow farther apart, the ants should shun them more.
 
@@ -143,7 +143,7 @@ I wanted to see how quickly the swarm would respond to this change, so I plotted
 
 ![An image depicting a graph of decreasing pheromone trails after an edge's weight grew bigger](resources/post_image/ant_trail_smaller.png){: loading="lazy"}
 
-As you can see, the ants don't respond instantaneously to the changes, but after 30 iterations they have adapted to them and do not visit that edge nearly as often as before. Its pheromone level remains very low afterward, with occasional peaks probably due to some of the exploration incentives I set.
+As you can see, the ants don't respond instantaneously to the changes, but after 30 iterations they have adapted to them and do not visit that edge nearly as often as before. Its pheromone level remains close to zero afterward, with occasional peaks probably due to some of the exploration incentives I set.
 
 For the second experiment, I took a random Hamiltonian cycle and divided all of its edges by 10. This way, this cycle suddenly became tempting for the ants, as it was a cheap way of traversing the whole graph, smaller by an order of magnitude. Again this change took place in the 500th iteration, so I wanted to see how the ants reacted.
 
@@ -155,7 +155,7 @@ As expected, the ants were highly incentivized to deviate from their known paths
 
 This shows that, as long as the algorithm contemplates the possibility of change by always encouraging a minimum level of exploration, new opportunities can be exploited as they arise. 
 
-Interestingly, if the minimum level of pheromones was plotted instead of the mean, it did not rise very much. I think this is because even after dividing by ten, a few of the edges in the best solution were still not included in this cycle. This can further be attested by the dip in average pheromone levels by the end of the graph above. I believe in the last 50 iterations a cycle was found that contained an edge that had not been diminished, but was nonetheless small enough to present an improvement.
+Interestingly, if the minimum level of pheromones was plotted instead of the mean, it would not rise by a lot. I think this is because even after dividing by ten, a few of the edges in the best solution were still not included in this cycle. This can further be attested by the dip in average pheromone levels by the end of the graph above. I believe in the last 50 iterations a cycle was found that contained an edge that had not been diminished, but was nonetheless small enough to present an improvement.
 
 ## Conclusions
 
@@ -165,9 +165,9 @@ More importantly, we showed that in many datasets, ACO can converge to the optim
 
 Additionally, it could be seen that one of the best properties of Ant Colony Optimization over other algorithms is its capability for online adaptation to changes in the system. In certain situations this could prove critical for performance, especially if rapid response is encouraged.
 
-On a more philosophical level, I think it is beautiful how by specifying a large set of simple agents that each follow very few rules, we could solve a problem that is known to be hard.
+On a more philosophical level, I think it is beautiful how by specifying a large set of simple agents that each follow a few rules, we could solve a problem that is known to be hard.
 
-I would like to try Ant Colony Optimization for problems other than TSP in the future, so if you know of any other applications where ACO shines, let me know! 
+I would like to try Ant Colony Optimization for problems other than TSP in the future, so if you know of any other applications where ACO shines, let me know. 
 
 **If you enjoyed this article, please share it on Twitter or with a friend.** I write these for you and would be happy if more people can read them and share my love for algorithms.
 

@@ -39,7 +39,7 @@ Obviously style matching would not be easy, but when we reach a point where you 
 
 Now is this a good thing? I guess it is a double edged sword: will artists who leverage AI art models to become more productive drive down the general price of art? Or will the new supply generate new demand? I am not an economist, nor an artist, so speculating further would be futile and I will leave the rest to my dear readers.
 
-Speculate away, please!
+Speculate away, please.
 
 ***Extra reflection on the topic**: As I said on Reddit, I would be worried that eventually you may remove the artist from some parts of the design loop if user feedback or artist feedback could be used as a reward for a reinforcement learning agent.*
 
@@ -91,7 +91,7 @@ For scene composition, it is still struggling. Here are a ferret and a badger (w
 
 ![](resources/ai-generated-images/stable-diffusion/selected/169820319_A_ferret_and_a_badger_fighting_with_swords__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png){: loading="lazy"}
 
-But some of the best prompts that had worked for DALL-E 2 and Craiyon worked very well with stable diffusion too.
+As expected, some of the best prompts that had worked for DALL-E 2 and Craiyon worked great with stable diffusion too.
 
 > A digital Illustration of the Babel tower, 4k, detailed, trending in artstation, fantasy vivid colors  
 
@@ -207,7 +207,7 @@ more digital illustration like air of the images from before.
 
 ### Recommended Style Cue: Beksinski
 
-I tried adding the name of the painter [Beksinski](https://es.wikipedia.org/wiki/Zdzis%C5%82aw_Beksi%C5%84ski) as a style cue, and the results were mixed: many of them blocked by StableDiffusion's content policy, which I guess means there was something awful in them, but the survivors looked very good.
+I tried adding the name of the painter [Beksinski](https://es.wikipedia.org/wiki/Zdzis%C5%82aw_Beksi%C5%84ski) as a style cue, and the results were mixed: many of them blocked by StableDiffusion's content policy, which I guess means there was something awful in them, but the survivors looked amazing.
 
 ![](resources/ai-generated-images/stable-diffusion/selected/2118950198_A_pile_of_computers_and_TVs_with_raining_sulfur__beksinski__4k__detailed__oil_on_canvas.png){: loading="lazy"} 
 
@@ -240,7 +240,7 @@ I really went crazy with these, and these are my selection, so you can imagine h
 
 ### Forest Scenes
 
-Another thing that I love about StableDiffusion (Which DALL-E 2 also gets right) is how well it renders textures. I can imagine how a 3d artist may use one of these models to enhance their own 3d objects by creating many different textures very fast and combining them with domain knowledge.
+Another thing that I love about StableDiffusion (Which DALL-E 2 also gets right) is how well it renders textures. I can imagine how a 3d artist may use one of these models to enhance their own 3d objects by creating many different textures fast and combining them with domain knowledge.
 
 Because of that, and my love for moss, I made many forest scenes with abundant growth and moss. Many of these look like a Magic: the Gathering illustration. I will not post the prompts as each one was different, but they mostly followed my digital fantasy illustration template.
 
@@ -257,7 +257,7 @@ StableDiffusion was the first AI art model where I have successfully got a centa
 
 I honestly made a lot more illustrations I loved (like 400 total, I think?) but I guess most readers will get bored long before they finish scrolling this post, so I will not keep you any longer.
 
-These are the last ones, I swear!
+These are the last ones, I swear.
 
 ![](resources/ai-generated-images/stable-diffusion/selected/1621667580_A_digital_illustration_of_a_steampunk_inventor_s_desk__4k__detailed__trending_in_artstation__fantasy_vivid_colors-add.png){: loading="lazy" style="display:inline;height:40%; width:40%"}![](resources/ai-generated-images/stable-diffusion/selected/3418018944_A_treasure_chest_with_glowing_jeewels_and_gems__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ-add.png){: loading="lazy" style="display:inline;height:40%; width:40%"}
 
@@ -275,9 +275,9 @@ The *main subject* can be anything you're thinking of, but StableDiffusion still
 
 Style cues can be anything you want to condition the image on. I wouldn't add too many, maybe only 1 to 3. These can really vary a lot but some good ones are: *concept art, steampunk, trending in artstation, good composition, hyper realistic, oil on canvas, vivid colors*. 
 
-Additionally, adding the name of an artist as a cue will make the picture look like something that artist made, though it may condition the image's contents, especially if that artist had very narrow themes (Beatrix Potter gets you spurious rabbits, for instance). 
+Additionally, adding the name of an artist as a cue will make the picture look like something that artist made, though it may condition the image's contents, especially if that artist had narrow themes (Beatrix Potter gets you spurious rabbits, for instance). 
 
-For a very detailed guide to crafting the best stable diffusion prompts, see [A Guide to Writing Prompts for Text-to-image AI](https://docs.google.com/document/d/17VPu3U2qXthOpt2zWczFvf-AH6z37hxUbvEe1rJTsEc/edit) if you feel like you want to read more.
+For a detailed guide to crafting the best stable diffusion prompts, see [A Guide to Writing Prompts for Text-to-image AI](https://docs.google.com/document/d/17VPu3U2qXthOpt2zWczFvf-AH6z37hxUbvEe1rJTsEc/edit) if you feel like you want to read more.
 
 ## Appendix B: Resources and Links
 
@@ -287,10 +287,10 @@ Given how much has happened lately (even John Oliver is talking about DALL-E!), 
 - [A traveler's guide to the latent space](https://sweet-hall-e72.notion.site/A-Traveler-s-Guide-to-the-Latent-Space-85efba7e5e6a40e5bd3cae980f30235f): a guide on prompt engineering that goes *really* in depth. I haven't actually read the whole thing.
 - [A guide to Writing Prompts for Text-to-Image AI](https://docs.google.com/document/d/17VPu3U2qXthOpt2zWczFvf-AH6z37hxUbvEe1rJTsEc/): The best quick primer I've found on prompt engineering and writing prompts for DALL-E 2/StableDiffusion or any other text-to-image AI.
 - [Art Prompts: My Experiments with Mini DALL-E](/art-prompts): My first post on text-to-image AI, where I included my own AI art prompt guide. Here you can see how far we've come and how fast.
-- [DALL-E 2 Experiments](/DALL-E-2-prompt-guide): The post I wrote two weeks ago when DALL-E 2 beta release was news and StableDiffusion hadn't come out yet. See if you can spot the same prompts' different results!
+- [DALL-E 2 Experiments](/DALL-E-2-prompt-guide): The post I wrote two weeks ago when DALL-E 2 beta release was news and StableDiffusion hadn't come out yet. See if you can spot the same prompts' different results.
 - [How to Draw](https://andys.page/posts/how-to-draw/): Where a user uses StableDiffusion's img2img version to convert an MSPaint drawing into a realistic sci-fi image.
 - [**Image2Image StableDiffusion**](https://replicate.com/stability-ai/stable-diffusion), available on Replicate for free. You can draw a rough sketch of what you want in jspaint (the browser copy of MSPaint), then upload it to Stable Diffusion img2img and use that as a starting point for your AI art. See also [Stable Diffusion is a really big deal, Simon Willison](https://simonwillison.net/2022/Aug/29/stable-diffusion/): This came out a little after I wrote this post, when Stability.ai released the img2img StableDiffusion model. It is amazing! You can make a sketch in MSPaint (Or JsPaint) and make the AI turn it into a painting or illustration in the style you want. 
-- [**High-performance image generation using Stable Diffusion in KerasCV**](https://keras.io/guides/keras_cv/generate_images_with_stable_diffusion/): Stable Diffusion was ported to keras! It runs smoothly both on GPU or CPU if you have keras installed, and this is the version I've been using to make AI art in my local computer.
+- [**High-performance image generation using Stable Diffusion in KerasCV**](https://keras.io/guides/keras_cv/generate_images_with_stable_diffusion/): Stable Diffusion was finally ported to keras. It runs smoothly both on GPU or CPU if you have keras installed, and this is the version I've been using to make AI art in my local computer.
 - [**Lexica.art**](https://lexica.art/) a great search engine for prompts and artworks. It is an amazing resource to find good images and see which prompts generated them, which you can then copy and tune to your needs. An easy way to build on the best stable diffusion prompts other people has already found.
 - If you like anime, [**Waifu Diffusion**](https://huggingface.co/hakurei/waifu-diffusion) is a text-to-image diffusion model that was conditioned on high-quality anime images through fine-tuning, using Stable Diffusion as a starting point. It generates anime illustrations and it's awesome.
 

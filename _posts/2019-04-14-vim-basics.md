@@ -21,7 +21,7 @@ Now fire up your terminal on your working directory of choice, and type
 vim sample.txt
 ```
 
-so that we can start this tutorial!
+so that we can start this tutorial.
 
 ## First steps: navigating, editing and exiting.
 
@@ -45,7 +45,7 @@ As a general note, it is considered bad practice -even though it’s possible- t
 
 Once you’re confident moving through a file one character or line at a time, try pressing a number (any number, it could have many digits) before moving. You’ll jump as many times as the number you entered.
 
-This is a very powerful concept in Vim: Repetition. Have you ever found yourself editing a text file and doing the same thing over and over? Especially something very mundane, like deleting quotes and replacing them with commas? Vim’s got you covered: Just do the thing once, and press . to repeat it. Enter a number and press . again if you want to repeat it as many times.
+This is a powerful concept in Vim: Repetition. Have you ever found yourself editing a text file and doing the same thing over and over? Especially something mundane, like deleting quotes and replacing them with commas? Vim’s got you covered: Just do the thing once, and press . to repeat it. Enter a number and press . again if you want to repeat it as many times.
 
 ### Edition
 
@@ -112,7 +112,7 @@ A few other commands you may want to check out are:
 - _o_ and _O_: create a new line above or below the current one, respectively, and enter editing mode.
 - _v_ : enter _visual mode_ to select text to which you may then apply more commands.
 - _y_ or _Y_: _yank (copy)_ the selected text, or the current line, respectively.
-- _p_ : _put_ the _yanked_ content. Notice that yanking will move text to a special Vim reserved buffer, and not to your usual clipboard. This way, you can effectively manage two different clipboards! One you can paste from with _ctrl+shift+v_ as usual (in editing mode), and the other with _p_ (in normal mode).
+- _p_ : _put_ the _yanked_ content. Notice that yanking will move text to a special Vim reserved buffer, and not to your usual clipboard. This way, you can effectively manage two different clipboards. One you can paste from with _ctrl+shift+v_ as usual (in editing mode), and the other with _p_ (in normal mode).
 - \* : find the next occurrence of the current word.
 
 When writing software, I find myself duplicating lines to change a few words quite often, so I think _Yp_ is an amazing command.
@@ -121,8 +121,8 @@ When writing software, I find myself duplicating lines to change a few words qui
 
 I’ve barely scratched the surface with this introduction, but I hope I’ll at least have persuaded you into trying Vim out for yourself. It may not replace an IDE if you’re coding in Java or C++, especially if you’re using frameworks and auto-complete is helping you. But when coding in C or Python, I usually pick it as my editor of choice. And sometimes when I need to transform a string quickly, editing it from Vim is faster than coding a script in Bash or Python.
 
-I also encourage you to try the software on your own, and run the _vimtutor_ program from your shell (it usually comes preinstalled with Linux and on Macs). If you want to really learn how to optimize your Vim use after going through vimtutor, this very geeky, awesome site [vim golf](http://vimgolf.com/) may be of interest to you as well.
+I also encourage you to try the software on your own, and run the _vimtutor_ program from your shell (it usually comes preinstalled with Linux and on Macs). If you want to really learn how to optimize your Vim use after going through vimtutor, this geeky, awesome site [vim golf](http://vimgolf.com/) may be of interest to you as well.
 
 I hope you found this article useful or interesting, and as usual any feedback will be welcome, whether anything I said was plain wrong, or you actually liked some part of this tutorial.
 
-_Follow me on [Twitter](http://www.twitter.com/strikingloo) for more Programming tutorials, tips and tricks, and if you liked it please consider tweeting my article!_
+_Follow me on [Twitter](http://www.twitter.com/strikingloo) for more Programming tutorials, tips and tricks, and if you liked it please consider tweeting my article._

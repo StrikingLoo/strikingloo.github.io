@@ -13,7 +13,7 @@ The Japanese language has many quirks that make it alluring for students. After 
 
 English is not lacking in this respect: we have words like bang, clang, clatter and sputter which sound like the verbs they describe. Riffraff, whippersnapper and so on also have the property of alliteration. But Japanese, in my opinion, takes this to a whole new level.
 
-***Note:** This post is aimed at people who are learning Japanese, but not very advanced, or people who are interested in knowing more about Japanese culture and language. Due to this, I will use romaji -western characters for Japanese words- a lot, even though it is aesthetically quite unsatisfying to look at.*
+***Note:** This post is aimed at people who are learning Japanese, but not advanced, or people who are interested in knowing more about Japanese culture and language. Due to this, I will use romaji -western characters for Japanese words- a lot, even though it is aesthetically quite unsatisfying to look at.*
 
 In the Japanese language there are basically **two kinds of onomatopoeia**. 
 
@@ -22,7 +22,7 @@ In the Japanese language there are basically **two kinds of onomatopoeia**.
 
 Onomatopoeia in Japanese often come in the form of two syllables repeating twice (*gata-gata*, *nuku-nuku*), or two syllables joined by a pause and the syllable *'ri'* (e.g., *gussuri*, where the double consonant is read gus-*pause*-su-ri).
 
-I like the first kind especially, as it lends the language a very playful tone. Gitaigo can serve to emphasize emotions or sensations that are sometimes harder to put into words (especially one single word) in other languages like my native Spanish.
+I like the first kind especially, as it lends the language a playful tone. Gitaigo can serve to emphasize emotions or sensations that are sometimes harder to put into words (especially one single word) in other languages like my native Spanish.
 
 For this article, instead of picking my own favorite onomatopoeic or mimetic words, I chose to do a little analysis. Borrowing from an online web corpus, I looked into what the most common onomatopoeia in Japanese are. I filtered to limit the analysis to those words that follow the pattern I explained above.
 
@@ -30,7 +30,7 @@ Here are the most commonly used mimetic words in Japanese:
 
 ![A chart showing the 12 most common onomatopoeia in Japanese with reduplication](resources/post_image/gitaigo.svg)
 
-If you are learning Japanese, just by memorizing these 12 words you will have made a decent progress into learning mimetic words. These also appear very often if you're watching anime. Especially *sorosoro* (which can mean 'for the moment...'), and *girigiri* (which means 'By a slim margin', like 'I was late for only 30 seconds!' or 'That almost got me!'),
+If you are learning Japanese, just by memorizing these 12 words you will have made a decent progress into learning mimetic words. These also appear often if you're watching anime. Especially *sorosoro* (which can mean 'for the moment...'), and *girigiri* (which means 'By a slim margin', like 'I was late for only 30 seconds!' or 'That almost got me!'),
 
 In more violent shows, *barabara* also features prominently, as making someone go *barabara* can mean dismembering them. And *dokidoki* appears in 8 out of 10 anime openings.
 
