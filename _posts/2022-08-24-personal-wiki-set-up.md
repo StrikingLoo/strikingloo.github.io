@@ -1,11 +1,11 @@
 ---
-title: "How to Set Up Your Own Personal Wiki"
+title: "How to Set Up Your Own Personal Wiki (with Jekyll)"
 layout: post
 tags: note making, note taking, notes, digital garden, personal wiki, tutorial
 date: 2022-08-24
 importance: 7
 description: "Tutorial on how to make a digital garden / personal wiki using my template. Step-by-Step, not too hard even if you are not a programmer by trade."
-abstract: "This is a tutorial on how to make a digital garden / personal wiki using my template. Step-by-Step, not too hard even if you are not a programmer by trade. "
+abstract: "This is a tutorial on how to make a digital garden / personal wiki using my Jekyll template. Step-by-Step, not too hard even if you are not a programmer by trade. "
 twitter_image: "https://strikingloo.github.io/resources/ai-generated-images/dalle_2/steampunk_library.png"
 sitemap: true
 ---
@@ -37,7 +37,7 @@ What we are about to do is: fork a personal wiki template repository, using jeky
 
 ## Step 1: Forking the Github Project
 
-I built a bare-bones [personal site with wiki capabilities](https://github.com/StrikingLoo/Personal-Wiki-Site-Setup) by stripping away all the content from this site. 
+I built a template for a [personal site with a Digital Garden](https://github.com/StrikingLoo/Personal-Wiki-Site-Setup) by stripping away all the content from this site and changing the design. 
 
 You can fork it in Github, which allows you to basically copy paste all of my code and then edit on top of it. You are free to edit away any part of it or just leave it all as-is and start using the wiki right away.
 
@@ -79,9 +79,9 @@ Whenever you want to add a new article to your wiki, all you have to do is creat
 
 The _importance_ and _date_ fields serve mostly as metadata: the former ranks articles in the _/wiki_ base page, the latter just lets you know when you created an article first.
 
-If you want examples of how to use a wiki in general, I will direct you to my previous [article on my workflow](/reflections-digital-gardening), or my [wiki article on note-taking](wiki/archiving), but a very short summary would be: when you come up with an idea that you like, or read something that surprises you or you think you will want to use or review later, add it to your wiki. Ideally use your own words, but there is no shame in copying and pasting (though future-you will probably be happier if you link or cite your source). Finally, link the article to other articles in your wiki that you think will be relevant or related, so in future traversals you will see how it fits in the bigger picture (this step is optional and each person manages it in their own way).
+If you want examples of how to use a wiki in general, I will direct you to my previous [article on my note-taking workflow and Digital Gardens](/reflections-digital-gardening), or my [wiki article on note-taking](wiki/archiving), but a very short summary would be: when you come up with an idea that you like, or read something that surprises you or you think you will want to use or review later, add it to your wiki. Ideally use your own words, but there is no shame in copying and pasting (though future-you will probably be happier if you link or cite your source). Finally, link the article to other articles in your wiki that you think will be relevant or related, so in future traversals you will see how it fits in the bigger picture (this step is optional and each person manages it in their own way).
 
-To read more about this, consider perusing all the resources I cite at the bottom of my previous links.
+To read more about this, consider perusing all the resources I cite at the bottom of my previous links. There is a whole philosophy to planting notes in a digital garden, along with the idea of maintaining them so they are 'evergreen' (as opposed to a blog post which is often a temporary thing that loses relevance over time).
 
 Additionally, this personal site comes with support for a blog, in case you want to start writing one. Again each post will be a markdown file, with the only condition that their filenames should start with the date you wrote them in. If you are on the fence about starting a blog, you should try it, it can be fun.
 
