@@ -15,7 +15,7 @@ Lleva O(n^3) y se hace como lo hacemos a mano.
 
 ### Condición de una matriz -error numérico-
 
-En una matriz mal condicionada, un pequeño error en el resultado de una ecuación, genera una solución de mierda.
+En una matriz mal condicionada, un pequeño error en el resultado de una ecuación, genera una solución muy mala.
 
 A x = b,
 
@@ -31,18 +31,18 @@ Error hacia atras: el error en b.
 
 Tipicamente partimos de un error hacia atras, y eso nos genera un error hacia adelante (la veniamos cagando y eso promueve cagadas futuras).
 
-![Screen_Shot_2020-12-11_at_21-30-42.png](image/Screen_Shot_2020-12-11_at_21-30-42.png){: alt="" loading="lazy" style="width:50%;height:50%"}
+![Screen_Shot_2020-12-11_at_21-30-42.png](image/Screen_Shot_2020-12-11_at_21-30-42.png){: alt="" loading="lazy"}
 
 Numero de condición de la matriz
 
-![Screen_Shot_2020-12-12_at_17-33-38.png](image/Screen_Shot_2020-12-12_at_17-33-38.png){: alt="" loading="lazy" style="width:50%;height:50%"}
+![Screen_Shot_2020-12-12_at_17-33-38.png](image/Screen_Shot_2020-12-12_at_17-33-38.png){: alt="" loading="lazy"}
 
 Si A es **simetrica, inversible y tiene LU**, entonces **tiene LDL**.
 
 ### Descomposición de Cholesky:
 
 
-![Screen_Shot_2020-12-12_at_17-26-16.png](image/Screen_Shot_2020-12-12_at_17-26-16.png){: alt="" loading="lazy" style="width:50%;height:50%"}
+![Screen_Shot_2020-12-12_at_17-26-16.png](image/Screen_Shot_2020-12-12_at_17-26-16.png){: alt="" loading="lazy"}
 
 **L es triangular inferior** con positivos en la diagonal (no necesariamente 1).
 
@@ -50,7 +50,7 @@ A tiene **Cholesky** <-> A es **simétrica definida positiva**.
 
 A es **definida positiva** si
 
-![Screen_Shot_2020-12-12_at_17-27-26.png](image/Screen_Shot_2020-12-12_at_17-27-26.png){: alt="" loading="lazy" style="width:50%;height:50%"}
+![Screen_Shot_2020-12-12_at_17-27-26.png](image/Screen_Shot_2020-12-12_at_17-27-26.png){: alt="" loading="lazy"}
 
 para todo x.
 
@@ -82,16 +82,16 @@ Para hacer esto, uso reflexiones: muevo el vector de la columna de diagonal haci
 
 Si tengo el vector ortogonal al hiperplano en el que hago la reflexion, mi matriz ortogonal para esta transformación será:
 
-![Screen_Shot_2020-12-12_at_18-18-24.png](image/Screen_Shot_2020-12-12_at_18-18-24.png){: alt="" loading="lazy" style="width:40%;height:40%"}
+![Screen_Shot_2020-12-12_at_18-18-24.png](image/Screen_Shot_2020-12-12_at_18-18-24.png){: alt="" loading="lazy" }
 
 Pero cómo obtengo u? Simplemente parto de un vector que quiero que se refleje a otro. Sean v que quiero reflejar en w, obtengo u:
 
 
-![Screen_Shot_2020-12-12_at_18-18-34.png](image/Screen_Shot_2020-12-12_at_18-18-34.png){: alt="" loading="lazy" style="width:40%;height:40%"}
+![Screen_Shot_2020-12-12_at_18-18-34.png](image/Screen_Shot_2020-12-12_at_18-18-34.png){: alt="" loading="lazy"}
 
 Luego si tengo mi columna, como la quiero mappear conservando la norma, mis v y w serán:
 
-![Screen_Shot_2020-12-12_at_18-18-52.png](image/Screen_Shot_2020-12-12_at_18-18-52.png){: alt="" loading="lazy" style="width:50%;height:50%"}
+![Screen_Shot_2020-12-12_at_18-18-52.png](image/Screen_Shot_2020-12-12_at_18-18-52.png){: alt="" loading="lazy" }
 
 Y repito esto iterativamente. No ahorro complejidad pero tengo mas estabilidad numérica.
 
@@ -101,7 +101,7 @@ Puedo hacer rotar un vector por un ángulo theta. Con un vector de R^2 eso me pe
 
 ![Screen_Shot_2020-12-12_at_18-28-33.png](image/Screen_Shot_2020-12-12_at_18-28-33.png){: alt="" loading="lazy"}
 
-![Screen_Shot_2020-12-12_at_18-28-49.png](image/Screen_Shot_2020-12-12_at_18-28-49.png){: style="height: 80%; width:80%" alt="" loading="lazy"}
+![Screen_Shot_2020-12-12_at_18-28-49.png](image/Screen_Shot_2020-12-12_at_18-28-49.png){:  alt="" loading="lazy"}
 
 Esto generaliza a R^mxn, pero tengo que por cada columna, hacer una rotación por cada 0 que quiero agregar, así que son potencialmente O(n^2) rotaciones. La rotación se hace mirando los 2 componentes que querés rotar, y completando con la identidad en todos los otros.
 
@@ -111,11 +111,11 @@ La complejidad termina siendo la misma que con HouseHolder, pero con un factor c
 
 Descompongo a A tq:
 
-![Screen_Shot_2020-12-12_at_19-00-21.png](image/Screen_Shot_2020-12-12_at_19-00-21.png){: alt="" loading="lazy" style="width:50%;height:50%"}
+![Screen_Shot_2020-12-12_at_19-00-21.png](image/Screen_Shot_2020-12-12_at_19-00-21.png){: alt="" loading="lazy"}
 
 Donde 
 
-![Screen_Shot_2020-12-12_at_19-02-45.png](image/Screen_Shot_2020-12-12_at_19-02-45.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![Screen_Shot_2020-12-12_at_19-02-45.png](image/Screen_Shot_2020-12-12_at_19-02-45.png){: alt="" loading="lazy"}
 
 Toda matriz tiene SVD.
 
@@ -127,7 +127,7 @@ Los vectores de V son los eigenvectors -de norma 1-.
 
 Los vectores de U salen por esta ecuación:
 
-![Screen_Shot_2020-12-12_at_19-22-51.png](image/Screen_Shot_2020-12-12_at_19-22-51.png){: alt="" loading="lazy" style="width:30%;height:30%"}
+![Screen_Shot_2020-12-12_at_19-22-51.png](image/Screen_Shot_2020-12-12_at_19-22-51.png){: alt="" loading="lazy"}
 
 Si la matriz no era cuadrada, U_i para i > r, se definen para hacer una base ortonormal de Nul(A^t). Asi cumplimos todas las propiedades.
 
@@ -135,7 +135,7 @@ Si la matriz no era cuadrada, U_i para i > r, se definen para hacer una base ort
 
 ### Método de Jacobi
 
-![Screen_Shot_2020-12-13_at_21-08-10.png](image/Screen_Shot_2020-12-13_at_21-08-10.png){: style="height:90%; width:90%"}
+![Screen_Shot_2020-12-13_at_21-08-10.png](image/Screen_Shot_2020-12-13_at_21-08-10.png){: loading="lazy"}
 
 ![Screen_Shot_2020-12-13_at_21-07-55.png](image/Screen_Shot_2020-12-13_at_21-07-55.png){: alt="" loading="lazy"}
 
@@ -147,7 +147,7 @@ Para funcionar, A no puede tener 0s en la diagonal.
 
 Igual que el de Jacobi, pero usamos los valores que ya computamos para los primeros k componentes de x en vez de los de la x anterior.
 
-![Screen_Shot_2020-12-13_at_21-07-46.png](image/Screen_Shot_2020-12-13_at_21-07-46.png){: style="height:90%; width:90%"}
+![Screen_Shot_2020-12-13_at_21-07-46.png](image/Screen_Shot_2020-12-13_at_21-07-46.png){: loading="lazy"}
 
 Podemos garantizar que converge para matrices sdp, y además converge más rápido que Jacobi.
 
@@ -170,7 +170,7 @@ Tipicamente usamos un polinomio, o varios juntos, porque son bonitos, derivables
 
 Defino un polinomio que toma los valores de los puntos en los x correctos.
 
-![Screen_Shot_2020-12-13_at_22-38-45.png](image/Screen_Shot_2020-12-13_at_22-38-45.png){: style="height: 90%; width:90%"}
+![Screen_Shot_2020-12-13_at_22-38-45.png](image/Screen_Shot_2020-12-13_at_22-38-45.png){: loading="lazy"}
 
 Ademas, podemos acotar el error de la interpolación si tenemos una idea de la n+1-ésima derivada de la función (imagino que es difícil de obtener en la práctica), evaluandola en algun punto E entre [x0, xn].
 
@@ -182,7 +182,7 @@ El polinomio de Lagrange es el único polinomio de grado n-1 que interpola estos
 
 Con diferencias divididas puedo computar un polinomio de Lagrange de forma recursiva para n puntos desde los anteriores n-1, en tiempo lineal. Esto permite agrandar el polinomio para ir fitteando mas puntos a medida que surgen.
 
-![Screen_Shot_2020-12-13_at_22-43-25.png](image/Screen_Shot_2020-12-13_at_22-43-25.png){: style="height:80%; width:80%" alt="" loading="lazy"}
+![Screen_Shot_2020-12-13_at_22-43-25.png](image/Screen_Shot_2020-12-13_at_22-43-25.png){: alt="" loading="lazy"}
 
 También se le dice método de Newton.
 
@@ -190,7 +190,7 @@ El método de Newton es el de diferencias divididas.
 
 ### Método de Neville
 
-![Screen_Shot_2020-12-13_at_22-44-51.png](image/Screen_Shot_2020-12-13_at_22-44-51.png){: style="height:90%; width:90%" alt="" loading="lazy"}
+![Screen_Shot_2020-12-13_at_22-44-51.png](image/Screen_Shot_2020-12-13_at_22-44-51.png){: alt="" loading="lazy"}
 
 Otra escritura recursiva del polinomio de Lagrange. Igual me hace computar n polinomios anteriores.
 
@@ -253,11 +253,11 @@ Tengo que poder calcular f y f' en un intervalo [a,b].
 
 En particular hallo un punto fijo de la función
 
-![Screen_Shot_2020-12-14_at_21-11-33.png](image/Screen_Shot_2020-12-14_at_21-11-33.png){: alt="" loading="lazy" style="width:50%;height:50%"}
+![Screen_Shot_2020-12-14_at_21-11-33.png](image/Screen_Shot_2020-12-14_at_21-11-33.png){: alt="" loading="lazy"}
 
 Usando el método del punto fijo, mi iteración es simplemente:
 
-![Screen_Shot_2020-12-14_at_21-11-40.png](image/Screen_Shot_2020-12-14_at_21-11-40.png){: alt="" loading="lazy" style="width:50%;height:50%"}
+![Screen_Shot_2020-12-14_at_21-11-40.png](image/Screen_Shot_2020-12-14_at_21-11-40.png){: alt="" loading="lazy"}
 
 Es importante que g esté bien definida en un entorno de x\*. Esto es, **f' no puede ser 0 en x\*\.**
 
@@ -290,7 +290,7 @@ Puede verse que esto proyecta b al espacio vectorial generado por A (osea, elimi
 
  _"A^t \* b es la proyección en la imagen de A de b"_.
 
-![](image/ata.png){: alt="" loading="lazy" style="width:50%;height:50%"}
+![](image/ata.png){: alt="" loading="lazy"}
 
 El sistema permite usar Cholesky, porque A^t\*A es una matriz sdp. Pero, la estabilidad numérica puede ser muy mala.
 
@@ -305,13 +305,13 @@ Reescribo A = QR.
 
 Esta es la que mas se usa en la práctica: es más lenta, pero en casos de matrices de rango incompleto tiene mucha más estabilidad numérica.
 
-![](image/metnum_svd.png){: style="height:99%; width:99%"}
+![](image/metnum_svd.png){: loading="lazy"}
 
 Aca una vez más separamos en casos:
 
 Si A es rango columna completa, hay una forma cerrada para x:
  
-![](image/svd_sol_1.png){: alt="" loading="lazy" style="width:50%;height:50%"}
+![](image/svd_sol_1.png){: alt="" loading="lazy"}
 
 Sino, la forma cerrada es esta:
 

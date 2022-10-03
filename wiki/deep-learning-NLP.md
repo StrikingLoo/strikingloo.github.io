@@ -71,16 +71,16 @@ Then your actual cell state is input gate * that cell state + forget gate * last
 
 Finally, you update your hidden state as output_gate * tanh(cell).
 
-![](image/Screen%20Shot%202020-09-26%20at%2019.12.09.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![](image/Screen%20Shot%202020-09-26%20at%2019.12.09.png){: alt="" loading="lazy"}
 
 ### GRU
 They work similarly, but have less gates. Instead of output gate and tanh of cell, you just make a convex sum between update gate times previous hidden state, and 1- update gate times tanh of affine of inputs + hidden state t-1 (times a reset_gate that’s kinda like a forget gate).
 
-![](image/Screen%20Shot%202020-09-26%20at%2019.13.48.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![](image/Screen%20Shot%202020-09-26%20at%2019.13.48.png){: alt="" loading="lazy"}
 
 ## Seq2Seq for Neural Machine Translation
 
-![](image/Screen%20Shot%202020-10-03%20at%2016.22.46.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![](image/Screen%20Shot%202020-10-03%20at%2016.22.46.png){: alt="" loading="lazy"}
 
 ![](image/Screen%20Shot%202020-10-03%20at%2016.24.31.png){: alt="" loading="lazy"}
 
@@ -113,9 +113,9 @@ We add attention! Here's how it works:
 
 It can also get more general: instead of a convex sum of dot products, we could do dot product between the states and a matrix in the middle, or do crazy things with tanh and a different vector for attention allocation.
 
-![](image/Screen%20Shot%202020-10-03%20at%2016.28.14.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![](image/Screen%20Shot%202020-10-03%20at%2016.28.14.png){: alt="" loading="lazy"}
 
-![](image/Screen%20Shot%202020-10-03%20at%2016.28.26.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![](image/Screen%20Shot%202020-10-03%20at%2016.28.26.png){: alt="" loading="lazy"}
 
 ## Question Answering
 
@@ -133,8 +133,8 @@ Biggest datasets are made with mechanical turk + carefully selected rather simpl
 
 Models were bad at noticing if no answer was present, until researchers came up with a solution to that (either use a threshold, or get a "noAnswer" token for answers.)
 
-![](image/example_question_anwering.png){: style="height:70%; width:70%" alt="" loading="lazy"}
-![](image/SQuAD_limitations.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![](image/example_question_anwering.png){: alt="" loading="lazy"}
+![](image/SQuAD_limitations.png){: alt="" loading="lazy"}
 
 
 ### Stanford attentive reader
@@ -152,14 +152,14 @@ It could be thought that we're missing the information about words in the middle
 
 Here's what we actually gained by using neural networks:
 
-![](image/gains.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![](image/gains.png){: alt="" loading="lazy"}
 
 ### BiDAF
 
-![](image/bidaf1.png){: style="height:70%; width:70%" alt="" loading="lazy"}
-![](image/bidaf2.png){: style="height:70%; width:70%" alt="" loading="lazy"}
-![](image/bidaf3.png){: style="height:70%; width:70%" alt="" loading="lazy"}
-![](image/bidaf4.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![](image/bidaf1.png){: alt="" loading="lazy"}
+![](image/bidaf2.png){: alt="" loading="lazy"}
+![](image/bidaf3.png){: alt="" loading="lazy"}
+![](image/bidaf4.png){: alt="" loading="lazy"}
 
 ## Subword Models
 
@@ -179,7 +179,7 @@ A seq2seq on character-level using LSTM was tested for Czech-English NMT. It sli
 
 Char-level works especially well on connected and agglutinative languages, but it's mega slow -3 weeks to train back in 2018-.
 
-![Screen_Shot_2021-01-07_at_16-15-34.png](image/Screen_Shot_2021-01-07_at_16-15-34.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![Screen_Shot_2021-01-07_at_16-15-34.png](image/Screen_Shot_2021-01-07_at_16-15-34.png){: alt="" loading="lazy"}
 
 Two trends appear:
 
@@ -197,11 +197,11 @@ hypatia = h ##yp ##ati ##a
 
 ### Highway Network (2015)
 
-![Screen_Shot_2021-01-07_at_16-23-33.png](image/Screen_Shot_2021-01-07_at_16-23-33.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![Screen_Shot_2021-01-07_at_16-23-33.png](image/Screen_Shot_2021-01-07_at_16-23-33.png){: alt="" loading="lazy"}
 
 ### Character level language model (2015, more complex)
 
-![Screen_Shot_2021-01-07_at_16-24-30.png](image/Screen_Shot_2021-01-07_at_16-24-30.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![Screen_Shot_2021-01-07_at_16-24-30.png](image/Screen_Shot_2021-01-07_at_16-24-30.png){: alt="" loading="lazy"}
 
 Almost reached SOTA, and also understood semantics of transformed words -good vs gooood-.
 
@@ -227,7 +227,7 @@ We sort of did this with hidden states on RNNs/LSTMs: their values depend on pre
 
 ### TagLM
 
-![Screen_Shot_2021-01-07_at_18-40-30.png](image/Screen_Shot_2021-01-07_at_18-40-30.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![Screen_Shot_2021-01-07_at_18-40-30.png](image/Screen_Shot_2021-01-07_at_18-40-30.png){: alt="" loading="lazy"}
 
 Train a separate Language Model in an unsupervised manner, which allows you to use a huge corpus (say, Wikipedia). Also derive your word embeddings from it.
 
@@ -251,7 +251,7 @@ Then they added different weights per LSTM layer's hidden state, and different w
 
 This way ELMo only uses the LM where it matters, and assigns different importance to each layer (reportedly the lowest layer is better for syntactic information, and is more useful for NER or POS-tag, whereas the second layer carries more semantic data, and works better for Question Answering, Sentiment Analysis, etc.).
 
-![Screen_Shot_2021-01-07_at_17-57-49.png](image/Screen_Shot_2021-01-07_at_17-57-49.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![Screen_Shot_2021-01-07_at_17-57-49.png](image/Screen_Shot_2021-01-07_at_17-57-49.png){: alt="" loading="lazy"}
 
 
 
@@ -273,23 +273,23 @@ You take the whole sentence, and make each word go through an "atttention head".
 
 All words in a same sentence can run through an attention head in parallel, making transformers train a lot faster in GPU.
 
-![Screen_Shot_2021-01-07_at_18-40-02.png](image/Screen_Shot_2021-01-07_at_18-40-02.png){: style="height:50%; width:50%" alt="" loading="lazy"}
+![Screen_Shot_2021-01-07_at_18-40-02.png](image/Screen_Shot_2021-01-07_at_18-40-02.png){: alt="" loading="lazy"}
 
 The attention mechanism can be scaled horizontally to add more semantic/syntactic interpretations of a word in-context. Notice the skip connections that make the final output the sum of all intermediate layers.
 
 Here's the attention function for embeddings Q, K, V:
 
-![Screen_Shot_2021-01-07_at_19-17-51.png](image/Screen_Shot_2021-01-07_at_19-17-51.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![Screen_Shot_2021-01-07_at_19-17-51.png](image/Screen_Shot_2021-01-07_at_19-17-51.png){: alt="" loading="lazy"}
 
 The feed-forward layer is a 2-layer MLP with ReLU.
 
-![Screen_Shot_2021-01-07_at_18-40-30.png](image/Screen_Shot_2021-01-07_at_18-40-30.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![Screen_Shot_2021-01-07_at_18-40-30.png](image/Screen_Shot_2021-01-07_at_18-40-30.png){: alt="" loading="lazy"}
 
 Where Wi are learned matrices, each of them projecting the Q,K,V word-embeddings into different spaces.
 
 Typically, we'll make Q,K,V be the word embedding for the current word, concatenated to **positional encoding**, so same words at different locations have different overall representations:
 
-![Screen_Shot_2021-01-07_at_18-41-02.png](image/Screen_Shot_2021-01-07_at_18-41-02.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![Screen_Shot_2021-01-07_at_18-41-02.png](image/Screen_Shot_2021-01-07_at_18-41-02.png){: alt="" loading="lazy"}
 
 Multi-headed attention nodes are composed (vertically) and finally you can run your supervised task on the output.
 
@@ -334,7 +334,7 @@ After training the encoder, it can be used in other tasks by **removing last lay
 
 ### Comparing BERT vs GPT
 
-![gpt vs bert](image/gpt-vs-bert.png){: style="height:70%; width:70%" alt="" loading="lazy"}
+![gpt vs bert](image/gpt-vs-bert.png){: alt="" loading="lazy"}
 
 On BERT, you multiply by the whole sentence's embeddings on each layer, then go through the block. This makes it bidirectional, and lets you do each layer in a single matrix multiply, which is good for GPU usage.
 
@@ -445,6 +445,4 @@ Distillation is an instance of [semi-supervised learning](/wiki/unsupervised-lea
 - Label a large amount of unlabeled inputs with teacher on the specific task you want to distill
 - Train student with smaller (e.g., \~50x smaller) size and bigger dataset, on cross entropy
 
-Now you have a small trained model for your problem.
-
-<https://gluebenchmark.com/leaderboard>
+Now you have a small trained model for your problem. Related paper notes on [Neural Network Distillation](/wiki/distilling-knowledge-nn).
