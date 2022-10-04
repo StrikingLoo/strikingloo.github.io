@@ -5,6 +5,9 @@ It includes my blog, where I write about programming, machine learning and produ
 
 The wiki aims at being made of heavily interlinked, in-depth evergreen notes and is mostly for my own use and consumption. The blog is public-facing and carries the mission of helping people see the beauty of algorithms.
 
+**The wiki is meant to be read [in the web
+format](https://strikingloo.github.io/wiki/).**
+
 ## Wiki Emoji Code
 
 🌿 : closed thread (spawned a note)
