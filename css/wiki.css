@@ -14,7 +14,6 @@
   font-weight: bold;
   background-color: var(--header-anchor-color);
   color: var(--bkg);
-  /*border:.3em solid var(--header-anchor-color);*/
   border-radius: 4%;
   width:95%; 
   height:auto;
