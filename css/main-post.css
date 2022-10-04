@@ -166,4 +166,5 @@ pre, code {background-color: #444; color: #fff; font-family: Verdana; padding: 1
 
 h2, h3 {
     padding-bottom: .3em;
+    padding-top: .6em;
     border-bottom: 3px solid rgba(0, 0, 0, .3);}
