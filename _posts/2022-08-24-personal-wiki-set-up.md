@@ -1,5 +1,5 @@
 ---
-title: "How to Set Up Your Own Personal Wiki (with Jekyll)"
+title: "How to Set Up a Personal Wiki (with Jekyll)"
 layout: post
 tags: note making, note taking, notes, digital garden, personal wiki, tutorial
 date: 2022-08-24
