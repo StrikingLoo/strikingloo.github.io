@@ -79,19 +79,7 @@
 				</ul>
 				<p><i>Built with ❤️ by <a href="https://strikingloo.github.io/">Strikingloo</a>.</i></p>
 			</footer>
-
 			{% if page.is_wiki %}
-			<script>
-			const windowWidth = window.innerWidth;
-			const maxDeviceWidth = 1024;
-			if (windowWidth > maxDeviceWidth) {
-			  var wiki_list = document.querySelectorAll('.wiki-item');
-			  for (var wiki_item of wiki_list) {
-			    wiki_item.classList.add('slim');
-			  }
-			}
-			</script>
-		
 			<script defer src="/js/search-script.js" type="text/javascript"></script>
 			<script>
 			document.addEventListener('DOMContentLoaded', () => SimpleJekyllSearch({

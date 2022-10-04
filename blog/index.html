@@ -12,21 +12,9 @@ is_blog: true
 	  {% if post.sitemap %}
 	  {% if post.importance > 4 %}
 <li class='post-item' style='text-align: center;'><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <br/> <span><i>{{ post.date | date_to_string }}</i></span>
-<br/><p><i>{{ post.description }}</i></p>
-</li>
+<br/><p><i>{{ post.description }}</i></p></li>
 	    {% endif %}
 	    {% endif %}
 	  {% endfor %}
 	</ul>
 </div>
-	<script>
-			const windowWidth = window.innerWidth;
-			const maxDeviceWidth = 1024;
-			if (windowWidth > maxDeviceWidth) {
-			  var wiki_list = document.querySelectorAll('.post-item');
-			  for (var wiki_item of wiki_list) {
-			    wiki_item.style.width="45%";
-			    wiki_item.style.height="18em";
-			  }
-			}
-	</script>

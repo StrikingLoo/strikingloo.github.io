@@ -137,9 +137,19 @@ strong { font-weight: bolder;}
   background-color:var(--wiki-bkg-color-hover);
   text-decoration: underline;
 }
+.posts {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 0;
+}
+@media (min-width: 500px) {
+  .posts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 .wiki-item {
-  padding: .3em;
+  padding: .5em .3em .5em .3em;
   display:inline-block;
   vertical-align: middle;
   text-align: center;
@@ -149,16 +159,7 @@ strong { font-weight: bolder;}
   font-weight: bold;
   background-color: var(--header-anchor-color);
   color: var(--bkg);
-  /*border:.3em solid var(--header-anchor-color);*/
   border-radius: 4%;
-  width:95%; 
-  height:auto;
 }
 
-.slim {
-    width:45%;
-    height:4em;
-}
-
-.posts {padding-left: 0;}
 .search-results ul li {margin-top: .9em;}
