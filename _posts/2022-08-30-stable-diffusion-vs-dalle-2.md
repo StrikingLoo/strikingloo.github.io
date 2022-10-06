@@ -295,6 +295,7 @@ Given how much has happened lately (even John Oliver is talking about DALL-E!), 
 - [**High-performance image generation using Stable Diffusion in KerasCV**](https://keras.io/guides/keras_cv/generate_images_with_stable_diffusion/): Stable Diffusion was finally ported to keras. It runs smoothly both on GPU or CPU if you have keras installed, and this is the version I've been using to make AI art in my local computer.
 - [**Lexica.art**](https://lexica.art/) a great search engine for prompts and artworks. It is an amazing resource to find good images and see which prompts generated them, which you can then copy and tune to your needs. An easy way to build on the best stable diffusion prompts other people has already found.
 - If you like anime, [**Waifu Diffusion**](https://huggingface.co/hakurei/waifu-diffusion) is a text-to-image diffusion model that was conditioned on high-quality anime images through fine-tuning, using Stable Diffusion as a starting point. It generates anime illustrations and it's awesome.
+- [The Illustrated Stable Diffusion](https://jalammar.github.io/illustrated-stable-diffusion/) explains how Stable Diffusion works, step by step and through different levels of abstraction, and has great illustrations.
 
 
 _If you liked this article, please share it with someone you think will like reading it too. I wrote this for you guys._
