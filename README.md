@@ -35,4 +35,3 @@ bundle add jekyll
 bundle exec jekyll serve
 ```
 
-⭐🤖
