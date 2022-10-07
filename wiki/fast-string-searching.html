@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23d8eaeb%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2293%22>🌳</text></svg>" />
+            <title>Fast String Searching, Hume and Sunday</title>
+			<link rel="canonical" href="https://strikingloo.github.io/wiki/fast-string-searching">
+			  <meta name="description" content="Notes on the paper for Fast String Searching, which outlines the algorithm used by grep and others, and improves on the results of Boyer-Moore by emphasizing...">
+  			<meta property="og:site_name" content="Fast String Searching, Hume and Sunday">
+
+        	
+        	<link rel="stylesheet" type="text/css" href="/css/post-min.css">
+        	
+
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
+
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-52642322-5');
+			</script>
+			
+			  <meta property="og:description" content="Notes on the paper for Fast String Searching, which outlines the algorithm used by grep and others, and improves on the results of Boyer-Moore by emphasizing...">
+			
+	  		<meta property="og:locale" content="en_US">
+	  		
+			  <meta property="og:title" content="Fast String Searching, Hume and Sunday">
+			  <meta property="og:type" content="article">
+		  	  <meta property="article:published_time" content="2022-07-26T00:00:00+00:00">
+		      <meta property="article:author" content="/">
+		  	
+		  	
+  				<meta property="og:url" content="https://strikingloo.github.io/wiki/fast-string-searching">
+  			
+  			<meta content="index,follow" name="robots"><!-- All Search Engines -->
+  			<meta content="index,follow" name="googlebot"><!-- Google Specific -->
+  			<meta name="robots" content="max-image-preview:large">
+
+		</head>
+		<body>
+			<div class="head-banner">
+			<p>Strikingloo</p>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about/">About</a></li>
+	        		<li><a href="/wiki/">Wiki</a></li>
+	        		<li><a href="/blog/">Blog </a></li>
+	    		</ul>
+			</nav>
+			<div style="clear: both;"></div>
+		    </div>
+
+			<div class="container">
+			
+			<h1>Fast String Searching, Hume and Sunday</h1>
+<p class="meta">26 Jul 2022 - importance: 7 </p>
+
+
+
+<p class="abstract" style="background-color: #E2DCC8;
+border:2px solid;
+font-style:italic;
+margin:5%;
+text-align: center;
+padding:2%;"> Notes on the paper for Fast String Searching, which outlines the algorithm used by grep and others, and improves on the results of Boyer-Moore by emphasizing empirical performance rather than theoretical measures like number of comparisons.
+Since the Boyer-Moore algorithm was described in 1977, it had been the standard benchmark for the practical string search literature. Yet this yardstick compares badly with current practice. Hume and Sunday describe two algorithms that perform 47% fewer comparisons and are about 4.5 times faster across a wide range of architectures and compilers. These new variants are members of a family of algorithms based on the skip loop structure of the preferred, but often neglected, fast form of Boyer-Moore.</p>
+
+
+<div class="post">
+  <p><a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.13.9460&amp;rep=rep1&amp;type=pdf">Fast String Searching, Hume and Sunday</a></p>
+
+<p>“Partially because the best algorithms presented in the literature are
+difficult to understand and to implement, knowledge of fast and practical algorithms is not commonplace. In this paper we present a taxonomy and an organizational framework for categorizing and constructing string search algorithms, and show how the best known algorithms are classified within it.”</p>
+
+<blockquote>
+  <p>A variant of Boyer-Moore designed by Apostolic and Giancarlo achieved a bound of C(n, m) &gt;= 2n – m + 1. (n text length, m input length).</p>
+</blockquote>
+
+<p>Boyer and Moore described two algorithms. A simpler (‘classic’) one and a faster one, but the posterior literature usually focused on the simpler one instead of the other one as benchmark.</p>
+
+<p>General string search algorithm:</p>
+
+<p><img src="image/text-search1.png" alt="" loading="lazy" /></p>
+
+<p>In their taxonomy, the authors identify and vary three different components of a string search algorithm: <strong>Skip Loops, Match algorithms and Shift Functions.</strong></p>
+
+<p>The skip loop quickly searches forward to see which characters it can skip (like checking only for the first character), the match algorithm compares text to pat, and the shift function dictates how many positions forward to move after a match (or a fail).</p>
+
+<p>Classic BM is described by {None | rev | d1^d2}.</p>
+
+<h2 id="fast-boyer-moore">Fast Boyer Moore</h2>
+
+<p>Boyer and Moore reported that most of the execution time of a string search is
+spent moving the pattern past immediate mismatches.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm">Wikipedia</a>: <em>“The key features of the algorithm are to match on the tail of the pattern rather than the head, and to skip along the text in jumps of multiple characters rather than searching every single character in the text.”</em></p>
+
+<p>Instead of a brute-force search of all alignments (of which there are n-m+1), Boyer–Moore uses information gained by preprocessing P to skip as many alignments as possible.</p>
+
+<p>“The key insight in this algorithm is that if the end of the pattern is compared to the text, then jumps along the text can be made rather than checking every character of the text. The reason that this works is that in lining up the pattern against the text, the last character of the pattern is compared to the character in the text. <strong>If the characters do not match, there is no need to continue searching backwards along the text. If the character in the text does not match any of the characters in the pattern, then the next character in the text to check is located m characters farther along the text, where m is the length of the pattern. If the character in the text is in the pattern, then a partial shift of the pattern along the text is done to line up along the matching character and the process is repeated.</strong> <em>Jumping along the text to make comparisons rather than checking every character in the text decreases the number of comparisons that have to be made</em>, which is the key to the efficiency of the algorithm.”</p>
+
+<p>Both P and T are compared repeatedly backwards, from a certain alignment index k, and then k is shifted according to rules and table lookups.</p>
+
+<h3 id="shift-rules">Shift Rules</h3>
+
+<p>A shift is calculated by applying two rules:</p>
+<ul>
+  <li>The <strong>bad character rule.</strong></li>
+  <li>The <strong>good suffix rule.</strong></li>
+</ul>
+
+<p>The actual shifting offset is the maximum of the shifts calculated by these rules.</p>
+
+<p>The <strong>bad-character rule</strong> considers the character in T at which the comparison process failed (assuming such a failure occurred). The next occurrence of that character to the left in P is found, and a shift which brings that occurrence in line with the mismatched occurrence in T is proposed. If the mismatched character does not occur to the left in P, a shift is proposed that moves the entirety of P past the point of mismatch.</p>
+
+<p>The <strong>good suffix rule</strong> is markedly more complex in both concept and implementation than the bad character rule. Like the bad character rule, it also exploits the algorithm’s feature of comparisons beginning at the end of the pattern and proceeding towards the pattern’s start. It can be described as follows:</p>
+
+<p>Suppose for a given alignment of P and T, a substring t of T matches a suffix of P, but a mismatch occurs at the next comparison to the left.</p>
+
+<ul>
+  <li>Then find, if it exists, the right-most copy t’ of t in P such that t’ is not a suffix of P and the character to the left of t’ in P differs from the character to the left of t in P. Shift P to the right so that substring t’ in P aligns with substring t in T.</li>
+  <li>If t’ does not exist, then shift the left end of P past the left end of t in T by the least amount so that a prefix of the shifted pattern matches a suffix of t in T.</li>
+  <li>If no such shift is possible, then shift P by m (length of P) places to the right.</li>
+  <li>If an occurrence of P is found, then shift P by the least amount so that a proper prefix of the shifted P matches a suffix of the occurrence of P in T.</li>
+  <li>If no such shift is possible, then shift P by m places, that is, shift P past t.</li>
+</ul>
+
+<p>The good suffix rule uses two tables, also made during preprocessing.</p>
+
+<hr />
+
+<p>They described a modified algorithm, which we call BM.FAST, with an initial ‘fast loop’ that quickly skips past these mismatches.
+To prevent two tests in the skip loop, one for end of text and one for a possible match, this loop uses delta_0, identical to Boyer-Moore’s delta_1 except that delta_0 [ pat [ patlen –1 ]]
+contains a sentinel value LARGE (&gt; textlen + patlen ) that causes the skip loop to halt when a
+possible match position occurs.</p>
+
+<p>“Having a skip character near the end of the pattern gives large
+skips, but it might be better to choose a lower frequently character and stay in the loop
+longer, even though each skip is a bit smaller. Consider searching for the word ‘baptize’ in
+English text. Quite often, the ‘e’ will match and we will break out of the skip loop, and then
+do the match and shift before going back to skipping. However, if the skip loop was looking for the ‘z’, it would skip a little less on each iteration of the loop, but would almost
+never break out of the skip loop, and would thus run faster.”</p>
+
+<p>[Here they’re looping unrolled-ly and checking if shift &gt;0. While true, no need to compare strings, can keep skipping as desired].</p>
+
+<p>Something I found interesting: “There are additional fine tuning refinements that may be architecture dependent. One such variant changes the type of the d0 skip table from int to char. As shown below, this runs faster on the two RISC architectures ( mips, sparc) but slower on the others.</p>
+
+<p>Examination of the generated code reveals that the mips code had shrunk by one instruction because it no longer had to multiply the index by 4 to get a byte address for a skip table entry. The vax code, on the other hand, grew because it cannot add a byte to an integer directly.”</p>
+
+<hr />
+
+<p>“For our test set, the average number of characters compared in the above <em>om loop</em> is 1.05.</p>
+
+<p>“Thus, we can gain 95% of the benefits of the om match by simply testing for the rarest character of the pattern first before doing a full match test.”</p>
+
+<p>Finally they conclude “combining <strong><em>fwd</em> with a guard is a clear winner.</strong>”</p>
+
+<p>Later:</p>
+
+<p>“Of the shifts and systems we measured, <strong><em>md2</em> is the fastest shift.</strong>”</p>
+
+<p><strong>md2</strong>: “If we use a skip loop (other than none), then text[ i + k ] = pat[k] where pat[k] is the skip loop character. A mini sd2, or md2, shift aligns the rightmost occurrence of pat[k] left of pat[k] with text[ i + k ]. If there isn’t one, the shift is k + 1. This shift is simple to precompute and should always outperform inc since it is as easy to apply but typically will be much greater than 1 and roughly equal to sdk, the distance that the skip character must skip to match itself.”</p>
+
+<h2 id="recommended-searching-algorithms">Recommended Searching Algorithms</h2>
+
+<p>The recommended algorithm is the <strong>TBM (<em>Tuned Boyer-Moore</em>) algorithm</strong>. 
+It is { <em>ufast</em> | <em>fwd + g</em> | <em>md2</em> }.</p>
+
+<p>It is compact and fast and can be made independent of frequency data by eliminating the guard. <em>ufast</em> is just the BM delta with an unroll (in this case of 3).</p>
+
+<p>The code for the algorithm, excluding preprocess, is:</p>
+
+<p><img src="image/text-search2.png" alt="" loading="lazy" /></p>
+
+<p><strong>md2</strong> is distance between first leftward reoccurrence of last character, and len.</p>
+
+<p><strong>d0</strong> stores len(P) for every char except if c in P, then (len(P) - max(ind(c,P))).</p>
+
+<p>They also recommend LC which performs similarly and only changes the skip loop routine (for something more complex that I don’t feel inclined to analyse).</p>
+
+<h2 id="related-reading">Related Reading</h2>
+
+<ul>
+  <li><a href="https://lists.freebsd.org/pipermail/freebsd-current/2010-August/019310.html">This Article I found in HackerNews</a> linked me to the paper and cites it as the reason GNU grep is faster than freeBSD grep.</li>
+</ul>
+
+</div>
+<a href='https://ko-fi.com/R6R3F4NIO' target='_blank' rel="noopener noreferrer nofollow">
+  <img style='border:0px;height:4em;width:auto;' src='https://cdn.ko-fi.com/cdn/kofi5.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' loading='lazy'/></a>
+  <p style='text-align: center;'>
+  <a href="https://twitter.com/intent/tweet?text=Fast String Searching, Hume and Sunday&url=https://strikingloo.github.io/wiki/fast-string-searching%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" title="Share on Twitter!">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em" rel="noopener noreferrer nofollow"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>Share on twitter]</a></p>
+
+<template id="post-delayed-content">
+
+<div class="backButton">
+<a href="https://twitter.com/intent/tweet?text=Fast String Searching, Hume and Sunday&url=https://strikingloo.github.io/wiki/fast-string-searching%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis' title="Share on Twitter!" rel="noopener noreferrer nofollow">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>]</a>
+<br/>
+<a href="/blog/" id='backToBlog' title="Back to blog" rel="noopener noreferrer">[←]</a>
+</div>
+</template>
+<script>
+const headings = document.querySelectorAll('h2[id],h3[id]');
+for (var heading of headings) {
+    heading.innerHTML = `<a href=#${heading.id}>${heading.innerHTML}</a>`;
+}
+function externalLinks() { for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } }
+externalLinks();
+
+function renderBottomButtons(){
+  const templateNode = document.getElementById('post-delayed-content')
+  const templateContentClone = templateNode.content.cloneNode(true) // perform a deep copy
+  document.body.appendChild(templateContentClone)
+}
+
+function scrollEventHandler(){
+ const scrollOffset = window.pageYOffset
+ const browserViewHeight = window.innerHeight
+ if (scrollOffset > browserViewHeight/3) {
+    console.log('done')
+    renderBottomButtons();
+    window.removeEventListener('scroll', scrollEventHandler)
+ }
+}
+window.addEventListener('scroll', scrollEventHandler)
+</script>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@StrikingLoo" />
+<meta name="twitter:title" content="Fast String Searching, Hume and Sunday" />
+<meta name="twitter:description" content="Notes on the paper for Fast String Searching, which outlines the algorithm used by grep and others, and improves on the results of Boyer-Moore by emphasizing empirical performance rather than theoretical measures like number of comparisons." />
+
+<meta name="twitter:image:src" content="https://strikingloo.github.io/resources/book-tw.jpg"/>
+<meta property="og:image" content="https://strikingloo.github.io/resources/preview-image-terrarium.png"/>
+
+			
+			</div>
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:lucianostrika44@gmail.com" rel="me" title="email me">✉️</a></li>
+	        		<li><a href="https://github.com/strikingloo" rel="me noopener noreferrer nofollow" title="GitHub"><svg viewBox="0 0 438.549 438.549" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><path fill="#0F3D3E" d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289s4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136s11.704-.476 16.274-1.423c4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"></path></svg></a></li>
+			        <li><a href="https://twitter.com/intent/follow?screen_name=strikingloo" rel="me noopener noreferrer nofollow" title="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg></a></li>
+			        <li><a href="http://www.linkedin.com/in/luciano-strika" rel="me noopener noreferrer nofollow" title="linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M72.16 99.73H9.927a5 5 0 00-5 5v199.928a5 5 0 005 5H72.16a5 5 0 005-5V104.73a5 5 0 00-5-5zM41.066.341C18.422.341 0 18.743 0 41.362 0 63.991 18.422 82.4 41.066 82.4c22.626 0 41.033-18.41 41.033-41.038C82.1 18.743 63.692.341 41.066.341zM230.454 94.761c-24.995 0-43.472 10.745-54.679 22.954V104.73a5 5 0 00-5-5h-59.599a5 5 0 00-5 5v199.928a5 5 0 005 5h62.097a5 5 0 005-5V205.74c0-33.333 9.054-46.319 32.29-46.319 25.306 0 27.317 20.818 27.317 48.034v97.204a5 5 0 005 5H305a5 5 0 005-5V194.995c0-49.565-9.451-100.234-79.546-100.234z"></path></svg></a></li>
+			        <li><a href="/resources/Luciano_Strika.pdf">CV</a></li>
+				</ul>
+				<p><i>Built with ❤️ by <a href="https://strikingloo.github.io/">Strikingloo</a>.</i></p>
+			</footer>
+			
+
+			
+
+			
+			<link rel="preload" href="/css/non-critical-post-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+			<noscript><link rel="stylesheet" href="/css/non-critical-post-min.css"></noscript>
+        	
+		</body>
+	</html>

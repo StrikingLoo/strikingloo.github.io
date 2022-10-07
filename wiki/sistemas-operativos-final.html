@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23d8eaeb%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2293%22>🌳</text></svg>" />
+            <title>Sistemas Operativos - Notas para el Final</title>
+			<link rel="canonical" href="https://strikingloo.github.io/wiki/sistemas-operativos-final">
+			  <meta name="description" content="Notas para el final de SysOp. Basadas en las diapos de la teórica y adornadas con fragmentos del Silberschatz, Tanenbaum y Wikipedia.">
+  			<meta property="og:site_name" content="Sistemas Operativos - Notas para el Final">
+
+        	
+        	<link rel="stylesheet" type="text/css" href="/css/post-min.css">
+        	
+
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
+
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-52642322-5');
+			</script>
+			
+			  <meta property="og:description" content="Notas para el final de SysOp. Basadas en las diapos de la teórica y adornadas con fragmentos del Silberschatz, Tanenbaum y Wikipedia.">
+			
+	  		<meta property="og:locale" content="en_US">
+	  		
+			  <meta property="og:title" content="Sistemas Operativos - Notas para el Final">
+			  <meta property="og:type" content="article">
+		  	  <meta property="article:published_time" content="2021-02-06T00:00:00+00:00">
+		      <meta property="article:author" content="/">
+		  	
+		  	
+  				<meta property="og:url" content="https://strikingloo.github.io/wiki/sistemas-operativos-final">
+  			
+  			<meta content="index,follow" name="robots"><!-- All Search Engines -->
+  			<meta content="index,follow" name="googlebot"><!-- Google Specific -->
+  			<meta name="robots" content="max-image-preview:large">
+
+		</head>
+		<body>
+			<div class="head-banner">
+			<p>Strikingloo</p>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about/">About</a></li>
+	        		<li><a href="/wiki/">Wiki</a></li>
+	        		<li><a href="/blog/">Blog </a></li>
+	    		</ul>
+			</nav>
+			<div style="clear: both;"></div>
+		    </div>
+
+			<div class="container">
+			
+			<h1>Sistemas Operativos - Notas para el Final</h1>
+<p class="meta">06 Feb 2021 - importance:  </p>
+
+
+
+
+<div class="post">
+  <h1 id="sistemas-operativos">Sistemas Operativos</h1>
+
+<p>Preguntas Chapa</p>
+
+<p><a href="https://docs.google.com/document/d/1QOFw99da5EBd8kaa5tli7xId3tFPLQNIvbWytqu8m7k/edit?usp=sharing">https://docs.google.com/document/d/1QOFw99da5EBd8kaa5tli7xId3tFPLQNIvbWytqu8m7k/edit?usp=sharing</a></p>
+
+<p>Preguntas Baader</p>
+
+<p><a href="https://docs.google.com/document/d/1f7FMXf7JYZvsbXgXPROL4eU0OKl_1Li1lzBwNUVU5xo/edit?usp=sharing">https://docs.google.com/document/d/1f7FMXf7JYZvsbXgXPROL4eU0OKl_1Li1lzBwNUVU5xo/edit?usp=sharing</a></p>
+
+<h2 id="sistema-operativo">Sistema Operativo</h2>
+
+<p>Para qué? Dos cosas: de arriba hacia abajo: para usar más apropiadamente los recursos del hardware. De abajo hacia arriba: porque como usuario quiero poder abstraerme del hardware.</p>
+
+<p>Incluye el kernel, y los drivers. Además, suele venir con archivos de configuración y binarios.</p>
+
+<h2 id="proceso">Proceso</h2>
+
+<p>Programa en ejecución, incluyendo su contexto y memoria -y pid-.</p>
+
+<h3 id="process-memory">Process memory</h3>
+
+<ul>
+  <li>Data: La sección con variables globales -estaticas o constantes-.</li>
+  <li>Text: La sección donde está guardado el código del programa.</li>
+  <li>Heap: La heap del programa si usa memoria de reserva dinamica.</li>
+  <li>Stack</li>
+  <li>“Current activity”: los registros (mencion especial al PC)</li>
+</ul>
+
+<p>Puede terminar (con exit(CODE)), o forkear para spawnear un nuevo proceso. fork() + wait() = system(). fork() + exec() = run().</p>
+
+<h3 id="comunicacion-entre-procesos-ipc">Comunicacion entre procesos (IPC)</h3>
+
+<p>Podria hacerse por:</p>
+
+<ul>
+  <li>Memoria compartida</li>
+  <li>Recursos compartidos -e.g., un file-</li>
+  <li>Señales</li>
+</ul>
+
+<h2 id="scheduling">Scheduling</h2>
+
+<p>Scheduling siempre es un tema de trade-offs. Algunas métricas posibles a optimizar son:</p>
+
+<ul>
+  <li>Fairness (ecuanimidad).</li>
+  <li>Eficiencia: usar el CPU al maximo.</li>
+  <li>Carga: minimizar cantidad de procesos en ready.</li>
+  <li>Tiempo de respuesta: el tiempo de respuesta</li>
+  <li>Latencia: tiempo entre que un proceso emerge y comienza a ejecutarse.</li>
+  <li>Tiempo de ejecución (de un proceso).</li>
+  <li>Throughput: procesos terminados / tiempo.</li>
+  <li>Liberación de recursos: priorizar los procesos que mas recursos consumen primero.</li>
+</ul>
+
+<p>Scheduling puede hacerse cooperativo o con desalojo (<em>preemptive</em>). El segundo es el mas comun, y suele usar la interrupcion del clock (cada ~20ms) para desalojar procesos (tambien llamado apropiarse). </p>
+
+<p>Algunos sistemas:</p>
+
+<ul>
+  <li><strong>Round Robin</strong>: turnos de quantum fijo entre procesos. Calibrar el quantum no es trivial. Puede combinarse con prioridades, y darle mayor prioridad a un proceso mientras mas “starved” está. También se aumenta la prioridad de un proceso si hace E/S, para ‘premiarlo’.</li>
+  <li><strong>FCFS/FIFO</strong>: hace una queue y ejecuta secuencialmente -horrible por obvias razones-.</li>
+  <li><strong>Multiples colas</strong>: tener colas de 2,4,6,8… quanta, y pickear priorizando las mas cortas, pasando el proceso a la siguiente queue si no terminó luego de usar todo su tiempo. Resetteas un proceso que hace E/S a la de mayor prioridad.</li>
+</ul>
+
+<p>En RT, al haber deadlines, hay toda otra familia de algoritmos de scheduling que no vimos. Un ejemplo simple es “earliest deadline first”.</p>
+
+<p>En SMP -multiples procesadores-, se prioriza darle el mismo proceso al mismo procesador consecutivamente. Esto es porque pasarle la cache de un procesador a otro es muy costoso, y si la invalido puede ser mas lento recrearla que hacerlo esperar.</p>
+
+<h2 id="concurrencia">Concurrencia</h2>
+
+<p>Toda ejecución debería dar un resultado equivalente a alguna ejecución secuencial de los mismos procesos.</p>
+
+<p>Cuando esto no pasa, decimos que se produjo una condición de carrera.</p>
+
+<p>Una forma posible para solucionarlo es logrando la exclusión mutua mediante secciones críticas (alias CRIT).</p>
+
+<ul>
+  <li>Sólo hay un proceso a la vez en CRIT.</li>
+  <li>Todo proceso que esté esperando entrar a CRIT va a entrar.</li>
+  <li>Ningún proceso fuera de CRIT puede bloquear a otro.</li>
+</ul>
+
+<p>Podemos usar locks: variables booleanas, compartidas. Cuando quiero entrar a la sección crítica la pongo en 1, al salir, en 0. Si ya está en 1, espero hasta que tenga un 0.</p>
+
+<p>Implementar esto ok necesita ayuda del hardware.</p>
+
+<p>TestAndSet:</p>
+
+<p>pone 1 y devuelve el valor anterior, pero de manera atómica: significa que es indivisible, incluso si tenemos varias CPUs.</p>
+
+<p>Para usar una <strong>variable atómica</strong> tengo que hacer un while que le pegue al testAndSet, por lo que hago <strong><em>busy-waiting</em></strong>. Esto es muy <strong>agresivo y costoso</strong>. Usa el CPU sin obtener nada, en detrimento de otros procesos! Pero es mas rápido en responder.</p>
+
+<p><strong>Lost wake-up problem</strong>: Lo que pasa si usas un <strong>array compartido como semaforo</strong> (en vez de un actual semaforo). Pusheas algo pero te desalojan antes de avisar que qty &gt; 0. El otro lado hace el check de qty y como es 0, va a quedar en wait(), pero el otro tira el wakeup() en el medio, entonces se pierde. Solo necesitas que te desalojen en el orden adversarial.</p>
+
+<p>Solución: semaforo.</p>
+
+<p>Es un entero con dos operaciones que se ejecutan sin interrupciones: wait y signal. Wait espera -durmiendo- a que s&gt;0 y hace s–; Signal hace s++ y despierta algún waiting. Un mutex es un semaforo de capacidad 1.</p>
+
+<p>Un atomic bool tiene operaciones getAndSet(bool v) y testAndSet()==getAndSet(true). Con esto podemos implementar un mutex, al que se le llama spin lock -o TASLock-.</p>
+
+<p>Hace un while(testAndSet()) como lock, y set(false) como unlock. Esto hace busy waiting y puede ser un poco wasteful si hay mucho wait.</p>
+
+<p>Si quiero un punto medio existe TTASLock, que reduce el overhead y el uso de recursos haciendo “while(true){ while (mtx.get ()) {} ;  if (! mtx. testAndSet ()) return ;” Osea que hace busy waiting con un get, y si rompe ahi recien hace el checkeo atomico. Si falla reintentara.</p>
+
+<h3 id="parte-2">Parte 2</h3>
+
+<p>En los <strong>programas paralelos, demostrar la correctitud</strong> es una tarea muy distinta y difícil. <strong>No podes usar precondición y post condición</strong>, porque existen muchas ejecuciones distintas posibles. No podes hacer ninguna asunción sobre el scheduling.</p>
+
+<p>Nos interesa ver si las ejecuciones terminan, no tienen errores, inanición, etc. Entonces <strong>definimos muchas propiedades deseables</strong>, que pueden estudiarse por separado.</p>
+
+<ul>
+  <li><strong>Safety</strong> : No pasan cosas malas (you’re safe hunny). <strong>Tienen contraejemplo finito.</strong>  (e.g., no hay deadlocks, hay exclusión mutua, etc.).</li>
+  <li><strong>Liveness</strong> : Cosas buenas sí pasan. <strong>Contraejemplo infinito.</strong> (e.g., el programa siempre avanza en el futuro).</li>
+</ul>
+
+<h3 id="propiedades-deseables">Propiedades deseables:</h3>
+
+<ul>
+  <li>Turnos: los procesos se comunican por turnos como haciendo una ronda.</li>
+  <li>Rendezvous/Barrera: cada proceso ejecuta a(); b();. Todos los a() tienen que pasar antes que el primer b(). No hay que imponer restricciones sobre el orden de los a() o b().</li>
+</ul>
+
+<p><strong>Exclusion</strong> : [] #CRIT &lt;= 1. (En todo momento, hay como mucho un solo proceso en cada zona crítica).</p>
+
+<p><strong>Wait-Freedom</strong>: Todo proceso que intenta acceder a la sección crítica, en algún momento lo logra, cada vez que lo intenta. “<strong>libre de procesos que esperan (para siempre)</strong>”.  == (Para todo i [] IN(i))</p>
+
+<p><strong>Lock-Freedom (Progreso)</strong> : Si hay al menos <strong>un proceso en TRY y ninguno en CRIT</strong>, entonces eventualmente hay <strong>un proceso en CRIT</strong>. (Si alguno esta intentando, y ninguno tiene el recurso, eventualmente alguien lo va a agarrar).</p>
+
+<p><strong>Starvation Freedom</strong>: (Para todo i [] OUT(i) )–&gt;(Para todo i  [] IN(i)).</p>
+
+<h3 id="parte-3">Parte 3</h3>
+
+<p>Un conjunto de procesos está en livelock si estos continuamente cambian su estado en respuesta a los cambios de estado de los otros.</p>
+
+<p><strong>Seccion critica de M miembros</strong>: igual que de a 1 pero usas semaforo en vez de Mutex.</p>
+
+<p><strong>SWMR</strong> (Single-Writer/Multiple-Readers) : No se da solucion en clase.</p>
+
+<p><strong>Consenso</strong>: todos se ponen de acuerdo en un valor, cada uno empieza con uno arbitrario. El acuerdo tiene que estar entre los valores iniciales, no puede ser un hardcodeado. Este problema esta <strong>resuelto con compareAndSet</strong> ( atom.cmp&amp;set(e, v) = if atom.value() == e : atom.value=v; return True else return False;)</p>
+
+<h2 id="memoria">Memoria</h2>
+
+<h3 id="manejador-de-memoria">Manejador de memoria</h3>
+
+<p>Subsistema de casi todos los SO</p>
+
+<ul>
+  <li>Maneja el espacio libre/ocupado.</li>
+  <li>Asigna y libera memoria.</li>
+  <li>Controla el swapping.</li>
+</ul>
+
+<p>Cómo manejo la memoria de múltiples procesos?</p>
+
+<p>Trivialmente podría mandar a disco todos los procesos que no sean el actual e ir swappeando. Esto funcionaría, pero sería muy lento.</p>
+
+<p>Puedo mantener a todos en memoria hasta no poder mas, y ahi ir cambiando, pero como elijo a quién desalojar? Y qué pasa cuando voy cambiando los addresses y la caché se invalida?</p>
+
+<p>Surgen otros problemas:</p>
+
+<ul>
+  <li>Reubicación (controlar el swapping).</li>
+  <li>Manejo del espacio libre (evitar que se hagan pequeños pockets sin usar).</li>
+  <li>Protección (un proceso no deberia poder leer la data de otro).</li>
+</ul>
+
+<h3 id="manejo-del-espacio-libre">Manejo del espacio libre</h3>
+
+<p>Para evitar tener bolsillos vacíos inutilizables, queremos que los espacios libres sean tan contiguos como sea posible.</p>
+
+<p>Un proceso suele administrar su memoria con secciones fijas para la data y el texto, una sección variable para el heap justo arriba, y arriba de todo el stack (que expands downwards in address space).</p>
+
+<p>Para distribuir y manejar las paginas de memoria, el SO puede organizarse con distintas estrategias.</p>
+
+<p><strong>Bitmap</strong> : tengo un array con un bit por página, 0 libre 1 ocupado. Asignar y liberar es barato en O(1), pero hallar páginas libres consecutivas es caro (lineal).</p>
+
+<p><strong>Linked-List</strong> :  Cada nodo tiene la dirección de comienzo y el tamaño del bloque -que puede variar-. Liberar es O(1) si tengo el nodo, asignar es similar si sé dónde. Los procesos tienen toda su memoria contigua.</p>
+
+<p>Algunas políticas par asignar bloques en un sistema con lista:</p>
+
+<ul>
+  <li>First fit: si entra asigno.</li>
+  <li>Best fit: termina performando igual de bien.</li>
+  <li>quick fit: tener precomputada una lista con bloques de los tamaños mas usados.</li>
+</ul>
+
+<p>Todos generan fragmentacion (cachos desperdiciados). Las soluciones actuales usan estadística de los tamaños pedidos, y son altamente no triviales.</p>
+
+<h3 id="reubicación">Reubicación</h3>
+
+<p>Uso swapping + memoria virtual. Para esto necesito al MMU (de Hardware). El MMU añade una capa de abstracción para que la dirección virtual que el programa pide se mappee a una dirección física en la memoria, que si no está llena se carga del disco.</p>
+
+<p>MMU: tabla de paginas</p>
+
+<p>Usamos tabla multinivel (tabla de tablas) para no tener que tener toda en memoria.</p>
+
+<p>Dirección de 32bits: 10 para primera tabla, 10 segunda, 12 offset.</p>
+
+<p>Como el lookup de paginas es costoso, se agrega el TLB (Translation Lookaside Buffer) como cache que va directo de virtual a fisica.</p>
+
+<h2 id="es">E/S</h2>
+
+<p>Los <strong>drivers</strong> son el <strong>software intermediario</strong> entre el SO y los dispositivos de E/S. Corren con <strong>máximo privilegio</strong>: pueden hacer colgarse a todo el sistema. De ellos depende el <strong>rendimiento de E/S</strong>, que es fundamental para el rendimiento combinado del sistema. Son de <strong>código muy</strong><strong>especifico</strong>.</p>
+
+<p>La interacción con dispositivos puede ser por:</p>
+
+<ul>
+  <li><strong>Polling</strong>: costosa por ser busy, pero tiene muy baja latencia y es simple, con cambios de contexto programados.</li>
+  <li><strong>Interrupciones</strong>: es asíncrona y permite que el driver descanse, pero genera interrupciones impredecibles.</li>
+  <li><strong>DMA</strong>: desentiende al CPU de la lectura y escritura de memoria, con un manager que habla directo con el driver.</li>
+</ul>
+
+<p>API del subsistema de E/S : Todo es un archivo! Read/Write, Open/Close.</p>
+
+<p><strong>Scheduling de disco</strong>: mover el cabezal lleva tiempo y el disco son muchos cilindros con alturas y rotaciones. Hacerlo óptimo es altamente no trivial, se suelen usar algoritmos complejos con prioridades. Algunos de los simples serian <strong>FCFS, SSTF, o “Scan”</strong> que es “voy y vengo y siempre agarro lo siguiente primero”.</p>
+
+<p><strong>Spooling</strong>: el dispositivo encola los eventos y los hace esperar, sin intermediar el kernel. Esto evita que el usuario se bloquee. Ejemplo: impresora.</p>
+
+<p><strong>Backups</strong>:</p>
+
+<p><strong>Total</strong>: backuppeo todo.</p>
+
+<p><strong>Diferencial</strong>: backuppeo todo desde el ultimo total.</p>
+
+<p><strong>Incremental</strong>: backuppeo todo desde el ultimo incremental.</p>
+
+<p><strong>RAID</strong>: Redundant Array of Inexpensive Disks</p>
+
+<p>Mirroring provides high reliability, but it is expensive. Striping provides high
+data-transfer rates, but it does not improve reliability. Numerous schemes
+to provide redundancy at lower cost by using disk striping combined with
+“parity” bits (which we describe shortly) have been proposed.</p>
+
+<h3 id="levels-of-raid">Levels of RAID</h3>
+
+<p><strong>RAID 0</strong>: non-redundant bit-striping.
+<strong>RAID 1</strong>: no striping, but full backups.
+<strong>RAID 2</strong>: bit-striping + 3 discos de parity bits -no se usa en la practica-.
+<strong>RAID 3</strong>: bit-striping + 1 disco de parity bits -el otro usaba dos discos de mas-.
+<strong>RAID 4</strong>: striping de bloques en vez de bits. 1 disco de parity.
+<strong>RAID 5</strong>: Como el 5 pero distribuye el parity en un disco distinto por cada bloque. Evita overusing un disco, y single point of failure.</p>
+
+<h3 id="file-systems">File Systems</h3>
+
+<p>Un archivo es una secuencia de bytes sin estructura + nombre.</p>
+
+<p>Un File System lo suele representar como una lista de bloques+metadata.</p>
+
+<p>No puedo simplemente guardar todos los bloques consecutivamente, porque si el archivo crece no sabría que hacer con él.</p>
+
+<p>Podríamos usar una linked-list para bloques, pero la lectura arbitraria de segmentos seria muy costosa (O(n)). Solución: Usar una <strong>tabla que marca el siguiente de cada bloque</strong>, o si el bloque está vacío o es fin de archivo. Este sistema usa <strong>FAT</strong>.</p>
+
+<p>Desventajas: la tabla esta entera en memoria, es poco robusto (si caes y no llegas a bajarla a disco), y es un bottleneck porque todos usan la misma.</p>
+
+<p><strong>Inodos</strong>: Esto usa Unix. Cada archivo tiene un inodo con metadata y los primeros 12 bloques. Después una tabla con un nivel de indirección, una con dos niveles y una con tres. Esto permite tener en memoria solamente las tablas correspondientes a archivos abiertos.</p>
+
+<p>Los directorios tienen en el inodo un bloque por archivo, que tiene la metadata, el nombre y un link al inodo del archivo/directorio.</p>
+
+<p><strong>Links</strong>:</p>
+
+<p>El <strong>link fisico</strong> simplemente <strong>mappea dos archivos al mismo inodo</strong>. El link <strong>simbólico</strong> mappea <strong>un inodo a un path</strong> que tiene otro inodo al archivo. Si cambias el inodo al que ese path apunta, el simbolico se ve afectado pero el fisico no.</p>
+
+<p>Journaling se usa para garantizar consistencia: tenes un buffer intermedio al que escribis rapido y secuencialmente los cambios, para restaurar si se cae el sistema.</p>
+
+<p>Para preguntar a Facu: cuando cambio de proceso cambia la cache? O la cache es solo por cada quantum? tomaran RAID o NFS? no creo. Que es soft updates?</p>
+
+<h2 id="seguridad">Seguridad</h2>
+
+<p>Existe una distinción entre protección y seguridad, pero no vamos a darle mucha bola.</p>
+
+<p>La seguridad tiene 3 partes: <strong>Confidencialidad, Integridad y Disponibilidad</strong>.</p>
+
+<p>En un sistema de seguridad hay <strong>Sujetos</strong> que hacen <strong>Acciones</strong> sobre <strong>Objetos</strong>.</p>
+
+<p>Hay 3 propiedades deseables: Authentication, Authorization y Accountability.</p>
+
+<h3 id="rsa">RSA</h3>
+<p>Tengo clave privada y publica. Puedo encriptar con la privada y cualquiera con la publica desencripta y sabe que algo es mío. Con esto se implementa la firma digital: tengo un documento, le computo un hash y te mando el doc y el hash encriptado con mi clave privada. Como tenes mi clave publica, podes facilmente verificar que el documento no fue adulterado. Un atacante necesitaria mi clave privada para romper el documento y generar un hash falso.</p>
+
+<p>RSA en detalle funciona: tomando dos primos grandotes p y q (&gt; 10^200).</p>
+<ul>
+  <li>Hago <code class="language-plaintext highlighter-rouge">n = p*q</code></li>
+  <li><code class="language-plaintext highlighter-rouge">n' = (p-1) * (q - 1)</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Let e in range(3, n'-1) such that n' % e != 0</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Let d such that (d * e) % n' == 1</code></li>
+  <li>e es la clave de encripción <strong>pública</strong>. d la de desencripción <strong>privada</strong>.</li>
+</ul>
+
+<p>Para encriptar : cada caracter m -&gt; m^e % n.
+Para desencriptar : cada caracter encriptado c -&gt; c^d % n.</p>
+<h2 id="sistemas-distribuidos">Sistemas distribuidos</h2>
+
+<p>Conjunto de recursos conectados que interactúan.</p>
+
+<p>Pueden compartir memoria (por hardware o por software -#Facu: tomaran esto en detalle?-)</p>
+
+<p><strong>Sincronicos</strong>:</p>
+
+<p>Telnet : Me conecto remoto a otra computadora y corro el programa ahi -como hacer ssh-.</p>
+
+<p>RPC: llamo a una funcion y me es transparente, pero del otro lado se ejecuta codigo remoto y devuelve. Es sincrónico. (#Facu: mas diferencias?)</p>
+
+<p><strong>Asincronicos</strong>:</p>
+
+<p>RPC asincrónico.</p>
+
+<p>Message Passing -sending &amp; receiving- (e.g., MPI, o con pipes).</p>
+
+<h3 id="message-passing">Message Passing</h3>
+
+<p>En este tema ignoramos fault tolerance o caída de paquetes.</p>
+
+<p>Al no haber memoria compartida o TAS, como hacemos la sincronización?</p>
+
+<p>Puede usarse un <strong>enfoque centralizado</strong>: un solo nodo tiene todos los recursos, y spawnea un proceso por cada otro nodo para que negocien los recursos con los mecanismos no distribuidos. <strong>Esto es horrible</strong> porque si cae el nodo central morimos, y porque es un bottleneck y podría no estar a distancia optima de todos.</p>
+
+<p>Otros enfoques:</p>
+
+<p><strong>Orden parcial no reflexivo de eventos</strong> -para no depender de clocks, que son imposibles de sincronizar-. El orden es: eventos en un mismo nodo tienen el orden del nodo. Envio de un evento viene siempre antes que recepcion del evento. Ademas, esto es transitivo. Si no tengo A -&gt; B ni B -&gt; A entonces asumo concurrencia.</p>
+
+<p>Si queremos un orden total, rompemos los empates con criterios arbitrarios: si los eventos son concurrentes entonces da lo mismo el orden.</p>
+
+<p><strong>Acuerdo bizantino</strong>: si hay posibles fallas en la comunicación, no hay solución al problema de poner N procesos de acuerdo en un valor V, en tiempo finito. Aun si el valor es booleano.</p>
+
+<p>Si</p>
+
+<ul>
+  <li><strong>En vez de caerse paquetes, caen nodos</strong>, y</li>
+  <li>Sé que a lo sumo caen k &lt; n nodos.</li>
+</ul>
+
+<p>entonces <strong>se puede resolver consenso</strong> en O((k + 1) · n^2 ) pasos.</p>
+
+<h3 id="métricas-para-algoritmos-distribuidos">Métricas para algoritmos distribuidos</h3>
+
+<ul>
+  <li>Cantidad de mensajes enviados.</li>
+  <li>Fallas soportadas.</li>
+  <li>Información requerida.</li>
+</ul>
+
+<p>Problemas en 3 familias: <strong>orden de eventos</strong>, <strong>exclusión mutua</strong> y <strong>consenso.</strong></p>
+
+<p>Vamos a ver algoritmos asumiendo que <strong>ningún proceso cae, y no se pierden mensajes</strong>.</p>
+
+<h3 id="exclusión-mutua">Exclusión Mutua</h3>
+
+<p><strong>Token Passing</strong>: Los procesos se pasan el “<em>token</em>” en un anillo secuencial. Si quiero acceder a la zona crítica espero hasta tener el token, la uso y lo vuelvo a pasar. Pro: Si no hay fallas no hay starvation. Con: es wasteful.</p>
+
+<p><strong>Broadcast</strong>:</p>
+
+<p>Cuando quiero acceder a la sección crítica, envío una solicitud(Pi, ts).</p>
+
+<p>Solo puedo entrar cuando recibí <em>todas</em> las respuestas.</p>
+
+<p>Si entro, voy encolando pedidos y los respondo todos cuando salgo.</p>
+
+<p>Respondo inmediatamente si no quiero entrar a la ZC, o yo quise entrar a la ZC y el ts del pedido que recibo es menor que el mío.</p>
+
+<p><strong>Lock distribuido:</strong></p>
+
+<p><strong>Cada proceso tiene un lock</strong> del recurso. Cada vez que un proceso quiere acceder a un recurso para escribir, pide <strong>al menos n/2+1 locks</strong>. Toma la máxima timestamp usada y la incrementa, luego <strong>broadcastea</strong> a todos esos nodos el nuevo valor.</p>
+
+<p>El lector pide también n/2+1 locks y siempre <strong>lee el de timestamp mayor</strong>. Necesariamente si tomas la mayoría de locks, al menos uno tenga el valor actual.</p>
+
+</div>
+<a href='https://ko-fi.com/R6R3F4NIO' target='_blank' rel="noopener noreferrer nofollow">
+  <img style='border:0px;height:4em;width:auto;' src='https://cdn.ko-fi.com/cdn/kofi5.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' loading='lazy'/></a>
+  <p style='text-align: center;'>
+  <a href="https://twitter.com/intent/tweet?text=Sistemas Operativos - Notas para el Final&url=https://strikingloo.github.io/wiki/sistemas-operativos-final%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" title="Share on Twitter!">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em" rel="noopener noreferrer nofollow"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>Share on twitter]</a></p>
+
+<template id="post-delayed-content">
+
+<div class="backButton">
+<a href="https://twitter.com/intent/tweet?text=Sistemas Operativos - Notas para el Final&url=https://strikingloo.github.io/wiki/sistemas-operativos-final%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis' title="Share on Twitter!" rel="noopener noreferrer nofollow">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>]</a>
+<br/>
+<a href="/blog/" id='backToBlog' title="Back to blog" rel="noopener noreferrer">[←]</a>
+</div>
+</template>
+<script>
+const headings = document.querySelectorAll('h2[id],h3[id]');
+for (var heading of headings) {
+    heading.innerHTML = `<a href=#${heading.id}>${heading.innerHTML}</a>`;
+}
+function externalLinks() { for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } }
+externalLinks();
+
+function renderBottomButtons(){
+  const templateNode = document.getElementById('post-delayed-content')
+  const templateContentClone = templateNode.content.cloneNode(true) // perform a deep copy
+  document.body.appendChild(templateContentClone)
+}
+
+function scrollEventHandler(){
+ const scrollOffset = window.pageYOffset
+ const browserViewHeight = window.innerHeight
+ if (scrollOffset > browserViewHeight/3) {
+    console.log('done')
+    renderBottomButtons();
+    window.removeEventListener('scroll', scrollEventHandler)
+ }
+}
+window.addEventListener('scroll', scrollEventHandler)
+</script>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@StrikingLoo" />
+<meta name="twitter:title" content="Sistemas Operativos - Notas para el Final" />
+<meta name="twitter:description" content="Notas para el final de SysOp. Basadas en las diapos de la teórica y adornadas con fragmentos del Silberschatz, Tanenbaum y Wikipedia." />
+
+<meta name="twitter:image:src" content="https://strikingloo.github.io/resources/book-tw.jpg"/>
+<meta property="og:image" content="https://strikingloo.github.io/resources/preview-image-terrarium.png"/>
+
+			
+			</div>
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:lucianostrika44@gmail.com" rel="me" title="email me">✉️</a></li>
+	        		<li><a href="https://github.com/strikingloo" rel="me noopener noreferrer nofollow" title="GitHub"><svg viewBox="0 0 438.549 438.549" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><path fill="#0F3D3E" d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289s4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136s11.704-.476 16.274-1.423c4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"></path></svg></a></li>
+			        <li><a href="https://twitter.com/intent/follow?screen_name=strikingloo" rel="me noopener noreferrer nofollow" title="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg></a></li>
+			        <li><a href="http://www.linkedin.com/in/luciano-strika" rel="me noopener noreferrer nofollow" title="linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M72.16 99.73H9.927a5 5 0 00-5 5v199.928a5 5 0 005 5H72.16a5 5 0 005-5V104.73a5 5 0 00-5-5zM41.066.341C18.422.341 0 18.743 0 41.362 0 63.991 18.422 82.4 41.066 82.4c22.626 0 41.033-18.41 41.033-41.038C82.1 18.743 63.692.341 41.066.341zM230.454 94.761c-24.995 0-43.472 10.745-54.679 22.954V104.73a5 5 0 00-5-5h-59.599a5 5 0 00-5 5v199.928a5 5 0 005 5h62.097a5 5 0 005-5V205.74c0-33.333 9.054-46.319 32.29-46.319 25.306 0 27.317 20.818 27.317 48.034v97.204a5 5 0 005 5H305a5 5 0 005-5V194.995c0-49.565-9.451-100.234-79.546-100.234z"></path></svg></a></li>
+			        <li><a href="/resources/Luciano_Strika.pdf">CV</a></li>
+				</ul>
+				<p><i>Built with ❤️ by <a href="https://strikingloo.github.io/">Strikingloo</a>.</i></p>
+			</footer>
+			
+
+			
+
+			
+			<link rel="preload" href="/css/non-critical-post-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+			<noscript><link rel="stylesheet" href="/css/non-critical-post-min.css"></noscript>
+        	
+		</body>
+	</html>

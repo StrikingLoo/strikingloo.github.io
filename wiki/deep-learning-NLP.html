@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23d8eaeb%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2293%22>🌳</text></svg>" />
+            <title>Deep Learning for Natural Language Processing</title>
+			<link rel="canonical" href="https://strikingloo.github.io/wiki/deep-learning-NLP">
+			  <meta name="description" content="My notes from Stanford's Deep Learning for NLP course, plus any papers from the recommended reading I went through.">
+  			<meta property="og:site_name" content="Deep Learning for Natural Language Processing">
+
+        	
+        	<link rel="stylesheet" type="text/css" href="/css/post-min.css">
+        	
+
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
+
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-52642322-5');
+			</script>
+			
+			  <meta property="og:description" content="My notes from Stanford's Deep Learning for NLP course, plus any papers from the recommended reading I went through.">
+			
+	  		<meta property="og:locale" content="en_US">
+	  		
+			  <meta property="og:title" content="Deep Learning for Natural Language Processing">
+			  <meta property="og:type" content="article">
+		  	  <meta property="article:published_time" content="2020-10-02T00:00:00+00:00">
+		      <meta property="article:author" content="/">
+		  	
+		  	
+  				<meta property="og:url" content="https://strikingloo.github.io/wiki/deep-learning-NLP">
+  			
+  			<meta content="index,follow" name="robots"><!-- All Search Engines -->
+  			<meta content="index,follow" name="googlebot"><!-- Google Specific -->
+  			<meta name="robots" content="max-image-preview:large">
+
+		</head>
+		<body>
+			<div class="head-banner">
+			<p>Strikingloo</p>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about/">About</a></li>
+	        		<li><a href="/wiki/">Wiki</a></li>
+	        		<li><a href="/blog/">Blog </a></li>
+	    		</ul>
+			</nav>
+			<div style="clear: both;"></div>
+		    </div>
+
+			<div class="container">
+			
+			<h1>Deep Learning for Natural Language Processing</h1>
+<p class="meta">02 Oct 2020 - importance: 10 </p>
+
+
+
+
+<div class="post">
+  <p><em>These are my notes for the <a href="http://web.stanford.edu/class/cs224n/index.html">Stanford MOOC</a></em>.</p>
+
+<p>I have explained most concepts by rephrasing and summarizing them, and also added references to other material, like articles, papers and internal links when relevant.</p>
+
+<h2 id="word2vec">Word2Vec</h2>
+
+<p>In Word2Vec, we create a mapping between a language’s tokens, and a semantically meaningful, dense space (of much lower dimensionality). For instance, in this space we would expect words that have similar meanings to be close (for a notion of vector distance), and words that are generally unrelated to be far away. These spaces are usually normalized (no vector has a length &gt; 1).</p>
+
+<p>To train Word2Vec, each instance will be a context (a set of N consecutive tokens in a training sample) where we will use as a loss the dot product between pairs of words (softmax(UWi)). This penalizes assigning a higher probability to other words, or a low probability to this pair.</p>
+
+<p>You can also make it sigmoid(WiUj) for each pair of words in a context, for each context embedding Uj in a window, and then that + sigmoid(-WiUk) for k chosen randomly.</p>
+
+<p>This is a contrastive loss, like that used in <a href="/wiki/clip">CLIP</a>, or in a Boltzmann Machine. The random words would represent an “unlearning phase” in Boltzmann Machine parlance.</p>
+
+<p><em>Hyperparam magics</em>: performance plateaus at embedding dimension d=300 (but doesn’t fall apart, even at 10k!! -nips, 2018-). Seems to have something to do with PCA.</p>
+
+<p>For these models, data quality matters a lot. Model with “small” Wikipedia dataset outperforms model with BIG news scraped dataset.</p>
+
+<p><em>Evaluating Word Embeddings</em>: You can evaluate analogies (with accuracy over premade datasets, using semantic or syntactic analogy), or cosine distance/similarity vs human-rated (e.g., mechanical-turk) similarity.</p>
+
+<h2 id="language-modeling">Language Modeling</h2>
+<p>Train a model to predict the n+1th word based on the previous n words. This is an <a href="/wiki/unsupervised-learning-berkeley#autoregressive-models">autoregressive task</a>.</p>
+
+<h3 id="fixed-window-models">Fixed-window models</h3>
+
+<p>Predict the next token using the previous fixed k words. E.g., use a Markov chain or a co-occurrence matrix. You can train a fully connected MLP using one-hot encoding of the words (super sparse vectors as inputs -actually passed as indices in any sane implementation-).</p>
+
+<p><strong>Insight:</strong></p>
+
+<p>Semantically similar words should produce similar “next word” distributions, but normal window models don’t leverage that! Let’s add some embeddings into the mix.</p>
+
+<h3 id="arbitrary-length-window-models">Arbitrary length window models</h3>
+
+<p>Train a <strong>Recurrent Neural Network</strong> (RNN). This means divide your dataset into sequences (usually sentences, paragraphs, or whole texts from your corpus).</p>
+
+<p>For every sequence, you initialize a hidden state h with zeroes (or a reasonable prior). You take each i-th word in order, get its embedding, concat that with h, make that go through an affine layer, plus bias, and use that to predict the i+1-th word (through your typical affine + softmax layer).</p>
+
+<p>After doing this for every word in your batch, you backpropagate the binary cross entropy loss of the generated probabilities, for every word, and thus get a better W matrix for both the hidden state and the embeddings. (You can train h0 too. You could also train the embeddings if your corpus was large enough).</p>
+
+<h3 id="perplexity">Perplexity</h3>
+
+<p>Defined as the inverse of the probability of the corpus, normalized by ^1/N. Another way to look at it: take the geometric average of the inverse probability your model gives to each t+1-th word, given the previous t of them.</p>
+
+<p>GPT-3 gets about 20 as a perplexity value on test corpus (so mean probability is about .05. Not bad).</p>
+
+<h3 id="vanishing-vs-exploding-gradient">Vanishing vs Exploding Gradient</h3>
+
+<p>The gradient for the t-th word is the productorial of the gradients of the previous t-1 words, which means if the norm of the Jacobian is &lt;1 then it will be exponentially small on the amount of words, and the opposite will happen for a Jacobian &gt;1.
+This means a word a few spaces in the future, won’t make a big enough impact in decisions in the past.
+We solve exploding gradients with clipping gradient: if gradient norm &gt; e, then scale it down to norm e, for e a hyperparameter.</p>
+
+<p>To solve vanishing gradients, two architectures were invented: LSTM and GRU, which is just a streamlined LSTM (a few less gates, converges faster and has less parameters). They usually perform similarly, or LSTM a bit better since it has more parameters.</p>
+
+<h3 id="lstm">LSTM</h3>
+
+<p>LSTMs have Cell States aside from hidden states, and they save information in the cell state and decide which parts to pass along with hidden states.
+They have forget, input and output gates, each a sigmoid of an affine transformation of the concatenation of the inputs (for word t) and the hidden state (t-1).
+You make your cell state be tanh (another affine transform from input and hidden state t-1).</p>
+
+<p>Then your actual cell state is input gate * that cell state + forget gate * last cell state.</p>
+
+<p>Finally, you update your hidden state as output_gate * tanh(cell).</p>
+
+<p><img src="image/Screen%20Shot%202020-09-26%20at%2019.12.09.png" alt="" loading="lazy" /></p>
+
+<h3 id="gru">GRU</h3>
+<p>They work similarly, but have less gates. Instead of output gate and tanh of cell, you just make a convex sum between update gate times previous hidden state, and 1- update gate times tanh of affine of inputs + hidden state t-1 (times a reset_gate that’s kinda like a forget gate).</p>
+
+<p><img src="image/Screen%20Shot%202020-09-26%20at%2019.13.48.png" alt="" loading="lazy" /></p>
+
+<h2 id="seq2seq-for-neural-machine-translation">Seq2Seq for Neural Machine Translation</h2>
+
+<p><img src="image/Screen%20Shot%202020-10-03%20at%2016.22.46.png" alt="" loading="lazy" /></p>
+
+<p><img src="image/Screen%20Shot%202020-10-03%20at%2016.24.31.png" alt="" loading="lazy" /></p>
+
+<p><img src="image/Screen%20Shot%202020-10-03%20at%2016.25.00.png" alt="" loading="lazy" /></p>
+
+<p><img src="image/Screen%20Shot%202020-10-03%20at%2016.25.41.png" alt="" loading="lazy" /></p>
+
+<p>We train an encoder RNN (With the usual gizmos: Word Embeddings, usually we could use an LSTM or GRU, etc.) on the source language, and then train a different decoder RNN that has as its starting hidden state not a random or 0s vector, but the hidden state for the last word in the source sentence. We expect this value to encapsulate all the meaning in the source sentence.</p>
+
+<p>The decoder then has to generate all the words in the target sentence using the source encoding as an input. We backpropagate the error in each word using cross entropy on softmax (with the same tricks you used for, say, word embeddings for the big vocab size).</p>
+
+<p><img src="image/Screen%20Shot%202020-10-03%20at%2016.26.00.png" alt="" loading="lazy" /></p>
+
+<p>On the feedforward/test phase, you can sample the most likely word every time (greedy approach) or sample the top k most likely words, then keep expanding the top k most likely sequences of words, always stopping whenever you reach an end of sentence token.</p>
+
+<p>Since log likelihood necessarily decreases as more words are added, and the most likely sentence ever is just empty sentence, you normalize sentences by 1/N for N size of sentence in words, to get a normalized score and not penalize long sentences.</p>
+
+<p><img src="image/Screen%20Shot%202020-10-03%20at%2016.27.10.png" alt="" loading="lazy" /></p>
+
+<p>But how do we solve for the fact that the last hidden state may not contain all the information, especially from words far away in the beginning of the sentence?</p>
+
+<p><img src="image/Screen%20Shot%202020-10-03%20at%2016.28.05.png" alt="" loading="lazy" /></p>
+
+<p>We add attention! Here’s how it works:</p>
+
+<ul>
+  <li>We take the hidden state for our i-th word on the target sentence, Hi.</li>
+  <li>Take the dot product with each hidden state Hj on the source sentence.</li>
+  <li>Take the vector of inner products (they’re each a scalar) and do softmax on it. We now have a probability (attention) distribution.</li>
+  <li>Take the convex sum of encoder hidden states Hj, weighted by the attention each one gets. Concatenate that with the decoder hidden state and use that for the affine layer before the softmax.</li>
+</ul>
+
+<p>It can also get more general: instead of a convex sum of dot products, we could do dot product between the states and a matrix in the middle, or do crazy things with tanh and a different vector for attention allocation.</p>
+
+<p><img src="image/Screen%20Shot%202020-10-03%20at%2016.28.14.png" alt="" loading="lazy" /></p>
+
+<p><img src="image/Screen%20Shot%202020-10-03%20at%2016.28.26.png" alt="" loading="lazy" /></p>
+
+<h2 id="question-answering">Question Answering</h2>
+
+<p>A few quotes I liked:</p>
+
+<blockquote>
+  <p>“A lot of the last two years of NLP can be summed up as “people have found a lot of clever ways to use attention and that’s been pairing just about all the advances.” “</p>
+</blockquote>
+
+<p><em>“Many times in research, you get the best performance with a simple model, then over time people come up with more complex architectures and they perform even better, and eventually someone realizes if you tune the parameters for the simpler model just right you can beat them again.”</em> [paraphrased by me]</p>
+
+<h3 id="question-answering-definition">Question Answering definition</h3>
+
+<p>In question answering we provide a passage and a question, and the model needs to select a substring of the passage that answers the question. This means we cannot answer yes or no questions, counting questions, etc.</p>
+
+<p>Biggest datasets are made with mechanical turk + carefully selected rather simple texts. Most famous one is SQuAD. F1 score is usually the reported metric, where you look for precision+fpr of words vs mechanical turk answers.</p>
+
+<p>Models were bad at noticing if no answer was present, until researchers came up with a solution to that (either use a threshold, or get a “noAnswer” token for answers.)</p>
+
+<p><img src="image/example_question_anwering.png" alt="" loading="lazy" />
+<img src="image/SQuAD_limitations.png" alt="" loading="lazy" /></p>
+
+<h3 id="stanford-attentive-reader">Stanford attentive reader</h3>
+
+<p>This model beats traditional (non-neural) NLP models by a factor of almost 30 F1 points in SQuAD. It loses to BERT and other transformers, but it’s simpler.</p>
+
+<ul>
+  <li>Feed the Question through a bi-directional LSTM with word embeddings.</li>
+  <li>Concatenate both end states (one for each network, so one for first word of reverse and one for last of right way).</li>
+  <li>Feed another LSTM bidirectionally and with word embeddings, this time on the passage.</li>
+  <li>We use attention to find where the answer is. What we do is work out an attention score between question vector and passage states for each word, and use that to define a start and end word for the substring.</li>
+</ul>
+
+<p><img src="image/start_end_attentive_reader.png" alt="" loading="lazy" /></p>
+
+<p>It could be thought that we’re missing the information about words in the middle, but actually we’re training the LSTM to push that information to the edges (and this is bidirectional so it works both ways).</p>
+
+<p>Here’s what we actually gained by using neural networks:</p>
+
+<p><img src="image/gains.png" alt="" loading="lazy" /></p>
+
+<h3 id="bidaf">BiDAF</h3>
+
+<p><img src="image/bidaf1.png" alt="" loading="lazy" />
+<img src="image/bidaf2.png" alt="" loading="lazy" />
+<img src="image/bidaf3.png" alt="" loading="lazy" />
+<img src="image/bidaf4.png" alt="" loading="lazy" /></p>
+
+<h2 id="subword-models">Subword Models</h2>
+
+<h3 id="character-level-models">Character-Level Models</h3>
+
+<p>Word embeddings can be composed from character embeddings:</p>
+
+<ul>
+  <li>Generates <strong>embeddings for unknown words</strong>.</li>
+  <li>Similar spellings share similar embeddings.</li>
+  <li>Solves <strong>OOV problem</strong> (usually you’ll keep your word embeddings, and use average of character embeddings when OOV).</li>
+</ul>
+
+<p>A <strong>connected language</strong> (such as Japanese) can be processed as characters.</p>
+
+<p>Both methods have proven to work very successfully!</p>
+
+<p>A seq2seq on character-level using LSTM was tested for Czech-English NMT. It slightly beat a baseline of word-level LSTM.</p>
+
+<p>Char-level works especially well on connected and agglutinative languages, but it’s mega slow -3 weeks to train back in 2018-.</p>
+
+<p><img src="image/Screen_Shot_2021-01-07_at_16-15-34.png" alt="" loading="lazy" /></p>
+
+<p>Two trends appear:</p>
+
+<ul>
+  <li><strong>Hybrid models</strong>: word-level model that defaults to char-level for unks.</li>
+  <li><strong>Same architecture</strong> as a word-level model, but with <strong>char or word-piece embeddings</strong>.</li>
+</ul>
+
+<p>BERT uses a variant of the wordpiece model</p>
+
+<ul>
+  <li>(Relatively) common words are in the vocabulary:  at, fairfax, 1910s.</li>
+  <li>Other words are built from wordpieces:</li>
+</ul>
+
+<p>hypatia = h ##yp ##ati ##a</p>
+
+<ul>
+  <li>If you’re using BERT in an otherwise word based model, you have to deal with this.</li>
+</ul>
+
+<h3 id="highway-network-2015">Highway Network (2015)</h3>
+
+<p><img src="image/Screen_Shot_2021-01-07_at_16-23-33.png" alt="" loading="lazy" /></p>
+
+<h3 id="character-level-language-model-2015-more-complex">Character level language model (2015, more complex)</h3>
+
+<p><img src="image/Screen_Shot_2021-01-07_at_16-24-30.png" alt="" loading="lazy" /></p>
+
+<p>Almost reached SOTA, and also understood semantics of transformed words -good vs gooood-.</p>
+
+<h3 id="char-level-word-representations">Char-level word representations</h3>
+
+<p>Run bidirectional LSTM on both directions over characters of a word, concat both final hidden states as new representation.</p>
+
+<h3 id="hybrid-nmt">Hybrid NMT</h3>
+
+<ul>
+  <li>2- stage decoding: use aggregated char-embeddings when decoding UNK.</li>
+  <li>bidirectional LSTMs, 8 stacks.</li>
+</ul>
+
+<h2 id="contextual-word-representations-elmo-bert-etc">Contextual Word Representations: ELMo, Bert, etc.</h2>
+
+<p>Word embeddings are the basis of deep learning for NLP.</p>
+
+<p><strong>Problem</strong>: Word embeddings are applied in a <strong>context free manner</strong></p>
+
+<p><strong>Solution</strong>: Train <strong>contextual representations</strong> on text corpus.</p>
+
+<p>We sort of did this with hidden states on RNNs/LSTMs: their values depend on previously seen words (or seen in the future).</p>
+
+<h3 id="taglm">TagLM</h3>
+
+<p><img src="image/Screen_Shot_2021-01-07_at_18-40-30.png" alt="" loading="lazy" /></p>
+
+<p>Train a separate Language Model in an unsupervised manner, which allows you to use a huge corpus (say, Wikipedia). Also derive your word embeddings from it.</p>
+
+<p>Then feed to your main model both a char-RNN reppresentation, a word embedding and, after going through a bi-directional LSTM, concatenate hidden states with the concatenated hidden states of the (now pre-trained and frozen) language model.</p>
+
+<p>This beat SotA by a narrow margin in perplexity but it was a much simpler model than the competition.</p>
+
+<h3 id="elmo">ELMo</h3>
+
+<p>ELMo beat SotA in a wide range of tasks by a big margin, whereas most academics work all year to beat SotA on a single task by about 1%.</p>
+
+<p>This was ground-breaking, and the paper won Best Paper Award at NAACL 2018. [maybe read the best paper awards from the last few years?][🌱]</p>
+
+<p>ELMo works similarly to TagLM. The architecture of the language model is:</p>
+
+<ul>
+  <li>Use 2 Bi-LSTM layers.</li>
+  <li>Use only a char-CNN to build initial word representations: 2048 char n-gram filters, 2 highway layers, 512 dim projection space.</li>
+  <li>Use 4096 hidden state cells with 512 dim projections for next layer.</li>
+</ul>
+
+<p>Then they added different weights per LSTM layer’s hidden state, and different weight to the whole LM’s hidden states per task.</p>
+
+<p>This way ELMo only uses the LM where it matters, and assigns different importance to each layer (reportedly the lowest layer is better for syntactic information, and is more useful for NER or POS-tag, whereas the second layer carries more semantic data, and works better for Question Answering, Sentiment Analysis, etc.).</p>
+
+<p><img src="image/Screen_Shot_2021-01-07_at_17-57-49.png" alt="" loading="lazy" /></p>
+
+<h2 id="transformers">Transformers</h2>
+
+<p>Transformers revolutionized natural language processing, then any autoregressive problem, and are now used for image, audio, text and many other tasks where modelling is required.</p>
+
+<p>They do away with recurrent layers, and instead take a whole batch of consecutive temporal inputs (say, a sequence of tokens) and make them go through “attention heads” which map each token’s embedding to a new embedding space that contains contextual information by attending to the embeddings of all other tokens in the context window.</p>
+
+<p>On the one hand, we lose the unlimited window size. On the other, they can be trained much faster and more cheaply, and window sizes can be big enough (though limited) for the problem to be less relevant.</p>
+
+<h3 id="gpt">GPT</h3>
+
+<p>“<a href="https://arxiv.org/abs/1706.03762">Attention is all you need</a>”: What if we drop the Recurrent part, and just keep the attention to maintain long-term information and context?</p>
+
+<p>This is how a transformer’s Encoder works:</p>
+
+<p>You take the whole sentence, and make each word go through an “atttention head”.</p>
+
+<p>All words in a same sentence can run through an attention head in parallel, making transformers train a lot faster in GPU.</p>
+
+<p><img src="image/Screen_Shot_2021-01-07_at_18-40-02.png" alt="" loading="lazy" /></p>
+
+<p>The attention mechanism can be scaled horizontally to add more semantic/syntactic interpretations of a word in-context. Notice the skip connections that make the final output the sum of all intermediate layers.</p>
+
+<p>Here’s the attention function for embeddings Q, K, V:</p>
+
+<p><img src="image/Screen_Shot_2021-01-07_at_19-17-51.png" alt="" loading="lazy" /></p>
+
+<p>The feed-forward layer is a 2-layer MLP with ReLU.</p>
+
+<p><img src="image/Screen_Shot_2021-01-07_at_18-40-30.png" alt="" loading="lazy" /></p>
+
+<p>Where Wi are learned matrices, each of them projecting the Q,K,V word-embeddings into different spaces.</p>
+
+<p>Typically, we’ll make Q,K,V be the word embedding for the current word, concatenated to <strong>positional encoding</strong>, so same words at different locations have different overall representations:</p>
+
+<p><img src="image/Screen_Shot_2021-01-07_at_18-41-02.png" alt="" loading="lazy" /></p>
+
+<p>Multi-headed attention nodes are composed (vertically) and finally you can run your supervised task on the output.</p>
+
+<p>The decoder is left as an exercise for the reader. For LM you can skip it.</p>
+
+<p><strong>Related reading</strong>:</p>
+
+<p>An excellent visual explanation of transformers is available at <a href="https://jalammar.github.io/illustrated-transformer/">The Illustrated Transformer</a>.</p>
+
+<p>There is also Karpathy’s <a href="https://github.com/karpathy/minGPT">MinGPT</a> for a clean implementation.</p>
+
+<p><strong>See also</strong>:</p>
+<ul>
+  <li><a href="/wiki/transGAN">TransGAN</a></li>
+  <li><a href="/wiki/visual-transformer">Visual Transformer</a></li>
+  <li><a href="/wiki/transformers-see-like-cnn">Transformers see like CNNs</a></li>
+</ul>
+
+<p>And <a href="/tagged?q=transformer">many more articles tagged <em>transformer</em></a> in this wiki.</p>
+
+<h3 id="bert-bidirectional-encoder-representations-from-transformers">BERT (Bidirectional Encoder Representations from Transformers)</h3>
+
+<p>Problem: LM’s are unidirectional, but language understanding is bidirectional.</p>
+
+<p>Why? Because you can’t learn to predict the future by seeing it.</p>
+
+<p>Solution: Train a LM by removing <em>k</em>=15% (a somewhat arbitrary value, but they never change this) of words from each sentence and predicting them from bidirectional context.</p>
+
+<p>Setting <em>k</em> is a trade-off: too much and you don’t see context, too little and you train too slowly.</p>
+
+<p>In a way, OpenAI’s GPT used unidirectional transformers, and ELMo took advantage of bidirectionality with its pre-trained LM.</p>
+
+<p>This mixes both approaches by training a model that’s inherently bidirectional.</p>
+
+<p>They also train it on <strong>next sentence prediction</strong>: given sentence A and sentence B, <strong>can sentence B come after A</strong>?</p>
+
+<p><strong>First Layer</strong>: Combine token embeddings -typical word/char embeddings-, position embeddings -as in GPT- and segment embedding -whether word belongs to sentence A or B-.</p>
+
+<p>They trained a transformer encoder on Wikipedia+BookCorpus, similar size to GPT beat it by a couple points on most benchmarks.</p>
+
+<p>After training the encoder, it can be used in other tasks by <strong>removing last layer (classification) and fine-tuning</strong> -as opposed to ELMo which just gave frozen representations-.</p>
+
+<p><em>Related reading</em>: <a href="/wiki/bert-interpretability">BERT interpretability</a></p>
+
+<h3 id="comparing-bert-vs-gpt">Comparing BERT vs GPT</h3>
+
+<p><img src="image/gpt-vs-bert.png" alt="" loading="lazy" /></p>
+
+<p>On BERT, you multiply by the whole sentence’s embeddings on each layer, then go through the block. This makes it bidirectional, and lets you do each layer in a single matrix multiply, which is good for GPU usage.</p>
+
+<p>On GPT, you were doing first a product for the first word, then one for the first two, and so on, for every layer. This wasn’t as good -though it was still better than going full recurrent-.</p>
+
+<p>For transformers for Neural Machine Translation, you send the last layer of the encoder, plus the last in the decoder, into an encoder-decoder attention layer which lets you model interaction between words.</p>
+
+<p>You also make sure the decoder is trained on predicting unidirectionally, as opposed to the encoder which is bidirectional. This is, you feed the decoder only the first n words, and do prediction for the n+1-th one.</p>
+
+<p>Transformers have been used on image generation tasks (either feeding them a rasterized version of the last n pixels on reading-order to predict the next one, or a rasterized version of the pixels on a MxN grid around the pixel that have been generated -that’s the ones that come before in reading order-).</p>
+
+<p>They have also been used for music generation, where the “tokens” were start note, end note, move clock forward, and a volume indicator.</p>
+
+<h2 id="natural-language-generation">Natural Language Generation</h2>
+
+<p>Given an already trained language model, how do we sample a sequence of tokens from it?</p>
+
+<p>Teacher Forcing: during training we feed the decoder with the right words from the supervised decoded sentence, regardless of what it is actually predicting on each step.</p>
+
+<p><img src="image/Screen_Shot_2021-01-14_at_18-31-12.png" alt="" loading="lazy" /></p>
+
+<p><img src="image/Screen_Shot_2021-01-14_at_18-31-54.png" alt="" loading="lazy" /></p>
+
+<h3 id="decoding-algorithms">Decoding Algorithms</h3>
+
+<ul>
+  <li><strong>Greedy Decoding</strong>: take the most probable word at every step (until producing &lt;END&gt; token). Lacks backtracking and can generate poor results. Think Markov chain.</li>
+  <li><strong>Beam-Search Decoding</strong>: Find a high-probability sequence by tracking k most probable partial sequences (called hypotheses) so far. You choose sequence with highest probability, adjusted for length. (= greedy if k = 1. Ungrammatical, nonsensical, etc. Larger k: reduces some of the problems, but is more computationally expensive. It also makes more generic dialogue on chit-chat tasks, and less BLEU score due to short sentences).</li>
+</ul>
+
+<h3 id="sampling-based-decoding">Sampling-based Decoding</h3>
+
+<ul>
+  <li><strong>Pure Sampling</strong>: sample from probability distribution for next word, greedily.</li>
+  <li><strong>Top-n Sampling</strong>: sample from probability distribution for next word (greedy), but only take into account the top n most likely words.</li>
+</ul>
+
+<p><img src="image/Screen_Shot_2021-01-14_at_18-51-54.png" alt="" loading="lazy" /></p>
+
+<h2 id="summarization">Summarization</h2>
+
+<p>Task: given input text x, write a summary y, which is shorter and contains the main information of x.</p>
+
+<p>It can be <strong>single-document</strong> or <strong>multi-document</strong>: you either write a summary of x, or a summary of many related x’s about the same topic (e.g., many news of a single event).</p>
+
+<p>Summarization can be <strong>extractive</strong> (highlight the relevant parts of an article x) or <strong>abstractive</strong> (rewrite x in fewer words. Requires original language generation and is typically harder).</p>
+
+<h3 id="evaluation">Evaluation</h3>
+
+<p>Summarization can be evaluated with ROUGE, a BLEU-like metric that’s recall-oriented (Recall-Oriented Understudy for Gisting Evaluation).</p>
+
+<p>It’s number of matching n-grams in generated summary over total number of n-grams generated. Summed over all human-made summaries.</p>
+
+<p>It has no penalty for brevity, and is typically reported for 1-grams, 2-grams, etc. ROUGE-L is longest common subsequence overlap.</p>
+
+<p>Both ROUGE and BLEU correlate badly with human ratings. Even if you correct by counting “near hits” where you used a word that is close in embedding space to another, it still fails catastrophically.</p>
+
+<h3 id="neural-summarization">Neural Summarization</h3>
+
+<p>Since 2015 summarization has been done with Seq2Seq models with attention, with maybe later a few copying mechanisms which seemed useful at the time (like for each generated summary word having a probability of just copying a word from input, times the attention each input word gets at that stage).</p>
+
+<p><img src="image/Screen_Shot_2021-01-14_at_20-06-41.png" alt="" loading="lazy" /></p>
+
+<p>Copying can make your model <strong>less abstractive</strong>, and more extractive.</p>
+
+<p><strong>Bottom Up Summarization</strong>: Run a RNN that maps each word to a keep-vs-discard probability. Then only attend to words that have a high proba (the keep ones) during summarizing.</p>
+
+<h2 id="dialogue">Dialogue</h2>
+
+<p><img src="image/Screen_Shot_2021-01-14_at_20-10-16.png" alt="" loading="lazy" /></p>
+
+<p>The solutions are basically another Seq2Seq model with attention, very similar.</p>
+
+<p><img src="image/Screen_Shot_2021-01-14_at_20-13-00.png" alt="" loading="lazy" /></p>
+
+<p>Some problems have easy solutions like improving beam-search to incentivize rarer words, penalize or ban repetition directly in beam-search. Lack of context and consistent persona are harder.</p>
+
+<h3 id="storytelling">Storytelling</h3>
+
+<p>Similar system (dataset made of WP’s in r/writingPrompts and responses). Interestingly, models make very descriptive stories with consistent characters but no plot moves forward. They’re static.</p>
+
+<p>This problem hasn’t been solved yet! -as of the lecture-.</p>
+
+<h3 id="conclusions-on-nlg">Conclusions on NLG</h3>
+
+<p>Final takeaway: NLG is the wild west of NLP, and there’s a lot of new stuff to uncover.</p>
+
+<p>Conclusions taken from slide:</p>
+
+<ul>
+  <li>The more open-ended the task, the harder everything becomes. • Constraints are sometimes welcome!</li>
+  <li>Aiming for a specific improvement can be more manageable than aiming to improve overall generation quality.</li>
+  <li>If you’re using a LM for NLG: improving the LM (i.e. perplexity) will most likely improve generation quality… but it’s not the only way to improve generation quality.</li>
+  <li>Look at your output, a lot.</li>
+  <li>You need an automatic metric, even if it’s imperfect. • You probably need several automatic metrics.</li>
+  <li>If you do human eval, make the questions as focused as possible.</li>
+  <li>Reproducibility is a huge problem in today’s NLP + Deep Learning, and a huger problem in NLG. Please, publicly release all your generated output along with your paper!</li>
+  <li>Working in NLG can be very frustrating. But also very funny…</li>
+</ul>
+
+<hr />
+
+<p>Back-translation : You train a reverse translator, and add to your dataset the pair (noisy input, nice target sentence). This is much more effective than generating a noisy target sentence and using it for training -because it may exacerbate error patterns or model biases-.</p>
+
+<p>XLNet: Try many different ablations of BERT using a huge amount of computing power. They beat SotA until GPT-3 came along, only barely beating BERT and Roberta -which is just BERT+more epochs and data, since they showed BERT was undertrained.</p>
+
+<p>Part of the improvement seen on BERT comes from next-sentence prediction task, and part just comes from being bidirectional. Next sentence is important for question answering, in the other tasks improvement seems to come mostly from bidirectionality.
+An interesting emerging effect is BERT beat SotA models in small datasets too, which violates common rules of thumb.</p>
+
+<h3 id="distillation">Distillation</h3>
+<p>Distillation is an instance of <a href="/wiki/unsupervised-learning-berkeley#semi-supervised-learning">semi-supervised learning</a>.</p>
+
+<ul>
+  <li>Train a “teacher” which is just a SotA model</li>
+  <li>Label a large amount of unlabeled inputs with teacher on the specific task you want to distill</li>
+  <li>Train student with smaller (e.g., ~50x smaller) size and bigger dataset, on cross entropy</li>
+</ul>
+
+<p>Now you have a small trained model for your problem. Related paper notes on <a href="/wiki/distilling-knowledge-nn">Neural Network Distillation</a>.</p>
+
+</div>
+<a href='https://ko-fi.com/R6R3F4NIO' target='_blank' rel="noopener noreferrer nofollow">
+  <img style='border:0px;height:4em;width:auto;' src='https://cdn.ko-fi.com/cdn/kofi5.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' loading='lazy'/></a>
+  <p style='text-align: center;'>
+  <a href="https://twitter.com/intent/tweet?text=Deep Learning for Natural Language Processing&url=https://strikingloo.github.io/wiki/deep-learning-NLP%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" title="Share on Twitter!">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em" rel="noopener noreferrer nofollow"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>Share on twitter]</a></p>
+
+<template id="post-delayed-content">
+
+<div class="backButton">
+<a href="https://twitter.com/intent/tweet?text=Deep Learning for Natural Language Processing&url=https://strikingloo.github.io/wiki/deep-learning-NLP%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis' title="Share on Twitter!" rel="noopener noreferrer nofollow">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>]</a>
+<br/>
+<a href="/blog/" id='backToBlog' title="Back to blog" rel="noopener noreferrer">[←]</a>
+</div>
+</template>
+<script>
+const headings = document.querySelectorAll('h2[id],h3[id]');
+for (var heading of headings) {
+    heading.innerHTML = `<a href=#${heading.id}>${heading.innerHTML}</a>`;
+}
+function externalLinks() { for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } }
+externalLinks();
+
+function renderBottomButtons(){
+  const templateNode = document.getElementById('post-delayed-content')
+  const templateContentClone = templateNode.content.cloneNode(true) // perform a deep copy
+  document.body.appendChild(templateContentClone)
+}
+
+function scrollEventHandler(){
+ const scrollOffset = window.pageYOffset
+ const browserViewHeight = window.innerHeight
+ if (scrollOffset > browserViewHeight/3) {
+    console.log('done')
+    renderBottomButtons();
+    window.removeEventListener('scroll', scrollEventHandler)
+ }
+}
+window.addEventListener('scroll', scrollEventHandler)
+</script>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@StrikingLoo" />
+<meta name="twitter:title" content="Deep Learning for Natural Language Processing" />
+<meta name="twitter:description" content="My notes from Stanford's Deep Learning for NLP course, plus any papers from the recommended reading I went through." />
+
+<meta name="twitter:image:src" content="https://strikingloo.github.io/resources/book-tw.jpg"/>
+<meta property="og:image" content="https://strikingloo.github.io/resources/preview-image-terrarium.png"/>
+
+			
+			</div>
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:lucianostrika44@gmail.com" rel="me" title="email me">✉️</a></li>
+	        		<li><a href="https://github.com/strikingloo" rel="me noopener noreferrer nofollow" title="GitHub"><svg viewBox="0 0 438.549 438.549" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><path fill="#0F3D3E" d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289s4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136s11.704-.476 16.274-1.423c4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"></path></svg></a></li>
+			        <li><a href="https://twitter.com/intent/follow?screen_name=strikingloo" rel="me noopener noreferrer nofollow" title="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg></a></li>
+			        <li><a href="http://www.linkedin.com/in/luciano-strika" rel="me noopener noreferrer nofollow" title="linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M72.16 99.73H9.927a5 5 0 00-5 5v199.928a5 5 0 005 5H72.16a5 5 0 005-5V104.73a5 5 0 00-5-5zM41.066.341C18.422.341 0 18.743 0 41.362 0 63.991 18.422 82.4 41.066 82.4c22.626 0 41.033-18.41 41.033-41.038C82.1 18.743 63.692.341 41.066.341zM230.454 94.761c-24.995 0-43.472 10.745-54.679 22.954V104.73a5 5 0 00-5-5h-59.599a5 5 0 00-5 5v199.928a5 5 0 005 5h62.097a5 5 0 005-5V205.74c0-33.333 9.054-46.319 32.29-46.319 25.306 0 27.317 20.818 27.317 48.034v97.204a5 5 0 005 5H305a5 5 0 005-5V194.995c0-49.565-9.451-100.234-79.546-100.234z"></path></svg></a></li>
+			        <li><a href="/resources/Luciano_Strika.pdf">CV</a></li>
+				</ul>
+				<p><i>Built with ❤️ by <a href="https://strikingloo.github.io/">Strikingloo</a>.</i></p>
+			</footer>
+			
+
+			
+
+			
+			<link rel="preload" href="/css/non-critical-post-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+			<noscript><link rel="stylesheet" href="/css/non-critical-post-min.css"></noscript>
+        	
+		</body>
+	</html>

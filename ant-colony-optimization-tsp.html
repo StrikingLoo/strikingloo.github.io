@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23d8eaeb%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2293%22>🌳</text></svg>" />
+            <title>Ant Colony Optimization for the Travelling Salesman Problem</title>
+			<link rel="canonical" href="https://strikingloo.github.io/ant-colony-optimization-tsp">
+			  <meta name="description" content="I made an Ant Colony Optimization-based TSP solver in Python. I share the code, insights and benchmarks versus other algorithms.">
+  			<meta property="og:site_name" content="Ant Colony Optimization for the Travelling Salesman Problem">
+
+        	
+        	<link rel="stylesheet" type="text/css" href="/css/post-min.css">
+        	
+
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
+
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-52642322-5');
+			</script>
+			
+			  <meta property="og:description" content="I made an Ant Colony Optimization-based TSP solver in Python. I share the code, insights and benchmarks versus other algorithms.">
+			
+	  		<meta property="og:locale" content="en_US">
+	  		
+			  <meta property="og:title" content="Ant Colony Optimization for the Travelling Salesman Problem">
+			  <meta property="og:type" content="article">
+		  	  <meta property="article:published_time" content="2022-09-06T00:00:00+00:00">
+		      <meta property="article:author" content="/">
+		  	
+		  	
+  				<meta property="og:url" content="https://strikingloo.github.io/ant-colony-optimization-tsp">
+  			
+  			<meta content="index,follow" name="robots"><!-- All Search Engines -->
+  			<meta content="index,follow" name="googlebot"><!-- Google Specific -->
+  			<meta name="robots" content="max-image-preview:large">
+
+		</head>
+		<body>
+			<div class="head-banner">
+			<p>Strikingloo</p>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about/">About</a></li>
+	        		<li><a href="/wiki/">Wiki</a></li>
+	        		<li><a href="/blog/">Blog </a></li>
+	    		</ul>
+			</nav>
+			<div style="clear: both;"></div>
+		    </div>
+
+			<div class="container">
+			
+			<h1>Ant Colony Optimization for the Travelling Salesman Problem</h1>
+<p class="meta">06 Sep 2022 - importance: 8 </p>
+
+
+
+
+<div class="post">
+  <p>Ant Colony Optimization algorithms always intrigued me. They are loosely based in biology and the real protocols ants use to communicate and plan routes. They do this by coordinating through small pheromone messages: chemical trails they leave as they move forward, signaling for other ants to follow them. Even though each ant is not especially smart, and they follow simple rules individually, collectively they can converge to complex behaviors as a system, and amazing properties emerge.</p>
+
+<p>In the computational sense, Ant Colony Optimization algorithms solve complex optimization problems for which a closed-form or polynomial solution does not exist, by trying different “routes” across some relevant space or graph, and trying to find the most efficient one (typically the shortest) from two points that satisfies some constraints.</p>
+
+<p>Personally, I had a debt with myself from 5 years ago from an <em>Algorithms III</em> class where Ant Colony Optimization was mentioned as an alternative to simulated annealing and Genetic Algorithms, but not expanded on and left as an exercise for future study. I remember back then the concept sounded interesting, but since I was busy with other matters I decided to postpone studying it. Now I find myself having more free time, so I finally decided to give it a try. What better way to verify I learned than coding an Ant Colony Optimization algorithm from scratch and showing it here?</p>
+
+<p>First, let’s start with some motivation: why would you want to learn about Ant Colony Optimization?</p>
+
+<h2 id="the-travelling-salesman-problem">The Travelling Salesman Problem</h2>
+
+<p>One especially important use-case for Ant Colony Optimization (ACO from now on) algorithms is solving the Travelling Salesman Problem (TSP).</p>
+
+<p>This problem is defined as follows: <em>Given a complete graph G with weighted edges, find the minimum weight Hamiltonian cycle. That is, a cycle that passes through each node exactly once and minimizes the total weight sum.</em></p>
+
+<p>Note that the graph needs to be <em>complete</em>: there needs to exist an edge connecting each possible pair of nodes. For graphs based in real places, this makes sense: you can just connect two places with an edge with a weight equal to their distance, or their estimated travel time.</p>
+
+<p>For a concrete example, look at the following graph.</p>
+
+<p><img src="resources/post_image/TSP-graph-example.png" alt="an image of a graph for travelling salesman problem" loading="lazy" style="height:40%; width:40%" /></p>
+
+<p>In this case, the salesman wants to visit every home once and get back to where it started. Each edge joining two houses has a numeric label, representing the travel time between them in minutes. The salesman is a busy man, and would prefer to take as little time as possible in visiting all the houses. What would be the most efficient route?</p>
+
+<p>As an example, if we started from the house on the top left, we would want to go bottom, right, center, left again for a total of 80 minutes of travel. You can take a little time to convince yourself that is the right answer by hand, since this is a small case. Try to find a different route that would take less time to visit the four houses.</p>
+
+<p>Why is the Travelling Salesman Problem important? Many reasons.</p>
+
+<p>First, <strong>TSP appears everywhere in logistics</strong>. Imagine you need to make multiple deliveries with a truck. You have packages, each of which has to go to a different place. What is the most time-efficient order to deliver them in and then go back to the warehouse? You just found the Travelling Salesman Problem.</p>
+
+<p><strong>TSP is also important because it is an NP-Complete problem</strong>. That means in the family of NP (nondeterministic polynomial time) problems -those problems for which verification of a solution takes polynomial time, even if finding that solution is harder-, it is in the hardest category: if we found a polynomial time solution for it, then since any other NP problem can be transformed into a TSP problem (sometimes through esoteric means, but still) in polynomial time too, we would have found a polynomial solution for all NP problems.</p>
+
+<p>Finding TSP can be solved in polynomial time would prove P=NP. This would be huge. To the point of being considered one of this century’s biggest questions. Suddenly swathes of hard problems would become easier to solve, and many new applications would open up, with multiple kinds of software becoming vastly more efficient. What it would do for logistics would probably contribute significantly to the world’s GDP and global trade.</p>
+
+<p>Before I digress further however, now that we know what TSP is, let’s see how to solve it. For more information, I recommend the <a href="https://en.wikipedia.org/wiki/Travelling_salesman_problem">Wikipedia article on TSP</a>.</p>
+
+<h2 id="ant-colony-optimization-solving-tsp">Ant Colony Optimization: Solving TSP</h2>
+
+<p>There are many possible ways to solve the Travelling Salesman Problem for a given graph. As discussed above, there is no fast way to get the best solution for an arbitrary graph for certain, at least not without it taking a long time.</p>
+
+<p>The trivial way to solve TSP would be to look at all the possible Hamiltonian Cycles and keep the best one. This would imply looking at all possible orderings of nodes, which grow factorially -O(N!)- with the number N of nodes. Growing factorially is much worse than growing exponentially, for any base. It is so bad that even parallelism would not help: since adding a single node makes the problem N times harder, each extra node in the graph would require we grow the infrastructure superexponentially just to keep up. This would be extremely inefficient.</p>
+
+<p>Due to this, instead of looking for the exact solution for a graph, what most frameworks and solvers do is finding approximate solutions: can we find a way of connecting all nodes in a cycle that is “good enough”? To achieve this, multiple optimization algorithms exist. the <em>Networkx</em> framework for graphs in Python solves TSP with <em><a href="https://en.wikipedia.org/wiki/Christofides_algorithm">Christofides</a></em> or <em><a href="https://en.wikipedia.org/wiki/Simulated_annealing">Simulated Annealing</a></em>, for example, of which the latter is quite similar to Ant Colony Optimization. Christofides has the nice property of never being wrong by more than 50% (so if the best cycle has a weight of 100, Christofides is guaranteed to find a cycle of weight at most 150).</p>
+
+<p>The algorithm we will see today is one such way of approximating a solution.</p>
+
+<p>In <strong><a href="https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms">Ant Colony Optimization Algorithms</a></strong>, we will run a simulation of “ants” traversing the graph, constrained to only move in cycles, visiting each node exactly once. Each ant will leave, after finishing its traversal, a trail of pheromones that is proportional to the inverse weight of the discovered cycle (that is, if the cycle the ant encountered is twice as big, it will leave half the pheromones on each edge of the graph it went through, and so on).</p>
+
+<p>Finally, though we will make ants choose which edge to go through on each step of their traversal randomly, they will assign more preference to edges with more pheromones on them, and less preference to those with less pheromones. Additionally, if an edge is longer, it will receive less preference, since it implies higher travel times.</p>
+
+<p>These two preference adjustments could be linear, or any other polynomial (in my case, I tried many different coefficients and found the optimum to be sublinear for the pheromones, and quadratic or **1.5 for the distance).</p>
+
+<p>The pseudocode Wikipedia gives is:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>procedure ACO_MetaHeuristic is
+    while not terminated do
+        generateSolutions()
+        daemonActions()
+        pheromoneUpdate()
+    repeat
+end procedure
+</code></pre></div></div>
+
+<p>For this post, I coded Ant Colony Optimization (initially proposed by Marco Dorigo in 1992 in his PhD thesis) from scratch in Python using the Wikipedia article as a reference. I then ran a few experiments with it and benchmarked it against other algorithms for different problem instances.</p>
+
+<p>I used numpy for the traversals and other numerical operations, and pytest for testing. The whole code is <a href="https://github.com/StrikingLoo/ant-colony-optimization">available on GitHub</a>, but I will show you the main parts step-by-step now. If you’re not interested in how the Ant Colony Optimization algorithm works in detail, you can skip straight to the <a href="#tests-and-results">results and benchmarks</a>.</p>
+
+<p>First, I designed a minimal Graph class, whose code I will not include here since it is quite simple. Suffice it to say that the <em>.distance</em> property holds an adjacency matrix with the weight -distance- for each edge.</p>
+
+<p>Then I coded the <code class="language-plaintext highlighter-rouge">traverse_graph</code> function, which represents a single ant going through the graph one node at a time, constrained to move in a cycle.</p>
+
+<p>The ant starts from a given node, and will at each step choose from among every node it has not stepped on yet, with a weighted distribution that assigns preference proportional to an edge’s pheromone load and to the inverse of its distance, each raised to a power that is a hyperparameter coefficient (<em>alpha</em> and <em>beta</em> respectively).</p>
+
+<p>That is, the probability of choosing a certain edge will be proportional to:</p>
+
+<p><img src="resources/post_image/weight.png" alt="weight equation for ant colony optimization" loading="lazy" style="height:25%; width:25%" /></p>
+
+<p>Where P is the level of pheromones in that edge, and D the distance the edge covers. To get the distribution we sample from at each random jump, we normalize these weight coefficients so they add up to one.</p>
+
+<script src="https://gist.github.com/StrikingLoo/432302f114822d24504cf6bab0ab3964.js"></script>
+
+<p>After that, the optimization procedure itself consists of:</p>
+
+<ul>
+  <li>Initialize the graph with a constant (typically initially high, to encourage exploration) amount of pheromones on each edge.</li>
+  <li>Make <em>k</em> ants start from random nodes and traverse the graph using the procedure defined above.</li>
+  <li>For each traversal, update the level of pheromones in its edges according to the function <em>Q/total_weight</em>, where Q is a hyperparameter (a constant) and <em>total_weight</em> is the sum of the distances of all the edges in the cycle. If using <em>elitism</em>, add to the list of traversals the best one we have encountered so far, to incentivize the ants not to deviate too far from it.</li>
+  <li>If a cycle was found that beats the best one so far, update it.</li>
+  <li>All pheromone levels are multiplied by a <em>degradation constant</em>, another hyperparameter between 0 and 1 that represents the passage of time and prevents bad past solutions to influence good recent ones too much.</li>
+  <li>Repeat for a certain number of iterations, or until convergence.</li>
+</ul>
+
+<p>Intuitively, this converges to short cycles because <strong>each ant is leaving more pheromones in the edges on its cycle the shorter it is</strong> and, as old pheromones fade over time, and new ants favor edges with more pheromones in them, <strong>new cycles will tend to be ever shorter</strong>. Crucially, as each ant is choosing its next step at random, even though they will <em>tend</em> to pick the candidates with the most pheromone every time, they will also have a non-negligible probability of picking a different edge and going off exploring. Should that lead to a better cycle overall, then that ant will tell future ants about it by leaving even more pheromones, as the cycle is shorter.</p>
+
+<p>Over time, we would expect the average ant traversal to get shorter and shorter.</p>
+
+<p>Additionally, I tried a few more modifications to the algorithm: the ‘elite’ or best candidate can be specified manually at the start (as that allows for reusing of the best solution from other runs) and I designed a protocol for increasing the amount of pheromones everywhere by a constant if progress stagnated -no new best cycle found after <em>patience</em> iterations-, though I did not achieve better results through that. Also, after running <em>k</em> ants, I only updated the pheromone trails with the best <em>k/2</em> ants’ traversals instead of using them all. This did improve results quite significantly, as did using elite candidates –not keeping them made the algorithm more unstable and it converged a lot more slowly.</p>
+
+<p>Here is the whole function in all its glory (with comments for sanity).</p>
+
+<script src="https://gist.github.com/StrikingLoo/778db2438b18d38f126082c046b19acd.js"></script>
+
+<p>Some possible improvements for this algorithm that I didn’t have the time for:</p>
+
+<ul>
+  <li>Traversals could be trivially paralllelized since each ant is independent. This can be done easily using the <em>multiprocessing</em> Python module, but it doesn’t work on Mac by default. In this tradeoff, I chose portability over speed.</li>
+  <li>Choosing the next jump in a traversal can be done in parallel with numpy vector multiplication, which resulted in everything running about 5x faster. However due to numerical instability, a jump could be performed to the same node over and over, even though I was multiplying by zero, and solving this bug would have taken more time than I thought worth it. If you find a way to make this work for all cases, then feel free to make a pull request and you will get the credit and a link.</li>
+</ul>
+
+<h2 id="tests-and-results">Tests and Results</h2>
+
+<p>After coding the algorithm and testing it in toy cases, I was happy to find that the internet had provided me with a wealth of different graphs and TSP problems to try it on.</p>
+
+<p>I got my first small but real test case from this <a href="https://towardsdatascience.com/solving-the-travelling-salesman-problem-for-germany-using-networkx-in-python-2b181efd7b07">Medium Article</a> using real Germany cities data. I was happy to see ACO found the optimal solution in seconds.</p>
+
+<p>Then I found the huge <a href="http://cs.uef.fi/sipu/santa/data.html">Santa Claus Challenge</a> with coordinates data representing millions of houses in Finland (for Santa to visit). The entire dataset did not fit in memory, so I could not verify how close my solution got to the best ones in the challenge, but taking ever bigger samples let me see how fast or slow each part of the program was for profiling. Go to the <a href="https://www.frontiersin.org/articles/10.3389/frobt.2021.689908/full">challenge’s article</a> for a fun read.</p>
+
+<p>Finally, my favorite resource for finding TSP problems, often with their optimal cycle’s weight, was <a href="http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/XML-TSPLIB/instances/">Heidelberg University’s site</a>.</p>
+
+<p>I used that site’s Berlin dataset for most of my benchmarking and hyperparameter optimization, from which I found the best <em>alpha</em> and <em>beta</em> values to be around <em>0.9</em> and <em>1.5</em>.</p>
+
+<p>I was happy to see that, while Networkx’s <em>TSP solve</em> took 2 seconds and this program took a couple minutes, my solution for that dataset had a weight of ~44000 whereas Networkx’s was around 46k. This proves for some cases, even though slower, ACO algorithms could be a good approach for solving TSP problems.</p>
+
+<h2 id="experiments">Experiments</h2>
+
+<p>Encouraged by the comments in Reddit, I decided to experiment further and see how the optimization behaved in different situations.</p>
+
+<p>Particularly, since ACO can be updated online, it is supposed to perform well in dynamic network or logistics problems where the graph is shifting in real time, in comparison with other algorithms which need to be re-run from scratch.</p>
+
+<p>Since the ants update their pheromone trails in real time, whenever there is a shift in the edge’s distances they should eventually notice it and change their path to reflect it. For instance if two nodes got closer (the distance value in the edge joining them was reduced) then more ants should want to cross between them, and its pheromone load should grow larger. Alternatively if two nodes grow farther apart, the ants should shun them more.</p>
+
+<p>To test whether this was the case, I tried two experiments. In both of them I started with the Berlin graph I had looked at earlier, which I knew the algorithm converged in after about 500 iterations of 50 ants each.</p>
+
+<p>For the first experiment, after the 500th iteration I selected the edge with the highest amount of pheromones, and made its weight 10 times bigger. That is, if the edge was joining nodes i and j, then the distance between them grew 10 times larger.</p>
+
+<p>I wanted to see how quickly the swarm would respond to this change, so I plotted the pheromone load for that edge from iteration 500 onwards for 500 more iterations.</p>
+
+<p><img src="resources/post_image/ant_trail_smaller.png" alt="An image depicting a graph of decreasing pheromone trails after an edge's weight grew bigger" loading="lazy" /></p>
+
+<p>As you can see, the ants don’t respond instantaneously to the changes, but after 30 iterations they have adapted to them and do not visit that edge nearly as often as before. Its pheromone level remains close to zero afterward, with occasional peaks probably due to some of the exploration incentives I set.</p>
+
+<p>For the second experiment, I took a random Hamiltonian cycle and divided all of its edges by 10. This way, this cycle suddenly became tempting for the ants, as it was a cheap way of traversing the whole graph, smaller by an order of magnitude. Again this change took place in the 500th iteration, so I wanted to see how the ants reacted.</p>
+
+<p>I looked at the mean pheromone load for edges in the diminished cycle, and this is what it looked like.</p>
+
+<p><img src="resources/post_image/ant_trail_mean.png" alt="An image depicting a graph of increasing pheromone trails after a cycle grew shorter, incentivizing ants to explore it" loading="lazy" /></p>
+
+<p>As expected, the ants were highly incentivized to deviate from their known paths and explore this cycle (it had a third of the weight of the next smallest cycle that the colony had found so far). After a single iteration, the average pheromone levels for that cycle had increased dramatically.</p>
+
+<p>This shows that, as long as the algorithm contemplates the possibility of change by always encouraging a minimum level of exploration, new opportunities can be exploited as they arise.</p>
+
+<p>Interestingly, if the minimum level of pheromones was plotted instead of the mean, it would not rise by a lot. I think this is because even after dividing by ten, a few of the edges in the best solution were still not included in this cycle. This can further be attested by the dip in average pheromone levels by the end of the graph above. I believe in the last 50 iterations a cycle was found that contained an edge that had not been diminished, but was nonetheless small enough to present an improvement.</p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>We showed that Ant Colony Optimization can be implemented quite easily in Python, and since many of its operations can be vectorized or parallelized it should not be too slow, though not it is not as fast as Christofides’s algorithm or others.</p>
+
+<p>More importantly, we showed that in many datasets, ACO can converge to the optimal solution, and in many others its flexibility allows it to find better solutions (shorter traversals) than simpler algorithms.</p>
+
+<p>Additionally, it could be seen that one of the best properties of Ant Colony Optimization over other algorithms is its capability for online adaptation to changes in the system. In certain situations this could prove critical for performance, especially if rapid response is encouraged.</p>
+
+<p>On a more philosophical level, I think it is beautiful how by specifying a large set of simple agents that each follow a few rules, we could solve a problem that is known to be hard.</p>
+
+<p>I would like to try Ant Colony Optimization for problems other than TSP in the future, so if you know of any other applications where ACO shines, let me know.</p>
+
+<p><strong>If you enjoyed this article, please share it on Twitter or with a friend.</strong> I write these for you and would be happy if more people can read them and share my love for algorithms.</p>
+
+<h2 id="suggested-further-reading">Suggested Further Reading</h2>
+
+<ul>
+  <li><a href="https://kazimuth.github.io/blog/post/shake-and-pull-gently/"><em>Shake and Pull Gently</em>, Kazimuth</a>: This post reminded me of my love for search and optimization algorithms, and I recommend it full-heartedly.</li>
+  <li>Reddit User <em>/u/git</em>’s comments on <a href="https://www.reddit.com/r/programming/comments/wx69fs/comment/ilplkgs/">Ant Behavior</a> and <a href="https://www.reddit.com/r/funny/comments/wt1fcr/comment/il1w9u2/">Ant Trails</a>, which originally inspired me to write this post.</li>
+  <li><a href="https://www.frontiersin.org/articles/10.3389/frobt.2021.689908/full">Solving the Large-Scale TSP Problem in 1 h: Santa Claus Challenge 2020</a>: A fun challenge and a good explanation of TSP.</li>
+  <li><a href="https://arxiv.org/pdf/2205.15678v1.pdf">Automatic Relation-aware Graph Network Proliferation</a>: Using Graph Neural Networks to solve, among other things, TSP.</li>
+  <li><a href="https://github.com/maoaiz/tsp-genetic-python">TSP Genetic Python</a>: A genetic algorithm for solving TSP.</li>
+</ul>
+
+</div>
+<a href='https://ko-fi.com/R6R3F4NIO' target='_blank' rel="noopener noreferrer nofollow">
+  <img style='border:0px;height:4em;width:auto;' src='https://cdn.ko-fi.com/cdn/kofi5.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' loading='lazy'/></a>
+  <p style='text-align: center;'>
+  <a href="https://twitter.com/intent/tweet?text=Ant Colony Optimization for the Travelling Salesman Problem&url=https://strikingloo.github.io/ant-colony-optimization-tsp%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" title="Share on Twitter!">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em" rel="noopener noreferrer nofollow"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>Share on twitter]</a></p>
+
+<template id="post-delayed-content">
+
+<div class="backButton">
+<a href="https://twitter.com/intent/tweet?text=Ant Colony Optimization for the Travelling Salesman Problem&url=https://strikingloo.github.io/ant-colony-optimization-tsp%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis' title="Share on Twitter!" rel="noopener noreferrer nofollow">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>]</a>
+<br/>
+<a href="/blog/" id='backToBlog' title="Back to blog" rel="noopener noreferrer">[←]</a>
+</div>
+</template>
+<script>
+const headings = document.querySelectorAll('h2[id],h3[id]');
+for (var heading of headings) {
+    heading.innerHTML = `<a href=#${heading.id}>${heading.innerHTML}</a>`;
+}
+function externalLinks() { for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } }
+externalLinks();
+
+function renderBottomButtons(){
+  const templateNode = document.getElementById('post-delayed-content')
+  const templateContentClone = templateNode.content.cloneNode(true) // perform a deep copy
+  document.body.appendChild(templateContentClone)
+}
+
+function scrollEventHandler(){
+ const scrollOffset = window.pageYOffset
+ const browserViewHeight = window.innerHeight
+ if (scrollOffset > browserViewHeight/3) {
+    console.log('done')
+    renderBottomButtons();
+    window.removeEventListener('scroll', scrollEventHandler)
+ }
+}
+window.addEventListener('scroll', scrollEventHandler)
+</script>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@StrikingLoo" />
+<meta name="twitter:title" content="Ant Colony Optimization for the Travelling Salesman Problem" />
+<meta name="twitter:description" content="I made an Ant Colony Optimization-based TSP solver in Python. I share the code, insights and benchmarks versus other algorithms." />
+
+<meta name="twitter:image:src" content="https://strikingloo.github.io/resources/post_image/black-ant.jpg" />
+<meta property="og:image" content="https://strikingloo.github.io/resources/post_image/black-ant.jpg"/>
+
+			
+			</div>
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:lucianostrika44@gmail.com" rel="me" title="email me">✉️</a></li>
+	        		<li><a href="https://github.com/strikingloo" rel="me noopener noreferrer nofollow" title="GitHub"><svg viewBox="0 0 438.549 438.549" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><path fill="#0F3D3E" d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289s4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136s11.704-.476 16.274-1.423c4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"></path></svg></a></li>
+			        <li><a href="https://twitter.com/intent/follow?screen_name=strikingloo" rel="me noopener noreferrer nofollow" title="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg></a></li>
+			        <li><a href="http://www.linkedin.com/in/luciano-strika" rel="me noopener noreferrer nofollow" title="linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M72.16 99.73H9.927a5 5 0 00-5 5v199.928a5 5 0 005 5H72.16a5 5 0 005-5V104.73a5 5 0 00-5-5zM41.066.341C18.422.341 0 18.743 0 41.362 0 63.991 18.422 82.4 41.066 82.4c22.626 0 41.033-18.41 41.033-41.038C82.1 18.743 63.692.341 41.066.341zM230.454 94.761c-24.995 0-43.472 10.745-54.679 22.954V104.73a5 5 0 00-5-5h-59.599a5 5 0 00-5 5v199.928a5 5 0 005 5h62.097a5 5 0 005-5V205.74c0-33.333 9.054-46.319 32.29-46.319 25.306 0 27.317 20.818 27.317 48.034v97.204a5 5 0 005 5H305a5 5 0 005-5V194.995c0-49.565-9.451-100.234-79.546-100.234z"></path></svg></a></li>
+			        <li><a href="/resources/Luciano_Strika.pdf">CV</a></li>
+				</ul>
+				<p><i>Built with ❤️ by <a href="https://strikingloo.github.io/">Strikingloo</a>.</i></p>
+			</footer>
+			
+
+			
+
+			
+			<link rel="preload" href="/css/non-critical-post-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+			<noscript><link rel="stylesheet" href="/css/non-critical-post-min.css"></noscript>
+        	
+		</body>
+	</html>

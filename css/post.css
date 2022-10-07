@@ -1,0 +1,35 @@
+/* posts only */
+.meta {font-style:italic; text-align: center;}
+
+img { max-width: 512px;
+  width: 90%; height: auto;   margin-left: auto;
+  margin-right: auto; margin-top: 1em; display: block; text-align: center;}
+
+blockquote {
+  width:85%;
+  margin:1em auto;
+  font-family:Open Sans;
+  font-style:italic;
+
+  font-size: 1.1em;
+  line-height: 1.75;
+  color: var(--font-color);
+
+  background:#EfEfEf;
+
+  padding:1.2em 1.4em 1.2em 1.4em;
+  border-left:10px solid var(--header-anchor-color) ;
+  position: relative;
+  
+}
+
+blockquote::after{
+  content: '';
+}
+
+pre, code {background-color: #444; color: #fff; font-family: Verdana; padding: 10px; line-height: 1.75;}
+
+h2, h3 {
+    padding-bottom: .3em;
+    padding-top: .6em;
+    border-bottom: 3px solid rgba(0, 0, 0, .3);}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23d8eaeb%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2293%22>🌳</text></svg>" />
+            <title>Algoritmos y Estructuras de Datos III - Notas para el final</title>
+			<link rel="canonical" href="https://strikingloo.github.io/wiki/algo3-final">
+			  <meta name="description" content="Notas para el final de Algo3. Basadas en los apuntes de la teorica. In Spanish.">
+  			<meta property="og:site_name" content="Algoritmos y Estructuras de Datos III - Notas para el final">
+
+        	
+        	<link rel="stylesheet" type="text/css" href="/css/post-min.css">
+        	
+
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
+
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-52642322-5');
+			</script>
+			
+			  <meta property="og:description" content="Notas para el final de Algo3. Basadas en los apuntes de la teorica. In Spanish.">
+			
+	  		<meta property="og:locale" content="en_US">
+	  		
+			  <meta property="og:title" content="Algoritmos y Estructuras de Datos III - Notas para el final">
+			  <meta property="og:type" content="article">
+		  	  <meta property="article:published_time" content="2021-02-22T00:00:00+00:00">
+		      <meta property="article:author" content="/">
+		  	
+		  	
+  				<meta property="og:url" content="https://strikingloo.github.io/wiki/algo3-final">
+  			
+  			<meta content="index,follow" name="robots"><!-- All Search Engines -->
+  			<meta content="index,follow" name="googlebot"><!-- Google Specific -->
+  			<meta name="robots" content="max-image-preview:large">
+
+		</head>
+		<body>
+			<div class="head-banner">
+			<p>Strikingloo</p>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about/">About</a></li>
+	        		<li><a href="/wiki/">Wiki</a></li>
+	        		<li><a href="/blog/">Blog </a></li>
+	    		</ul>
+			</nav>
+			<div style="clear: both;"></div>
+		    </div>
+
+			<div class="container">
+			
+			<h1>Algoritmos y Estructuras de Datos III - Notas para el final</h1>
+<p class="meta">22 Feb 2021 - importance:  </p>
+
+
+
+
+<div class="post">
+  <h2 id="algoritmos"><a href="#algoritmos">Algoritmos</a></h2>
+<p>Secuencia finita de pasos que terminan en tiempo finito. 
+Los pasos deben ser:</p>
+<ul>
+  <li><strong>Precisos</strong> (en su orden)</li>
+  <li><strong>Bien definidos</strong> (deterministicos)</li>
+  <li><strong>Finitos</strong></li>
+</ul>
+
+<h2 id="máquina-ram"><a href="#máquina-ram">Máquina RAM</a></h2>
+<ul>
+  <li>Tiene infinitos registros de tamaño infinito.</li>
+  <li>Cada uno accesible en tiempo constante.</li>
+</ul>
+
+<p>Instrucciones disponibles:</p>
+<ul>
+  <li>Load, Store, Write, Read (las ultimas dos son para el I/O del algoritmo, las otras para la ram).</li>
+  <li>add, sub, mult, div (misma complejidad independiente del tamaño del numero)</li>
+  <li>jmp, jgtz, jz, halt</li>
+</ul>
+
+<h2 id="complejidad-computacional"><a href="#complejidad-computacional">Complejidad computacional</a></h2>
+
+<p>Definición informal: La complejidad de un algoritmo es una función que representa el tiempo de ejecución en función del tamaño de la entrada del algoritmo.</p>
+
+<p>operacion elemental (O(1)) : no depende del tamaño del input, solo de la implementación.</p>
+
+<p>Simplificamos asumiendo que toda operación elemental puede ser ejecutada en una unidad de tiempo. Interesa cómo crece el tiempo de ejecución de un algoritmo cuando el tamaño de las instancias de entrada crece. No interesa el tiempo exacto requerido por cada una de ellas.</p>
+
+<p><strong>Modelo uniforme</strong> : Cada operación básica tiene un tiempo de ejecución constante.</p>
+
+<p><strong>Modelo logarítmico</strong>: El tiempo de ejecución de cada operación es función del tamaño (cantidad de bits) de los operandos.</p>
+
+<p>## <a href="#big-o-notation">Big O notation</a></p>
+
+<p>Sii f es O(g), lim n-&gt;inf de f/g = c tq c &gt; 0.</p>
+
+<h2 id="técnicas-de-diseño-de-algoritmos"><a href="#técnicas-de-diseño-de-algoritmos">Técnicas de diseño de algoritmos</a></h2>
+
+<p>Para demostrar la correctitud de un algoritmo tenemos que demostrar que <strong>termina</strong> y que <strong>cumple la especificación</strong>.</p>
+
+<p><strong>Divide and Conquer</strong> : Para obtener un algoritmo eficiente, la medida de los subproblemas debe ser similar y no necesitar resolver mas de una vez el mismo subproblema.</p>
+
+<p><strong>Backtracking</strong> :  Técnica para recorrer sistemáticamente todas las posibles configuraciones del espacio de soluciones.
+Se recorre el arbol de soluciones parciales potenciales, y se llega a cada hoja siendo una con todos los elementos definidos. Podemos abandonar una rama del arbol prematuramente por criterios de poda: <strong>Factibilidad</strong> (no quedan soluciones posibles en esta rama) u <strong>Optimalidad</strong> (para problemas de optimización: ya no puede haber una solución óptima en esta rama).</p>
+
+<p>Para poder hacer podas por factibilidad, tiene que cumplirse el <strong>efecto dominó</strong>: Si una solución parcial no es viable, sus extensiones tampoco lo serán.</p>
+
+<p><strong>Dynamic Programming</strong> : 
+<strong>Principio de optimalidad de Bellman</strong> : Una solución óptima cada subsolución es a su vez óptima del subproblema correspondiente.</p>
+
+<h2 id="grafos"><a href="#grafos">Grafos</a></h2>
+
+<p><strong>Circuito Hamiltoniano</strong> : Pasar por todos los vertices (Hamilton: cientifico victoriano: como paso por todas las ciudades en mi viaje?)</p>
+
+<p><strong>Subgrafo</strong> : H es subgrafo de G si H tiene un subconjunto de los vertices, y un subconjunto de los edges -que ademas obviamente solo van entre nodos de H-.
+<strong>Subgrafo generador</strong> : H mismos vertices que G, pero subconjunto de aristas. 
+<strong>Subgrafo inducido</strong>: H mismos aristas que G, si van entre nodos que estén en H. Osea, removiste nodos, pero no edges.</p>
+
+<p><strong>Grafo Bipartito</strong> : Un grafo G con 2 o más vértices es bipartito sii <strong>no tiene circuitos simples de longitud impar</strong>.
+<strong>Árbol</strong> : Un árbol es un grafo conexo sin circuitos simples.
+Son equivalentes:</p>
+<ul>
+  <li>G es un árbol (un grafo conexo acíclico).</li>
+  <li>Existe exactamente un camino simple entre cada par de vértices.</li>
+  <li>G es conexo pero toda arista es puente.</li>
+  <li>Si se le agregara una arista e a G, G+e tiene exactamente un ciclo, y ese ciclo tiene a e.</li>
+  <li>G es un grafo sin circuitos simples y m = n − 1.</li>
+  <li>G es conexo y m = n − 1.</li>
+</ul>
+
+<p>Sea G un bosque con c componentes conexas. Entonces <em>m = n − c</em>.</p>
+
+<p><strong>Arbol generador minimo</strong>: Hallar el conjunto de aristas que arman un arbol generador del grafo G que minimizan la suma de los pesos.</p>
+
+<p>Se resuelve con <strong>Prim</strong>: parto de un vertice cualquiera, v1, creo mi VT = {v1} y en cada paso selecciono la arista de menor costo entre las que tienen un extremo en VT y el otro en V \ VT .</p>
+
+<p>O con <strong>Kruskal</strong>: Ordeno las aristas de mas chica a mas grande. Tomo en cada paso la siguiente arista que no forme un ciclo en mi grafo. Freno cuando tomé n-1 aristas -porque es un arbol-. En la practica: cada nodo arranca como su propio componente, y al unir un arista a mi arbol, pinto uno de los nodos del color del otro. Entonces ver que no formo ciclo == ver que ambos nodos del arista no estan en la misma componente -tienen distinto color-. Hermoso.</p>
+
+<p>Prim’s Algorithm is faster for dense graphs. O(n^2) vs O(m log n).</p>
+
+<hr />
+
+<h2 id="camino-minimo"><a href="#camino-minimo">Camino minimo</a></h2>
+
+<p>Lo resolvemos para digrafos porque un grafo es un caso particular.</p>
+
+<h3 id="1-to-many"><a href="#1-to-many">1 to many</a></h3>
+<ul>
+  <li><strong>Todos los edges misma distancia</strong> : Usamos el algoritmo para shortest path (BFS)</li>
+  <li><strong>No hay edges negativos</strong> : Algoritmo de Dijkstra (Prim with extra steps). Por cada vertice, va definiendo un dicc con la distancia al origen. Lo actualiza si encuentra una forma de llegar mas corta. El dicc puede hacerse con array (donde buscar el minimo lleva O(n) ) o con min-heap (donde toma m log(n), pero las lookups del heap son n log (n)). O(m log(n) ) es mejor que O(n^2) -implementación “naive” de array-, solo si m ~ O(n). Si m ~ O(n^2) (grafo denso) es mucho peor.</li>
+</ul>
+
+<h3 id="many-to-many"><a href="#many-to-many">many to many</a></h3>
+<ul>
+  <li><strong>Floyd’s Algorithm</strong> : Funciona con pesos negativos pero <strong>no si hay ciclos negativos</strong>. Es cúbico en n. Usa una matriz de distancias que arranca inicializada con los pesos de los edges, y se va actualizando, en cada una de las k iteraciones con “caminos que tengan solo como intermediarios a los primeros k nodos”.</li>
+</ul>
+
+<h2 id="grafos-hamiltonianos-y-eulerianos"><a href="#grafos-hamiltonianos-y-eulerianos">Grafos Hamiltonianos y Eulerianos</a></h2>
+
+<p>Existen algoritmos polinomiales para saber si un grafo dado tiene un circuito euleriano, no uno hamiltoniano.</p>
+
+<p><strong>Circuito euleriano</strong>: pasa por <strong>todos las aristas</strong> de G una y sólo una vez. Un <strong>Grafo Euleriano</strong> tiene un ciclo euleriano.</p>
+
+<p>Equivalencias:</p>
+<ul>
+  <li>G es Euleriano.</li>
+  <li>Todos los vértices tienen grado par.</li>
+  <li>Las aristas de G pueden ser particionadas en ciclos simples.</li>
+</ul>
+
+<p>Para <strong>construir</strong> el ciclo: aprovechamos que cada vertice tiene cantidad par de aristas. Partimos de uno cualquiera y avanzamos vertice por vertice. Siempre que entramos a uno podemos salir, pues cantidad par de aristas. Cuando volvemos al vertice inicial, entonces tenemos un ciclo. Si quedan aristas sin explorar en el grafo, repetimos partiendo por cualquier arista que tenga una punta en el ciclo que acabamos de descubrir, y obtenemos otro ciclo. Eventualmente formamos n ciclos que particionan a G, y la intercalación de estos es un ciclo (no simple) que pasa una vez por arista.</p>
+
+<p>Un digrafo conexo es euleriano si, y sólo si, para todo nodo v de G se verifica que din(v) = dout(v).</p>
+
+<p><strong>Circuito hamiltoniano</strong> : pasa por <strong>cada nodo</strong> de G una y solo una vez. Si G tiene un ciclo Hamiltoniano, decimos que es un grafo Hamiltoniano.
+El problema es NP-Hard no resuelto, y no tiene una buena caracterizacion.</p>
+
+<p>Sea G un grafo conexo. Si existe W ⊂ V tal que G \ W tiene c componentes conexas con c &gt; |W| entonces G no es hamiltoniano.</p>
+
+<p><strong>teorema de Dirac</strong> : Sea G un grafo conexo tq n &gt;= 3. Si para todo v en V, d(v) &gt;= n/2, entonces <strong>G Hamiltoniano</strong>.
+La inversa no es necesariamente cierta. (Ver C_k!)</p>
+
+<p><strong>Condicion de Clausura</strong> : Por cada par de vértices no adyacentes u y w, unirlos con una arista si d(u)+d(w) &gt;= n. Repetir hasta convergencia. Si el resultado es hamiltoniano, el grafo inicial también lo es. Notar que todo grafo completo es hamiltoniano.</p>
+
+<h2 id="heuristicas-y-metaheuristicas"><a href="#heuristicas-y-metaheuristicas">Heuristicas y Metaheuristicas</a></h2>
+<p>Problema de Optimización: Determinar una solución factible (satisface toda restriccion) que minimice (o maximice) el objetivo.</p>
+
+<p>Decimos que A es un algoritmo ϵ – aproximado, con ϵ ∈ R&gt;0, si para toda instancia se cumple:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>**</td>
+      <td>f (x^A) − f (x∗)</td>
+      <td>≤ ϵ</td>
+      <td>f (x∗)</td>
+      <td>**</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Por su facilidad de diseño e implementación, es muy frecuente utilizar procedimientos golosos. Si bien no aseguran que nos brinden una solución óptima (y en general no lo hacen), retornan soluciones de calidad aceptables en compensación por el esfuerzo computacional que requieren.</p>
+
+<p>Para TSP muchas heurísticas existen que dan resultados ok pero tienen casos patologicos: hacer un kruskal -quedarse cada vez con el edge mas chico factible-, agregar el eje mas pequeño posible cada vez -greedy-, o armar un MST del grafo y recorrerlo para conseguir un camino Hamiltoniano. Esta ultima es 1-aproximada si el grafo cumple la desigualdad triangular -es euclideano-.</p>
+
+<p>Podemos ademas definir “vecindades” para nuestras soluciones: formas de generar soluciones cercanas en el espacio de soluciones, factibles, que podemos comparar para ver si hay ganancia tomandolas. Un ejemplo es k-opt: tomo k nodos y sus sucesores, y roto los ejes seleccionados. E.g., remuevo (i, i+1) y (j, j+1) y agrego (j, i+1), (i, j+1), formando 2-opt. Esto es cuadratico-ish. Definitivamente polinomico.</p>
+
+<p>Esto nos da la noción de óptimo local: una solución que no tiene vecinos mejores.</p>
+
+<p><strong>Búsqueda Local</strong> : buscar un optimo local haciendo un gradient descent discreto: hago alguna permutación hacia otra solución de la vecindad que mejore mi solución candidata, repetidas veces hasta que no pueda mejorarla mas con esta permutacion. E.g.: arranco con un ciclo feo para TSP y voy haciendo 2-opt greedily hasta llegar a la mejor posible. Podes buscar el optimo local de la vecindad cada vez, o solo ir siempre en direcciones que mejoren.</p>
+
+<h2 id="metaheuristicas"><a href="#metaheuristicas">Metaheuristicas</a></h2>
+<p>Buscan mejorar la busqueda local tradicional para no quedar varados en minimos locales. Pueden ser mas o menos simples, y usar memoria en vez de solo mirar vecinos.</p>
+
+<p><strong>Busqueda Tabú</strong> : Memoriza T soluciones visitadas, y las elimina de las opciones V* en N(s) para explorar.  Clasifica como tabú ciertos atributos de las soluciones (e.g., alguna arista en un TSP).
+Se detiene el algoritmo por criterios de parada: cantidad de iteraciones, falta de soluciones mejores, solucion optima global hallada (si se sabe por teoria).</p>
+
+<p>Solemos usar metaheuristicas para resolver problemas NP-Hard, por falta de algoritmos exactos que los resuelvan en tiempo polinomico.</p>
+
+<h2 id="planaridad"><a href="#planaridad">Planaridad</a></h2>
+<p>Un grafo es planar si puedo representarlo en el plano sin que sus aristas se superpongan. 
+Determinar planaridad es polinomial: basta ver que el grafo no contiene a k3,3 ni a k5 (minima cantidad de aristas o vertices para no-planaridad, respectivamente).</p>
+
+<p>Una cota util:
+Si G es conexo y planar con n ≥ 3, entonces m ≤ 3n − 6.</p>
+
+<h2 id="coloreo"><a href="#coloreo">Coloreo</a></h2>
+<p>Dado un grafo, puedo pintar sus aristas de colores tq no haya dos vecinos del mismo color?
+Problema NP-Hard! :D 
+Tenemos cotas:</p>
+<ul>
+  <li>Chi(Kn) = n</li>
+  <li>G bipartito, Chi(G) = 2 (salvo que sea m=0)</li>
+  <li>H_2k ciclo de n par, Chi(H_2k) = 2</li>
+  <li>h_2k+1, Chi = 3</li>
+  <li>T arbol, Chi(T) = 2</li>
+</ul>
+
+<p>Ademas tenemos un monton de cotas copadas:</p>
+<blockquote>
+  <p>Sea w(G) el tamaño de su máxima clique. Esta es una cota inferior de chi. Osea w(G) &lt;= chi(G).
+Pero, sorpresa, esta cota no es ajustada!</p>
+</blockquote>
+
+<p><strong>Grafos de Mycielsky</strong>: su clique mas grande siempre es k2, pero su chi es arbitrariamente grande! Forman una sucesion tq chi(Mi) = i.</p>
+
+<p>Mas cotas:</p>
+<blockquote>
+  <p>Chi(G) &lt;= D(G) + 1 tq D(G) es su máximo degree. Si G no es ciclo impar o completo, entonces Chi(G) &lt;= D(G)</p>
+</blockquote>
+
+<p>Esta cota tampoco es ajustada: ver K1,k</p>
+
+<blockquote>
+  <p>G un grafo planar =&gt; Chi(G) &lt;= 4</p>
+</blockquote>
+
+<p>Este problema es NP-Hard! No hay solucion polinomica, se usan heuristicas, programacion lineal entera o backtracking.</p>
+
+<p><strong>Heurística secuencial</strong> : A cada nodo le asigno el minimo color “posible”. Recorro los nodos en orden. El resultado es subóptimo pero válido.
+S -&gt; LF -&gt; SL -&gt; SI -flippear colores de cada componente filtrando por dos colores- (con SL). Cada una gana cotas mas ajustadas que la anterior, pero todas tienen casos patologicos.
+SI+SL colorea siempre un planar con &lt;=5, y un bipartito con 2.
+<strong>Coloreo de Aristas</strong> : Denominado Chi’(G), es pintar aristas tq dos aristas con un vértice en común no coincidan. Chi’(G) = D(G) + d tq d en {0,1}</p>
+
+<h2 id="matching-y-cubrimientos"><a href="#matching-y-cubrimientos">Matching y cubrimientos</a></h2>
+<ul>
+  <li><strong>Matching máximo</strong> : Hallar maximo conjunto de edges tq no dos edges incidan en un mismo vertice.</li>
+  <li><strong>Conjunto independiente máximo</strong>: Hallar máximo conjunto de vércitces no adyacentes entre si de a pares.</li>
+  <li><strong>Recubrimiento de aristas mínimo</strong>: Mínimo conjunto de vértices que sean incidentes en toda arista.</li>
+  <li><strong>Recubrimiento de vértices mínimo</strong>: Misma idea para el otro lado.</li>
+</ul>
+
+<p>Matching máximo es polinómico. Conjunto independiente máximo es NP-Hard.
+S es un conjunto independiente &lt;-&gt; V \ S es un cubrimiento de aristas.</p>
+
+<p>Interesante: Cada conjunto de vertices pintados de un <strong>mismo color</strong> en un coloreo de G, es un <strong>conjunto independiente</strong>. Evidentemente el color de mayor cardinal no necesariamente sea el conjunto independiente maximal del grafo, sin embargo.(pensar en hojas).
+Esto ultimo nos da un algoritmo greedy de coloreo muy simple (y obviamente suboptimo): tomar un nodo no pintado, extender su conjunto independiente maximal (mirando cada vez el nodo de menor grado de adyacentes entre candidatos), pintarlo de un color, repetir hasta convergencia.</p>
+
+<h3 id="cartero-chino"><a href="#cartero-chino">Cartero chino</a></h3>
+
+<p>El problema del cartero chino consiste en encontrar un <strong>circuito</strong> que pase por todas las aristas, minimizando el peso. Si hay un ciclo euleriano ganamos, pero sino hay que repasar una misma arista al menos dos veces. Cómo elegimos?</p>
+
+<ul>
+  <li>Tomamos todos los nodos de degree impar. Los llamamos S.</li>
+  <li>Por cada vi, vj en S, hallamos d(vi, vj), la longitud de su camino mínimo.</li>
+  <li>Armamos Ks su grafo completo con distancias d(vi, vj) como pesos.</li>
+  <li>Hallamos matching de peso minimo de este grafo (esto es polinomico, cubico, pero no vimos como hacerlo).</li>
+  <li>Construimos el multigrafo G* duplicando en G las aristas que conforman un camino mínimo entre vi y vj. G* es euleriano.</li>
+  <li>Hallamos el ciclo euleriano en G*, y ahora es minimo.</li>
+</ul>
+
+<h2 id="flujo-en-redes"><a href="#flujo-en-redes">Flujo en Redes</a></h2>
+
+<p>Una red es un digrafo conexo con dos vértices distinguidos: <strong>fuente</strong> y <strong>sumidero</strong> (<em>s</em> y <em>t</em>), con grado de salida o entrada positivo, respectivamente.
+Una función de capacidades asigna pesos reales no-negativos a cada eje.</p>
+
+<p><strong>Problema de flujo máximo</strong> : Enviar el máximo flujo posible de <em>s</em> a <em>t</em> restringido a las capacidades de los ejes.</p>
+
+<p><strong>Problema de flujo de costo mínimo</strong> : Enviar un flujo fijo de <em>s</em> a <em>t</em> minimizando el costo, si cada eje tiene un costo por punto de flujo y una capacidad que lo restringe.</p>
+
+<p><strong>Flujo factible</strong> : Una funcion de flujo <em>f</em> es factible si:</p>
+<ul>
+  <li>0 &lt;= f(e) &lt;= c(e) para función de capacidades c, para todo eje e.</li>
+  <li>El flujo se conserva. i.e., sum(f(e)) for e in in(v) == sum(f(e)) for e in out(v) forall v.</li>
+</ul>
+
+<p>Si se cumple, el valor del flujo es todo el flujo entrando a <em>t</em>, menos el que sale de <em>t</em>. Equivalente a todo el que sale de <em>s</em>.</p>
+
+<p>Dado un corte cualquiera S tq S+T = V, tq s \in S, t \in T:
+El flujo <em>F</em> en una red es siempre igual a la suma de los flujos a traves de ST = {(u,v) \in X tq u \in S, v \in T}.
+Si <em>S’</em> es el complemento de S, entonces la suma de flujos de ejes de SS’ menos la suma de los de S’S, te da el flujo.</p>
+
+<p>La <strong>capacidad de un corte S</strong> es la suma de las capacidades de los ejes de SS’.
+El <strong>problema de corte minimo</strong> es encontrar un corte que minimice la capacidad.</p>
+
+<p>Puede verse que para todo corte, F &lt;= c(S). Luego si F == c(S) para algun corte S, entonces S es un corte mínimo, y F un flujo máximo.</p>
+
+<p><strong>Grafo residual</strong>: Lo formamos creando un grafo con los mismos nodos que N, pero asignando entre cada par de nodos:</p>
+<ul>
+  <li>Un eje “positivo” de u a w si (u,w) in X, y faltaba empujar k de peso entre u y w. El eje positivo pesa k.</li>
+  <li>Un eje “negativo” de w a u si (u,w) in X, que vale tanto como empujamos de u a w.</li>
+</ul>
+
+<p><strong>Camino de aumento</strong> : Un camino orientado de <em>s</em> a <em>t</em> en el grafo residual.
+Para hallarlo: partimos de s en el grafo residual, y vamos haciendo bfs en ningun orden. Si hallamos t, hacemos anterior hasta s y tenemos nuestro camino de aumento. Si no hallamos t y nos quedamos sin ejes para aumentar, tenemos nuestro corte minimo!</p>
+
+<p>Una vez que tenemos P un camino de aumento, hacemos dos cosas:</p>
+<ul>
+  <li>Hallamos el valor D. Para esto definimos D(v-&gt;w) = c((v-&gt;w)) - f((v-&gt;w)) si (v-&gt;w) en X, o f((w-&gt;v)) si no, por cada eje en P. D es el mínimo valor de Di. Si el eje en P va en direccion contraria, es f(e) en su lugar.</li>
+  <li>Por cada eje en P, si está al derecho en el X, sumamos D flujo, si va al reves le restamos D.</li>
+</ul>
+
+<p>Finalmente, <strong>Ford &amp; Fulkerson’s Algorithm</strong> : Inicializamos la red con todos los ejes en 0 flujo. Hallamos un camino de aumento. Lo aumentamos. Repetimos hasta no hallar camino de flujo. Encontramos un corte minimo! Esto es equivalente a un flujo máximo. 
+Complejidad: O(mU) Donde U es el maximo flujo posible.
+Existe Edmond-Karp que es O(nm^2) y termina para irracionales.</p>
+
+<h2 id="complejidad"><a href="#complejidad">Complejidad</a></h2>
+<p>Dado un problema de optimización, puede tratarse de:</p>
+<ul>
+  <li>Optimización: Hallar la solución óptima.</li>
+  <li>Evaluación: Hallar el valor de la solución óptima.</li>
+  <li>Localización: Hallar una solución de valor a lo sumo <em>k</em> para algún <em>k</em>.</li>
+  <li>Decisión: Decidir si existe solución que valga a lo sumo <em>k</em>, para algún <em>k</em>.</li>
+</ul>
+
+<p>Solemos estudiar problemas de decisión, porque si los resolvemos en forma eficiente, podemos resolver todos los otros de forma eficiente también.</p>
+
+<p>Un problema es polinomial si una MTD puede resolverlo en tiempo polinomial (osea polinomial cantidad de movimientos de cabeza para input de tamaño n).</p>
+
+<p>Una MTND es una MT que para un mismo estado, simbolo puede ir a mas de un estado, simbolo, movimiento de cabeza. (qf, tf, {+1,-1}). 
+Si la MTND llega a un estado con mas de un mappeo, toma todos juntos. Otra forma de verlo, equivalente aunque menos intuitiva, es que siempre elige la correcta. En este caso, la complejidad es la longitud de la primera rama en llegar a una solucion.
+Si una MTND encuentra la solución en tiempo polinomial, el problema es NP.</p>
+
+<p>Equivalentemente, podemos dar una solucion y debe ser verificable en tiempo polinomial (la maquina toma la decisión correcta cada vez)</p>
+
+<p>NP &lt;= NP-Complete &lt;= NP-Hard. Existen problemas NP-hard no NP. e.g., cualquiera exponencial.
+NP-Hard: Al menos tan dificil como todo problema en NP.
+NP-Complete: NP-Hard and also NP.
+Co-NP: Dada una instancia negativa y un NO, podemos verificarlo en tiempo polinomial. No esta demostrado que Co-NP == NP.</p>
+
+<p>Llamamos <strong>restricción</strong> de un problema a una versión con un <strong>dominio acotado</strong>. Esto puede achicar la complejidad (e.g., clique en planares vs clique en el caso general).</p>
+
+</div>
+<a href='https://ko-fi.com/R6R3F4NIO' target='_blank' rel="noopener noreferrer nofollow">
+  <img style='border:0px;height:4em;width:auto;' src='https://cdn.ko-fi.com/cdn/kofi5.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' loading='lazy'/></a>
+  <p style='text-align: center;'>
+  <a href="https://twitter.com/intent/tweet?text=Algoritmos y Estructuras de Datos III - Notas para el final&url=https://strikingloo.github.io/wiki/algo3-final%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" title="Share on Twitter!">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em" rel="noopener noreferrer nofollow"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>Share on twitter]</a></p>
+
+<template id="post-delayed-content">
+
+<div class="backButton">
+<a href="https://twitter.com/intent/tweet?text=Algoritmos y Estructuras de Datos III - Notas para el final&url=https://strikingloo.github.io/wiki/algo3-final%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis' title="Share on Twitter!" rel="noopener noreferrer nofollow">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>]</a>
+<br/>
+<a href="/blog/" id='backToBlog' title="Back to blog" rel="noopener noreferrer">[←]</a>
+</div>
+</template>
+<script>
+const headings = document.querySelectorAll('h2[id],h3[id]');
+for (var heading of headings) {
+    heading.innerHTML = `<a href=#${heading.id}>${heading.innerHTML}</a>`;
+}
+function externalLinks() { for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } }
+externalLinks();
+
+function renderBottomButtons(){
+  const templateNode = document.getElementById('post-delayed-content')
+  const templateContentClone = templateNode.content.cloneNode(true) // perform a deep copy
+  document.body.appendChild(templateContentClone)
+}
+
+function scrollEventHandler(){
+ const scrollOffset = window.pageYOffset
+ const browserViewHeight = window.innerHeight
+ if (scrollOffset > browserViewHeight/3) {
+    console.log('done')
+    renderBottomButtons();
+    window.removeEventListener('scroll', scrollEventHandler)
+ }
+}
+window.addEventListener('scroll', scrollEventHandler)
+</script>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@StrikingLoo" />
+<meta name="twitter:title" content="Algoritmos y Estructuras de Datos III - Notas para el final" />
+<meta name="twitter:description" content="Notas para el final de Algo3. Basadas en los apuntes de la teorica. In Spanish." />
+
+<meta name="twitter:image:src" content="https://strikingloo.github.io/resources/book-tw.jpg"/>
+<meta property="og:image" content="https://strikingloo.github.io/resources/preview-image-terrarium.png"/>
+
+			
+			</div>
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:lucianostrika44@gmail.com" rel="me" title="email me">✉️</a></li>
+	        		<li><a href="https://github.com/strikingloo" rel="me noopener noreferrer nofollow" title="GitHub"><svg viewBox="0 0 438.549 438.549" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><path fill="#0F3D3E" d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289s4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136s11.704-.476 16.274-1.423c4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"></path></svg></a></li>
+			        <li><a href="https://twitter.com/intent/follow?screen_name=strikingloo" rel="me noopener noreferrer nofollow" title="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg></a></li>
+			        <li><a href="http://www.linkedin.com/in/luciano-strika" rel="me noopener noreferrer nofollow" title="linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M72.16 99.73H9.927a5 5 0 00-5 5v199.928a5 5 0 005 5H72.16a5 5 0 005-5V104.73a5 5 0 00-5-5zM41.066.341C18.422.341 0 18.743 0 41.362 0 63.991 18.422 82.4 41.066 82.4c22.626 0 41.033-18.41 41.033-41.038C82.1 18.743 63.692.341 41.066.341zM230.454 94.761c-24.995 0-43.472 10.745-54.679 22.954V104.73a5 5 0 00-5-5h-59.599a5 5 0 00-5 5v199.928a5 5 0 005 5h62.097a5 5 0 005-5V205.74c0-33.333 9.054-46.319 32.29-46.319 25.306 0 27.317 20.818 27.317 48.034v97.204a5 5 0 005 5H305a5 5 0 005-5V194.995c0-49.565-9.451-100.234-79.546-100.234z"></path></svg></a></li>
+			        <li><a href="/resources/Luciano_Strika.pdf">CV</a></li>
+				</ul>
+				<p><i>Built with ❤️ by <a href="https://strikingloo.github.io/">Strikingloo</a>.</i></p>
+			</footer>
+			
+
+			
+
+			
+			<link rel="preload" href="/css/non-critical-post-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+			<noscript><link rel="stylesheet" href="/css/non-critical-post-min.css"></noscript>
+        	
+		</body>
+	</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23d8eaeb%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2293%22>🌳</text></svg>" />
+            <title>Reinforcement Learning for Beginners: Coding a Maze-solving Agent from Scratch</title>
+			<link rel="canonical" href="https://strikingloo.github.io/reinforcement-learning-beginners">
+			  <meta name="description" content="Introduction to Reinforcement Learning. I explain the Sarsa algorithm, code an example from scratch in Python, and teach an AI to solve mazes.">
+  			<meta property="og:site_name" content="Reinforcement Learning for Beginners: Coding a Maze-solving Agent from Scratch">
+
+        	
+        	<link rel="stylesheet" type="text/css" href="/css/post-min.css">
+        	
+
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
+
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-52642322-5');
+			</script>
+			
+			  <meta property="og:description" content="Introduction to Reinforcement Learning. I explain the Sarsa algorithm, code an example from scratch in Python, and teach an AI to solve mazes.">
+			
+	  		<meta property="og:locale" content="en_US">
+	  		
+			  <meta property="og:title" content="Reinforcement Learning for Beginners: Coding a Maze-solving Agent from Scratch">
+			  <meta property="og:type" content="article">
+		  	  <meta property="article:published_time" content="2022-09-21T00:00:00+00:00">
+		      <meta property="article:author" content="/">
+		  	
+		  	
+  				<meta property="og:url" content="https://strikingloo.github.io/reinforcement-learning-beginners">
+  			
+  			<meta content="index,follow" name="robots"><!-- All Search Engines -->
+  			<meta content="index,follow" name="googlebot"><!-- Google Specific -->
+  			<meta name="robots" content="max-image-preview:large">
+
+		</head>
+		<body>
+			<div class="head-banner">
+			<p>Strikingloo</p>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about/">About</a></li>
+	        		<li><a href="/wiki/">Wiki</a></li>
+	        		<li><a href="/blog/">Blog </a></li>
+	    		</ul>
+			</nav>
+			<div style="clear: both;"></div>
+		    </div>
+
+			<div class="container">
+			
+			<h1>Reinforcement Learning for Beginners: Coding a Maze-solving Agent from Scratch</h1>
+<p class="meta">21 Sep 2022 - importance: 8 </p>
+
+
+
+
+<div class="post">
+  <p>What could we do if, instead of coding programs from the ground up, we could just specify the rules for a task, the success criteria, and make AI learn to complete it?</p>
+
+<p>Imagine the blessings humanity could unlock if we could automate all the tasks nobody wants to do, all the unsafe, unhealthy or uninspiring jobs. Or the ways Scientific progress could be sped up if big parts of the research process were accelerated.</p>
+
+<p>That powerful question motivates Reinforcement Learning. Instead of programs that classify data or attempt to solve narrow tasks (like next-token prediction), Reinforcement Learning is concerned with creating <strong>agents</strong>, autonomous programs that run in an <strong>environment</strong> and execute tasks.</p>
+
+<p>The algorithms that train a Reinforcement Learning agent are very hands-off compared to other branches of Machine Learning: just provide the agent with features describing the environment (like the graphics for a game, or other users’ recent posts for social media content), and give it rewards according to its actions.</p>
+
+<p>Following the algorithms, the agent will work to maximize total reward over time, like a dog that’s given treats until it learns to do a cartwheel.</p>
+
+<p>This may not always work. At each time step (however we define our time steps), the agent will have to pick one of all possible actions, which can potentially form a huge universe of possibilities. There could also be delays between the time the action is chosen and when we learn if it was a good choice, or the environment could be hard or expensive to simulate –imagine simulating trades in the stock market, or Robotics tasks that deal with expensive equipment.</p>
+
+<p>Moreover, Reinforcement Learning algorithms are data-hungry: it took <a href="https://www.quora.com/How-many-games-did-Alpha-Zero-played-against-itself-during-its-four-hours-training">years of playing time</a> for Alpha Zero to learn to play go at human level, but when it did it surpassed our greatest players. In terms of data efficiency, RL ranks lowest among the Machine Learning family.</p>
+
+<p>However, just the fact that it is already possible to train an AI to beat all humans in most intellectual games, begs the question of what the next generation of Reinforcement Learning models will be able to do once they incorporate Large Language Models and Vision Models for feature extraction.</p>
+
+<p>For my speculations on that and a few interesting recent results, keep posted for the conclusions.</p>
+
+<h2 id="how-reinforcement-learning-works">How Reinforcement Learning Works</h2>
+
+<p>The current paradigm of Reinforcement Learning looks like this.</p>
+
+<p>We have an <strong>agent</strong>, which takes <strong>actions</strong> in an <strong>environment</strong> it does not control directly. Time is discretized into timesteps, either naturally (if the environment is a turn-based game, for instance) or artificially (by using sampling rates, like observing 30 frames per second).</p>
+
+<p>At each timestep, the agent will choose an action according to a decision process we call a <strong>policy</strong>, and that action will make the environment change state. The agent is given rewards every time it takes an action, which can be positive or negative, typically real numbers.</p>
+
+<p>In this article and most of the literature, we model the environment as a Markov Discrete Process: this means all past history is ignored, or assumed to be contained in the current state. Imagine a chessboard: if I gave you one with all the pieces set in a certain position, which move is optimal would not depend on in which order the pieces arrived at their current places. You only care about the current state, not past states. This <em>memory loss</em> property characterizes Markov Processes, which is where MDPs take their name from.</p>
+
+<p>Tasks can be <em>episodic</em> or <em>continuing</em>, where episodic tasks have a beginning and an end, like playing chess matches, and continuing ones are ongoing (like managing a business).</p>
+
+<p>The whole training process will be centered around <strong>modifying the agent’s policy</strong>.</p>
+
+<p>If we can make it choose actions better in each situation, it will perform better at the given task. To achieve this, we will have a value function that assigns an expected value to each state, or state-pair action. If we know what state each action leads to, and how much reward we should expect from a given state, then the best policy will be the one that always picks the actions that lead to the highest rewards over time.</p>
+
+<p>The state (or state-action) value is defined as the expected total reward from a given state (or state-action). That is, if we start on this state, and keep following the current policy, what will be the sum of all our rewards, averaged over many repetitions? This takes into account the possible non-determinism of the environment, where taking the same action in the same state may not always lead to the same next state, or yield the same fixed reward.</p>
+
+<p>Choosing the best policy, then, will be about estimating as correctly as possible what the value of each state and action is, and then always choosing the state with the highest value -what we call following a greedy policy-.</p>
+
+<p>There are still further considerations we might look into, which I will skip in this article, like whether the environment itself can change behavior over time (imagine finding the optimal move in poker, but then all the other players realize you always make the same bluff and start not buying into it) or how to deal with the expected reward in a continuing task (if it was just the sum, it would diverge, so we normally use exponential discounting).</p>
+
+<p>If you want to learn Reinforcement Learning in more detail, I recommend you read <a href="http://incompleteideas.net/book/RLbook2020.pdf">Introduction to Reinforcement Learning by Richard Sutton</a> -the book is free-, of which I wrote a <a href="/wiki/reinforcement-learning-sutton">book summary here</a>.</p>
+
+<h2 id="sarsa-and-tabular-methods">Sarsa and Tabular Methods</h2>
+
+<p>For this article, we are going to focus on tabular methods for Reinforcement Learning.</p>
+
+<p>In tabular methods, the environment is modeled as a set of discrete states, where each possible state is assigned a unique identifier. If we go back to our chess example, each state would be a possible piece arrangement in the board. Depending on how we define things, we could include or exclude arrangements which are not really attainable in-game, like one player having 17 pieces, or 10 queens.</p>
+
+<p>As the name implies, our value function will be very straightforward: a lookup table that maps each possible state into a (real numbered) value.</p>
+
+<p>Remember that a state’s value is the expected sum of all subsequent rewards. Alternatively, we can add a discounting factor (a number between 0 and 1) that multiplies each subsequent term in the sum, to give more weight to short-term rewards and avoid divergence of the sum. This is called exponential discounting, as we will estimate the value of transitioning to a state as the reward from that transition, plus the discounted (multiplied by this factor) value of the next state, which was estimated by taking into account the discounted value of the next one, and so on.</p>
+
+<p>Thus, when the agent is standing in a certain state, it will pick the action that makes it transition into the highest-valued state next, or the one that maximizes expected next-state value if transitions are non-deterministic. As an example, imagine you can either take action A, to go to a state of value 5, or action B where you flip a coin and land on either one of two states with values 10 and -5. In this case taking action A would be better in terms of maximizing value, so an optimal policy would pick A every time.</p>
+
+<p>Thus emerge the Bellman equations, which predict the value of each state given the values of all other states under a defined policy.</p>
+
+<p><img src="/wiki/image_rl/Screen_Shot_2022-06-16_at_11-04-16.png" alt="Bellman equation for state value" loading="lazy" /></p>
+
+<p>If we can make the Bellman equations converge for a system, then we’ve solved our Reinforcement Learning problem. The good news is, these converge if we use iterative linear equation solvers like Gauss-Seidel. The bad news is, for most interesting problems the state-space is so big, we can’t just plug the matrix into a linear solver and call it a day, as it would take ages for it to converge.</p>
+
+<p>Instead, we resort to focusing our estimations into the values of states we tread on more often, like the first turns of a game, or the most likely moves an opponent would make. We will update a state’s value as often as we land on it, thus naturally prioritizing the most likely states.</p>
+
+<p>In this context, <strong>Temporal-Difference (TD) methods</strong> emerge.</p>
+
+<p>TD methods update their value estimates based in part on other value estimates, a practice called bootstrapping. Instead of running a whole episode and then updating all value estimates by taking them closer to the sum of the discounted rewards, they take each action based on the policy, and then immediately update the previous state’s value using the newly obtained information.</p>
+
+<p>Thus in Sarsa, the TD method we will use in this article, on each time step after taking an action the estimate for the action’s value on the current state will be nudged towards the sum of</p>
+
+<ul>
+  <li>The obtained reward, plus</li>
+  <li>The discounted value of the next state-action we will encounter if we keep following the policy.</li>
+</ul>
+
+<p>In math terms, with <em>γ</em> the discount factor, <em>Q(s,a)</em> the value function for taking action <em>a</em> in state <em>s</em>, and <em>r</em> the reward at time <em>t</em>, our update rule will be:</p>
+
+<p><img src="resources/post_image/sarsaupdate.svg" alt="sarsa update rule" loading="lazy" /></p>
+
+<p>In this case, <em>α</em> corresponds to the update size/learning rate, similar to the one used in neural networks, normally a value between 0 and 1 that determines how much the current instance influences the value estimation (usually, we initialize it to a higher value and make it closer to zero over time).</p>
+
+<p>Note that the bigger <em>γ</em> is, the more we will care about subsequent rewards (as estimated by the value for the next <em>state-action</em> pair). If <em>γ</em> was 0, then we would only estimate the value as the expected reward (and not take the long-term into account), whereas if <em>γ</em> is 1, then there is no incentive to rush: any reward, no matter how delayed, is as valuable as that which we could have obtained now.</p>
+
+<p>In that case, if for instance we have a bird fetching a grape, it would have no incentive to fly in a straight line instead of going in lots of circles, as delaying the grape would not change the state value. If instead we add discounting, suddenly it is more valuable to grab the grape sooner rather than later. Nonetheless in many episodic tasks, <em>γ</em> is kept at 1 and the reward is only given at the end of the task if successfully completed, for instance when winning a game of chess -since no intermediate steps are certain to lead to victory-.</p>
+
+<p>Note also that this algorithm does not require any explicit estimation of the transition probabilities between states: we never need to estimate how likely it was that taking action <em>a</em> in state <em>s</em> led to state <em>s’</em>, which could be intractable (like in card games with lots of possibilities) or outright impossible (in environments based in Physics, for instance). Instead, we just sample the next state over and over, and trust that the law of great numbers will lead us to eventual convergence.</p>
+
+<p>I hope by now you have an intuition of how Tabular Methods work. Now I will show you how we can implement them from scratch in Python, so you too can teach your computer to play games.</p>
+
+<h2 id="maze-solver-a-python-sarsa-implementation">Maze Solver: A Python Sarsa Implementation</h2>
+
+<p>For this article I wanted to build something fun. So, I made this: a Sarsa-based algorithm that receives an arbitrary labyrinth and finds a solution.</p>
+
+<p>To do this, I implemented the maze as a separate class. It only knows which actions can be taken on each state, what reward to give for each one, how big the maze is and what its shape is. It also knows where the player starts from and where it needs to go, and allows for transitions. Finally, it can make a player’s trip into a cute gif so I can share with you guys.</p>
+
+<p>The reward scheme is very simple: The maze hands out a reward of 100 if the maze is solved, -1 if the agent tries to bump into an internal maze wall, and 0 otherwise.</p>
+
+<p>As for Sarsa, I coded it from scratch so it:</p>
+
+<ul>
+  <li>Stores each state-action’s value in a dictionary (where the lookup is first by state, then by action).</li>
+  <li>Follows an ε-greedy policy (epsilon greedy), which means the agent chooses the best value action with probability 1-ε, or a random one with probability ε. However, I made it so it couldn’t choose to bump into an external boundary -so it can’t try to go off-limits-, though that behavior could have been learned.</li>
+</ul>
+
+<p>To initiate learning, a loop starts that runs through <em>N</em> episodes of the labyrinth, with the player always starting in the same position and needing to get to the same place, avoiding the walls of the maze. After each action is taken, the previous state-action’s value is updated in the map (as Sarsa learns online), and the agent always picks its action using the ε-greedy policy.</p>
+
+<p>After a number of episodes, ε is reduced to 0, so the agent can fine-tune the optimal policy. I made it so a gif is made in the first and last episodes, so we can see the difference between an agent that moves at random (luckily, even a random agent will reach the exit eventually, as diffusion is divergent, a property that even <a href="/wiki/the-machinery-of-life">proteins exploit in cells</a>) and one that knows where it is going.</p>
+
+<p>Here are the relevant snippets, but you can also check the <a href="https://github.com/StrikingLoo/maze-solver">GitHub Project</a> for the full code.</p>
+
+<p>The lookup table:
+ <script src="https://gist.github.com/StrikingLoo/1a7abd14725455e9200ae2fa256e8a83.js"></script></p>
+
+<p>The policy:
+ <script src="https://gist.github.com/StrikingLoo/6055bf081061b74c3d71adaaf3155cdc.js"></script></p>
+
+<p>The main loop (minus the prints and after cleaning). I used an <em>α</em> value of 0.5, and a <em>γ</em> of 0.9.
+ <script src="https://gist.github.com/StrikingLoo/a73489773ca8c11028047d142b8024f2.js"></script></p>
+
+<p>I polished them a bit compared with the ones on GitHub, for clarity’s sake.</p>
+
+<p>I ran the code for multiple mazes, and was happy to see all of the results were positive.</p>
+
+<p>Here is our agent solving a very simple maze: a wall running across the middle. The agent is the blue square, the goal -an apple- is the red one.</p>
+
+<p>Before training:
+<img src="resources/post_image/first_iter_1.gif" alt="" loading="lazy" style="width:30%;height:30%" /></p>
+
+<p>After training:
+<img src="resources/post_image/last_iter_1.gif" alt="" loading="lazy" style="width:30%;height:30%" /></p>
+
+<p>For a more advanced challenge, I tried a hockey-stick shape, where it needs to go through a narrow passage. It actually took it less time to learn this pattern, I guess because it was more constrained in the possible movements it could make.</p>
+
+<p>Before training:
+<img src="resources/post_image/first_iter_2.gif" alt="" loading="lazy" style="width:30%;height:30%" /></p>
+
+<p>After training:
+<img src="resources/post_image/last_iter_2.gif" alt="" loading="lazy" style="width:30%;height:30%" /></p>
+
+<p>It performed similarly with a cross, even though in this case it had to back-pedal a bit.</p>
+
+<p>Before training:
+<img src="resources/post_image/first_iter_3.gif" alt="" loading="lazy" style="width:30%;height:30%" /></p>
+
+<p>After training:
+<img src="resources/post_image/last_iter_3.gif" alt="" loading="lazy" style="width:30%;height:30%" /></p>
+
+<p>Then I tried making it go through narrow passages, one way and the other. This one took a long time for the random agent to crack.</p>
+
+<p>Before training:
+<img src="resources/post_image/first_iter_4.gif" alt="" loading="lazy" style="width:30%;height:30%" /></p>
+
+<p>After training:
+<img src="resources/post_image/last_iter_4.gif" alt="" loading="lazy" style="width:30%;height:30%" /></p>
+
+<p>And finally, just to see it could learn anything: what if it had to go through a wall that divided the whole map in half, and then follow it closely back in the other direction?</p>
+
+<p>Before training:
+<img src="resources/post_image/first_iter_5.gif" alt="" loading="lazy" style="width:30%;height:30%" /></p>
+
+<p>After training:
+<img src="resources/post_image/last_iter_5.gif" alt="" loading="lazy" style="width:30%;height:30%" /></p>
+
+<p>In conclusion, this maze solver is a-mazing!</p>
+
+<p>As next steps, I think it could be fun to add moving enemies, like in Super Mario, and the agent needs to avoid them (or it is sent back to square one), or maybe add more than one goal but they need to be fetched in a certain order. At any rate, I think this example has been enough to showcase Reinforcement Learning’s capabilities, and it should be very easy to edit the Maze class in the GitHub project to add different mini games.</p>
+
+<p>Feel free to do it and, if you do, make a Pull Request. You’ll get credit and a link from me. I just want to see if anyone designs anything fun.</p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>We showed that Sarsa, and Temporal Difference methods in general, can solve complex problems like an arbitrary labyrinth. As long as we have enough time to train it, and a big enough memory, we could even solve problems where the state space is huge, like chess, using this same approach (and it has been done).</p>
+
+<p>For more complex problems, or ones where partial knowledge of the state suffices, state representation can be reutilized and we could aim for Approximate Learning, doing away with discrete methods as in Policy Gradient (where the state is mapped into a vector, not necessarily bijectively).</p>
+
+<p>I may write a follow-up showing how to use a convolutional neural network with Policy Gradient for this problem (plus moving obstacles or fog of war) if you guys are interested.</p>
+
+<p>One personal conclusion I arrived to is that bugs are a big headache. I spent about 2 hours fighting with the code because all the value estimates converged to the right values, but the agent was still moving in a very suboptimal way, until I discovered the policy code was correctly assessing the best action, and then choosing at random every time anyway, which was obviously a bug. I had misnamed a variable. Systematically debugging the code proved the best solution.</p>
+
+<p>Having added a test for every function in the Maze class was also liberating, as each new change could easily be verified to not break existing features.</p>
+
+<p>I know these conclusions are not Machine Learning oriented, but I guess my biggest challenges with this project were more design- than algorithms- heavy.</p>
+
+<p>As for speculation: I think one area that has been researched lately and has a lot of promise is the combination of Genetic Algorithms, Language Models that code, and Reinforcement Learning. In a recent <a href="https://arxiv.org/pdf/2206.08896.pdf">OpenAI paper</a> (<a href="/wiki/evolution-through-large-models">my notes</a>), a pipeline was used where:</p>
+<ul>
+  <li>There was a task that could be solved with code, trying to optimize a transparent metric.</li>
+  <li>Multiple code solutions were taken, mutated with text modifying operators based on GPT-3 and, if they still worked, tested to see how far they went. The best candidates were kept and mutated repeatedly until very good candidates were found (with a loss that also encouraged diversity of niches).</li>
+  <li>The new candidates generated through these genetic algorithms were used to train a new autoregressive language model, which now could create plausible candidates.</li>
+  <li>That last model was trained through Reinforcement Learning to make new candidates <strong>conditioned on novel environments not seen by the previous models</strong>, and rewarded with that same metric.</li>
+</ul>
+
+<p>Now in this particular paper, the task was sodaracing, a videogame where a simple Physics engine is used to create robots that move as far as possible in the X axis. But imagine applying this to other things: automatically A/B testing the design of a blog, the layout of products in different branches of supermarkets to increase volume sold, or even military applications. Let alone making the jump from sodaracing to real world robots.</p>
+
+<p>I think the capabilities Reinforcement Learning is about to unlock are enormous, and not enough attention is being put into this field. Additionally, Richard Sutton’s team recently released a new <a href="https://arxiv.org/pdf/2208.11173.pdf">long-term strategy for AI</a> with a focus on Reinforcement Learning, which proposes a roadmap towards AGI -human-level general AI-. I am not sure how far we are from that, but I think it deserves a big chunk of our attention.</p>
+
+<p>What other big things do you think could be automated by RL and how soon do you think they will impact the market? Let me know.</p>
+
+<p>If you liked this post, consider reading my summary of <a href="/wiki/reinforcement-learning-sutton">Introduction to Reinforcement Learning</a>, and if you prefer to see more Python code or Optimization discussion, see my post on <a href="/ant-colony-optimization-tsp">Ant Colony Optimization</a>.</p>
+
+<h2 id="related-articles">Related Articles</h2>
+
+<p>From the wiki:</p>
+
+<ul>
+  <li><a href="/wiki/reinforcement-learning-sutton">Introduction to Reinforcement Learning (book notes)</a> for a thorough review of the subject as I learned it.</li>
+  <li>A quick intro and roadmap in <a href="/wiki/reinforcement-learning-base">Reinforcement Learning</a>.</li>
+  <li>My article on <a href="/wiki/proximal-policy-optimization">Proximal Policy Optimization</a> if you are looking for something more advanced. It covers a recent paper by OpenAI describing the current state of the art (as of 2022).</li>
+</ul>
+
+<p><em>If this post was useful or interesting, please share it on social media.</em></p>
+
+</div>
+<a href='https://ko-fi.com/R6R3F4NIO' target='_blank' rel="noopener noreferrer nofollow">
+  <img style='border:0px;height:4em;width:auto;' src='https://cdn.ko-fi.com/cdn/kofi5.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' loading='lazy'/></a>
+  <p style='text-align: center;'>
+  <a href="https://twitter.com/intent/tweet?text=Reinforcement Learning for Beginners: Coding a Maze-solving Agent from Scratch&url=https://strikingloo.github.io/reinforcement-learning-beginners%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" title="Share on Twitter!">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em" rel="noopener noreferrer nofollow"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>Share on twitter]</a></p>
+
+<template id="post-delayed-content">
+
+<div class="backButton">
+<a href="https://twitter.com/intent/tweet?text=Reinforcement Learning for Beginners: Coding a Maze-solving Agent from Scratch&url=https://strikingloo.github.io/reinforcement-learning-beginners%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis' title="Share on Twitter!" rel="noopener noreferrer nofollow">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>]</a>
+<br/>
+<a href="/blog/" id='backToBlog' title="Back to blog" rel="noopener noreferrer">[←]</a>
+</div>
+</template>
+<script>
+const headings = document.querySelectorAll('h2[id],h3[id]');
+for (var heading of headings) {
+    heading.innerHTML = `<a href=#${heading.id}>${heading.innerHTML}</a>`;
+}
+function externalLinks() { for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } }
+externalLinks();
+
+function renderBottomButtons(){
+  const templateNode = document.getElementById('post-delayed-content')
+  const templateContentClone = templateNode.content.cloneNode(true) // perform a deep copy
+  document.body.appendChild(templateContentClone)
+}
+
+function scrollEventHandler(){
+ const scrollOffset = window.pageYOffset
+ const browserViewHeight = window.innerHeight
+ if (scrollOffset > browserViewHeight/3) {
+    console.log('done')
+    renderBottomButtons();
+    window.removeEventListener('scroll', scrollEventHandler)
+ }
+}
+window.addEventListener('scroll', scrollEventHandler)
+</script>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@StrikingLoo" />
+<meta name="twitter:title" content="Reinforcement Learning for Beginners: Coding a Maze-solving Agent from Scratch" />
+<meta name="twitter:description" content="Introduction to Reinforcement Learning. I explain the Sarsa algorithm, code an example from scratch in Python, and teach an AI to solve mazes." />
+
+<meta name="twitter:image:src" content="https://strikingloo.github.io/resources/ai-generated-images/babel1.png" />
+<meta property="og:image" content="https://strikingloo.github.io/resources/ai-generated-images/babel1.png"/>
+
+			
+			</div>
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:lucianostrika44@gmail.com" rel="me" title="email me">✉️</a></li>
+	        		<li><a href="https://github.com/strikingloo" rel="me noopener noreferrer nofollow" title="GitHub"><svg viewBox="0 0 438.549 438.549" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><path fill="#0F3D3E" d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289s4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136s11.704-.476 16.274-1.423c4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"></path></svg></a></li>
+			        <li><a href="https://twitter.com/intent/follow?screen_name=strikingloo" rel="me noopener noreferrer nofollow" title="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg></a></li>
+			        <li><a href="http://www.linkedin.com/in/luciano-strika" rel="me noopener noreferrer nofollow" title="linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M72.16 99.73H9.927a5 5 0 00-5 5v199.928a5 5 0 005 5H72.16a5 5 0 005-5V104.73a5 5 0 00-5-5zM41.066.341C18.422.341 0 18.743 0 41.362 0 63.991 18.422 82.4 41.066 82.4c22.626 0 41.033-18.41 41.033-41.038C82.1 18.743 63.692.341 41.066.341zM230.454 94.761c-24.995 0-43.472 10.745-54.679 22.954V104.73a5 5 0 00-5-5h-59.599a5 5 0 00-5 5v199.928a5 5 0 005 5h62.097a5 5 0 005-5V205.74c0-33.333 9.054-46.319 32.29-46.319 25.306 0 27.317 20.818 27.317 48.034v97.204a5 5 0 005 5H305a5 5 0 005-5V194.995c0-49.565-9.451-100.234-79.546-100.234z"></path></svg></a></li>
+			        <li><a href="/resources/Luciano_Strika.pdf">CV</a></li>
+				</ul>
+				<p><i>Built with ❤️ by <a href="https://strikingloo.github.io/">Strikingloo</a>.</i></p>
+			</footer>
+			
+
+			
+
+			
+			<link rel="preload" href="/css/non-critical-post-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+			<noscript><link rel="stylesheet" href="/css/non-critical-post-min.css"></noscript>
+        	
+		</body>
+	</html>

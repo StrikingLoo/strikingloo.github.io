@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23d8eaeb%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2293%22>🌳</text></svg>" />
+            <title>Lógica y Computabilidad - Notas para el final</title>
+			<link rel="canonical" href="https://strikingloo.github.io/wiki/LyC-final">
+			  <meta name="description" content="Notas para el final de LyC. Basadas en los apuntes de la teorica. In Spanish.">
+  			<meta property="og:site_name" content="Lógica y Computabilidad - Notas para el final">
+
+        	
+        	<link rel="stylesheet" type="text/css" href="/css/post-min.css">
+        	
+
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
+
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-52642322-5');
+			</script>
+			
+			  <meta property="og:description" content="Notas para el final de LyC. Basadas en los apuntes de la teorica. In Spanish.">
+			
+	  		<meta property="og:locale" content="en_US">
+	  		
+			  <meta property="og:title" content="Lógica y Computabilidad - Notas para el final">
+			  <meta property="og:type" content="article">
+		  	  <meta property="article:published_time" content="2021-05-30T00:00:00+00:00">
+		      <meta property="article:author" content="/">
+		  	
+		  	
+  				<meta property="og:url" content="https://strikingloo.github.io/wiki/LyC-final">
+  			
+  			<meta content="index,follow" name="robots"><!-- All Search Engines -->
+  			<meta content="index,follow" name="googlebot"><!-- Google Specific -->
+  			<meta name="robots" content="max-image-preview:large">
+
+		</head>
+		<body>
+			<div class="head-banner">
+			<p>Strikingloo</p>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about/">About</a></li>
+	        		<li><a href="/wiki/">Wiki</a></li>
+	        		<li><a href="/blog/">Blog </a></li>
+	    		</ul>
+			</nav>
+			<div style="clear: both;"></div>
+		    </div>
+
+			<div class="container">
+			
+			<h1>Lógica y Computabilidad - Notas para el final</h1>
+<p class="meta">30 May 2021 - importance:  </p>
+
+
+
+
+<div class="post">
+  <h2 id="turing-machine">Turing Machine</h2>
+<p>La maquina de turing es una maquina de estados con Q estados (Q finito) y un alfabeto \Sigma (finito) + una tira de simbolos con el input.
+Por convencion el input es * input 1 * input2 ktp.</p>
+
+<p>Vamos a tener las transiciones del estado Qi al Qj segun que simbolo vemos, que dictan qué simbolo escribir. El simbolo escrito va en la posicion actual de la cabeza, excepto para simbolos R y L que son mover la cabeza.</p>
+
+<p>La Turing Machine es equivalente a otras nociones de computabilidad o de “procedimiento efectivo” como el lenguaje C etc.</p>
+
+<h2 id="primitivas-recursivas--prc">Primitivas Recursivas (&amp; PRC)</h2>
+<p>Primitiva recursiva: parto de algunas funciones axiomaticamente PR (sucesor, 0, y proyecciones de tuplas) y las compongo mediante:</p>
+<ul>
+  <li>Composicion: h(x1…xn) = f(g1(x1…xn), …,  gk(x1…xn))</li>
+  <li>Recursion primitiva:</li>
+</ul>
+
+<blockquote>
+  <p>h(x1…xn, 0) = f(x1…xn)
+h(x1…xn, t+1) = g(h(x1…xn, t), x1…xn, t)</p>
+</blockquote>
+
+<p>PRC: Una clase es PRC si es la clausura por composicion y recursion primitiva, de las funciones axiomaticamente PR + posiblemente otras.</p>
+
+<p>PR : Una funcion es <strong>primitiva recursiva</strong> sii pertenece a toda clase PRC. Esto es, la funcion es el resultado de finitos pasos de composicion y recursion primitiva, partiendo de funciones iniciales.</p>
+
+<p><strong>Minimizacion acotada:</strong> Dado p un predicado en una clase PRC, la minimizacion acotada me da el minimo t tq p(t, X) si existe, o 0 si no.</p>
+
+<p><strong>Minimización no acotada</strong>: Dado p un predicado, la minimización no acotada me da el mínimo t tq p(t, X) si existe, y no termina si no.</p>
+
+<h2 id="numero-de-gödel">Numero de Gödel</h2>
+<p>El número de Gödel codifica una n-upla de naturales &lt;x1,…,xn&gt; como productoria donde cada factor es el i-ésimo primo a la xi-ésima potencia.</p>
+
+<p>No es una codificación biyectiva, pero solo ignora 0s a la derecha así que si sabemos la dimensión no es un problema.</p>
+
+<h2 id="lenguaje-s">Lenguaje S</h2>
+
+<p>Solo usa inc, dec y jnz. Usa X para inputs, Zi para auxiliares y devuelve siempre en Y (como rax).</p>
+
+<p>Llamamos descripcion instantanea a la tupla (i, s) donde s es el estado de todas las variables usadas, i la linea en la que estamos.</p>
+
+<p>i==n+1 =&gt; programa termino. Para cada estado podemos calcular facil un estado “sucesor”, y una sucesion de descripciones instantaneas desde un inicial a un terminal sucesores cada uno del anterior, se llama “cómputo”.</p>
+
+<p>Podemos generar el cómputo de un programa P para inputs r1…rn. En particular si existe decimos que el programa termina. Sino, no (la secuencia es infinita).</p>
+
+<p>Funcion parcial f es S-parcial computable si existe un programa que se indefine donde la función se indefine, y vale lo mismo donde está definida.
+Si es parcial computable y total, entonces es computable.</p>
+
+<h2 id="computabilidad">Computabilidad</h2>
+
+<p>Podemos mappear cada programa en S a un numero entero:</p>
+<ul>
+  <li>Cada instruccion es [ a, &lt;b, c&gt;] donde a es el numero de tag o 0 si no hay, b codifica 1 de 4 instrucciones y c el numero de variable.</li>
+  <li>Representamos la tupla de triplas (o pares de pares) usando numeros de Gödel.</li>
+</ul>
+
+<p>Hay mas funciones de N-&gt;N que programas (porque son mas que numeros en N) y no todas las funciones van a ser computables. E.g., halt (que te dice si un programa de numero e con input e termina).</p>
+
+<p>Tenemos psi_P(x) = resultado de ejecutar programa P con input X
+y fi(e, x) = correr programa de numero e con input X.</p>
+
+<p>fi es parcial computable: hacemos un interprete de S y o bien genera el output o bien se tilda si el programa mismo se tildaba.</p>
+
+<p><img src="image/Screen Shot 2021-06-01 at 17.46.20.png" alt="" /></p>
+
+<p>Definimos <strong>STP</strong> la funcion Step(x1…xn, e, t) que <strong>te dice si el programa e termina luego de t pasos o menos</strong>, con input x1…xn.
+STP es P.R.</p>
+
+<p><strong>SNAP</strong> es como STP pero SNAP(x1…xn, e, t) te da el <strong>estado del programa e en step t</strong>: [z1, …, zn] y instruction id.</p>
+
+<h3 id="teoremas-de-computabilidad">Teoremas de computabilidad</h3>
+
+<p><strong>Teorema del parametro</strong>: dado un programa con m+n inputs, podemos generar un nuevo programa equivalente a tener los primeros m parametros hardcodeados en ciertos valores, que solo toma los otros n.</p>
+
+<p><strong>Teorema de la recursion</strong>: Para una funcion g que toma n+1 parametros, podemos siempre encontrar un numero e tq el e-esimo programa con los n parametros devuelve lo mismo que g(e,x1…xn) para todo x.</p>
+
+<h2 id="conjuntos">Conjuntos</h2>
+<p>Un conjunto se representa con una funcion A(x) = 1 if x in A else 0.</p>
+
+<p>Un conjunto puede ser computable, p.r., etc. Las operaciones union, interseccion y diferencia de conjuntos preservan la clase de PRC.</p>
+
+<p>Hay conjuntos computables y no computables (segun si su funcion caracteristica lo es).</p>
+
+<p>Un conjunto es <strong>computablemente enumerable</strong> si hay una función parcial computable g tq g(x) termina sii x en A.
+Permiten algoritmos de semi-decisión. 
+Son un superset de los computables.</p>
+
+<p>Llamamos Co-c.e. a un conjunto si su complemento es c.e. Ser c.e. se preserva en union e interseccion (usando STEP).</p>
+
+<p>A es computable sii A y Ac son c.e. Izq a der es trivial por def, der a izq sale usando step en ambos: como ambos son c.e. y disjuntos, necesariamente uno de los dos termina.</p>
+
+<p>Wn es el dominio del n-esimo programa (x tq P(x) termina donde P es el n-esimo programa).
+Asi que podemos enumerar todos los c.e. (W1, W2… Wn).</p>
+
+<p>Ademas podemos encontrar todo a tq a en A c.e., enumerandolos con una funcion p.r. Esto lo hacemos tratando a cada input u como una tupla &lt;ul,ur&gt; y viendo: si step(ul,ur) entonces devuelvo ul else devuelvo algun elemento cualquiera del conjunto. 
+Esta funcion garantiza generar todos los elementos, aunque no da ninguna garantia de orden y no termina (obviamente).</p>
+
+<p>Llamamos K al conjunto de { n tq n in Wn }. Osea n tq el n-esimo programa con input n termina (sii HALT(n,n) ).
+K es c.e. pero no computable.</p>
+
+<p>Si <strong>A es c.e.</strong>, existe f una funcion p.r. que puede <strong>enumerar todos los elementos de A</strong>. Usa step.</p>
+
+<p>Si f es parcial computable, A tq f termina es c.e.</p>
+
+<p>A es c.e. sii es la imagen de una funcion p.r., la de una funcion parcialmente computable, o la de una computable.</p>
+
+<p>A es c.e. =&gt; existe un predicado NxN -&gt; N tq A = {x : Existe t tq P(x,t)}. Particularmente ese predicado puede ser el STP(x, e, t) para un e que compute el while true de siempre.</p>
+
+<h2 id="teorema-de-rice">Teorema de Rice</h2>
+
+<p>A es un conjunto de indices si hay una clase de funciones parciales computables C de N-&gt;N tq A = { x : fi_x in C }.</p>
+
+<p><strong>Teorema de Rice</strong>: Si A es un conjunto de indices no vacio distinto de N, entonces A no es computable.</p>
+
+<h2 id="logica-proposicional">Logica proposicional</h2>
+
+<p>Usamos solo -&gt; y ¬ para definir todas las formulas validas en FORM (<em>and</em> y <em>or</em> se expresan con esos dos), para facilitar inducción estructural y evitar redundancia.</p>
+
+<p>Una valuacion v : PROP -&gt; {0,1} le asigna un valor de verdad binario a cada proposicion (p, p’, etc.).</p>
+
+<p>Decimos v|=F si v vuelve cierta a F. v |/= F si no. Podemos computar |= recursivamente.</p>
+
+<p>Decimos F tautologia si v|=F para todo v. Podemos corroborarla a fuerza bruta probando los 2^n posibles v.</p>
+
+<p>Decimos F <strong>consecuencia semántica de Γ</strong> si Γ |= F i.e. si [de valer v|=P para todo P en Γ entonces necesariamente v|=F].</p>
+
+<p>Γ <strong>satisfacible</strong> sii existe v tq v|=P para todo P en Γ.</p>
+
+<p><img src="image/Screen Shot 2021-06-02 at 23.12.12.png" alt="" /></p>
+
+<p>Una <strong>demostración</strong> de fi es cadena finita no vacía de fórmulas tq la n-esima es fi y fi_k es axioma o consecuencia directa (i.e., por Modus Ponens) de dos fi_i fi_j tq i, j &lt; k.</p>
+
+<p><img src="image/Screen Shot 2021-06-02 at 23.52.33.png" alt="" /></p>
+
+<p>fi es <strong>Consecuencia sintáctica</strong> de Γ si Γ |- fi. i.e., si puedo hacer una demo de fi tq fi_n=fi y fi_k es :</p>
+<ul>
+  <li>Axioma</li>
+  <li>Consecuencia directa de dos fi_i anteriores (por Modus Ponens)</li>
+  <li>Elemento de Γ</li>
+</ul>
+
+<p>Llamamos a Γ <em>teoría</em>, fi_1…fi_n se llama <em>derivación de fi</em>, y Γ es una <em>teoría</em>.
+Si Γ |- fi entonces Γ |= fi. Osea si fi es consecuencia sintáctica de Γ , entonces también es consecuencia semántica.</p>
+
+<p>Lo opuesto no es necesariamente cierto.</p>
+
+<p>Γ <strong>consistente</strong> : No existe fi tq Γ |- fi &amp;&amp; Γ |- ¬fi.</p>
+
+<p>El conjunto de teoremas de SP es c.e., pues las fórmulas y las demos son numerables (símbolos son finitos) y ver si una fórmula es teorema o no es c.e. (i = 0; ver si demos(i) y i[|i|]=X. Si es devolver 1, else i++ jmp back) Luego pruebo cada i-ésima fórmula a ver si es o no teorema.</p>
+
+<p>Más adelante vimos que como |- ϕ sii |= ϕ, entonces el conjunto de teoremas es computable (enumerando a la fuerza).</p>
+
+<p>Esto aplica a cualquier sistema axiomático.</p>
+
+<p>SP además es <strong>completo</strong>.</p>
+
+<p><strong>Teorema de la deducción</strong>: <code class="language-plaintext highlighter-rouge">[ Γ U {ϕ} \|- ψ ]</code> entonces <code class="language-plaintext highlighter-rouge">[ Γ \|- ϕ -&gt; ψ ]</code></p>
+
+<p><strong>Proposiciones</strong> : Γ U {¬ ϕ} inconsistente sii Γ |- ϕ. Análogo negando ϕ.</p>
+
+<p><strong>Maximal Consistente</strong> :</p>
+
+<p>Γ maximal consistente si</p>
+<ul>
+  <li>Γ consistente</li>
+  <li>Para todo ϕ not in Γ, Existe ψ tq [ Γ U {ϕ} |- ψ ] Y [ Γ U {ϕ} |- ¬ψ ]</li>
+</ul>
+
+<p><strong>Lema de Lindenbaum</strong> :
+Si Γ consistente, existe Γ’ tq Γ contenido en Γ’ y Γ’ m.c.</p>
+
+<p>Γ m.c. entonces para toda formula o bien está en él o bien su negación lo está.</p>
+
+<p>Entonces Γ |- ϕ sii ϕ in Γ.</p>
+
+<p>Γ consistente sii Γ satisfacible.</p>
+
+<p><strong>Teorema de completitud</strong> : Γ |= ϕ entonces Γ |- ϕ.</p>
+
+<p><strong>Teorema de compacidad</strong> : si todo subconjunto finito de Γ es satisfacible, Γ es satisfacible.</p>
+
+<h2 id="lógica-de-primer-orden">Lógica de Primer Orden</h2>
+
+<p>Lenguaje de primer orden:</p>
+
+<p><strong>Simbolos logicos y auxiliares</strong> : Los mismos que en lógica proposicional + el cuantificador universal (el para-todo).</p>
+
+<p><strong>Simbolos de un lenguaje particular</strong> : L = C U F U P tq:</p>
+<ul>
+  <li>C son constantes</li>
+  <li>F son funciones de N términos a otro término</li>
+  <li>P son predicados (reciben terminos)</li>
+</ul>
+
+<p>Los términos de un lenguaje L son:</p>
+<ul>
+  <li>Toda variable</li>
+  <li>Todo símbolo de constante</li>
+  <li>f(t1,…,tn) es un término sin t1,…,tn son términos</li>
+</ul>
+
+<p>Los llamaremos TERM(L).</p>
+
+<p>Las formulas de L son:</p>
+<ul>
+  <li>Un predicado con sus términos (fórmula atómica)</li>
+  <li>Si p1 y p2 son formulas, p1-&gt;p2 es formula</li>
+  <li>¬ p1 formula</li>
+  <li>(∀x)ϕ es formula si ϕ lo es.</li>
+</ul>
+
+<p>Los llamaremos FORM(L)</p>
+
+<p>Una variable está libre en una formula si todas sus apariciones estan libres. Sino, está ligada (al alcance de un cuantificador).</p>
+
+<p>Llamamos a una formula una <strong>sentencia</strong> si todas sus variables están ligadas.</p>
+
+<h3 id="l-estructuras">L-Estructuras</h3>
+
+<p>Llamamos a una L-estructura A de un lenguaje L cuando es un conjunto no vacio que incluye a todas las constantes de L, y las funciones que van de ese conjunto en él (con aridad arbitraria) y relaciones en ese conjunto (aridad arbitraria).</p>
+
+<p>Podemos instanciar a la L-estructura A con un conjunto A arbitrario, por ejemplo los naturales (y usar como funciones la suma, etc. y como constantes el 0 y 1, por decir) o partes de los naturales (y las funciones van de conj(nat) a conj(nat) ).</p>
+
+<p>Las funciones y predicados tienen que estar definidas para TODOS los terminos, o no cuenta como L-estructura (e.g., si usamos naturales y metemos predicado de division, lidiar con el 0).</p>
+
+<p>La nocion de valuacion se extiende para asignarle valores a cada constante y variable en A tq v(x) = K algun valor. 
+Luego puedo decir A |= P(x, y)[v] o generalmente A |= ϕ[v].</p>
+
+<p>Calcularlo es simplemente ir llamando v recursivamente en cada termino usando la descomposicion estructural.</p>
+
+<p>Para un lenguaje L fijo,</p>
+
+<ul>
+  <li>ϕ <strong>satisfacible</strong> si existe una L-estructura A y una valuacion v de A tq A |= ϕ[v]</li>
+  <li>ϕ <strong>verdadera en una L-estructura A</strong> si para toda valuacion v de A, A |= ϕ[v]. Decimos que A es un modelo de ϕ.</li>
+  <li>ϕ <strong>universalmente valida</strong> si A |= ϕ para toda valuacion y estructura A de L.</li>
+</ul>
+
+<p>Decimos que ϕ consecuencia semantica de Γ (Γ |= ϕ) si para toda L-estructura A y toda valuación v de A :</p>
+
+<p>Si A |= Γ[v] entonces A |= ϕ[v]</p>
+
+<h3 id="reemplazo-de-variables-libres-por-terminos">Reemplazo de variables libres por terminos</h3>
+
+<p>ϕ[x/t] es la fórmula obtenida a partir de ϕ sustituyendo todas las apariciones libres de la variable x por t
+e.g.,</p>
+
+<p>[ P(x, y)[x/f (z)] = P(f (z), y)]</p>
+
+<p>[ (∀x)(∀y) P(x, y)[x/f (z)] = (∀x)(∀y) P(x, y) ]</p>
+
+<p>Decimos que una variable x es reemplazable por el termino t en ϕ si</p>
+
+<ul>
+  <li>t es un término cerrado (no tiene variables) o</li>
+  <li>t tiene variables, pero ninguna queda atrapada por un cuantificador en el reemplazo ϕ[x/t]</li>
+</ul>
+
+<p><strong>Lema de sustitución</strong></p>
+
+<p>Si x es reemplazable por t en ϕ entonces
+A |= (ϕ[x/t])[v] sii A |= ϕ[v(x = v(t))].</p>
+
+<p><img src="image/Screen Shot 2021-06-03 at 19.30.52.png" alt="" /></p>
+
+<p>Las nociones de <strong>correctitud y consistencia</strong> son análogas.
+Aplica el teorema de deducción, Γ ∪ {ϕ} -&gt; ψ entonces Γ -&gt; ϕ → ψ</p>
+
+<p>Γ satisfacible -&gt; consistente</p>
+
+<p>Γ inconsistente entonces tiene un subconjunto finito inconsistente.</p>
+
+<p><strong>Esquemas tautológicos</strong></p>
+<ul>
+  <li>sea ϕ(p1, . . . , pn) una tautología de P con variables proposicionales p1, … , pn.</li>
+  <li>sean ψ1, . . . , ψn fórmulas cualesquiera de primer orden
+ ϕ(ψ1, . . . , ψn) es una instancia de un esquema tautológico</li>
+</ul>
+
+<p>Si ϕ es una instancia de un esquema tautológico entonces |- ϕ.</p>
+
+<p><strong>Variante alfabética</strong> : reescritura de una formula reemplazando toda instancia de una cierta variable por otra, fresca.</p>
+
+<p>Dos fórmulas variante alfabética mutuas son demostrables una desde la otra, y podes en una reemplazar x por t.</p>
+
+<p><strong>Teorema de la generalización</strong>: A.k.a., TG, Si Γ |- ϕ y x no aparece libre en ninguna fórmula de Γ, entonces Γ |- (∀x)ϕ</p>
+
+<p><strong>Teorema de Generalización en Constantes (TGC)</strong> : Supongamos que Γ |- ϕ y c es un símbolo de constante que no aparece en Γ. Entonces existe una variable x que no aparece en ϕ tal que Γ |- (∀x)(ϕ[c/x]). Mas aun, hay una derivación de (∀x)(ϕ[c/x]) a partir de Γ en donde c no aparece.</p>
+
+<p>Como corolario, esto permite hacer el gran “como no use en ningun lado que Blah vale Bleh, lo probe para todo Blah.”. Classic math move.</p>
+
+<p>El conjunto de teoremas del sistema SQ para L es c.e.</p>
+
+<p>Γ es un conjunto consistente sii es satifacible.</p>
+
+<p>Ademas  \(\Gamma \vDash \varphi\) sii \(\Gamma \vdash \varphi \) y se cumple teorema de compacidad (si todo subconjunto finito es satisfacible entonces el conjunto tambien lo será).</p>
+
+<p>Compacidad: Todo subconjunto finito es satisfacible, entonces el conjunto tambien lo es.</p>
+
+<p>Como consecuencia, podemos expresar la cardinalidad infinita de un modelo usando una teoría, pero no una fórmula.</p>
+
+<h2 id="teorema-de-gödel">Teorema de Gödel</h2>
+
+<p>En el modelo de los naturales, axiomatizados con Peano (&lt;N, &lt;, +, ., 0, S&gt;) hay sentencias que son ciertas, pero no demostrables.</p>
+
+<p>Particularmente lo demuestra haciendo una sentencia que es “la sentencia x, para toda demostracion y no es cierto que y la demuestre” y la instancia tq la sentencia sea esa misma. Osea que queda “soy m, una sentencia que no es demostrable”.</p>
+
+<p>Efectivamente no es demostrable ni su negacion (para que la negacion no sea demostrable hay que asumir w-consistency que es que el para-todo es posta un para-todo). Pero es cierta, necesariamente porque a) una sentencia siempre tiene valor de verdad si es sintactica y b) claramente falsa no es (o podriamos demostrarla, which we can’t and, if we could, wouldn’t be false).</p>
+
+<p>Finalmente, esto se mantiene aun si axiomatizamos Peano sin inducción.</p>
+
+
+</div>
+<a href='https://ko-fi.com/R6R3F4NIO' target='_blank' rel="noopener noreferrer nofollow">
+  <img style='border:0px;height:4em;width:auto;' src='https://cdn.ko-fi.com/cdn/kofi5.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' loading='lazy'/></a>
+  <p style='text-align: center;'>
+  <a href="https://twitter.com/intent/tweet?text=Lógica y Computabilidad - Notas para el final&url=https://strikingloo.github.io/wiki/LyC-final%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" title="Share on Twitter!">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em" rel="noopener noreferrer nofollow"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>Share on twitter]</a></p>
+
+<template id="post-delayed-content">
+
+<div class="backButton">
+<a href="https://twitter.com/intent/tweet?text=Lógica y Computabilidad - Notas para el final&url=https://strikingloo.github.io/wiki/LyC-final%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis' title="Share on Twitter!" rel="noopener noreferrer nofollow">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>]</a>
+<br/>
+<a href="/blog/" id='backToBlog' title="Back to blog" rel="noopener noreferrer">[←]</a>
+</div>
+</template>
+<script>
+const headings = document.querySelectorAll('h2[id],h3[id]');
+for (var heading of headings) {
+    heading.innerHTML = `<a href=#${heading.id}>${heading.innerHTML}</a>`;
+}
+function externalLinks() { for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } }
+externalLinks();
+
+function renderBottomButtons(){
+  const templateNode = document.getElementById('post-delayed-content')
+  const templateContentClone = templateNode.content.cloneNode(true) // perform a deep copy
+  document.body.appendChild(templateContentClone)
+}
+
+function scrollEventHandler(){
+ const scrollOffset = window.pageYOffset
+ const browserViewHeight = window.innerHeight
+ if (scrollOffset > browserViewHeight/3) {
+    console.log('done')
+    renderBottomButtons();
+    window.removeEventListener('scroll', scrollEventHandler)
+ }
+}
+window.addEventListener('scroll', scrollEventHandler)
+</script>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@StrikingLoo" />
+<meta name="twitter:title" content="Lógica y Computabilidad - Notas para el final" />
+<meta name="twitter:description" content="Notas para el final de LyC. Basadas en los apuntes de la teorica. In Spanish." />
+
+<meta name="twitter:image:src" content="https://strikingloo.github.io/resources/book-tw.jpg"/>
+<meta property="og:image" content="https://strikingloo.github.io/resources/preview-image-terrarium.png"/>
+
+			
+			</div>
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:lucianostrika44@gmail.com" rel="me" title="email me">✉️</a></li>
+	        		<li><a href="https://github.com/strikingloo" rel="me noopener noreferrer nofollow" title="GitHub"><svg viewBox="0 0 438.549 438.549" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><path fill="#0F3D3E" d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289s4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136s11.704-.476 16.274-1.423c4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"></path></svg></a></li>
+			        <li><a href="https://twitter.com/intent/follow?screen_name=strikingloo" rel="me noopener noreferrer nofollow" title="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg></a></li>
+			        <li><a href="http://www.linkedin.com/in/luciano-strika" rel="me noopener noreferrer nofollow" title="linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M72.16 99.73H9.927a5 5 0 00-5 5v199.928a5 5 0 005 5H72.16a5 5 0 005-5V104.73a5 5 0 00-5-5zM41.066.341C18.422.341 0 18.743 0 41.362 0 63.991 18.422 82.4 41.066 82.4c22.626 0 41.033-18.41 41.033-41.038C82.1 18.743 63.692.341 41.066.341zM230.454 94.761c-24.995 0-43.472 10.745-54.679 22.954V104.73a5 5 0 00-5-5h-59.599a5 5 0 00-5 5v199.928a5 5 0 005 5h62.097a5 5 0 005-5V205.74c0-33.333 9.054-46.319 32.29-46.319 25.306 0 27.317 20.818 27.317 48.034v97.204a5 5 0 005 5H305a5 5 0 005-5V194.995c0-49.565-9.451-100.234-79.546-100.234z"></path></svg></a></li>
+			        <li><a href="/resources/Luciano_Strika.pdf">CV</a></li>
+				</ul>
+				<p><i>Built with ❤️ by <a href="https://strikingloo.github.io/">Strikingloo</a>.</i></p>
+			</footer>
+			
+
+			
+			<script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+			
+
+			
+			<link rel="preload" href="/css/non-critical-post-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+			<noscript><link rel="stylesheet" href="/css/non-critical-post-min.css"></noscript>
+        	
+		</body>
+	</html>

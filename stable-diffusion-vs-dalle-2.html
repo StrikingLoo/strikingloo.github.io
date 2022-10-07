@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23d8eaeb%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2293%22>🌳</text></svg>" />
+            <title>Stable Diffusion: Prompt Guide and Examples</title>
+			<link rel="canonical" href="https://strikingloo.github.io/stable-diffusion-vs-dalle-2">
+			  <meta name="description" content="I tried similar prompts in Stable Diffusion as I had tried in DALL-E 2 and saw what I got. I also wrote advice on prompt engineering.">
+  			<meta property="og:site_name" content="Stable Diffusion: Prompt Guide and Examples">
+
+        	
+        	<link rel="stylesheet" type="text/css" href="/css/post-min.css">
+        	
+
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
+
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-52642322-5');
+			</script>
+			
+			  <meta property="og:description" content="I tried similar prompts in Stable Diffusion as I had tried in DALL-E 2 and saw what I got. I also wrote advice on prompt engineering.">
+			
+	  		<meta property="og:locale" content="en_US">
+	  		
+			  <meta property="og:title" content="Stable Diffusion: Prompt Guide and Examples">
+			  <meta property="og:type" content="article">
+		  	  <meta property="article:published_time" content="2022-08-30T00:00:00+00:00">
+		      <meta property="article:author" content="/">
+		  	
+		  	
+  				<meta property="og:url" content="https://strikingloo.github.io/stable-diffusion-vs-dalle-2">
+  			
+  			<meta content="index,follow" name="robots"><!-- All Search Engines -->
+  			<meta content="index,follow" name="googlebot"><!-- Google Specific -->
+  			<meta name="robots" content="max-image-preview:large">
+
+		</head>
+		<body>
+			<div class="head-banner">
+			<p>Strikingloo</p>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about/">About</a></li>
+	        		<li><a href="/wiki/">Wiki</a></li>
+	        		<li><a href="/blog/">Blog </a></li>
+	    		</ul>
+			</nav>
+			<div style="clear: both;"></div>
+		    </div>
+
+			<div class="container">
+			
+			<h1>Stable Diffusion: Prompt Guide and Examples</h1>
+<p class="meta">30 Aug 2022 - importance: 8 </p>
+
+
+
+
+<div class="post">
+  <p>What a week, huh? A few days ago, <a href="https://stability.ai">Stability.ai</a> released the new AI art model Stable Diffusion. It is similarly powerful to <a href="/DALL-E-2-prompt-guide">DALL-E 2</a>, but open source, and open to the public through <a href="https://beta.dreamstudio.ai/dream">Dream Studio</a>, where anyone gets 50 free uses just by signing up with an email address.</p>
+
+<p>Since it is open source and anyone who has 5GB of GPU VRAM can download it (and Emad Mostaque, Stability.ai’s founder has come out and said more efficient models are coming) to get unlimited uses, expect to keep seeing headlines about AI art for a while.</p>
+
+<p>I am tired of repeating the same old speech, but <em>thinking back to how primitive models were just a year and a half ago with DALL-E and other VQVAE, this is completely insane</em>. I can only imagine what applications artists and other users will come up with in the near future by leveraging StableDiffusion’s embeddings and its text-to-image capabilities, let alone whatever the next generation of models will be able to do.</p>
+
+<p>Extrapolating from how much this field has grown in the last 18 months, I wouldn’t be surprised if in 2 more years you can write a script for a comic book, feed it to some large language encoder and a text-to-image model like this, and get a fully illustrated, style-coherent graphic novel. This would also apply for frames for an animated movie or a storyboard.</p>
+
+<p>Are we really that close to something so big? I feel like the technology is there if enough compute and budget were allocated, but I am not sure whether someone will do it. I don’t see any obvious blockers or barriers to the next generation of models being even bigger or understanding style better.</p>
+
+<p>Given this context, many people are concerned some artists may lose their jobs. After lots of discussion in Reddit and at parties, I will try to summarize my current opinion on that topic.</p>
+
+<p>For use-cases where having a human artist brings the least value, I think text-to-image models will dominate the market. However, for those cases I think we already had stock images. For instance if I am adorning a random blog post, I’d rather get a free stock image in the header than pay an artist for a new professional photo, as I don’t think my readers care that much (see <a href="https://deephaven.io/blog/2022/08/08/AI-generated-blog-thumbnails/">“I replaced all our blog thumbnails using DALL·E 2”</a> for an example).</p>
+
+<p>Especially if this site was monetized and the big picture was just there to make you scroll further down and get more engagement and ad views.</p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/2835514280_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-add.jpg" alt="" loading="lazy" /></p>
+
+<p>For cases where the artist’s vision matters, like original paintings for decorating my home, or the panels for a graphic novel, I think StableDiffusion or DALL-E 2 for that matter are far away from beating humans. So far.</p>
+
+<p>However, I guess many freelance artists who work for commissions may find less demand for their work as bloggers or random people get their art itch scratched by AI art. I would love to hear the opinion of artists from that sort of market on this, as I am quite ignorant of how the whole process works (for instance, what kind of people commission art in the first place).</p>
+
+<p>I think models like this can also enhance artists’ work. Say you are asked to draw 5 illustrations of a character doing different things. You could use dall-e to get 5 relevant background scenes in 5 minutes, then use your time to add in the characters and some details on top of them. AI art models are significantly better at drawing background scenes than action and characters, so this is a combination of the best capabilities of both human and machine.</p>
+
+<p>Compare against drawing the whole thing from scratch.</p>
+
+<p>Obviously style matching would not be easy, but when we reach a point where you can supply your own mini dataset of backgrounds to condition on and style transfer, this may make artists able to work much faster.</p>
+
+<p>Now is this a good thing? I guess it is a double edged sword: will artists who leverage AI art models to become more productive drive down the general price of art? Or will the new supply generate new demand? I am not an economist, nor an artist, so speculating further would be futile and I will leave the rest to my dear readers.</p>
+
+<p>Speculate away, please.</p>
+
+<p><em><strong>Extra reflection on the topic</strong>: As I said on Reddit, I would be worried that eventually you may remove the artist from some parts of the design loop if user feedback or artist feedback could be used as a reward for a reinforcement learning agent.</em></p>
+
+<p><em>Something like asking “did you like this city’s design / this building? 1 to 10” to users, and using this for a policy gradient or similar algorithm.</em></p>
+
+<p><em>I am reminded of <a href="/wiki/evolution-through-large-models">Evolution through Large Models</a> where this approach is used for autogenerated instances made through genetic mutation algorithms. Imagine the same but for text-to-image.</em></p>
+
+<h2 id="stable-diffusion-art">Stable Diffusion Art</h2>
+
+<p>As in my <a href="/DALL-E-2-prompt-guide">DALL-E 2 article</a>, I tried the same prompts I had already tried in <a href="/art-prompts">Craiyon or Guided diffusion</a> (I know, that’s <em>so</em> early 2022!) to show just how much these systems have improved.</p>
+
+<p>My focus was on fantasy, science fiction, and steampunk illustrations, because that is what I like, but I also experimented with more complex scenes and descriptions, to see how well StableDiffusion understands things like scene composition, prepositions and element interactions.</p>
+
+<p>As with DALL-E 2, I found the model yields much better results for prompts that do not ask for a certain action or verb to be performed, but rather static scenes, especially if there are no humanoids or moving characters in them.</p>
+
+<p>For everything else though, the results were astounding. I feel like StableDiffusion beats DALL-E 2 in character design and realism, but loses in the beauty of its landscapes and backgrounds, but take this with a 10% certainty as it is only my intuition and is likely be biased by my prompt choices.</p>
+
+<p>One thing I’ve found helps a lot in getting more beautiful results is thinking of which exact visual effect would add to the picture, and specifying it. For instance, for fantasy illustrations usually adding fireflies or sparkles helps. For landscapes, I like naming specific flowers like azaleas, and for buildings naming features like a column, a fountain, or anything else to ground the picture in a certain time and place, even if the detail is only tangential to the whole picture.</p>
+
+<p>In my opinion these details can steer the model even better than many vague cues like “4k”, in this generation of models -unlike in <a href="/wiki/clip">CLIP</a> or <a href="/wiki/glide">GLIDE</a>-. See <a href="#appendix-a-stable-diffusion-prompt-guide">Appendix A: StableDiffusion Prompt Guide</a> to see how I choose most of my prompts, and some advice.</p>
+
+<h3 id="prompt-examples-and-experiments">Prompt Examples and Experiments</h3>
+
+<p>I will begin with some scenes that I already tried with other models. These are some of the stable diffusion prompts that I liked best.</p>
+
+<blockquote>
+  <p>“A digital illustration of a steampunk library with clockwork machines, 4k, detailed, trending in artstation, fantasy vivid colors”</p>
+</blockquote>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1397887120__A_digital_illustration_of_a_steampunk_library_with_clockwork_machines__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/18524077__A_digital_illustration_of_a_steampunk_library_with_clockwork_machines__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/2528743898__A_digital_illustration_of_a_steampunk_library_with_clockwork_machines__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png" alt="" loading="lazy" /></p>
+
+<p>I like the last one especially.</p>
+
+<blockquote>
+  <p>“A digital illustration of a steampunk flying machine in the sky with cogs and mechanisms, 4k, detailed, trending in artstation, fantasy vivid colors”</p>
+</blockquote>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1113348597__A_digital_illustration_of_a_steampunk_flying_machine_in_the_sky_with_cogs_and_mechanisms__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1839163504__A_digital_illustration_of_a_steampunk_flying_machine_in_the_sky_with_cogs_and_mechanisms__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1870656804_A_clockwork_flying_machine_from_the_renaissance__oil_painting_on_canvas__trending_on_artstation_HQ.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/2850435724__A_digital_illustration_of_a_steampunk_flying_machine_in_the_sky_with_cogs_and_mechanisms__4k__detailed__trending_in_artstation__fantasy_vivid_colors_.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/79036762_A_digital_illustration_of_a_steampunk_flying_machine__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png" alt="" loading="lazy" /></p>
+
+<p>For scene composition, it is still struggling. Here are a ferret and a badger (which the model turned into another ferret) fencing with swords.</p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/169820319_A_ferret_and_a_badger_fighting_with_swords__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png" alt="" loading="lazy" /></p>
+
+<p>As expected, some of the best prompts that had worked for DALL-E 2 and Craiyon worked great with stable diffusion too.</p>
+
+<blockquote>
+  <p>A digital Illustration of the Babel tower, 4k, detailed, trending in artstation, fantasy vivid colors</p>
+</blockquote>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/200385555_A_digital_illustration_of_the_Babel_tower__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/3059386456_A_digital_illustration_of_the_Babel_tower__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/3565221494_A_digital_illustration_of_the_Babel_tower__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png" alt="" loading="lazy" /></p>
+
+<blockquote>
+  <p>Cluttered house in the woods, anime, oil painting, high resolution, cottagecore, ghibli inspired, 4k</p>
+</blockquote>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/2159513123__Cluttered_house_in_the_woods__anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k_.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/232013801__Cluttered_house_in_the_woods__anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/2391510358__Cluttered_house_in_the_woods__anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k_.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/499419696__Cluttered_house_in_the_woods__anime_oil_painting_high_resolution_cottagecore_ghibli_inspired_4k_.png" alt="" loading="lazy" /></p>
+
+<p>In my opinion, both prompts yielded better images here than they did for DALLE-2, but you can be the judge of that.</p>
+
+<blockquote>
+  <p>A digital illustration of a medieval town, 4k, detailed, trending in artstation, fantasy</p>
+</blockquote>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1099736972__A_digital_illustration_of_a_medieval_town__4k__detailed__trending_in_artstation__fantasy_.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1381417243__A_digital_illustration_of_a_medieval_town__4k__detailed__trending_in_artstation__fantasy_.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/3707234254__A_digital_illustration_of_a_medieval_town__4k__detailed__trending_in_artstation__fantasy_.png" alt="" loading="lazy" /></p>
+
+<blockquote>
+  <p>A medieval town with disco lights and a fountain, by Josef Thoma, matte painting trending on artstation HQ, concept art</p>
+</blockquote>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1607022320_A_medieval_town_with_disco_lights_and_a_fountain__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1723824377_A_medieval_town_with_disco_lights_and_a_fountain__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/2405556329_A_medieval_town_with_disco_lights_and_a_fountain__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art.png" alt="" loading="lazy" /></p>
+
+<blockquote>
+  <p>A digital illustration of a treetop house with fireflies, vivid colors, 4k, fantasy [,/organic]</p>
+</blockquote>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1176496391_A_digital_illustration_of_a_treetop_house_with_fireflies__vivid_colors__4k__fantasy.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1795930148_A_digital_illustration_of_a_treetop_house_with_fireflies__vivid_colors__4k__fantasy__organic.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1864580786_A_digital_illustration_of_a_treetop_house_with_fireflies__vivid_colors__4k__fantasy__organic.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/3103402568_A_digital_illustration_of_a_treetop_house_with_fireflies__vivid_colors__4k__fantasy.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/3653447808_A_digital_illustration_of_a_treetop_house_with_fireflies__vivid_colors__4k__fantasy.png" alt="" loading="lazy" /></p>
+
+<h3 id="paintings-of-landscapes">Paintings of Landscapes</h3>
+
+<p>Again back to comparing with DALL-E 2 and Craiyon, I tried asking for landscape paintings of mansions, castles and general garden scenes. I expected a more classical feel as opposed to the 
+more digital illustration like air of the images from before.</p>
+
+<blockquote>
+  <p>A beautiful castle beside a waterfall in the woods, by Josef Thoma, matte painting, trending on artstation HQ</p>
+</blockquote>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1495253853_A_beautiful_castle_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/538903565_A_beautiful_castle_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/900548929_A_beautiful_castle_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png" alt="" loading="lazy" /></p>
+
+<blockquote>
+  <p>A beautiful mansion with flowered gardens and a fountain, digital illustration, 4k, detailed, bokeh</p>
+</blockquote>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1190172094_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__digital_illustration__4k__detailed__bokeh.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1214903560_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__bokeh.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1460966951_A_beautiful_mansion_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png" alt="" loading="lazy" /></p>
+
+<blockquote>
+  <p>A beautiful mansion beside a waterfall in the woods, by josef thoma, matte painting, trending on artstation HQ</p>
+</blockquote>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1963473302_A_beautiful_mansion_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/258823595_A_beautiful_mansion_beside_a_waterfall_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png" alt="" loading="lazy" /></p>
+
+<blockquote>
+  <p>A beautiful mansion with flowered gardens and a fountain, painting, oil on canvas, 4k, detailed, thomas cole</p>
+</blockquote>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/2766143347_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__thomas_cole.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/768722554_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__thomas_cole.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/829486673_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__thomas_cole.png" alt="" loading="lazy" /></p>
+
+<blockquote>
+  <p>A beautiful mansion with flowered gardens and a fountain, painting, oil on canvas, 4k, detailed, bokeh</p>
+</blockquote>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/3425994411_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__digital_illustration__4k__detailed__bokeh.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/3746536288_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__digital_illustration__4k__detailed__bokeh.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/3853609176_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__bokeh.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/474726138_A_beautiful_mansion_with_flowered_gardens_and_a_fountain__painting__oil_on_canvas__4k__detailed__bokeh.png" alt="" loading="lazy" /></p>
+
+<h3 id="style-cue-steampunk--clockpunk">Style cue: Steampunk / Clockpunk</h3>
+
+<blockquote>
+  <p>A digital illustration of a steampunk robot [/with cogs and clockwork y Josef Thoma], 4k, deatiled, trending in artstation, fantasy vivid colors</p>
+</blockquote>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1173280232_A_digital_illustration_of_a_steampunk_robot__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/733543897_A_digital_illustration_of_a_steampunk_robot__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/2920284979_A_digital_illustration_of_a_steampunk_robot__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1534798598_A_steampunk_robot_with_cogs_and_clockwork__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/2876423299_A_steampunk_robot_with_cogs_and_clockwork__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/2878664672_A_steampunk_robot_with_cogs_and_clockwork__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ.png" alt="" loading="lazy" /></p>
+
+<h3 id="recommended-style-cue-beksinski">Recommended Style Cue: Beksinski</h3>
+
+<p>I tried adding the name of the painter <a href="https://es.wikipedia.org/wiki/Zdzis%C5%82aw_Beksi%C5%84ski">Beksinski</a> as a style cue, and the results were mixed: many of them blocked by StableDiffusion’s content policy, which I guess means there was something awful in them, but the survivors looked amazing.</p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/2118950198_A_pile_of_computers_and_TVs_with_raining_sulfur__beksinski__4k__detailed__oil_on_canvas.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/2558887622_A_pile_of_computers_and_TVs__beksinski__4k__detailed__oil_on_canvas.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/3319505391_A_pile_of_computers_and_TVs_with_raining_sulfur__beksinski__4k__detailed__oil_on_canvas.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/3472481486_A_dark_gentleman_surrounded_by_piles_of_skulls_in_fog_hell__beksinski__4k__detailed__oil_on_canvas.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/37591142_A_pile_of_computers_and_TVs_with_raining_sulfur__beksinski__4k__detailed__oil_on_canvas.png" alt="" loading="lazy" /></p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/3790635847_An_astronaut_being_surrounded_by_eldritch_tentacles_in_the_void_of_space_with_stars__beksinski__4k__detailed__oil_on_canvas.png" alt="" loading="lazy" /></p>
+
+<h3 id="anthropomorphic-animals-mostly-dressed-as-adventurers">Anthropomorphic Animals (Mostly dressed as adventurers)</h3>
+
+<p>One thing I struggled to get right with other models was anthropomorphic animals, especially if I also asked for medieval, steampunk or fantasy clothes. My dream of drawing a Mouseguard party with DALL-E would never come to fruition. With StableDiffusion one trick that worked for me was, instead of, say, prompting “ferret with pirate clothes/dressed as a pirate”, using the prompt “ferret wearing a pirate costume”.</p>
+
+<p>Then I also got a prompt from twitter and iterated it, which was “cute and adorable [animal], wearing [clothes], steampunk/clockpunk/fantasy…” plus style prompts.</p>
+
+<p>This one worked like a charm. Rather than telling you the prompt I used for each individual picture, I will just show you the ones I liked best, so you can see what possibilities exist by tweaking a prompt like that one (I guess you can deduce the animal, etc. from the images themselves).</p>
+
+<blockquote>
+  <p>Example prompt: “Cute and adorable ferret wizard, wearing coat and suit, steampunk, lantern, anthromorphic, Jean paptiste monge, oil painting”</p>
+</blockquote>
+
+<p>In general, removing Jean Paptiste Monge didn’t change results that much, switching coat and suit by tailcoat gave me the results I liked best, and adding portrait made all the paintings into humans. Also, the lantern keyword was copied from twitter but it didn’t really bring much to the table (And most of these animals aren’t carrying a lantern because of that).</p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1080959312_Cute_and_adorable_mouse_adventurer__wearing_warm_jacket__survival_gear__steampunk__lantern__anthromorphic__Jean_paptiste_monge__oil_painting-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/1087059005_A_cute_and_adorable_red_panda_looking_at_reflection_on_sparkling_lake_under_milky_way__digital_illustration__trending_in_artstation__4k__detailed__vivid_colors-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/1152829999_Tiny_cute_and_adorable_mouse_adventurer__wearing_warm_jacket__survival_gear__steam_punk__lantern__anthromorphic__Jean_paptiste_monge-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/1470289104_Cute_and_adorable_ferret_adventurer__wearing_warm_jacket__survival_gear__steam_punk__lantern__anthromorphic__Jean_paptiste_monge-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/1710425125_Fierce_bear_adventurer__wearing_Victorian_tailcoat__steampunk__anthromorphic__Jean_paptiste_monge__oil_on_canvas_portrait-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/1974449469_Cute_and_adorable_ferret_adventurer__wearing_Victorian_tailcoat__musket__steampunk__anthromorphic__Jean_paptiste_monge__oil_painting-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/2439754937_A_ferret_wearing_a_pirate_costume__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/2441072927_Cute_and_adorable_chinchilla_adventurer__wearing_Victorian_tailcoat__steampunk__anthromorphic__Jean_paptiste_monge__oil_on_canvas_portrait-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/2567093150_Cute_and_adorable_red_panda_adventurer__wearing_warm_jacket__survival_gear__steampunk__lantern__anthromorphic__Jean_paptiste_monge__oil_painting-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/2757110376_A_ferret_wearing_a_sherlock_holmes_costume__bokeh__4k__detailed__oil_on_canvas-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/2886990977_Cute_and_adorable_ferret_adventurer__wearing_warm_jacket__survival_gear__steam_punk__lantern__anthromorphic__Jean_paptiste_monge-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/2974914158_Cute_and_adorable_ferret_adventurer__wearing_Victorian_tailcoat__musket__steampunk__anthromorphic__Jean_paptiste_monge__oil_painting-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/3135780918_Cute_and_adorable_squirrel_adventurer__wearing_Victorian_tailcoat__sword__steampunk__anthromorphic__Jean_paptiste_monge__oil_painting-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/3431930152_Cute_and_adorable_red_panda_adventurer__wearing_Victorian_tailcoat__steampunk__anthromorphic__Jean_paptiste_monge__oil_painting-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/3700760151_Cute_and_adorable_red_panda_adventurer__wearing_Victorian_tailcoat__steampunk__anthromorphic__Jean_paptiste_monge__oil_painting-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/3705614363_Cute_and_adorable_mouse_adventurer__wearing_warm_jacket__survival_gear__steampunk__lantern__anthromorphic__Jean_paptiste_monge__oil_painting-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/3819606400_Cute_and_adorable_ferret_wizard__wearing_coat_and_suit__steampunk__lantern__anthromorphic__Jean_paptiste_monge__oil_painting-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/3979092551_Cute_and_adorable_red_panda_explorer__wearing_coat_and_suit__steampunk__anthromorphic__Jean_paptiste_monge__oil_painting-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/4142452916_Cute_and_adorable_ferret_wizard__wearing_coat_and_suit__steampunk__lantern__anthromorphic__Jean_paptiste_monge__oil_painting-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /><img src="resources/ai-generated-images/stable-diffusion/selected/849011389_A_ferret_wearing_a_pirate_costume__bokeh__4k__detailed__oil_on_canvas-yy.png" alt="" loading="lazy" style="display:inline;height:30%; width:30%" /></p>
+
+<p>I really went crazy with these, and these are my selection, so you can imagine how many I tried.</p>
+
+<h3 id="forest-scenes">Forest Scenes</h3>
+
+<p>Another thing that I love about StableDiffusion (Which DALL-E 2 also gets right) is how well it renders textures. I can imagine how a 3d artist may use one of these models to enhance their own 3d objects by creating many different textures fast and combining them with domain knowledge.</p>
+
+<p>Because of that, and my love for moss, I made many forest scenes with abundant growth and moss. Many of these look like a Magic: the Gathering illustration. I will not post the prompts as each one was different, but they mostly followed my digital fantasy illustration template.</p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1394321457_A_giant_boar_made_of_moss_and_azaleas_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png" alt="" loading="lazy" />
+<img src="resources/ai-generated-images/stable-diffusion/selected/1537772634_A_Centaur_in_a_glade_under_the_stars_by_Zdzis_aw_Beksi_ski__Gorgeous_digital_painting_with_sober_colours_amazing_art_mesmerizing__captivating__artstation_3-centaur-xx.png" alt="" loading="lazy" />
+<img src="resources/ai-generated-images/stable-diffusion/selected/3401078383_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png" alt="" loading="lazy" />
+<img src="resources/ai-generated-images/stable-diffusion/selected/3650187890_A_giant_fire_bear_with_moss_and_azaleas_in_forest__fantasy__matte_painting_trending_on_artstation_HQ__concept_art-xx.png" alt="" loading="lazy" />
+<img src="resources/ai-generated-images/stable-diffusion/selected/2835514280_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-add.png" alt="" loading="lazy" />
+<img src="resources/ai-generated-images/stable-diffusion/selected/738606398_A_magnificent_elk_made_of_azaleas_and_moss_in_the_woods__fantasy__matte_painting_trending_on_artstation_HQ__concept_art-xx.png" alt="" loading="lazy" />
+<img src="resources/ai-generated-images/stable-diffusion/selected/975594345_A_giant_boar_made_of_moss_and_azaleas_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png" alt="" loading="lazy" /></p>
+
+<p>StableDiffusion was the first AI art model where I have successfully got a centaur. Not a deformed monstrosity, not a horse, not a weird human. A real centaur! So that made me happy and I had to share it.</p>
+
+<p>I honestly made a lot more illustrations I loved (like 400 total, I think?) but I guess most readers will get bored long before they finish scrolling this post, so I will not keep you any longer.</p>
+
+<p>These are the last ones, I swear.</p>
+
+<p><img src="resources/ai-generated-images/stable-diffusion/selected/1621667580_A_digital_illustration_of_a_steampunk_inventor_s_desk__4k__detailed__trending_in_artstation__fantasy_vivid_colors-add.png" alt="" loading="lazy" style="display:inline;height:40%; width:40%" /><img src="resources/ai-generated-images/stable-diffusion/selected/3418018944_A_treasure_chest_with_glowing_jeewels_and_gems__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ-add.png" alt="" loading="lazy" style="display:inline;height:40%; width:40%" /></p>
+
+<p>Before we reach the end, I want to raise a concern and propose a challenge. No matter what I tried, I could <em>not</em> make either DALL-E 2, or StableDiffusion make characters in the style of Jojo’s Bizarre Adventure (or Araki, in general). I tried the obvious style cues and others, and none worked. So if any of you manages to make one of these models draw Spongebob Squarepants in the style of Jojo’s, or any other recognizable character, you will get a thousand internet points from me.</p>
+
+<h3 id="appendix-a-stable-diffusion-prompt-guide">Appendix A: Stable Diffusion Prompt Guide</h3>
+<p>In general, a the best stable diffusion prompts will have this form:</p>
+
+<blockquote>
+  <p>“A <em>[type of picture]</em> of a <em>[main subject, mostly composed of adjectives and nouns -avoid verbs-]</em>, <em>[style cues]*</em>”</p>
+</blockquote>
+
+<p>Some <em>types of picture</em> include <em>digital illustration, oil painting (usually good results), matte painting, 3d render, medieval map</em>.</p>
+
+<p>The <em>main subject</em> can be anything you’re thinking of, but StableDiffusion still struggles with compositionality, so it shouldn’t be more than one or two main things (say, <em>a beaver wearing a suit</em>, or <em>a cat samurai with a pet pug</em>).</p>
+
+<p>Style cues can be anything you want to condition the image on. I wouldn’t add too many, maybe only 1 to 3. These can really vary a lot but some good ones are: <em>concept art, steampunk, trending in artstation, good composition, hyper realistic, oil on canvas, vivid colors</em>.</p>
+
+<p>Additionally, adding the name of an artist as a cue will make the picture look like something that artist made, though it may condition the image’s contents, especially if that artist had narrow themes (Beatrix Potter gets you spurious rabbits, for instance).</p>
+
+<p>For a detailed guide to crafting the best stable diffusion prompts, see <a href="https://docs.google.com/document/d/17VPu3U2qXthOpt2zWczFvf-AH6z37hxUbvEe1rJTsEc/edit">A Guide to Writing Prompts for Text-to-image AI</a> if you feel like you want to read more.</p>
+
+<p>You can also find many great prompts if you use the <a href="https://lexica.art/">Lexica.art</a> prompt search engine to find images you like and make tweaks to their prompts.</p>
+
+<h2 id="appendix-b-resources-and-links">Appendix B: Resources and Links</h2>
+
+<p>Given how much has happened lately (even John Oliver is talking about DALL-E!), here are some other articles you may want to read.</p>
+
+<ul>
+  <li><a href="https://thealgorithmicbridge.substack.com/p/stable-diffusion-is-the-most-important">Stable Diffusion: The Most Important AI Art Model Ever</a> covering the more social/economic side of this.</li>
+  <li><a href="https://sweet-hall-e72.notion.site/A-Traveler-s-Guide-to-the-Latent-Space-85efba7e5e6a40e5bd3cae980f30235f">A traveler’s guide to the latent space</a>: a guide on prompt engineering that goes <em>really</em> in depth. I haven’t actually read the whole thing.</li>
+  <li><a href="https://docs.google.com/document/d/17VPu3U2qXthOpt2zWczFvf-AH6z37hxUbvEe1rJTsEc/">A guide to Writing Prompts for Text-to-Image AI</a>: The best quick primer I’ve found on prompt engineering and writing prompts for DALL-E 2/StableDiffusion or any other text-to-image AI.</li>
+  <li><a href="/art-prompts">Art Prompts: My Experiments with Mini DALL-E</a>: My first post on text-to-image AI, where I included my own AI art prompt guide. Here you can see how far we’ve come and how fast.</li>
+  <li><a href="/DALL-E-2-prompt-guide">DALL-E 2 Experiments</a>: The post I wrote two weeks ago when DALL-E 2 beta release was news and StableDiffusion hadn’t come out yet. See if you can spot the same prompts’ different results.</li>
+  <li><a href="https://andys.page/posts/how-to-draw/">How to Draw</a>: Where a user uses StableDiffusion’s img2img version to convert an MSPaint drawing into a realistic sci-fi image.</li>
+  <li><a href="https://replicate.com/stability-ai/stable-diffusion"><strong>Image2Image StableDiffusion</strong></a>, available on Replicate for free. You can draw a rough sketch of what you want in jspaint (the browser copy of MSPaint), then upload it to Stable Diffusion img2img and use that as a starting point for your AI art. See also <a href="https://simonwillison.net/2022/Aug/29/stable-diffusion/">Stable Diffusion is a really big deal, Simon Willison</a>: This came out a little after I wrote this post, when Stability.ai released the img2img StableDiffusion model. It is amazing! You can make a sketch in MSPaint (Or JsPaint) and make the AI turn it into a painting or illustration in the style you want.</li>
+  <li><a href="https://keras.io/guides/keras_cv/generate_images_with_stable_diffusion/"><strong>High-performance image generation using Stable Diffusion in KerasCV</strong></a>: Stable Diffusion was finally ported to keras. It runs smoothly both on GPU or CPU if you have keras installed, and this is the version I’ve been using to make AI art in my local computer.</li>
+  <li><a href="https://lexica.art/"><strong>Lexica.art</strong></a> a great search engine for prompts and artworks. It is an amazing resource to find good images and see which prompts generated them, which you can then copy and tune to your needs. An easy way to build on the best stable diffusion prompts other people has already found.</li>
+  <li>If you like anime, <a href="https://huggingface.co/hakurei/waifu-diffusion"><strong>Waifu Diffusion</strong></a> is a text-to-image diffusion model that was conditioned on high-quality anime images through fine-tuning, using Stable Diffusion as a starting point. It generates anime illustrations and it’s awesome.</li>
+  <li><a href="https://jalammar.github.io/illustrated-stable-diffusion/">The Illustrated Stable Diffusion</a> explains how Stable Diffusion works, step by step and through different levels of abstraction, and has great illustrations.</li>
+</ul>
+
+<p><em>If you liked this article, please share it with someone you think will like reading it too. I wrote this for you guys.</em></p>
+
+</div>
+<a href='https://ko-fi.com/R6R3F4NIO' target='_blank' rel="noopener noreferrer nofollow">
+  <img style='border:0px;height:4em;width:auto;' src='https://cdn.ko-fi.com/cdn/kofi5.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' loading='lazy'/></a>
+  <p style='text-align: center;'>
+  <a href="https://twitter.com/intent/tweet?text=Stable Diffusion: Prompt Guide and Examples&url=https://strikingloo.github.io/stable-diffusion-vs-dalle-2%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" title="Share on Twitter!">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em" rel="noopener noreferrer nofollow"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>Share on twitter]</a></p>
+
+<template id="post-delayed-content">
+
+<div class="backButton">
+<a href="https://twitter.com/intent/tweet?text=Stable Diffusion: Prompt Guide and Examples&url=https://strikingloo.github.io/stable-diffusion-vs-dalle-2%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis' title="Share on Twitter!" rel="noopener noreferrer nofollow">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>]</a>
+<br/>
+<a href="/blog/" id='backToBlog' title="Back to blog" rel="noopener noreferrer">[←]</a>
+</div>
+</template>
+<script>
+const headings = document.querySelectorAll('h2[id],h3[id]');
+for (var heading of headings) {
+    heading.innerHTML = `<a href=#${heading.id}>${heading.innerHTML}</a>`;
+}
+function externalLinks() { for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } }
+externalLinks();
+
+function renderBottomButtons(){
+  const templateNode = document.getElementById('post-delayed-content')
+  const templateContentClone = templateNode.content.cloneNode(true) // perform a deep copy
+  document.body.appendChild(templateContentClone)
+}
+
+function scrollEventHandler(){
+ const scrollOffset = window.pageYOffset
+ const browserViewHeight = window.innerHeight
+ if (scrollOffset > browserViewHeight/3) {
+    console.log('done')
+    renderBottomButtons();
+    window.removeEventListener('scroll', scrollEventHandler)
+ }
+}
+window.addEventListener('scroll', scrollEventHandler)
+</script>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@StrikingLoo" />
+<meta name="twitter:title" content="Stable Diffusion: Prompt Guide and Examples" />
+<meta name="twitter:description" content="I tried similar prompts in Stable Diffusion as I had tried in DALL-E 2 and saw what I got. I also wrote advice on prompt engineering." />
+
+<meta name="twitter:image:src" content="https://strikingloo.github.io/resources/tw_fm1.png" />
+<meta property="og:image" content="https://strikingloo.github.io/resources/tw_fm1.png"/>
+
+			
+			</div>
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:lucianostrika44@gmail.com" rel="me" title="email me">✉️</a></li>
+	        		<li><a href="https://github.com/strikingloo" rel="me noopener noreferrer nofollow" title="GitHub"><svg viewBox="0 0 438.549 438.549" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><path fill="#0F3D3E" d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289s4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136s11.704-.476 16.274-1.423c4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"></path></svg></a></li>
+			        <li><a href="https://twitter.com/intent/follow?screen_name=strikingloo" rel="me noopener noreferrer nofollow" title="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg></a></li>
+			        <li><a href="http://www.linkedin.com/in/luciano-strika" rel="me noopener noreferrer nofollow" title="linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M72.16 99.73H9.927a5 5 0 00-5 5v199.928a5 5 0 005 5H72.16a5 5 0 005-5V104.73a5 5 0 00-5-5zM41.066.341C18.422.341 0 18.743 0 41.362 0 63.991 18.422 82.4 41.066 82.4c22.626 0 41.033-18.41 41.033-41.038C82.1 18.743 63.692.341 41.066.341zM230.454 94.761c-24.995 0-43.472 10.745-54.679 22.954V104.73a5 5 0 00-5-5h-59.599a5 5 0 00-5 5v199.928a5 5 0 005 5h62.097a5 5 0 005-5V205.74c0-33.333 9.054-46.319 32.29-46.319 25.306 0 27.317 20.818 27.317 48.034v97.204a5 5 0 005 5H305a5 5 0 005-5V194.995c0-49.565-9.451-100.234-79.546-100.234z"></path></svg></a></li>
+			        <li><a href="/resources/Luciano_Strika.pdf">CV</a></li>
+				</ul>
+				<p><i>Built with ❤️ by <a href="https://strikingloo.github.io/">Strikingloo</a>.</i></p>
+			</footer>
+			
+
+			
+
+			
+			<link rel="preload" href="/css/non-critical-post-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+			<noscript><link rel="stylesheet" href="/css/non-critical-post-min.css"></noscript>
+        	
+		</body>
+	</html>
