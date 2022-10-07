@@ -59,7 +59,7 @@ For everything else though, the results were astounding. I feel like StableDiffu
 
 One thing I've found helps a lot in getting more beautiful results is thinking of which exact visual effect would add to the picture, and specifying it. For instance, for fantasy illustrations usually adding fireflies or sparkles helps. For landscapes, I like naming specific flowers like azaleas, and for buildings naming features like a column, a fountain, or anything else to ground the picture in a certain time and place, even if the detail is only tangential to the whole picture. 
 
-In my opinion these details can steer the model even better than many vague cues like "4k", in this generation of models -unlike in [CLIP](/wiki/clip) or [GLIDE](/wiki/glide)-. See [Appendix A: StableDiffusion Prompt Guide](/stable-diffusion-vs-dalle-2#appendix-a-stablediffusion-prompt-guide) to see how I choose most of my prompts, and some advice.
+In my opinion these details can steer the model even better than many vague cues like "4k", in this generation of models -unlike in [CLIP](/wiki/clip) or [GLIDE](/wiki/glide)-. See [Appendix A: StableDiffusion Prompt Guide](#appendix-a-stable-diffusion-prompt-guide) to see how I choose most of my prompts, and some advice. 
 
 ### Prompt Examples and Experiments
 
@@ -278,6 +278,8 @@ Style cues can be anything you want to condition the image on. I wouldn't add to
 Additionally, adding the name of an artist as a cue will make the picture look like something that artist made, though it may condition the image's contents, especially if that artist had narrow themes (Beatrix Potter gets you spurious rabbits, for instance). 
 
 For a detailed guide to crafting the best stable diffusion prompts, see [A Guide to Writing Prompts for Text-to-image AI](https://docs.google.com/document/d/17VPu3U2qXthOpt2zWczFvf-AH6z37hxUbvEe1rJTsEc/edit) if you feel like you want to read more.
+
+You can also find many great prompts if you use the [Lexica.art](https://lexica.art/) prompt search engine to find images you like and make tweaks to their prompts.
 
 ## Appendix B: Resources and Links
 
