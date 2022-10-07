@@ -50,8 +50,8 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: hidden
-        run: echo 'hidden' > './_site/hidden.html'
+      - name: add header links
+        run: chmod +x ./add_header_links.sh && ./add_header_links.sh
         env:
           JEKYLL_ENV: production
           
