@@ -56,9 +56,6 @@ jobs:
            ./add_header_links.sh
         shell: bash
 
-      - name: hidden
-        run: echo 'hidden' > './_site/hidden.html'
-
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
