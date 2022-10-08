@@ -1,0 +1,86 @@
+_posts/2019-04-14-k-means-clustering-magic-the-gathering.md:45:183: leonard.exclamation.30ppm More than 30 ppm of exclamations. Keep them under control.
+_posts/2019-04-14-k-means-clustering-magic-the-gathering.md:47:1: after_the_deadline.redundancy Redundancy. Use 'first' instead of 'First of all,'.
+_posts/2019-04-14-k-means-clustering-magic-the-gathering.md:59:180: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2019-04-14-k-means-clustering-magic-the-gathering.md:95:57: typography.symbols.ellipsis '...' is an approximation, use the ellipsis symbol '…'.
+_posts/2019-04-14-vim-basics.md:24:35: leonard.exclamation.30ppm More than 30 ppm of exclamations. Keep them under control.
+_posts/2019-04-14-vim-basics.md:48:11: weasel_words.very Substitute 'damn' every time you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be. Found 3 times elsewhere.
+_posts/2019-04-15-fuzzywuzzy-python-string-distance.md:160:38: weasel_words.very Substitute 'damn' every time you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be.
+_posts/2019-04-15-fuzzywuzzy-python-string-distance.md:164:109: leonard.exclamation.30ppm More than 30 ppm of exclamations. Keep them under control.
+_posts/2019-04-28-3-ml-books.md:16:176: weasel_words.very Substitute 'damn' every time you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be. Found 4 times elsewhere.
+_posts/2019-04-28-3-ml-books.md:20:20: leonard.exclamation.30ppm More than 30 ppm of exclamations. Keep them under control.
+_posts/2019-04-28-3-ml-books.md:23:124: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2019-04-28-3-ml-books.md:45:128: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2019-04-28-3-ml-books.md:67:58: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2019-04-28-3-ml-books.md:69:152: typography.symbols.sentence_spacing More than two spaces after the period; use 1 or 2.
+_posts/2020-06-11-test-post.md:8:62: weasel_words.very Substitute 'damn' every time you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be.
+_posts/2020-11-19-changes.md:15:158: weasel_words.very Substitute 'damn' every time you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be. Found 3 times elsewhere.
+_posts/2020-11-19-changes.md:36:148: skunked_terms.misc 'hopefully' is a bit of a skunked term, impossible to use without issue. Find some other way to say it.
+_posts/2022-07-11-art-prompts.md:12:262: weasel_words.very Substitute 'damn' every time you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be. Found 4 times elsewhere.
+_posts/2022-07-11-art-prompts.md:37:122: leonard.exclamation.30ppm More than 30 ppm of exclamations. Keep them under control.
+_posts/2022-07-11-art-prompts.md:43:122: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2022-07-11-art-prompts.md:53:84: consistency.spelling Inconsistent spelling of 'colour' (vs. 'color').
+_posts/2022-07-13-bootstrapping.md:38:21: weasel_words.very Substitute 'damn' every time you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be.
+_posts/2022-07-20-dithering.md:27:288: weasel_words.very Substitute 'damn' every time you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be. Found 5 times elsewhere.
+_posts/2022-07-20-dithering.md:59:60: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2022-07-20-dithering.md:63:62: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2022-07-20-dithering.md:68:63: leonard.exclamation.30ppm More than 30 ppm of exclamations. Keep them under control.
+_posts/2022-07-20-dithering.md:107:22: leonard.exclamation.multiple Stop yelling. Keep your exclamation points under control. Found once elsewhere.
+_posts/2022-08-10-reflections-digital-gardening.md:22:51: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "". Found once elsewhere.
+_posts/2022-08-10-reflections-digital-gardening.md:42:71: weasel_words.very Substitute 'damn' every time you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be. Found 10 times elsewhere.
+_posts/2022-08-10-reflections-digital-gardening.md:44:202: leonard.exclamation.30ppm More than 30 ppm of exclamations. Keep them under control.
+_posts/2022-08-10-reflections-digital-gardening.md:48:55: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2022-08-10-reflections-digital-gardening.md:52:55: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2022-08-10-reflections-digital-gardening.md:67:66: cliches.write_good 'free and easy' is a cliché.
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:14:109: leonard.exclamation.30ppm More than 30 ppm of exclamations. Keep them under control.
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:22:1: after_the_deadline.redundancy Redundancy. Use 'I' instead of 'I personally'.
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:43:222: cliches.garner 'for free' is cliché.
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:43:222: after_the_deadline.redundancy Redundancy. Use 'free' instead of 'for free'.
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:45:214: misc.but No paragraph should start with a 'But'.
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:49:129: weasel_words.very Substitute 'damn' every time you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be. Found 3 times elsewhere.
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:63:171: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "". Found 54 times elsewhere.
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:63:348: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:64:171: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:103:139: consistency.spelling Inconsistent spelling of 'color' (vs. 'colour').
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:103:359: consistency.spelling Inconsistent spelling of 'color' (vs. 'colour').
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:104:139: consistency.spelling Inconsistent spelling of 'color' (vs. 'colour').
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:104:359: consistency.spelling Inconsistent spelling of 'color' (vs. 'colour').
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:125:177: consistency.spelling Inconsistent spelling of 'color' (vs. 'colour').
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:125:422: consistency.spelling Inconsistent spelling of 'color' (vs. 'colour').
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:177:154: consistency.spelling Inconsistent spelling of 'color' (vs. 'colour').
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:177:399: consistency.spelling Inconsistent spelling of 'color' (vs. 'colour').
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:181:94: consistency.spelling Inconsistent spelling of 'color' (vs. 'colour').
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:181:240: consistency.spelling Inconsistent spelling of 'color' (vs. 'colour').
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:202:71: cliches.garner 'for free.' is cliché.
+_posts/2022-08-16-DALL-E-2-prompt-guide.md:202:71: after_the_deadline.redundancy Redundancy. Use 'free' instead of 'for free.'.
+_posts/2022-08-24-personal-wiki-set-up.md:15:375: after_the_deadline.redundancy Redundancy. Use 'focus' instead of 'focus in'.
+_posts/2022-08-24-personal-wiki-set-up.md:21:12: cliches.write_good 'out on a limb' is a cliché.
+_posts/2022-08-24-personal-wiki-set-up.md:23:84: leonard.exclamation.30ppm More than 30 ppm of exclamations. Keep them under control.
+_posts/2022-08-24-personal-wiki-set-up.md:25:236: weasel_words.very Substitute 'damn' every time you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be. Found 5 times elsewhere.
+_posts/2022-08-24-personal-wiki-set-up.md:32:90: cliches.garner 'for free' is cliché.
+_posts/2022-08-24-personal-wiki-set-up.md:32:90: after_the_deadline.redundancy Redundancy. Use 'free' instead of 'for free'.
+_posts/2022-08-24-personal-wiki-set-up.md:50:53: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2022-08-24-personal-wiki-set-up.md:50:64: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2022-08-24-personal-wiki-set-up.md:92:55: cliches.garner 'for free' is cliché.
+_posts/2022-08-24-personal-wiki-set-up.md:92:55: after_the_deadline.redundancy Redundancy. Use 'free' instead of 'for free'.
+_posts/2022-08-30-stable-diffusion-vs-dalle-2.md:28:225: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "". Found 86 times elsewhere.
+_posts/2022-08-30-stable-diffusion-vs-dalle-2.md:42:23: leonard.exclamation.30ppm More than 30 ppm of exclamations. Keep them under control.
+_posts/2022-08-30-stable-diffusion-vs-dalle-2.md:70:220: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2022-08-30-stable-diffusion-vs-dalle-2.md:92:194: misc.but No paragraph should start with a 'But'.
+_posts/2022-08-30-stable-diffusion-vs-dalle-2.md:94:78: weasel_words.very Substitute 'damn' every time you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be. Found 5 times elsewhere.
+_posts/2022-08-30-stable-diffusion-vs-dalle-2.md:248:169: consistency.spelling Inconsistent spelling of 'color' (vs. 'colour').
+_posts/2022-08-30-stable-diffusion-vs-dalle-2.md:260:34: leonard.exclamation.multiple Stop yelling. Keep your exclamation points under control.
+_posts/2022-08-30-stable-diffusion-vs-dalle-2.md:292:114: cliches.garner 'for free.' is cliché.
+_posts/2022-08-30-stable-diffusion-vs-dalle-2.md:292:114: after_the_deadline.redundancy Redundancy. Use 'free' instead of 'for free.'.
+_posts/2022-09-06-ant-colony-optimization-tsp.md:30:111: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2022-09-06-ant-colony-optimization-tsp.md:38:1: after_the_deadline.redundancy Redundancy. Use 'first' instead of 'First of all,'.
+_posts/2022-09-06-ant-colony-optimization-tsp.md:40:425: weasel_words.very Substitute 'damn' every time you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be. Found 11 times elsewhere.
+_posts/2022-09-06-ant-colony-optimization-tsp.md:42:434: misc.but No paragraph should start with a 'But'.
+_posts/2022-09-06-ant-colony-optimization-tsp.md:50:197: leonard.exclamation.30ppm More than 30 ppm of exclamations. Keep them under control.
+_posts/2022-09-06-ant-colony-optimization-tsp.md:78:1: after_the_deadline.redundancy Redundancy. Use 'first' instead of 'First of all,'.
+_posts/2022-09-14-japanese-most-frequent-onomatopoeia.md:16:76: weasel_words.very Substitute 'damn' every time you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be. Found 3 times elsewhere.
+_posts/2022-09-21-reinforcement-learning-beginners.md:18:62: weasel_words.very Substitute 'damn' every time you're inclined to write 'very'; your editor will delete it and the writing will be just as it should be. Found 7 times elsewhere.
+_posts/2022-09-21-reinforcement-learning-beginners.md:38:115: after_the_deadline.redundancy Redundancy. Use 'history' instead of 'past history'.
+_posts/2022-09-21-reinforcement-learning-beginners.md:68:103: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2022-09-21-reinforcement-learning-beginners.md:70:113: leonard.exclamation.30ppm More than 30 ppm of exclamations. Keep them under control.
+_posts/2022-09-21-reinforcement-learning-beginners.md:85:71: typography.symbols.curly_quotes Use curly quotes “”, not straight quotes "".
+_posts/2022-09-21-reinforcement-learning-beginners.md:173:133: cliches.write_good 'back to square one)' is a cliché.

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23d8eaeb%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2293%22>🌳</text></svg>" />
+            <title>Lossy Image Compression with Dithering</title>
+			<link rel="canonical" href="https://strikingloo.github.io/dithering">
+			  <meta name="description" content="Floyd–Steinberg dithering and how to create a version of an image that uses a reduced color palette, preserving quality.">
+  			<meta property="og:site_name" content="Lossy Image Compression with Dithering">
+
+        	
+        	<link rel="stylesheet" type="text/css" href="/css/post-min.css">
+        	
+
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
+
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-52642322-5');
+			</script>
+			
+			  <meta property="og:description" content="Floyd–Steinberg dithering and how to create a version of an image that uses a reduced color palette, preserving quality.">
+			
+	  		<meta property="og:locale" content="en_US">
+	  		
+			  <meta property="og:title" content="Lossy Image Compression with Dithering">
+			  <meta property="og:type" content="article">
+		  	  <meta property="article:published_time" content="2022-07-20T00:00:00-03:00">
+		      <meta property="article:author" content="http://localhost:4000/">
+		  	
+		  	
+  				<meta property="og:url" content="https://strikingloo.github.io/dithering">
+  			
+  			<meta content="index,follow" name="robots"><!-- All Search Engines -->
+  			<meta content="index,follow" name="googlebot"><!-- Google Specific -->
+  			<meta name="robots" content="max-image-preview:large">
+
+		</head>
+		<body>
+			<div class="head-banner">
+			<p>Strikingloo</p>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about/">About</a></li>
+	        		<li><a href="/wiki/">Wiki</a></li>
+	        		<li><a href="/blog/">Blog </a></li>
+	    		</ul>
+			</nav>
+			<div style="clear: both;"></div>
+		    </div>
+
+			<div class="container">
+			
+			<h1>Lossy Image Compression with Dithering</h1>
+<p class="meta">20 Jul 2022 - importance: 6 </p>
+
+
+
+
+<div class="post">
+  <p>Last year I took an elective on Computer Graphics (<a href="/wiki/computer-graphics">course notes</a>) where I learned about OpenGL shaders, and image compression algorithms.</p>
+
+<p>One of the algorithms I learned about was <a href="https://en.wikipedia.org/wiki/Floyd%E2%80%93Steinberg_dithering">Floyd–Steinberg dithering</a>.</p>
+
+<p>Sometimes when storing an image, we want to compress it lossily: we create a new version of it that loses a part of the information and quality, but is significantly smaller in filesize.</p>
+
+<p>One way of achieving this, is using a reduced palette. The GIF format does this, for instance, by limiting the available colors in a single file to 256.</p>
+
+<p>Mapping colors to the most similar one available in a palette is called <a href="/wiki/data-compression#lossy-compression"><em>vector quantization</em></a>, since we are effectively subdividing the whole color space into regions and assigning one color to each.</p>
+
+<p>Mapping pixels from the entire color space (which has 256\^3 possibilities) to a reduced set of values can generate a problem, though: regions of neighboring pixels tend to have similar colors, and the most straightforward way of mapping them, where <strong>each pixel goes to the most similar color available in the reduced palette</strong>, will generate <strong>large regions of a single flat color in an image</strong>, producing artifacts. This looks quite ugly to human eyes.</p>
+
+<p>Dithering aims to solve the problem of large flat areas by altering the colors of neighboring pixels after mapping one to a color from the palette. What’s novel about this method is that it <strong>carries over the difference between each pixel and its new in-palette assigned color, propagating it to its neighbors.</strong> This way, if for instance I map a pixel to a darker color from my palette, I will make the next neighboring pixels brighter to compensate in average, since I will end up nudging them closer to different elements from the palette. This system prevents artifacts that look like monochromatic flat areas and preserves nuance better.</p>
+
+<p>However, since we will effectively be adding noise so the pixels in the surrounding region after changing each pixel, this will tend to increase entropy in the resulting image, making compression less effective. <strong>Generally we will need to evaluate the trade-off between image quality and compression.</strong></p>
+
+<p>The exact way the error is propagated is a bit arbitrary: just a convex distribution with most of it going to the neighbors below or to the right, and some in diagonal. What’s interesting is that this way we can take an image that has lots of different colors, and obtain one that has a reduced palette but keeps most of the information, at least perceptually.</p>
+
+<h2 id="algorithm-and-implementation-details">Algorithm and Implementation Details</h2>
+
+<p>For this project, I implemented dithering in Python using <em>numpy</em>. The algorithm itself is simple, and I used the pseudocode from Wikipedia as a starting point.</p>
+
+<p>All we do is:</p>
+<ul>
+  <li>Move through all the pixels sequentially.</li>
+  <li>Given the current pixel, map it to the closest color in the palette.</li>
+  <li>Compute the difference between the old color and the new one.</li>
+  <li>Add a percentage of that difference to each of the pixel’s neighbors.</li>
+</ul>
+
+<p>Here is the Python code for it.</p>
+
+<script src="https://gist.github.com/StrikingLoo/481717106a5c9790d8a8fe2687fb7087.js"></script>
+
+<p>I solved the color lookup using scipy’s <em>KDTree</em>, but if you wanted to code everything from scratch you could just replace this with a linear search for the minimum distance element in the table (or use <em>numpy</em>’s argmin).</p>
+
+<h3 id="choosing-a-palette">Choosing a Palette</h3>
+
+<p>We can choose the palette in different ways.</p>
+
+<p>For these experiments I went for evenly spaced palettes. I built them adding every multiple of 255/k for a given k, in all possible combinations for R, G and B. RGB colors go from (0,0,0) to (255,255,255), so this way given a certain k, we can guarantee no color will have to be mapped to a new one farther away than 128/k from it in any component.</p>
+
+<script src="https://gist.github.com/StrikingLoo/a4d8417f96369ce69eb1aae73b850a1d.js"></script>
+
+<p>A smarter approach to build a palette of k colors may have been running K-means clustering over the image to find k <em>centroids</em> to use as colors, and then use those for a k-color palette. Or maybe just taking the most common color, removing all colors closer than a certain threshold to it, and then repeating those two steps k times.</p>
+
+<h3 id="experiments-and-results">Experiments and Results</h3>
+
+<p>As an experiment to see how fast the algorithm was and how much smaller the file could get, I ran dithering compression on this image of a red panda (source: <a href="http://pixabay.com">pixabay</a>).</p>
+
+<p><img src="/resources/post_image/red-panda.jpg" alt="" loading="lazy" /></p>
+
+<p>Here are the compressed versions after using palettes of evenly spaced colors (as described above) with k = 2, 4, 8 and 16. Note that for k=2, the palette is simple (only 0, 128 or 255 in each value of the color) and for k=16 we’re closer to representing every color (over 5000 different colors out of 256^3=~16M).</p>
+
+<p><img src="/resources/post_image/red-panda-2.jpg" alt="" loading="lazy" /></p>
+
+<p><em>Compressed image with extremely small palette (k=2)</em></p>
+
+<p>In this case, most of the background was converted to grey. 
+The picture went from 580Kb to 264Kb in size, but at what cost.</p>
+
+<p>We can see how the image loses less information as we increase palette size:</p>
+
+<p><img src="/resources/post_image/red-panda-4.jpg" alt="" loading="lazy" /></p>
+
+<p><em>Compressed image with k = 4</em></p>
+
+<p><img src="/resources/post_image/red-panda-8.jpg" alt="" loading="lazy" /></p>
+
+<p><em>Compressed image with k = 8</em></p>
+
+<p><img src="/resources/post_image/red-panda-16.jpg" alt="" loading="lazy" /></p>
+
+<p><em>Compressed image with k = 16</em></p>
+
+<p>The image with the biggest palette looks pretty similar to the original (except in the background details) but has a size of 344Kb. That’s a 40% reduction.</p>
+
+<p>Just to make sure, let’s try a different image.</p>
+
+<p><img src="/resources/post_image/avenue.jpg" alt="" loading="lazy" /></p>
+
+<p><em>source: <a href="https://pixabay.com/photos/avenue-trees-path-sunbeams-sunrays-815297/">pixabay</a></em></p>
+
+<p>Again with k=16 (palette of ~5800 colors), this is what we obtain:</p>
+
+<p><img src="/resources/post_image/avenue-16.jpg" alt="" loading="lazy" /></p>
+
+<p>This time, I’d say the image looks about the same. But now the size went down from 962Kb to 534Kb.</p>
+
+<p>That’s a reduction of 41% for a difference that we mostly don’t notice.</p>
+
+<h2 id="extending-to-png">Extending to .png</h2>
+
+<p>User @gakxd on <a href="https://www.reddit.com/r/programming/comments/w6b8ia/lossy_image_compression_with_dithering/">Reddit</a> remarks correctly that, since JPEG is a lossy format in itself, we can’t make such a direct conclusion from the reduction in size seen after applying dithering. In fact dithering may interact poorly with JPEG compression. Due to that, I thought it was worth repeating the experiment with a .png image. In this case I am using this site’s twitter card image, and compressing it with a palette of k=16 again (5800 colors).</p>
+
+<p>Since .png is a lossless format, it will save the colors exactly the way this program leaves them, and we can compare results more directly this way.
+The only modifications I had to add to the program were for dealing with RGBA instead of RGB images, and my solution has simply been to leave the ‘A’ channel unchanged (keeping identical transparency) and only propagate errors forward if the A value is bigger than 0. I am not including the code itself as it would be pretty redundant.</p>
+
+<p>Here are the results.</p>
+
+<p><img src="/resources/post_image/potted-tree.png" alt="" loading="lazy" style="height:30%; width:30%" />
+<img src="/resources/post_image/potted-tree-16.png" alt="" loading="lazy" style="height:30%; width:30%" /></p>
+
+<p><em>original image, image with a reduced palette (k=16)</em></p>
+
+<p>Again, the images look pretty similar (only the fruits in the tree suffered a little from the compression), and this time the file size went from 160Kb to 92Kb, for a reduction of 42% again. And this time, we can appreciate exactly how the image changed, and know that all the gains were solely from the use of dithering, and no other changes to the image itself.</p>
+
+<p>I am not sure what compression algorithms the PNG format uses so I’m not sure if reducing the palette and avoiding contiguous areas of the same color, which is what dithering does, will contribute possitively to them or not. I leave that for the community to discuss.</p>
+
+<p>For fun, I tried the .png version on a bigger file (3.4MB) and it got to 885Kb with our k=16 palette. It’s even less than half the size now.</p>
+
+<p><img src="/resources/post_image/large-tree.png" alt="" loading="lazy" />
+<img src="/resources/post_image/large-tree-16.png" alt="" loading="lazy" /></p>
+
+<p><em>before and after</em></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>We made a simple image compressor that runs sequentially over an image’s pixels mapping them to their closest color in a reduced palette. This way we can constrain it to a smaller color-space and reduce its size significantly.</p>
+
+<p>For most of the images tried, using a palette of 5800 colors represented a small perceptual difference in quality, but a 40% reduction in size.</p>
+
+<p>I thought of maybe speeding up the program with parallel execution, but found the implementation a bit tedious. However I’m linking <a href="https://hal.archives-ouvertes.fr/hal-03594790/document">the paper for further reading</a>, in case anyone is interested.</p>
+
+<p>After further reading about compression, I wrote my notes in the [data compression wiki article]((/wiki/data-compression). I may do a follow up post explaining Huffman codes and the LZ77 algorithm for lossless compression.</p>
+
+</div>
+<a href='https://ko-fi.com/R6R3F4NIO' target='_blank' rel="noopener noreferrer nofollow">
+  <img style='border:0px;height:4em;width:auto;' src='https://cdn.ko-fi.com/cdn/kofi5.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' loading='lazy'/></a>
+  <p style='text-align: center;'>
+  <a href="https://twitter.com/intent/tweet?text=Lossy Image Compression with Dithering&url=https://strikingloo.github.io/dithering%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" title="Share on Twitter!">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em" rel="noopener noreferrer nofollow"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>Share on twitter]</a></p>
+
+<template id="post-delayed-content">
+
+<div class="backButton">
+<a href="https://twitter.com/intent/tweet?text=Lossy Image Compression with Dithering&url=https://strikingloo.github.io/dithering%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis' title="Share on Twitter!" rel="noopener noreferrer nofollow">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>]</a>
+<br/>
+<a href="/blog/" id='backToBlog' title="Back to blog" rel="noopener noreferrer">[←]</a>
+</div>
+</template>
+<script>
+/*
+const headings = document.querySelectorAll('h2[id],h3[id]');
+for (var heading of headings) {
+    heading.innerHTML = `<a href=#${heading.id}>${heading.innerHTML}</a>`;
+}*/
+function externalLinks() { for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } }
+externalLinks();
+
+function renderBottomButtons(){
+  const templateNode = document.getElementById('post-delayed-content')
+  const templateContentClone = templateNode.content.cloneNode(true) // perform a deep copy
+  document.body.appendChild(templateContentClone)
+}
+
+function scrollEventHandler(){
+ const scrollOffset = window.pageYOffset
+ const browserViewHeight = window.innerHeight
+ if (scrollOffset > browserViewHeight/3) {
+    console.log('done')
+    renderBottomButtons();
+    window.removeEventListener('scroll', scrollEventHandler)
+ }
+}
+window.addEventListener('scroll', scrollEventHandler)
+</script>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@StrikingLoo" />
+<meta name="twitter:title" content="Lossy Image Compression with Dithering" />
+<meta name="twitter:description" content="Floyd–Steinberg dithering and how to create a version of an image that uses a reduced color palette, preserving quality." />
+
+<meta name="twitter:image:src" content="https://strikingloo.github.io/resources/book-tw.jpg"/>
+<meta property="og:image" content="https://strikingloo.github.io/resources/preview-image-terrarium.png"/>
+
+			
+			</div>
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:lucianostrika44@gmail.com" rel="me" title="email me">✉️</a></li>
+	        		<li><a href="https://github.com/strikingloo" rel="me noopener noreferrer nofollow" title="GitHub"><svg viewBox="0 0 438.549 438.549" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><path fill="#0F3D3E" d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289s4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136s11.704-.476 16.274-1.423c4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"></path></svg></a></li>
+			        <li><a href="https://twitter.com/intent/follow?screen_name=strikingloo" rel="me noopener noreferrer nofollow" title="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg></a></li>
+			        <li><a href="http://www.linkedin.com/in/luciano-strika" rel="me noopener noreferrer nofollow" title="linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M72.16 99.73H9.927a5 5 0 00-5 5v199.928a5 5 0 005 5H72.16a5 5 0 005-5V104.73a5 5 0 00-5-5zM41.066.341C18.422.341 0 18.743 0 41.362 0 63.991 18.422 82.4 41.066 82.4c22.626 0 41.033-18.41 41.033-41.038C82.1 18.743 63.692.341 41.066.341zM230.454 94.761c-24.995 0-43.472 10.745-54.679 22.954V104.73a5 5 0 00-5-5h-59.599a5 5 0 00-5 5v199.928a5 5 0 005 5h62.097a5 5 0 005-5V205.74c0-33.333 9.054-46.319 32.29-46.319 25.306 0 27.317 20.818 27.317 48.034v97.204a5 5 0 005 5H305a5 5 0 005-5V194.995c0-49.565-9.451-100.234-79.546-100.234z"></path></svg></a></li>
+			        <li><a href="/resources/Luciano_Strika.pdf">CV</a></li>
+				</ul>
+				<p><i>Built with ❤️ by <a href="https://strikingloo.github.io/">Strikingloo</a>.</i></p>
+			</footer>
+			
+
+			
+
+			
+			<link rel="preload" href="/css/non-critical-post-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+			<noscript><link rel="stylesheet" href="/css/non-critical-post-min.css"></noscript>
+        	
+		</body>
+	</html>

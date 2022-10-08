@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23d8eaeb%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2293%22>🌳</text></svg>" />
+            <title>Making Notes Work for Me: Reflections after 2 Years of Digital Gardening</title>
+			<link rel="canonical" href="https://strikingloo.github.io/reflections-digital-gardening">
+			  <meta name="description" content="My thoughts on note taking, personal wikis, digital gardens and zettelkastens.">
+  			<meta property="og:site_name" content="Making Notes Work for Me: Reflections after 2 Years of Digital Gardening">
+
+        	
+        	<link rel="stylesheet" type="text/css" href="/css/post-min.css">
+        	
+
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
+
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-52642322-5');
+			</script>
+			
+			  <meta property="og:description" content="My thoughts on note taking, personal wikis, digital gardens and zettelkastens.">
+			
+	  		<meta property="og:locale" content="en_US">
+	  		
+			  <meta property="og:title" content="Making Notes Work for Me: Reflections after 2 Years of Digital Gardening">
+			  <meta property="og:type" content="article">
+		  	  <meta property="article:published_time" content="2022-08-12T00:00:00-03:00">
+		      <meta property="article:author" content="http://localhost:4000/">
+		  	
+		  	
+  				<meta property="og:url" content="https://strikingloo.github.io/reflections-digital-gardening">
+  			
+  			<meta content="index,follow" name="robots"><!-- All Search Engines -->
+  			<meta content="index,follow" name="googlebot"><!-- Google Specific -->
+  			<meta name="robots" content="max-image-preview:large">
+
+		</head>
+		<body>
+			<div class="head-banner">
+			<p>Strikingloo</p>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about/">About</a></li>
+	        		<li><a href="/wiki/">Wiki</a></li>
+	        		<li><a href="/blog/">Blog </a></li>
+	    		</ul>
+			</nav>
+			<div style="clear: both;"></div>
+		    </div>
+
+			<div class="container">
+			
+			<h1>Making Notes Work for Me: Reflections after 2 Years of Digital Gardening</h1>
+<p class="meta">12 Aug 2022 - importance: 8 </p>
+
+
+
+
+<div class="post">
+  <p>I have been maintaining a Personal Wiki / Digital Garden for two years. Throughout all this time, I’ve reflected a lot on how I keep my notes, why I do it and what I get from doing it. Here is what I have learned.</p>
+
+<p>To save you time, I will start by stating my conclusion. It could be summarized as: <strong>Keeping notes is great, definitely do it. Maybe use a personal wiki?</strong></p>
+
+<p>Before I started running this site, I basically kept no notes, except the odd random paper scribble, unless it was for college related things. Even then, I just wrote things down on a notebook, never to be seen again.</p>
+
+<p>I was already using <a href="/wiki/anki">Spaced Repetition systems</a> for language learning, but I wasn’t that deliberate about my memory in other areas of my life like programming.</p>
+
+<p>In the time since I set up <a href="/wiki">this site’s wiki</a>, I finished my degree in Computer Science, and also aced a few key interviews. I am not saying my successes were completely or even mainly dependent on note-taking, but they definitely helped with my final exams. So after hitting the 80 notes benchmark, I thought I would write this post as a way to look back and do a little retro.</p>
+
+<p><img src="/resources/post_image/pathway.jpg" alt="" loading="lazy" /></p>
+
+<p>I would say the main advantages of note taking, to me at least, have been in improving my search capabilities over my own memory (a file-system definitely beats a chunk of electric meat), and helping me be more organized and procrastinate less.</p>
+
+<p>It’s a lot easier to prepare for an exam when you have all of the relevant knowledge in a single markdown file, waiting to be reviewed.</p>
+
+<p>As for search, my criteria for adding things to my wiki is usually “will I want to review this fact in the future eventually, and will I have probably forgotten it if I don’t write it down?”</p>
+
+<p>That is why most of my notes are either <strong>literature notes or paper summaries</strong>: I mostly find myself going back to impressing facts I read, or wanting to recall that pesky equation from that one diffusion paper I read and can’t quite put my finger on. In those cases, having all that information in a single place has been a life-saver. The same goes for remembering the exact flags of a bash command, or a few useful bookmarks.</p>
+
+<p>There is also the benefit of being able to read all the sections and paragraphs I highlighted from a book right after finishing it. Being able to do a ‘flash review’ of all the relevant contents helps me tie the introductory ideas to the more advanced concepts presented later on.</p>
+
+<p>This first review session also doubles as my polishing phase, where I take a raw note and edit it into something less context-dependent (each section should be understandable even if you haven’t read the book) and ideally succinct, clear and relevant.</p>
+
+<p><strong>Many powerful insights about a topic come not when reading a textbook for the first time, but when I review the main concepts later.</strong> This shouldn’t be too surprising, I guess, but it’s still a benefit worth mentioning.</p>
+
+<p><em>In case you want to do a deeper dive into personal wikis and note-taking, here’s <a href="/wiki/archiving">every thought I’ve had about personal knowledge management</a>.</em></p>
+
+<h2 id="how-i-set-up-my-personal-wiki">How I set up my personal wiki</h2>
+
+<p>First, let me tell you about my digital garden set up. It is actually simple: a <strong>Jekyll static site</strong>, running on github pages because I wasn’t going to pay for a domain and hosting for something I’m not interested in profiting from.</p>
+
+<p>Every wiki article is a single markdown, rendered by Jekyll as an HTML, and the most I’ve engineered things on is just adding social media buttons (which, by the way, if reading this is fun, click them!), and putting a lot of thought and effort into interlinking my notes.</p>
+
+<p>This is what my personal wiki looked like initially:</p>
+
+<p><img src="/resources/post_image/screenshot1.png" alt="" loading="lazy" /></p>
+
+<p>Notice the monochromatic, rustic design compared to what it is now. And this what it looked after my first round of modifications:</p>
+
+<p><img src="/resources/post_image/screenshot2.png" alt="" loading="lazy" /></p>
+
+<p>I was married to the idea of a “cloud of ideas”, but I think the file names weren’t descriptive enough and anyone besides me who entered that site would not have known where to click at all. Even now I’m not sure how to present the wiki’s articles to make them more appealing, as design is not my strong point.</p>
+
+<p>The features I added to the site over time were:</p>
+<ul>
+  <li><strong>Search</strong> which I implemented based on tags and also matching queries to titles. This was easy to set up by making a big JSON which has each article’s metadata (title, tags, description, abstract).</li>
+  <li><strong>Importance scores</strong> for the articles in my wiki. This was mostly for other readers, as I am pretty aware of what’s going on with each article, but I like making things more transparent for others. They mostly reflect how polished or relevant an article is.</li>
+  <li><strong>Category pages</strong> and <strong>support for mathematical notation</strong>. These two weren’t that hard, but importing MathJax into my workflow made for much sleeker interfaces when writing down equations from papers or textbooks. I was getting tired of “&lt;sub&gt;” HTML tags and writing greek letters by hand. With MathJax you basically get LaTeX support for HTML.</li>
+</ul>
+
+<h3 id="starting-your-own-personal-wiki">Starting Your Own Personal Wiki</h3>
+
+<p>If you want to start your own personal wiki, I recommend you head over to <a href="https://tomcritchlow.com/2019/02/17/building-digital-garden/">Tom Critchlow’s guide</a> for a step by step on setting up a Jekyll static web site where each markdown file is a note.</p>
+
+<p>You can alternatively fork <a href="https://github.com/StrikingLoo/Personal-Wiki-Site-Setup">my Personal Wiki Setup Github repository</a> and host it in a free GitHub page (you can customize the CSS to make a completely different design maintaining the same functionalities as this site), following the instructions on the README to build your own wiki. I wrote a different post with a detailed <a href="/personal-wiki-set-up">step-by-step guide on how to set up a Digital Garden using my template</a>.</p>
+
+<p>Another easy way to set up a wiki is to use TiddlyWiki, which is free and easy to get started with, but won’t allow you the same level of customization. Here is <a href="https://nesslabs.com/tiddlywiki-beginner-tutorial">Nesslab’s guide to start using TiddlyWiki</a>, but it mostly just amounts to downloading the software.</p>
+
+<p>Either way, it’s about one afternoon’s work if you’re not too picky with the design (or a potentially infinite time sink otherwise).</p>
+
+<h2 id="how-i-take-notes">How I take notes</h2>
+
+<p>I have spent more time than I am proud of reading articles about the ZettelKasten Method, posts in the zettelkasten forum and subreddit, and browsing other peoples Digital Gardens from <a href="https://github.com/MaggieAppleton/digital-gardeners">Maggie Appleton’s Digital Gardeners Repo</a> for inspiration (or, calling it like it is, procrastination).</p>
+
+<p>By now I could say thinking of note-taking systems is a bit of a hobby of mine. And anyone who knows me can tell you I am a bit obsessive about productivity and workflows.</p>
+
+<p>So the first thing I will say is, my wiki is not a <a href="/wiki/archiving#zettelkasten">zettelkasten</a>.</p>
+
+<p>Zettelkastens, briefly, are based around the idea of using many atomic notes (usually short pieces of text), and interlinking them heavily, where a train of thought can be reconstructed by following a trail of multiple notes (zettels). This is supposed to make you a more prolific writer and help you develop essays, and zettels are expected to be mostly written in your own words as opposed to quotes and excerpts. The zettelkasten methodology also assumes you will start your trails from some particular zettel, and not just see the whole wiki as a big thing with search and tags, etc.</p>
+
+<p>There is also a big emphasis in most of the online digital gardening / note making community in networked thought: link your new notes to as many existing notes as possible, and find patterns and connections between concepts you learn. I don’t do this as much, as I don’t think there is that much value in linking (I especially dislike the idea of automatic backlinks for notes, and <a href="/wiki/archiving#ideas-from-backlinks-are-bad-links">some in the zettelkasten community agree</a>).</p>
+
+<p>Instead, I prefer to take a slightly <strong>monolithic approach</strong>, where I write big notes of 500~1000 lines or more for a single topic, and make each atomic idea a paragraph or subheading. If necessary, I can then just link to headings through their <em>id</em> instead of the whole note -like my link to the zettelkasten section of my wiki just now-.</p>
+
+<p>I’m not saying it’s better, it just works better for me. I’d rather be able to review a whole subject in a few minutes by reading a single page instead of opening a hundred tabs every time. This is the part where I tell you to @ me in Twitter or HackerNews and tell me what you prefer doing and how you think it works better, because I love hearing about other people’s methodologies.</p>
+
+<p>I think if I was more writing or content-generation oriented instead of writing notes for future search, making more atomic notes and linking them could be better, but then each note itself would be further from being an essay.</p>
+
+<p>I mostly write the notes as I go, for instance by rephrasing an interesting paragraph from a paper just after I read it, or summarizing a book one chapter at a time. Whenever I copy or restate a point from an essay or blog post, I add a link to it as a source. If an idea relates relevantly to a different note and I think the connection is worth expanding upon, I will link to it, but also if I think I will want to have the other note on hand when reading this one.</p>
+
+<p>The fact that I do most of my reading in a digital format helps a lot with this workflow, and I usually paste quotes into a telegram chat or similar dumping ground if I’m on mobile before doing the final editing from my PC. For physical books, I guess I would mark pages and then find the PDF online to transcribe highlights, but I don’t really do this.</p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>Taking notes and keeping them tidy in a single place has helped me a lot when reading new, long textbooks or keeping up to date with the current deep learning literature. It’s also extremely convenient for preparing exams.</p>
+
+<p>Linking them has helped insofar as it makes the site’s navigation easier, but I don’t think particularly deep insights come from just interlinking notes or sections, and don’t feel my wiki is an insight-generating machine or anything like some people see the Zettelkasten (even though I think 80 big notes should count as ‘critical mass’).</p>
+
+<p>Being able to reflect on things while writing about them, and review my thoughts on a matter months down the line in an ordered, persistent and friendly way has definitely improved my thinking and retention of technical material, and knowing my source for each thing I jot down has been a godsend when directing other people to it. I am not as bullish as <a href="http://paulgraham.com/essay.html">Paul Graham</a> on this, but I think <a href="/wiki/idea-space">sitting down to write ideas helps expand them</a> and solidify them into something better.</p>
+
+<p>I also think this relates to the Feynman method of learning: if you can explain an idea you just read, you probably understood it. If you can’t, go reread.</p>
+
+<p>There’s something rewarding to being asked for advice or how to solve an issue and saying “oh don’t worry, that’s on my wiki”. It’s even more rewarding when you yourself are the one with the issue.</p>
+
+<p>All in all, I think most knowledge workers and scholars should take notes in the way that best suits them, and that this space deserves <a href="https://numinous.productions/ttft/">lots of experimentation</a>, especially on an individual level to see what works for each person.</p>
+
+<p><em>If you liked this post, please let me know by upvoting on HackerNews or sharing on Tweeter/Reddit! Knowing people read me is my biggest driver for writing more.</em></p>
+
+<h3 id="related-reading">Related Reading</h3>
+
+<ul>
+  <li><a href="https://numinous.productions/ttft/">How Can We Develop Transformative Tools for Thought?</a>: A good long form essay about tools that help us think. Much of the current craze around personal wikis or digital gardens originated here, and it’s also an entertaining read (if you’re the kind of person who finds this sort of content fun).</li>
+  <li><a href="http://paulgraham.com/essay.html">The Age of the Essay</a>: A great essay by Paul Graham on the history of the essay, and general writing tips. It touches on how writing helps us think.</li>
+  <li><a href="https://joelhooks.com/digital-garden">My blog is a digital garden, not a blog</a>: One of the original essays that started the digital garden movement. A call to go back to the Old Ways of the web, do away with timelines (the stream) and move back to evergreen pages that are continually being tended.</li>
+  <li><a href="https://maggieappleton.com/garden-history">A Brief History &amp; Ethos of the Digital Garden - Maggie Appleton</a>: A great summary of the Digital Garden movement with beautiful illustrations.</li>
+  <li><a href="https://www.gwern.net/About">About this Website - Gwern</a>: Definitely an inspiration for my wiki.</li>
+</ul>
+
+</div>
+<a href='https://ko-fi.com/R6R3F4NIO' target='_blank' rel="noopener noreferrer nofollow">
+  <img style='border:0px;height:4em;width:auto;' src='https://cdn.ko-fi.com/cdn/kofi5.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' loading='lazy'/></a>
+  <p style='text-align: center;'>
+  <a href="https://twitter.com/intent/tweet?text=Making Notes Work for Me: Reflections after 2 Years of Digital Gardening&url=https://strikingloo.github.io/reflections-digital-gardening%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" title="Share on Twitter!">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em" rel="noopener noreferrer nofollow"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>Share on twitter]</a></p>
+
+<template id="post-delayed-content">
+
+<div class="backButton">
+<a href="https://twitter.com/intent/tweet?text=Making Notes Work for Me: Reflections after 2 Years of Digital Gardening&url=https://strikingloo.github.io/reflections-digital-gardening%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis' title="Share on Twitter!" rel="noopener noreferrer nofollow">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>]</a>
+<br/>
+<a href="/blog/" id='backToBlog' title="Back to blog" rel="noopener noreferrer">[←]</a>
+</div>
+</template>
+<script>
+/*
+const headings = document.querySelectorAll('h2[id],h3[id]');
+for (var heading of headings) {
+    heading.innerHTML = `<a href=#${heading.id}>${heading.innerHTML}</a>`;
+}*/
+function externalLinks() { for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } }
+externalLinks();
+
+function renderBottomButtons(){
+  const templateNode = document.getElementById('post-delayed-content')
+  const templateContentClone = templateNode.content.cloneNode(true) // perform a deep copy
+  document.body.appendChild(templateContentClone)
+}
+
+function scrollEventHandler(){
+ const scrollOffset = window.pageYOffset
+ const browserViewHeight = window.innerHeight
+ if (scrollOffset > browserViewHeight/3) {
+    console.log('done')
+    renderBottomButtons();
+    window.removeEventListener('scroll', scrollEventHandler)
+ }
+}
+window.addEventListener('scroll', scrollEventHandler)
+</script>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@StrikingLoo" />
+<meta name="twitter:title" content="Making Notes Work for Me: Reflections after 2 Years of Digital Gardening" />
+<meta name="twitter:description" content="My thoughts on note taking, personal wikis, digital gardens and zettelkastens." />
+
+<meta name="twitter:image:src" content="https://strikingloo.github.io/resources/post_image/pathway.jpg" />
+<meta property="og:image" content="https://strikingloo.github.io/resources/post_image/pathway.jpg"/>
+
+			
+			</div>
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:lucianostrika44@gmail.com" rel="me" title="email me">✉️</a></li>
+	        		<li><a href="https://github.com/strikingloo" rel="me noopener noreferrer nofollow" title="GitHub"><svg viewBox="0 0 438.549 438.549" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><path fill="#0F3D3E" d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289s4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136s11.704-.476 16.274-1.423c4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"></path></svg></a></li>
+			        <li><a href="https://twitter.com/intent/follow?screen_name=strikingloo" rel="me noopener noreferrer nofollow" title="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg></a></li>
+			        <li><a href="http://www.linkedin.com/in/luciano-strika" rel="me noopener noreferrer nofollow" title="linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M72.16 99.73H9.927a5 5 0 00-5 5v199.928a5 5 0 005 5H72.16a5 5 0 005-5V104.73a5 5 0 00-5-5zM41.066.341C18.422.341 0 18.743 0 41.362 0 63.991 18.422 82.4 41.066 82.4c22.626 0 41.033-18.41 41.033-41.038C82.1 18.743 63.692.341 41.066.341zM230.454 94.761c-24.995 0-43.472 10.745-54.679 22.954V104.73a5 5 0 00-5-5h-59.599a5 5 0 00-5 5v199.928a5 5 0 005 5h62.097a5 5 0 005-5V205.74c0-33.333 9.054-46.319 32.29-46.319 25.306 0 27.317 20.818 27.317 48.034v97.204a5 5 0 005 5H305a5 5 0 005-5V194.995c0-49.565-9.451-100.234-79.546-100.234z"></path></svg></a></li>
+			        <li><a href="/resources/Luciano_Strika.pdf">CV</a></li>
+				</ul>
+				<p><i>Built with ❤️ by <a href="https://strikingloo.github.io/">Strikingloo</a>.</i></p>
+			</footer>
+			
+
+			
+
+			
+			<link rel="preload" href="/css/non-critical-post-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+			<noscript><link rel="stylesheet" href="/css/non-critical-post-min.css"></noscript>
+        	
+		</body>
+	</html>

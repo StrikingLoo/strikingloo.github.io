@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23d8eaeb%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2293%22>🌳</text></svg>" />
+            <title>Synthesis of Event-Based Controllers for Software Engineering</title>
+			<link rel="canonical" href="https://strikingloo.github.io/wiki/synthesis-of-event-based-controllers-for-software-engineering">
+			  <meta name="description" content="Taken from Dipi's paper on using (monolithic) DCS for DES to solve GR(1) goals, plus decoupling of assumptions and safeties and dealing with errors.">
+  			<meta property="og:site_name" content="Synthesis of Event-Based Controllers for Software Engineering">
+
+        	
+        	<link rel="stylesheet" type="text/css" href="/css/post-min.css">
+        	
+
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
+
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-52642322-5');
+			</script>
+			
+			  <meta property="og:description" content="Taken from Dipi's paper on using (monolithic) DCS for DES to solve GR(1) goals, plus decoupling of assumptions and safeties and dealing with errors.">
+			
+	  		<meta property="og:locale" content="en_US">
+	  		
+			  <meta property="og:title" content="Synthesis of Event-Based Controllers for Software Engineering">
+			  <meta property="og:type" content="article">
+		  	  <meta property="article:published_time" content="2021-10-14T00:00:00-03:00">
+		      <meta property="article:author" content="http://localhost:4000/">
+		  	
+		  	
+  				<meta property="og:url" content="https://strikingloo.github.io/wiki/synthesis-of-event-based-controllers-for-software-engineering">
+  			
+  			<meta content="index,follow" name="robots"><!-- All Search Engines -->
+  			<meta content="index,follow" name="googlebot"><!-- Google Specific -->
+  			<meta name="robots" content="max-image-preview:large">
+
+		</head>
+		<body>
+			<div class="head-banner">
+			<p>Strikingloo</p>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about/">About</a></li>
+	        		<li><a href="/wiki/">Wiki</a></li>
+	        		<li><a href="/blog/">Blog </a></li>
+	    		</ul>
+			</nav>
+			<div style="clear: both;"></div>
+		    </div>
+
+			<div class="container">
+			
+			<h1>Synthesis of Event-Based Controllers for Software Engineering</h1>
+<p class="meta">14 Oct 2021 - importance: 3 </p>
+
+
+
+
+<div class="post">
+  <p>(Tesis de D’ipi.)</p>
+
+<p>Behaviour model synthesis is also used to automatically construct plans that
+are then straightforwardly enacted by some software component.</p>
+
+<p>Existing Software Engineering techniques for automatic synthesis of event-based controllers have various limitations. Such limitations can be seen
+as restrictions in the expressiveness of the system goals and environment
+assumptions, the relation between the controllable and monitored actions, or scalability problems.</p>
+
+<p>Most techniques <strong>restrict controller goals and environment assumptions to
+safety properties.</strong> Hence, synthesis can be posed as a backward error propagation variant where a behaviour model is pruned by disabling controllable actions that can lead to undesirable states. However, in many domains, and particularly in the realm of reactive systems, <strong>liveness requirements can be of importance</strong> and having synthesis techniques capable of
+dealing with them is desirable.</p>
+
+<ul>
+  <li><strong>Requirements</strong>: prescriptive statements to be achieved by the machine.</li>
+  <li><strong>System goals</strong>: prescriptive statements to be achieved by the machine and its environment.</li>
+  <li><strong>Environment assumptions</strong>: descriptive statements guaranteed or assumed to be guaranteed by the environment.</li>
+</ul>
+
+<p>When described with LTS or Kripke structures, the model of the environment is assumed to be complete
+up to some level of abstraction (i.e. with respect an alphabet of actions or
+propositions).</p>
+
+<p>The techniques presented in this thesis work for an expressive subset of <strong>liveness properties</strong>, distinguish between controllable and monitored
+actions, and differentiate system goals from environment assumptions.</p>
+
+<p><strong>Descriptive statements</strong> represent properties about the system that hold independently of how the system behaves. Descriptive statements are in indicative mood.</p>
+
+<p><strong>Prescriptive statements</strong> state desirable properties which may hold or not. Indeed, prescriptive statements must be enforced by system components. Naturally, prescriptive statements may be changed, strengthened/weakened or even removed while descriptive cannot.</p>
+
+<p>Este paper usa LTS y LTL para describir el environment y los goals.</p>
+
+<p>FLTL es Fluent LTL. Usa Fluents que son Fl = &lt; As , At, {True,False}&gt;. Dada una traza w en (Act*), se satisface w,i |= Fl sii para algun k anterior a i wi in As, y ningun j &gt; k tq wk in At. Notar que AtUAs in Act.</p>
+
+<p>A restricted LTS control problem for expressive subset of temporal properties that includes liveness and allows for a polynomial
+solution.</p>
+
+<p>Nevertheless, restrictions on the form of the goal and assumptions specification have been studied and found to be solvable in polynomial time. For example, goal specifications consisting uniquely of safety requirements can be solved in polynomial time, and so can particular styles of liveness properties such as [AMPS98] and GR(1) under the assumption of full observability. The latter can be seen as an extension of [AMPS98] to a more expressive liveness fragment of LTL.</p>
+
+<p><img src="image/define_gr.png" alt="" />
+<img src="image/define_gr1.png" alt="" /></p>
+
+<p>A responsiveness goal has the form: [](P -&gt; &lt;&gt;Q )</p>
+
+<p><strong>Best Effort Controller</strong>: If this controller achieves G after sequence σ, by forcing the environment to not comply with assumptions, then no other controller could have won G <em>without breaking the assumptions</em> after σ.</p>
+
+<p><strong>Assumption Preserving Controller</strong>: stronger criterion than best effort: if σ finite in Tr(E||M) and there is no σ’ st σ.σ’ |= As, then no σ’’ exists st σ.σ’’ in Tr(E) and σ.σ’’ |= I \^ As. En criollo: si no hay forma de seguir esta traza y mantener las asunciones usando tu controller, entonces tampoco la habia en el environment irrestricto.</p>
+
+<p><strong>Assumption compatibility</strong>: for every state in E there is no strategy for the controller to falsify As. That is, for every state s, there is no solution to the problem E’s = &lt;Es, H’, Ac&gt; where Es is E with s as initial state and H’ changes &lt;As, G&gt; for &lt;As, False&gt;. If this happens, we say environment E is compatible with assumptions As.</p>
+
+<h2 id="solving-sgr1-problems">Solving SGR(1) problems</h2>
+<p>We construct a GR(1) game G from SGR(1) LTS control problem E in a straightforward manner.</p>
+<ul>
+  <li>For every s in E, k a fluent that appears in As or G, we make s’ in G st s’ = (s, true, true, false…) st the sequence of booleans assigns a boolean to each fluent. We get 2^k * |S| states in G.</li>
+  <li>The transition relationship is defined as you’d expect, except state s gets no outward edges if it breaks safety.</li>
+  <li>the goal is defined as gr(fii, psii) where fii is a property in an Assumption, psii in a goal.</li>
+</ul>
+
+<p>Note that the safety part of the specification is not encoded as part of the
+wining condition ϕg of the GR(1) game, rather it is encoded as a deadlock
+avoidance problem when constructing Γ− and Γ+.</p>
+
+<p>From a strategy σ,u we construct an MTS M = (Sm, A, Dm, sM0) such that:</p>
+<ul>
+  <li>Sm ⊆ Ω × Sg;  ∆M ⊂ SM × A × SM contains all non-controllable transitions and all controllable ones allowed by strategy. Initial state = Sg0.</li>
+</ul>
+
+<p>It can be shown that this strategy is complete and correct.</p>
+
+<h2 id="concrete-algorithm">Concrete Algorithm</h2>
+<p>The rank for a particular successor will measure the “distance”
+to the next goal in terms of the number of times that all assumptions will be
+satisfied before reaching the goal. If this number tends to infinity then this
+means that from the current state a trace is possible in which the environment assumptions hold infinitely often but the system goals do not.</p>
+
+<p>Intuitively, Rj (sg) = (k, l) means that in order to reach
+from sg a state in which γj holds, all paths will make assumption φl hold at most k times, φ1 through φl−1 will hold at least k + 1 times and assumptions
+φl+1 through φn will hold at least k times. R(s) = ∞ means that s is a
+loosing state, i.e. from s there is no strategy for the controller that can avoid
+a trace which satisfies infinitely often all assumptions but does not satisfy
+infinitely often all goals.
+Osea, k es cuantas veces, y l es la asuncion de minimo indice que se sostiene como mucho k veces. Todas las anteriores se sostendran como minimo k+1 veces y todas las posteriores minimo k.</p>
+
+<p>We do a fixpoint where every state sg has a rank for goal j based on rank of its successors. If sg is controllable it chooses the successor with the least rank to goal j. Unless sg satisfies goal j, whereupon it will move towards the next goal in the ring. If sg is non-controllable, we make its successor the worst case scenario, i.e. the non-controllable event that leads to the highest rank for goal j happens.</p>
+
+<p><img src="image/explain_rank.png" alt="" /></p>
+
+<p>Function sr(sg, j) computes the rank of the successor state that should be
+used to compute Rj (sg). It does so assuming that ranks of all successor states
+have been previously computed.</p>
+
+<p>In order to compute the true ranks of all
+states, we must do a fixed point iteration. The fixed point is when the rank
+of every state is stable with respect to every goal.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Every rank greater than (max_j max_i</td>
+      <td>φi − γj</td>
+      <td>, n) is effectively equivalent to ∞, where</td>
+      <td>φi − γj</td>
+      <td>is the number of states in G that satisfy φi and do not satisfy γj.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The Algorithm has three steps:</p>
+<ul>
+  <li>Initialize ranking so everyone has Rj(s) = (0,1)</li>
+  <li>Iterate sr until the ranking is stable. If it is not, some rank needs to be increased.</li>
+  <li>If a node has a rank &gt; the maximum, it is losing. set it to infinity.
+If ranking is stable and initial node has rank &lt; infinity, then it’s winning.</li>
+</ul>
+
+<p>By completeness, every state with a non-infinite rank has a winning strategy.</p>
+
+<ul>
+  <li>Duda pag 73 dipipaper: However, if the successors of sg are winning then, as γj holds in sg, no assumptions need to be visited before satisfying γj . Hence, best possible rank is (0, 1). Aca pone un 1 pero no es l el numero de asuncion?  Solved! dice que puede avanzar y no pasamos por todas las asunciones en el medio (porque no tengo que pasar por ningun lado, estoy por despachar el goal) entonces significa que logras llegar a j+1 sin cumplir todas. 1 es arbitrario ish.</li>
+</ul>
+
+<p>At high level, the algorithm has two major parts, the initialisation and the stabilisation.</p>
+
+<p>The initialisation sets the initial rank for every state in the game and initialises the queue of states pending to be processed. All states start on (0,1) except deadlocks on inf.</p>
+
+<p>The stabilisation part is a fixed point that iterates on pending until is it empty.</p>
+
+<p>The function unstablePred(state,g) returns a set of pairs of predecessors of state and a rankings g for which the ranking is unstable.</p>
+
+<p>The function best(state,g) returns the value of best(state, g), as defined above.</p>
+
+<p>inc((k, l),state, g) returns (0, 1) if state is in γg, it returns (k, l) if state is not in assumption-l, and it returns the minimal value greater than (k, l) otherwise.</p>
+
+<h3 id="pseudocode">Pseudocode</h3>
+
+<p>As follows:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for g in guarantees: rank(g,state) = (0,1) forall state in states
+
+Queue pending;
+
+for g in guarantees, state in states: if state in assumption-l and state not in g: pending.push(pair\&lt;state, g\&gt;)
+
+for state in states, g in guarantees: if state is deadlock: rank(g, state) = inf; pending.push(unstablePred(\&lt;state, g\&gt;)
+
+While (!pending.empty) { 
+	state, g = pending.pop();
+	if (rank_g(state)== inf) cont;
+	if (is_stable(rank_g(state))) cont;
+	rank_g(state)=inc(best(state,g),state,g);
+	pending.push(unstablePred(state,g));
+}
+</code></pre></div></div>
+<h2 id="case-studies">Case studies</h2>
+
+<p>Following the World-Machine model i.e., properly
+modelling the relevant descriptive and prescriptive statements, helped us discover the required environmental assumptions on the user behaviour which
+allow for guaranteeing the satisfaction of the prescriptive goals.</p>
+
+<p>The assumption mentioned (if the controller tries often enough,
+it will eventually succeed) is a typical fairness condition sometimes referred
+to as strong fairness</p>
+
+<p>We distinguish failures from other actions as follows. For each control problem we define a set of try-response triples. Such a triple captures the relation
+between controlled actions and their success or fail reactions. Note that we
+require 1) the “try” action to be controlled, 2) all actions in a try-response
+triple to be unique with respect to other triples in the set, 3) re-tries cannot
+occur before a response, 4) responses can only occur as a result of a try, 5)
+maximum of one response occurs for every try, and 6) the decision of whether to fail or succeed cannot be enforced by other actions, hence failure is
+enabled if and only if success is enabled.</p>
+
+<p>The following definition captures this stronger notion of fairness. It requires
+that for every transition labelled with a try, if it is taken infinitely often then
+infinitely often success occurs before another try.</p>
+
+<p>They do this to solve the problem of two cooks: if I have two states which make a try at the same action, I could satisfy a strong fairness condition ([]&lt;&gt;a -&gt; []&lt;&gt;b) half the time making them succeed, but still the double link chain will be breaking.</p>
+
+<p>t-strong fair with respect to E and T = {(Try-i , Suc-i , fail-i)}: For all transitions t = (s, try-i, s’) the following holds: pi |= []&lt;&gt;try-i -&gt; []&lt;&gt;(¬try-i U suc i).
+Creo que dice “siempre que intentas, eventualmente tenes exito” pero no estoy 100% seguro.</p>
+
+<p>As π is strong independent fair, the try-transition must be successful and infinitely often no failures occur before assumptions occur.</p>
+
+<hr />
+<p>The change from state-based to event-based semantics introduces the need for
+determinism of the environment to guarantee that the controller has sufficient
+information about the state of the environment to guarantee it satisfies its
+goals</p>
+
+<ul>
+  <li>Que es el n en pagina 74 en este rank?</li>
+  <li>Pag 77 que diferencia entre pushear unstable y pushear pair?</li>
+  <li>
+    <p>Lemma 3.1. determinacy qué esta diciendo?</p>
+  </li>
+  <li>El case study 3.8.1 con el robot es compositional en naturaleza y puede servir para el otf-gr1.</li>
+  <li>
+    <p>Strong independent fairness te la debo.</p>
+  </li>
+  <li>Hence, there is a wide spectrum of optimisation techniques that have yet to be evaluated as possible improvements of our implementation, such as partial order reduction or bit caching</li>
+</ul>
+
+</div>
+<a href='https://ko-fi.com/R6R3F4NIO' target='_blank' rel="noopener noreferrer nofollow">
+  <img style='border:0px;height:4em;width:auto;' src='https://cdn.ko-fi.com/cdn/kofi5.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' loading='lazy'/></a>
+  <p style='text-align: center;'>
+  <a href="https://twitter.com/intent/tweet?text=Synthesis of Event-Based Controllers for Software Engineering&url=https://strikingloo.github.io/wiki/synthesis-of-event-based-controllers-for-software-engineering%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" title="Share on Twitter!">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em" rel="noopener noreferrer nofollow"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>Share on twitter]</a></p>
+
+<template id="post-delayed-content">
+
+<div class="backButton">
+<a href="https://twitter.com/intent/tweet?text=Synthesis of Event-Based Controllers for Software Engineering&url=https://strikingloo.github.io/wiki/synthesis-of-event-based-controllers-for-software-engineering%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis' title="Share on Twitter!" rel="noopener noreferrer nofollow">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>]</a>
+<br/>
+<a href="/blog/" id='backToBlog' title="Back to blog" rel="noopener noreferrer">[←]</a>
+</div>
+</template>
+<script>
+/*
+const headings = document.querySelectorAll('h2[id],h3[id]');
+for (var heading of headings) {
+    heading.innerHTML = `<a href=#${heading.id}>${heading.innerHTML}</a>`;
+}*/
+function externalLinks() { for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } }
+externalLinks();
+
+function renderBottomButtons(){
+  const templateNode = document.getElementById('post-delayed-content')
+  const templateContentClone = templateNode.content.cloneNode(true) // perform a deep copy
+  document.body.appendChild(templateContentClone)
+}
+
+function scrollEventHandler(){
+ const scrollOffset = window.pageYOffset
+ const browserViewHeight = window.innerHeight
+ if (scrollOffset > browserViewHeight/3) {
+    console.log('done')
+    renderBottomButtons();
+    window.removeEventListener('scroll', scrollEventHandler)
+ }
+}
+window.addEventListener('scroll', scrollEventHandler)
+</script>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@StrikingLoo" />
+<meta name="twitter:title" content="Synthesis of Event-Based Controllers for Software Engineering" />
+<meta name="twitter:description" content="Taken from Dipi's paper on using (monolithic) DCS for DES to solve GR(1) goals, plus decoupling of assumptions and safeties and dealing with errors." />
+
+<meta name="twitter:image:src" content="https://strikingloo.github.io/resources/book-tw.jpg"/>
+<meta property="og:image" content="https://strikingloo.github.io/resources/preview-image-terrarium.png"/>
+
+			
+			</div>
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:lucianostrika44@gmail.com" rel="me" title="email me">✉️</a></li>
+	        		<li><a href="https://github.com/strikingloo" rel="me noopener noreferrer nofollow" title="GitHub"><svg viewBox="0 0 438.549 438.549" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><path fill="#0F3D3E" d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289s4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136s11.704-.476 16.274-1.423c4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"></path></svg></a></li>
+			        <li><a href="https://twitter.com/intent/follow?screen_name=strikingloo" rel="me noopener noreferrer nofollow" title="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg></a></li>
+			        <li><a href="http://www.linkedin.com/in/luciano-strika" rel="me noopener noreferrer nofollow" title="linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M72.16 99.73H9.927a5 5 0 00-5 5v199.928a5 5 0 005 5H72.16a5 5 0 005-5V104.73a5 5 0 00-5-5zM41.066.341C18.422.341 0 18.743 0 41.362 0 63.991 18.422 82.4 41.066 82.4c22.626 0 41.033-18.41 41.033-41.038C82.1 18.743 63.692.341 41.066.341zM230.454 94.761c-24.995 0-43.472 10.745-54.679 22.954V104.73a5 5 0 00-5-5h-59.599a5 5 0 00-5 5v199.928a5 5 0 005 5h62.097a5 5 0 005-5V205.74c0-33.333 9.054-46.319 32.29-46.319 25.306 0 27.317 20.818 27.317 48.034v97.204a5 5 0 005 5H305a5 5 0 005-5V194.995c0-49.565-9.451-100.234-79.546-100.234z"></path></svg></a></li>
+			        <li><a href="/resources/Luciano_Strika.pdf">CV</a></li>
+				</ul>
+				<p><i>Built with ❤️ by <a href="https://strikingloo.github.io/">Strikingloo</a>.</i></p>
+			</footer>
+			
+
+			
+
+			
+			<link rel="preload" href="/css/non-critical-post-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+			<noscript><link rel="stylesheet" href="/css/non-critical-post-min.css"></noscript>
+        	
+		</body>
+	</html>

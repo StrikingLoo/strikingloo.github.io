@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23d8eaeb%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2293%22>🌳</text></svg>" />
+            <title>Directed Controller Synthesis for Discrete Events Systems</title>
+			<link rel="canonical" href="https://strikingloo.github.io/wiki/DCS-DES-phd-thesis">
+			  <meta name="description" content="Notas para la tesis, tomadas mientras leia el segundo paper del material de lectura. (Tesis doctoral de Daniel Alfredo Ciolek)">
+  			<meta property="og:site_name" content="Directed Controller Synthesis for Discrete Events Systems">
+
+        	
+        	<link rel="stylesheet" type="text/css" href="/css/post-min.css">
+        	
+
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
+
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-52642322-5');
+			</script>
+			
+			  <meta property="og:description" content="Notas para la tesis, tomadas mientras leia el segundo paper del material de lectura. (Tesis doctoral de Daniel Alfredo Ciolek)">
+			
+	  		<meta property="og:locale" content="en_US">
+	  		
+			  <meta property="og:title" content="Directed Controller Synthesis for Discrete Events Systems">
+			  <meta property="og:type" content="article">
+		  	  <meta property="article:published_time" content="2021-09-21T00:00:00-03:00">
+		      <meta property="article:author" content="http://localhost:4000/">
+		  	
+		  	
+  				<meta property="og:url" content="https://strikingloo.github.io/wiki/DCS-DES-phd-thesis">
+  			
+  			<meta content="index,follow" name="robots"><!-- All Search Engines -->
+  			<meta content="index,follow" name="googlebot"><!-- Google Specific -->
+  			<meta name="robots" content="max-image-preview:large">
+
+		</head>
+		<body>
+			<div class="head-banner">
+			<p>Strikingloo</p>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about/">About</a></li>
+	        		<li><a href="/wiki/">Wiki</a></li>
+	        		<li><a href="/blog/">Blog </a></li>
+	    		</ul>
+			</nav>
+			<div style="clear: both;"></div>
+		    </div>
+
+			<div class="container">
+			
+			<h1>Directed Controller Synthesis for Discrete Events Systems</h1>
+<p class="meta">21 Sep 2021 - importance:  </p>
+
+
+
+
+<div class="post">
+  <p>” Interestingly, the three disciplines share
+the important characteristic that input specifications are given via compact
+descriptions.”</p>
+
+<p>That is, the problems’ semantics are based on sorts of transitions systems, which are often exponential with respect to the size of these compact
+descriptions.</p>
+
+<p>In supervisory control, DES are expressed compactly by relying on a modular
+approach based on the parallel composition of multiple interacting components, referred to as the plant.</p>
+
+<p>Supervisory control aims at controlling
+DES to achieve certain guarantees, this is done by deploying a so-called
+“supervisor” that dynamically disables controllable events while monitoring
+uncontrollable events. Traditional supervisory control techniques look for
+maximally permissive supervisors, which has been argued to require a prohibitive computational cost. Directors (i.e., minimally permissive supervisors) have been proposed as a computational efficient alternative, still
+effective synthesis procedures have not yet been developed for this particular
+case.</p>
+
+<p>Three different representations are mentioned in the literature:</p>
+<ul>
+  <li>Supervisory Control (we’ll do this one)</li>
+  <li>Reactive Synthesis (the declarative specification is made using LTL or CTL -Computational Tree Logic, a different temporal logic-)</li>
+  <li>Automated Planning (mostly developed for deterministic systems, you specify preconditions, post-conditions and a goal)</li>
+</ul>
+
+<p>All the different representations can be modeled with finite transition systems.</p>
+
+<p>In spite of considering problem definitions with
+subtle variations, the three areas can be seen as looking for a system subset
+satisfying a given property.</p>
+
+<p>Usually in planning, the goal is to reach a particular state, that is, a reachability objective. Instead, in reactive synthesis, 
+liveness requirement such as a Buchi acceptance condition, is pursued.
+Whereas, in supervisory control we look for a subset of the system that can
+always continue to be productive</p>
+
+<p>state explosion has been
+dealt with in the three fields relying on different approaches.</p>
+
+<p>supervisory control compositional analyses are performed on
+individual components allowing for a (potentially) efficient merging procedure that meets the problem requirements</p>
+
+<p>we review techniques from the different fields and,
+by combining them, we devise a novel algorithmic solution called Directed
+Controller Synthesis (D C S)</p>
+
+<p>The main contributions of this thesis can be summarized as follows:</p>
+<ul>
+  <li>A novel algorithmic approach (D C S) to solve the compositional supervisory control problem, inspired by the combination of techniques from the fields of supervisory control, reactive synthesis and automated planning. Can handle much larger problem sizes than SotA.</li>
+  <li>A polynomial-time compilation for supervisory control.</li>
+</ul>
+
+<h2 id="preliminaries">Preliminaries</h2>
+
+<p>A common approach to relate different fields tackling similar problems is to provide translations between their problem formalizations.</p>
+
+<p>Summarizing, the synthesis of operational strategies with partially observable
+and non-deterministic environments is a problem with many facets. In this
+thesis we consider the synthesis problem under these settings, and compare
+the approaches taken in the three fields highlighting their differences. Furthermore, we propose an extension to our on-the-fly compositional method avoiding the blowup induced by determinization steps, thus permitting greater
+scalability</p>
+
+<p>A A compositional supervisory control problem is defined by two elements, first
+a set of intervening components and, second, a partition of the event set of
+the plant in controllable and uncontrollable events.</p>
+
+<p>We compose the components through synchronous product, whereupon the marked states for the product will turn out to be those such that each corresponding state in the tuple is a marked state in its corresponding component.</p>
+
+<p>Given a set of automata
+and a partition of the event set, we look for a supervisor that can disable
+some of the controllable events and monitor uncontrollable events; such that
+every word in the language generated by the restricted plant can be extended
+to a word in the language accepted by the plant.</p>
+
+<p>A solution for E is a supervisor σ (va de A* -&gt; Ae -cadenas a eventos-), tq σ is:</p>
+<ul>
+  <li>Controlable: para todo w, σ(w) contiene todos los Au</li>
+  <li>Non-blocking: para todo w tq w en Lσ(E), existe w’ tq ww’ en Lσ(E) y ê -&gt; e_m, con e_m en Me, ê el inicial.</li>
+</ul>
+
+<p>That is, a supervisor σ is said to be controllable (or admissible) if it only disables controllable events; and it is non-blocking if it is able to restrict the language generated by the plant E to a set of strings that can always be extended to reach a marked state.</p>
+
+<p>Maximality comes at a cost in complexity
+and hence there is a growing interest in less ambitious solution concepts such
+as directors, which require controllers to enable at most one controllable
+event at each state. Thus, here we follow this trend away from maximality
+and accept a supervisor satisfying solely the base requirements.</p>
+
+<p>The results show that our translations allow to transparently
+apply techniques from reactive synthesis and automated planning with an
+efficiency that rivals that of native supervisory control tools.</p>
+
+<p>In fact, mixed states represent a race condition that, in worst case, can always
+be won by the plant, and hence if there is a solution to the control problem,
+it must necessarily have a solution on the occurrence of the uncontrollable
+events.</p>
+
+<p>Part 4 gives supervisory control as reactive synthesis, an equivalence/translation proof by construction between supervisors and strategies, supervisory control problems and CTL formulas.</p>
+
+<p>The theorem states:</p>
+<blockquote>
+  <p>Let E be a compositional supervisory control problem and let ϕE the CTL formula obtained by following the above proposed translation from E. Then, there exists a supervisor σ for E if and only if there exists a strategy δ for ϕE. In addition, σ can be constructed from δ and vice versa.</p>
+</blockquote>
+
+<p>From the benchmarks:
+Despite relying on a compositional analysis S U P R E M I C A performs only slightly better than the monolithic approach (implemented by M T S A). Interestingly, in spite of being native to supervisory control, it solves less instances of the benchmark than other tools working under our encoding.</p>
+
+<p>The translationbased approach to supervisory control is viable since the computational overhead introduced by the translation is negligible with respect of the cost of
+solving the synthesis problem.</p>
+
+<h2 id="the-algorithm">The Algorithm</h2>
+
+<p>The on-the-fly exploration procedure is a modification of Best First Search (a
+classical informed search procedure) adapted to account for uncontrollable
+events. We perform a forward exploration, keeping a priority queue of open
+states ordered by their estimated distance to a goal, and initialized only with
+the initial state e¯.
+At each iteration we take the highest “priority” state e from
+the queue and, by following its first unexplored event, we expand a child
+state e’ adding it to the exploration structure. If we identify e’ as a goal or
+an error we prune the exploration. Otherwise, applying the heuristic to e’
+we obtain a ranking of its enabled events, and then we insert e’
+in the open
+queue (considering the “priority” of e’ to be the estimated distance of its first
+unexplored event).</p>
+
+<p>Every time a loop is closed by following a transition from a state
+e to a state e’, we need to inspect the exploration structure to decide if the
+state is a goal, an error, or so far undetermined. In order to do this we check
+whether e belongs to a Controllably Connected Component (CCC) unfolding
+from e’, that is, a set C of the states reachable from e’
+for which: (a) all uncontrollable transitions lead back to C; and (b) for states where there are no
+enabled uncontrollable events, at least one controllable transition also leads</p>
+
+<p>The exploration process is repeated until a marked CCC containing the initial
+state is discovered, or until arriving to the conclusion that such a CCC does
+not exist.</p>
+
+<p>If the open queue becomes empty or the initial state is flagged
+as an error, D C S reports that the problem is unrealizable (i.e., there is no
+supervisor). Whereas, if the initial state is flagged as a goal (i.e., belongs to
+a marked CCC) we build a supervisor by following, from the initial state, the
+transitions connecting states also flagged as goals.</p>
+
+<h3 id="state-propagation">State Propagation</h3>
+
+<ul>
+  <li>The error status is propagated when a transition leads to a state already flagged as error and when expanding a deadlock state (since we know for certain that this prevents achieving the goal).</li>
+  <li>The goal status is propagated when a transition leads to a state already flagged
+as a goal and upon discovering a marked CCC.</li>
+  <li>The undetermined status is propagated when closing a loop over a state that does not belong to a marked CCC, but from which there could still be unexplored paths leading to such a goal. We do this in an orderly fashion propagating the status information from e back to its ancestors.</li>
+</ul>
+
+<p><strong>Definition of CCC</strong>
+<img src="image/definition_CCC.png" alt="" loading="lazy" /></p>
+
+<p>The heuristic function takes a state e and the ES, and returns a ranking
+of the events enabled from e. Heuristic functions may extract useful
+information from the ES, such as the marked states visited in the path
+from the initial state to e.</p>
+
+<p><strong>Definition of predecessors</strong>:
+<img src="image/predecessors_definition.png" alt="" loading="lazy" /></p>
+
+<p>all reachable uncontrollable transitions are included in fully uncontrollable
+states, and at least one controllable transition is included in fully controllable
+states. Moreover, in mixed states all uncontrollable transitions are included,
+and if no such transition leads to a marked state then at least one controllable
+transition with this property is included too. Thus, the result is a valid nonblocking supervisor.</p>
+
+<p>The proof follows from the fact that for D C S to return a supervisor,
+the initial state e¯ has to be flagged as a goal. Thus, there must be a marked
+CCC C containing e¯. In such a case, it is straightforward to see that we can
+extract a supervisor from C (i.e., restricting the plant to remain within C).</p>
+
+<p><strong>Controllable</strong>: For this not to hold, σ must disable some uncontrollable event from a state in which the event is enabled.</p>
+
+<p><strong>Non-blocking</strong>:  for this not to hold, there must exist a word w ∈ Lσ(E) such that w cannot be extended to reach a marked state.</p>
+
+<p>We guide A* with the precomputed number of steps between states of Ei. 
+The accumulated cost of a path explored by A* is the sum of distances of the steps in the path. Since the number of steps underestimates the distance, A* is guaranteed to return the shortest path to a target state of Ei.
+Interestingly, we can avoid repeating the work performed by A* by caching the paths explored for each state. That is, in worst case, A* needs to consider every state only once.</p>
+
+<p>The ranking is generated by the rank function, which sorts <strong>uncontrollable events in descending order and then appends controllable events sorted in ascending order</strong>.</p>
+
+<p>The exponential complexity presented by the CM problem has a big
+impact on D C S. D C S solves the largest number of instances for each
+case except for CM and TA. Remarkably, M Y N D manages to solve many
+instances of these difficult problems.</p>
+
+<h3 id="dudas">Dudas:</h3>
+<ul>
+  <li>Al final la heuristica MA cuando llama a A*, el camino mas corto lo computa usando como peso las distancias que tienen en cuenta el orden de los eventos (blocking)?</li>
+</ul>
+
+<p>### Next Steps:</p>
+<ul>
+  <li>Paralelizar? Podemos agregar un edge nuevo y solo bloquear para propagar (si un estado sigue en unknown podemos pisarlo, nunca pisamos un known) Cuanta es la ganancia posible? Las heuristicas son tambien algunas trivialmente paralelizables (random, RA).</li>
+  <li>Estudiar casos de uso de DCS en la industria y generar benchmarks relevantes a tales casos, + ver optimizaciones del algoritmo que aprovechen topografias tipicas? (no prometo que tal cosa exista, pero sí me da mucha curiosidad). Tambien ver si los bottlenecks en casos reales suelen ser memoria, tiempo o que onda. Basicamente: domain independent? Let’s try domain dependent. Puntualmente, si “We believe that the
+potential for cross-fertilization is still abundant and that, in spite of complexity barriers, advances in this direction will get us closer to handle practical
+problems from numerous application domains.” me encantaria armar una noologia, un set de problemas de dominio de aplicacion que hoy en dia no manejamos con DCS (y potencialmente, hallar como abarcarlos).</li>
+  <li>“Soft goals, that is, optimization criteria associated with time or cost models, could also be studied.” Esto me llama mucho la atencion si es lo que creo que es (ponerle precio a los goals y buscar los mas caros?) pero no lei la referencia aun.</li>
+  <li>Limpieza previa? Hacemos que cada componente pierda los nodos que sabemos no alcanzan (DFS-reverso) un nodo marcado.</li>
+</ul>
+
+
+</div>
+<a href='https://ko-fi.com/R6R3F4NIO' target='_blank' rel="noopener noreferrer nofollow">
+  <img style='border:0px;height:4em;width:auto;' src='https://cdn.ko-fi.com/cdn/kofi5.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' loading='lazy'/></a>
+  <p style='text-align: center;'>
+  <a href="https://twitter.com/intent/tweet?text=Directed Controller Synthesis for Discrete Events Systems&url=https://strikingloo.github.io/wiki/DCS-DES-phd-thesis%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" title="Share on Twitter!">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em" rel="noopener noreferrer nofollow"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>Share on twitter]</a></p>
+
+<template id="post-delayed-content">
+
+<div class="backButton">
+<a href="https://twitter.com/intent/tweet?text=Directed Controller Synthesis for Discrete Events Systems&url=https://strikingloo.github.io/wiki/DCS-DES-phd-thesis%2F%3Futm_source%3Dtwitter%26utm_medium%3Dsocial&via=strikingLoo" id='tweetThis' title="Share on Twitter!" rel="noopener noreferrer nofollow">[<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#1DA1F2" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg>]</a>
+<br/>
+<a href="/blog/" id='backToBlog' title="Back to blog" rel="noopener noreferrer">[←]</a>
+</div>
+</template>
+<script>
+/*
+const headings = document.querySelectorAll('h2[id],h3[id]');
+for (var heading of headings) {
+    heading.innerHTML = `<a href=#${heading.id}>${heading.innerHTML}</a>`;
+}*/
+function externalLinks() { for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } }
+externalLinks();
+
+function renderBottomButtons(){
+  const templateNode = document.getElementById('post-delayed-content')
+  const templateContentClone = templateNode.content.cloneNode(true) // perform a deep copy
+  document.body.appendChild(templateContentClone)
+}
+
+function scrollEventHandler(){
+ const scrollOffset = window.pageYOffset
+ const browserViewHeight = window.innerHeight
+ if (scrollOffset > browserViewHeight/3) {
+    console.log('done')
+    renderBottomButtons();
+    window.removeEventListener('scroll', scrollEventHandler)
+ }
+}
+window.addEventListener('scroll', scrollEventHandler)
+</script>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@StrikingLoo" />
+<meta name="twitter:title" content="Directed Controller Synthesis for Discrete Events Systems" />
+<meta name="twitter:description" content="Notas para la tesis, tomadas mientras leia el segundo paper del material de lectura. (Tesis doctoral de Daniel Alfredo Ciolek)" />
+
+<meta name="twitter:image:src" content="https://strikingloo.github.io/resources/book-tw.jpg"/>
+<meta property="og:image" content="https://strikingloo.github.io/resources/preview-image-terrarium.png"/>
+
+			
+			</div>
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:lucianostrika44@gmail.com" rel="me" title="email me">✉️</a></li>
+	        		<li><a href="https://github.com/strikingloo" rel="me noopener noreferrer nofollow" title="GitHub"><svg viewBox="0 0 438.549 438.549" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><path fill="#0F3D3E" d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8-33.598-19.607-70.277-29.408-110.063-29.408-39.781 0-76.472 9.804-110.063 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.854 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-.571-.049-5.708-.144-15.417a2549.81 2549.81 0 01-.144-25.406l-6.567 1.136c-4.187.767-9.469 1.092-15.846 1-6.374-.089-12.991-.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-.572-1.335-.098-2.43 1.427-3.289s4.281-1.276 8.28-1.276l5.708.853c3.807.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136s11.704-.476 16.274-1.423c4.565-.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.161 41.825-81.126 41.825-128.906-.01-39.771-9.818-76.454-29.414-110.049z"></path></svg></a></li>
+			        <li><a href="https://twitter.com/intent/follow?screen_name=strikingloo" rel="me noopener noreferrer nofollow" title="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M302.973 57.388a117.512 117.512 0 01-14.993 5.463 66.276 66.276 0 0013.494-23.73 5 5 0 00-7.313-5.824 117.994 117.994 0 01-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 00-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 01-8.907-3.977 5 5 0 00-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 01-5.063-.735 4.998 4.998 0 00-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 01-14.095-.826 5 5 0 00-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 00-6.182-7.351z"></path></svg></a></li>
+			        <li><a href="http://www.linkedin.com/in/luciano-strika" rel="me noopener noreferrer nofollow" title="linkedin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" height="1em" width="1em"><path fill="#0F3D3E" d="M72.16 99.73H9.927a5 5 0 00-5 5v199.928a5 5 0 005 5H72.16a5 5 0 005-5V104.73a5 5 0 00-5-5zM41.066.341C18.422.341 0 18.743 0 41.362 0 63.991 18.422 82.4 41.066 82.4c22.626 0 41.033-18.41 41.033-41.038C82.1 18.743 63.692.341 41.066.341zM230.454 94.761c-24.995 0-43.472 10.745-54.679 22.954V104.73a5 5 0 00-5-5h-59.599a5 5 0 00-5 5v199.928a5 5 0 005 5h62.097a5 5 0 005-5V205.74c0-33.333 9.054-46.319 32.29-46.319 25.306 0 27.317 20.818 27.317 48.034v97.204a5 5 0 005 5H305a5 5 0 005-5V194.995c0-49.565-9.451-100.234-79.546-100.234z"></path></svg></a></li>
+			        <li><a href="/resources/Luciano_Strika.pdf">CV</a></li>
+				</ul>
+				<p><i>Built with ❤️ by <a href="https://strikingloo.github.io/">Strikingloo</a>.</i></p>
+			</footer>
+			
+
+			
+
+			
+			<link rel="preload" href="/css/non-critical-post-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+			<noscript><link rel="stylesheet" href="/css/non-critical-post-min.css"></noscript>
+        	
+		</body>
+	</html>
