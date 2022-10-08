@@ -50,12 +50,10 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: h2 step
-        run: sed -iE "s/\<h2 id=\"\(.*\)\"\>\(.*\)\<\/h2\>/\<h2 id=\"\1\"\>\<a href=\"#\1\"\>\2\<\/a\>\<\/h2\>/g" ./_site/wiki/*.html ./_site/*.html
-        shell: bash
-
-      - name: h3 step
-        run: sed -iE "s/\<h3 id=\"\(.*\)\"\>\(.*\)\<\/h3\>/\<h3 id=\"\1\"\>\<a href=\"#\1\"\>\2\<\/a\>\<\/h3\>/g" ./_site/wiki/*.html ./_site/*.html
+      - name: fix headers
+        run: |
+           chmod +x ./add_header_links.sh
+           ./add_header_links.sh
         shell: bash
 
       - name: hidden
