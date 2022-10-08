@@ -50,6 +50,17 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      - name: h2 step
+        run: sed -iE "s/\<h2 id=\"\(.*\)\"\>\(.*\)\<\/h2\>/\<h2 id=\"\1\"\>\<a href=\"#\1\"\>\2\<\/a\>\<\/h2\>/g" ./_site/wiki/*.html ./_site/*.html
+        shell: bash
+
+      - name: h3 step
+        run: sed -iE "s/\<h3 id=\"\(.*\)\"\>\(.*\)\<\/h3\>/\<h3 id=\"\1\"\>\<a href=\"#\1\"\>\2\<\/a\>\<\/h3\>/g" ./_site/wiki/*.html ./_site/*.html
+        shell: bash
+
+      - name: hidden
+        run: echo 'hidden' > './_site/hidden.html'
+
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
