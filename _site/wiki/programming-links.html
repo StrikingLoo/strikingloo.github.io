@@ -119,11 +119,11 @@ grid-template: auto 1fr auto / auto 1fr auto</p>
 </div>
 </template>
 <script>
-/*
+
 const headings = document.querySelectorAll('h2[id],h3[id]');
 for (var heading of headings) {
     heading.innerHTML = `<a href=#${heading.id}>${heading.innerHTML}</a>`;
-}*/
+}
 function externalLinks() { for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) { var b = c[a]; b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank") } }
 externalLinks();
 
