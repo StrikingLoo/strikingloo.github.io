@@ -23,7 +23,7 @@
   text-decoration: none;
   font-weight: bold;
   background-color: var(--header-anchor-color);
-  color: var(--bkg);
+  color: #ffffff;
   border-radius: 4%;
 }
 

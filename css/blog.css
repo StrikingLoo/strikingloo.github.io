@@ -27,7 +27,7 @@
     font-size: 1.4em;
     text-align: center;
     font-weight: bold;
-    color: var(--bkg);
+    color: #ffffff;
 }
 
 .posts li a:hover {border-bottom: 3px solid var(--bkg);}

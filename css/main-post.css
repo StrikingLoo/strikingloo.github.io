@@ -1,8 +1,8 @@
 :root {
-  --bkg: #F6F6F6; 
+  --bkg: #F6F8FA; 
   --font-color: #100F0F; 
   --header-anchor-color: #0F3D3E; 
-  --anchor-hover-color: #5bb; 
+  --anchor-hover-color: #5bc; 
   --wiki-bkg-color-hover: #2F5D5E; 
 }
 
@@ -91,7 +91,7 @@ nav a {
     padding: 0.8em;
     border-radius: 5%;
     background-color: var(--header-anchor-color);
-    color: var(--bkg);
+    color: #ffffff;
     text-decoration: none;
     border-bottom: none;}
 
