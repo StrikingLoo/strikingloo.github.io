@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ant Colony Optimization for the Travelling Salesman Problem"
+title: "Ant Colony Optimization for the Traveling Salesman Problem"
 description: "I made an Ant Colony Optimization-based TSP solver in Python. I share the code, insights and benchmarks versus other algorithms."
 tags: programming, python, optimization, TSP, np-hard, computer science, algorithms
 date: 2022-09-06
@@ -17,9 +17,9 @@ Personally, I had a debt with myself from 5 years ago from an _Algorithms III_ c
 
 First, let's start with some motivation: why would you want to learn about Ant Colony Optimization?
 
-## The Travelling Salesman Problem
+## The Traveling Salesman Problem
 
-One especially important use-case for Ant Colony Optimization (ACO from now on) algorithms is solving the Travelling Salesman Problem (TSP).
+One especially important use-case for Ant Colony Optimization (ACO from now on) algorithms is solving the Traveling Salesman Problem (TSP).
 
 This problem is defined as follows: _Given a complete graph G with weighted edges, find the minimum weight Hamiltonian cycle. That is, a cycle that passes through each node exactly once and minimizes the total weight sum._
 
@@ -27,25 +27,25 @@ Note that the graph needs to be *complete*: there needs to exist an edge connect
 
 For a concrete example, look at the following graph.
 
-![an image of a graph for travelling salesman problem](resources/post_image/TSP-graph-example.png){: loading="lazy" style="height:40%; width:40%"}
+![an image of a graph for traveling salesman problem](resources/post_image/TSP-graph-example.png){: loading="lazy" style="height:40%; width:40%"}
 
 In this case, the salesman wants to visit every home once and get back to where it started. Each edge joining two houses has a numeric label, representing the travel time between them in minutes. The salesman is a busy man, and would prefer to take as little time as possible in visiting all the houses. What would be the most efficient route?
 
 As an example, if we started from the house on the top left, we would want to go bottom, right, center, left again for a total of 80 minutes of travel. You can take a little time to convince yourself that is the right answer by hand, since this is a small case. Try to find a different route that would take less time to visit the four houses.
 
-Why is the Travelling Salesman Problem important? Many reasons. 
+Why is the Traveling Salesman Problem important? Many reasons. 
 
-First, **TSP appears everywhere in logistics**. Imagine you need to make multiple deliveries with a truck. You have packages, each of which has to go to a different place. What is the most time-efficient order to deliver them in and then go back to the warehouse? You just found the Travelling Salesman Problem.
+First, **TSP appears everywhere in logistics**. Imagine you need to make multiple deliveries with a truck. You have packages, each of which has to go to a different place. What is the most time-efficient order to deliver them in and then go back to the warehouse? You just found the Traveling Salesman Problem.
 
 **TSP is also important because it is an NP-Complete problem**. That means in the family of NP (nondeterministic polynomial time) problems -those problems for which verification of a solution takes polynomial time, even if finding that solution is harder-, it is in the hardest category: if we found a polynomial time solution for it, then since any other NP problem can be transformed into a TSP problem (sometimes through esoteric means, but still) in polynomial time too, we would have found a polynomial solution for all NP problems.
 
 Finding TSP can be solved in polynomial time would prove P=NP. This would be huge. To the point of being considered one of this century's biggest questions. Suddenly swathes of hard problems would become easier to solve, and many new applications would open up, with multiple kinds of software becoming vastly more efficient. What it would do for logistics would probably contribute significantly to the world's GDP and global trade.
 
-Before I digress further however, now that we know what TSP is, let's see how to solve it. For more information, I recommend the [Wikipedia article on TSP](https://en.wikipedia.org/wiki/Travelling_salesman_problem).
+Before I digress further however, now that we know what TSP is, let's see how to solve it. For more information, I recommend the [Wikipedia article on TSP](https://en.wikipedia.org/wiki/Traveling_salesman_problem).
 
 ## Ant Colony Optimization: Solving TSP
 
-There are many possible ways to solve the Travelling Salesman Problem for a given graph. As discussed above, there is no fast way to get the best solution for an arbitrary graph for certain, at least not without it taking a long time.
+There are many possible ways to solve the Traveling Salesman Problem for a given graph. As discussed above, there is no fast way to get the best solution for an arbitrary graph for certain, at least not without it taking a long time.
 
 The trivial way to solve TSP would be to look at all the possible Hamiltonian Cycles and keep the best one. This would imply looking at all possible orderings of nodes, which grow factorially -O(N!)- with the number N of nodes. Growing factorially is much worse than growing exponentially, for any base. It is so bad that even parallelism would not help: since adding a single node makes the problem N times harder, each extra node in the graph would require we grow the infrastructure superexponentially just to keep up. This would be extremely inefficient.
 
@@ -117,7 +117,7 @@ Some possible improvements for this algorithm that I didn't have the time for:
 
 After coding the algorithm and testing it in toy cases, I was happy to find that the internet had provided me with a wealth of different graphs and TSP problems to try it on.
 
-I got my first small but real test case from this [Medium Article](https://towardsdatascience.com/solving-the-travelling-salesman-problem-for-germany-using-networkx-in-python-2b181efd7b07) using real Germany cities data. I was happy to see ACO found the optimal solution in seconds. 
+I got my first small but real test case from this [Medium Article](https://towardsdatascience.com/solving-the-traveling-salesman-problem-for-germany-using-networkx-in-python-2b181efd7b07) using real Germany cities data. I was happy to see ACO found the optimal solution in seconds. 
 
 Then I found the huge [Santa Claus Challenge](http://cs.uef.fi/sipu/santa/data.html) with coordinates data representing millions of houses in Finland (for Santa to visit). The entire dataset did not fit in memory, so I could not verify how close my solution got to the best ones in the challenge, but taking ever bigger samples let me see how fast or slow each part of the program was for profiling. Go to the [challenge's article](https://www.frontiersin.org/articles/10.3389/frobt.2021.689908/full) for a fun read.
 

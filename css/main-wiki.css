@@ -132,7 +132,6 @@ strong { font-weight: bolder;}
   .head-banner {text-align: center;}
   h1 { font-size: 1.8em;
     line-height: normal;}
-
 }.wiki-item:hover {
   background-color:var(--wiki-bkg-color-hover);
   text-decoration: underline;
