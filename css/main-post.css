@@ -135,13 +135,6 @@ strong { font-weight: bolder;}
 }/* posts only */
 .meta {font-style:italic; text-align: center;}
 
-.post {
-  width: min(106ch, 100%);
-  text-align: left;
-  padding-left: max(50% - 53ch, 0px);
-  padding-right: max(50% - 53ch, 0px);
-}
-
 img { max-width: 512px;
   width: 90%; height: auto;   margin-left: auto;
   margin-right: auto; margin-top: 1em; display: block; text-align: center;}
