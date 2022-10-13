@@ -17,21 +17,18 @@ grid-template-columns: 1fr 1fr;
 <h1>Create a Custom Skill Tree</h1>
 <div class="wrapper" style="text-align: center;">
 	<h3> Skills </h3> <h3>Dependencies</h3>
-	<span><i>format: depth in skilltree, name</i></span><span><i>format: ("a,b" : b depends on a)</i></span>
-<textarea id="skillsTextArea" style="height: 10em;">1,skill A1
-2,skill A2
-3,skill A3
-4,skill A4
-1,skill B1
-2,skill B2
-3,skill B3
-4,skill B4</textarea>
-<textarea id="edgesTextArea" style="height: 10em;">1,2
-2,3
-3,4
-5,6
-6,7
-7,8</textarea><br>
+	<span><i>format: depth in skilltree, name.<br> Alternative format:<br>depth {skillName1,skillName2}</i></span><span><i>format: ("a,b" : b depends on a)</i></span>
+<textarea id="skillsTextArea" style="height: 10em;">
+1 {skill A1, skill B1}
+2 {skill A2, skill B2}
+3 {skill A3, skill B3}
+4,extra
+</textarea>
+<textarea id="edgesTextArea" style="height: 10em;">
+1,3
+3,5
+2,4
+4,6</textarea><br>
 </div>
 <div style="text-align: center;">
 <button onclick="initializeNetwork();">Display!</button>
@@ -84,12 +81,26 @@ grid-template-columns: 1fr 1fr;
 		var textArea = document.getElementById('skillsTextArea');
 		var lines = textArea.value.split('\n');
 		var skills = [];
-
+		var skillId = 0
 		for (var j = 0; j < lines.length; j++) {
 			if(lines[j] != ''){
-				values = lines[j].split(',');
-				item = {id: j+1, value: 1, level: parseInt(values[0]), label: values[1]};
-			    skills.push(item);
+				const regex = /\d \{.*\}\s*$/;
+				const matchFound = lines[j].match(regex);
+				if(matchFound){
+				    found = matchFound[0]
+				    skillLevel = parseInt(found.slice(0, found.indexOf(' ')))
+				    values = found.slice(found.indexOf('{')+1,found.indexOf('}')).split(',')
+				    for (var skillName of values){
+				    	skillId++;
+				    	item = {id: skillId, value: 1, level: skillLevel, label: skillName};
+				    	skills.push(item);
+				    }
+				} else {
+					skillId++;
+					values = lines[j].split(',');
+					item = {id: skillId, value: 1, level: parseInt(values[0]), label: values[1]};
+				    skills.push(item);
+				}
 			}
 		}
 		return skills;
