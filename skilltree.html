@@ -226,10 +226,7 @@ grid-template-columns: 1fr 1fr;
 						currNode.selected = false;
 					}
 				} else {
-					if (confirm("Acquire skill:\n- " + currNode.label.replace("\n", ""))){
-						currNode.selected = true;
-						
-					}
+					currNode.selected = true;
 				}
 				nodes.update(currNode);
 			}else{
