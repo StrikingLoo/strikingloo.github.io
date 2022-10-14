@@ -17,7 +17,7 @@ grid-template-columns: 1fr 1fr;
 <h1>Create a Custom Skill Tree</h1>
 <div class="wrapper" style="text-align: center;">
 	<h3> Skills </h3> <h3>Dependencies</h3>
-	<span><i>format: depth in skilltree, name.<br> Alternative format:<br>depth {skillName1,skillName2}</i></span><span><i>format: ("a,b" : b depends on a)</i></span>
+	<span><i>format: depth in skilltree, name.<br> Alternative format:<br>depth {skillName1,skillName2}</i></span><span><i>format: ("a,b" : b depends on a)<br>"{a,b} {c,d}" or "b {c,d}"</i></span>
 <textarea id="skillsTextArea" style="height: 10em;">
 1 {skill A1, skill B1}
 2 {skill A2, skill B2}
@@ -25,10 +25,9 @@ grid-template-columns: 1fr 1fr;
 4,extra
 </textarea>
 <textarea id="edgesTextArea" style="height: 10em;">
-1,3
-3,5
-2,4
-4,6</textarea><br>
+{1,2} {3,4}
+6 {7,5}
+5,7</textarea><br>
 </div>
 <div style="text-align: center;">
 <button onclick="initializeNetwork();">Display!</button>
@@ -113,10 +112,46 @@ grid-template-columns: 1fr 1fr;
 
 		for (var j = 0; j < lines.length; j++) {
 			if(lines[j] != ''){
-				values = lines[j].split(',');
-				item = { from: parseInt(values[0]), to: parseInt(values[1]), arrows: "to" }
-			  	skillEdges.push(item);
-		  }
+				input = lines[j]
+				var regex = /\d+ \{([0-9,]*)\}\s*$/;
+				var matchFound = input.match(regex);
+				if(matchFound){
+					found = matchFound[0]
+				    fromSkill = parseInt(found.slice(0, found.indexOf(' ')))
+				    values = found.slice(found.indexOf('{')+1,found.indexOf('}')).split(',')
+				    for (var toSkill of values){
+				    	item = {from: parseInt(fromSkill),
+				    			to: parseInt(toSkill),
+				    			arrows: "to" }
+				    	console.log(fromSkill+" "+toSkill);
+				    	skillEdges.push(item);
+				    }
+				} else {
+					regex = /\{([0-9,]*)\} \{([0-9,]*)\}\s*$/;
+					matchFound = input.match(regex)
+					if(matchFound){
+						console.log(matchFound)
+						found = matchFound[0]
+					    fromSkills = found.slice(0, found.indexOf(' '))
+					    toSkills = found.slice(found.indexOf(' '), found.length)
+					    valuesFrom = fromSkills.slice(fromSkills.indexOf('{')+1,fromSkills.indexOf('}')).split(',')
+					    valuesTo = toSkills.slice(toSkills.indexOf('{')+1,toSkills.indexOf('}')).split(',')
+					    console.log(valuesTo)
+					    console.log(valuesFrom)
+					    for (var toSkill of valuesTo){
+					    	for (var fromSkill of valuesFrom){
+					    	item = {from: parseInt(fromSkill),
+					    			to: parseInt(toSkill),
+					    			arrows: "to" }
+					    	skillEdges.push(item);
+					    	}
+						}
+				} else {
+					values = lines[j].split(',');
+					item = { from: parseInt(values[0]), to: parseInt(values[1]), arrows: "to" }
+				  	skillEdges.push(item);
+			  }
+		  } }
 		}
 		return skillEdges;
 	}
