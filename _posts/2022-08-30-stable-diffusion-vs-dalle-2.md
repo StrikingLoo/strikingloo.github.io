@@ -191,7 +191,7 @@ more digital illustration like air of the images from before.
 
 ### Style cue: Steampunk / Clockpunk
 
-> A digital illustration of a steampunk robot \[/with cogs and clockwork y Josef Thoma], 4k, deatiled, trending in artstation, fantasy vivid colors
+> A digital illustration of a steampunk robot \[/with cogs and clockwork by Josef Thoma], 4k, detailed, trending in artstation, fantasy vivid colors
 
 ![](resources/ai-generated-images/stable-diffusion/selected/1173280232_A_digital_illustration_of_a_steampunk_robot__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: loading="lazy"}
 
@@ -265,13 +265,13 @@ These are the last ones, I swear.
 Before we reach the end, I want to raise a concern and propose a challenge. No matter what I tried, I could *not* make either DALL-E 2, or StableDiffusion make characters in the style of Jojo's Bizarre Adventure (or Araki, in general). I tried the obvious style cues and others, and none worked. So if any of you manages to make one of these models draw Spongebob Squarepants in the style of Jojo's, or any other recognizable character, you will get a thousand internet points from me.
 
 ### Appendix A: Stable Diffusion Prompt Guide
-In general, a the best stable diffusion prompts will have this form:
+In general, the best stable diffusion prompts will have this form:
 
-> "A *\[type of picture]* of a *\[main subject, mostly composed of adjectives and nouns -avoid verbs-]*, *\[style cues]\**"
+> "A *\[type of picture]* of a *\[main subject]*, *\[style cues]\**"
 
 Some *types of picture* include *digital illustration, oil painting (usually good results), matte painting, 3d render, medieval map*.
 
-The *main subject* can be anything you're thinking of, but StableDiffusion still struggles with compositionality, so it shouldn't be more than one or two main things (say, *a beaver wearing a suit*, or *a cat samurai with a pet pug*). 
+The *main subject* can be anything you're thinking of, but StableDiffusion still struggles with compositionality, so it shouldn't be more than one or two main things (say, *a beaver wearing a suit*, or *a cat samurai with a pet pug*). The *main subject* should be mostly composed of adjectives and nouns. Avoid verbs, as Stable Diffusion has a hard time interpreting them correctly.
 
 Style cues can be anything you want to condition the image on. I wouldn't add too many, maybe only 1 to 3. These can really vary a lot but some good ones are: *concept art, steampunk, trending in artstation, good composition, hyper realistic, oil on canvas, vivid colors*. 
 

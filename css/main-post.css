@@ -141,21 +141,19 @@ img { max-width: 512px;
 
 blockquote {
   width:85%;
-  margin:1em auto;
-  font-family:Open Sans;
-  font-style:italic;
-
-  font-size: 1.1em;
-  line-height: 1.75;
+  margin:.5em;
+  font-family: Open Sans;
+  font-style: italic;
   color: var(--font-color);
-
+  font-size: 1.05em;
   background:#EfEfEf;
-
-  padding:1.2em 1.4em 1.2em 1.4em;
-  border-left:10px solid var(--header-anchor-color) ;
+  padding: .7em 1em .7em 1em;
+  border-left:6px solid var(--header-anchor-color) ;
   position: relative;
   
 }
+
+blockquote p {margin-top: 0; margin-bottom: 0;}
 
 blockquote::after{
   content: '';
