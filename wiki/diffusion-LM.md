@@ -10,18 +10,16 @@ abstract: "These are my notes on Stanford's paper that proposed Diffusion models
 importance: 6
 ---
 
-<https://arxiv.org/pdf/2205.14217.pdf>
+[Link to the paper](https://arxiv.org/pdf/2205.14217.pdf).
 
 
-This paper uses diffusion models, which have been used successfully for image and audio generation (see my notes on [Glide](/wiki/ddim)), to generate text in a *controllable* way. 
+This paper uses diffusion models, which have been used successfully for image and audio generation (see my notes on [Glide](/wiki/ddim)), to **generate text in a controllable way**. 
 
-Given a set of constraints, like syntactic structures, sentiment, or topics, this approach allows for text generation conditioned on them, balancing coherence / fluency (through the language model itself) and constraint satisfaction (through a different, supervised model).
+Given a set of constraints, like syntactic structures, sentiment, or topics, this approach allows for text generation conditioned on them, balancing **coherence / fluency** (through the language model itself) and **constraint satisfaction** (through a different, supervised model).
+
+> "In order to tackle more complex controls, we propose Diffusion-LM, a new language model based on continuous diffusions. Diffusion-LM starts with a sequence of Gaussian noise vectors and incrementally denoises them into vectors corresponding to words embeddings.<br>(...)<br>These gradual denoising steps produce a hierarchy of continuous latent representations. We find that this hierarchical and continuous latent variable enables simple, gradient-based methods to perform complex control tasks such as constraining the parse tree of a generated sequence."
 
 In these experiments, text is generated directly in embedding space, allowing for a continuous modeling of tokens and semantic information.
-
-"In order to tackle more complex controls, we propose Diffusion-LM, a new language model based on continuous diffusions. Diffusion-LM starts with a sequence of Gaussian noise vectors and incrementally denoises them into vectors corresponding to words embeddings.
-
-These gradual denoising steps produce a hierarchy of continuous latent representations. We find that this hierarchical and continuous latent variable enables simple, gradient-based methods to perform complex control tasks such as constraining the parse tree of a generated sequence."
 
 ![](image/diffusion-lm1.png){: alt="" loading="lazy"}
 
@@ -41,11 +39,11 @@ They train the embedding function to make a word's mapping closer to the reconst
 
 To make a mapper from Gaussian noise to some x<sub>0</sub>, they train a mapper f(x<sub>t</sub>, t) to always backtrack t steps and generate x<sub>0</sub>.
 
-"This forces the neural network to predict x<sub>0</sub> in every term and we found that models trained with this objective quickly learn that x<sub>0</sub> should precisely centered at a word embedding."
+"This forces the neural network to predict x<sub>0</sub> in every term and we found that models trained with this objective quickly learn that x<sub>0</sub> should be precisely centered at a word embedding."
 
 ## Controllable Text Generation
 
-Instead of performing control directly on the discrete text, they perform control on the sequence of continuous latent variables x0:T defined by Diffusion-LM, and apply the rounding step to convert these latents into text.
+Instead of performing control directly on the discrete text, they perform control on the sequence of continuous latent variables x0:T defined by Diffusion-LM, and apply the rounding step to convert these latents into text. The rounding step is a softmax distribution trained to predict the token from the embedding.
 
 ![](image/diffusion-lm3.png){: alt="" loading="lazy"}
 

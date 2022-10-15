@@ -135,7 +135,7 @@ strong { font-weight: bolder;}
 }/* posts only */
 .meta {font-style:italic; text-align: center;}
 
-img { max-width: 512px;
+img { max-width: 640px;
   width: 90%; height: auto;   margin-left: auto;
   margin-right: auto; margin-top: 1em; display: block; text-align: center;}
 
