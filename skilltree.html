@@ -35,9 +35,9 @@ grid-template-columns: 1fr 1fr;
 <a id="canvasImg" download="skill-tree.png"></a> </div>
 <div id="skilltree"></div>
 
-<p>This app lets you design custom skill trees. Track your progress in a career or course, divide a field into categories, or do whatever you like.</p>
+<p>This app lets you design custom skill trees. You can use it for college course mapping, or to track your progress learning different parts of a textbook or any subskills.</p>
 <p>If you found this useful or have any feedback, <a href="mailto:lucianostrika44@gmail.com">contact me or send me your skill trees</a>. This site will not collect any data you use to make the trees or put into the trees. Everything runs on the front end.</p>
-<p>Code available on <a href="https://github.com/StrikingLoo/skilltree-HTML">Github</a>. Initial code inspired from this <a href="https://codepen.io/poppan/pen/RexWgX">CodePen</a>.</p>
+<p>Code available on <a href="https://github.com/StrikingLoo/skilltree-HTML">Github</a>. Initial VisJS code inspired from this <a href="https://codepen.io/poppan/pen/RexWgX">CodePen</a>.</p>
 <script>
 	
 	const lockedColor = "#ccc";
@@ -244,21 +244,11 @@ grid-template-columns: 1fr 1fr;
 	
 	let network = new vis.Network(container, data, options);
 
-	/* ********************************************************************************* */
-	
-	/**
-		update all graph nodes with selectedParents and subTree Requirements
-		change visuals based on status (values / requirements / selected)
-	**/
-
 	/* EVENTS HANDLING */
 	network.once("stabilized", () => {
 		buildGraphDisplay(network, nodes, edges);
 	});
-	
-	/**
-		on click, update graph nodes selected status
-	**/
+
 	network.on("click", p => {
 		if (p.nodes.length) {
 			let currNode = nodes.get(p.nodes[0]);
@@ -276,8 +266,7 @@ grid-template-columns: 1fr 1fr;
 				}
 				nodes.update(currNode);
 			}else{
-				// No need to alert, those are displayed in tooltips
-				// alert(currNode.locked);
+				
 			}
 			buildGraphDisplay(network, nodes, edges);
 		}
