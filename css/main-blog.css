@@ -1,9 +1,10 @@
 :root {
-  --bkg: #F6F8FA; 
-  --font-color: #100F0F; 
-  --header-anchor-color: #0F3D3E; 
-  --anchor-hover-color: #5bc; 
-  --wiki-bkg-color-hover: #2F5D5E; 
+  --bkg: #fefefe;
+  --font-color: #191919;
+  --header-anchor-color: #023d49 /*#191919*/;
+  --anchor-hover-color: #02c9da;
+  --anchor-only-color: #023d49;
+  --wiki-bkg-color-hover: #124d59;
 }
 
 body {
@@ -55,7 +56,7 @@ h3, h3 a {
     line-height: 1.5;}
 h1,h2,h3, h1 a, h2 a, h3 a {
     font-weight: bold;
-    color:var(--header-anchor-color);
+    color:var(--anchor-only-color);
 }
 
 footer {

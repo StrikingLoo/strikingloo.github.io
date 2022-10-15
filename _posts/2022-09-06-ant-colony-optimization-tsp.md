@@ -117,7 +117,7 @@ Some possible improvements for this algorithm that I didn't have the time for:
 
 After coding the algorithm and testing it in toy cases, I was happy to find that the internet had provided me with a wealth of different graphs and TSP problems to try it on.
 
-I got my first small but real test case from this [Medium Article](https://towardsdatascience.com/solving-the-traveling-salesman-problem-for-germany-using-networkx-in-python-2b181efd7b07) using real Germany cities data. I was happy to see ACO found the optimal solution in seconds. 
+I got my first small but real test case from this [Medium Article](https://towardsdatascience.com/solving-the-travelling-salesman-problem-for-germany-using-networkx-in-python-2b181efd7b07) using real Germany cities data. I was happy to see ACO found the optimal solution in seconds. 
 
 Then I found the huge [Santa Claus Challenge](http://cs.uef.fi/sipu/santa/data.html) with coordinates data representing millions of houses in Finland (for Santa to visit). The entire dataset did not fit in memory, so I could not verify how close my solution got to the best ones in the challenge, but taking ever bigger samples let me see how fast or slow each part of the program was for profiling. Go to the [challenge's article](https://www.frontiersin.org/articles/10.3389/frobt.2021.689908/full) for a fun read.
 
