@@ -89,10 +89,10 @@ nav ul li a:hover, footer ul li a:hover {
 nav {float: right;}
 
 nav a {
-    padding: 0.8em;
-    border-radius: 5%;
-    background-color: var(--header-anchor-color);
-    color: #ffffff;
+    padding: 0.5em;
+    /*border-radius: 5%;*/
+    /*background-color: var(--header-anchor-color);*/
+    color: var(--header-anchor-color)/*#ffffff*/;
     text-decoration: none;
     border-bottom: none;}
 
@@ -128,7 +128,7 @@ strong { font-weight: bolder;}
     background-color: var(--header-anchor-color);
     padding: .2em; border-radius: 5%;}
   nav ul {width: 100%;}
-  nav a {padding: 0;}
+  nav a {padding: 0; color: #ffffff}
   .head-banner p {font-size: 1.5em;}
   .head-banner {text-align: center;}
   h1 { font-size: 1.8em;
