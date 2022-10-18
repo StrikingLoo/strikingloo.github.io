@@ -9,7 +9,9 @@ abstract: "Collected quotes and advice on writing non-fiction. Especially about 
 tags: paul graham, advice, writing, thinking
 ---
 
-from **Trying** by [Paul Graham](http://paulgraham.com/essay.html)
+## Advice from Paul Graham
+
+[**Trying**, by Paul Graham](http://paulgraham.com/essay.html)
 
 To understand what a real essay is, we have to reach back into history again, though this time not so far. To Michel de Montaigne, who in 1580 published a book of what he called "essais." He was doing something quite different from what lawyers do, and the difference is embodied in the name. Essayer is the French verb meaning "to try" and an essai is an attempt. **An essay is something you write to try to figure something out.**
 
@@ -19,96 +21,7 @@ If all you want to do is figure things out, why do you need to write anything, t
 
 In the things you write in school you are, in theory, merely explaining yourself to the reader. In a real essay you're writing for yourself. You're thinking out loud.
 
----
-
-From [LeanAnki, Zettelkasten Method](https://leananki.com/zettelkasten-method-smart-notes/), I see he has this simple method for essay writing: 
-- Write about a problem in detail.
-- Write about the solution.
-
-Of course an extra step would be 'make sure you include actionable advice'. I like this approach, it's simple and goes straight to the point. I like the way he combines it with note-taking/zettelkastening by linking zettels that have to do with the problem, and others that have to do with the solution.
-
-This could be a way to write essays more freely, without being bound to the tutorial structure.
-
----
-
-From [Andy Matuschak's Executable strategy for writing](https://notes.andymatuschak.org/z3PBVkZ2SvsAgFXkjHsycBeyS6Cw1QXf7kcD8)
-
-### Undirected Strategy
-
-- Write durable notes continuously while reading and thinking. (Evergreen note-writing as fundamental unit of knowledge work)
-- Each time you add a note, add a link to it to an outline, creating one if necessary (Create speculative outlines while you write).
-- Eventually, you'll feel excited about fleshing out one of those outlines. (Let ideas and beliefs emerge organically)
-- Write new notes to fill in missing pieces of the outline.
-- Concatenate all the note texts together to get an initial manuscript
-- Rewrite it.
-
-As is, it works better with a Zettelkasten kind of note-taking space, but each separate note could be replaced with a new paragraph or header in a big note in a system like this personal wiki. Then I could maintain an "outline" folder for essays-to-be, where they could grow organically. This may start with my small 'how to make a static site and host it on the web' and grow slowly from there, as a growing place for posts before I publish them on my actual blog (or on this site's blog, I guess).
-
----
-**From [Truth of Fact, Truth of Feeling](https://devonzuegel.com/post/the-truth-of-fact-the-truth-of-feeling-by-ted-chiang-subterranean-press)**
-
-"Writing was not just a way to record what someone said; it could help you decide what you would say before you said it. And words were not just the pieces of speaking; they were the pieces of thinking. When you wrote them down, you could grasp your thoughts like bricks in your hands and push them into different arrangements. Writing let you look at your thoughts in a way you couldn’t if you were just talking, and having seen them, you could improve them, make them stronger and more elaborate."
-
-I love the idea of thoughts becoming persistent vs a thing that fades with human memory, and how that shaped future developments in history.
-
-There is the sensation when writing a long piece, especially of non-fiction but I guess also in a novel, of moving around chapters, sections or paragraphs like they are self-supporting objects.
-
-It is my opinion that we exercise a certain level of abstraction when dealing with a portion of a written text that is very similar to that which we apply to a method, class or module when we would restructure a big software project.
-
-That is, being able to say 'I will move the chapter on X nearer to the end, before the conclusion' instead of having to hold the whole context and information of that chapter in your head to make the decision, is similar to knowing a certain function maps inputs to outputs in a way, without having to remember its exact implementation when deciding how to use it or where to put it.
-
----
-
-**From [Matt Might's blog](http://matt.might.net/#blog)**
-
-" The secret to low-cost academic blogging is to make blogging a natural byproduct of all the things that academics already do.
-
-- Doing an interesting lecture? Put your lecture notes in a blog post.
-- Writing a detailed email reply? "Reply to public" with a blog post.
-- Answering the same question a second time? Put it in a blog post.
-- Writing interesting code? Comment a snippet into a post.
-- Doing something geeky at home? Blog about what you learned.
-"
-
----
-From [The ZettelKasten Method, LessWrong](https://www.lesswrong.com/posts/NfdHG6oHBJ8Qxc26s/the-zettelkasten-method-1)
-
-"This idea of jotting down ideas while you’re out and about is very important. If you feel you don’t have enough ideas (be it for research, for writing fiction, for art -- whatever) my first question would be whether you have a good way to jot down little ideas as they occur to you."
-
----
-### What is, what could be, call-to-action
-
-This is the story structure behind every TED talk:
-
--   Act I: What is
--   Act II: What could be.
--   Act III: The call to action.
-
-You can build this story arc in different lengths for different settings: the elevator pitch, the 15 minute explanation, the 1hr story.
-
----
-## Public Narrative
-
-The public narrative has three steps, and is used a lot in speeches both in industry and Politics.
-
-- The me part: talk about yourself.
-- The us part: talk about shared values and your listener.
-- The action part: a call to action appealing to shared values.
-
-### Writing: The Most Misunderstood Activity
-
-> "I used to misunderstand writing too, and my style suffered severely as a result." - Soliman Writes
-
-The author begins by pointing out writing is not just making a sequence of words, and describing how many knowledge workers 'expose their thought process' by how poorly they wrote.
-
-He lists misconceptions about writing:
-
-- **Writing only when told.** *"You’re doing it because you’re wrestling with a matter —maybe you’re (...) learning about something you deeply care about. Surprisingly, I realized you often get rewarded for writing willingly."*
-- **Writing only to document**: *"there’s a big difference between actually writing and merely producing text. (...) Text producers don’t add to the conversation. They don’t write to generate ideas, but to record existing ones."* *"That’s how I used to write: coming up with new ways of looking at things wasn’t the goal."*
-
-> _"A book stirred something in you? Go beyond highlighting paragraphs and write new ones. Instead of inertly listening to ideas, participate with your own. Make it a point to write only to create, rather than writing only to document."_
-
-[Writing: The Most Misunderstood Activity - Soliman Writes](https://www.solimanwrites.com/writing-the-most-misunderstood-activity/)
+## Writing a Blog
 
 ### Tom Critchlow on "You're not Blogging and that's a Problem"
 
@@ -119,10 +32,6 @@ Here’s my best trick for writing blog posts. It’s simple: **write a blog pos
 Could be an old boss, a friend, someone you met at a conference - it doesn’t matter. Write something they’d find interesting and email them a thoughtful email. Don’t send more than 5 of these per blog post. 
  
 it’s a great routine to get into because it **forces you to write a blog post so that at least one person cares about it.**"
-
----
-When writing a textbook: start with the cool stuff! Explain later.
-
 
 ### Advice from Monica Lent's Blogging Newsletter
 
@@ -162,7 +71,7 @@ This approach to writing reminds me of the difference between generating text wi
 
 He mentions a thing that really contributes to his writing is: "Investing more time **thinking about how to communicate an idea**, rather than just settling on the first expression of it I think of". I wonder if thinking of 3\~5 ways to restate the main ideas of a post may help it sound better.
 
-## From Google's Content Policy (Yeah, really)
+### Advice From Google's Content Policy (Yeah, really)
 
 - Does the content provide **original information, reporting, research or analysis**?
 - Does the content provide a **substantial, complete or comprehensive description** of the topic?
@@ -170,7 +79,15 @@ He mentions a thing that really contributes to his writing is: "Investing more t
 - If the content draws on other sources, does it avoid simply copying or rewriting those sources and instead **provide substantial additional value and originality**?
 - Is this the sort of page you'd want to bookmark, share with a friend, or recommend?
 
-## From Gwern's About Page
+### Linkbuilding for Small Businesses, Patio11
+There is easily explainable value to linking to a post which is useful (“My readers will find this useful”), emotionally resonant (“Wow, this is emotionally resonant and I want to share this experience with other people”), well-written, funny, etc. 
+
+- Create resources your readers or people like them can use.
+- Do it with style. Visually engage readers.
+
+[Linkbuilding for Small Businesses, Patio11](https://www.kalzumeus.com/2008/04/08/linkbuilding-for-small-businesses/)
+
+## Extracts From Gwern's About Page
 
 > I believe that someone who has been well-educated will think of something worth writing at least once a week; to a surprising extent, this has been true. (I added \~130 documents to this repository over the first 3 years.)
 
@@ -178,7 +95,7 @@ He mentions a thing that really contributes to his writing is: "Investing more t
 
 > I am attempting to explain things to my future self, who is intelligent and interested, but has forgotten. What I am doing is explaining why I decided what I did to myself and noting down everything I found interesting about it for future reference. I hope my other readers, whomever they may be, might find the topic as interesting as I found it, and the essay useful or at least entertaining–but the intended audience is my future self.
 
-> One of my personal interests is applying the idea of the Long Now. What and how do you write a personal site with the long-term in mind? We live most of our lives in the future, and the actuarial tables give me until the 2070–2080s.(...) It is a common-place in science fiction that longevity would cause widespread risk aversion. But on the other hand, it could do the opposite: the longer you live, the more long-shots you can afford to invest in. Someone with a timespan of 70 years has reason to protect against black swans—but also time to look for them.
+> One of my personal interests is applying the idea of the [Long Now](/wiki/clock-of-the-long-now). What and how do you write a personal site with the long-term in mind? We live most of our lives in the future, and the actuarial tables give me until the 2070–2080s.(...) It is a common-place in science fiction that longevity would cause widespread risk aversion. But on the other hand, it could do the opposite: the longer you live, the more long-shots you can afford to invest in. Someone with a timespan of 70 years has reason to protect against black swans—but also time to look for them.
 
 >  Knowing your site will survive for decades to come gives you the mental wherewithal to tackle long-term tasks like gathering information for years, and such persistence can be useful—if one holds onto every glimmer of genius for years, then even the dullest person may look a bit like a genius himself. (Even experienced professionals can only write at their peak for a few hours a day).
 
@@ -189,13 +106,88 @@ As he writes more, the writing/research process becomes autocatalytic. He:
 
 > I originally used last file modification time but this turned out to be confusing to readers, because I so regularly add or update links or add new formatting features that the file modification time was usually quite recent, and so it was meaningless.
 
-
 [Source: Gwern's About](https://www.gwern.net/About)
 
-### Linkbuilding for Small Businesses, Patio11
-There is easily explainable value to linking to a post which is useful (“My readers will find this useful”), emotionally resonant (“Wow, this is emotionally resonant and I want to share this experience with other people”), well-written, funny, etc. 
+### Advice from Matt Might's Blog
 
-- Create resources your readers or people like them can use.
-- Do it with style. Visually engage readers.
+**From [Matt Might's blog](http://matt.might.net/#blog)**
 
-[Linkbuilding for Small Businesses, Patio11](https://www.kalzumeus.com/2008/04/08/linkbuilding-for-small-businesses/)
+"The secret to low-cost academic blogging is to make blogging a natural byproduct of all the things that academics already do.
+
+- Doing an interesting lecture? Put your lecture notes in a blog post.
+- Writing a detailed email reply? "Reply to public" with a blog post.
+- Answering the same question a second time? Put it in a blog post.
+- Writing interesting code? Comment a snippet into a post.
+- Doing something geeky at home? Blog about what you learned.
+"
+
+## Approach: Using a Note-Taking System as a Starting Point for Essays
+
+Due to my love for note-taking systems (of which this very wiki is evidence), I collected a few quotes showing how some people leverage zettelkasten or personal wikis for essay writing. Related notes: [Note-Taking Systems](/wiki/archiving), [Experiences with Digital Gardening](/reflections-digital-gardening).
+
+### Undirected Strategy
+
+From [Andy Matuschak's Executable strategy for writing](https://notes.andymatuschak.org/z3PBVkZ2SvsAgFXkjHsycBeyS6Cw1QXf7kcD8)
+
+- Write durable notes continuously while reading and thinking. (Evergreen note-writing as fundamental unit of knowledge work)
+- Each time you add a note, add a link to it to an outline, creating one if necessary (Create speculative outlines while you write).
+- Eventually, you'll feel excited about fleshing out one of those outlines. (Let ideas and beliefs emerge organically)
+- Write new notes to fill in missing pieces of the outline.
+- Concatenate all the note texts together to get an initial manuscript
+- Rewrite it.
+
+As is, it works better with a Zettelkasten kind of note-taking space, but each separate note could be replaced with a new paragraph or header in a big note in a system like this personal wiki. Then I could maintain an "outline" folder for essays-to-be, where they could grow organically. This may start with my small 'how to make a static site and host it on the web' and grow slowly from there, as a growing place for posts before I publish them on my actual blog (or on this site's blog, I guess).
+
+### Advice from 'The Zettelkasten Method', LeanAnki
+
+From [LeanAnki, Zettelkasten Method](https://leananki.com/zettelkasten-method-smart-notes/), I see he has this simple method for essay writing: 
+- Write about a problem in detail.
+- Write about the solution.
+
+Of course an extra step would be 'make sure you include actionable advice'. I like this approach, it's simple and goes straight to the point. I like the way he combines it with note-taking/zettelkastening by linking zettels that have to do with the problem, and others that have to do with the solution.
+
+This could be a way to write essays more freely, without being bound to the tutorial structure.
+
+### Advice from "The Zettelkasten Method", LessWrong
+From [The ZettelKasten Method, LessWrong](https://www.lesswrong.com/posts/NfdHG6oHBJ8Qxc26s/the-zettelkasten-method-1)
+
+"This idea of jotting down ideas while you’re out and about is very important. If you feel you don’t have enough ideas (be it for research, for writing fiction, for art -- whatever) my first question would be whether you have a good way to jot down little ideas as they occur to you."
+
+## Miscellaneous Advice and Methods
+
+### What is, what could be, call-to-action
+
+This is the story structure behind every TED talk:
+
+-   Act I: What is
+-   Act II: What could be.
+-   Act III: The call to action.
+
+You can build this story arc in different lengths for different settings: the elevator pitch, the 15 minute explanation, the 1hr story.
+
+### Public Narrative
+
+The public narrative has three steps, and is used a lot in speeches both in industry and Politics.
+
+- The me part: talk about yourself.
+- The us part: talk about shared values and your listener.
+- The action part: a call to action appealing to shared values.
+
+### Writing to develop Abstraction
+
+**From [Truth of Fact, Truth of Feeling](https://devonzuegel.com/post/the-truth-of-fact-the-truth-of-feeling-by-ted-chiang-subterranean-press)**
+
+> "Writing was not just a way to record what someone said; it could help you decide what you would say before you said it. And words were not just the pieces of speaking; they were the pieces of thinking. When you wrote them down, you could grasp your thoughts like bricks in your hands and push them into different arrangements. Writing let you look at your thoughts in a way you couldn’t if you were just talking, and having seen them, you could improve them, make them stronger and more elaborate."
+
+I love the idea of thoughts becoming persistent vs a thing that fades with human memory, and how that shaped future developments in history.
+
+There is the sensation when writing a long piece, especially of non-fiction but I guess also in a novel, of moving around chapters, sections or paragraphs like they are self-supporting objects.
+
+It is my opinion that we exercise a certain level of abstraction when dealing with a portion of a written text that is very similar to that which we apply to a method, class or module when we would restructure a big software project.
+
+That is, being able to say 'I will move the chapter on X nearer to the end, before the conclusion' instead of having to hold the whole context and information of that chapter in your head to make the decision, is similar to knowing a certain function maps inputs to outputs in a way, without having to remember its exact implementation when deciding how to use it or where to put it.
+
+## Related Reading
+
+- [Idea Space: Thinking as Pathfinding in the Space of Ideas](/wiki/idea-space)
+- [The Clock of the Long Now](/wiki/clock-of-the-long-now) (book notes)
