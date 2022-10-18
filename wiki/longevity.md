@@ -41,3 +41,13 @@ The other two are Wine & Religion (which I will assume have more to do with corr
 
 Some actionable advice mentioned in the article: putting a bowl of fruit on the counter, serving food at the stove and not on the table, using hand tools for yard work, and many more. Policy goals would include encouraging fruit and vegetables consumption and walking, and discourage candy and fast food consumption.
 
+## Advice on Longevity from LessWrong
+
+Taken from a [post by @RomeoStevens](https://www.lesswrong.com/posts/PhXENjdXiHhsWGfQo/lifestyle-interventions-to-increase-longevity).
+
+> "Exercise is probably the single most important lifestyle intervention. Even minimal amounts of exercise have very large impacts on longevity and health. We’re talking even walking 15 minutes a day causing people to live longer. Even ignoring quality of life you are looking at **a 3-7 fold return on every minute you spend exercising in extended life**, perhaps even exceeding that if you are making optimal use of your time. Exercise has a positive impact on pretty much everything that contributes to mortality."
+
+> "Exercise has a protective effect against exactly the sorts of degenerative injuries that deprive people of their freedom of movement and activity."
+
+Exercise should include resistance training and cardio.
+
