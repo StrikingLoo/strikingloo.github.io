@@ -142,7 +142,7 @@ img { max-width: 512px;
 
 blockquote {
   width:85%;
-  margin:.5em;
+  margin:1em;
   font-family: Open Sans;
   font-style: italic;
   color: var(--font-color);
