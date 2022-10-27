@@ -16,10 +16,12 @@ body {
 
 p, a, ul li, ol li {
     font-family: 'Helvetica', Verdana;
-    font-size: 1.1em;
+    font-size: 1.2em;
     line-height: 1.75;
     color: var(--font-color);
 }
+
+p {margin-bottom: 1.2em;}
 
 p a, ul li a {
     text-decoration: none;
