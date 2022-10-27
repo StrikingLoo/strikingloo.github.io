@@ -19,7 +19,6 @@
   list-style: none;
   color: var(--bkg);
   background-color: var(--header-anchor-color);
- 
 }
 
 .posts li a {
@@ -27,7 +26,8 @@
     font-size: 1.4em;
     text-align: center;
     font-weight: bold;
-    color: #ffffff;
+    border-bottom: 3px solid var(--wiki-bkg-color-hover);
+    color: var(--bkg);
 }
 
 .posts li a:hover {border-bottom: 3px solid var(--bkg);}

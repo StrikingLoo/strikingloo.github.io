@@ -5,6 +5,32 @@
   --anchor-bottom-color: #4dd8ff;
   --anchor-only-color: #035a73;
   --wiki-bkg-color-hover: #036e8c;
+  --heading-underline-color: rgba(0,0,0,.3);
+  --quote-bkg: #f7f7f7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+      --bkg: #191919;
+      --font-color: #fefefe;
+      --header-anchor-color: #96abb4;
+      --anchor-bottom-color: #4dd8ff;
+      --anchor-only-color: #dbe2e6;
+      --wiki-bkg-color-hover: #75909c;
+      --heading-underline-color: rgba(255,255,255,.3);
+      --quote-bkg: #383838;
+    }
+}
+
+[data-theme="dark"] {
+      --bkg: #191919;
+      --font-color: #fefefe;
+      --header-anchor-color: #b9c6cd;
+      --anchor-bottom-color: #4dd8ff;
+      --anchor-only-color: #dbe2e6;
+      --wiki-bkg-color-hover: #75909c;
+      --heading-underline-color: rgba(255,255,255,.3);
+      --quote-bkg: #383838;
 }
 
 body {
@@ -161,7 +187,7 @@ strong { font-weight: bolder;}
   text-decoration: none;
   font-weight: bold;
   background-color: var(--header-anchor-color);
-  color: #ffffff;
+  color: var(--bkg);
   border-radius: 4%;
 }
 

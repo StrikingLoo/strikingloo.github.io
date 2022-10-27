@@ -12,7 +12,7 @@ blockquote {
   font-style: italic;
   color: var(--font-color);
   font-size: 1.05em;
-  background:#f7f7f7;
+  background:var(--quote-bkg);
   padding: .7em 1em .7em 1em;
   border: 1px solid #ccc;
   border-left: 5px solid var(--anchor-only-color);
@@ -30,4 +30,4 @@ pre, code {background-color: #444; color: #fff; font-family: Verdana; padding: 1
 h2, h3 {
     padding-bottom: .3em;
     padding-top: .6em;
-    border-bottom: 3px solid rgba(0, 0, 0, .3);}
+    border-bottom: 3px solid var(--heading-underline-color);}
