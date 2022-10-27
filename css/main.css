@@ -2,7 +2,7 @@
   --bkg: #fefefe;
   --font-color: #191919;
   --header-anchor-color: #023d49 /*#191919*/;
-  --anchor-hover-color: #02c9da;
+  --anchor-bottom-color: #02c9da;
   --anchor-only-color: #025b73;
   --wiki-bkg-color-hover: #124d59;
 }
@@ -26,7 +26,7 @@ p {margin-bottom: 1.2em;}
 p a, ul li a {
     text-decoration: none;
     font-size: 1em;
-    border-bottom: 3px solid var(--anchor-hover-color);
+    border-bottom: 3px solid var(--anchor-bottom-color);
 }
 
 p a:hover, ul li a:hover {
