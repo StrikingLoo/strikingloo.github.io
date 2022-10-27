@@ -1,10 +1,10 @@
 :root {
   --bkg: #fefefe;
   --font-color: #191919;
-  --header-anchor-color: #034659; /*check*/
-  --anchor-bottom-color: #4dd8ff; /*check*/
-  --anchor-only-color: #035a73;/*check*/
-  --wiki-bkg-color-hover: #036e8c; /*check*/
+  --header-anchor-color: #034659;
+  --anchor-bottom-color: #4dd8ff;
+  --anchor-only-color: #035a73;
+  --wiki-bkg-color-hover: #036e8c;
 }
 
 body {
