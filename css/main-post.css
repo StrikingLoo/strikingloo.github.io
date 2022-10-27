@@ -87,13 +87,13 @@ nav ul li a:hover, footer ul li a:hover {
     text-decoration: underline;
 }
 
-nav {float: right;}
+nav {
+    text-align: center;
+}
 
 nav a {
     padding: 0.5em;
-    /*border-radius: 5%;*/
-    /*background-color: var(--header-anchor-color);*/
-    color: var(--header-anchor-color)/*#ffffff*/;
+    color: var(--header-anchor-color);
     text-decoration: none;
     border-bottom: none;}
 
@@ -109,12 +109,13 @@ strong { font-weight: bolder;}
     padding-left: .5em;
     padding-bottom: .1em;
     display: block;
+    text-align: center;
     border-bottom: 2px dashed var(--header-anchor-color);
 }
 
 .head-banner p {
-    float: left;
-    color: var(--font-color);
+    text-align: center;
+    color: var(--header-anchor-color);
     padding: 0px;
     margin: 0px;
     font-size: 2em;
@@ -124,7 +125,6 @@ strong { font-weight: bolder;}
 }
 
 @media only screen and (max-width: 500px) {
-    nav, .head-banner p {float: none; text-align: center;}
   nav ul li {display:inline-block; margin-bottom:0.8em; width: 45%;
     background-color: var(--header-anchor-color);
     padding: .2em; border-radius: 5%;}
