@@ -11,6 +11,7 @@ body {
     margin: 2em auto;
     background-color: var(--bkg);
     width: 70%;
+    text-rendering: optimizeSpeed;
 }
 
 p, a, ul li, ol li {
