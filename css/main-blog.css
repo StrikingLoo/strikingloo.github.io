@@ -21,7 +21,6 @@
       --quote-bkg: #383838;
     }
 }
-
 [data-theme="dark"] {
       --bkg: #191919;
       --font-color: #fefefe;
@@ -41,7 +40,7 @@ body {
 }
 
 p, a, ul li, ol li {
-    font-family: 'Helvetica', Verdana;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 1.2em;
     line-height: 1.75;
     color: var(--font-color);
@@ -74,7 +73,7 @@ h2 a:hover, h3 a:hover {
 }
 
 h2, h3, h2 a, h3 a, h1, h1 a{
-    font-family: 'Georgia','Helvetica', Verdana;
+    font-family: 'Helvetica', Verdana;
 }
 h2, h2 a {
     font-size: 1.4em;
