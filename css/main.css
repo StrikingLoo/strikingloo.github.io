@@ -7,6 +7,7 @@
   --wiki-bkg-color-hover: #036e8c;
   --heading-underline-color: rgba(0,0,0,.3);
   --quote-bkg: #f7f7f7;
+  --absolute-bkg-color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +20,7 @@
       --wiki-bkg-color-hover: #75909c;
       --heading-underline-color: rgba(255,255,255,.3);
       --quote-bkg: #383838;
+      --absolute-bkg-color: #000000;
     }
 }
 [data-theme="dark"] {
@@ -30,6 +32,7 @@
       --wiki-bkg-color-hover: #75909c;
       --heading-underline-color: rgba(255,255,255,.3);
       --quote-bkg: #383838;
+      --absolute-bkg-color: #000000;
 }
 
 body {
@@ -156,7 +159,7 @@ strong { font-weight: bolder;}
     background-color: var(--header-anchor-color);
     padding: .2em; border-radius: 5%;}
   nav ul {width: 100%;}
-  nav a {padding: 0; color: #ffffff}
+  nav a {padding: 0; color: var(--absolute-bkg-color)}
   .head-banner p {font-size: 1.5em;}
   .head-banner {text-align: center;}
   h1 { font-size: 1.8em;
