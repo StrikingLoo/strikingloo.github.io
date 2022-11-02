@@ -45,7 +45,7 @@ Big Notes encompass multiples sources, but usually form around a MOOC (_Massive 
 
 ## Papers
 
-If I read a paper, find it interesting, and think I will want to onsider it again in the future (especially if I plan on reading related papers later), I will write a summary and save the most important discoveries or explanations. These are the papers I've read so far (mostly in the Machine Learning/Deep Learning space). \[Under tag: _[paper](/tagged?q=paper)_ ]
+If I read a paper, find it interesting, and think I will want to consider it again in the future (especially if I plan on reading related papers later), I will write a summary and save the most important discoveries or explanations. These are the papers I've read so far (mostly in the Machine Learning/Deep Learning space). \[Under tag: _[paper](/tagged?q=paper)_ ]
 
 - **[GAN Survey, Goodfellow 2016](/wiki/GAN)**: A survey on Generative Adversarial Networks by Ian Goodfellow. That article also works as a hub for GAN related articles.
 - **[CLIP: Learning Transferable Visual Models From Natural Language Supervision](/wiki/clip)**
