@@ -5,6 +5,7 @@ date: 2020-06-16
 tags: bookmarks, programming, prefetch
 description: "Programming and technical related links and resources"
 language: English
+importance: 2
 ---
 
 I'll use this as a long-lived bookmarks page for technical or programming-adjacent links that I think I'll come back to.

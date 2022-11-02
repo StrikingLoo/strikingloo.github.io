@@ -6,6 +6,7 @@ description: "A few notes about ROC curves and the AUC -area under curve- metric
 tags: work, fraud, classifier, supervised learning
 language: English
 tags: programming, machine learning, python
+importance: 3
 ---
 
 AUC presents threshold invariance (no need to set a threshold as in accuracy) and scale invariance (if you scale all predictions linearly, but maintain ranking, then resulting auc is the same), which necessarily means that the AUC metric doesn’t depend on the chosen threshold or the scale of probabilities.

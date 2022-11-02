@@ -5,6 +5,7 @@ date: 2021-09-10
 tags: metric, xgboost, feature importance, programming, machine learning, statistics
 description: "A metric for feature importance that doesn't require multiple trainings, preprocessing and is model independent."
 language: English
+importance: 4
 ---
 
 <https://explained.ai/rf-importance/index.html>
