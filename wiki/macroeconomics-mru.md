@@ -3,7 +3,7 @@ layout: post
 date: 2022-08-29
 title: "Macroeconomics (Notes on MOOC by MRU)"
 tags: mooc, economics, macroeconomics, gdp, world modeling
-description: "Notes for the course on Macroeconomics by Marginal Revolution University. These are still in early stages as I am going through the course."
+description: "Notes for the course on Macroeconomics by Marginal Revolution University. GDP, banking, the financial system and more."
 abstract: "Notes for the course on Macroeconomics by Marginal Revolution University. I went through the course during the first week of September, 2022."
 language: English
 importance: 7
