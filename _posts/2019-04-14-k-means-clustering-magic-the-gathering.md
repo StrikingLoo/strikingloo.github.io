@@ -170,6 +170,6 @@ In the future, I’d like to do this same analysis using non-professional decks.
 
 If you want to delve deeper into Unsupervised Learning, I can’t recommend [Introduction to Statistical Learning](https://amzn.to/3RSmJwT) enough. That’s the book I learned about K-Means Clustering from. It’s also the book thanks to which I finally understood Boosted Trees, though that’s a tale for another article.
 
-_Liked this article? Then please follow me on_ [_Twitter_](https://www.twitter.com/strikingloo). Let me know if you found the article helpful, or if any of it sounds wrong or doesn’t work._
+_Liked this article? Then please follow me on [Twitter](https://www.twitter.com/strikingloo). Let me know if you found the article helpful, or if any of it sounds wrong or doesn’t work._
 
 Happy coding.

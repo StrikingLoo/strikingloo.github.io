@@ -29,7 +29,7 @@ What we want is some function that measures how similar two strings are, but is 
 
 One of the most intuitive ones is the Jaccard distance. It can be generalized to a distance measure for any two sets. It has the following formula:
 
-![](/resources/post_image/fuzzywuzzy1.svg){: loading = "lazy"}
+![](/resources/post_image/fuzzywuzzy1.svg){: loading = "lazy" class="invertible"}
 
 That is, how many elements are on either set, but not shared by both, divided by the total count of distinct elements.
 
@@ -53,7 +53,7 @@ The minimum amount of these operations that need to be done to _u_ in order to t
 
 It can be obtained recursively with this formula:
 
-![](/resources/post_image/fuzzywuzzy2.svg){: loading = "lazy"}
+![](/resources/post_image/fuzzywuzzy2.svg){: loading = "lazy" class="invertible"}
 
 Where _i_ and _j_ are indexes to the last character of the substring we’ll be comparing. The second term in the last expression is equal to 1 if those characters are different, and 0 if they’re the same.
 
@@ -163,7 +163,7 @@ However, since it requires preprocessing (like turning both strings to lowercase
 
 I hope you’ve found this article helpful, and let me know if you find another use for FuzzyWuzzy in your job.
 
-_Follow me on_ [_Twitter_](http://www.twitter.com/strikingloo) to stay up to date with more Python tutorials, tips and tricks._
+_Follow me on [Twitter](http://www.twitter.com/strikingloo) to stay up to date with more Python tutorials, tips and tricks._
 
 _If you found this article useful, please consider sharing it on social media._
 

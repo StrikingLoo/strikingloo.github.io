@@ -83,7 +83,7 @@ The ant starts from a given node, and will at each step choose from among every 
 
 That is, the probability of choosing a certain edge will be proportional to:
 
-![weight equation for ant colony optimization](resources/post_image/weight.png){: loading="lazy" style="height:25%; width:25%"}
+![weight equation for ant colony optimization](resources/post_image/weight.png){: loading="lazy" style="height:25%; width:25%" class="invertible"}
 
 Where P is the level of pheromones in that edge, and D the distance the edge covers. To get the distribution we sample from at each random jump, we normalize these weight coefficients so they add up to one.
 

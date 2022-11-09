@@ -82,7 +82,7 @@ Thus in Sarsa, the TD method we will use in this article, on each time step afte
 
 In math terms, with *γ* the discount factor, *Q(s,a)* the value function for taking action *a* in state *s*, and *r* the reward at time *t*, our update rule will be:
 
-![sarsa update rule](resources/post_image/sarsaupdate.svg){: loading="lazy"}
+![sarsa update rule](resources/post_image/sarsaupdate.svg){: loading="lazy" class="invertible"}
 
 In this case, *α* corresponds to the update size/learning rate, similar to the one used in neural networks, normally a value between 0 and 1 that determines how much the current instance influences the value estimation (usually, we initialize it to a higher value and make it closer to zero over time).
 
