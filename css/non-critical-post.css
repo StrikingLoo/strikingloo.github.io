@@ -37,4 +37,5 @@ div.backButton{
 
 .invertible {
         filter: invert(var(--invert-factor)) ;
+        box-shadow:none;
     }
