@@ -39,3 +39,11 @@ The foods you eat can affect your brain health—Amen isn't the only expert on b
 At 50-60% of your maximum heart rate, you’re using 85% fat to burn calories. At 60-70% of your maximum heart rate, that drops to 65% fat being used. And at 70-80%, you’re only using 45% fat to burn calories."
 
 [Source: Heart Rate Monitor for Workouts](https://health.clevelandclinic.org/serious-about-your-workouts-get-a-heart-rate-monitor/)
+
+---
+
+About 75% of the fats in chia seeds consist of the **omega-3** alpha-linolenic acid (ALA), while about 20% consist of omega-6 fatty acids. In fact, chia seeds are the best known plant-based source of omega-3 fatty acids — even better than flaxseed.
+
+28 grams of chia seeds provides 5g of ALA omega-3 fatty acids, or 312–454% of the recommended daily intake. Therefore, you should have \~8g of chia seeds a day.
+
+
