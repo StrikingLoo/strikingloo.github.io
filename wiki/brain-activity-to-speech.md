@@ -31,3 +31,9 @@ I can also think of applications if this were combined with a model like AudioLM
 
 In easier situations, this could automate WhatsApp audio recordings, or integrate to a text-to-art model like [Stable-Diffusion](/stable-diffusion-vs-dalle-2) and make for real time rendering of art as you think of it --imagine the applications for role playing games, gaming in general, or adult content. Real-time horror movies where you think of your own worst fears and they appear in real time.
 
+### Further Reading
+
+- [MindVis by Stanford - Seeing Beyond the Brain: Conditional Diffusion Model with Sparse Masked Modeling for Vision Decoding](https://mind-vis.github.io/)
+
+
+
