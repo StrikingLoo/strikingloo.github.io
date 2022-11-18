@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Solar Energy (notes and future)
 tags: ecology, solar energy, tech, technology, economies of scale, optimism
 date: 2022-07-22
