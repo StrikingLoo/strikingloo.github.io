@@ -23,3 +23,12 @@ Since 2011 there has been an acceleration of production growth rate *and* an inc
 3000 Quads is roughly 300 TW of solar generation capacity, occupying about **5% of Earth's land surface area**, and split between roof top installations in cities and dedicated plants on nearby less developed land. For comparison, agriculture uses 18% of Earth's land surface area, and largely uninhabited deserts are 33%. Ultra low cost solar power will be **[ground mounted](https://www.erthos.com/)**, and ideally rolled off a spool onto the ground similar to **[chemical-free plasticulture](https://en.wikipedia.org/wiki/Plasticulture)** today. Synthetic fuel byproducts include oxygen and water, so limited direct irrigation in arid fuel production areas will also be possible.
 
 300 TW is a lot of power. Roughly 20x our current global electrical production capacity. At that scale, hydrocarbon fuels will be cheaper than they are today nearly everywhere, while electrical power will be up to 20x cheaper, strongly favoring direct electrification where possible. Cheaper fuel means less scarcity, less poverty, and less damage to the environment.
+
+### An opportunity for Europe
+> Our new paper, though focused on Germany, of course has huge implications for the whole of Europe. Because if the data shows decisively how Europe’s largest economy can transform from abject fossil fuel dependence to clean energy superabundance, this means that the rest of Europe can do it too.
+
+> Most of all, the lesson here is that the energy transformation is not about ‘painful sacrifice’: it’s a historic and unique opportunity to simultaneously achieve energy independence (with associated geopolitical benefits), energy decarbonization (with associated climate change benefits), and zero cost energy superabundance (with associated economic benefits) without trade-offs.
+
+> And perhaps the key thing to remember is that as the key technologies already exist, and are already scaling, the energy transformation is going to happen within the next two decades due to economic factors – but our choices will determine whether we become leaders or losers in the emerging future energy system.
+
+[Source](https://rethinkdisruption.com/europe-germany-can-reach-100-clean-energy-by-2035/)
