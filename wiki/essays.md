@@ -187,6 +187,13 @@ It is my opinion that we exercise a certain level of abstraction when dealing wi
 
 That is, being able to say 'I will move the chapter on X nearer to the end, before the conclusion' instead of having to hold the whole context and information of that chapter in your head to make the decision, is similar to knowing a certain function maps inputs to outputs in a way, without having to remember its exact implementation when deciding how to use it or where to put it.
 
+## Cicero and Rhetoric
+
+Cicero, almost by the strength of his intellect and his oratorial skills alone, rose to the very pinnacle of Roman society. He wrote a lot about Rhetoric, and said that good rhetoric had three components: prove, delight and move. 
+- **Docere** is about convincing the audience that your position is the correct one; so much is surely the purpose of any argument. 
+- **Delectare** is about how you speak, about using language in a way that is appealling, entertaining, interesting, perhaps even beautiful; that's how you keep their attention.
+- **Movere** is about engaging the emotions of your listeners; there is no better way to convince, after all.
+
 ## Related Reading
 
 - [Idea Space: Thinking as Pathfinding in the Space of Ideas](/wiki/idea-space)

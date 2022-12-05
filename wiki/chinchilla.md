@@ -40,4 +40,7 @@ Basically, parameters/tokens \~= 47.
 
 - [Lessons Learned, Rae et al. (2021)](https://arxiv.org/pdf/2112.11446.pdf) \[🌱]
 - [MMLU SotA -currently flan-PaLM as of 2022 Dec-](https://paperswithcode.com/sota/multi-task-language-understanding-on-mmlu)\[🌱]
+- [Chinchilla's Wild Implications (LessWrong)](https://www.lesswrong.com/posts/6Fpvch8RR29qLEWNH/chinchilla-s-wild-implications)
 
+> "To put this in context: until this paper, it was conventional to train all large LMs on roughly 300B tokens of data. (GPT-3 did it, and everyone else followed.) Insofar as we trust our equation, this entire line of research -- which includes GPT-3, LaMDA, Gopher, Jurassic, and MT-NLG -- could never have beaten Chinchilla, no matter how big the models got."
+[_Source: Chinchilla's Wild Implications (LessWrong)_](https://www.lesswrong.com/posts/6Fpvch8RR29qLEWNH/chinchilla-s-wild-implications)
