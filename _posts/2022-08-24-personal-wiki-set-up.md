@@ -41,7 +41,7 @@ I built a template for a [personal site with a Digital Garden](https://github.co
 
 You can fork it in Github, which allows you to basically copy paste all of my code and then edit on top of it. You are free to edit away any part of it or just leave it all as-is and start using the wiki right away.
 
-To fork, simply go to the project's URL and click on _fork_ if you have a GitHub account, or create one first. This will create your own copy of the project from which you can begin working.
+To fork, simply go to the project's URL and click on _fork_ if you have a GitHub account, or create one first. This will create your own copy of the project from which you can begin working. Make sure to name it _nickname.github.io_ where _nickname_ is your GitHub username, so everything works correctly. This will make the repository your GitHub personal site.
 
 To edit your own copy go to its URL (you can also find it in your profile) and _clone_ the project to your computer. Alternatively you could edit each file from the browser directly through Github's UI, though you will probably be less happy doing it that way.
 
