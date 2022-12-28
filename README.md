@@ -27,7 +27,6 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 sudo gem install rails
 sudo gem install jekyll
 sudo gem install jekyll bundler
-cd ~/this_project
 
 bundle init
 bundle install
