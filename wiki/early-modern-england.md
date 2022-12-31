@@ -147,7 +147,7 @@ There was often an emphasis in the restoration of customs, as per common law.
 
 ## Education and Literacy (Lecture 17)
 
-The population at the beginning of the 16th century was not uneducated, but unschooled, as school participation rates were around 10\%; this reserved for lawyers, the clergy adn certain trades (like tradesmen who would need to learn foreign languages).
+The population at the beginning of the 16th century was not uneducated, but unschooled, as school participation rates were around 10%; this reserved for lawyers, the clergy adn certain trades (like tradesmen who would need to learn foreign languages).
 
 By the beginning of the 17th century this had greatly changed. There were two big driving forces for this:
 
@@ -158,7 +158,7 @@ This extends the education from the elite to the general population. The 16th ce
 
 In the 1620s gentleman students could buy multiple books, with one example cited who bought about 10 books in 2 years.
 
-By 1563 26\% members of parliament had attended university. By 1642, 50\% had.
+By 1563 26% members of parliament had attended university. By 1642, 50% had.
 
 In the mid to late 16th century, funded by clergymen, merchants and gentlemen usually from London, a plethora of grammar schools were founded, to the point where for instance Lancashire had one on every town. Education here was mostly classical. They taught the 4 r's: reading, 'riting, 'rithmetic and religion.
 
@@ -166,4 +166,100 @@ By the early 17th century most towns had a grammar schools and many villages had
 
 Most who attended university were sons of noblemen, or of the richest sort of merchants or professionals, as they were very costly. The same happened with grammar schools, but petty schools did penetrate most of society.
 
-By 1642 (Protestation Oath) 30\% were literate, and towns were much more literate than villages. In the 1660s it was common enough for people to read that commoners would be reading chapbooks and almanacs (hundreds of thousands were printed each year).
+By 1642 (Protestation Oath) 30% were literate, and towns were much more literate than villages. In the 1660s it was common enough for people to read that commoners would be reading chapbooks and almanacs (hundreds of thousands were printed each year).
+
+## Puritans and Arminians (Lecture 18)
+
+## Crown and Political Nation, 1604-1640 (Lecture 19)
+
+James I started his reign with an optimistic welcome and a well formed consensus. Though there were pressures between the hereditary privilage of Parliament and the will of the monarch, they were not exceeding of what was typical for the system.
+
+This changed in the 1620s. A combination of political, economic and social factors including foreign policy.
+
+The Duke of Buckingham, the favorite of James I, was eager to exert power, and generated controversy while controling royal patronage, with all that that meant. He grew hated due to his incompetence in matters of state and his favored position. This combined wiht an unstable foreign policy situation with the 30 years war (which began in 1618) where the king's son in law was deposed. 
+
+There were 5 parliaments between 1621 and 1629, infrequently many. There were quarrels over whether England should participate in the 30 years war, anxiously watched by the English elite.
+
+In 1526 Parliament met to provide money for the war (England had joined on the side of France, after Charles I married the princess Henrietta). Parliament refused to provide funds if their Protestation was not accepted. The Protestation was a protest against Buckingham and the Arminian bishops. The King dissolved parliament to halt the impeachment of the Duke, but got no money. Then he proceeded to tax the gentry using 'prerogative power' and Buckingham declared war against France as well as Spain, to help French Protestants, but his campaign failed and squandered money.
+
+In 1628 Parliament was called again, to raise money. The Commons promised to vote a bill of funding if the grievances about the forced loan and Buckingham were heard, and the Petition of Right were signed.
+
+The Petition of Right said:
+
+- No taxation without Parliamentary consent
+- No arrest of subjects
+- No billeting of troops without subjects' consent.
+
+In August of 1628 Buckingham was assassinated. 
+
+In the late 1620s there was a functional political breakdown in the consensus system. Conflicts in society included Arminianism, Buckingham and his campaigns, the King's taxation without Parliamentary approval and the behavior of troops.
+
+There was talk among parliamentarians about a poperist conspiracy that aimed for absolutism and taking the power of Parliament. The other band spoke of the popular spirits, radicals who wanted to encroach on the Crown's rights: crypto-Presbyterians, or Puritans.
+
+In the 1630s the King declared peace and started levying taxes of questionable legality (some based on medieval precedent). The 1630s seemed really calm, but there was also no place for public protest.
+
+In 1637 the King and Archbishop Laud tried to impose an English style prayer book and the episcopal church on Scotland. This insistence on uniformity had catastrophic blowback. Their reform looked _'popish, atheistical and English'_.
+
+## Constitutional Revolution and Civil War, 1640-1646 (Lecture 20)
+
+_This topic is much more deeply discussed in the related article: [The Restless Republic](/wiki/the-restless-republic) my notes for a book concerning this period._
+
+In 1639, after about a decade of coasting through peaceful times, King Charles I faced a problem. He tried to convert Scotland to Arminianism, which Presbyterian Scotland didn't like one bit.
+
+The King summoned Parliament to procure funds for defense, and these were unprecedentedly contested elections (25% of seats were contested). That was called the Short Parliament, because the commencement speech was cut short before 3 minutes had passed when the King dissolved it. The speech was a condemnation of the King's actions.
+
+Then he summoned a new Parliament after Scotland invaded and took over the North of the realm. The Scots were more experienced in battle as they had fought in the 30 years war and the Dutch wars of independence. 
+
+These elections were even more contested at about 30%, with close to 30% of England's male adult population voting.
+
+That parliament finally read the grievances from all the kingdom and got the King to back down in some Arminian reformations, and executed members of the privy council. They passed the Tertiary act (which made it mandatory for Parliament to convene at least once in three years) and removed the right from the King to dissolve parliaments.
+
+In 1641, after news of the rebellion in Ireland (a nationalist, Catholic uprising of Irish chieftains and the _Old English_ of Norman medieval ascent) and the massacres in the North (populated mostly by the planted Scots), John Pym passed (narrowly) the Grand Remonstrance.
+
+- Parliament should have the right to choose the King's councilors.
+- An assembly of divines should convene to decide the religious future of the kingdom.
+
+This act divided parliament, and the King declared against it and used it as a way of getting supporters. He tried a coup in 1642 by storming parliament with the army. 
+
+This same year, Parliament gave itself the right to raise an army (through ordinance) and made an offer to the King called the Nineteen Propositions --more extreme than the Grand Remonstrance in the rights conferred to Parliament. Parliament and King each raised an army and fought.
+
+A fifth of all adult males fought in the war. Most of the Aristocracy fought for the King, 2/3rds of the House of Lords. Most of the middle-sort fought for Parliament.
+
+Parliamentary (roundhead) forces were concentrated in the south east and controlled London. They sought to stall and press so the King would come to terms. Royalist forces encroached from the West and the North and sought to take London and its whereabouts to negotiate with a defeated Parliament.
+
+Parliament was divided between those for peace (to negotiate favorable terms) and those for War (to keep pushing). War faction, led by John Pym, allied with the Scots through a covenant, getting their military support in exchange for reform of the church of England (to make it Presbyterian). 
+
+In 1644 the Scots attacked from the North and besieged York. Prince Rupert son of Charles tried to drive them away but was met by Cromwell's army who defeated him (with famously disciplined cavalrymen) gaining renown.
+
+By 1640 the censorship of the press had stopped, and new religious groups were emerging. In 1645 the Parliament army, led by Cromwell, defeated the main Royalist armies.
+
+## Regicide and Republic, 1647-1660 (Lecture 21)
+
+_This topic is much more deeply discussed in the related article: [The Restless Republic](/wiki/the-restless-republic) my notes for a book concerning this period._
+
+After the war was lost, the King was kept under arrest by the Scots and stalled while Parliament offered him a set of terms. These terms included presbyterianism and a pardon for all who fought in the war, plus the execution of about 50 noblemen who fought on his side.
+
+He stalled and the Model Army of Parliament, controlled by Lambert, carried him by force to London, where their supporters in Parliament (mostly independents or Puritans) drafted a new set of terms: the Heads of the Proposals. These were much more convenient for the King: most of his men would be pardoned, the army would be controlled by Parliament for 10 years (as oposed to the 20 the previous terms offered) and Parliament would meet every 2 years. The King stalled.
+
+The Levellers inspired the army to take the Agreement of the People after much debating. It included writing down adn simplifying the laws, expanding suffrage, and more proposals.
+
+The King escaped and obtained the right to receive visitors in the Isle of Wight. Here he plotted with his Scottish supporters, and made the Engagement. The _engagers_ from Scotland invaded England, and English and Irish supporters organized uprisings and began the war anew in 1648. This was the second civil war, and it hardened the hearts of the army. They beat him again, including the Scottish army, much larger than Cromwell's.
+
+Disillusioned that the king was still king, Colonel Thomas Pride conducted his Purge: he only let 150 members of Parliament enter the chamber and vote, limiting to those who shared the army's view. They tried the King, under decision of the House of Commons without the assent of the House of Lords, and executed him.
+
+This small parliament governed as it could under the Republic, and the army was focused on taking down Ireland and the Covenant army. At this point the north of Ireland was taken by British landowners who ruled their lands, creating the conflict that continues somewhat to this day.
+
+By 1653 the Commonwealth was created. With peace, tensions emerged. The only reform so far had been the Act of Toleration and a small simplifying of the laws, but nothing like the Puritans or the Levellers expected. 
+
+In that year, Cromwell took over in a coup and controlled the country for five years. First he appointed a Parliament of selected 'godly' men. This failed and dissolved itself -after some religious reform like the abolition of tithes-, after which the Republic under the Instrument of Government was created. 
+
+The republic -the *Protectorate*- was based on the Heads of the Proposals, but the new Parliament that was elected immediately began to attack the Lord Protector, religious toleration and the system. In 1657 he was offered the Humble Petition, where he would take the crown and the ancient constitution would be restored.
+
+Cromwell was seen as a regicide by his opponents, and something of a tsundere ruler by his ex allies ("*it's not like god wants me to smite you, b-baka*"). He died in 1658 and was the only one who could hold every faction together. The Rump was restored after his inadequate son was brought down. General George Monck intervened from Scotland and restored authority. First the Rump, then all survivors of the Long Parliament of 1640. 
+
+In 1660 Parliament dissolved itself and called for new elections. Charles II appealed from exhile and wrote the Declaration of Breda.
+- Respect the liberties of Parliament.
+- Pardon everyone who fought against him.
+- Liberty of conscience.
+
+

@@ -50,3 +50,14 @@ importance: 3
 
 <https://apenwarr.ca/log/>
 
+<https://rationalconspiracy.com/>
+
+<https://acesounderglass.com/>
+
+<https://thezvi.wordpress.com/>
+
+<https://statmodeling.stat.columbia.edu/>
+
+<https://westhunt.wordpress.com/>
+
+
