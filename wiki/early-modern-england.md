@@ -1,13 +1,15 @@
 ---
 layout: post
 date: 2022-12-02
-title: "Early Modern England, Yale MOOC with Keith E. Wrightson"
+title: "Early Modern England, Yale History MOOC with Keith E. Wrightson"
 tags: history, notes, 16th-17th century England, English history, Cromwell
-description: "Notes and excerpts from 'Early Modern England', a Yale MOOC with Keith E. Wrightson. Ongoing."
-abstract: "Notes and excerpts from 'Early Modern England', a Yale MOOC with Keith E. Wrightson. Ongoing."
+description: "Notes and excerpts from 'Early Modern England', a Yale History MOOC with Keith E. Wrightson."
+abstract: "Notes and excerpts from 'Early Modern England', a Yale History MOOC with Keith E. Wrightson."
 language: English
-importance: 3
+importance: 5
 ---
+
+I took this course from December 2nd 2022 to January 1st 2023. I watched through the whole playlist but did not read (nor did I have access to, I think) the supplementary material or handouts. All in all a great resource, which gave me a better picture of what early modern English society and culture looked like. I especially enjoyed the more general lectures about society at large, more than those focused on successions of events. The Elizabethan era with its intricate plots and intelligence, and the Glorious Revolution with a crash course on how to form a functioning Republic were amazing. I like seeing the story of how sometimes, even if unfrequently, centrists actually succeed.
 
 ## Demographics (Lecture 2)
 England in the 1520s had \~2.4M people. 2% were nobles (peers and gentry, who lived off rents), <10% lived in towns, <5% in towns with >5000 inhabitants. Commons could be yeomen (substantial tenant farmers), freeholders or husbandmen (with enough land to support their family, but relying on family labor), tradesmen and craftsmen (ale brewers to smiths), and cottagers or laborers who lived off wages, though complete dependence on wages for survival was uncommon.
@@ -170,6 +172,10 @@ By 1642 (Protestation Oath) 30% were literate, and towns were much more literate
 
 ## Puritans and Arminians (Lecture 18)
 
+The Puritans were the 'hotter sort of Protestant', usually opposing episcopality or centralization of the church and advocating for a decentralized, bottom-up religion where people would gather and discuss scripture directly.
+
+The Arminians defended a more centralized and traditional way of Protestantism, with an emphasis in the Sacraments as opposed to rigorous interpretation of scripture, giving for instance the communion a bigger importance (albeit without transubstantiation, of course). They would have remained an obscure sect were it not because Charles I decided to join them. They were seen as a return to _popery and absolutism_ by their opponents, including Puritans, and they slowly but surely overtook England's religious institutions, as Charles I used his power to appoint them as bishops, ending with the appointment of the Bishop of Westminster himself.
+
 ## Crown and Political Nation, 1604-1640 (Lecture 19)
 
 James I started his reign with an optimistic welcome and a well formed consensus. Though there were pressures between the hereditary privilage of Parliament and the will of the monarch, they were not exceeding of what was typical for the system.
@@ -262,4 +268,79 @@ In 1660 Parliament dissolved itself and called for new elections. Charles II app
 - Pardon everyone who fought against him.
 - Liberty of conscience.
 
+## An Unsettled Settlement: The Restoration Era, 1660-1688 (Lecture 22)
 
+The Restoration effort was planned and executed by the Earl of Clarendon, Charles II chief minister. It included recognizing all laws and reforms up to 1641 (before the Heads) including the Triennial Act and
+
+- Recovering confiscated Royal land
+- Recovering confiscated Church of England land
+- Pardoning anyone who fought in the war (general act of indemnity and oblivion) excepting only the surviving regicides.
+
+Subsequent reform was mostly favorable to the King, like abolishing freedom of the press. 
+
+The Calavier Parliament was reticent to grant Freedom of Conscience. The Act of Uniformity was passed, banning all clergymen who were not of the Church of England from even living close to towns. Something like 10% of the population were dissidents (no longer only Puritans, but also Quakers and the like).
+
+The King signed an agreement of cooperation -Treaty of Dover- with the French stipulating that they would ally with them against the Dutch, even though the Dutch were very popular amongst the English political nation. It had two secret clauses were the French would pay the King a pension and also he would eventually convert to Catholicism and proclaim liberty of conscience including dissidents and Catholics. 
+
+Thus began the 2nd and third wars with the Dutch, which were not as successful as the first (led by Cromwell, where they were victorious). Parliament forbid Catholics from taking office -Test Act- and married Mary, niece of Charles II (who had no heirs and had a Catholic brother) to William of Orange. _foreshadowing_.
+
+Funnily enough this time there was an actual conspiracy to establish popery and absolutism in England.
+
+In 1679 the Exclusion Parliament, which aimed to exclude James (brother of Charles II) from succession, was elected. This after the Popish Plot scandal and the leaking of the secret clauses of the treaty of Dover. The King opposed exclusion and Parliament was dissolved, and the Licensing Act which had expired was not renewed, so freedom of the press was back, bringing a deluge of pamphlets.
+
+The political nation divided into Tories and Whigs. Whigs were for exclusion and against popery and absolutism (they would burn pope effigies in processions). Tories were on the side of the King and would frequently remind people of the breakdown of '41 as a warning not to rock the boat.
+
+The Exclusion Crisis came as Parliament convened and was dissolved again when pushing for exclusion, and the King chose not to call for a new one, started dissolving the charters of cities which had Whig inclinations (I didn't quite get how this mechanism worked exactly), and persecuting dissidents (especially quakers) throughout the 1680s. The nation was politically highly polarized.
+
+The King then died at his most powerful, and converted to Catholicism in his deathbed.
+
+James II was closer to Charles I in temperament, whereas Charles II resembled James I more. He undermined his own position with his deeply sincere catholicism.
+
+He filled the Kingdom and authority positions with Catholics (judges of the peace, even the Irish governor). He passed a Declaration of Indulgence, suspending penal laws against dissenters and Catholics. His actions had been clearly illegal. He tried to repeal the Test Act and got very unpopular. In 1687 it was revealed that Queen Mary was pregnant, so he may have an heir. He also made every parish read the Declaration of Indulgence, and declared the seven biggest bishops traitors when they opposed this.
+
+The public rejoiced when they were absolved by the courts, and then prince James, James II's heir, was born. In 1688 this proved too much and the 'Seven Immortals', leading political figures including the Earl of Danby, sent a letter to William of Orange inviting him to take the crown and secure a free Parliament, while investigating the birth of James's son. William of Orange proclaimed that he would "preserve the Laws, Liberties and Customs of England".
+
+The King fled and was allowed to escape to France, and in 1688 an assembly of the nobility asked William and Mary to take the reins of government.
+
+## England, Britain, and the World: Economic Development, 1660-1720 (Lecture 23)
+
+The Glorious Revolution brought massive changes in the structure of government and Britain's standing in the world.
+
+Throughout the 17th and early 18th century, population remained almost constant. Fertility went down and did not recover until 1760. Life expectancy was 33 even after the last plague in 1666, due to background mortality. Also emigration to America in the latter half of the 17th century, and internal towards London which had a lower life expectancy due to transmissible disease.
+
+Factors in this period were:
+- Population stabilization.
+- Diminishing cost of food (mostly grain).
+- Growing real wage for craftsmen and laborers.
+
+There was regional specialization in agriculture, and processes became more efficient with the diffusion of innovation. There was also great urbanization: total population remained nearly constant but rural went from 60% to 40%.
+
+Many towns and cities grew enormously besides London, leading to diversification of the economy. The main export, woolen cloth, went from 92% share to 70%. 
+
+Imports also grew, mostly in luxury goods like silk, wine and woods. Pepper, tobacco and other commodities from the Americas and the East grew too. A great deal of these imported goods, rather than being consumed domestically, were exported to other European markets.
+
+Complex overseas trade emerged, especially in the triangular format. This was incentivized with protectionist measures like forcing ships to stop in England or forcing  trades to be conducted only with British ships. Standardized manufacture grew incentivized by the bulk selling (production remained under the 'putting out system').
+
+Surplus income was destined to the 'decencies' of life: neither luxury nor necessity, like forks (invented around this time). 
+
+In the second half of the 17th century coal mining grew and was sold locally for heating and industrial processes. This trade led to the invention of the steam engine (to drain water from coal mines) and wooden wagon rails for coal wagons. Some of these undertakings were the biggest civil engineering projects undertaking since the Romans had left.
+
+Each region specialized in a certain trade (cloth, coal, etc.) and towns were central in concentrating production in each place. Coastal traffic and river passes grew enormously, and roads were also improved. At this point in time, early 18th century, village shops emerge.
+
+## Refashioning the State, 1688-1714 (Lecture 24)
+
+The Glorious Revolution brought King William III (of Orange) to power. He was married to Queen Mary, the first daughter of James II. 
+
+Parliament passed a centrist Settlement with the support of both Whigs and Tories, that included things like freedom of religion (all religions could be practiced privately, even Judaism. All brands of Protestantism could be practiced publicly), and limited the powers of the King (Parliament must convene every three years and could not be dissolved, for instance).
+
+In the following decades the fiscal-military state apparatus emerged. Greatly incentivized by the war in Continental Europe (against France in the war of succession, mostly) and the war against the Jacobites (who tried to bring James II to the throne again, and then Jamess the would-be third or pretender, his son), Parliament devised multiple ways to increase public revenue. Taxation became more thorough and broadened greatly (especially Land Tax and then excises), as Parliament managed to give the King an allowance but keep control of public revenue. As trust in public revenue uses grew, Parliament began to devise and control multiple mechanisms for securing funding, mostly around public debt. The Bank of England was created as were different kinds of bonds (including lottery bonds). My notes on this so-called financial revolution continue in _[Ascent of Money: Book Notes](/wiki/ascent-of-money)_. The interest of this public debt (which amounted to 10% of total national income) owuld be paid for with tax revenues. 
+
+Parliament began to be called once a year, out of necessity as there was no other way of securing funding. Not an intended aspect but a welcome one of the new system. Royal ministers, though appointed by the monarch, still needed to be approved by Parliament or their projects would not get funded. At this point Parliament really divided into two parties Tories and Whigs. This polarization permeated every aspect of society in cities and towns, and more elections beacme contested. By now Parliament was not only called once a year but also elected every three years.
+
+In 1701 the Act of Settlement was passed (for the further limitation of the crown and better securing of the rights of the subject). It fixed the succession on Sofia of Hanover, solely because she was the next protestant successor. It also forbid them from marrying Catholics or being Catholics. The Crown also lost the power to appoint or remove judges at will. 
+
+This is why after Queen Anne died, she was succeeded by George I, Sophia's first son.
+
+Most of Scotland supported the Revolution as it was governed by Protestant Whigs. Close to 13% of the population died in famines in the 1690s. Their industry was not as developed as the English one and they were excluded from English colonial trade, while also unable to secure their own colonies.
+
+In the end, Scotland and England negotiated a Union: Scotland would recognize the Act of Settlement (and the Hanoverian succession) in exchange for England providing them access to the colonial markets and other economic concessions. The Treaty of Union was signed in 1707, forming the United Kingdom of Great Britain. Scotland joined the English Parliament, but retained church and legal independence. Scots were granted full access to English trade, their taxes would be reduced and their industries protected.
