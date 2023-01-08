@@ -29,3 +29,6 @@ The Wasserstein metric is computed as the distance between the means plus a term
 "When considering the advantages of Wasserstein metric compared to KL divergence, then the most obvious one is that W is a metric whereas KL divergence is not, since KL is not symmetric, and does not satisfy the triangle inequality."
 [Source: Mathstack](https://stats.stackexchange.com/questions/295617/what-is-the-advantages-of-wasserstein-metric-compared-to-kullback-leibler-diverg)
 
+## Related Reading
+
+- [Six Intuitions for KL Divergence](https://www.lesswrong.com/posts/no5jDTut5Byjqb4j5/six-and-a-half-intuitions-for-kl-divergence)
