@@ -2,7 +2,7 @@
 layout: post
 date: 2022-11-10
 title: "Blogroll - Subscriptions"
-tags: blogs, links, blogging, writing
+tags: blogs, links, blogging, writing, bookmarks
 description: "Blogs and sites I check often."
 language: English
 importance: 3
