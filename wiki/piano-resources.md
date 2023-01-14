@@ -40,6 +40,7 @@ Mnemonics for notes:
 <https://www.darrenangvgm.com/free-vgm-sheets#/04-hoenncollection/> - for Pokémon sheets
 <https://www.youtube.com/watch?v=l3_i7kOgg1Q> Giorno's theme tutorial
 <https://makingmusicfun.net/> - for sheets
+<https://www.youtube.com/watch?v=Q-VokAAF5Lk> KnY Gurenge
 
 ### Summary from "Concepts Piano Beginners Must Understand to Learn Fast" (Youtube)
 

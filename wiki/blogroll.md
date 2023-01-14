@@ -62,3 +62,7 @@ importance: 3
 
 <https://srconstantin.wordpress.com/tag/fact-post/>
 
+<https://ciechanow.ski/>
+
+<https://www.redblobgames.com/>
+
