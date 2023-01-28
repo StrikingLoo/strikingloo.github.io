@@ -93,3 +93,15 @@ A nice resource on Roman Naming Practices, and the origin of Modern Surnames:
 Make low-poly images (they look nice for some post's header image).
 
 <https://cojdev.github.io/lowpoly/>
+
+---
+ChatGPT Prompts
+
+<https://github.com/f/awesome-chatgpt-prompts>
+
+---
+Emotion Wheel
+
+![](/resources/final_emotion_wheel-lg.png)
+
+<https://pudding.cool/2022/12/emotion-wheel/> 
