@@ -7,14 +7,23 @@ is_blog: true
 	<p>To see all the articles in list format, visit <a href="/archive">the Archives</a>. </p>
 	<div style='text-align: center;'>
 	<h2>Recent Articles</h2>
-	<ul class="posts">
+	<div class="posts">
 	  {% for post in site.posts limit: 10 %}
 	  {% if post.sitemap %}
 	  {% if post.importance > 4 %}
-<li class='post-item' style='text-align: center;'><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <br/> <span><i>{{ post.date | date_to_string }}</i></span>
-<br/><p><i>{{ post.description }}</i></p></li>
+	  <div class="card">
+  <div class="card-body">
+    <h3 class="card-title">{{ post.title }}</h3>
+    <span><i>{{ post.date | date_to_string }}</i></span>
+<br/><p class="card-text">{{ post.description }}</p></li></p>
+    <a href="{{ post.url }}" title="{{ post.title }}" class="btn">Read</a>
+  </div>
+</div>
 	    {% endif %}
 	    {% endif %}
 	  {% endfor %}
-	</ul>
+	</div>
 </div>
+
+
+

@@ -177,25 +177,35 @@ strong { font-weight: bolder;}
   }
 }
 
-.posts li {
-  padding: .6em;
-  vertical-align: middle;
-  margin: .2em;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 1em;
   text-align: center;
-  list-style: none;
-  color: var(--bkg);
-  background-color: var(--header-anchor-color);
 }
 
-.posts li a {
+.card-body {
+  padding: 16px;
+  text-align: center;
+}
+
+.card-title {
     font-family: Georgia, Helvetica;
     font-size: 1.4em;
     text-align: center;
     font-weight: bold;
     border-bottom: 3px solid var(--wiki-bkg-color-hover);
-    color: var(--bkg);
 }
 
-.posts li a:hover {border-bottom: 3px solid var(--bkg);}
-
-.posts li p, li span { color: var(--bkg);}
+.btn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  margin: 0;
+  padding: 8px 8px;
+  vertical-align: middle;
+  text-decoration: none;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  width: 80%;
+}
