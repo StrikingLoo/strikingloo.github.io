@@ -12,7 +12,6 @@
 
       "title"    : "{{ item.title | escape }}",
       "url"      : "{{ item.url }}",
-      "category" : "{{ item.category }}",
       "tags"     : "{{ item.tags | join: ', ' }}",
       "name" : "{{item.path | remove_first: '.md' | escape }}"
 
