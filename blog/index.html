@@ -15,8 +15,12 @@ is_blog: true
   <div class="card-body">
     <h3 class="card-title">{{ post.title }}</h3>
     <span><i>{{ post.date | date_to_string }}</i></span>
-<br/><p class="card-text">{{ post.description }}</p></li></p>
-    <a href="{{ post.url }}" title="{{ post.title }}" class="btn">Read</a>
+	<br/>
+	<p class="card-text">{{ post.description }}</p>
+
+	<div class="card-footer">
+    	<a href="{{ post.url }}" title="{{ post.title }}" class="btn">Read</a>
+  	</div>
   </div>
 </div>
 	    {% endif %}

@@ -175,6 +175,12 @@ strong { font-weight: bolder;}
   .posts {
     grid-template-columns: 1fr 1fr;
   }
+  .card-text {
+  min-height: 110px;
+  }
+  .card-title {
+    min-height: 110px;
+  }
 }
 
 .card {
