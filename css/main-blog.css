@@ -179,7 +179,7 @@ strong { font-weight: bolder;}
   min-height: 110px;
   }
   .card-title {
-    min-height: 110px;
+    min-height: 90px;
   }
 }
 
@@ -187,6 +187,7 @@ strong { font-weight: bolder;}
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 1em;
   text-align: center;
+  border-radius: 8px;
 }
 
 .card-body {
@@ -195,11 +196,15 @@ strong { font-weight: bolder;}
 }
 
 .card-title {
-    font-family: Georgia, Helvetica;
-    font-size: 1.4em;
     text-align: center;
-    font-weight: bold;
     border-bottom: 3px solid var(--wiki-bkg-color-hover);
+}
+
+.card-title a {
+    font-family: Georgia, Helvetica;
+    font-size: 1.2em;
+    line-height: 1em;
+    font-weight: bold;
 }
 
 .btn {
@@ -214,4 +219,5 @@ strong { font-weight: bolder;}
   background-color: #000;
   text-align: center;
   width: 80%;
+  border-radius: 4px;
 }
