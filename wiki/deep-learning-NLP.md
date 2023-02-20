@@ -446,3 +446,10 @@ Distillation is an instance of [semi-supervised learning](/wiki/unsupervised-lea
 - Train student with smaller (e.g., \~50x smaller) size and bigger dataset, on cross entropy
 
 Now you have a small trained model for your problem. Related paper notes on [Neural Network Distillation](/wiki/distilling-knowledge-nn).
+
+## Further Reading
+
+- [Large Language Models are Zero-Shot Reasoners](https://arxiv.org/pdf/2205.11916.pdf). Related: [Multimodal Chain-of-Thought Reasoning in Language Models](https://arxiv.org/pdf/2302.00923.pdf). One introduced ways of improving reasoning in LLMs like the 'think step-by-step' trick. The other extends these techniques to multimodal (particularly text and image) reasoning -e.g., question answering-.
+
+> There is a key challenge in training 1B-models to be CoT reasoners. As observed by Wei et al. (2022b), models under 100 billion parameters tend to produce illogical CoT that leads to wrong answers. In other words, it might be harder for 1B-models to generate effective CoT than directly generating the answer. 
+
