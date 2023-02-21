@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Create a Custom Skill Tree
-description: "This app lets you design custom skill trees. You can use it for college course mapping, or to track your progress learning different parts of a textbook or any subskills."
+description: "This app lets you design custom skill trees an download them as an image. You can use it for college course mapping, or to track your progress learning different parts of a textbook."
 ---
 <style>
 #skilltree {
@@ -11,10 +11,24 @@ description: "This app lets you design custom skill trees. You can use it for co
 .wrapper {display: grid;
 grid-template-columns: 1fr 1fr;
 }
+
+.btn {
+  padding: 8px 8px;
+  margin: 8px 2px 8px 2px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  border-radius: 4px;
+}
+
+textarea {
+	margin: 8px 2px 8px 2px;
+}
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
 <h1>Create a Custom Skill Tree</h1>
+<p style="text-align: center;">You can export it as an image!</p>
 <div class="wrapper" style="text-align: center;">
 	<h3> Skills </h3> <h3>Dependencies</h3>
 	<span><i>format: depth in skilltree, name.<br> Alternative format:<br>depth {skillName1,skillName2}</i></span><span><i>format: ("a,b" : b depends on a)<br>"{a,b} {c,d}" or "b {c,d}"</i></span>
@@ -30,8 +44,8 @@ grid-template-columns: 1fr 1fr;
 5,7</textarea><br>
 </div>
 <div style="text-align: center;">
-<button onclick="initializeNetwork();">Display!</button>
-<input type="button" value="Download image" onclick="document.getElementById('canvasImg').click();">
+<button onclick="initializeNetwork();" class='btn'>Display</button>
+<input type="button" value="Download Image" onclick="document.getElementById('canvasImg').click();" class='btn'>
 <a id="canvasImg" download="skill-tree.png"></a> </div>
 <div id="skilltree"></div>
 
