@@ -188,11 +188,16 @@ strong { font-weight: bolder;}
   margin: 1em;
   text-align: center;
   border-radius: 8px;
+  border: solid 1px var(--heading-underline-color);
 }
 
 .card-body {
   padding: 16px;
   text-align: center;
+}
+
+.card-body span {
+  color: var(--font-color);
 }
 
 .card-title {
@@ -208,7 +213,7 @@ strong { font-weight: bolder;}
 }
 
 .btn {
-  border: none;
+  border: solid 1px var(--heading-underline-color);
   outline: 0;
   display: inline-block;
   margin: 0;

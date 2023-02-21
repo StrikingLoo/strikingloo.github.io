@@ -193,7 +193,7 @@ blockquote::after{
   content: '';
 }
 
-pre, code {background-color: #444; color: #fff; font-family: Verdana; padding: 10px; line-height: 1.75;}
+pre, code {background-color: #444; color: #fff; font-family: Verdana; padding: 4px; border-radius: 2px; line-height: 1.75; font-size: .9em;}
 
 h2, h3 {
     padding-bottom: .3em;
