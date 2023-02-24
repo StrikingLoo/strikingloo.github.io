@@ -45,3 +45,9 @@ The X<sub>T</sub> parameter seems to encode the high level features of the image
 do not significantly affect the high-level features.
 
 It's also possible to reconstruct an image given its X<sub>T</sub> encoding.
+
+## Related Reading
+
+- [GLIDE: Text-Guided Diffusion Models](/wiki/glide): A next step from DDIM where the text-to-image CLIP model is used to guide the diffusion process, allowing for text-conditioned image generation.
+- [Unsupervised Deep Learning](/wiki/unsupervised-learning-berkeley#latent-variable-models): My general Unsupervised Deep Learning notes, based on the excellent Berkeley MOOC and enriched with several papers. Here you can learn about GANs and VAEs, and get links to some of the relevant literature.
+- [Stable Diffusion: Prompt Guide and Examples](/stable-diffusion-vs-dalle-2): where I get into the practical side of using a diffusion model for image generation (and some advice for prompt-engineering).

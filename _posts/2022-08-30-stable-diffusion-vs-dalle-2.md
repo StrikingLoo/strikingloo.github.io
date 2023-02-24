@@ -142,6 +142,23 @@ In my opinion, both prompts yielded better images here than they did for DALLE-2
 ![](resources/ai-generated-images/stable-diffusion/selected/3653447808_A_digital_illustration_of_a_treetop_house_with_fireflies__vivid_colors__4k__fantasy.png
 ){: loading="lazy"}
 
+Lest you think these models can only do 2d art, here is a very good photograph prompt for Stable Diffusion.
+
+> Editorial Style Photo, Bonsai Apple Tree, Task Lighting, Inspiring and Awesome, Sunset, Afternoon, Beautiful, Symmetric, 4k
+
+![](resources/ai-generated-images/stable-diffusion/SD_bonsai.jpeg){: loading="lazy"}
+
+The general format is:
+
+> Editorial Style Photo, (Low Angle\|Eye Level), $\{THING YOU WANT\}, Task Lighting, \{MATERIALS\}, \{STYLE ADJECTIVES\}, Symmetric, 4k
+
+I've found this prompt works wonderfully well with DALLE, but it does not produce images with the same quality for Stable Diffusion. Here's the same prompt's output in DALLE.
+
+![](resources/ai-generated-images/stable-diffusion/bonsai_dalle_1.png){: loading="lazy"}
+
+![](resources/ai-generated-images/stable-diffusion/bonsai_dalle_2.png){: loading="lazy"}
+
+_This prompt format originally due to [Nick St. Pierre (@nickfloats)](https://twitter.com/nickfloats/status/1628796348446253057)._
 
 
 ### Paintings of Landscapes
