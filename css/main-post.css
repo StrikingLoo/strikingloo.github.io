@@ -49,7 +49,7 @@ p, a, ul li, ol li {
     color: var(--font-color);
 }
 
-p {margin-bottom: 1.2em;}
+p {margin-bottom: 1.2em; margin-top:0px;}
 
 p a, ul li a {
     text-decoration: none;
@@ -165,13 +165,44 @@ strong { font-weight: bolder;}
   h1 { font-size: 1.8em;
     line-height: normal;}
 }/* posts only */
+body {width: 90%;}
 .meta {font-style:italic; text-align: center;}
+
+.container {
+  display: grid;
+  grid-template-columns:
+    1fr
+    min(75ch, 100%)
+    1fr;
+}
+.container > * {
+  grid-column: 2;
+}
+.full-bleed {
+  padding-left: 5%;
+  width: 90%;
+  grid-column: 1 / 4;
+  max-width: 90%;
+}
+
+.wide-eighty {
+  padding-left: 10%;
+  width: 80%;
+  grid-column: 1 / 4;
+  max-width: 80%;
+}
+
+.unbounded {
+  max-width: none;
+  margin-bottom: 1em;
+}
 
 img { max-width: 512px;
   width: 95%; height: auto; margin-left: auto;
-  margin-right: auto; margin-top: 1em; display: block; text-align: center;
+  margin-right: auto; display: block; text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
+
 
 blockquote {
   width:85%;

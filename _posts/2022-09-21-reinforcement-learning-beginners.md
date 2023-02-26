@@ -114,13 +114,20 @@ After a number of episodes, ε is reduced to 0, so the agent can fine-tune the o
 Here are the relevant snippets, but you can also check the [GitHub Project](https://github.com/StrikingLoo/maze-solver) for the full code. 
 
 The lookup table:
+
 {% raw %} <script src="https://gist.github.com/StrikingLoo/1a7abd14725455e9200ae2fa256e8a83.js"></script> {% endraw %}
 
 The policy:
+
+<div class="wide-eighty">
 {% raw %} <script src="https://gist.github.com/StrikingLoo/6055bf081061b74c3d71adaaf3155cdc.js"></script> {% endraw %}
+</div>
 
 The main loop (minus the prints and after cleaning). I used an *α* value of 0.5, and a *γ* of 0.9.
+
+<div class="wide-eighty">
 {% raw %} <script src="https://gist.github.com/StrikingLoo/a73489773ca8c11028047d142b8024f2.js"></script> {% endraw %}
+</div>
 
 I polished them a bit compared with the ones on GitHub, for clarity's sake.
 
@@ -129,44 +136,44 @@ I ran the code for multiple mazes, and was happy to see all of the results were 
 Here is our agent solving a very simple maze: a wall running across the middle. The agent is the blue square, the goal -an apple- is the red one.
 
 Before training:
-![](resources/post_image/first_iter_1.gif){: loading='lazy' style="width:30%;height:30%"}
+![](resources/post_image/first_iter_1.gif){: loading='lazy' style="width:30%"}
 
 After training:
-![](resources/post_image/last_iter_1.gif){: loading='lazy' style="width:30%;height:30%"}
+![](resources/post_image/last_iter_1.gif){: loading='lazy' style="width:30%"}
 
 
 For a more advanced challenge, I tried a hockey-stick shape, where it needs to go through a narrow passage. It actually took it less time to learn this pattern, I guess because it was more constrained in the possible movements it could make.
 
 Before training:
-![](resources/post_image/first_iter_2.gif){: loading='lazy' style="width:30%;height:30%"}
+![](resources/post_image/first_iter_2.gif){: loading='lazy' style="width:30%"}
 
 After training:
-![](resources/post_image/last_iter_2.gif){: loading='lazy' style="width:30%;height:30%"}
+![](resources/post_image/last_iter_2.gif){: loading='lazy' style="width:30%"}
 
 It performed similarly with a cross, even though in this case it had to back-pedal a bit.
 
 Before training:
-![](resources/post_image/first_iter_3.gif){: loading='lazy' style="width:30%;height:30%"}
+![](resources/post_image/first_iter_3.gif){: loading='lazy' style="width:30%"}
 
 After training:
-![](resources/post_image/last_iter_3.gif){: loading='lazy' style="width:30%;height:30%"}
+![](resources/post_image/last_iter_3.gif){: loading='lazy' style="width:30%"}
 
 Then I tried making it go through narrow passages, one way and the other. This one took a long time for the random agent to crack.
 
 Before training:
-![](resources/post_image/first_iter_4.gif){: loading='lazy' style="width:30%;height:30%"}
+![](resources/post_image/first_iter_4.gif){: loading='lazy' style="width:30%"}
 
 After training:
-![](resources/post_image/last_iter_4.gif){: loading='lazy' style="width:30%;height:30%"}
+![](resources/post_image/last_iter_4.gif){: loading='lazy' style="width:30%"}
 
 
 And finally, just to see it could learn anything: what if it had to go through a wall that divided the whole map in half, and then follow it closely back in the other direction?
 
 Before training:
-![](resources/post_image/first_iter_5.gif){: loading='lazy' style="width:30%;height:30%"}
+![](resources/post_image/first_iter_5.gif){: loading='lazy' style="width:30%"}
 
 After training:
-![](resources/post_image/last_iter_5.gif){: loading='lazy' style="width:30%;height:30%"}
+![](resources/post_image/last_iter_5.gif){: loading='lazy' style="width:30%"}
 
 In conclusion, this maze solver is a-mazing!
 

@@ -46,9 +46,9 @@ To fork, simply go to the project's URL and click on _fork_ if you have a GitHub
 To edit your own copy go to its URL (you can also find it in your profile) and _clone_ the project to your computer. Alternatively you could edit each file from the browser directly through Github's UI, though you will probably be less happy doing it that way.
 
 This is what it will look like in the beginning:
-
-![](resources/post_image/pw_screen1.png){: loading="lazy" alt="screenshot of personal wiki"}
-
+<div class="wide-eighty">
+<img src="resources/post_image/pw_screen1.png" loading="lazy" alt="screenshot of personal wiki" class="unbounded"/>
+</div>
 It's a stripped out version of this same website, except I changed the palette to something greener (because it's supposed to be a garden, get it?). I made it responsive so it looks well on mobile.
 
 All of the style and design is packed into a file called `css/main.css`, which you are free to edit and customize as you prefer, until it suits your aesthetic sensibilities. Right now it has a simple design, but you can do whatever you want to it like changing the font or color palette, background design, etc. 

@@ -27,7 +27,7 @@ Note that the graph needs to be *complete*: there needs to exist an edge connect
 
 For a concrete example, look at the following graph.
 
-![an image of a graph for traveling salesman problem](resources/post_image/TSP-graph-example.png){: loading="lazy" style="height:40%; width:40%"}
+![an image of a graph for traveling salesman problem](resources/post_image/TSP-graph-example.png){: loading="lazy"}
 
 In this case, the salesman wants to visit every home once and get back to where it started. Each edge joining two houses has a numeric label, representing the travel time between them in minutes. The salesman is a busy man, and would prefer to take as little time as possible in visiting all the houses. What would be the most efficient route?
 
@@ -83,12 +83,12 @@ The ant starts from a given node, and will at each step choose from among every 
 
 That is, the probability of choosing a certain edge will be proportional to:
 
-![weight equation for ant colony optimization](resources/post_image/weight.png){: loading="lazy" style="height:25%; width:25%" class="invertible"}
+![weight equation for ant colony optimization](resources/post_image/weight.png){: loading="lazy" style="width:25%" class="invertible"}
 
 Where P is the level of pheromones in that edge, and D the distance the edge covers. To get the distribution we sample from at each random jump, we normalize these weight coefficients so they add up to one.
-
+<div class="wide-eighty">
 {% raw %}<script src="https://gist.github.com/StrikingLoo/432302f114822d24504cf6bab0ab3964.js"></script>{% endraw %}
-
+</div>
 After that, the optimization procedure itself consists of:
 
 - Initialize the graph with a constant (typically initially high, to encourage exploration) amount of pheromones on each edge.
@@ -106,7 +106,9 @@ Additionally, I tried a few more modifications to the algorithm: the 'elite' or 
 
 Here is the whole function in all its glory (with comments for sanity).
 
+<div class="wide-eighty">
 {% raw %}<script src="https://gist.github.com/StrikingLoo/778db2438b18d38f126082c046b19acd.js"></script>{% endraw %}
+</div>
 
 Some possible improvements for this algorithm that I didn't have the time for:
 

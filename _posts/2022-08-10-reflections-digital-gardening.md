@@ -19,7 +19,9 @@ I was already using [Spaced Repetition systems](/wiki/anki) for language learnin
 
 In the time since I set up [this site's wiki](/wiki), I finished my degree in Computer Science, and also aced a few key interviews. I am not saying my successes were completely or even mainly dependent on note-taking, but they definitely helped with my final exams. So after hitting the 80 notes benchmark, I thought I would write this post as a way to look back and do a little retro.
 
-![](/resources/post_image/pathway.jpg){: loading="lazy"}
+<div class="wide-eighty">
+<img src="/resources/post_image/pathway.jpg" loading="lazy" class="unbounded"/>
+</div>
 
 I would say the main advantages of note taking, to me at least, have been in improving my search capabilities over my own memory (a file-system definitely beats a chunk of electric meat), and helping me be more organized and procrastinate less.
 
@@ -45,11 +47,15 @@ Every wiki article is a single markdown, rendered by Jekyll as an HTML, and the 
 
 This is what my personal wiki looked like initially:
 
-![](/resources/post_image/screenshot1.png){: loading="lazy"}
+<div class="wide-eighty">
+<img src="/resources/post_image/screenshot1.png" loading="lazy" class="unbounded"/>
+</div>
 
 Notice the monochromatic, rustic design compared to what it is now. And this what it looked after my first round of modifications:
 
-![](/resources/post_image/screenshot2.png){: loading="lazy"}
+<div class="wide-eighty">
+<img src="/resources/post_image/screenshot2.png" loading="lazy" class="unbounded"/>
+</div>
 
 I was married to the idea of a "cloud of ideas", but I think the file names weren't descriptive enough and anyone besides me who entered that site would not have known where to click at all. Even now I'm not sure how to present the wiki's articles to make them more appealing, as design is not my strong point.
 

@@ -38,8 +38,9 @@ All we do is:
 
 Here is the Python code for it.
 
+<div class="wide-eighty">
 {% raw %} <script src="https://gist.github.com/StrikingLoo/481717106a5c9790d8a8fe2687fb7087.js"></script> {% endraw %}
-
+</div>
 I solved the color lookup using scipy's _KDTree_, but if you wanted to code everything from scratch you could just replace this with a linear search for the minimum distance element in the table (or use _numpy_'s argmin).
 
 ### Choosing a Palette
@@ -48,7 +49,9 @@ We can choose the palette in different ways.
 
 For these experiments I went for evenly spaced palettes. I built them adding every multiple of 255/k for a given k, in all possible combinations for R, G and B. RGB colors go from (0,0,0) to (255,255,255), so this way given a certain k, we can guarantee no color will have to be mapped to a new one farther away than 128/k from it in any component.
 
+<div class="wide-eighty">
 {% raw %}  <script src="https://gist.github.com/StrikingLoo/a4d8417f96369ce69eb1aae73b850a1d.js"></script> {% endraw %} 
+</div>
 
 A smarter approach to build a palette of k colors may have been running K-means clustering over the image to find k _centroids_ to use as colors, and then use those for a k-color palette. Or maybe just taking the most common color, removing all colors closer than a certain threshold to it, and then repeating those two steps k times.
 
@@ -85,13 +88,17 @@ The image with the biggest palette looks pretty similar to the original (except 
 
 Just to make sure, let's try a different image.
 
-![](/resources/post_image/avenue.jpg){: alt="" loading="lazy"}
+<div class="wide-eighty">
+<img src="/resources/post_image/avenue.jpg" alt="" loading="lazy" class="unbounded"/>
+</div>
 
 _source: [pixabay](https://pixabay.com/photos/avenue-trees-path-sunbeams-sunrays-815297/)_
 
 Again with k=16 (palette of \~5800 colors), this is what we obtain:
 
-![](/resources/post_image/avenue-16.jpg){: alt="" loading="lazy"}
+<div class="wide-eighty">
+<img src="/resources/post_image/avenue-16.jpg" alt="" loading="lazy" class="unbounded"/>
+</div>
 
 This time, I'd say the image looks about the same. But now the size went down from 962Kb to 534Kb. 
 
@@ -106,8 +113,9 @@ The only modifications I had to add to the program were for dealing with RGBA in
 
 Here are the results.
 
-![](/resources/post_image/potted-tree.png){: alt="" loading="lazy" style="height:30%; width:30%"}
-![](/resources/post_image/potted-tree-16.png){: alt="" loading="lazy" style="height:30%; width:30%"}
+![](/resources/post_image/potted-tree.png){: alt="" loading="lazy" style="width:30%"}
+
+![](/resources/post_image/potted-tree-16.png){: alt="" loading="lazy" style="width:30%"}
 
 _original image, image with a reduced palette (k=16)_
 
@@ -117,8 +125,13 @@ I am not sure what compression algorithms the PNG format uses so I'm not sure if
 
 For fun, I tried the .png version on a bigger file (3.4MB) and it got to 885Kb with our k=16 palette. It's even less than half the size now.
 
-![](/resources/post_image/large-tree.png){: alt="" loading="lazy"}
-![](/resources/post_image/large-tree-16.png){: alt="" loading="lazy"}
+<div class="wide-eighty">
+<img src="/resources/post_image/large-tree.png" alt="" loading="lazy" class="unbounded"/>
+</div>
+
+<div class="wide-eighty">
+<img src="/resources/post_image/large-tree-16.png" alt="" loading="lazy" class="unbounded"/>
+</div>
 
 _before and after_
 
@@ -130,4 +143,4 @@ For most of the images tried, using a palette of 5800 colors represented a small
 
 I thought of maybe speeding up the program with parallel execution, but found the implementation a bit tedious. However I'm linking [the paper for further reading](https://hal.archives-ouvertes.fr/hal-03594790/document), in case anyone is interested.
 
-After further reading about compression, I wrote my notes in the [data compression wiki article]((/wiki/data-compression). I may do a follow up post explaining Huffman codes and the LZ77 algorithm for lossless compression.
+After further reading about compression, I wrote my notes in the [data compression wiki article](/wiki/data-compression). I may do a follow up post explaining Huffman codes and the LZ77 algorithm for lossless compression.

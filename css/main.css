@@ -49,7 +49,7 @@ p, a, ul li, ol li {
     color: var(--font-color);
 }
 
-p {margin-bottom: 1.2em;}
+p {margin-bottom: 1.2em; margin-top:0px;}
 
 p a, ul li a {
     text-decoration: none;
