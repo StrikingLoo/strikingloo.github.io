@@ -9,13 +9,15 @@ layout: default
 {% endif %}
 
 {% if page.abstract.size > 0 %}
-<p class="abstract wide-eighty" style="background:var(--quote-bkg);
+<div class="wide-seventy">
+<p style="background:var(--quote-bkg);
 border:2px solid;
 font-style:italic;
-margin:5%;
+margin:3%;
 text-align: center;
 border-color: #ccc;
 padding:2%;"> {{ page.abstract }}</p>
+</div>
 {% endif %}
 
   {{ content | toc }}
