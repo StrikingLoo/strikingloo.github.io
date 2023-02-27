@@ -45,7 +45,9 @@ textarea {
 </div>
 <div style="text-align: center;">
 <button onclick="initializeNetwork();" class='btn'>Display</button>
-<input type="button" value="Download Image" onclick="document.getElementById('canvasImg').click();" class='btn'>
+<input type="button" value="Download Image" onclick="document.getElementById('canvasImg').click();gtag('event', 'download_skilltree', {
+	nodes : document.getElementById('skillsTextArea').value,
+	edges : document.getElementById('edgesTextArea').value});" class='btn'>
 <a id="canvasImg" download="skill-tree.png"></a> </div>
 <div id="skilltree"></div>
 
