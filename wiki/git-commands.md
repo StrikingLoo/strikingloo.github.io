@@ -16,3 +16,7 @@ If they're here, it means I didn't come accross all of them in the same place, a
 ```git config --global user.name strikingLoo ``` 
 
 Considered a lot less secure (for obvious reasons) so don't use this for passwords.
+
+`git config --global alias.uu 'diff --name-status --diff-filter=U'` _List unmerged files._
+
+`git difftool --dir-diff main` _Compare against a branch._
