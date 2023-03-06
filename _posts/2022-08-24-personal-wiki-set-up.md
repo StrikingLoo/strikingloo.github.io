@@ -43,7 +43,20 @@ You can fork it in Github, which allows you to basically copy paste all of my co
 
 To fork, simply go to the project's URL and click on _fork_ if you have a GitHub account, or create one first. This will create your own copy of the project from which you can begin working. Make sure to name it _nickname.github.io_ where _nickname_ is your GitHub username, so everything works correctly. This will make the repository your GitHub personal site.
 
-To edit your own copy go to its URL (you can also find it in your profile) and _clone_ the project to your computer. Alternatively you could edit each file from the browser directly through Github's UI, though you will probably be less happy doing it that way.
+To edit your own copy go to the repository's URL (you can also find it in your profile) and _clone_ the project to your computer. Alternatively you could edit each file from the browser directly through Github's UI, though you will probably be less happy doing it that way.
+
+Once you've cloned the project into your PC (`git clone <project URL>`), you can run the site locally. To do this, you will need to [install Jekyll](TODO:JEKYLL_INSTALATION), open a terminal (Powershell in Windows) and run the commands as they are in the README.md file:
+```
+sudo gem install rails
+sudo gem install jekyll
+sudo gem install jekyll bundler
+cd ~/this_project
+
+bundle init
+bundle install
+bundle add jekyll
+bundle exec jekyll serve
+```
 
 This is what it will look like in the beginning:
 <div class="wide-eighty">
@@ -93,9 +106,7 @@ If you want to make your wiki public, you can host it for free in many places li
 
 Here is a [tutorial on how to host a jekyll site like this on github pages](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_publishing_github_pages.html), though the whole process is quite intuitive.
 
-Additionally, if you _do_ decide to host your wiki online, please let me know. You can send me the link on HackerNews, reddit or twitter, or do a Pull Request, and I will link to it in the project's README so other people can see how many beautiful personal wikis were added to the internet.
-
-Actually this whole thing is my evil plan because I like browsing personal wikis in my free time and I want to add new ones to the web so that I can keep finding new places to procrastinate in.
+Additionally, if you _do_ decide to host your wiki online, let me know! You can send me the link on HackerNews, reddit or twitter, or do a Pull Request, and I can link to it in the project's README if you want so other people can see how many beautiful personal wikis were added to the internet.
 
 ## Conclusions
 
