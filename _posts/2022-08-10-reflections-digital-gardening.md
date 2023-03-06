@@ -1,10 +1,11 @@
 ---
-title: "Making Notes Work for Me: Reflections after 2 Years of Digital Gardening"
+title: "Digital Gardening and my Approach to Note-Taking Methods"
 layout: post
 tags: note making, note taking, notes, digital garden, personal wiki, archiving
 date: 2022-08-12
 importance: 8
 description: "My thoughts on note taking, personal wikis, digital gardens and zettelkastens."
+abstract: "Making Notes Work for Me: Reflections after 2 Years of Digital Gardening"
 twitter_image: "https://strikingloo.github.io/resources/post_image/pathway.jpg"
 sitemap: true
 ---
