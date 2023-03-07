@@ -84,27 +84,11 @@ function scrollEventHandler(){
       }
     }
     window.removeEventListener('scroll', scrollEventHandler)
-    window.addEventListener('scroll', simpleScrollHandler)
     gtag('event', 'happy_scroll', {});
  }
 }
-let position = 0
-const totalHeight = document.documentElement.scrollHeight;
-const halfHeight = totalHeight/2;
-const threeQuarterHeight = totalHeight*.75;
-function simpleScrollHandler(){
-  const scrollOffset = window.pageYOffset
-  if(position==0 && scrollOffset > halfHeight){
-    gtag('event', 'scroll_half', {});
-    position++;
-  } else if(position==1 && scrollOffset > threeQuarterHeight){
-    gtag('event', 'scroll_75', {});
-    window.removeEventListener('scroll', simpleScrollHandler)
-  }
-}
 window.addEventListener('scroll', scrollEventHandler)
 </script>
-
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@StrikingLoo" />
 <meta name="twitter:title" content="{{ page.title }}" />
