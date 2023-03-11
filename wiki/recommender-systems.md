@@ -21,10 +21,10 @@ importance: 7
 
 ## Primary Components of a Recommender System
 
+A typical recommendation pipeline has three steps.
+
 - **Candidate generation**: Starts from a potentially huge corpus and generates a much smaller subset of candidates. Uses quick filters.
-
 - **Scoring**: Scores and ranks the candidates in order to select the set of items (on the order of 10) to display to the user. This may use a similarity measure.
-
 - **Re-ranking**: additional constraints for the final ranking. Ensure diversity, freshness, and fairness, boost new items or punish disliked ones.
 
 ### Candidate Generation
