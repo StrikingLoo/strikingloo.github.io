@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2020-11-05
-title: "Recommender Systems"
+title: "Recommendation Systems"
 description: "My notes from Andrew Ng's Lectures on Recommendation Systems, plus some papers and other sources."
 abstract: "This article gathers together notes from different Recommendation Systems courses and articles. It explains Collaborative Filtering and other approaches."
 language: English
