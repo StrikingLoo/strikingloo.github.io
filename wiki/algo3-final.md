@@ -34,7 +34,7 @@ Simplificamos asumiendo que toda operación elemental puede ser ejecutada en una
 
 **Modelo logarítmico**: El tiempo de ejecución de cada operación es función del tamaño (cantidad de bits) de los operandos.
 
-## [Big O notation](#big-o-notation)
+## [Big O notation](#big-o-notation)
 
 Sii f es O(g), lim n->inf de f/g = c tq c > 0.
 
