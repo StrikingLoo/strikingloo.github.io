@@ -227,3 +227,12 @@ An ideal stimulus is **timely, targeted and temporary**.
 
 - **Timely** to avoid delays, both in government process and in the effect to take place.
 - **Targeted**: we would prefer to target unemployed workers, which can be hard when they belong to a specific part of the workforce (it is easier for the government to hire construction workers than retail ones).
+
+## Related Articles
+
+From most to least related.
+- [Ascent of Money](/wiki/ascent-of-money): Reading notes and book summary, on the history of financial institutions and how they impact the world. 
+- [World Poverty](/wiki/world-poverty) for some rudimentary analysis of raw world poverty and its different definitions and incidence levels.
+- [Recycling](/wiki/recycling): On the impact of global recycling efforts on the Chinese economy.
+- [Finances](/wiki/finances) on the historic performance of the US and global markets.
+- [Eroom's Law](/wiki/erooms-law) on the interesting effect that makes new drug discovery exponentially more expensive over time. 

@@ -51,3 +51,8 @@ Taken from a [post by @RomeoStevens](https://www.lesswrong.com/posts/PhXENjdXiHh
 
 Exercise should include resistance training and cardio.
 
+### Related Reading
+
+- [Loneliness and its Impact on Health](/wiki/loneliness).
+- [Light and Nature](/wiki/light-and-nature) or the unreasonable effectiveness of sitting close to a window.
+- [Nutrition and Diets](/wiki/nutrition).

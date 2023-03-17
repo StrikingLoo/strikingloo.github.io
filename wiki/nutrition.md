@@ -46,4 +46,6 @@ About 75% of the fats in chia seeds consist of the **omega-3** alpha-linolenic a
 
 28 grams of chia seeds provides 5g of ALA omega-3 fatty acids, or 312–454% of the recommended daily intake. Therefore, you should have \~8g of chia seeds a day.
 
+### Related Reading
 
+- [Longevity](/wiki/longevity)

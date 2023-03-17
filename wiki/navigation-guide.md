@@ -32,6 +32,7 @@ These are the books where the notes were abundant enough to be interesting. See 
 - **[Benjamin Franklin's Autobiography](https://strikingloo.github.io/wiki/benjamin-franklin-autobiography)** which satisfied my need to read 18th century scholars.
 - **[The Clock of the Long Now](https://strikingloo.github.io/wiki/clock-of-the-long-now)**: A book that supports and exposes the long term view. A foundational text for long-termism, and one of the texts that inspired Gwern to build his site. Also a very engaging and fast read, being a collection of short essays on diverse topics all playing around the idea of thinking of the very long term.
 - **[The Ascent of Money, Niall Ferguson](/wiki/ascent-of-money)**: This book covers the history and importance of financial instruments: money, bonds, stock and insurance. It was a great resource after going through Marginal Revolution University's Macroeconomics course.
+- **[Benjamin Franklin's Autobiography](/wiki/benjamin-franklin-autobiography)**: As a fan of 18th century history and political thought, especially of the revolutionary era and the Age of Enlightenment, I found this book fascinating, both because of Franklin's writing style and his portrayal of 18th century Pennsylvania. 
 
 ## Big Notes (MOOCs)
 
@@ -55,6 +56,7 @@ If I read a paper, find it interesting, and think I will want to consider it aga
 - **[Natural Image Manipulation with Fisher Score](/wiki/natural-image-manipulation-fisher-score)**: A somewhat dated way of interpolating between images semantically, with an arbitrary generator.
 - **[BERT Interpretability, Frankle and Carbin 2019](/wiki/bert-interpretability)**.
 - **[TransGAN](/wiki/transGAN)**: A GAN purely based on transformers, trained using an adversarial objective.
+- **[Chinchilla: Training Compute-Optimal Large Language Models](/wiki/chinchilla)**: About Chincilla, scaling laws and their implications.
 - **[ViT: Transformers for Image Recognition](/wiki/visual-transformer)**: A pure transformer is used for image recognition tasks without any sort of convolutional layers and reaches state-of-the-art performance on multiple image recognition benchmarks.
 - **[Vision Transformers See Like Convolutional Neural Networks](/wiki/visual-transformer)** where activation distribution over different layers is observed and compared with ResNet and other CNNs. Correlations are measured, finding similar semantic extraction in the first layers of a CNN and ViT, and higher-order features that also shared a big mutual information in later layers, although ViT ultimately outperformed ResNet.
 - **[Evolution through Large Models](/wiki/evolution-through-large-models)**: A new approach where a LLM is trained on synthetic data generated through an evolutionary process (MAP-Elites), to produce programs that solve an out-of-distribution task -Sodaracing-. Reinforcement Learning is then used to create a generator of programs conditioned on terrains (so each problem gets a custom solution).

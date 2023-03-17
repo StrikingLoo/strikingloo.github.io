@@ -78,7 +78,7 @@ Aomori - 2 May - 6 May (y de ahi a tokyo temprano y a volar!) Hirosaki ,
 
 Lake Kawaguchiko ? 
 
-**Neighborhoods**: Shinjuku, Harajuku, Akihabara (duh), Roppongi, Kabukichou
+**Neighborhoods**: Shinjuku, Harajuku, Akihabara (duh), Roppongi, Kabukichou, Shibuya, Ueno (zoo and park)
 
 - Kamakura
 - Cafe, Onsen, Castles and temples and shrines.
@@ -89,7 +89,7 @@ Lake Kawaguchiko ?
 
 List of "things to do" (bucket list)
 
-- Sensou-ji
+- Sensou-ji , imado shrine
 - Tokyo Skytree, Tokyo Tower
 - Shinjuku National Garden
 - Imperial Palace
@@ -107,8 +107,58 @@ List of "things to do" (bucket list)
 - Asukayama park,
 - Samurai Museum
 
+Paper lanterns are strung along a 1 km-long section in Nakameguro, between Nambu Bridge and Saikachi Bridge, as part of the Meguro River Cherry Blossom Festival. UNTIL APR 9th! Go by hibiya line in 50 minutes, or walk from shibuya. 
+
+Apr 10th try Ueno and Ueno sakura just in case. Also close to the sky tower and sensouji and Imado.
+
+Sumida river and park supposedly only have sakura until the 9th, but close to Ueno and worth a shot.
+
+At night, all of april we can do Cherry Blossom Night Garden at Shinjuku Gyoen. Let's combine this with the shinjuku day.
+
+Asukayama Park eventually, also yaezakura
+
+(low-pri: kinuta park + Sakura-shinmachi for yaezakura and shopping)
+
+The walk from Shibuya to Shimokitazawa is nice to get a feel of the modern, trendy Tokyo. Between Nishi-nippori and Nezu if you want a feel of old traditional Tokyo, or the alleys East of Kita-Senju (especially around Yanagihara) for some Tokyo that's been completely forgotten by development.
+
+東京スカイツリー：東京都墨田区にある高さ634メートルの電波塔。展望台からの景色は絶景で、東京のパノラマビューを楽しむことができます。
+
+浅草寺（せんそうじ）：東京都台東区にある仏教寺院で、江戸時代から栄えた古い街並みが残る観光スポットです。寺院内にある仲見世通りには、多くの土産物店や飲食店が並びます。
+
+東京ディズニーランド：東京都浦安市にあるディズニーパークで、世界的にも有名な観光スポットです。アトラクションやショーなど、多彩なエンターテインメントが楽しめます。
+
+明治神宮（めいじじんぐう）：東京都渋谷区にある神社で、日本の伝統文化や歴史を感じられる観光スポットです。静かな森の中にあり、自然と一体化した空間を味わえます。
+
+上野公園（うえのこうえん）：東京都台東区にある公園で、日本最古の動物園や美術館があります。桜の季節には多くの人が集まり、花見を楽しむことができます。
+
+青山霊園（あおやまれいえん）：東京都港区にある霊園で、多くの著名人の墓があることで知られています。美しい緑と落ち着いた雰囲気が魅力的なスポットです。
+
+代々木公園（よよぎこうえん）：東京都渋谷区にある公園で、広い芝生広場や多目的広場、森林などがあります。自然を感じながらピクニックやスポーツを楽しむことができます。
+
+銀座（ぎんざ）：東京都中央区にある繁華街で、高級ブランド店や美術館、劇場、レストランなどが集まる観光スポ
+
+https://tokyocheapo.com/events/midtown-blossom/ (Go to hinokicho park before Apr 16 for cherry blossoms and street shopping. 35 minutes by train)
+
+Both Roppongi Hills’ Mohri Garden and nearby Sakura-zaka (literally “Cherry Slope”) have cherry trees that come aglow in spring. Mohri Garden has Somei Yoshino and weeping cherry trees while Sakura-zaka has all Somei Yoshino.
+
+Swanky Tokyo Midtown, meanwhile, also has illuminations in the evening. Find them in the complex’s Hinokichō Park and elsewhere as part of the Midtown Blossom event.
+
+"Shimokita's my favorite area in Tokyo. There're a bunch of venues around there, and it's a more chilled out scene than the rest of downtown. Here's a bunch of random places my old band played at:
+
+- Koenji Club Liner
+- Shinjuku Jam (^^)
+- Shibuya Yaneura
+- Shimokitazawa Yaneura
+- Shimokitazawa Club Que
+- Shibuya Lush
+"
+
 ### NAGOYA
 Templo, ghibli, ver mas
+
+### Osaka
+
+大阪城や天保山、海遊館
 
 ### Aomori
 

@@ -36,3 +36,8 @@ plt.title('Risk distribution')
 Also possible to
 
 > `sns.catplot(x='prediction', y=category, hue=LABEL, kind="box", data=df_a)`
+
+### Related Reading
+- [FID](/wiki/fid)
+- [Permutation Importance](/wiki/feature-importance-rf) for feature selection in classifiers.
+- [TF-IDF](/wiki/tf-idf) a metric for document retrieval and similarity.

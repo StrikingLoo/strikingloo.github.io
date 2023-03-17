@@ -19,3 +19,7 @@ The financial genius of this idea was simple: now not only would Lego have a bra
 See: Autocatalytic processes, network effects
 
 source: [Polymatter](https://www.youtube.com/watch?v=zsHXFEOV83g)
+
+## Related Reading
+
+- [Dungeon Design guidelines for D&D](/wiki/dungeons)

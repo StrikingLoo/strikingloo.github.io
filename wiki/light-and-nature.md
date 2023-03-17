@@ -41,3 +41,7 @@ The sensitivity curve for melatonin suppression - a peak around 477nm, with the 
 - Melatonin suppression is also correlated with increased risks of certain cancers.
 
 Related: [Jevons Paradox](https://en.wikipedia.org/wiki/Jevons_paradox). Increasing the efficiency of using a resource increases rather than reduces its use.
+
+### Related Reading
+
+- [Loneliness and Longevity or *The Effectiveness of Having Friends*](/wiki/loneliness)

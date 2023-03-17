@@ -32,3 +32,4 @@ The Wasserstein metric is computed as the distance between the means plus a term
 ## Related Reading
 
 - [Six Intuitions for KL Divergence](https://www.lesswrong.com/posts/no5jDTut5Byjqb4j5/six-and-a-half-intuitions-for-kl-divergence)
+- [AUC and ROC](/wiki/auc)
