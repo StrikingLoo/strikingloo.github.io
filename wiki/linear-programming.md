@@ -57,4 +57,4 @@ states that ties in the choice of entering and leaving variables are always brok
 
 ## Further Reading
 
-- [Tutorial on Integer Programming](https://www.math.clemson.edu/\~mjs/courses/mthsc.440/integer.pdf) 🌱
+- [Tutorial on Integer Programming](https://www.math.clemson.edu/~mjs/courses/mthsc.440/integer.pdf) 🌱

@@ -20,12 +20,6 @@ A soft murmur, plays rain noises.
 
 ---
 
-Z-Library for books
-
-<https://b-ok.lat/>
-
----
-
 Free icons
 
 <https://thenounproject.com/>
@@ -74,10 +68,6 @@ US State Salary Scale for Seattle
 <https://www.federalpay.org/gs/locality/seattle>
 
 ---
-Marginalia neat links
-<https://proxy.vulpes.one/gemini/marginalia.nu/links/fragments-old-web.gmi>
-
----
 Tezuka Osamu Cultural Prize
 <https://en.wikipedia.org/wiki/Tezuka_Osamu_Cultural_Prize>
 
@@ -90,7 +80,7 @@ A nice resource on Roman Naming Practices, and the origin of Modern Surnames:
 <https://1mb.club/>
 
 ---
-Make low-poly images (they look nice for some post's header image).
+Make low-poly images (they look nice for some posts' header image).
 
 <https://cojdev.github.io/lowpoly/>
 

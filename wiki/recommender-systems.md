@@ -31,7 +31,7 @@ A typical recommendation pipeline has three steps.
 
 ![](recommender_systems_img/reco3.png){:  alt="" loading="lazy"}
 
-Both map items and users to an [embedding space](/wiki/deep-learning-NLP.md).
+Both map items and users to an [embedding space](/wiki/deep-learning-NLP).
 
 ### Similarity measures
 

@@ -24,7 +24,7 @@ This, simple as it is, amazingly works.
 
 The current consensus is that PG works well only in settings where there are a few discrete choices so that one is not hopelessly sampling through huge search spaces.
 
-For example [AlphaGo](https://www.deepmind.com/alpha-go)[🌱] first uses supervised learning to predict human moves from expert Go games and the resulting human mimicking policy is later finetuned with policy gradients on the “real” objective of winning the game.
+For example AlphaGo first uses supervised learning to predict human moves from expert Go games and the resulting human mimicking policy is later finetuned with policy gradients on the “real” objective of winning the game.
 
 ## Additional Reading:
 
