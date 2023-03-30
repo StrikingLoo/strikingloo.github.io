@@ -1,5 +1,5 @@
 ---
-title: "Digital Gardening and my Approach to Note-Taking Methods"
+title: "Digital Gardens: my Approach to Note-Taking Methods"
 layout: post
 tags: note making, note taking, notes, digital garden, personal wiki, archiving
 date: 2022-08-12
