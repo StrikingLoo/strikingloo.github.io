@@ -3,7 +3,7 @@ layout: post
 date: 2022-04-13
 title: "Denoising Diffusion Implicit Models"
 tags: deep learning, neural network, DDPM, DDIM, diffusion, unsupervised learning, paper, GLIDE, OpenAI, generative, machine learning
-description: "Notes on the DDIM paper"
+description: "Notes on the DDIM (Denoising Diffusion Implicit Models) paper. DDIM are an improvement over DDPM, allowing for faster generation."
 language: English
 importance: 6
 ---
