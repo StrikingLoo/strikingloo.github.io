@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Stable Diffusion: Definitive Prompt Guide"
-description: "Prompt guide for Stable Diffusion including examples, tips and tricks to create great images."
+title: "Stable Diffusion: Prompt Guide and Examples"
+description: "Prompt guide for Stable Diffusion including examples and tricks to create great images. Prompt engineering."
 tags: dall-e, image generation, unsupervised learning, AI, art, prompts, stable diffusion, guided diffusion
 date: 2022-08-30
 twitter_image: "https://strikingloo.github.io/resources/tw_fm1.png"
