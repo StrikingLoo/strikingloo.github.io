@@ -64,6 +64,10 @@ Cool art digimon inspired:
 <http://androidarts.com/GarlicChampions/Digimon.htm>
 
 ---
+Maniani, awesome Pixiv artist
+<https://www.pixiv.net/en/users/8873261>
+
+---
 US State Salary Scale for Seattle
 <https://www.federalpay.org/gs/locality/seattle>
 

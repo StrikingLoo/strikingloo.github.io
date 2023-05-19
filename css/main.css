@@ -129,6 +129,8 @@ nav a {
 
 strong { font-weight: bolder;}
 
+hr {width: 100%;}
+
 .footer-img {
     height: 1em;
     width: 1em;

@@ -129,6 +129,8 @@ nav a {
 
 strong { font-weight: bolder;}
 
+hr {width: 100%;}
+
 .footer-img {
     height: 1em;
     width: 1em;
@@ -164,7 +166,8 @@ strong { font-weight: bolder;}
   .head-banner {text-align: center;}
   h1 { font-size: 1.8em;
     line-height: normal;}
-}.posts {
+}
+.posts {
   display: grid;
   grid-template-columns: 1fr;
   padding-left: 0;
