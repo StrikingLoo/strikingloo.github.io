@@ -19,7 +19,7 @@ For the papers that didn't justify an entire separate article.
 > Transformers have revolutionized almost all natural language processing (NLP) tasks but suffer from memory and computational complexity that scales quadratically with sequence length. In contrast, recurrent neural networks (RNNs) exhibit linear scaling in memory and computational requirements but struggle to match the same performance as Transformers due to limitations in parallelization and scalability. We propose a novel model architecture, Receptance Weighted Key Value (RWKV), that combines the efficient parallelizable training of Transformers with the efficient inference of RNNs. Our approach leverages a linear attention mechanism and allows us to formulate the model as either a Transformer or an RNN, which parallelizes computations during training and maintains constant computational and memory complexity during inference, leading to the first non-transformer architecture to be scaled to tens of billions of parameters. Our experiments reveal that RWKV performs on par with similarly sized Transformers, suggesting that future work can leverage this architecture to create more efficient models.
 
 [Sophia: A Scalable Stochastic Second-order Optimizer for
-Language Model Pre-training](https://arxiv.org/pdf/2305.14342.pdf)
+Language Model Pre-training](https://arxiv.org/abs/2305.14342)
 
 > This paper introduces Sophia, Second-order Clipped Stochastic Optimization, a light-weight secondorder optimizer that uses an inexpensive stochastic estimate of the diagonal of the Hessian as a pre-conditioner and a clipping mechanism to control the worst-case update size. 
 
