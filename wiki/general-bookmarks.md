@@ -40,21 +40,8 @@ Waifuist Personal Site -weird but awesome digital garden-.
 <https://wiki.waifu.haus/#Root>
 
 ---
-Cards for WarmaHordes MKIII:
-
-<http://cards.privateerpress.com/>
-
-Rules for MKIII
-
-[rules](https://home.privateerpress.com/wp-content/uploads/2020/02/Digest-Game-Rules-Feb2020.pdf)
-
----
 Image to text
 <https://www.onlineocr.net/>
-
----
-Read something great
-<https://www.readsomethinggreat.com/>
 
 ---
 <https://weatherspark.com/map> 
@@ -99,3 +86,8 @@ Emotion Wheel
 ![](/resources/final_emotion_wheel-lg.png)
 
 <https://pudding.cool/2022/12/emotion-wheel/> 
+
+---
+Anime of the Year Tokyo award
+
+<https://animefestival.jp/en/award/aoy/archive/> 

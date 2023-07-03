@@ -36,6 +36,9 @@ Towns had a sense of identity as autonomous, self-governing communities. Somethi
 
 Guilds laid business regulation on matters pertaining to the guild's trade, and kept people from outside the guild from practicing it. They also acted as mutual aid societies.
 
+York had 64 guilds, carlisle 8. Being a guild member made you a citizen and you could then participate in civic life (non-members who tried to practice the craft were kept out).
+Guilds controled business practices, labor relationships with apprentices, etc.
+
 Law was based in custom, where what was customary dictated the possible uses of land and such (like current Common Law, based on precedent). They would bring the oldest people in the village to opine on legal matters when there was a dispute, so they could consult their experience (and their memory of precedent).
 
 ## Social and Economic Networks and the Urban System (Lecture 5)
