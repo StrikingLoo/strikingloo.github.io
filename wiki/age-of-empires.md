@@ -70,7 +70,7 @@ From [this video](https://www.youtube.com/watch?v=eoBxIUAATEE).
 - Against rush, especially trush, you build pointing to your TC to lead enemy troops towards it
 - Use buildings as walls, especially 3x3 ones like unit production. If you build palisades put your houses before them, or use houses as walls themselves. It is suboptimal for a house to not be a wall!
 - Gates have less armor and hp/square than walls.
-- Castles need to be on elevated ground (duh) but also 1) consider there shouldn't be other elevated ground nearby. It's worse if you're not and they are. 2) Castles make trebs, which are terrific at sieges. One way to attack the enemy is you build a castle near their base, then make trebs. 3) Castles especially elevated can one-shot small fry like xbowman or archers!
+- Castles need to be on elevated ground for 25% extra damage, but also 1) consider there shouldn't be other elevated ground nearby. It's worse if you're not and they are. 2) Castles make trebs, which are terrific at sieges. One way to attack the enemy is you build a castle near their base, then make trebs. 3) Castles especially elevated can one-shot small fry like xbowman or archers!
 - In late you build castles overlooking mines or other resource spots.
 - Start building house when you're on pop%3==0, not %5 so your pipeline never stops churning.
 - When dropping a resource building, consider defendability and efficiency. You may want to surround building with some palisades. 
