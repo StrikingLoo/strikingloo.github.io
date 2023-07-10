@@ -80,3 +80,50 @@ From [this video](https://www.youtube.com/watch?v=eoBxIUAATEE).
 - Your two extra TC may go one to wood, one to gold/stone. Place TC into resources without camps, for optimality.
 - When building farms with multiple villagers, build them all with shift then right click into a single one. This way one farmer goes to each farm, which is optimally fast.
 
+### Fast Castle Build Order 
+
+From [Morley Games](https://www.youtube.com/watch?v=Ae2k3ah1mRA)
+
+- Houses
+- 6 sheep
+- 4 wood (lumber camp)
+- 1 boar
+- 1 build 2 houses, then mill and berries
+- 4 more to berries (lure second boar with shepherd)
+- 2 boar, move 2 vills to farms
+- 5 wood (2nd lumber camp)
+- 3 gold
+- Loom
+- Feudal
+- Make farms with shepherds (9 farms) while researching
+
+**In Feudal**
+- Make market (2 vills) and blacksmith (1 vill) from lumberjack vills.
+- 2 wood
+- click to castle
+- Research double bit axe and horse collar
+- As soon as you reach Castle Age, make 2 town centers in relevant resources.
+
+### Archer Rush build order
+
+From [Morley Games](https://www.youtube.com/watch?v=K4MyN8kpD84)
+
+- Houses
+- 6 sheep
+- 4 wood (lumber camp)
+- 1 boar
+- 1 build 2 houses, then mill and berries
+- 3 more to berries (lure second boar with shepherd)
+- 2 boar
+- 5 wood (2nd lumber camp)
+- Loom
+- Feudal
+
+- **When feudal is 40% done**: Take 3 shepherd vills to mine gold, 1 lumberjack vill to make barracks, also a couple houses.
+- **After feudal**: 4 to gold
+- Make two ranges (uses gatherer vills)
+- Research Double Bit Axe
+- Make blacksmith
+- Research Fletching
+- research Horse Collar
+- Starts rushing at 6 archers and one horse.
