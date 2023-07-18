@@ -47,7 +47,7 @@ Babergh Hundred. Richmond.
 
 People from different villages would all coordinate to travel to the closest town on market day. Different towns would do market day on different days, so the same village would visit a different town every time. This cross polination led to people meeting each other (and so marrying outside of their village), and economic activity.
 
-Though the economy was mostly Agrarian, each region tended to also practice different trades and have varied exports. London and York excelled in elaborate trades (and trading luxury goods), Sheffield was known for its knifes. The south east mostly tended crops, whereas the North and Wales specialized in sheep and goats. Bristol was a significant port in the West, and rivers connected different cities accelerating commerce. Norwich was known for its fabrics, which would ship to Antwerp from London.
+Though the economy was mostly Agrarian, each region tended to also practice different trades and have varied exports. London and York excelled in elaborate trades (and trading luxury goods), Sheffield was known for its knives. The south east mostly tended crops, whereas the North and Wales specialized in sheep and goats. Bristol was a significant port in the West, and rivers connected different cities accelerating commerce. Norwich was known for its fabrics, which would ship to Antwerp from London.
 
 These interconnections were especially important for the elite, though common folk also experienced their effects.
 
