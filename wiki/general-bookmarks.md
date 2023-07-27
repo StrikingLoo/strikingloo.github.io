@@ -35,11 +35,6 @@ HN's recommended MOOCs list (with links)
 <https://github.com/Tuccinator/hn-moocs>
 
 ---
-Waifuist Personal Site -weird but awesome digital garden-.
-
-<https://wiki.waifu.haus/#Root>
-
----
 Image to text
 <https://www.onlineocr.net/>
 
@@ -57,6 +52,9 @@ Maniani, awesome Pixiv artist
 ---
 US State Salary Scale for Seattle
 <https://www.federalpay.org/gs/locality/seattle>
+
+Related: _DataUSA.io_
+<https://datausa.io/profile/geo/>
 
 ---
 Tezuka Osamu Cultural Prize
@@ -91,6 +89,7 @@ Emotion Wheel
 Anime of the Year Tokyo award
 
 <https://animefestival.jp/en/award/aoy/archive/> 
+
 ---
 Index of books in JP with difficulty levels. Seems pretty good at ranking.
 <https://learnnatively.com/>

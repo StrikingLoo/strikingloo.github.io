@@ -119,3 +119,27 @@ site:archive.org intitle:full/text/of intext:Lovecraft
 - *rel="noopener"* you use on all links opening in new tabs using the target *_blank*. There are security implications if you don’t use the *noopener* value on your links opening in new tabs. A malicious attacker can use the window.opener object to change the content and location of the originating page.
 - *rel="noreferrer"* can serve a similar purpose as the *noopener*, especially in older browsers. Hence, it makes sense to use them both. Additionally, *noreferrer* can affect your analytics and report traffic as **direct instead of referral**.
 - *rel="nofollow"* will inform search engines **not to pass the link juice** to the linked page, and it will not pass PageRank. You can consider it as a value that is used when you want to link to another page but without "endorsing" it. It is the only rel value with a tangible effect on SEO efforts.
+
+---
+
+### Get all <p> from a site
+
+To remove all ads and similar stuff and then get the cleaner text possible
+
+```
+document.querySelectorAll('iframe').forEach(iframe => iframe.remove());
+document.querySelectorAll('img').forEach(iframe => iframe.remove());
+document.querySelectorAll('ins').forEach(iframe => iframe.remove());
+res = ''
+document.querySelectorAll('p').forEach(p => res+=('<p>'+p.innerHTML + '</p>'));
+res = res.replaceAll('\x3Cscript>(adsbygoogle = window.adsbygoogle || []).push({});\x3C/script>','');
+res += '<style>
+html {
+  max-width: 70ch;
+  padding: 3em 1em;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.25em;
+}
+</style>'
+```
