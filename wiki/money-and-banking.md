@@ -97,6 +97,8 @@ The pool of IOUs is fixed, and so in a case of disparity a liquidity problem may
 
 Minsky proposes analyzing the economy by looking at units in terms of cash flows (ignoring goods). Units include households, banks, the State, etc. The emphasis, as expected given the background of the course, is in liquidity, rather than solvency, and especially in the strong liquidity constraints imposed on e.g. households and businesses. 'Your wealth doesn't matter if you can't pay -- Liquidity kills you quick'.
 
+Survival Constraint: Cash inflow > Cash outflow.
+
 ### Flow of Funds
 
 - Every use has a source (in the same chart)
@@ -104,3 +106,12 @@ Minsky proposes analyzing the economy by looking at units in terms of cash flows
 A little chart with columns: \[uses, sources\] and rows: \[goods & services, assets, liabilities, money\] plus corresponding verbs to source and use. 
 
 At the time of an outflow, it is optimal to pay with cash reserves (discipline principle) but we generally want to use the elasticity afforded by credit. Thus we may instead borrow, or sell assets to pay. However money is the only payment we can take without depending on a counterpart.
+
+
+### Financial Fragility
+
+Several firms may have the same net worth (and all be solvent) and yet face different liquidity constraints. E.g. 1 bank that needs to deposit X overnight every night and knows its cash flow will be 2X/day faces no liquidity constraint. If instead it needed to do just one 3X deposit the first day (and no others), it would need to somehow come up with the money to do it.
+
+Thus we may see equally solvent firms behaving differently due to solvency, and as a response to how aligned their future flows are. This is partially known at any point as they have different bonds, loans, etc. Note that their creditors also know this and will adjust their own behaviors accordingly, adding complexity to the market.
+
+It is a reasonable claim that the money market interest rate is a good measure of how solvent the entire system is at any given point: if too many firms are facing constraints, it will shot up, and the opposite happens if there is enough money in the market.
