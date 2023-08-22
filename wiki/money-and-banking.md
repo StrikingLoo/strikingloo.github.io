@@ -208,7 +208,11 @@ The Fed Fund loans are _unsecured_. This means there is no collateral: if you de
 
 ## Lecture 7 - Repos, Postponing Settlement
 
-In the Repo market, as said above, a bank will sell securities to the fed, with a promise to repurchase them overnight adding an interest rate. The securities in effect are acting as collateral for a loan. Analogously, the money acts as collateral for the securities, if the Fed were to sell them.
+In the Repo market, as said above, a bank will sell securities to the fed, with a promise to repurchase them overnight adding an interest rate. The securities in effect are acting as collateral for a loan. Analogously, the money acts as collateral for the securities, if the Fed were to sell them. Both parts may also be security dealers.
 
+The repo market actually came before the Fed or the Fed Funds market: it's how banks would trade with each other --if you don't know the other bank, you'll want collateral.
 
+Unlike the Fed Funds market, almost any agent may participate in the repo market. You don't need to be a bank, etc.
+
+When the Fed participates in the repo market (which used to be frowned upon: why should the Federal Reserve need collateral when it borrows?!) it may do a repo operation (loan to the dealer with securities as collateral, increasing the balance sheet) or a reverse repo (shrink the balance sheet absorbing liquidity and releasing securities).
 
