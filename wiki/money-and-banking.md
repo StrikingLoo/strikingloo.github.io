@@ -218,3 +218,8 @@ Unlike the Fed Funds market, almost any agent may participate in the repo market
 
 When the Fed participates in the repo market (which used to be frowned upon: why should the Federal Reserve need collateral when it borrows?!) it may do a repo operation (loan to the dealer with securities as collateral, increasing the balance sheet) or a reverse repo (shrink the balance sheet absorbing liquidity and releasing securities).
 
+Typically, the rates are Repo < FF < Libor/Eurodollar. This is, roughly according to Mehrling, similar to how in Bagehot's times, there would be the market rate of interest and the BoE's, such that all borrowers would try to borrow at the markets first, but as interest rates would go up when liquidity dried, then borrowers would flow to the Bank of England.
+
+The riddle in this lecture (taking place around the Crisis) is: why is the Fed Funds rate now lower than the Repo market's, contrary to historic trends and common wisdom? The answer is active involvement by the Fed: They want to bring the Repo rate down, as it is a proxy for a lack of liquidity, and so they are providing liquidity in abundance. To do this they peg the Fed Funds rate much lower than the Repo one, effectively allowing for arbitrage so that liquidity is injected into the market. 
+
+Keynes used to say the government is better at slowing down the economy than accelerating it: It is like pushing on a string.
