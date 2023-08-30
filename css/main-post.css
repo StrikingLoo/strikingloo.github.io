@@ -195,13 +195,6 @@ body {width: 90%;}
   max-width: 80%;
 }
 
-.wide-seventy {
-  padding-left: 15%;
-  width: 70%;
-  grid-column: 1 / 4;
-  max-width: 70%;
-}
-
 .unbounded {
   max-width: none;
   margin-bottom: 1em;
