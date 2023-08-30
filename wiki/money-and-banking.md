@@ -223,3 +223,32 @@ Typically, the rates are Repo < FF < Libor/Eurodollar. This is, roughly accordin
 The riddle in this lecture (taking place around the Crisis) is: why is the Fed Funds rate now lower than the Repo market's, contrary to historic trends and common wisdom? The answer is active involvement by the Fed: They want to bring the Repo rate down, as it is a proxy for a lack of liquidity, and so they are providing liquidity in abundance. To do this they peg the Fed Funds rate much lower than the Repo one, effectively allowing for arbitrage so that liquidity is injected into the market. 
 
 Keynes used to say the government is better at slowing down the economy than accelerating it: It is like pushing on a string.
+
+## Lecture 8 - Libor, Eurodollars, Parallel Settlement
+
+**Volcker Rule**: A bank may not speculate: if they serve a derivative they must also find a buyer for its counterpart and only profit from the spread.
+
+**Fencing**: Separetely from reserves corresponding to liabilities related to trading, a bank needs to have reserves that cover retail deposits.
+
+The Eurodollar market rate (or LIBOR) is usually slightly above Fed Funds rate (typically 2bp). 
+
+The Eurodollar market is much bigger than the fed funds one, but it operates with no intervention from the Fed: It is the market for dollars in foreign banks, which need to have a corresponding deposit in a correspondent, american bank (even for branches of the same bank). In effect the 'real' money (deposits at the Fed) never leaves America.
+
+This is the market for funding outside of the USA, and it trades virtually par with Fed Funds most of the time, except when pressure is exerted. Most interbank trade happens between banks with a surplus of deposits and banks with a surplus of loan capacity.
+
+Foreign banks in the Eurodollar market don't have reserves at the Fed. They merely hold correspondent reserves in banks in NY. That's why the discipline factor is a lot stronger in this market. To compensate for this and limit their exposure to foreign currency, banks will try to keep a match book. Not just in amounts, but in time: they will make deposits have a term, and align these terms with loan terms.
+
+To keep a match book and not be exposed to currency fluctuations, as well as being compliant with regulations, banks will emit liabilities or procure assets so as to cancel them out over time. E.g. if bank X knows in 3 months it will receive a 6-month deposit for N dollars, it will ensure it can provide a loan for the same amount at the same moment for the same period, and so on.
+
+Suppose bank X has a 2-month loan and a 5-month deposit with bank Y as counterpart. A 3 month loan emerges after 2 months for it to provide. It can borrow that money at LIBOR rate.
+
+Another possibility, always with the goal of procuring liquidity in mind, is Bank X and Bank Y make a FRA (Forward Rate Agreement) at rate F: This means Bank X effectively borrows from Y at dates t0 to t1, with interest rate (F - LIBOR). 
+
+This way, back to the previous example, X may borrow from 2-months from now to 5-months from now to fund the loan, at (F - LIBOR). There is an incentive for it to set F as low as possible, and for Y to set it as high as possible. On the day of, Y funds itself with the IBOR market, lends at F - LIBOR (hopefully positive).
+
+Since bank X already set interests for 5-month and 2-month deposits, it follows that the rate F is already set, as the only number `(1 + R(0,5))/(1 + R(0,2)) - 1` such that there is no emerging arbitrage. The same happens with foreign exchange, but scaled by the future exchange rate estimation. This is called covered interest parity.
+
+**Spot rate:** The ratio between currency values (e.g. 720 for USD:ARS).
+
+Lec 8-8 done.
+
