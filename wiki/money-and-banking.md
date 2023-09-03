@@ -250,5 +250,25 @@ Since bank X already set interests for 5-month and 2-month deposits, it follows 
 
 **Spot rate:** The ratio between currency values (e.g. 720 for USD:ARS).
 
-Lec 8-8 done.
+## Lecture 9 - The World that Bagehot Knew
+
+> Market makers create liquidity by offering buy and sell options.
+
+### The Credit System
+
+Suppose there are two businesses: one is retail (A), the other (B) is wholesale (e.g. they sell apples). In practice if A buys apples from B, it will give B a bill of exchange, stating that it will pay the corresponding amount in e.g. 90 days. B can then sell that bill at a discount of its fase value to a bank, getting the money instantly. The bank then absorbs the risk of A becoming insolvent, and loses liquidity, but gets an interest rate in exchange.
+
+In this manner the bank is sacrificing liquidity for profit, which is not a trivial tradeoff.
+
+Other options for the bank instead of providing notes are providing a deposit (thereby only expanding its balance sheet without sacrificing liquidity, sometimes providing an interest if it is a time deposit) or instead of buying the bill providing an acceptance: a contingent liability that pays in case A does not, but charges an interest rate in exchange (this is a precursor to credit default swaps).
+
+In most cases the bank knows business A and is not concerned about outright default as much as insolvency and delays in payment.
+
+The rates of discount can go up to discourage operations when the bank is running back on liquidity, generating a tightening of liquidity downstream. Once the bank has liquidity again as older bills mature, they can lower the rates to get back more operations. Ideally they want to not have any cash sitting idle (buy as many bills as possible) but also never run out of liquidity (books have to match up every night).
+
+A bank can also rediscount at another bank, effectively running a spread. Banks are money dealers.
+
+In the Victorian times (Bagehot's times) the Bank of England acted as a central bank for the world economy, and did the profit-maximizing operation other banks do: use liquidity completely, buy discounted bills. But what it also did was quoting a discount rate that was above the market's rate. This way in normal times no one would borrow from the BoE, but in times of crisis as interests rose until reaching the BoE's, suddenly all borrowing would take place at its doorstep. This made the BoE the lender of last resort, which was not a profit-driven mission but a public duty. Crucially at this point the BoE would emit deposits, not notes, which would be bound to be treated as the same thing even though they markedly aren't. By regulating this interest rate, the Bank could send signals about the liquidity situation for the whole economy: impose discipline or inject flexibility depending on e.g. how much gold they had left. This also required coordination with other central banks.
+
+End lecture 9.
 
