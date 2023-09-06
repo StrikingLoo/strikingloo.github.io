@@ -270,5 +270,20 @@ A bank can also rediscount at another bank, effectively running a spread. Banks 
 
 In the Victorian times (Bagehot's times) the Bank of England acted as a central bank for the world economy, and did the profit-maximizing operation other banks do: use liquidity completely, buy discounted bills. But what it also did was quoting a discount rate that was above the market's rate. This way in normal times no one would borrow from the BoE, but in times of crisis as interests rose until reaching the BoE's, suddenly all borrowing would take place at its doorstep. This made the BoE the lender of last resort, which was not a profit-driven mission but a public duty. Crucially at this point the BoE would emit deposits, not notes, which would be bound to be treated as the same thing even though they markedly aren't. By regulating this interest rate, the Bank could send signals about the liquidity situation for the whole economy: impose discipline or inject flexibility depending on e.g. how much gold they had left. This also required coordination with other central banks.
 
-End lecture 9.
+## Lecture 10 - Dealers and Liquid Security Markets
 
+Starts with a small reading of the Global Financial Stability Report from the IMF.
+
+Markets can be liquid or illiquid. In a liquid market, a given transaction does not affect prices, as there is enough to go around. Prices in a liquid market for a given good will be continuous, whereas for illiquid markets discontinuities are present.
+
+Supermarkets are in a way liquid: in the morning shelves are full and no one is buying, after work it's rush hour, they're full of buyers and the shelves empty out, but prices do not go up. The key for why this is so lies on _inventories_. The supermarket has stocks of goods and therefore can set a single price and maintain it.
+
+Dealers of securities and assets work like this as well. They have capital, allocated between securities and just cash reserves, and this allocation fluctuates with demand, but doesn't necessarily change prices. They could merely profit from the spread. An example of an illiquid market where you depend on a broker instead of a dealer is real estate, where you may want to buy a house that is simply not in the market.
+
+As a model of two-way dealers, we see three factors: in the x-axis, inventory, liquidity constraints: there is a maximum long position (when you burn all your capital, or your maximum theoretical leverage) and a maximum short (when you sell all of your inventory of a security + short it to the max). On the y-axis, prices fluctuate between two constraints: value bid and value ask. The value bid is the lowest price an asset can reach, as anything below that will be scooped up instantly for arbitrage (ask Warren Buffet). The value ask is the point where an asset is so priced that it becomes obvious it deserves a short. Finally, a dealer will sell their inventory on a bid-ask spread. This spread will be wider or narrower given how volatile the market is, and how much assymetry of information the dealer perceives (arguably these are also correlated? Seem like variance and bias to me). 
+
+> In a way, dealers are buying funding liquidity and selling market liquidity.
+
+This is also where the Volcker rule comes in: it establishes that a bank must have matched book (an inventory of 0) for each security. This in theory means for every long position the bank must have an equal opposite short one, and therefore price risk must be 0. In practice, 'there is no such thing as a perfect hedge' and liquidity risk also emerges.
+
+(To watch: 10.6)

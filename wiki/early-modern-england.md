@@ -266,7 +266,7 @@ The republic -the *Protectorate*- was based on the Heads of the Proposals, but t
 
 Cromwell was seen as a regicide by his opponents, and something of a tsundere ruler by his ex allies ("*it's not like god wants me to smite you, b-baka*"). He died in 1658 and was the only one who could hold every faction together. The Rump was restored after his inadequate son was brought down. General George Monck intervened from Scotland and restored authority. First the Rump, then all survivors of the Long Parliament of 1640. 
 
-In 1660 Parliament dissolved itself and called for new elections. Charles II appealed from exhile and wrote the Declaration of Breda.
+In 1660 Parliament dissolved itself and called for new elections. Charles II appealed from exile and wrote the Declaration of Breda.
 - Respect the liberties of Parliament.
 - Pardon everyone who fought against him.
 - Liberty of conscience.
