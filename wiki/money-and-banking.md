@@ -32,7 +32,7 @@ Hierarchy of financial instruments
 - Currency -internal to a country-
 - Bank Deposits (promises to pay currency)
 - Securities (any other kind of credit, like a loan)
-What counts as money and what as credit depends on your level of operation: to a bank, only gold and currency is money, to a company it's a deposit and upwards.
+What counts as money and what as credit depends on your level of operation: to a bank, only gold and currency is money, to a company it is a deposit and upwards.
 
 
 ### Hierarchy of Financial Institutions
@@ -43,7 +43,7 @@ In an idealized Victorian, Gold-standard system with no shadow banking.
 - Private sector (asset: deposits -also securities-, liability: securities)
 All money is somebody's promise, but gold is the asset that is no one's  liability.
 
-If you map out a pyramid where gold is the apex, and securities the base, it gets wider as you go down and it has liabilities on the right and assets on the left, then what you see is it expands and contracts cyclically over seasons (days, weeks, etc.). It looks like it's organically breathing.
+If you map out a pyramid where gold is the apex, and securities the base, it gets wider as you go down and it has liabilities on the right and assets on the left, then what you see is it expands and contracts cyclically over seasons (days, weeks, etc.). It looks like it is organically breathing.
 
 The pyramid expands in booming periods, and contracts in recessions. When it expands, credit 'looks more like money' and when it contracts the difference becomes starker. I am guessing if you raise interest rates, this pyramid also contracts.
 
@@ -280,10 +280,22 @@ Supermarkets are in a way liquid: in the morning shelves are full and no one is 
 
 Dealers of securities and assets work like this as well. They have capital, allocated between securities and just cash reserves, and this allocation fluctuates with demand, but doesn't necessarily change prices. They could merely profit from the spread. An example of an illiquid market where you depend on a broker instead of a dealer is real estate, where you may want to buy a house that is simply not in the market.
 
-As a model of two-way dealers, we see three factors: in the x-axis, inventory, liquidity constraints: there is a maximum long position (when you burn all your capital, or your maximum theoretical leverage) and a maximum short (when you sell all of your inventory of a security + short it to the max). On the y-axis, prices fluctuate between two constraints: value bid and value ask. The value bid is the lowest price an asset can reach, as anything below that will be scooped up instantly for arbitrage (ask Warren Buffet). The value ask is the point where an asset is so priced that it becomes obvious it deserves a short. Finally, a dealer will sell their inventory on a bid-ask spread. This spread will be wider or narrower given how volatile the market is, and how much assymetry of information the dealer perceives (arguably these are also correlated? Seem like variance and bias to me). 
+As a model of two-way dealers (we will use Trainer's 1987 model), we see three factors: in the x-axis, inventory, liquidity constraints: there is a maximum long position (when you burn all your capital, or your maximum theoretical leverage) and a maximum short (when you sell all of your inventory of a security + short it to the max). On the y-axis, prices fluctuate between two constraints: value bid and value ask. The value bid is the lowest price an asset can reach, as anything below that will be scooped up instantly for arbitrage (ask Warren Buffet). The value ask is the point where an asset is so priced that it becomes obvious it deserves a short. Finally, a dealer will sell their inventory on a bid-ask spread. This spread will be wider or narrower given how volatile the market is, and how much assymetry of information the dealer perceives (arguably these are also correlated? Seem like variance and bias to me). 
 
 > In a way, dealers are buying funding liquidity and selling market liquidity.
 
 This is also where the Volcker rule comes in: it establishes that a bank must have matched book (an inventory of 0) for each security. This in theory means for every long position the bank must have an equal opposite short one, and therefore price risk must be 0. In practice, 'there is no such thing as a perfect hedge' and liquidity risk also emerges.
 
-(To watch: 10.6)
+In practice, a dealer will not be dealing with its own capital (or its own capital will be a small part of the total assets) --That would be a trader. Instead, it will be leveraged. What's more, the dealer will commonly hold not securities and cash per se, but reverse and repo: some hedge fund or similar institution will be the ultimate holder of securities, whereas a bank (very typically the dealer itself will belong to a bank) will provide funding in the form of repos.
+
+It is key to remember the dealer is trying to only profit from the spread, and have as much balance sheet size as possible, while avoiding exposure to prices. So ideally they will try to long and short securities to **cancel out price risk**. **To short a security, a dealer may lend to a hedge fund in the repo market (obtaining a reverse instrument) and then sell the security instantly.** This is pretty awesome, a mechanism to obtain a short position in a security. The long position is straightforward.
+
+Additionally to the spread, most dealers benefit from the breakdown of the expectations hypothesis (lend long, borrow short).
+
+Markets have different qualities: they present different slopes in prices (steeper or plainer), and different bid-ask spreads. Since each dealer is motivated to provide liquidity to the least liquid markets as a way to increase their spread, in aggregate they end up providing liquidity to most markets.
+
+> Your ability to trade in liquid markets is, in fact, brought about by the fact that the price you are getting is different from the fundamental value. 
+
+Fischer Black said that asset prices are 90% of the time within a factor of 2 from their fundamental value. This was his efficient market hypothesis.
+
+(To watch: 11)
