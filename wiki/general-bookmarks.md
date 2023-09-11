@@ -93,3 +93,7 @@ Anime of the Year Tokyo award
 ---
 Index of books in JP with difficulty levels. Seems pretty good at ranking.
 <https://learnnatively.com/>
+
+---
+Visuals and stats
+<https://informationisbeautiful.net/visualizations/>
