@@ -46,6 +46,13 @@ About 75% of the fats in chia seeds consist of the **omega-3** alpha-linolenic a
 
 28 grams of chia seeds provides 5g of ALA omega-3 fatty acids, or 312–454% of the recommended daily intake. Therefore, you should have \~8g of chia seeds a day.
 
+---
+
+> High levels of caffeine intake may increase your risk of osteoporosis. About 400 mg a day or less probably won't cause bone loss (or other health problems), while 800 mg or more is considered the threshold for osteoporosis risk. (1 cup: \~94mg, 1L of diet coke: 128mg -regular has less-).
+
+> You lose about 6 milligrams of calcium for every 100 milligrams of caffeine (100 grams of milk: 113mg calcium so not too troublesome, even at 30% absortion rates).
+
+
 ### Related Reading
 
 - [Longevity](/wiki/longevity)
