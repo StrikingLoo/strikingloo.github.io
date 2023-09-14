@@ -298,4 +298,24 @@ Markets have different qualities: they present different slopes in prices (steep
 
 Fischer Black said that asset prices are 90% of the time within a factor of 2 from their fundamental value. This was his efficient market hypothesis.
 
-(To watch: 11)
+## Lecture 11
+
+Trainer says dealers are concerned about their net position, as it exposes them to price risk. Their positions could be split into matched book positions and exposed ones.
+
+Empirically in normal dealers, an order of magnitude bigger share of their position is matched book, while only the rest would be e.g. borrowing to long bonds (thus incurring price risk), therefore speculative book.
+
+The dealer may be borrowing short and lending long (using securities as collateral in the repo/reverse market). This exposes them to liquidity risk, as they are functionally operating as a bank. They reborrow every day from the repo market, but if the bank they are borrowing from becomes illiquid, they would face liquidity issues as well.
+
+The dealer chooses to expose itself to liquidity risk by borrowing in the repo overnight market and lending in the term market, with a corresponding (positive) spread in **yields**.
+
+That spread in yields presents a curve, not unlike that in Trainer's model of dealers but flipped (so it goes up as X increases) where Y axis is yields (with a spread between overnight and term) and X axis is liquidity exposure. The dealer may expose to more liquidity risk by increasing both sides of the balance sheet in the corresponding repo/reverse operations, or less by shrinking it. A negative position would be holding cash? Note that this curve mostly describes the term rate, as the overnight rate will be strongly affected by the Fed intervention.
+
+The dealer is dealing in securities and dealing in money. This same story, by the way, would apply for banks: you can think as an overnight deposit versus a term loan to a business. In this case the bank is a money dealer instead of a securities dealer.
+
+> One thing the Fed does is create an **outside spread for the Fed Funds market**. Another is to **Keep the Fed Funds rates stable**.
+
+After 2008, the Fed became very explicit about the Fed Funds rate outside spread: it set a minimum (by paying .25% interest) and a maximum (by lending at .75%, the discount rate). At this point, the effective rate can only move between these values. Before the crisis these values were 0 and 1%+target.
+
+**Temporary open market operation**: The Fed can lower interest rates in the Fed Funds market by expanding its balance sheet and dumping them in the repo market (for a temporary period of time). They are _temporary_ as opposed to normal (permanent) OMO where the Fed _buys_ the treasuries. The Fed buys the repos from a dealer through a bank, injecting liquidity into the markets. The dealer can then use those reserves for e.g. paying a loan, investing, keep them as deposits, etc.
+
+(To watch: 11.7)
