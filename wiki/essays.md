@@ -194,6 +194,22 @@ Cicero, almost by the strength of his intellect and his oratorial skills alone, 
 - **Delectare** is about how you speak, about using language in a way that is appealling, entertaining, interesting, perhaps even beautiful; that's how you keep their attention.
 - **Movere** is about engaging the emotions of your listeners; there is no better way to convince, after all.
 
+---
+
+> "A clearly written work is one in which the reader knows, at all times, what the writer is writing about.<br>Brevity is the elimination of extraneous detail. In other words, brevity is saying only what is important."
+
+A quote for which I unfortunately lost the source.
+
+### Quintilian on writing
+
+> "Some, again, make the contrary practice their study, shunning and shrinking from all such charms... and approving nothing but what is plain, and humble, and without effort. Thus, while they are afraid that they might sometimes fall, they are always creeping on the ground."
+
+### Advice from Steve Yegge ("You Should Write Blogs")
+
+> Some of the stuff you write as part of your ordinary workday will be interesting and useful to others. All you need to do is keep an eye out for things you've written that might be worth publishing. Then the "I'm too busy" argument just evaporates, because it's almost no effort to dump some document or email rant or whatever into your blog.
+
+[Steve Yegge - You Should Write Blogs](https://sites.google.com/site/steveyegge2/you-should-write-blogs)
+
 ## Related Reading
 
 - [Idea Space: Thinking as Pathfinding in the Space of Ideas](/wiki/idea-space)
