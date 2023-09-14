@@ -32,7 +32,7 @@ Think of it like jotting down “pencil” to remind yourself to return a pencil
 
 The point is, every bit of implicit-ness must be stated clearly in words. (You can say this actually future-proofs your notes)"
 
-"To counteract [the bias of being overconfident about your memory], **write as if you’re writing for others.** If only the current you can understand what you’re saying in your notes, then the notes won’t be usable in the future. Technically speaking, you are going to become a different person in the future, so you might as well write as if you’re trying to talk to someone else. "
+"To counteract [the bias of being overconfident about your memory], **write as if you’re writing for others.** If only the current you can understand what you’re saying in your notes, then the notes won’t be usable in the future. Technically speaking, you are going to become a different person in the future, so you might as well write as if you’re trying to talk to someone else."
 -- [LeanAnki](https://leananki.com/zettelkasten-method-smart-notes/)
 
 ### Ideas from "Backlinks are Bad Links"

@@ -51,6 +51,22 @@ Taken from a [post by @RomeoStevens](https://www.lesswrong.com/posts/PhXENjdXiHh
 
 Exercise should include resistance training and cardio.
 
+### Immunosenescence
+
+From [Nintil on immunosenescence][https://nintil.com/immunosenescence] (emphasis mine).
+
+> There seem to be some root causes: Some are **damage related** (In HSCs and potentially tissue-resident macrophages), others are **programmed** (involution of various tissues \[the thymus being of special importance]). It may well be that addressing the programmed causes also fixes the damage ones, depending on how much do intrinsic vs extrinsic factors matter for immunosenescence, a debate that remains unsettled.
+
+> Second, is the importance of intercellular signaling: Cells may be okay but act old if surrounded by old cells. Therapeutically, this suggests that you would need to replace the entire microenvironment of the cell for the greatest impact. In the same way that the most rapid way to change culture is rapidly replace the people that embody that culture, the fastest way to get old cells to act young is to rejuvenate a large amount of them, simultaneously. Rejuvenating just the thymus or just engrafting some young HSCs will not be enough.
+
+> Fourth is the incredible diversity there is in the immune system (...)<br>This diversity extends across species: mice immune system dynamics are not like those of humans.
+
+He emphasizes many important questions remain unanswered (there is always conflicting evidence), thymus rejuvenation may be a good therapy but insufficient, and the mechanisms that regulate e.g. programmed degeneration of the thymus are extremely complex and not yet well understood. Basic research in these kinds of mechanisms still presents a lot of uncharted territory.
+
+> It is fine if the degradation of function has no free-standing root cause and instead is a convoluted mesh of feedback loops, with no key players, but still identifying them and being able to treat all of them at once in vivo should lead to faster progress in reverting immunosenescence.
+
+I expect progress in this area to remain "slow" (no appreciable changes for non-experts) for the short term.
+
 ### Related Reading
 
 - [Loneliness and its Impact on Health](/wiki/loneliness).
