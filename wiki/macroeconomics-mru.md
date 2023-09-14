@@ -211,7 +211,7 @@ The fed also started paying **interest rates on reserves**, increasing the incen
 
 In a panic, there is a trade-off between preventing systemic risk and checking moral hazard: do I bail out insolvent banks which took too much risk, deemed "too big to fail", to prevent every domino from falling down? Will that incentivize more risk-taking in the future, and signal to banks that they will be bailed out again in the next panic, increasing the chances of a crisis in the first place?
 
-_The topics of the Federal Reserve, Central Banking and the Repo Market are discussed much more broadly in [Money & Banking: Peter Mehrling's course](/money-and-banking)_.
+_The topics of the Federal Reserve, Central Banking and the Repo Market are discussed much more broadly in [Money & Banking: Peter Mehrling's course](/wiki/money-and-banking)_.
 
 ## Fiscal Policy
 
