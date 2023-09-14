@@ -298,7 +298,7 @@ Markets have different qualities: they present different slopes in prices (steep
 
 Fischer Black said that asset prices are 90% of the time within a factor of 2 from their fundamental value. This was his efficient market hypothesis.
 
-## Lecture 11
+## Lecture 11 - Banks and the Market of Liquidity
 
 Trainer says dealers are concerned about their net position, as it exposes them to price risk. Their positions could be split into matched book positions and exposed ones.
 
@@ -318,4 +318,11 @@ After 2008, the Fed became very explicit about the Fed Funds rate outside spread
 
 **Temporary open market operation**: The Fed can lower interest rates in the Fed Funds market by expanding its balance sheet and dumping them in the repo market (for a temporary period of time). They are _temporary_ as opposed to normal (permanent) OMO where the Fed _buys_ the treasuries. The Fed buys the repos from a dealer through a bank, injecting liquidity into the markets. The dealer can then use those reserves for e.g. paying a loan, investing, keep them as deposits, etc.
 
-(To watch: 11.7)
+Note: for a bank, the payments part of the system may be a loser, and their profit making part would be the lending in the money market. They are able to keep par in the deposits/payment system thanks to the money market, but operating in the money markets provides them with the profits. As always, a trader / dealer could be thought of as a dealer of securities or one of money, depending on how it's looked at.
+
+## Lecture 12 - Lender/Dealer of Last Resort 
+
+What monetary theory cares about are the transmission mechanisms between what tools the Fed / Central Banks have (interest rate setting, monetary emission) and the market prices of money. These can be understood either as the supply of money (for any definition of supply and money, picturing the expanding pyramid of liquidity) or the interest rates of money (picturing the curve of yields, that starts low with the overnight rate of the Fed and starts growing as the terms lengthen).
+
+
+(to watch: 12.4)
