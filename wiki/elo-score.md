@@ -8,7 +8,7 @@ language: English
 importance: 5
 ---
 
-A player's expected score is their probability of winning plus half their probability of drawing. That is, if the payoff for winning were 1 and for drawing .5, the expected utility of playing.
+In Elo ratings, a player's expected score is defined as their probability of winning plus half their probability of drawing. That is, if the payoff for winning were 1 and for drawing .5, the expected utility of playing.
 
 If players A and B have ratings R<sub>A</sub>, R<sub>B</sub>, the expected score of player A vs B is E<sub>A</sub> = 1/(1 + 10\^(R<sub>A</sub> - R<sub>B</sub>)/400). That 400 makes it so that a 200 points difference predicts a score of .75 for player A.
 
