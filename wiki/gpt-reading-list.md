@@ -27,6 +27,8 @@ Feed-forward layers become highly dense, HOWEVER, the attention layers become ex
 
 [AI-Enhanced Development](https://simonwillison.net/2023/Mar/27/ai-enhanced-development/) I love this one about how lowering the activation energy for new software projects incentivizes us to create more. I've also experienced the same to a much smaller degree.
 
+[Nougat: Neural Optical Understanding for Academic Documents](https://arxiv.org/abs/2308.13418): Amazing paper by Meta, not so much by the technical but because they open source the models and code and because of what that may imply for the future. They train a visual transformer as an encoder from images of Paper PDFs (+ augmentations like Gaussian noise and rotations, as the initial dataset is very clean) and a transformer decoder that turns latent representations of images into sequences of characters (in a markup language like LaTeX). The result is an OCR that greatly improves at reconstructing math (previous SotA was non-existent for math -couldn't handle superscripts or matrices-, this one is close to ~70% accuracy). Will be interesting to see where this leads. Next generation 'Galactica'?
+
 ### Discussion 
 
 [Against LLM Maximalism](https://explosion.ai/blog/against-llm-maximalism)

@@ -314,7 +314,7 @@ The dealer is dealing in securities and dealing in money. This same story, by th
 
 > One thing the Fed does is create an **outside spread for the Fed Funds market**. Another is to **Keep the Fed Funds rates stable**.
 
-After 2008, the Fed became very explicit about the Fed Funds rate outside spread: it set a minimum (by paying .25% interest) and a maximum (by lending at .75%, the discount rate). At this point, the effective rate can only move between these values. Before the crisis these values were 0 and 1%+target.
+After 2008, the Fed became very explicit about the Fed Funds rate outside spread: it set a minimum (by paying .25% interest, the interest on excess reserves -IOER-) and a maximum (by lending at .75%, the discount rate). At this point, the effective rate can only move between these values. Before the crisis these values were 0 and 1%+target.
 
 **Temporary open market operation**: The Fed can lower interest rates in the Fed Funds market by expanding its balance sheet and dumping them in the repo market (for a temporary period of time). They are _temporary_ as opposed to normal (permanent) OMO where the Fed _buys_ the treasuries. The Fed buys the repos from a dealer through a bank, injecting liquidity into the markets. The dealer can then use those reserves for e.g. paying a loan, investing, keep them as deposits, etc.
 
@@ -324,5 +324,32 @@ Note: for a bank, the payments part of the system may be a loser, and their prof
 
 What monetary theory cares about are the transmission mechanisms between what tools the Fed / Central Banks have (interest rate setting, monetary emission) and the market prices of money. These can be understood either as the supply of money (for any definition of supply and money, picturing the expanding pyramid of liquidity) or the interest rates of money (picturing the curve of yields, that starts low with the overnight rate of the Fed and starts growing as the terms lengthen).
 
+### Taylor's Rule - Inflation Targetting
 
-(to watch: 12.4)
+*input equation here*
+
+This equation describes and fits the interest rates set by central banks outside of anomalous (crisis) times. It was developed mostly as a descriptive tool, but it became normative in the '80s. The last two terms are sort of 'error correction' terms, in that they represent the Fed's targets. 
+
+The first part is the **Fisher Effect**: the idea that the nominal interest rate is the real interest rate (ro) plus expected inflation (pi\^e). The markets adjust interest rates to match their expectations of inflation.
+
+The other parts are the way the Fed has to correct against what the market will do on its own. To lean against the wind so to speak. These two terms, with weight coefficients, are one corresponding to how much higher inflation is than the target, and one to how much lower output is than full employment.
+
+This is what is called **inflation targetting**.
+
+### Monetary Transmission Mechanism
+
+At this point, we've seen three models. 
+
+First a **dealer in the bond market**, using Trainer's model. The dealer sets prices based on the size of their inventory, exposing itself to higher or lower **price risk**.
+
+Then, a lender (in the repo market or others), who in practice is a **dealer in money**. This lender will set their yield/interest rate higher the bigger their exposure to **liquidity risk** is (that is, to how expanded their sheet is), so the curve slopes to the other side.
+
+Finally, the **Fed Funds market**, where interest rates are bounded (by the Fed's intervention) and yet fluctuate, increasing as banks expose themselves to higher **settlement risk**.
+
+The Fed is in practice only setting a target Fed Funds rate. It may also trade in temporary OMO. This fixes a certain settlement risk, which is the discipline in the market.
+
+The transmision mechanism goes from the Fed's target, which dictates the overnight Fed Funds rates, to the term rates for dealers (in e.g. the repo market) to finally bond yields and loan interest rates in the private sector. So understanding this, one can see how e.g. raising interest rates will reduce lending and funding in the private sector.
+
+
+(to watch: 12.9)
+

@@ -56,6 +56,9 @@ US State Salary Scale for Seattle
 Related: _DataUSA.io_
 <https://datausa.io/profile/geo/>
 
+Same energy: _income percentiles by age_.
+<https://www.timevaluemillionaire.com/income-percentiles-by-age/>
+
 ---
 Tezuka Osamu Cultural Prize
 <https://en.wikipedia.org/wiki/Tezuka_Osamu_Cultural_Prize>
