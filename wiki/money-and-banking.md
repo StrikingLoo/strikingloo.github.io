@@ -351,5 +351,12 @@ The Fed is in practice only setting a target Fed Funds rate. It may also trade i
 The transmision mechanism goes from the Fed's target, which dictates the overnight Fed Funds rates, to the term rates for dealers (in e.g. the repo market) to finally bond yields and loan interest rates in the private sector. So understanding this, one can see how e.g. raising interest rates will reduce lending and funding in the private sector.
 
 
-(to watch: 12.9)
+### The 2008 Financial Crisis: Collapse of Citibank and Intervention of the Fed
+
+Before the crisis, Citibank had Citi SIVs (Investment Vehicles) which would own RMBSs (mortgage-backed securities) as assets and finance their operations through borrowing in the commercial paper market (so liabilities: ABCP, with these RMBSs as collateral). On the other side of operations would be e.g. MMMFs that have these ABCP notes as assets and their own shares as liabilities.
+
+As trust in RMBSs went down, MMMFs wanted to be rid of them and did not roll their commitment to the SIVs after term. Citibank misjudged, and decided to keep the RMBSs in the SIV, and loan the money to the SIVs themselves (!) while financing those operations in the repo market first. The buyers of these repo would be e.g. the same MMMFs. Note that these are more secured: they are secured loans backed by the bank itself. Eventually as trust kept going down, the securities used as collateral (the same RMBSs) did not look safe enough and MMMFs would prefer safer securities as assets, so that Citibank stopped borrowing from the RP and had to start obtaining funding from the bond market (emitting commercial paper), bringing the entire bank as the support for their loans but in so doing putting the RMBSs completely into their balance sheets. 
+
+Finally, when the MMMFs did not want to keep holding the commercial paper and sold it, liquidity was needed in the eurodollar market (these MMMFs were in big part foreign) and so action from the Fed and the Treasury were needed. In the end the MMMFs ended up holding T-bills, whose emission the Fed funded with an expansion of its balance sheet. The reserves from that went to the ECB as liquidity swaps, and finally the ECB loaned that money to e.g. Citibank. At this point the Fed had brought the RMBSs funding into its own balance sheet, while later it would start having to buy RMBSs themselves in the wholesale market.
+
 
