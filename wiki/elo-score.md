@@ -22,7 +22,7 @@ R'<sub>A</sub> = R<sub>A</sub> + K \* (S<sub>A</sub> - E<sub>A</sub>)
 
 Where S is the actual score the player got, and E the expected one, while K is some constant bound for maximum update.
 
-In effect, the Elo rating is training a sigmoid that predicts probability of winning given the two ratings, assuming prob\{A wins} = sigmoid(R<sub>A,B</sub>) = 1/(1 + 10\^(R<sub>A</sub> - R<sub>B</sub>)/s) for some s (typically 400). 
+In effect, the Elo rating is training a sigmoid that predicts probability of winning given the two ratings, assuming prob\{A wins} = sigmoid(R<sub>A,B</sub>) = 1/(1 + 10\^(R<sub>B</sub> -  R<sub>A</sub>)/s) for some s (typically 400). 
 
 Then the update step is 
 R<sub>A</sub> \<- R<sub>A</sub> + K \* (S<sub>A</sub> - <sub>A</sub>)
