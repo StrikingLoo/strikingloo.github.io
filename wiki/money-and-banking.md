@@ -360,3 +360,27 @@ As trust in RMBSs went down, MMMFs wanted to be rid of them and did not roll the
 Finally, when the MMMFs did not want to keep holding the commercial paper and sold it, liquidity was needed in the eurodollar market (these MMMFs were in big part foreign) and so action from the Fed and the Treasury were needed. In the end the MMMFs ended up holding T-bills, whose emission the Fed funded with an expansion of its balance sheet. The reserves from that went to the ECB as liquidity swaps, and finally the ECB loaned that money to e.g. Citibank. At this point the Fed had brought the RMBSs funding into its own balance sheet, while later it would start having to buy RMBSs themselves in the wholesale market.
 
 
+--- 
+End of part 1
+
+---
+
+## Lecture 13 - Chartallism, Metallism, and Key Currencies
+
+There is a hierarchy of currencies, implied by trading volumes. USD is the world currency, then Yen, Pound and Euro make the big 4, and the CAD, AUD and Swiss Franc make the most traded ones. Other currencies trade not between each other but by switching to USD and back.
+
+Their markets are liquid, you can do huge trades without moving the price.
+
+It is not surprising that there were two traditions in monetary theory, given that there were always two kinds of money. These are fiat currency and gold, one corresponding to Chartalism, the other to Metallism. These represent respectively retail and wholesale trading, public and private spheres of influence. Historically there has always been an exchange rate between these: you may use domestic money for day to day living and paying taxes, and international one for trade, banking, and as a store of value. 
+
+The distinction is the King's money versus international money. A King would have to move back and forth between the two, particularly notoriously in a foreign war.
+
+It can be argued that the current system is a hybrid of the two, both institutionally and historically.
+
+The idea that the state desires elasticity while the private sector provides discipline lets you to think of the relationship between the treasury and the central bank as one where the treasury issues debt at an interest rate, and the government's bank (the central bank) buys it and emits currency as its non-interest-bearing liability. This is why we see the state funding itself through the central bank and why in most developed nations it is the central bank that buys most treasury bills.
+
+In the quantity of money theory (*MV = PT*), where T is aggregate transactions, T has to do with the real economy, and P is more about price levels.
+
+Another model says that the rate of exchange is (1 + R)/(1 + R\*) where R and R\* are the interest rates. This is a chartalist model, whereas the metallist model would say money has value merely proportional to its metal content (the "mint par": how much gold do I get for this?), give or take some noise from the actual transaction costs of doing so (a different price would otherwise allow for arbitrage).
+
+In the foreign exchange market, when country A wants to pay country B (and we want to allow for credit, so payment is possible with no liquidity -otherwise payment is trivial-), country A pays X\*E to a forex dealer, who pays X/E' to the country (typically in the form of its own liability in turn, not cash unless requested which would pose severe liquidity constraints). Then it takes matching, opposite positions in the term market to offset exchange rate risk. He is this way still exposed to a different (as of yet undisclosed in class) risk, but at least avoids problems due to exchange rate fluctuations. On the other side of this, there will be speculators lending or borrowing at term to allow for this transaction. This would incentivize countries to move their interest rates to allow liquidity to hit the market (obvious examples come to mind).
