@@ -8,7 +8,7 @@ language: English
 importance: 3
 ---
 
-> The Age of Enlightenment was preceded by and closely associated with the Scientific Revolution. Earlier philosophers whose work influenced the Enlightenment included Francis Bacon and René Descartes. Some of the major figures of the Enlightenment included Cesare Beccaria, Denis Diderot, David Hume, Immanuel Kant (e.g. [What is Enlightenment?](/wiki/what-is-enlightenment), Gottfried Wilhelm Leibniz, John Locke, Montesquieu, Jean-Jacques Rousseau, Adam Smith, Hugo Grotius, Baruch Spinoza, and Voltaire.
+> The Age of Enlightenment was preceded by and closely associated with the Scientific Revolution. Earlier philosophers whose work influenced the Enlightenment included Francis Bacon and René Descartes. Some of the major figures of the Enlightenment included Cesare Beccaria, Denis Diderot, David Hume, Immanuel Kant (e.g. [What is Enlightenment?](/wiki/what-is-enlightenment)), Gottfried Wilhelm Leibniz, John Locke, Montesquieu, Jean-Jacques Rousseau, Adam Smith, Hugo Grotius, Baruch Spinoza, and Voltaire.
 
 > One particularly influential Enlightenment publication was the Encyclopédie (Encyclopedia). Published between 1751 and 1772 in 35 volumes, it was compiled by Diderot, Jean le Rond d'Alembert, and a team of 150 other intellectuals. The Encyclopédie helped in spreading the ideas of the Enlightenment across Europe and beyond. 
 
