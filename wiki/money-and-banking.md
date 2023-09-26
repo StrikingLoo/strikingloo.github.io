@@ -384,3 +384,35 @@ In the quantity of money theory (*MV = PT*), where T is aggregate transactions, 
 Another model says that the rate of exchange is (1 + R)/(1 + R\*) where R and R\* are the interest rates. This is a chartalist model, whereas the metallist model would say money has value merely proportional to its metal content (the "mint par": how much gold do I get for this?), give or take some noise from the actual transaction costs of doing so (a different price would otherwise allow for arbitrage).
 
 In the foreign exchange market, when country A wants to pay country B (and we want to allow for credit, so payment is possible with no liquidity -otherwise payment is trivial-), country A pays X\*E to a forex dealer, who pays X/E' to the country (typically in the form of its own liability in turn, not cash unless requested which would pose severe liquidity constraints). Then it takes matching, opposite positions in the term market to offset exchange rate risk. He is this way still exposed to a different (as of yet undisclosed in class) risk, but at least avoids problems due to exchange rate fluctuations. On the other side of this, there will be speculators lending or borrowing at term to allow for this transaction. This would incentivize countries to move their interest rates to allow liquidity to hit the market (obvious examples come to mind).
+
+**What is the exchange rate?**: Relative price of goods (purchase power parity), relative price of assets (forward interest parity), relative price of money (in terms of money), which takes into account liquidity.
+
+In the past (think early modern) the government would have a government bank, and use it for funding (especially for war finance). They would print bonds or treasury bills and the central bank would buy them and keep them as assets, while printing money as a liability. In parallel, the private world would have banker's banks, that would emit money backed by gold as its asset. There was credit and elasticity albeit much less than now.
+
+What happened in the late modern period (around the time of the American Civil War) was the government took the gold from the private banks and gave them fiat money deposits instead. But then they gave those deposits their blessing (which only government bank money used to have) in exchange for keeping the gold. This made bonds much more desirable as an asset and allowed for much bigger opportunities for government (and eventually military) funding. This is the hybridity of banking. Modern monetary systems are always hybrid, one way or another.
+
+## Lecture 14 - Money and the State: International
+
+Before WWI, there was a strong discipline factor due to the gold standard. Much as central banks and states would like to print infinite money, they needed to maintain their pegs to gold.
+
+This brought integration and stability to the international monetary system. Failures were not infrequent, but they were correlated. It is possible to remember it fondly compared to the chaos that followed.
+
+As said before, central banks wish to avoid discipline. To do this, there were several proposals, but they required coordination (e.g. if all of us print money at the same time then gold just gains value). After the war, the dollar standard emerged (with everyone pegging to the dollar), but this had its own problems as the dollar suffers its own stabilities due to domestic issues.
+
+Reading: [R. A. Mundell's article](https://d396qusza40orc.cloudfront.net/money2%2Freadings%2FMundell.pdf) (15 pages, looks good🌱).
+
+**Confrontation of the Fed and the Gold Standard**: After WWI many countries (all the Europeans) go off the standard, as all the gold was flowing to the US to pay for the war. After this several of the main powers (UK, FR, DE) try to go back to the gold standard, but this leads to several issues like deflation. The US Fed makes a mistake by raising interest rates, so all the gold flows back to them and European powers need to drop off the standard again. At this point (in the Great Depression) the most senior founders of the Fed had died, and the chairmen at that point were inexperienced in comparison and did a conservative measure, which backfired. (Mehrling mentions a biography of Benjamin Strong, which he says is really good 🌱). 
+
+According to the Fed's website, they raised interests at that point to prevnt speculation in the stock markets (it obviously backfired) and also failed to be lenders of last resort for collapsing banks facing liquidity issues.
+
+**Confrontation of National Macroeconomic Management and Fixed Exchange Rates**: After the war, in Bretton Woods, Keynes (who was British) proposed the Bancor plan: make an international bank that lends to deficit countries and gets deposits from surplus ones. But it would give out negative interest rates to the lenders (!) and force them to lend, so that there was an incentive for them to consume. This did not go over well with the clear surplus country (the USA). 
+
+Instead of Bancor, what we got was **the IMF**. The IMF works under the principle of discipline (some could say too much of it) instead of elasticity: the balance sheets do not expand, rather there is a fixed supply of reserves, but instead of gold these are reserves of paper money, so that they can be expanded arbitrarily but not randomly.
+
+Each member country deposits gold and their own currency in the IMF, obtaining (through a complicated mechanism of conversions) SDR -[Special Drawing Rights](https://www.imf.org/en/About/Factsheets/Sheets/2023/special-drawing-rights-sdr)-. These SDR can be used by deficit countries to pay surplus ones. However if SDRs reach 0, they must then borrow from the IMF (typically at a high interest rate). 
+
+**Bretton Woods**: In the Bretton Woods system, after WWII, there were international reserves (in the form of gold + SDRs), the USD was pegged to them (35$/oz) and major currencies were pegged to the USD. USA provided funding for the European reconstruction using dollars, not reserves, which were accepted as money. In a way the new global reserves became USD. As credit kept expanding, gold became undervalued (that is, reserves were ever smaller with regards to USD in circulation) to the point where there was a run on the dollar in 1971, after which the convertibility to gold ceased.
+
+In a way, one could model the relationship between USA and Europe/the rest of the world as that of a bank and a depositor: they would sell their bonds to the US, which would pay in dollars. Then countries would get (non-interest-bearing) dollars in exchange for interest-bearing bonds. In effect lending long and borrowing short.
+
+next: 14-6

@@ -100,3 +100,6 @@ Index of books in JP with difficulty levels. Seems pretty good at ranking.
 ---
 Visuals and stats
 <https://informationisbeautiful.net/visualizations/>
+
+Governance
+<https://info.worldbank.org/governance/wgi/Home/Reports>
