@@ -10,7 +10,7 @@ importance: 4
 
 > "All banking is a swap of IOUs."
 
-_For notes on a related course see: [Macroeconomics: Marginal University Course](/macroeconomics-mru)._
+_For notes on a related course see: [Macroeconomics: Marginal Revolution University Course](/wiki/macroeconomics-mru)._
 
 ## Lecture 1 - 4 Prices of money
 
