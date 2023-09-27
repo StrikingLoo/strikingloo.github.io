@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Economics of Money and Banking - Peter Mehrling"
+title: "Economics of Money and Banking - Perry Mehrling"
 date: 2023-08-09
 tags: economics, macroeconomics, banking, finance
-description: "Notes on the MOOC by Peter Mehrling about Money and Banking"
+description: "Notes on the MOOC by Perry Mehrling about Money and Banking"
 language: English
 importance: 4
 ---
