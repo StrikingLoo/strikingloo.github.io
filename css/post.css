@@ -51,7 +51,7 @@ blockquote {
   font-family: Open Sans;
   font-style: italic;
   color: var(--font-color);
-  font-size: 1.05em;
+  font-size: 1em;
   background:var(--quote-bkg);
   padding: .7em 1em .7em 1em;
   border: 1px solid #ccc;

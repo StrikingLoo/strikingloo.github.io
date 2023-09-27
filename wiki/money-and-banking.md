@@ -83,6 +83,7 @@ The hierarchy of banks becomes
 - Federal Reserve
 - Reserve Banks
 - Member Banks
+
 > An agricultural country has a seasonal, yearly fluctuation of the demand of bank notes and deposits. Let us then seasonally adjust the supply.
 
 The mechanism by which this is made is: member banks loan to Main Street freely, and don't need to worry about liquidity: they can acquire bank notes from reserve banks, borrowing them with their discounted loans as collateral. The reserve banks at the same time can use the discounted loans as collateral to borrow from the Federal Reserve, from which they may obtain bank notes, which they then provide to member banks completing the process. This way the supply of bank notes can adjust to demand. 
