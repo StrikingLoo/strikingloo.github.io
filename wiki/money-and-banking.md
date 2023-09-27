@@ -256,7 +256,7 @@ Since bank X already set interests for 5-month and 2-month deposits, it follows 
 
 ### The Credit System
 
-Suppose there are two businesses: one is retail (A), the other (B) is wholesale (e.g. they sell apples). In practice if A buys apples from B, it will give B a bill of exchange, stating that it will pay the corresponding amount in e.g. 90 days. B can then sell that bill at a discount of its fase value to a bank, getting the money instantly. The bank then absorbs the risk of A becoming insolvent, and loses liquidity, but gets an interest rate in exchange.
+Suppose there are two businesses: one is retail (A), the other (B) is wholesale (e.g. they sell apples). In practice if A buys apples from B, it will give B a **bill of exchange**, stating that it will pay the corresponding amount in e.g. 90 days. B can then sell that bill at a discount of its fase value to a bank, getting the money instantly. The bank then absorbs the risk of A becoming insolvent, and loses liquidity, but gets an interest rate in exchange.
 
 In this manner the bank is sacrificing liquidity for profit, which is not a trivial tradeoff.
 
@@ -415,4 +415,14 @@ Each member country deposits gold and their own currency in the IMF, obtaining (
 
 In a way, one could model the relationship between USA and Europe/the rest of the world as that of a bank and a depositor: they would sell their bonds to the US, which would pay in dollars. Then countries would get (non-interest-bearing) dollars in exchange for interest-bearing bonds. In effect lending long and borrowing short.
 
-next: 14-6
+**1972-1999: Flexible exchange**: At this point the central banks began targeting inflation. Not being pegged to anything, purely fiat currencies tended to produce high inflation, and this is where monetary policy came along. Central banks and speculators, without being completely integrated into an international system, bred volatility.
+
+> Wars happen when people can't figure out what to do next.
+
+## Lecture 15 - Banks and Global Liquidity
+
+Imagine again the world of Bagehot, where businesses are using bills of exchange to trade. But now picture Businesses A and B such that neither is in England, even though both conduct their banking in London. Even if you're not in England, you can take a bill to the City of London and discount it. 
+
+Now business in London must be conducted in the pound sterling, which at this point is the international currency. However both firms need their local currencies to pay their workers, and also are paid in their local currencies by their respective markets. In order to transact in London they will go to a foreign exchange dealer. 
+
+Next: lecture 15-3.
