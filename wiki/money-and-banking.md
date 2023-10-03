@@ -281,7 +281,7 @@ Supermarkets are in a way liquid: in the morning shelves are full and no one is 
 
 Dealers of securities and assets work like this as well. They have capital, allocated between securities and just cash reserves, and this allocation fluctuates with demand, but doesn't necessarily change prices. They could merely profit from the spread. An example of an illiquid market where you depend on a broker instead of a dealer is real estate, where you may want to buy a house that is simply not in the market.
 
-As a model of two-way dealers (we will use Trainer's 1987 model), we see three factors: in the x-axis, inventory, liquidity constraints: there is a maximum long position (when you burn all your capital, or your maximum theoretical leverage) and a maximum short (when you sell all of your inventory of a security + short it to the max). On the y-axis, prices fluctuate between two constraints: value bid and value ask. The value bid is the lowest price an asset can reach, as anything below that will be scooped up instantly for arbitrage (ask Warren Buffet). The value ask is the point where an asset is so priced that it becomes obvious it deserves a short. Finally, a dealer will sell their inventory on a bid-ask spread. This spread will be wider or narrower given how volatile the market is, and how much assymetry of information the dealer perceives (arguably these are also correlated? Seem like variance and bias to me). 
+As a model of two-way dealers (we will use Trainer's model from 1987), we see three factors: in the x-axis, inventory, liquidity constraints: there is a maximum long position (when you burn all your capital, or your maximum theoretical leverage) and a maximum short (when you sell all of your inventory of a security + short it to the max). On the y-axis, prices fluctuate between two constraints: value bid and value ask. The value bid is the lowest price an asset can reach, as anything below that will be scooped up instantly for arbitrage (ask Warren Buffet). The value ask is the point where an asset is so priced that it becomes obvious it deserves a short. Finally, a dealer will sell their inventory on a bid-ask spread. This spread will be wider or narrower given how volatile the market is, and how much assymetry of information the dealer perceives (arguably these are also correlated? Seem like variance and bias to me). 
 
 > In a way, dealers are buying funding liquidity and selling market liquidity.
 
@@ -426,4 +426,28 @@ Imagine again the world of Bagehot, where businesses are using bills of exchange
 
 Now business in London must be conducted in the pound sterling, which at this point is the international currency. However both firms need their local currencies to pay their workers, and also are paid in their local currencies by their respective markets. In order to transact in London they will go to a foreign exchange dealer. 
 
-Next: lecture 15-3.
+**Dealer model for foreign exchange**: We can use Trainer's model for exchange rates. The exchange rate will be the ratio between the mint pars, give or take a delta that make an enclosing range of prices. E.g. if USD can be exchanged for 1 oz of gold and GBP for 1.2 oz, then the ideal exchange rate would be 1.2 USD per GBP, but in real life there is a non-negligible transaction cost to selling and moving gold, so that there is noise around that value. 
+
+The gold points act as an outside spread, and put a cap on how much risk the dealer may take. If they are long a currency and that currency depreciates below the exchange ratio - delta, the dealer may always just exchange back into gold and use that to potentially acquire more of the international currency (GBP). 
+
+Suppose now that the price of the currency reaches below the minimum point in the outside spread. At this point the dealer takes the USD to the 'central bank' for gold. The central bank can choose between paying, in which case its gold reserves go down but the money supply shrinks (literally contractionary policy: the money that entered the bank was already its own liability, so they cancel out and the balance sheet shrinks). Or it may sell assets (especially bonds) for gold. Selling t-bills for reserves can however put pressure on their price, effectively raising yields. The third and last option is to borrow reserves. 
+
+The central bank will protect the currency value mostly not by keeping big reserves, but by using these mechanisms to keep reserves stable.
+
+There cannot be liquidity without dealers, and there won't be dealers without a price curve that generates profits. This is the essence of monetary economics.
+
+When there is a liquidity crisis in the central bank whose liability is the international currency (in practice, the BoE), it has three options: it may acquire more gold (typically impractical), raise interest rates (at this point in time, the 90d term interest discount for exchange bills) to bring discipline, or suspend payments. Even after suspending payment in species, currency prices would not collapse, which is interesting.
+
+## Lecture 16 - Foreign Exchange
+
+There are three different theories as to what predicts foreign exchange rates. Covered Interest Parity (the ratio of interest rates equation), Uncovered Interest Parity (F = E(S)) and Expectations Hypothesis of the Term Structure (the interest rate for a term T should be the product of interests for shorter disjunct terms that form it).
+
+Empirically only the first one holds up, and this lecture explains why.
+
+We see again the Trainer model applied to the dealers in FX under the gold standard (and remember that as a lender of last resort, the BoE would adjust its term discount rate for bills of exchange, and had a last resort of suspending payment in specie). 
+
+We go back to the dealer in FX who facilitates payments between two nations (A to B) that don't have the international currency by allowing A to pay in local currency to the trader, the trader pays in international to B, then makes two opposite trades to hedge against exchange risk by buying forward trades (effectively borrowing the local currency and lending the international one), while making interests R and R\* on them, plus some spread that makes it profitable. This is not a _perfect_ hedge, but it's profitable enough given the risk, from the perspective of the dealer.
+
+On the other end of this, there will be a speculator: a different dealer taking the opposite positions on the forward trades, by borrowing and lending the opposite currencies at these same rates.
+
+Next: Lecture 16-5.
