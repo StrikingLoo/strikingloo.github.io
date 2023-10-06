@@ -450,4 +450,11 @@ We go back to the dealer in FX who facilitates payments between two nations (A t
 
 On the other end of this, there will be a speculator: a different dealer taking the opposite positions on the forward trades, by borrowing and lending the opposite currencies at these same rates.
 
-Next: Lecture 16-5.
+To absorb the price risk from this dealer, a speculative dealer will lock in the forward position, provided that it expects a profit. This means the speculative dealer will have a value E(S) of expected spot rate for the currency at term, and buy future positions at a lower value than that -presumably, assuming R is positive, the s.d. assumes the future value is lower than current?-. Assuming they are right, they can profit from that difference.
+
+As the matched book dealer takes on more liquidity risk by being more exposed to fluctuations in the national currency, he will raise the interest rate he expects from lending to term. F/S = (1 + R\*)/(1 + R), where R is basically a constant, so that the other country will end up adjusting R\* to increase or decrease the elasticity of the FX market. This means as the dealer is raising his exposure and how much of the local currency he has, he bids up the term rates in the deficit country. He wants to buy spot more cheaply than he sells forward.
+
+In a world without liquidity premium, you expect the term rates are the expectations of the 
+roll over of the overnight rates. This is the expectations of the terms hypothesis.
+
+Next: Lecture 16-7.
