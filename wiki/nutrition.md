@@ -52,6 +52,10 @@ About 75% of the fats in chia seeds consist of the **omega-3** alpha-linolenic a
 
 > You lose about 6 milligrams of calcium for every 100 milligrams of caffeine (100 grams of milk: 113mg calcium so not too troublesome, even at 30% absortion rates).
 
+---
+
+Selenium has a possitive impact on your thyroid. You get a little from dairy (one cup of milk -240ml-: 5\~10 mcg). Adults 20\~50 should get 55 mcg/day. Brazil nuts provide 68\~91 mcg per nut. Going over 400 mcg can have _severe_ impact on your health.
+
 
 ### Related Reading
 

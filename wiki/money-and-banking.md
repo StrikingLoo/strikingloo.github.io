@@ -457,4 +457,28 @@ As the matched book dealer takes on more liquidity risk by being more exposed to
 In a world without liquidity premium, you expect the term rates are the expectations of the 
 roll over of the overnight rates. This is the expectations of the terms hypothesis.
 
-Next: Lecture 16-7.
+"China is a surplus country. If everyone needs to make a payment to you, your liabilities are money. It's no longer true that everyone needs to make payments to the USA (as it was after WWI or WWII), but the eurodollar market is already formed, without having much to do with the balance of trade."
+
+The survival constraint is a real thing, and this is how you solve it. You cannot abstract liquidity away.
+
+## Lecture 17 - Direct and Indirect Finance
+
+"A shadow bank is money market funding of capital market lending". Shadow banks fund themselves in the Repo market or by emitting ABCP, and use this to buy securities.
+
+The prices the shadow bank is dealing with on both sides of the balance sheet are market prices. 
+
+Historically, money markets and capital markets were treated like separate things, to the point where they are taught about by different departments. This is no longer quite true, as shadow banking now plays an enormous role in both.
+
+In Bagehot's day, the BoE was principally focused on discounting bills of exchange, which are relatively short term, and didn't involve itself with bonds and other long term lending, which worked on a separate market. The American banks were much more prone to take part in loans and bond trading, as they also used bonds in a proto-repo market, especially before the creation of the Fed, in order to settle interbank payments.
+
+In order to do repo payments, banks would know how safe a bond was by using rating agencies, like Moody's. These were here _before the Fed_. 
+
+In 1929 the Fed allowed the shadow banking system to collapse, without supporting mortgage credit or bonds, as they were deemed 'improper' for banks. In contrast, the Fed did backstop the shadow banking system in 2008.
+
+The liquidity concept in the UK was formed around having reserve to liquidate payments on time while discounting bills of exchange: short-term lending. In contrast, in America liquidity was more about market liquidity, which at the time was explained as 'shiftability' of bonds. That is why in the 1920s it was argued that the Fed had to step in and provide liquidity buy performing OMO. 
+
+\[Some [recommended reading 🌱](https://sites.bu.edu/perry/lectures/mb-lectures/section-2/17-direct-and-indirect-finance/) goes here.]
+
+Schumpeter said that in order for a country to develop it is necessary for there to be development banks, which borrow short term in the money markets and lend long in the capital ones. They fund development. He also insisted on the importance of monetary expansion _ex nihilo_.
+
+Next: Lecture 17-6
