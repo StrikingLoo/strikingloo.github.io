@@ -173,7 +173,7 @@ Most who attended university were sons of noblemen, or of the richest sort of me
 
 By 1642 (Protestation Oath) 30% were literate, and towns were much more literate than villages. In the 1660s it was common enough for people to read that commoners would be reading chapbooks and almanacs (hundreds of thousands were printed each year).
 
-<img src='https://en.wikipedia.org/wiki/File:1477-1799_ESTC_titles_per_decade,_statistics.png'>
+<img src='https://upload.wikimedia.org/wikipedia/commons/b/bf/1477-1799_ESTC_titles_per_decade%2C_statistics.png'>
 
 ## Puritans and Arminians (Lecture 18)
 
