@@ -163,7 +163,7 @@ In summary, they will want to **restore the flow of aggregate demand**. A proble
 
 **Monetarism**, based in the quantity theory of money, emphasizes money.
 
-It was especially popular in the '70s after stagflation, and puts an emphasis in keeping inflation possitive but small. Usually through a constant rate of money supply growth, which may not be completely optimal but rules out high inflation or deflation, which are the worst cases.
+It was especially popular in the '70s after stagflation, and puts an emphasis in keeping inflation positive but small. Usually through a constant rate of money supply growth, which may not be completely optimal but rules out high inflation or deflation, which are the worst cases.
 
 Its biggest flaw is it is an incomplete model, since some crisis are not monetary in nature. There is also the question of how to measure and define the money supply in practice.
 

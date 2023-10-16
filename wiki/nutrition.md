@@ -54,7 +54,7 @@ About 75% of the fats in chia seeds consist of the **omega-3** alpha-linolenic a
 
 ---
 
-Selenium has a possitive impact on your thyroid. You get a little from dairy (one cup of milk -240ml-: 5\~10 mcg). Adults 20\~50 should get 55 mcg/day. Brazil nuts provide 68\~91 mcg per nut. Going over 400 mcg can have _severe_ impact on your health.
+Selenium has a positive impact on your thyroid. You get a little from dairy (one cup of milk -240ml-: 5\~10 mcg). Adults 20\~50 should get 55 mcg/day. Brazil nuts provide 68\~91 mcg per nut. Going over 400 mcg can have _severe_ impact on your health.
 
 
 ### Related Reading
