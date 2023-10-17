@@ -501,4 +501,16 @@ Direct Financing
 | - funds   |         | - machine |
 | + machine |         | + funds   |
 
+Recommended Reading: _Gurley & Shaw: Money in a Theory of Finance 🌱_.
+
+Moulton said, and Gurney & Shaw agree, that banks are not only intermediaries in the money market, but in the capital market: long-term lending, which is necessary for development.
+
+Two important intermediaries: **pension funds** and **insurance companies**.
+
+Pension Funds give out fixed incomes as a liability (typically a percent of salary before retirement), and hold mostly equity as assets. Insurance companies usually hold bonds and give out contingent payments -insurance policy- as a liability. In this way, both are intermediaries beetween corporations and households.
+
+> The liquidity of insurance companies depends on the liquidity of bond markets.
+
+Indirect finance 'solves development' because it stands between households and companies and gives each one what they want. **Mutual funds** remove the intermediary by giving households 'shares' directly into a portfolio of equity/bonds, passing the risk through to the holders. The rise of finance is the replacement of indirect finance with direct finance.
+
 Next: Lecture 17-7
