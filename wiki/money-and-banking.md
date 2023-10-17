@@ -481,4 +481,24 @@ The liquidity concept in the UK was formed around having reserve to liquidate pa
 
 Schumpeter said that in order for a country to develop it is necessary for there to be development banks, which borrow short term in the money markets and lend long in the capital ones. They fund development. He also insisted on the importance of monetary expansion _ex nihilo_.
 
-Next: Lecture 17-6
+Direct vs Indirect finance: in indirect finance, the bank lends a loan to a business. To fund this loan, it will use deposits, ideally from the final recipient of the money it lent, but otherwise from money markets and so on. In direct finance, the business will sell bonds to lenders, side-stepping the bank altogether. 
+
+Indirect Financing:
+
+| Business   |        | Bank   |            | Society    |
+|------------|--------|--------|------------|------------|
+| + deposits | + loan | + loan | + deposits |            |
+|            |        |        |            |            |
+| - deposits |        |        |            | - machine  |
+| + machine  |        |        |            | + deposits |
+
+Direct Financing
+
+| Business  |         | Society   |
+|-----------|---------|-----------|
+| + funds   | + bonds | - funds   |
+|           |         | + bonds   |
+| - funds   |         | - machine |
+| + machine |         | + funds   |
+
+Next: Lecture 17-7
