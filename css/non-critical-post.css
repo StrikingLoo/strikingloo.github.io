@@ -15,6 +15,10 @@ h2:hover::after, h3:hover::after {
     opacity: 1;
 }
 
+th, td {
+    border: solid 1px var(--font-color);
+}
+
 div.backButton{
   position:fixed; 
   top:75%;
