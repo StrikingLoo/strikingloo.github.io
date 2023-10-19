@@ -513,4 +513,12 @@ Pension Funds give out fixed incomes as a liability (typically a percent of sala
 
 Indirect finance 'solves development' because it stands between households and companies and gives each one what they want. **Mutual funds** remove the intermediary by giving households 'shares' directly into a portfolio of equity/bonds, passing the risk through to the holders. The rise of finance is the replacement of indirect finance with direct finance.
 
+The government is in the middle of banks providing stores of money for households, and funding for businesses and even the Fed. In that position it acts as a securer of liquidity (with the Fed backstop) and a securer of solvency (FDIC). In exchange for the taxpayers' intervention, this created regulation. Because of this an opportunity for arbitrage emerged, and this created the shadow banking system.
+
+Financial evolution: indirect finance to direct finance. Banking evolution: loan-based credit to market-based credit.
+
+The shadow banking system was created with no lender of last resort. The thought being that if you get rid of solvency risk (using an insurance company that sells swaps) then this is a risk-free, liquid asset. That turns out not to be true: market liquidity is created by dealers, and even if your asset is risk-free you still need someone who wants to buy it. When assets lost their shiftability, the whole thing came down.
+
+Two prices made this market: international dollars for funding, and RMBSs for holding assets. Once risk became apparent and dealers stopped making the RMBS market, the prices were no longer well-defined, lending with them as collateral became untenable, and then the liquidity crunch set in.
+
 Next: Lecture 17-7
