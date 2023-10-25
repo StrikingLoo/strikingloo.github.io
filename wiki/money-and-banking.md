@@ -521,4 +521,40 @@ The shadow banking system was created with no lender of last resort. The thought
 
 Two prices made this market: international dollars for funding, and RMBSs for holding assets. Once risk became apparent and dealers stopped making the RMBS market, the prices were no longer well-defined, lending with them as collateral became untenable, and then the liquidity crunch set in.
 
-Next: Lecture 17-7
+## Lecture 18 - Forwards and Futures
+
+Class action clause: a term in a 
+
+Advance Clearing: ways in which changes in expectations into the future (and thus prices in markets) cause cash flows today and may trigger liquidity constraints.
+
+These may be positive cash flows and you're freer, or negative ones, and you're more constrained, and may be forced to sell something.
+
+Survival constraints not only change asset prices (stocks, bonds) but also money market interest rates. 
+
+A future can be modelled as a) a swap of IOUs b) between a firm and a bank where c) the bank receives a 3-month deposit and a 6-month loan (with the bank receiving the correspondent counterparts). This is effectively equivalent to a 3-monht loan, 3 months from now. However, the interest rate is locked-in. This would be called f(3,6). Given that the bank has defined the interest rates R(0,3) and R(0,6) for 3- and 6-month periods, R(3,6) is implied as the ratio between the two. 
+
+In practice these are forward contracts, listed as forward loans or deposits. 
+
+The bank could hedge this by finding a firm B that does the reverse agreement, so that: A deposits for 3 months in bank, bank deposits for 3 months in B. B gives a loan for 6 months to bank, bank gives a loan for 6 months to A.
+
+This is match-book assuming everyone pays, and there's only a bid-ask spread for profit. It's a way for a firm to secure future funding if they fear liquidity crunches. 
+
+In this system, there is the client who wants a forward -e.g. F(3,6)-, the bank who does the loan (FRA), the speculators at the futures exchange who sell futures -the hedge- and finally there will be a real spot rate -R(3,6)- in 3 months.
+
+> The forward rate is not an unbiased estimator for the future spot rate.
+
+This is a negation of the 'expectations hypothesis of the term structure', which is not empirically true. The forward rate is always greater than the expected spot rate, as there is the extra cost added by the hedging -to serve as an incentive for speculators to take the opposite position-. This predicts a difference between the forward rate, the futures rate -in the middle- and the spot rate (always the lowest).
+
+A forward agreement causes no cash flow except at maturity. Futures agreements cause cash flows day to day.
+
+In general, the bank always wins. They will set a forward rate that is higher than the expected spot rate. Whoever is on the other side is paying a premium as a way to lower risks. 
+
+We could see that over time periods i, `1/(1+ R`<sub>i</sub>`(a, b))` = `1 + R(i, a)/(1 + R(i, b)` where `R(k,k) = 0`. 
+
+In the end, as the forward rate is always f<sub>t</sub>=S<sub>t</sub> - Ke<sup>-r(T-t)</sup>, at the maturity point (the only moment where actual cash flow takes place) the short pays the long S<sub>T</sub> - K (K == S<sub>0</sub>e<sup>rT</sup>).
+
+In forwards, the only cash that changes hands in at the end. You subtract the interest rates. In futures, you move from the losing to the winning side everyday, by comparing the futures' rate to the K. If the futures rate goes up it's a win for the long, and the reverse if it goes down. In practice this means earnings are proportional, every day (with daily cash flows), to the derivative! There is also an extra liquidity risk to a future that is not there in a forward. 
+
+> One way to produce knowledge: find something that doesn't seem right and worry about it for a long time. 
+
+Next: Lecture 18-4
