@@ -331,7 +331,7 @@ What monetary theory cares about are the transmission mechanisms between what to
 
 This equation describes and fits the interest rates set by central banks outside of anomalous (crisis) times. It was developed mostly as a descriptive tool, but it became normative in the '80s. The last two terms are sort of 'error correction' terms, in that they represent the Fed's targets. 
 
-The first part is the **Fisher Effect**: the idea that the nominal interest rate is the real interest rate (ro) plus expected inflation (pi\^e). The markets adjust interest rates to match their expectations of inflation.
+The first part is the **Fisher Effect**: the idea that the nominal interest rate is the real interest rate (ro) plus expected inflation (pi<sup>e</sup>). The markets adjust interest rates to match their expectations of inflation.
 
 The other parts are the way the Fed has to correct against what the market will do on its own. To lean against the wind so to speak. These two terms, with weight coefficients, are one corresponding to how much higher inflation is than the target, and one to how much lower output is than full employment.
 
@@ -549,7 +549,7 @@ A forward agreement causes no cash flow except at maturity. Futures agreements c
 
 In general, the bank always wins. They will set a forward rate that is higher than the expected spot rate. Whoever is on the other side is paying a premium as a way to lower risks. 
 
-We could see that over time periods i, `1/(1+ R`<sub>i</sub>`(a, b))` = `1 + R(i, a)/(1 + R(i, b)` where `R(k,k) = 0`. 
+We could see that over time periods i, `1/(1+ R`<sub>`i`</sub>`(a, b))` = `1 + R(i, a)/(1 + R(i, b)` where `R(k,k) = 0`. 
 
 In the end, as the forward rate is always f<sub>t</sub>=S<sub>t</sub> - Ke<sup>-r(T-t)</sup>, at the maturity point (the only moment where actual cash flow takes place) the short pays the long S<sub>T</sub> - K (K == S<sub>0</sub>e<sup>rT</sup>).
 
@@ -557,4 +557,14 @@ In forwards, the only cash that changes hands in at the end. You subtract the in
 
 > One way to produce knowledge: find something that doesn't seem right and worry about it for a long time. 
 
-Next: Lecture 18-4
+Cash and carry arbitrage, which makes futures contracts profitable over a forward contract, is possible only if the 'implied repo rate' ρ, is higher than the overnight repo rate r. This way F<sub>t</sub> = S<sub>t</sub>e<sup>r(T-t)</sup> is profitable.
+
+In a forward/futures contract, you pay F now, to get the asset that's currently worth S<sub>0</sub> at time T. This is why you pay an extra interest for the 'carry cost', while being bullish that the underlying asset's value will rise higher than the risk free interest rate (you're effectively taking on risk).
+
+You take a 6-month bond by shorting a 3-month term repo position (you borrow S0 to pay the bond). At month 3, you sell a future for this bond at 3 months for price F. You're hoping the bond's F at month 3 is bigger than the S0 price minus the interest you paid on the repo market over the first 3 months. F - S0 - r3.
+
+The banks are using the futures to hedge forward positions. So they in general have long forward positions that they're looking to hedge. Price fluctuations are equal and opposite to some fluctuation in the forward market. 
+
+> A bank has a comparative advantage in taking on liquidity risk.
+
+Next: Lecture 18-8
