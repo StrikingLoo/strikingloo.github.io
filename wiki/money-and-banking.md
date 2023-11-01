@@ -567,4 +567,27 @@ The banks are using the futures to hedge forward positions. So they in general h
 
 > A bank has a comparative advantage in taking on liquidity risk.
 
-Next: Lecture 18-8
+## Lecture 19 - Interest Rate Swaps
+
+In 1952 the Fed got th right to set short term interest rate targets. Before that, short term lending was at 1% yields, long term at 2% and the Fed would buy bonds trading below that until yields would go back to intended levels. In effect it was the lender of _first_ resort.
+
+During the war, the Fed was pegging the yield curve for all terms. By 1952 dealers were prominent and they were doing arbitrage, so the Fed could intervene less, only influencing the 'edges' of the market, provided that it remained liquid thanks to the private, profit-driven dealers.
+
+It understands dealers fund their holdings in long term bonds by borrowing in the money markets. 
+
+They emphasize that OMOs are not equivalent to changing the interest rates. They talk of the *tone* of the market. They talk of moving the rates for treasury bills (where term < 1 year) and how that will directly move the term rates thanks to the yield curve and the expectations hypothesis of the term structure.
+
+The swap yield curve has historically been a spread _over_ the treasuries' curve. This could be because companies are less creditworthy than the government or due to liquidity risk. During the 2008 financial crisis and few years later, this fact of the world reversed, with a negative spread, allowing for the possibility of arbitrage.
+
+In a swap operation, a firm BBB that wants to lock in a safe rate of interest even if it means expected loss can trade with an (e.g.) AA one that has access to fixed interest long term borrowing. 
+
+AA will borrow fixed, long-term at a rate by issuing bonds, and lend to BBB at a fixed rate called the swap rate. These are quoted in the FT and such. BBB will lend, notionally, at the rate of LIBOR or some other such money market to AA. This way it will only pay the spread on the interest rates. Usually the money market moving rate used is renewed over a short period like 6 months, while the bond is a 10-year one or similar.
+
+| AA         |                                   | BBB       |
+|------------|--------|----------|---------------------------|
+|      | fixed rate borrowing bond |        | flexible rate borrowing (MM) | 
+|            |        |        |            |                |
+| \[ Fixed rate |  LIBOR \]    | \[ LIBOR   | fixed rate \]  |
+
+
+Next: Lecture 19
