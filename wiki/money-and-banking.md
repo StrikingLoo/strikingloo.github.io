@@ -614,7 +614,7 @@ The place where prices are made is the dealer markets in derivatives. When a ban
 If the curve for swaps is below the curve for treasury yields (which is an anomalous situation as the state is supposed to represent less credit risk than the private sector), the way you would expect arbitrage to take place is
 
 | Arbitrager |
---------------
+|--------------|
 | 30-y Treasury Bond | Repo 
 | Repo | fixed 30-y loan 
 
