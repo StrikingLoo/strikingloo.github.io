@@ -589,5 +589,35 @@ AA will borrow fixed, long-term at a rate by issuing bonds, and lend to BBB at a
 |            |        |        |            |                |
 | \[ Fixed rate |  LIBOR \]    | \[ LIBOR   | fixed rate \]  |
 
+In real life there is not actually a parallel loan. They are just netting payments. No balance sheet is expanded. There is no principal either.
 
-Next: Lecture 19
+AA is called the seller of swap, short the swap, the payor of floating.
+
+BBB is called Buyer of the swap, long the swap, paying fixed.
+
+Interestingly, if you're long a swap you are long LIBOR rates, and viceversa. You are hedging against future liquidity risk / discipline.
+
+Suppose AA can borrow from the bank at a fixed rate x with 10-year bonds, and BBB at rate LIBOR + y on (a shorter) term. AA could borrow at LIBOR + y' (< y) on the same terms.
+
+What will happen is AA could borrow from the bank at rate x, lend to BBB at (effectively) x + d - LIBOR, and this way BBB is effectively borrowing at LIBOR + y and paying x + d - LIBOR, so in effect it's paying a total interest of x + d + y (still hopefully below what it could secure for long term borrowing). AA is paying LIBOR + x and making x + d, so in effect it gets funding at (LIBOR - d) rate, and absorbs the risk that BB may default.
+
+This is not exactly credit risk, as there is no principal and all that will be lost is the interest payments on the terms.
+
+In reality what happens is BBB borrows from the bank at rate LIBOR + y' and just pays the principal and rate to the bank, receives that LIBOR part from AA and pays x + d in exchange.
+
+This is the derivatives market: the loans have vanished, there is only spreads and interests here.
+
+This apparatus was developed to create liquid markets in corporate securities. They then moved it into mortgage space with RMBSs, creating a **global market**.
+
+The place where prices are made is the dealer markets in derivatives. When a bank is offering you a mortgage, they quote the interest rate by looking at the SWAP yield curve.
+
+If the curve for swaps is below the curve for treasury yields (which is an anomalous situation as the state is supposed to represent less credit risk than the private sector), the way you would expect arbitrage to take place is
+
+| Arbitrager |
+--------------
+| 30-y Treasury Bond | Repo |
+| Repo | fixed 30-y loan |
+
+The line below is shorting a swap.
+
+Next: Lecture 19-9
