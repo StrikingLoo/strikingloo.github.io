@@ -585,9 +585,9 @@ AA will borrow fixed, long-term at a rate by issuing bonds, and lend to BBB at a
 
 | AA         |                                   | BBB       |
 |------------|--------|----------|---------------------------|
-|      | fixed rate borrowing bond |        | flexible rate borrowing (MM) | 
-|            |        |        |            |                |
-| \[ Fixed rate |  LIBOR \]    | \[ LIBOR   | fixed rate \]  |
+|      | fixed rate borrowing bond |        | flexible rate borrowing (MM) 
+|            |        |        |            |                
+| \[ Fixed rate |  LIBOR \]    | \[ LIBOR   | fixed rate \]  
 
 In real life there is not actually a parallel loan. They are just netting payments. No balance sheet is expanded. There is no principal either.
 
@@ -615,8 +615,8 @@ If the curve for swaps is below the curve for treasury yields (which is an anoma
 
 | Arbitrager |
 --------------
-| 30-y Treasury Bond | Repo |
-| Repo | fixed 30-y loan |
+| 30-y Treasury Bond | Repo 
+| Repo | fixed 30-y loan 
 
 The line below is shorting a swap.
 
