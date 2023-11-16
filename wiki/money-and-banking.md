@@ -643,4 +643,16 @@ There is a buyer of insurance who is long a swap or short credit risk, with thei
 | \[ Treasury Bond | Corporate bond \]
 | \[ Treasury bill | Treasury bond \]
 
-Next: Lecture 20-2
+The first instrument is a CDS, the second one an IR Swap. 
+
+A bond pays a fixed-amount coupon every e.g. 6 months, and at termination pays the principal.
+
+The price of a bond with coupons C<sub>t</sub> and final payoff (face value) F<sub>T</sub> is 
+
+> P(0) = ∑ ∂<sup>t</sup>C<sub>t</sub> + ∂<sup>T</sup>F<sub>T</sub>
+
+Where T is the last term and each successive t is another term, with ∂ the discount rate (1/1 + R for R > risk-free interest rate as this is private lending -e.g. the swap rate-). 
+
+Fluctuations in the bond prices sort of come down to fluctuations in the risky interest rate, which is constantly being estimated by the market and has spreads that grow bigger as a function of time and also risk grade.
+
+Next: Lecture 20-6
