@@ -620,4 +620,27 @@ If the curve for swaps is below the curve for treasury yields (which is an anoma
 
 The line below is shorting a swap.
 
-Next: Lecture 19-9
+## Lecture 20 - Credit Default Swaps
+
+**Shadow Banking**: money market funding of capital market lending.
+
+None of the regulations, according to Mehrling, are right for this.
+
+Investing in CD Swaps exposes one to private debt that is high risk and high yield.
+
+In CD Swaps, we peel off some of the credit risk from a corporate loan to a not too credit-worthy company (BB, CCC, etc.) and sell it separately.
+
+Unlike Interest Rate Swaps where we take away part of the interest rate risk (lecture 19), in CD swaps we hedge against part of the credit risk.
+
+> Riskless security = risky security + interest insurance (hedge) + credit hedge (guarantee)
+
+Here the interest insurance is a interest rate swap, and the credit hedge is the Credit Default Swap. This was predicted by Fischer Black in the '70s and became true.
+
+There is a buyer of insurance who is long a swap or short credit risk, with their counterpart a seller of insurance, short a swap, long credit risk.
+
+| Long a swap:
+| Corporate Bond |
+| \[ Treasury Bond | Corporate bond \]
+| \[ Treasury bill | Treasury bond \]
+
+Next: Lecture 20-2
