@@ -103,3 +103,9 @@ Visuals and stats
 
 Governance
 <https://info.worldbank.org/governance/wgi/Home/Reports>
+
+---
+Games for Engineers
+<https://github.com/arcataroger/awesome-engineering-games>
+
+(of note: anno 1404, factorio, timberborn, frostpunk)
