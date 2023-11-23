@@ -655,4 +655,21 @@ Where T is the last term and each successive t is another term, with ∂ the dis
 
 Fluctuations in the bond prices sort of come down to fluctuations in the risky interest rate, which is constantly being estimated by the market and has spreads that grow bigger as a function of time and also risk grade.
 
+The price of the bond fluctuates every time the risk-free interest rate fluctuates. In the same way the price of the CDS also fluctuates, inversely, on it. 
+
+Since CDSs are derivatives and part of a market, you can buy them and sell them to make money, regardless of whether you actually want them as insurance.
+
+Some may say it is not insurance at all, due to how correlated all risks are (whereas in real insurance risks are supposed tobe independent, uncorrelated and therefore actuarial).
+
+Given a corporate bond you want to 'insure', your balance sheet will look like
+
+(Buying a CDS)
+| Bond | 
+| \[Libor | Fixed \]
+| \[Libor  | Libor + u \]
+
+This means on every term where the bond doesn't default, you will pay F\*u where F is the bond's face value. However, in case the bond defaults on period N, then you will give it up and receive a treasury bond instead.
+
+In the end you are holding a bond and funding its purchase at LIBOR + s + u where s is the spread on the interest rate swap market, and u the interest premium on the CDS, which takes credit risk away.
+
 Next: Lecture 20-6

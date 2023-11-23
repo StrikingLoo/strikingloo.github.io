@@ -25,7 +25,7 @@ Free icons
 <https://thenounproject.com/>
 
 ---
-Clipoard to markdown. As great as it sounds and it works like a charm so far.
+Clipboard to markdown. As great as it sounds and it works like a charm so far.
 
 <https://euangoddard.github.io/clipboard2markdown/>
 
@@ -109,3 +109,6 @@ Games for Engineers
 <https://github.com/arcataroger/awesome-engineering-games>
 
 (of note: anno 1404, factorio, timberborn, frostpunk)
+
+---
+<https://www.bls.gov/data/inflation_calculator.htm>
