@@ -672,4 +672,14 @@ This means on every term where the bond doesn't default, you will pay F\*u where
 
 In the end you are holding a bond and funding its purchase at LIBOR + s + u where s is the spread on the interest rate swap market, and u the interest premium on the CDS, which takes credit risk away.
 
-Next: Lecture 20-6
+That is the position of a buyer of insurance, long the swap. The seller of insurance will sell CDS to several bond holders, then aggregate them into a diversified portfolio, a CDX (an index) and sell those to people who want to be exposed to this risk, allowing the dealer to hedge.
+
+> Once you have a dealer in the middle, the order flow will push these prices around.
+
+This pushes the CDS prices around, not necessarily the bond prices until someone does an arbitrage, which creates opportunity for it sometimes.
+
+AIG the seller of CDSs was providing them for i.a. Goldman Sachs. GS added a clause whereby if they went down in rating below AAA, they would have to foot up the amount of the CDSs, in liquid form. That is what happened when the MBSs went down, against AIG's predictions, forcing them to pay them even though no defaults had taken place. Ultimately the state stepped in to bail AIG, but couldn't take back the money from GS as it was just a hedge against an offsetting liability.
+
+What caused the problem wasn't defaults, it was their depreciation, even before.
+
+Next: Lecture 21
