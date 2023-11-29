@@ -682,4 +682,22 @@ AIG the seller of CDSs was providing them for i.a. Goldman Sachs. GS added a cla
 
 What caused the problem wasn't defaults, it was their depreciation, even before.
 
-Next: Lecture 21
+## Lecture 21 Shadow Banking, Central Banking, and Global Finance
+
+This lecture wraps up and combines the knowledge from the previous 4\~5 lectures into one with policy suggestions and future projections.
+
+It contrasts the shadow banking system (or market based banking system) with the traditional one, and shows that the 'deposits' in MMMFs tend to be held by institutional investors, like pension funds and insurance companies. 
+
+This makes the shadow banking system wholesale as opposed to retail, where a small amount may be in the 8 digits.
+
+The shadow banking system presents market-based credit. However it has no direct government backstop (no Fed, no FDIC intervention). 
+
+Shadow banks would use their own primitive backstops for liquidity crunches in the form of liquidity puts: the backing bank would say they would act as buyers of last resort if e.g. repo agreements were not rolled over. Liquidity put is a libaility of the backing bank and an asset of the MMMF or dealer. A large private entity would act as backstop.
+
+The private backstop only works if the parent is healthy enough to backstop the crisis, or else the government will need to step in as it is now on the hook. 
+
+An example shadow bank operation would be funding yourself in the money market (e.g. repo) and buying hi-tranch RMBSs plus CDSs.
+
+There was a mature global funding/financing system (eurodollar) but not a mature way to transfer risk: CDSs were being invented on the fly. As transferring risk was not so easy, when the dollars ran out the crisis of the shadow banking system became a world crisis as it affected the global funding system.
+
+Next: Lecture 21-5
