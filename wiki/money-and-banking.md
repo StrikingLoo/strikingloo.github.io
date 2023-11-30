@@ -700,4 +700,22 @@ An example shadow bank operation would be funding yourself in the money market (
 
 There was a mature global funding/financing system (eurodollar) but not a mature way to transfer risk: CDSs were being invented on the fly. As transferring risk was not so easy, when the dollars ran out the crisis of the shadow banking system became a world crisis as it affected the global funding system.
 
-Next: Lecture 21-5
+Modern Asset Management is a result of financial securitization and subsequent globalization, and the emergence of capital markets and money/derivative markets.
+
+A shadow bank would fund itself in the money markets, and hold MBSs, 'stripped away' of their risk through derivatives (CDS, IR swaps, etc.).
+
+Fischer Black: One person funds the loan, another bears the credit risk, another the price risk.
+
+This way the RMBSs are treated as 'risk-free' bonds, like treasuries with better interest, and traded globally.
+
+**Shadow Banking**: Money market funding of Capital market lending. It can be on the balance sheet of a bank, an SIV or any other firm. You have global funding of local lending.
+
+The Shadow Banking system is upheld by the **market pricing of money** (very different from traditional banking) and capital, and it puts at the center **market making institutions** (to understand situations one needs to focus on dealers and such instead of banks), which have a key role.
+
+The reason this exists is not regulatory arbitrage and fraud. Get rid of the fraud, you won't be rid of shadow banking.
+
+We have a mature money market funding system, but a very immature risk transfer system. Dealers (in derivatives) are key. They are the ones who make market liquidity and set prices.
+
+Mehrling proposes something akin to a clearinghouse for derivatives dealers as a backstop for the global market, but insists policy ideas are still not fully-baked.
+
+Next: Lecture 21-7
