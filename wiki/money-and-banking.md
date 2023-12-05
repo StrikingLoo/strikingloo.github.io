@@ -718,4 +718,16 @@ We have a mature money market funding system, but a very immature risk transfer 
 
 Mehrling proposes something akin to a clearinghouse for derivatives dealers as a backstop for the global market, but insists policy ideas are still not fully-baked.
 
-Next: Lecture 21-7
+> We're living in a Bagehot moment were we have to rethink the role of the central bank.
+
+The balance sheet of the Fed in late 2011 can be seen as them holding t-bills with currency/deposit liabilities, then t-bonds with t-bill as liability (equivalent to an IR swap) and finally risky bonds as asset for t-bonds as liabilities (where the risk exposure is equivalent to CDS).
+
+Several problems emerge from the shadow banking system. One big one happens if a fund has bought certain assets financed with the global money market dealers (and hedged with a derivatives dealer). Were the assets to temporarily lose value in a market fluctuation, the institutional investors depositing in the money market dealers may want out, causing a liquidity crunch. Alternately the assets may actually, permanently depreciate, necessitating payments all the way up the chain of borrowers. This also requires liquidity, which without a proper backstop may not be available. All it takes is for a single payer to refuse or even delay payment for the entire chain to break and the system to be halted in a deadlock.
+
+A possible solution is for the Fed to provide a liquidity backstop for **dealers** (both MM and DD) who are the key players in the markets. However, this is not highly desirable as the Fed should be a last resort lender, its intervention must not be a common accurrence. An alternative is to regulate dealers to guarantee capital or reserves, guaranteeing the presence of liquidity. Liquidity for matched book dealers, capital for speculative ones. 
+
+Market functioning rests not only in liquidity flow but in collateral flow.
+
+You're going to need capital requirements for dealers to backstop bad positions.
+
+Next: Lecture 22
