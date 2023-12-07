@@ -682,7 +682,7 @@ AIG the seller of CDSs was providing them for i.a. Goldman Sachs. GS added a cla
 
 What caused the problem wasn't defaults, it was their depreciation, even before.
 
-## Lecture 21 Shadow Banking, Central Banking, and Global Finance
+## Lecture 21 - Shadow Banking, Central Banking, and Global Finance
 
 This lecture wraps up and combines the knowledge from the previous 4\~5 lectures into one with policy suggestions and future projections.
 
@@ -730,4 +730,16 @@ Market functioning rests not only in liquidity flow but in collateral flow.
 
 You're going to need capital requirements for dealers to backstop bad positions.
 
-Next: Lecture 22
+## Lecture 22 - Touching the Elephant: Three Views
+
+Money view: the present determines the present. All flows downstream of banks trying to make payments with liquidity which they may borrow from the future, at fluctuating interest rates (elasticity from cash inflows, discipline from outflows).
+
+Economics view: the past determines the present. Y = F(K, L) (parsimony and profligacy, think Adam Smith)
+
+Economics view is more appealing to most and more mainstream.
+
+Finance view: 'the future determines the present', or rather expectations about the future. P(K) = sum(expected values of coupons in the future).
+
+The biggest intellectual battle in the last thirty years is Economics view vs finance view. Mehrling's mission is to make the money view dialogue with the finance view, as the 19th century was a dialogue between the money view and the economics view. 
+
+Next: Lecture 22.3
