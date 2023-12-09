@@ -331,7 +331,7 @@ What monetary theory cares about are the transmission mechanisms between what to
 
 This equation describes and fits the interest rates set by central banks outside of anomalous (crisis) times. It was developed mostly as a descriptive tool, but it became normative in the '80s. The last two terms are sort of 'error correction' terms, in that they represent the Fed's targets. 
 
-The first part is the **Fisher Effect**: the idea that the nominal interest rate is the real interest rate (ro) plus expected inflation (pi<sup>e</sup>). The markets adjust interest rates to match their expectations of inflation.
+The first part is the **Fischer Effect**: the idea that the nominal interest rate is the real interest rate (ro) plus expected inflation (pi<sup>e</sup>). The markets adjust interest rates to match their expectations of inflation.
 
 The other parts are the way the Fed has to correct against what the market will do on its own. To lean against the wind so to speak. These two terms, with weight coefficients, are one corresponding to how much higher inflation is than the target, and one to how much lower output is than full employment.
 
@@ -742,4 +742,16 @@ Finance view: 'the future determines the present', or rather expectations about 
 
 The biggest intellectual battle in the last thirty years is Economics view vs finance view. Mehrling's mission is to make the money view dialogue with the finance view, as the 19th century was a dialogue between the money view and the economics view. 
 
-Next: Lecture 22.3
+MV = p<sub>o</sub>q<sub>o</sub> + p<sub>a</sub>q<sub>a</sub> =  PQ
+
+Banking view: PQ necessitates a certain M, V pair. Economics view: MV predicts PQ.
+
+There is Fischer's view: MV = PQ + (1/1+R)F.
+
+In Fischer's model, there is a universe of possible portfolios, which has a pareto frontier of R (expected return) and σ<sup>2</sup> (risk). At risk=0, you have the risk-free investment (think t-bills) and there is a linear interpolation between a maximally risk-averse investor (all i on t-bonds) and a risk-tolerant one (who may go 100% market or even 150% by borrowing).
+
+There is then a balance sheet-based model of this world where two investors, risk-tolerant and risk-averse, with the same NW, one holds 150 market-portfolio and 50 in loans (liability) and the other has 50 on market and 50 on a risk-free deposit, where the bank is an intermediary and gets the deposit from r-a and lends it to r-t. 
+
+On a price increase, in order for markets to clear, money needs to be endogenous. This is because if asset prices rise, but both the risk tolerant and risk averse agents want to maintain their balance of portfolios, the bank in the middle will need to expand their balance sheet. Equilibrium in the asset market requires that the money supply is passive.
+
+Next: Lecture 22-6
