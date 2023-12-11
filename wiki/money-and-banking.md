@@ -754,4 +754,12 @@ There is then a balance sheet-based model of this world where two investors, ris
 
 On a price increase, in order for markets to clear, money needs to be endogenous. This is because if asset prices rise, but both the risk tolerant and risk averse agents want to maintain their balance of portfolios, the bank in the middle will need to expand their balance sheet. Equilibrium in the asset market requires that the money supply is passive.
 
-Next: Lecture 22-6
+### Steps from finance view to money view
+
+\1) Market liquidity (buying and selling without moving a price in volume, fast) depends on the dealer system. It's not free, and every high-volume trade will move prices away from their fundamentals.
+
+\2) Dealer abilities to provide market liquidity depend on their own capital, their own funding liquidity. When dealers lose capital, prices can stay away from their fundamental.
+
+\3) The ultimate source of funding liquidity is the central bank. \[This is what Fischer would've opposed most strongly].
+
+Course complete! 🎉🎉🎉
