@@ -210,3 +210,4 @@ a reality.
 
 ### Related Links
 - [Code completion with GPT-3](https://news.ycombinator.com/item?id=32532875), a HackerNews thread with a nice example + template.
+- [FunSearch: Making New Discoveries in Mathematical Sciences using LLMs - DeepMind](https://deepmind.google/discover/blog/funsearch-making-new-discoveries-in-mathematical-sciences-using-large-language-models/)
