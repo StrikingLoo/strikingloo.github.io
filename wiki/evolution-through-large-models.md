@@ -211,3 +211,10 @@ a reality.
 ### Related Links
 - [Code completion with GPT-3](https://news.ycombinator.com/item?id=32532875), a HackerNews thread with a nice example + template.
 - [FunSearch: Making New Discoveries in Mathematical Sciences using LLMs - DeepMind](https://deepmind.google/discover/blog/funsearch-making-new-discoveries-in-mathematical-sciences-using-large-language-models/)
+- [Advancements in machine learning for machine learning](https://blog.research.google/2023/12/advancements-in-machine-learning-for.html)
+
+> We show how we use ML to improve efficiency of ML workloads! Prior works, both internal and external, have shown that we can use ML to improve performance of ML programs by selecting better ML compiler decisions. Although there exist a few datasets for program performance prediction, they target small sub-programs, such as basic blocks or kernels. We introduce “TpuGraphs: A Performance Prediction Dataset on Large Tensor Computational Graphs” (presented at NeurIPS 2023), which we recently released to fuel more research in ML for program optimization.
+
+They train a model to predict computational cost based on compute graph. The model takes nodes as input, mapping them to an opcode_id that has a corresponding embedding, concatenated to a vector of node specific features. They aggregate these vectors for all nodes or a smart sample of them, then move this aggregated vector (concatted to a vector of graph-specific features) through a feed-forward layer. That gives them a numerical estimator of the cost.
+
+In training, they only keep the intermediate states and backpropagate them for a sample of nodes, getting significant training-speed gains.
