@@ -120,3 +120,4 @@ _If you liked this post, please let me know by upvoting on HackerNews or sharing
 - [My blog is a digital garden, not a blog](https://joelhooks.com/digital-garden): One of the original essays that started the digital garden movement. A call to go back to the Old Ways of the web, do away with timelines (the stream) and move back to evergreen pages that are continually being tended.
 - [A Brief History & Ethos of the Digital Garden - Maggie Appleton](https://maggieappleton.com/garden-history): A great summary of the Digital Garden movement with beautiful illustrations.
 - [About this Website - Gwern](https://www.gwern.net/About): Definitely an inspiration for my wiki.
+- [Where have all the websites gone?](https://www.fromjason.xyz/p/notebook/where-have-all-the-websites-gone/)

@@ -104,6 +104,9 @@ Visuals and stats
 Governance
 <https://info.worldbank.org/governance/wgi/Home/Reports>
 
+Fragile State Index
+<https://fragilestatesindex.org/country-data/>
+
 ---
 Games for Engineers
 <https://github.com/arcataroger/awesome-engineering-games>
@@ -112,3 +115,15 @@ Games for Engineers
 
 ---
 <https://www.bls.gov/data/inflation_calculator.htm>
+
+---
+
+<https://dave-choi.github.io/strategy/agricola/index.html>
+
+Agricola strategy guide.
+
+---
+
+<https://sambleckley.com/writing/church-of-interruption.html>
+
+Church of Interruption.
