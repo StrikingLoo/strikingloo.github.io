@@ -93,6 +93,10 @@ Anime of the Year Tokyo award
 
 <https://animefestival.jp/en/award/aoy/archive/> 
 
+80's anime primer 
+
+<https://80sanime.tumblr.com/80sprimer>
+
 ---
 Index of books in JP with difficulty levels. Seems pretty good at ranking.
 <https://learnnatively.com/>
