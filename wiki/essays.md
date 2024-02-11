@@ -214,3 +214,4 @@ A quote for which I unfortunately lost the source.
 
 - [Idea Space: Thinking as Pathfinding in the Space of Ideas](/wiki/idea-space)
 - [The Clock of the Long Now](/wiki/clock-of-the-long-now) (book notes)
+- [How to Write Stuff No One Else Can](https://thewritetoroam.com/2024/02/how-to-write-stuff-no-one-else-can) - Where the writer describes his technique of charting a company's progress over time, stalking through LinkedIn to find relevant hires at a pivotal moment, then asking them for comment about industry-specific, detailed questions.
