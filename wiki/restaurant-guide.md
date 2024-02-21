@@ -14,6 +14,14 @@ I am a foodie. I love food, I eat out pretty often, and I appreciate many kinds 
 
 All places in this list are restaurants I've been to personally and loved. If one of them goes out of business, I will probably not find out, so do check gmaps before going. Also if you see something here is out of date, feel free to email me so I can update it. 
 
+### Table of Contents
+
+- [Buenos Aires](#buenos-aires)
+- [Vancouver](#vancouver)
+- [New York City](#new-york-city)
+- [Tokyo](#tokyo)
+- [Vienna](#vienna)
+
 ## Buenos Aires
 
 - Rapa Nui - Ice cream
