@@ -87,6 +87,10 @@ There is easily explainable value to linking to a post which is useful (“My re
 
 [Linkbuilding for Small Businesses, Patio11](https://www.kalzumeus.com/2008/04/08/linkbuilding-for-small-businesses/)
 
+More Patio11:
+
+> This is very unfortunate to businesses, because it structurally inhibits value creation. Ideally, we want to create things we can keep. Your writing will, for the most part, favor timeless "evergreen" topics that will be equally relevant to your audience / potential customers years from now. (There's a place in your business for seasonal promotions and announcements, of course, but that's a relatively small portion of one's ongoing writing efforts. Three years from now it will not matter whether the announcement of the 7th point release of your software was well-written or not.)
+
 ## Extracts From Gwern's About Page
 
 > I believe that someone who has been well-educated will think of something worth writing at least once a week; to a surprising extent, this has been true. (I added \~130 documents to this repository over the first 3 years.)
