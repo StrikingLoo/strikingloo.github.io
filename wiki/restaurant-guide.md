@@ -49,3 +49,9 @@ All places in this list are restaurants I've been to personally and loved. If on
 - Q-pot cafe - Cafe (and cakes)
 - BREIZH Café Crêperie Omotesando - Crepes
 - Katsuya - Katsu
+
+For ramen, honestly almost any place is amazing and inexpensive. 
+
+## Vienna
+
+- Ilona Stüberl - Hungarian food, possibly one of my favorite places in the world.
