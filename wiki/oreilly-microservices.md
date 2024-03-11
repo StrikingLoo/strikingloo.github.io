@@ -6,6 +6,7 @@ tags: programming, books, notes, web development, data engineering
 description: "My notes -mostly interesting quotes and excerpts- on the book Building Microservices, 2nd Edition, by Sam Newman"
 language: English
 importance: 4
+note_category: book-notes
 ---
 
 ## Chapter: 1. What Are Microservices?

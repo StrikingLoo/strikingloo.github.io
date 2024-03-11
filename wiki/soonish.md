@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-06-03
-title: "Book Excerpts and Notes: Soonish by Zach and Kelly Weinersmith"
+title: "Soonish by Zach and Kelly Weinersmith - Notes"
 tags: science, books, book, notes, tech, biology, bce, space
 description: "Notes and excerpts from Soonish, by Zach and Kelly Weinersmith."
 language: English
