@@ -3,7 +3,7 @@ layout: post
 date: 2021-09-02
 title: "Generative Adversarial Networks"
 tags: wip,deep learning,unsupervised learning,GAN,generative,image processing,game theory,machine learning
-description: "Notes on Generative Adversarial Networks, combining summaries and excerpts from different papers, books, etc."
+description: "Notes on Generative Adversarial Networks, combining summaries and excerpts from different papers, texts, etc."
 language: English
 importance: 7
 ---
