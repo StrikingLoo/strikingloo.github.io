@@ -28,3 +28,5 @@ d is the effect size, often calculated using Cohen's d: d = (μ<sub>A</sub> - μ
 - σ<sub>A</sub> and σ<sub>B</sub> are the standard deviations of the two groups
 β is the probability of making a Type II error (failing to reject the null hypothesis when it is false)
 - (1 - β) represents the statistical power of the test (usually left on 0.8)
+
+Interestingly, P-move is independent of sample size N.
