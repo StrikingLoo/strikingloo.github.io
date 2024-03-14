@@ -6,6 +6,7 @@ tags: books, excerpts, quotes
 description: "My favorite quotes and passages from Pride and Prejudice"
 language: English
 importance: 4
+note_category: book-notes
 ---
 
 I read Pride and Prejudice by Jane Austen in late 2023 and loved it. The following are my favorite quotes, either for the way they are phrased (as I love how people spoke back in the Regency Era or before) or their content, especially if they reveal something of that time's prevalent worldview.
