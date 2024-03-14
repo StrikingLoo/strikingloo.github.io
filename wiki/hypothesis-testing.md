@@ -8,6 +8,8 @@ language: English
 importance: 2
 ---
 
+## P-value two-sample Hypothesis testing
+
 We start with two samples, which we will call treatment and control, with their means and standard deviations known.
 
 We call H<sub>0</sub>, the hypothesis 'there is no significant difference/effect' the null hypothesis. We purport to reject this hypothesis by a test.
@@ -18,15 +20,33 @@ The most basic formula to use here is the one for p-values:
 
 The value for t is then plugged into Welch's t-test.
 
-Otherwise, for effect size we may calculate P-move.
+### P-move
 
-> P-Move = Φ(d / sqrt(2)) + (1 - β) * (1 - Φ(d / sqrt(2)))
+_[Source: Objective Bayesian Two Sample Hypothesis Testing for
+Online Controlled Experiments, Deng et al., Microsoft](https://exp-platform.com/Documents/BayesianAB.pdf)._
 
-- Φ() is the cumulative distribution function (CDF) of the standard normal distribution.
-d is the effect size, often calculated using Cohen's d: d = (μ<sub>A</sub> - μ<sub>B</sub>) / sqrt((σ<sub>A</sub>^2 + σ<sub>B</sub>^2) / 2)
-- μ<sub>A</sub> and μ<sub>B</sub> are the means of the two groups A and B
-- σ<sub>A</sub> and σ<sub>B</sub> are the standard deviations of the two groups
-β is the probability of making a Type II error (failing to reject the null hypothesis when it is false)
-- (1 - β) represents the statistical power of the test (usually left on 0.8)
+Instead of slightly unintuitive p-values (which users tend to conflate with the posterior probability of H<sub>0</sub>), Deng et al. propose using a metric called P-move, or 'probability of H1 (such that effect is positive)'.
 
-Interestingly, P-move is independent of sample size N.
+They start by estimating prior values for _p_ (P(H<sub>1</sub>)) and _V_ (variance of Cohen's _d_ in previous experiments).
+
+They then do this:
+- Calculate a posterior of H<sub>1</sub> using the formula:
+
+![](resources/bayesian.png)
+
+- Under H<sub>1</sub>, the posterior of µ is N(Aδ, A/N<sub>E</sub>), where A = V<sup>2</sup>/(V<sup>2</sup> + 1/N<sub>E</sub>), a shrinkage factor that goes to 1 as N grows. So in effect for sufficiently big N, our posterior of µ under H<sub>1</sub> is normally distributed around δ with 1/N<sub>E</sub> (inverse of effective sample size or geometric mean of sample sizes) variance.
+
+Then:
+
+P(Flat) = P(H<sub>0</sub>\|Data)
+
+P(Negative) = (1 − P(Flat)) × Φ(0; Aδ, A/N<sub>E</sub>) 
+
+_(That is, the CDF evaluated to 0)_
+
+and P(Positive) is the rest.
+
+In effect, we're for sufficiently big N measuring how likely is the empirical data's effect size to come from a null-hypothesis (mean 0) distribution, given a prior on this being the case and on V's value.
+
+For reasonable values of V this will converge nicely, and for any value of V it should be enough to set a high value of _p_ with non-zero effect size and enough data.
+
