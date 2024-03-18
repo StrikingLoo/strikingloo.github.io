@@ -18,6 +18,7 @@ Most fit the criteria of "I sent them to at least one friend or thought of them 
 
 
 ---
+
 “The two hundred thousand square miles of Europe’s biggest country were still magnified by medieval time. On the eve of the French Revolution, France was three weeks long (Dunkirk to Perpignan) and three weeks wide (Strasbourg to Brest). **Journey times had barely changed since the days of the Romans**, when wine-merchants could reach the English Channel from the Mediterranean ports in less than a month. ”
 
 ---
@@ -25,6 +26,7 @@ Most fit the criteria of "I sent them to at least one friend or thought of them 
 “After the Revolution, almost a third of the population (about ten million people) lived in isolated farms and cottages or in hamlets with **fewer than thirty-five inhabitants and often no more than eight.** A peasant girl who went to work in Paris might, when looking through the scullery window at the street, see more people at a glance than she had known in her entire previous life.”
 
 ---
+
 “The common cultural heritage of certain regions was more obvious to outsiders than to the people themselves. Brittany would have to be subdivided several times before an area could be found that meant something to the people who lived there. Bretons in the east spoke a dialect of French called Gallo or Gallot; Bretons in the west spoke various forms of Breton. The two groups almost never intermarried. In the west, the people of Armor (‘the Land by the Sea’) had little to do with the people of Argoat (‘the Land of Forests’). And in Armor alone, there were sub-populations so diverse and antagonistic that they were assumed by various writers to have their origins far beyond the granite coast, in Semitic tribes, in ancient Greece or Phoenicia, in Persia, Mongolia, China or Tibet.”
 
 ### Church bells as a rallying cry
@@ -41,7 +43,7 @@ The Colliberts were also known, disparagingly, as ‘Huttiers’ (hutdwellers) b
 The only trades that male cagots were allowed to practise were carpentry and rope-making. A trace of this enforced specialization can still be found in the town of Hagetmau, which was once the focal point of several cagot communities, where almost half the populationworks in the chair industry. Many of the women worked as midwives and were thought to know secret remedies and spells. Since the cagots were skilled carpenters, they were treated as a valuable workforce by some nobles and educated people who found the prejudice absurd. In 1681, the parliament of Rennes made it illegal to persecute anyone on the grounds that they were a cagot. This made little difference to their daily lives. **In the early eighteenth century, a wealthy cagot in the Landes was seen taking water from the font for ‘clean’ people. His hand was sliced off by a soldier and nailed to the church door.** In 1741, a cagot from Moumour who had dared to cultivate the soil had his feet pierced with red-hot iron spikes.”
 
 ### Most French people didn't speak French
-“The Abbé’s figures **[where 88% of the population didn't speak French] are almost certainly an underestimate.** Seventy years later, when official statistics treated a few days at school or the merest smattering of French as evidence of an ability to speak the language, many or most of the communes in fifty-three out of eighty-nine départements were said to be non-French-speaking. **In 1880, the number of people who felt comfortable speaking French was estimated to be about eight million (just over one-fifth of the population).** In some parts, prefects, doctors, priests and policemen were like colonial officials, baffled by the natives and forced to use interpreters.”
+“The Abbé’s figures **[where 88% of the population didn't speak French] are almost certainly an underestimate.** Seventy years later, when official statistics treated a few days at school or the merest smattering of French as evidence of an ability to speak the language, many or most of the communes in fifty-three out of eighty-nine départements were said to be non-French-speaking. **In 1880, the number of people who felt comfortable speaking French was estimated to be about eight million (just over one-fifth of the population).** In some parts, prefects, doctors, priests and policemen were like colonial officials, baffled by the natives and forced to use interpreters.”
 
 ### French whistling language
 “Even if a place was known to outsiders, its language might remain a secret. The Pyrenean village of Aas, at the foot of the Col d’Aubisque, above the spa town of Eax-Bonnes, **had its own whistling language which was unknown even in the neighbouring valleys** until it was mentioned on a television programme in 1959. Shepherds who spent the summer months in lonely cabins had evolved an ear-splitting, hundred-decibel language that could be understood at a distance of up to two miles. It was also used by the women who worked in the surrounding fields and was apparently **versatile enough in the early twentieth century to convey the contents of the local newspaper.** Its last known use was during the Nazi Occupation, when shepherds helped Jewish refugees, Résistants and stranded pilots to cross the border into Spain. A few people in Aas today remember hearing the language, but no one can reproduce the sounds and no recordings were ever made. If such a remarkable language escaped detection, **many other quieter dialects must have died out before they could be identified.**”
@@ -81,6 +83,7 @@ The only trades that male cagots were allowed to practise were carpentry and rop
 The bears in the Jardin des Plantes in Paris, having been trained by a cosmopolitan crowd, performed an amazing variety of tricks. The Pyrenean dancing bears had a smaller repertoire. ”
 
 ---
+
 “An old woman in need of charity. She and her husband had raised a dancing bear, but bears are prone to fits of anger and the husband had been mauled to death.
 ‘I have nothing, sir, nothing at all – not even a roof for me and my animal.’
 ‘Your animal? You mean the one that ate your husband?’ ‘Oh, sir, it’s all I have left of the poor man.”

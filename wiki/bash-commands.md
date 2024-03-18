@@ -8,7 +8,7 @@ tags: linux, image compression, programming
 importance: 3
 ---
 
-how many lines with a given extension?
+How many lines with a given extension?
 
 ```find . -name "*.$1" | xargs wc -l| tail -n 1```
 
@@ -99,7 +99,7 @@ limit_df.sort_values(['case', 'limit'],inplace = True)
 limit_df.reset_index(drop=True, inplace = True)
 ```
 
----
+
 ### Image compression with optimizt
 ```
 npm i -g @funboxteam/optimizt
@@ -107,6 +107,7 @@ find . -iname \*.png -exec optimizt --lossless {} +
 ```
 
 ---
+
 To find a book if it's on the public domain, easily look for it on archive.org with this google search:
 ```
 site:archive.org intitle:full/text/of intext:Lovecraft

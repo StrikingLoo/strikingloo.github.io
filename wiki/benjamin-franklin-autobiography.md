@@ -44,11 +44,13 @@ Describing his uncle:
 > “But as prose writing had been of great use to me in the course of my life, and was a principal means of my advancement, I shall tell you how, in such a situation, I acquired what little ability I have in that way.”
  
 ---
+
 > “I should have mentioned before, that, in the autumn of the preceding year, I had form'd most of my ingenious acquaintance into a club of mutual improvement, which we called the JUNTO; we met on Friday evenings. The rules that I drew up required that every member, in his turn, should produce one or more queries on any point of Morals, Politics, or Natural Philosophy, to be discuss'd by the company; and once in three months produce and read an essay of his own writing, on any subject he pleased.”
 
 This is like a 18th century blogging circle.
 
 ---
+
 > “And now I set on foot my first project of a public nature, that for a subscription library. I drew up the proposals, got them put into form by our great scrivener, Brockden, and, by the help of my friends in the Junto, procured fifty subscribers of forty shillings each to begin with, and ten shillings a year for fifty years, the term our company was to continue.”
 
 ### Benjamin Vaughan's Letter

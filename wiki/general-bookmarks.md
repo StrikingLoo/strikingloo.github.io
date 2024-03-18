@@ -30,26 +30,32 @@ Clipboard to markdown. As great as it sounds and it works like a charm so far.
 <https://euangoddard.github.io/clipboard2markdown/>
 
 ---
+
 HN's recommended MOOCs list (with links)
 
 <https://github.com/Tuccinator/hn-moocs>
 
 ---
+
 Image to text
 <https://www.onlineocr.net/>
 
 ---
+
 <https://weatherspark.com/map> 
 
 ---
+
 Cool art digimon inspired:
 <http://androidarts.com/GarlicChampions/Digimon.htm>
 
 ---
+
 Maniani, awesome Pixiv artist
 <https://www.pixiv.net/en/users/8873261>
 
 ---
+
 US State Salary Scale for Seattle
 <https://www.federalpay.org/gs/locality/seattle>
 
@@ -60,28 +66,34 @@ Same energy: _income percentiles by age_.
 <https://www.timevaluemillionaire.com/income-percentiles-by-age/>
 
 ---
+
 Tezuka Osamu Cultural Prize
 <https://en.wikipedia.org/wiki/Tezuka_Osamu_Cultural_Prize>
 
 ---
+
 A nice resource on Roman Naming Practices, and the origin of Modern Surnames: 
 <http://web.pdx.edu/~davide/gene/names.htm>
 
 ---
+
 1MB club
 <https://1mb.club/>
 
 ---
+
 Make low-poly images (they look nice for some posts' header image).
 
 <https://cojdev.github.io/lowpoly/>
 
 ---
+
 ChatGPT Prompts
 
 <https://github.com/f/awesome-chatgpt-prompts>
 
 ---
+
 Emotion Wheel
 
 ![](/resources/final_emotion_wheel-lg.png)
@@ -89,6 +101,7 @@ Emotion Wheel
 <https://pudding.cool/2022/12/emotion-wheel/> 
 
 ---
+
 Anime of the Year Tokyo award
 
 <https://animefestival.jp/en/award/aoy/archive/> 
@@ -98,10 +111,12 @@ Anime of the Year Tokyo award
 <https://80sanime.tumblr.com/80sprimer>
 
 ---
+
 Index of books in JP with difficulty levels. Seems pretty good at ranking.
 <https://learnnatively.com/>
 
 ---
+
 Visuals and stats
 <https://informationisbeautiful.net/visualizations/>
 
@@ -112,12 +127,14 @@ Fragile State Index
 <https://fragilestatesindex.org/country-data/>
 
 ---
+
 Games for Engineers
 <https://github.com/arcataroger/awesome-engineering-games>
 
 (of note: anno 1404, factorio, timberborn, frostpunk)
 
 ---
+
 <https://www.bls.gov/data/inflation_calculator.htm>
 
 ---
