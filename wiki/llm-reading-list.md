@@ -35,5 +35,11 @@ Feed-forward layers become highly dense, HOWEVER, the attention layers become ex
 
 [Against LLM Maximalism](https://explosion.ai/blog/against-llm-maximalism)
 
+> What do I mean by “squishy”? <br> Language models feel like something organic and biological rather than something mechanical. It feels like we grew them, rather than built them.<br> -- Maggie Appleton
+
+[Squish Meets Structure: Designing with Language Models](https://maggieappleton.com/squish-structure)
+
 For older articles or links, [search LLM on the wiki](/tagged?q=LLM).
+
+
 
