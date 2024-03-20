@@ -18,6 +18,8 @@ The notes in the Garden are divided into certain kinds, and the following are th
 
 If you wish to browse this wiki, you could also click any article in the wiki index, or use the search bar (tag-based search is implemented, but it also _greps_ titles) to find topics you like. Recommended tags: [paper](/tagged?q=paper), [programming](/tagged?q=programming), [book](/tagged?q=book).
 
+You may also find the [Restaurant Guide](https://strikingloo.github.io/wiki/restaurant-guide) to be of some interest.
+
 ## Book Reviews
 
 > I have sometimes dreamt, at least, that when the Day of Judgment dawns and the great conquerors and lawyers and statesmen come to receive their rewards — their crowns, their laurels, their names carved indelibly upon imperishable marble — the Almighty will turn to Peter and will say, not without a certain envy when He sees us coming with our books under our arms, "Look, these need no reward. We have nothing to give them here. They have loved reading." <br><i>- Virginia Woolf</i>
@@ -31,20 +33,30 @@ These are the books where the notes were abundant enough to be interesting. See 
 - **[“Soonish”, by Zach and Kelly Weinersmith](/wiki/soonish)**: About technology in the frontier of knowledge.
 - **[“A Short History of Nearly Everything”, by Bill Bryson](/wiki/a-short-history-of-nearly-everything)**
 - **["The Machinery of Life", by David S. Goodsell](/wiki/the-machinery-of-life)**: The author depicts with vivid illustrations and detailed descriptions what the inside of a cell (either human or bacterial) looks like, and various mechanisms underpinning life. This was one of the few books on biology I've read so far.
-- **[Benjamin Franklin's Autobiography](https://strikingloo.github.io/wiki/benjamin-franklin-autobiography)** which satisfied my need to read 18th century scholars.
 - **[The Clock of the Long Now](https://strikingloo.github.io/wiki/clock-of-the-long-now)**: A book that supports and exposes the long term view. A foundational text for long-termism, and one of the texts that inspired Gwern to build his site. Also a very engaging and fast read, being a collection of short essays on diverse topics all playing around the idea of thinking of the very long term.
 - **[The Ascent of Money, Niall Ferguson](/wiki/ascent-of-money)**: This book covers the history and importance of financial instruments: money, bonds, stock and insurance. It was a great resource after going through Marginal Revolution University's Macroeconomics course.
-- **[Benjamin Franklin's Autobiography](/wiki/benjamin-franklin-autobiography)**: As a fan of 18th century history and political thought, especially of the revolutionary era and the Age of Enlightenment, I found this book fascinating, both because of Franklin's writing style and his portrayal of 18th century Pennsylvania. 
+- **[Benjamin Franklin's Autobiography](/wiki/benjamin-franklin-autobiography)**: As a fan of 18th century history and political thought, especially of the revolutionary era and the Age of Enlightenment, I found this book fascinating, both because of Franklin's writing style and his portrayal of 18th century Pennsylvania.
+- [Quotes and Passages from Pride and Prejudice](https://strikingloo.github.io/wiki/pride-and-prejudice)
+- [Quotes from Building Microservices by Sam Newman - O'Reilly](https://strikingloo.github.io/wiki/oreilly-microservices)
 
-## Big Notes (MOOCs)
+## Online Courses
 
-Big Notes encompass multiples sources, but usually form around a MOOC (_Massive Open Online Course_) and then get updates as I go through the recommended reading.
+These notes encompass multiples sources, but usually form around a MOOC (_Massive Open Online Course_) and then get updates as I go through the recommended reading.
 
-- **[Deep Learning for Natural Language Processing, Stanford MOOC](/wiki/deep-learning-NLP)**: Covers RNNs, LSTMs, Word2Vec, BERT and Transformers.
-- **[Unsupervised Learning, Berkeley MOOC](/wiki/unsupervised-learning-berkeley)**: An amazing course covering different techniques of Unsupervised Deep Learning, generative models, GANs, VAEs, etc.
-- **[Recommender Systems](/wiki/recommender-systems)**: A summary of the Google course on the subject (under TensorFlow documentation), plus a few other articles covering Matrix Factorization and colaborative filtering.
-- **[Reinforcement Learning, an Introduction by Richard Sutton](/wiki/reinforcement-learning-sutton)**: My notes and excerpts from the book, covering parts I and II (part III is examples and related topics). I summarize Dynamic Programming, Monte Carlo, Temporal Difference, Function Approximation and n-step methods, along with all their combinations.
-- **[Macroeconomics, Marginal Revolution University](/wiki/macroeconomics-mru)**: Notes I took while I went through the free Macroeconomics course by MRU. It is a great course for learning the basics and it inspired me to read Ascent of Money, as an intermediate step before going through Mehrling's course \[pending].
+### Computer Science and Deep Learning
+
+- [Deep Learning for Natural Language Processing, Stanford MOOC](/wiki/deep-learning-NLP)
+- [Unsupervised Learning, Berkeley MOOC](/wiki/unsupervised-learning-berkeley)
+- [Recommender Systems](/wiki/recommender-systems)
+- [Reinforcement Learning, an Introduction by Richard Sutton](/wiki/reinforcement-learning-sutton)
+
+### Economics
+
+- [Macroeconomics - Marginal Revolution University](/wiki/macroeconomics-mru)
+- [Economics of Money and Banking - Perry Mehrling](https://strikingloo.github.io/wiki/money-and-banking)
+
+### History
+- [Early Modern England - Yale History](https://strikingloo.github.io/wiki/early-modern-england)
 
 ## Papers
 

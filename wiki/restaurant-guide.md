@@ -8,7 +8,7 @@ language: English
 importance: 5
 ---
 
-> If you answer the same question three times, make it a blog post.<br>_Someone on the internet_
+> If you answer the same question three times, make it a blog post.<br>_-- Someone on the internet_
 
 I am a foodie. I love food, I eat out pretty often, and I appreciate many kinds of food. For this reason, I decided to compile a list of my favorite restaurants from each city I've been too (highly non-exhaustive), so that when people ask me _'I'm going to Buenos Aires, where should I eat?'_ I'll have a place to point them to.
 
