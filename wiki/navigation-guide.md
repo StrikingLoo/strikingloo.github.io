@@ -20,7 +20,7 @@ If you wish to browse this wiki, you could also click any article in the wiki in
 
 ## Book Reviews
 
-> Yet who reads to bring about an end however desirable? Are there not some pursuits that we practise because they are good in themselves, and some pleasures that are final? And is not this among them? I have sometimes dreamt, at least, that when the Day of Judgment dawns and the great conquerors and lawyers and statesmen come to receive their rewards — their crowns, their laurels, their names carved indelibly upon imperishable marble — the Almighty will turn to Peter and will say, not without a certain envy when He sees us coming with our books under our arms, "Look, these need no reward. We have nothing to give them here. They have loved reading." <i>- Virginia Woolf</i>
+> I have sometimes dreamt, at least, that when the Day of Judgment dawns and the great conquerors and lawyers and statesmen come to receive their rewards — their crowns, their laurels, their names carved indelibly upon imperishable marble — the Almighty will turn to Peter and will say, not without a certain envy when He sees us coming with our books under our arms, "Look, these need no reward. We have nothing to give them here. They have loved reading." <br><i>- Virginia Woolf</i>
 
 I save every quote I found especially interesting in each book on a separate page of this wiki. I also usually write a summary of the book and the impressions it left me. 
 
