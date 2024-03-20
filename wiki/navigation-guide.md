@@ -79,11 +79,11 @@ In case someone may find it interesting, as we digital garden / personal knowled
 Wiki
 ----
     Markdown files: 
-        105
+        107
     lines: 
-        11167
+        12484
     word count: 
-        139247
+        162402
 
 Blog 
 ----
