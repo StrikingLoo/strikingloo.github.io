@@ -175,7 +175,7 @@ body {width: 90%;}
   display: grid;
   grid-template-columns:
     1fr
-    min(90ch, 100%)
+    min(106ch, 100%)
     1fr;
 }
 .container > * {
