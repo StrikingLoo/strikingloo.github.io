@@ -9,7 +9,9 @@ importance: 8
 sitemap: true
 ---
 
-What a week, huh? A few days ago, [Stability.ai](https://stability.ai) released the new AI art model Stable Diffusion. It is similarly powerful to [DALL-E 2](/DALL-E-2-prompt-guide), but open source, and open to the public through [Dream Studio](https://beta.dreamstudio.ai/dream), where anyone gets 50 free uses just by signing up with an email address.
+_I wrote this post when Stability AI had just released the AI art model Stable Diffusion. In this guide, you will learn how to write prompts by example._
+
+Stable Diffusion is similarly powerful to [DALL-E 2](/DALL-E-2-prompt-guide), but open source, and open to the public through [Dream Studio](https://beta.dreamstudio.ai/dream), where anyone gets 50 free uses just by signing up with an email address.
 
 Since it is open source and anyone who has 5GB of GPU VRAM can download it (and Emad Mostaque, Stability.ai's founder has come out and said more efficient models are coming) to get unlimited uses, expect to keep seeing headlines about AI art for a while.
 
