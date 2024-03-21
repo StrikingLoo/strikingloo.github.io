@@ -1,13 +1,10 @@
 name: Luciano Strika (@StrikingLoo)'s Personal Site
 permalink: /:title
 
-markdown: pandoc
-pandoc:
-  extensions: [markdown_strict+yaml_metadata_block]
-  input: markdown
-  output: html5
-  filters:
-    - add_anchor.lua
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
 
 defaults:
   -

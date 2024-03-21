@@ -7,6 +7,5 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # gem "rails"
 
 gem "jekyll", "~> 4.1"
-
 gem "webrick", "~> 1.8.1"
 gem "nokogiri", ">= 1.12.5"
