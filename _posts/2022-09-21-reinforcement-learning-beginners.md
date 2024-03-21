@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Reinforcement Learning for Beginners: Coding a Maze-solving Agent from Scratch"
+title: "Reinforcement Learning - Beginner’s Guide from Scratch"
 description: "Introduction to Reinforcement Learning. I explain the Sarsa algorithm, code an example from scratch in Python, and teach an AI to solve mazes."
 tags: programming, python, machine learning, reinforcement learning
 date: 2022-09-21
