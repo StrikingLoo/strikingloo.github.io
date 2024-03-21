@@ -284,19 +284,19 @@ Another thing that I love about StableDiffusion (Which DALL-E 2 also gets right)
 
 Because of that, and my love for moss, I made many forest scenes with abundant growth and moss. Many of these look like a Magic: the Gathering illustration. I will not post the prompts as each one was different, but they mostly followed my digital fantasy illustration template.
 
-![](resources/ai-generated-images/stable-diffusion/selected/1394321457_A_giant_boar_made_of_moss_and_azaleas_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy"}
+![](resources/ai-generated-images/stable-diffusion/selected/1394321457_A_giant_boar_made_of_moss_and_azaleas_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: alt="A Stable Diffusion generated picture of a forest" loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/1537772634_A_Centaur_in_a_glade_under_the_stars_by_Zdzis_aw_Beksi_ski__Gorgeous_digital_painting_with_sober_colours_amazing_art_mesmerizing__captivating__artstation_3-centaur-xx.png){: loading="lazy"}
+![](resources/ai-generated-images/stable-diffusion/selected/1537772634_A_Centaur_in_a_glade_under_the_stars_by_Zdzis_aw_Beksi_ski__Gorgeous_digital_painting_with_sober_colours_amazing_art_mesmerizing__captivating__artstation_3-centaur-xx.png){: alt="A Stable Diffusion generated picture of a forest" loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/3401078383_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy"}
+![](resources/ai-generated-images/stable-diffusion/selected/3401078383_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: alt="A Stable Diffusion generated picture of a forest" loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/3650187890_A_giant_fire_bear_with_moss_and_azaleas_in_forest__fantasy__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy"}
+![](resources/ai-generated-images/stable-diffusion/selected/3650187890_A_giant_fire_bear_with_moss_and_azaleas_in_forest__fantasy__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: alt="A Stable Diffusion generated picture of a forest" loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/2835514280_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-add.png){: loading="lazy"}
+![](resources/ai-generated-images/stable-diffusion/selected/2835514280_A_mossy_fallen_tree_with_butterflies_and_azaleas_and_lavender__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-add.png){: alt="A Stable Diffusion generated picture of a forest" loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/738606398_A_magnificent_elk_made_of_azaleas_and_moss_in_the_woods__fantasy__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy"}
+![](resources/ai-generated-images/stable-diffusion/selected/738606398_A_magnificent_elk_made_of_azaleas_and_moss_in_the_woods__fantasy__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: alt="A Stable Diffusion generated picture of a forest" loading="lazy"}
 
-![](resources/ai-generated-images/stable-diffusion/selected/975594345_A_giant_boar_made_of_moss_and_azaleas_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: loading="lazy"}
+![](resources/ai-generated-images/stable-diffusion/selected/975594345_A_giant_boar_made_of_moss_and_azaleas_in_the_woods__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ__concept_art-xx.png){: alt="A Stable Diffusion generated picture of a forest" loading="lazy"}
 
 StableDiffusion was the first AI art model where I have successfully got a centaur. Not a deformed monstrosity, not a horse, not a weird human. A real centaur! So that made me happy and I had to share it.
 
@@ -304,7 +304,7 @@ I honestly made a lot more illustrations I loved (like 400 total, I think?) but 
 
 These are the last ones, I swear.
 
-![](resources/ai-generated-images/stable-diffusion/selected/1621667580_A_digital_illustration_of_a_steampunk_inventor_s_desk__4k__detailed__trending_in_artstation__fantasy_vivid_colors-add.png){: loading="lazy" style="display:inline; width:40%"}![](resources/ai-generated-images/stable-diffusion/selected/3418018944_A_treasure_chest_with_glowing_jeewels_and_gems__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ-add.png){: loading="lazy" style="display:inline;width:40%"}
+![](resources/ai-generated-images/stable-diffusion/selected/1621667580_A_digital_illustration_of_a_steampunk_inventor_s_desk__4k__detailed__trending_in_artstation__fantasy_vivid_colors-add.png){: alt="A Stable Diffusion generated picture of a steampunk desk" loading="lazy" style="display:inline; width:40%"}![](resources/ai-generated-images/stable-diffusion/selected/3418018944_A_treasure_chest_with_glowing_jeewels_and_gems__by_Josef_Thoma__matte_painting_trending_on_artstation_HQ-add.png){: alt="A Stable Diffusion generated picture of a treasure chest" loading="lazy" style="display:inline;width:40%"}
 
 
 Before we reach the end, I want to raise a concern and propose a challenge. No matter what I tried, I could *not* make either DALL-E 2, or StableDiffusion make characters in the style of Jojo's Bizarre Adventure (or Araki, in general). I tried the obvious style cues and others, and none worked. So if any of you manages to make one of these models draw Spongebob Squarepants in the style of Jojo's, or any other recognizable character, you will get a thousand internet points from me.
