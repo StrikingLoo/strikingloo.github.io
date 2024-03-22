@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-06-15
-title: "Contents"
+title: "Start Here - Entrance to the Garden"
 tags: meta, navigation, index, navigation guide, contents, table of contents
 description: "A guide to navigate this personal wiki, linking the articles by type or category."
 language: English
@@ -10,13 +10,11 @@ importance: 11
 
 Welcome to my [personal wiki](/wiki/).
 
-This is a place where I collect notes, clippings and thoughts about what I read, be it papers or books. I tend to this wiki with love and care, and I am its main user, but I hope you will enjoy it too. 
+This is a place where I collect notes, clippings and thoughts about what I read, be it papers or books. I tend to this wiki with love and care, and I am its main user, but I hope you will enjoy it too.
 
 Unlike a blog, I don't usually write my opinions in the wiki. Rather, I use this part of the site to organize what I learn and want to link to other ideas, maintaining evergreen notes in the way of [Andy Matuschak](https://notes.andymatuschak.org/Evergreen_notes) and others.
 
-The notes in the Garden are divided into certain kinds, and the following are the ones I think you will like best.
-
-If you wish to browse this wiki, you could also click any article in the wiki index, or use the search bar (tag-based search is implemented, but it also _greps_ titles) to find topics you like. Recommended tags: [paper](/tagged?q=paper), [programming](/tagged?q=programming), [book](/tagged?q=book).
+You can browse this wiki by clicking any article that interests you, or use the search bar (tag-based search is implemented, but it also _greps_ titles) to find topics you like. Recommended tags: [paper](/tagged?q=paper), [programming](/tagged?q=programming), [book](/tagged?q=book).
 
 You may also find the [Restaurant Guide](https://strikingloo.github.io/wiki/restaurant-guide) to be of some interest.
 
