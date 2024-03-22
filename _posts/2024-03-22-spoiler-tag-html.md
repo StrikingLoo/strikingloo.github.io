@@ -6,6 +6,7 @@ tags: html, web development, frontend, js
 description: "Using HTML to create a spoiler tag that shows/hides content."
 language: English
 importance: 5
+sitemap: true
 ---
 
 Many forums or blogs make use of the spoiler tag: a little button or anchor that, if clicked, reveals otherwise invisible content.
