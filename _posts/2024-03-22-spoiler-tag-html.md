@@ -5,14 +5,41 @@ date: 2024-03-22
 tags: html, web development, frontend, js
 description: "Using HTML to create a spoiler tag that shows/hides content."
 language: English
-importance: 4
+importance: 5
+sitemap: true
 ---
 
 Many forums or blogs make use of the spoiler tag: a little button or anchor that, if clicked, reveals otherwise invisible content.
 
 I wanted to add this functionality to the site for Tables of Content, so I figured adding this guide here could be useful both for my own future reference and for anyone else looking for a concise explanation.
 
-What we will do to implement a spoiler tag is use these three parts:
+Here's an example of what I mean by spoiler tag.
+
+<style>
+    .spoiler-content {
+        display: none;
+    }
+</style>
+
+<a href="#" onclick="toggleSpoiler(event, '1')">Click to show</a>
+
+<div class="spoiler-content" id='1'>
+    <p>Surprise!</p>
+</div>
+
+<script>
+    function toggleSpoiler(event, id) {
+    event.preventDefault();
+    var spoilerContent = document.getElementById(id);
+    if (spoilerContent.style.display === 'none' || spoilerContent.style.display === '') {
+        spoilerContent.style.display = 'block';
+    } else {
+        spoilerContent.style.display = 'none';
+    }
+}
+</script>
+
+What we will do to implement a spoiler tag is divided in three parts.
 
 ### CSS Example Class
 
