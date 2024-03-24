@@ -67,6 +67,22 @@ He emphasizes many important questions remain unanswered (there is always confli
 
 I expect progress in this area to remain "slow" (no appreciable changes for non-experts) for the short term.
 
+### Lunges as superior alternative to normal walking
+
+> The intervention period was 12 weeks. It consisted of four weeks of normal walking followed by eight weeks of eccentric walking.
+
+> The number of eccentric steps in the eccentric walking period gradually increased over eight weeks from 100 to 1,000 steps (including lunges, downhill and downstairs steps). Participants took a total of 3,900 eccentric steps over the eight-week eccentric walking period while the total number of steps was the same as the previous four weeks.
+
+> We found no significant changes in any of the outcomes in the first four weeks when participants walked conventionally.
+
+> From week four to 12, we found significant improvements in muscle strength (19%), chair-stand ability (24%), balance (45%) and a cognitive function test (21%).
+
+> Serum C1q concentration decreased by 10% after the eccentric walking intervention, indicating participants’ muscles were effectively stimulated.
+
+Summary: Because it exerts the muscles and makes them stretch more, eccentric walking (both artificially by adding lunges, or naturally when walking uphill or downhill) seems to be much better at preserving or increasing muscle strength. Worth taking into account for daily walks. Await studies with bigger N (in this case N=11).
+
+Source: [Effects of lunges inserted in walking (eccentric walking) on lower limb muscle strength, physical and cognitive function of regular walkers, Yoshihiro Katsura et al.](https://link.springer.com/epdf/10.1007/s00421-024-05453-y?sharing_token=1vDsDJTN5WzPxi5YmSEkOfe4RwlQNchNByi7wbcMAY5hnPeFvF3FY4v2z1P9M2M0oiR78kXv1Yzj0ODMgckqhKOGHUABEd9UOPOfV5kPAj1jf1IYMIYkdIBv-DUEcKCOiDdNyj6MFypeDhSyeYQrWu_bvlAYtPUmOSaldFpmycA%3D)
+
 ### Related Reading
 
 - [Loneliness and its Impact on Health](/wiki/loneliness).
