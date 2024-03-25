@@ -111,10 +111,14 @@ footer a {
     color: var(--header-anchor-color);
 }
 
-nav ul li a, footer ul li a {border-bottom: none;}
-nav ul li a:hover, footer ul li a:hover {
+nav ul li a, footer ul li a {
     border-bottom: none;
-    text-decoration: underline;
+    font-family:Helvetica;
+    padding-bottom: 0px;
+  }
+nav ul li a:hover, footer ul li a:hover {
+    border-bottom: 3px solid var(--anchor-bottom-color);
+    text-decoration: none;
 }
 
 nav {
