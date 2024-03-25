@@ -11,7 +11,7 @@ note_category: book-notes
 
 ## Notes and excerpts from "A Short History of Nearly Everything", by Bill Bryson
 
-> Purely some quotes I found interesting, without dedicating too much thought to any of them. [Missing: Kindle quotes!]
+> Purely some quotes I found interesting, without dedicating too much thought to any of them. \[Missing: Kindle quotes!]
 
 “Do you know that when nineteenth-century anthropologists first got to Papua New Guinea, they found people in the highlands of the interior, in some of the most inaccessible terrain on earth, growing sweet potatoes. Sweet potatoes are native to South America. So how did they get to Papua New Guinea? We don’t know. Don’t have the faintest idea. But what is certain is that people have been moving around with considerable assuredness for longer than traditionally thought, and almost certainly sharing genes as well as information.”
 
