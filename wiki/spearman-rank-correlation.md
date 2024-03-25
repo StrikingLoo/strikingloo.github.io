@@ -14,7 +14,7 @@ Spearman's Correlation coefficient measures correlation based on variables' rank
 
 The formula is thus:
 
-![](resources/rank_correlation.svg)
+![](resources/rank_correlation.svg){: alt="Spearman correlation formula" loading="lazy"}
 
 - ρ = Spearman's rank correlation coefficient
 - d<sub>i</sub>	=	difference between the two ranks of each observation (e.g. rank(X<sub>i</sub>) - rank(Y<sub>i</sub>))
