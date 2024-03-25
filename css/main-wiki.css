@@ -150,13 +150,9 @@ hr {width: 100%;}
 }
 
 .head-banner p {
-    text-align: center;
     color: var(--header-anchor-color);
-    padding: 0px;
     margin: 0px;
     font-size: 2em;
-    text-decoration: none;
-    font-family: 'Georgia';
     font-weight: bold;
 }
 
