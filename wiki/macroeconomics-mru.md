@@ -230,6 +230,12 @@ An ideal stimulus is **timely, targeted and temporary**.
 - **Timely** to avoid delays, both in government process and in the effect to take place.
 - **Targeted**: we would prefer to target unemployed workers, which can be hard when they belong to a specific part of the workforce (it is easier for the government to hire construction workers than retail ones).
 
+### Comparative Advantage
+
+> The concept of comparative advantage is really just the same as the concept of opportunity cost. If you Google the definition of “comparative advantage”, you might find it defined as “a situation in which an individual, business or country can produce a good or service at a lower opportunity cost than another producer.” This is a good definition.<br>Noahpinion
+
+Actor B has comparative advantage over actor A if B can produce a good or service such that it is more convenient for him than for A, if he's able to trade it to her for something else. This can happen even if A dominates B. E.g. A produces manufactured goods for cost 5 and commodities for cost 1. B manufactures commodities for 2 and manufactured goods for 100. It is still better for B to produce commodities and trade them with A, who benefits from not having to destine her resources to commidity production and can go all-in on manufactured goods. 
+
 ## Related Articles
 
 From most to least related.
