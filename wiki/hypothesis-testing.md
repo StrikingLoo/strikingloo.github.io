@@ -32,7 +32,7 @@ They start by estimating prior values for _p_ (P(H<sub>1</sub>)) and _V_ (varian
 They then do this:
 - Calculate a posterior of H<sub>1</sub> using the formula:
 
-![](resources/bayesian.png)
+![](image/bayesian.png){alt="Bayesian EM expression for the posterior of H1" loading="lazy"}
 
 - Under H<sub>1</sub>, the posterior of µ is N(Aδ, A/N<sub>E</sub>), where A = V<sup>2</sup>/(V<sup>2</sup> + 1/N<sub>E</sub>), a shrinkage factor that goes to 1 as N grows. So in effect for sufficiently big N, our posterior of µ under H<sub>1</sub> is normally distributed around δ with 1/N<sub>E</sub> (inverse of effective sample size or geometric mean of sample sizes) variance.
 
