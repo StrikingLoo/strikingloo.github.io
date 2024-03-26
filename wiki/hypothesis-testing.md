@@ -5,7 +5,7 @@ date: 2024-03-13
 tags: Statistics, A/B testing, p-values
 description: "Quick cheatsheet for p-values and statistical tests."
 language: English
-importance: 2
+importance: 3
 ---
 
 ## P-value two-sample Hypothesis testing

@@ -5,6 +5,7 @@ date: 2022-07-19
 description: "Anything interesting relating to longevity. Especially actionable advice."
 language: English
 importance: 5
+tags: health, papers, biology
 ---
 
 Here goes anything interesting relating to longevity. Especially actionable advice.
