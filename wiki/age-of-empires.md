@@ -127,3 +127,8 @@ From [Morley Games](https://www.youtube.com/watch?v=K4MyN8kpD84)
 - Research Fletching
 - research Horse Collar
 - Starts rushing at 6 archers and one horse.
+
+### Villager Estimations
+
+A villager collects roughly 1 resource every 3 seconds, so e.g. the 800 food for Castle age take 2 minutes to collect if you dedicate 20 villagers to it. In general it takes 3\*F/V seconds for V villagers to collect F food (or any other resource). I think this number is a slight overestimation if the collection point is close, underestimation if it's far.
+
