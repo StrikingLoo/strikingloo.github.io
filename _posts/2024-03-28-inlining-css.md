@@ -28,7 +28,7 @@ These were my results:
 
 You can see the speed index was at 1.2s, First Contentful Paint (the moment the screen is first filled with content) came at almost the same time.
 
-Looking at the cascade graph, there was a whole 200ms in the network call to load the CSS file. This was a minified CSS with the styles for the post, less than 3KB in size for a 176KB page, so it made no sense: if those same file contents were just part of the site's code, you'd lose only the little network transfer cost of 3KB. That's 3ms on a 1MB/s speed connection. Compared to the 200ms I was losing by establishing a connection, requesting a different file, etc., it seemed like I could gain speed by inlining.
+Looking at the cascade graph, there was a whole 200ms in the network call to load the CSS file. This was a minified CSS with the styles for the post, less than 3KB in size for a 176KB page, so it made no sense: if those same file contents were just part of the site's code (surrounded by a \<style> tag, of course), you'd lose only the little network transfer cost of 3KB. That's 3ms on a 1MB/s speed connection. Compared to the 200ms I was losing by establishing a connection, requesting a different file, etc., it seemed like I could gain speed by inlining.
 
 I was careful to copy the correct minified CSS for each site (for cases where the styles differ slightly) and tested again on the same page.
 
