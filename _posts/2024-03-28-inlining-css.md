@@ -10,9 +10,9 @@ importance: 7
 sitemap: true
 ---
 
-Since the creation of this site, I have endeavored to make it load as fast as possible. Call it a tradesman's pride, or a small obsession.
+Since I started this site, I have endeavored to make it load as fast as possible. Call it a tradesman's pride, or a small obsession.
 
-Recently, after a long period of not changing anything on the design or implementation, I decided to fix a few things I knew to be bottlenecks. None of these were major, I knew. Site speed was at \~1.1s per <webpagetest.org>, but I also knew changes in loading speed have superlinear effects on traffic, and don't really have diminishing returns. [1](https://blog.research.google/2009/06/speed-matters.html)
+Recently, after a long period of not changing anything on the design or implementation, I decided to fix a few things I knew to be bottlenecks. None of these were major, I knew. Site speed was at \~1.2s per <webpagetest.org>, but I also knew changes in loading speed have superlinear effects on traffic, and don't really have diminishing returns. [1](https://blog.research.google/2009/06/speed-matters.html)
 
 Both because a small increase in loading times is enough to dissuade some users, and because search results are influenced by loading speed, so that a winner-take-all effect may make what looks like a small improvement yield big rewards, making the site faster seemed worth it. 
 
@@ -34,7 +34,9 @@ I was careful to copy the correct minified CSS for each site (for cases where th
 
 ![](resources/speed2.png)
 
-This time the speed index went down to 1.1s, and the FCP to 1050ms, leaving us 150ms faster. That's a 12% loading time reduction, not bad for a small change. It's true you lose the ability to cache the CSS, but for this particular site where most users just visit one post or two and leave, it doesn't amount to much, and really that cache lookup can't be much faster than 3ms.
+This time the speed index went down to 1.1s, and the FCP to 1050ms, leaving us 150ms faster.
+
+That's a 12% loading time reduction, not bad for a small change. It's true you lose the ability to cache the CSS, but for this particular site where most users just visit one post or two and leave, it doesn't amount to much, and really that cache lookup can't be much faster than 3ms.
 
 ## Moving JavaScript Rendering Logic to HTML Static Generation
 
@@ -44,11 +46,11 @@ I was doing that with JavaScript that ran for every header. It only added a bit 
 
 I moved that into a little sed script that does the change once for every HTML file on the site before deployment -as a GitHub action-, making the site fully static on load.
 
-This had negligible (I'd argue zero) effect on laoding times, but consistently lowered 'Total blocking time', which makes sense as now there was no blocking JS script.
+This had negligible (I'd argue zero) effect on loading times, but consistently lowered 'Total blocking time', which makes sense as now there was no blocking JS script.
 
 ![](resources/speed3.png)
 
-Finally, I moved the non-critical part of CSS -like the CSS for the buttons that only become visible after you scroll down- to the end of the HTML so it only loads after rendering the DOM.
+Finally, I moved the non-critical part of CSS -like the CSS for the buttons that only become visible after you scroll down- to the end of the HTML file so it only loads after rendering the DOM.
 
 This left me with my final numbers:
 
@@ -70,7 +72,7 @@ One week after improving the site's loading speed, these were the analytics for 
 
 This means finally, a 22% reduction in loading times led to a **32% increase in page_views**, 6% increase in session_start, and 36% in user_engagement. 
 
-I had to google it but, according to Google Analytics, user_engagement triggers for “sessions that lasted longer than 10 seconds, or had a conversion event, or had 2 or more screen or page views.”
+I had to check but, according to Google Analytics, _user_engagement_ triggers for “sessions that lasted longer than 10 seconds, or had a conversion event, or had 2 or more screen or page views.”
 
 ## Conclusion
 
