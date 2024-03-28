@@ -177,3 +177,6 @@ h1 {
 }
 ```
 
+### Related Reading
+
+- [CSS Zen Garden](https://www.csszengarden.com/): Website where people submit their own spin on the design for a fixed HTML. A nice little place to check.
