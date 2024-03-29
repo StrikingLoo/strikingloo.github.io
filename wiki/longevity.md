@@ -52,7 +52,7 @@ Taken from a [post by @RomeoStevens](https://www.lesswrong.com/posts/PhXENjdXiHh
 
 Exercise should include resistance training and cardio.
 
-### Immunosenescence
+## Immunosenescence
 
 From [Nintil on immunosenescence][https://nintil.com/immunosenescence] (emphasis mine).
 
@@ -67,6 +67,10 @@ He emphasizes many important questions remain unanswered (there is always confli
 > It is fine if the degradation of function has no free-standing root cause and instead is a convoluted mesh of feedback loops, with no key players, but still identifying them and being able to treat all of them at once in vivo should lead to faster progress in reverting immunosenescence.
 
 I expect progress in this area to remain "slow" (no appreciable changes for non-experts) for the short term.
+
+### How to make an old immune system young again
+
+> New research published in Nature this week found that reducing certain stem cells in old mice can rejuvenate their immune systems, making them more effective at fighting viral infections and reducing inflammation. This works by rebalancing the types of stem cells that affect immune responses, shifting them from those that cause inflammation to those that support a more youthful immune function. We’re still years away from going from mice to men, but the research’s findings could help improve aging immune systems.<br>[Heidi Ledford, Nature](https://www.nature.com/articles/d41586-024-00871-6)
 
 ### Lunges as superior alternative to normal walking
 
