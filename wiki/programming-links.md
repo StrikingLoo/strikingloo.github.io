@@ -48,3 +48,10 @@ Peruse at my leisure
 
 ### Boardzilla, framework for making games
 [Boardzilla](https://docs.boardzilla.io/introduction/creating-a-game)
+
+## Articles I Liked
+
+A little collection of articles I liked from HackerNews, blogs and other places.
+
+- [The WiFi only Works when it's Raining](https://predr.ag/blog/wifi-only-works-when-its-raining/)
+- [4 Billion if Statements](https://andreasjhkarlsson.github.io//jekyll/update/2023/12/27/4-billion-if-statements.html)

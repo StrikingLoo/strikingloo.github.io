@@ -23,3 +23,4 @@ source: [Polymatter](https://www.youtube.com/watch?v=zsHXFEOV83g)
 ## Related Reading
 
 - [Dungeon Design guidelines for D&D](/wiki/dungeons)
+- [Error Handling in Baby Toys](https://brainbaking.com/post/2024/04/error-handling-in-baby-toys/)
