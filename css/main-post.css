@@ -57,7 +57,7 @@ p a, ul li a {
     border-bottom: 3px solid var(--anchor-bottom-color);
 }
 
-p a:hover, ul li a:hover {
+p a:hover, ul li a:hover, summary:hover {
     border-bottom: 3px solid var(--font-color);
 }
 
