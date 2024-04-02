@@ -202,3 +202,7 @@ One can show that this problem can be solved by taking the singular value decomp
 The authors try training an orthogonal matrix W to align (i.e., minimize cosine distance of normalized vectors) two word embedding spaces (EN-ES). They sample 6k frequent words, translate with google, and find W orthogonal that minimizes cosine distance (after normalizing embedding vectors to norm 1).
 
 They compare against Mikolov who didn't normalize and used arbitrary linear transform, and conclude that "bilingual translation can be largely improved by the normalized embedding and the accompanied orthogonal transform". They reach about 40% P@1, 60% P@5.
+
+### Related Reading
+
+- [CityGaussian: Real-time High-quality Large-Scale Scene Rendering with Gaussians](https://dekuliutesla.github.io/citygs/)
