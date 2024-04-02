@@ -39,7 +39,25 @@ Here's an example of what I mean by spoiler tag.
 }
 </script>
 
-What we will do to implement a spoiler tag is divided in three parts.
+_Edit: it turns out there is a 'new' HTML tag I didn't know abut that can handle this automatically in the browser, without requiring JS or special CSS. It's called [Details](https://www.w3schools.com/tags/tag_summary.asp) element and it works like a spoiler tag too._
+
+Example details + summary syntax.
+
+```html
+<details>
+	<summary>Click to show</summary>
+	<p>Surprise!!</p>
+</details>
+```
+
+This syntax will result in the following element.
+
+<details>
+	<summary>Click to show</summary>
+	<p>Surprise!!</p>
+</details>
+
+Ignoring the HTML element, what we could do to implement a spoiler tag (what this post was about before I learned about this HTML syntax) is divided in three parts.
 
 ### CSS Example Class
 
