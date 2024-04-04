@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Alien Designers - Asking Large Language Models to Design CSS"
+title: "Can Claude Design CSS? A Case Study"
 date: 2024-04-03
 tags: css, webdev, web design, LLMs, Large Language Model
 description: "I prompt Claude, a Large Language Model, to write CSS templates, and try them out in a single HTML layout, giving my opinions. I find that it is great for first-iteration prototyping."
