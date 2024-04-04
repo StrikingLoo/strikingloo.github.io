@@ -118,7 +118,7 @@ It ended up leaving it like this.
 
 <p><img src="resources/post_image/claude-css-design/plant-based.png" loading="lazy" style="max-width:90%"/></p>
 
-If you squint, the weird SVG it added to the background kinda looks like a mitochondria. Given it was a _huge_ piece of SVG right on the CSS, I think it's 50\% hallucinated.
+If you squint, the weird SVG it added to the background kinda looks like a mitochondria. Given it was a _huge_ piece of SVG right on the CSS, I think it's 50% hallucinated.
 
 Moving on.
 
@@ -132,7 +132,7 @@ Okay, I got what I asked for I guess. The image doesn't capture the sheer horror
 
 It does evoke a neon effect, so I'll give it a passing grade.
 
-Something similar happened when I asked for a 'disco' design
+Something similar happened when I asked for a 'disco' design. Note the links start neon-glowing if you hover them.
 
 <p><img src="resources/post_image/claude-css-design/disco.png" loading="lazy" style="max-width:90%"/></p>
 
@@ -168,7 +168,7 @@ It's actually a pretty nice design! You can't tell from the screenshot but links
 
 After this Claude went crazy explaining all the virtues of its design, to the point where it reached its token limit for the message. Here is an excerpt.
 
-> Attention to Detail: The design pays close attention to small details, such as hover effects on navigation links, underlines on headings and links, and decorative elements like the circular bullet points before headings.<br><br>Animations and Transitions: Smooth transitions and animations are implemented for various interactive elements, such as the navigation link underlines and the link underline effect, adding a polished and refined touch to the user experience.
+> Attention to Detail: The design pays close attention to small details, such as hover effects on navigation links, underlines on headings and links, and decorative elements like the circular bullet points before headings.<br>Animations and Transitions: Smooth transitions and animations are implemented for various interactive elements, such as the navigation link underlines and the link underline effect, adding a polished and refined touch to the user experience.
 
 ## Conclusion
 
