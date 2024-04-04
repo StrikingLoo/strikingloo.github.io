@@ -28,7 +28,7 @@ I was explicit on which tags I wanted, since I wanted to stress the design a lit
 
 It came up with this.
 
-![](resources/post_image/claude-css-design/plain-html.png){: loading='lazy'}
+<div class='wide-eighty'><img src="resources/post_image/claude-css-design/plain-html.png" loading="lazy"/></div>
 
 It's a simple design with a nav bar, several kinds of headers and links. I wonder how much better we can make it look without having to write the CSS ourselves?
 
@@ -44,13 +44,13 @@ From what I'd seen in text-to-image models, ghibli-inspired aesthetic tended to 
 
 It came up with a pretty bland design. It definitely didn't say 'Studio Ghibli' to me.
 
-![](resources/post_image/claude-css-design/ghibli-1.png){: loading='lazy' class='full-bleed'}
+<div class='wide-eighty'><img src="resources/post_image/claude-css-design/ghibli-1.png" loading="lazy"/></div>
 
 Unimpressed, I asked it to add more colors and shades of green.
 
 > I love the general vibe but want it to have more colors, maybe a bit green or light blue
 
-![](resources/post_image/claude-css-design/ghibli-2.png){: loading='lazy' class='full-bleed'}
+<div class='wide-eighty'><img src="resources/post_image/claude-css-design/ghibli-2.png" loading="lazy"/></div>
 
 > These colors are inspired by natural elements like foliage, oceans, and forests, which can add a sense of liveliness and serenity to the overall aesthetic, while still maintaining a warm and whimsical feel.<br>_Claude_
 
@@ -60,7 +60,7 @@ This time the pastel palette gave it a nicer look, but I really disliked the har
 
 > Can you create a CSS that makes this steampunk? Be creative and original
 
-![](resources/post_image/claude-css-design/steampunk.png){: loading='lazy' class='full-bleed'}
+<div class='wide-eighty'><img src="resources/post_image/claude-css-design/steampunk.png" loading="lazy"/></div>
 
 > The overall color palette is dark and rich, featuring shades of brown, bronze, and beige, which evoke a vintage and industrial feel.
 
@@ -76,7 +76,7 @@ I think in this case we see an improvement, at least I like this design. The pal
 
 I was still not convinced Claude could do animations well, but I figured I'd try different time periods as inspiration. For _Gothic Cathedral_, I think the model did something pretty good.
 
-![](resources/post_image/claude-css-design/gothic-cathedral.png){: loading='lazy' class='full-bleed'}
+<div class='wide-eighty'><img src="resources/post_image/claude-css-design/gothic-cathedral.png" loading="lazy"/></div>
 
 It's quite monochromatic, but the typesetting looks nice. I can see this as a nice first step that a real designer could iterate on to get to a real Cathedral-inspired design. Maybe just adding a few images on the background or a banner could help.
 
@@ -86,7 +86,7 @@ I tried asking Claude to make a psychedelic, whimsical design.
 
 It came up with possibly the ugliest, worst design in this post. I'll share it for completion, but viewer discretion is advised.
 
-![](resources/post_image/claude-css-design/psychedelic.png){: loading='lazy' class='full-bleed'}
+<div class='wide-eighty'><img src="resources/post_image/claude-css-design/psychedelic.png" loading="lazy"/></div>
 
 Between the comic-sans, the dots and the weird pastel palette, I think this one is less _psychedelic_ and more _baby's first PowerPoint presentation_. Easily the weakest result so far.
 
@@ -94,7 +94,7 @@ Between the comic-sans, the dots and the weird pastel palette, I think this one 
 
 > What about a modern design with color gradients and bells and whistles, a little cyberpunk, for a hacker's blog
 
-![](resources/post_image/claude-css-design/cyberpunk.png){: loading='lazy' class='full-bleed'}
+<div class='wide-eighty'><img src="resources/post_image/claude-css-design/cyberpunk.png" loading="lazy"/></div>
 
 > In this design, we're using a dark primary color (#0d0d0d) for the background, with a bright "cyber green" (#00ff9b) as the accent color and a "cyber purple" (#9b59b6) as the secondary color. The headings have a gradient effect created by blending the accent and secondary colors, with the text being filled using the -webkit-background-clip and -webkit-text-fill-color properties.
 
@@ -108,7 +108,7 @@ This one looks pretty good, very '80s sci-fi vibes.
 
 > Now do one that's garden-themed, I want it to be very laid-back, relaxing, with something of the organic
 
-![](resources/post_image/claude-css-design/garden.png){: loading='lazy' class='full-bleed'}
+<div class='wide-eighty'><img src="resources/post_image/claude-css-design/garden.png" loading="lazy"/></div>
 
 > This CSS style combines natural colors, classic typography, and organic textures to create a garden-themed, laid-back, and relaxing atmosphere. You can further enhance the aesthetic by adding additional elements such as leaf patterns, floral illustrations, or botanical motifs using CSS or image assets.
 
@@ -116,7 +116,7 @@ I asked it to add said patterns and illustrations, expecting little as I wasn't 
 
 It ended up leaving it like this.
 
-![](resources/post_image/claude-css-design/plant-based.png){: loading='lazy' class='full-bleed'}
+<div class='wide-eighty'><img src="resources/post_image/claude-css-design/plant-based.png" loading="lazy"/></div>
 
 If you squint, the weird SVG it added to the background kinda looks like a mitochondria. Given it was a _huge_ piece of SVG right on the CSS, I think it's 50\% hallucinated.
 
@@ -126,7 +126,7 @@ Moving on.
 
 > Create a night club aesthetic like it's Shibuya at night. I want neon effects on headers, black background and white fonts, very flashy effects
 
-![](resources/post_image/claude-css-design/shibuya-at-night.png){: loading='lazy' class='full-bleed'}
+<div class='wide-eighty'><img src="resources/post_image/claude-css-design/shibuya-at-night.png" loading="lazy"/></div>
 
 Okay, I got what I asked for I guess. The image doesn't capture the sheer horror of this design: all headers pulsate constantly with a strobe light animation.
 
@@ -134,13 +134,13 @@ It does evoke a neon effect, so I'll give it a passing grade.
 
 Something similar happened when I asked for a 'disco' design
 
-![](resources/post_image/claude-css-design/disco.png){: loading='lazy' class='full-bleed'}
+<div class='wide-eighty'><img src="resources/post_image/claude-css-design/disco.png" loading="lazy"/></div>
 
 ### Flat Design
 
 I asked for a minimalist, flat design.
 
-![](resources/post_image/claude-css-design/flat-minimalist-design.png){: loading='lazy' class='full-bleed'}
+<div class='wide-eighty'><img src="resources/post_image/claude-css-design/flat-minimalist-design.png" loading="lazy"/></div>
 
 > This CSS style adheres to the principles of flat design, which emphasizes simplicity, minimalism, and a focus on typography and color. The use of flat colors, subtle shadows, and simple shapes creates a clean and modern aesthetic. The overall design is clean, crisp, and user-friendly, which is a hallmark of flat design.
 
@@ -150,7 +150,7 @@ Honestly one of the best of the bunch. Though I guess there are less obvious fai
 
 > Now do a beautiful geometric design with lots of diamonds and crystal-looking
 
-![](resources/post_image/claude-css-design/crystal.png){: loading='lazy' class='full-bleed'}
+<div class='wide-eighty'><img src="resources/post_image/claude-css-design/crystal.png" loading="lazy"/></div>
 
 The weird background image, the glowing header and the diamond on hover showing up after \<h3>s. This time Claude went off the rails, and it's cute.
 
@@ -162,7 +162,7 @@ So far, I had been asking Claude for designs for a certain style or another. I w
 
 Slightly afraid to see the beast unleashed, I refreshed the HTML and this is what I got.
 
-![](resources/post_image/claude-css-design/final.png){: loading='lazy' class='full-bleed'}
+<div class='wide-eighty'><img src="resources/post_image/claude-css-design/final.png" loading="lazy"/></div>
 
 It's actually a pretty nice design! You can't tell from the screenshot but links and headers both had animations for hover effects. I like the simple palette and the font choices. The round bullet before \<h2>s is a weird choice, but other than that I can see how this could make for a nice design.
 
