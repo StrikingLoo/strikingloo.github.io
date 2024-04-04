@@ -182,4 +182,6 @@ I also imagine this could be a great enabler for someone without web development
 
 For the moment, I think the best use for LLMs remains calling them for isolated bits of CSS or syntax examples, which you can iterate on later.
 
+I made all CSS and parts of Claude's responses available as an [appendix on my wiki](/wiki/css-scrapbook), in case you want to see them in more detail. Feel free to borrow them, partially or totally, no need to credit me either.
+
 Have you tried using Claude for design ideas?

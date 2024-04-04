@@ -177,6 +177,745 @@ h1 {
 }
 ```
 
+### Ghibli-inspired
+
+```css
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f9f3e9;
+  color: #4d3f2d;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #b0d3c2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 36px;
+  color: #6e8f72;
+}
+
+header nav a {
+  color: #4d3f2d;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* Main Content Styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+article {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+article h2 {
+  color: #6e8f72;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 28px;
+  margin-top: 0;
+}
+
+article h3 {
+  color: #4d7351;
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+article p {
+  line-height: 1.6;
+}
+
+article a {
+  color: #b0d3c2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+article a:hover {
+  color: #6e8f72;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #c8e1d4;
+  color: #4d7351;
+  padding: 20px;
+  text-align: center;
+}
+```
+
+### Steampunk
+
+> This CSS style combines dark, rich colors, metallic accents, and classic typography to capture the essence of steampunk design. You can further enhance the aesthetic by adding additional elements such as gears, rivets, or other mechanical illustrations using CSS or image assets.
+
+```css
+/* General Styles */
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: #221d1a;
+  color: #d0c7b6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #473d33;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #7e6f5e;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 36px;
+  color: #b59f7e;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+header nav a {
+  color: #d0c7b6;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #b59f7e;
+}
+
+/* Main Content Styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+article {
+  background-color: #352f29;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
+  border: 2px solid #7e6f5e;
+}
+
+article h2 {
+  color: #b59f7e;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 28px;
+  margin-top: 0;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+article h3 {
+  color: #d0c7b6;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+article p {
+  line-height: 1.6;
+}
+
+article a {
+  color: #b59f7e;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+article a:hover {
+  color: #d0c7b6;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #473d33;
+  color: #d0c7b6;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #7e6f5e;
+}
+```
+### Garden-themed
+
+> This CSS style combines natural colors, classic typography, and organic textures to create a garden-themed, laid-back, and relaxing atmosphere. You can further enhance the aesthetic by adding additional elements such as leaf patterns, floral illustrations, or botanical motifs using CSS or image assets.
+
+```css
+/* General Styles */
+body {
+  font-family: 'Lora', serif;
+  background-color: #f8f7f2;
+  color: #4e5c3a;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #d7e4c7;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #b0c29b;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Lora', serif;
+  font-size: 36px;
+  color: #7b9165;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+header nav a {
+  color: #4e5c3a;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #7b9165;
+}
+
+/* Main Content Styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+article {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  border: 2px solid #d7e4c7;
+}
+
+article h2 {
+  color: #7b9165;
+  font-family: 'Lora', serif;
+  font-size: 28px;
+  margin-top: 0;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+article h3 {
+  color: #4e5c3a;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+article p {
+  line-height: 1.6;
+}
+
+article a {
+  color: #7b9165;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+article a:hover {
+  color: #4e5c3a;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #d7e4c7;
+  color: #4e5c3a;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #b0c29b;
+}
+```
+### Cathedral
+
+"What about a site that's like a Gothic cathedral, with a vitro themed effect on hovering h2s?"
+
+> 
+
+```css
+/* General Styles */
+body {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  background-color: #1d1d1d;
+  color: #d4c9b5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #2f2f2f;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #4d4d4d;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+  font-size: 36px;
+  color: #d4c9b5;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+header nav a {
+  color: #d4c9b5;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #b39c7d;
+}
+
+/* Main Content Styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+article {
+  background-color: #2f2f2f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
+  border: 2px solid #4d4d4d;
+}
+
+article h2 {
+  color: #d4c9b5;
+  font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+  font-size: 28px;
+  margin-top: 0;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transition: text-shadow 0.3s;
+}
+
+article h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(211, 188, 147, 0.8) 0%, rgba(211, 188, 147, 0) 50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+article h2:hover::before {
+  opacity: 1;
+}
+
+article h3 {
+  color: #d4c9b5;
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-size: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+article p {
+  line-height: 1.6;
+}
+
+article a {
+  color: #b39c7d;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+article a:hover {
+  color: #d4c9b5;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2f2f2f;
+  color: #d4c9b5;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #4d4d4d;
+}
+```
+
+### Flat Design
+
+> This CSS style adheres to the principles of flat design, which emphasizes simplicity, minimalism, and a focus on typography and color. The use of flat colors, subtle shadows, and simple shapes creates a clean and modern aesthetic. The overall design is clean, crisp, and user-friendly, which is a hallmark of flat design.
+
+```css
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333333;
+}
+
+header nav a {
+  color: #333333;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ff5722;
+}
+
+/* Main Content Styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+article {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+article h2 {
+  color: #333333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+article h3 {
+  color: #333333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+article p {
+  line-height: 1.6;
+}
+
+article a {
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+article a:hover {
+  color: #333333;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+```
+
+### The Most Beautiful Design
+
+"Now give me the most beautiful, highest quality, detailed, amazing design you can come up with. Use all the tools in the arsenal, all the CSS you know, all the principles of good design, everything"
+
+> Certainly! Here's a CSS style that aims to create a truly beautiful, high-quality, and detailed design, incorporating various principles of good design and utilizing a wide range of CSS techniques and tools. This design embraces a nature-inspired aesthetic with intricate details and a harmonious color palette.
+
+```css
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #f9f7f3;
+  color: #4d4d4d;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-image: linear-gradient(to right, #a3c58f, #7fb77e, #5ca86c, #438f5b, #2d7749);
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2d7749;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav a {
+  color: #4d4d4d;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 700;
+  position: relative;
+  transition: color 0.3s;
+}
+
+header nav a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2d7749;
+  transition: width 0.3s;
+}
+
+header nav a:hover {
+  color: #2d7749;
+}
+
+header nav a:hover::before {
+  width: 100%;
+}
+
+/* Main Content Styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+article {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+article::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-image: linear-gradient(to right, #a3c58f, #7fb77e, #5ca86c, #438f5b, #2d7749);
+}
+
+article::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-image: linear-gradient(to left, #a3c58f, #7fb77e, #5ca86c, #438f5b, #2d7749);
+}
+
+article h2 {
+  color: #2d7749;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+article h2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 10px;
+  height: 10px;
+  background-color: #2d7749;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+article h3 {
+  color: #4d4d4d;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+}
+
+article h3::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #2d7749;
+}
+
+article p {
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+article a {
+  color: #2d7749;
+  text-decoration: none;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+article a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #2d7749;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+  transform-origin: left;
+}
+
+article a:hover::before {
+  transform: scaleX(1);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #ffffff;
+  color: #4d4d4d;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-image: linear-gradient(to right, #a3c58f, #7fb77e, #5ca86c, #438f5b, #2d7749);
+}
+```
+
+> The color palette is inspired by nature, featuring shades of green, ranging from vibrant to muted tones. The primary color (#2d7749) is a deep forest green, complemented by lighter shades for accents and gradients.
+
+> Layout and White Space: The design follows a clean and organized layout with ample white space, creating a sense of balance and allowing the content to breathe.
+
+> Gradients and Textures: Linear gradients and subtle textures are used throughout the design to add depth and visual interest. The header and article elements feature gradient borders, while the background color has a slightly textured, paper-like quality.
+
+> Attention to Detail: The design pays close attention to small details, such as hover effects on navigation links, underlines on headings and links, and decorative elements like the circular bullet points before headings.
+
 ### Related Reading
 
 - [CSS Zen Garden](https://www.csszengarden.com/): Website where people submit their own spin on the design for a fixed HTML. A nice little place to check.
