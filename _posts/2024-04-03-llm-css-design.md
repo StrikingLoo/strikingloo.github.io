@@ -10,7 +10,7 @@ importance: 7
 sitemap: true
 ---
 
-People keep debating whether Large Language Models have an internal model of the world (encoded somewhere in their weights or their correlations) or not. Some go as far as to entertain the idea that a model may be sentient (in my opinion, we're still far from that). 
+People keep debating whether Large Language Models have an internal model of the world (encoded somewhere in their weights or their correlations) or not. Some go as far as to entertain the idea that a model may be sentient though, in my opinion, we're still far from that. 
 
 Today I was wondering a different thing: how good is a Large Language Model's eye for design? 
 
@@ -78,7 +78,7 @@ I was still not convinced Claude could do animations well, but I figured I'd try
 
 ![](resources/post_image/claude-css-design/gothic-cathedral.png){: loading='lazy' class='wide-seventy'}
 
-It's pretty monochromatic, but the typesetting looks nice. I can see this as a nice first step that a real designer could iterate on to get to a real Cathedral-inspired design. Maybe just adding a few images on the background or a banner could help.
+It's quite monochromatic, but the typesetting looks nice. I can see this as a nice first step that a real designer could iterate on to get to a real Cathedral-inspired design. Maybe just adding a few images on the background or a banner could help.
 
 ### Psychedelic Design
 
@@ -88,7 +88,7 @@ It came up with possibly the ugliest, worst design in this post. I'll share it f
 
 ![](resources/post_image/claude-css-design/psychedelic.png){: loading='lazy' class='wide-seventy'}
 
-Between the comic sans and the dots and the weird pastel palette, I think this one is less _psychedelic_ and more _baby's first PowerPoint presentation_. Easily the weakest result so far.
+Between the comic-sans, the dots and the weird pastel palette, I think this one is less _psychedelic_ and more _baby's first PowerPoint presentation_. Easily the weakest result so far.
 
 ### Cyberpunk Design
 
@@ -144,7 +144,7 @@ I asked for a minimalist, flat design.
 
 > This CSS style adheres to the principles of flat design, which emphasizes simplicity, minimalism, and a focus on typography and color. The use of flat colors, subtle shadows, and simple shapes creates a clean and modern aesthetic. The overall design is clean, crisp, and user-friendly, which is a hallmark of flat design.
 
-Honestly one of the best of the bunch. Though I guess there are less obvious failure modes witha minimalist design, even if pulling it off with excellence does require a lot of skill.
+Honestly one of the best of the bunch. Though I guess there are less obvious failure modes with a minimalist design, even if pulling it off with excellence does require a lot of skill.
 
 ### Crystal
 
@@ -152,7 +152,7 @@ Honestly one of the best of the bunch. Though I guess there are less obvious fai
 
 ![](resources/post_image/claude-css-design/crystal.png){: loading='lazy' class='wide-seventy'}
 
-The weird background image, the glowing header and the diamond on hover showing up after h3s. This time Claude went off the rails, and it's cute.
+The weird background image, the glowing header and the diamond on hover showing up after \<h3>s. This time Claude went off the rails, and it's cute.
 
 ### The Ultimate Design
 
