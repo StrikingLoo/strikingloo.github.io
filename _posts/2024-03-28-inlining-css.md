@@ -12,7 +12,7 @@ sitemap: true
 
 Since I started this site, I have endeavored to make it load as fast as possible. Call it a tradesman's pride, or a small obsession.
 
-Recently, after a long period of not changing anything on the design or implementation, I decided to fix a few things I knew to be bottlenecks. None of these were major, I knew. Site speed was at \~1.2s per [webpagetest.org](webpagetest.org), but I also knew changes in loading speed have superlinear effects on traffic, and don't really have diminishing returns.
+Recently, after a long period of not changing anything on the design or implementation, I decided to fix a few things I knew to be bottlenecks. None of these were major, I knew. Site speed was at \~1.2s according to [webpagetest.org](webpagetest.org), but I also knew changes in loading speed have superlinear effects on traffic, and don't really have diminishing returns.
 
 Both because a small increase in loading times is enough to dissuade some users, and because search results are influenced by loading speed, so that a winner-take-all effect may make what looks like a small improvement yield big rewards, making the site faster seemed worth it. 
 
