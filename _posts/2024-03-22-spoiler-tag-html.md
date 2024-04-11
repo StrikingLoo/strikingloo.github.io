@@ -5,7 +5,7 @@ date: 2024-03-22
 tags: html, web development, frontend, js
 description: "Using HTML to create a spoiler tag that shows/hides content."
 language: English
-importance: 5
+importance: 3
 sitemap: true
 ---
 
