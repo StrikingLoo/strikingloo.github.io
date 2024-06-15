@@ -55,3 +55,8 @@ A little collection of articles I liked from HackerNews, blogs and other places.
 
 - [The WiFi only Works when it's Raining](https://predr.ag/blog/wifi-only-works-when-its-raining/)
 - [4 Billion if Statements](https://andreasjhkarlsson.github.io//jekyll/update/2023/12/27/4-billion-if-statements.html)
+
+## Deep Learning Related Articles
+
+- [Neural Network Manifolds Topology (2014)](https://colah.github.io/posts/2014-03-NN-Manifolds-Topology/)
+- [Bitter Lesson, Sutton](http://www.incompleteideas.net/IncIdeas/BitterLesson.html)
