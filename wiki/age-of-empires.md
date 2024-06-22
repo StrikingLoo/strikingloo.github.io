@@ -132,3 +132,18 @@ From [Morley Games](https://www.youtube.com/watch?v=K4MyN8kpD84)
 
 A villager collects roughly 1 resource every 3 seconds, so e.g. the 800 food for Castle age take 2 minutes to collect if you dedicate 20 villagers to it. In general it takes 3\*F/V seconds for V villagers to collect F food (or any other resource). I think this number is a slight overestimation if the collection point is close, underestimation if it's far.
 
+- small wall
+- no smith upgrades early (before castle)
+- \~14 on food first, then 3 more on wood, animals gather faster than berries.
+
+From 1200 ELO
+
+> The reason we're putting pressure with the scouts is to make time to wall up our base. This is why we don't go straight into Fast Castle.
+
+> Keep making scout until you're fully walled.
+
+From 1300 ELO
+
+> You use MAA to push and kill a few villagers (typically 3 and the scout to block the trapped villager, repeatedly killing off villagers one by one). This pushes you back a minute, but will push the oponent back by more if you kill 3 or more villagers.<br>This strategy is more complex than following the fast archers build order, but while it is one minute slower it hopefully delays your oponent by more.
+
+
