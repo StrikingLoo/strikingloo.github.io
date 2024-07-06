@@ -144,3 +144,7 @@ html {
 }
 </style>'
 ```
+
+### card regex
+
+testid=\"card-name">([A-Za-z0-9]|\:|\-|\s|\;|\!|\(|\)|\.|\&)*</a>
