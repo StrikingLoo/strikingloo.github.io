@@ -65,6 +65,9 @@ Related: _DataUSA.io_
 Same energy: _income percentiles by age_.
 <https://www.timevaluemillionaire.com/income-percentiles-by-age/>
 
+Rent prices per city.
+<https://www.rentcafe.com/average-rent-market-trends/us/wa/bellevue/>
+
 ---
 
 Tezuka Osamu Cultural Prize
