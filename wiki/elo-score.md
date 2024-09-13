@@ -8,11 +8,13 @@ language: English
 importance: 5
 ---
 
-In Elo ratings, a player's expected score is defined as their probability of winning plus half their probability of drawing. That is, if the payoff for winning were 1 and for drawing .5, the expected utility of playing.
+In Elo ratings, a player's expected score is defined as their probability of winning plus half their probability of drawing. That is, given payoffs of 1 for winning and .5 for drawing, the expected score would be the expected utility of playing.
 
-If players A and B have ratings R<sub>A</sub>, R<sub>B</sub>, the expected score of player A vs B is E<sub>A</sub> = 1/(1 + 10\^(R<sub>A</sub> - R<sub>B</sub>)/400). That 400 makes it so that a 200 points difference predicts a score of .75 for player A.
+If players A and B have ratings R<sub>A</sub>, R<sub>B</sub>, the expected score of player A against B is E<sub>A</sub> = 1/(1 + 10<sup>(R<sub>A</sub> - R<sub>B</sub>)/400</sup>).
 
-Another way of expressing this would be E<sub>A</sub> = Q<sub>A</sub>/(Q<sub>A</sub> + Q<sub>B</sub>). Where Q<sub>A</sub> = 10\^(R<sub>A</sub>/400). This way we can see the sum of the expected scores is always 1.
+Here 400 is an arbitrary choice but the most common one. It makes it so that a 200 points difference in two players' ratings predicts a score of .75 for player A.
+
+Another way of expressing this would be E<sub>A</sub> = Q<sub>A</sub>/(Q<sub>A</sub> + Q<sub>B</sub>). Where Q<sub>A</sub> = 10<sup>(R<sub>A</sub>/400)</sup>. This way we can see the sum of the expected scores is always 1.
 
 It then follows that for each 400 rating points of advantage over the opponent, the expected score is magnified ten times in comparison to the opponent's expected score. (e.g. both at 1500 => 50\%. 1900 vs 1500 => 10/11 odds for the stronger one).
 
@@ -22,7 +24,7 @@ R'<sub>A</sub> = R<sub>A</sub> + K \* (S<sub>A</sub> - E<sub>A</sub>)
 
 Where S is the actual score the player got, and E the expected one, while K is some constant bound for maximum update.
 
-In effect, the Elo rating is training a sigmoid that predicts probability of winning given the two ratings, assuming prob\{A wins} = sigmoid(R<sub>A,B</sub>) = 1/(1 + 10\^(R<sub>B</sub> -  R<sub>A</sub>)/s) for some s (typically 400). 
+In effect, the Elo rating is training a sigmoid that predicts probability of winning given the two ratings, assuming prob\{A wins} = sigmoid(R<sub>A,B</sub>) = 1/(1 + 10<sup>(R<sub>B</sub> -  R<sub>A</sub>)/s</sup>) for some s (typically 400). 
 
 Then the update step is 
 R<sub>A</sub> \<- R<sub>A</sub> + K \* (S<sub>A</sub> - <sub>A</sub>)
