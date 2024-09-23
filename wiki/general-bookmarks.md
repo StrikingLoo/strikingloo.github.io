@@ -151,3 +151,9 @@ Agricola strategy guide.
 <https://sambleckley.com/writing/church-of-interruption.html>
 
 Church of Interruption.
+
+---
+
+<https://money.usnews.com/money/blogs/my-money/articles/shopping-holidays-the-best-days-to-shop-this-year>
+
+When to buy each thing (e.g. May for women's clothes, early June for menswear, July 4th, August for staples / apple stuff + summer clothes, November for black Friday, December for toys and games, Cyber Monday on December 1st, Super Saturday too)
