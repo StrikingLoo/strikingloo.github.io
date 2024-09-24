@@ -9,7 +9,7 @@ importance: 8
 sitemap: true
 ---
 
-_I wrote this post when Stability AI had just released the AI art model Stable Diffusion. In this guide, you will learn how to write prompts by example._
+_I wrote this post when Stability AI had just released the AI art model Stable Diffusion. In this guide, you will learn how to write prompts by example. If you want, you can skip the discussion and examples and just go straight to the [prompt template and explanation](/stable-diffusion-vs-dalle-2#appendix-a-stable-diffusion-prompt-guide)_
 
 Stable Diffusion is similarly powerful to [DALL-E 2](/DALL-E-2-prompt-guide), but open source, and open to the public through [Dream Studio](https://beta.dreamstudio.ai/dream), where anyone gets 50 free uses just by signing up with an email address.
 
