@@ -63,7 +63,7 @@ GEM
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.7.0)
-    webrick (1.8.1)
+    webrick (1.8.2)
 
 PLATFORMS
   ruby
@@ -71,7 +71,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.1)
   nokogiri (>= 1.12.5)
-  webrick (~> 1.8.1)
+  webrick (~> 1.8.2)
 
 BUNDLED WITH
    2.4.10
