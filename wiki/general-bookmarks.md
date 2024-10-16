@@ -56,8 +56,11 @@ Maniani, awesome Pixiv artist
 
 ---
 
-US State Salary Scale for Seattle
+US Federal Government Salary Scale for Seattle
 <https://www.federalpay.org/gs/locality/seattle>
+
+UK Senior Civil Service Pay Scale
+<https://www.gov.uk/government/publications/guidance-on-the-senior-civil-service-pay-award-202425>
 
 Related: _DataUSA.io_
 <https://datausa.io/profile/geo/>
@@ -157,3 +160,9 @@ Church of Interruption.
 <https://money.usnews.com/money/blogs/my-money/articles/shopping-holidays-the-best-days-to-shop-this-year>
 
 When to buy each thing (e.g. May for women's clothes, early June for menswear, July 4th, August for staples / apple stuff + summer clothes, November for black Friday, December for toys and games, Cyber Monday on December 1st, Super Saturday too)
+
+---
+
+<https://aftermath.site/best-active-forums-internet-today>
+
+Best still active forums in the internet today (as of late 2024, but most of these are clearly lindy)
