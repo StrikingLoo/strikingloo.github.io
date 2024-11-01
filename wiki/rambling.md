@@ -53,3 +53,9 @@ Bears were the first Lord Voldemort.
 ---
 
 When checking out a new hot unsupervised learning algorithm, something the Berkeley course guys do is test it with a 1d pair of variables. Like "oh does this GAN/distribution alignment thingamagig work? Let's imagine X and Y are 1d random variables and see how that would work". I take this as a very good first principles approach to understanding the algorithm, and would extend it to 2d for visualization too. I just think reducing example problems to small ones is a nice trick I keep stumbling upon in many different areas and it would be good to have this mapping of "for X domain, typical small problem is Y" like how in graph theory you always start induction with a K1 graph, or in DCS you use a small LTS with maybe 3 states.
+
+---
+
+Interesting transition mentioned in _The Transformation of the World_, where sailships were replaced with steamships and then, when the route allowed (as they were less flexible) with trains. In each jump, one of the big advantages was the gain in reliability and predictability: in both cases companies could leave aside part of the travel risk coming from the weather (lack of wind or excess of storms in the case of sailships) or catastrophic failures --a sunken ship loses all cargo, a train crash rarely destroyed valuable cargo completely, resulting in smaller losses.
+
+Thanks to trains, reliable schedules could be maintained, in the order of hours or minutes, where steamships allowed for planning reliably in the order of days and sailships were throroughly imprecise in their schedules.
