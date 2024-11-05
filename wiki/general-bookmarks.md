@@ -166,3 +166,9 @@ When to buy each thing (e.g. May for women's clothes, early June for menswear, J
 <https://aftermath.site/best-active-forums-internet-today>
 
 Best still active forums in the internet today (as of late 2024, but most of these are clearly lindy)
+
+---
+
+<http://sonic.net/~rteeter/grtbloom.html#demo>
+
+Bloom's Western Canon list, though he himself didn't originally want to compile one and may be taken with half a grain of salt. Worth reading may be his [The Closing of the American Mind](https://en.wikipedia.org/wiki/The_Closing_of_the_American_Mind) though it looks long for what it is.
