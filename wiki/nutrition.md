@@ -63,6 +63,19 @@ Selenium has a positive impact on your thyroid. You get a little from dairy (one
 (In the study, the subjects reduce their calorie intake by 12% for two years)
 \- [Calorie restriction in humans builds strong muscle and stimulates healthy aging genes](https://www.nih.gov/news-events/news-releases/calorie-restriction-humans-builds-strong-muscle-stimulates-healthy-aging-genes)
 
+---
+
+### On the Nutritional Effects of Boiling Carrots
+
+Comparing 100g of raw carrots versus 100g of boiled carrots:
+- Boiling removes \~40% of the Vitamin C, but other vitamins remain intact.
+- Fiber goes up as a % of total mass, due to water loss in the process.
+- Protein goes down but carrots are not a great source of protein either way.
+
+All in all, the only important loss is in Vitamin C, and one could argue the marginal incentive to eat them due to them being boiled compensates for this: clearly 60% of the Vitamin C and 95% of other nutrients are better than 0 from opting for something less nutritious instead.
+
+[Source: Comparison between raw and boiled carrots][https://tools.myfooddata.com/nutrition-comparison/170393-170394/100g-100g/1-1/1]
+
 ### Related Reading
 
 - [Longevity](/wiki/longevity)
