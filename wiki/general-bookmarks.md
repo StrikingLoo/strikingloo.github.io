@@ -143,6 +143,9 @@ Games for Engineers
 
 <https://www.bls.gov/data/inflation_calculator.htm>
 
+Mortgage Rates
+<https://www.mortgagenewsdaily.com/mortgage-rates/mnd> 
+
 ---
 
 <https://dave-choi.github.io/strategy/agricola/index.html>
