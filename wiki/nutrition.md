@@ -63,8 +63,6 @@ Selenium has a positive impact on your thyroid. You get a little from dairy (one
 (In the study, the subjects reduce their calorie intake by 12% for two years)
 \- [Calorie restriction in humans builds strong muscle and stimulates healthy aging genes](https://www.nih.gov/news-events/news-releases/calorie-restriction-humans-builds-strong-muscle-stimulates-healthy-aging-genes)
 
----
-
 ### On the Nutritional Effects of Boiling Carrots
 
 Comparing 100g of raw carrots versus 100g of boiled carrots:
@@ -75,6 +73,14 @@ Comparing 100g of raw carrots versus 100g of boiled carrots:
 All in all, the only important loss is in Vitamin C, and one could argue the marginal incentive to eat them due to them being boiled compensates for this: clearly 60% of the Vitamin C and 95% of other nutrients are better than 0 from opting for something less nutritious instead.
 
 [Source: Comparison between raw and boiled carrots][https://tools.myfooddata.com/nutrition-comparison/170393-170394/100g-100g/1-1/1]
+
+### Fiber effect in reducing LDL
+
+In particular, evidence from randomized controlled trials, observational studies, and animal models demonstrates that **dietary fiber lowers levels of total cholesterol and low density lipoprotein (LDL) cholesterol** (1–5), which are common risk factors for cardiovascular disease (1–3, 6, 7).
+https://pmc.ncbi.nlm.nih.gov/articles/PMC3290909
+
+The recommended fiber intake is around 35g/day, with an apple containing 4g, a large avocado 14g and 100g of cashews having 4g too.
+
 
 ### Related Reading
 
