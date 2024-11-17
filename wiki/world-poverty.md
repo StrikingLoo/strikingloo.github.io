@@ -13,12 +13,17 @@ They claim a quintupling of world GDP is needed to solve poverty assuming very l
 
 [The History of Poverty Has Just Begun - Our World in Data](https://ourworldindata.org/history-of-poverty-has-just-begun)
 
+![A graph depicting the income distribution of the world](/wiki/image/income-distribution-world.jpg){: loading="lazy"}
+
 ### Related reading
 
-![Three graphs depicting how "The world is awful. The world is much better. The world can be much better."](/wiki/image/awful_better_can_be_better_ourWorldInData.png)
+![Three graphs depicting how "The world is awful. The world is much better. The world can be much better."](/wiki/image/awful_better_can_be_better_ourWorldInData.png){: loading="lazy"}
 
 [The world is awful. The world is much better. The world can be much better.](https://ourworldindata.org/much-better-awful-can-be-better)
 
 [GiveWell Top Charities](https://www.givewell.org/charities/top-charities) - In case you're wondering how to have direct impact in improving the lives of the poorest people.
 
-[Poverty is back to pre-COVID levels globally, but not for low-income countries](https://blogs.worldbank.org/en/opendata/poverty-back-pre-covid-levels-globally-not-low-income-countries)
+[Poverty is back to pre-COVID levels globally, but not for low-income countries - World Bank Blog](https://blogs.worldbank.org/en/opendata/poverty-back-pre-covid-levels-globally-not-low-income-countries)
+
+[The Elemental Foe: Lifting humanity out of poverty is Job #1 - Noahpinion](https://www.noahpinion.blog/p/the-elemental-foe)
+
