@@ -13,11 +13,11 @@ They claim a quintupling of world GDP is needed to solve poverty assuming very l
 
 [The History of Poverty Has Just Begun - Our World in Data](https://ourworldindata.org/history-of-poverty-has-just-begun)
 
-![A graph depicting the income distribution of the world](/wiki/image/income-distribution-world.png){: loading="lazy"}
+![A graph depicting the income distribution of the world](/wiki/image/income-distribution-world.png){: loading="lazy" style="max-width:70%"}
 
 ### Related reading
 
-![Three graphs depicting how "The world is awful. The world is much better. The world can be much better."](/wiki/image/awful_better_can_be_better_ourWorldInData.png){: loading="lazy"}
+![Three graphs depicting how "The world is awful. The world is much better. The world can be much better."](/wiki/image/awful_better_can_be_better_ourWorldInData.png){: loading="lazy" style="max-width:70%"}
 
 - [The world is awful. The world is much better. The world can be much better.](https://ourworldindata.org/much-better-awful-can-be-better)
 - [GiveWell Top Charities](https://www.givewell.org/charities/top-charities) - In case you're wondering how to have direct impact in improving the lives of the poorest people.
