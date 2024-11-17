@@ -13,7 +13,7 @@ They claim a quintupling of world GDP is needed to solve poverty assuming very l
 
 [The History of Poverty Has Just Begun - Our World in Data](https://ourworldindata.org/history-of-poverty-has-just-begun)
 
-![A graph depicting the income distribution of the world](/wiki/image/income-distribution-world.jpg){: loading="lazy"}
+![A graph depicting the income distribution of the world](/wiki/image/income-distribution-world.png){: loading="lazy"}
 
 ### Related reading
 
