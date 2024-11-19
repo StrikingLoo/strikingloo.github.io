@@ -38,6 +38,16 @@ body {width: 90%;}
   margin-bottom: 1em;
 }
 
+.abstract {
+  background:var(--abstract-bkg-color);
+  border:2px solid;
+  font-style:italic;
+  margin:3%;
+  text-align: center;
+  border-color: #ccc;
+  padding:2%;
+}
+
 img { max-width: 512px;
   width: 95%; height: auto; margin-left: auto;
   margin-right: auto; display: block; text-align: center;
