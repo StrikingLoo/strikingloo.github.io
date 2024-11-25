@@ -152,11 +152,11 @@ There was often an emphasis in the restoration of customs, as per common law.
 
 ## Education and Literacy (Lecture 17)
 
-The population at the beginning of the 16th century was not uneducated, but unschooled, as school participation rates were around 10%; this reserved for lawyers, the clergy adn certain trades (like tradesmen who would need to learn foreign languages).
+The population at the beginning of the 16th century was not uneducated, but unschooled, as school participation rates were around 10%; this reserved for lawyers, the clergy and certain trades (like tradesmen who would need to learn foreign languages).
 
 By the beginning of the 17th century this had greatly changed. There were two big driving forces for this:
 
-- **Renassaince Humanism**: Not centered in secular values, but in combining Christianity with reading the ancient classics, to form an educated aristocracy. Models of education emerge that sound very foreign to current ears e.g., learn Latin from 7 to 14, Greek from 14 to 17, then read Plato and study Ethics and Philosophy, plus horsemanship, dancing and the _military arts_.
+- **Renaissance Humanism**: Not centered in secular values, but in combining Christianity with reading the ancient classics, to form an educated aristocracy. Models of education emerge that sound very foreign to current ears e.g., learn Latin from 7 to 14, Greek from 14 to 17, then read Plato and study Ethics and Philosophy, plus horsemanship, dancing and the _military arts_.
 - **Protestantism**: Educate the clergy and even the laymen, as it was important that people could read the Bible and for clergymen to be able to explain theology and answer questions, as well as educate the public at large.
 
 This extends the education from the elite to the general population. The 16th century saw a transition from private tutors at home to grammar schools and then heading to Cambridge or Oxford.
@@ -167,7 +167,7 @@ By 1563 26% members of parliament had attended university. By 1642, 50% had.
 
 In the mid to late 16th century, funded by clergymen, merchants and gentlemen usually from London, a plethora of grammar schools were founded, to the point where for instance Lancashire had one on every town. Education here was mostly classical. They taught the 4 r's: reading, 'riting, 'rithmetic and religion.
 
-By the early 17th century most towns had a grammar schools and many villages had a petty school (which only taught literacy and basic arithmetic).
+By the early 17th century most towns had a grammar school and many villages had a petty school (which only taught literacy and basic arithmetic).
 
 Most who attended university were sons of noblemen, or of the richest sort of merchants or professionals, as they were very costly. The same happened with grammar schools, but petty schools did penetrate most of society.
 
