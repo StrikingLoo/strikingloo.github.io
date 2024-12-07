@@ -3,7 +3,8 @@ layout: post
 title: "Draft / Limited Play - Magic: the Gathering"
 date: 2024-12-07
 tags: mtg, games, fun
-description: ""
+description: "Guides to Magic: the Gathering drafting"
+abstract: "These are my notes and excerpts from guides that go a little beyond the classic BREAD advice (which seems to be considered somewhat passé in the current meta)."
 language: English
 importance: 6
 ---
