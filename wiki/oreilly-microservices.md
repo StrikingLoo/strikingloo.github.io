@@ -2,7 +2,7 @@
 layout: post
 title: "Building Microservices by Sam Newman - O'Reilly"
 date: 2024-03-11
-tags: programming, books, notes, web development, data engineering
+tags: programming, book, books, notes, web development, data engineering
 description: "My notes -mostly interesting quotes and excerpts- on the book Building Microservices, 2nd Edition, by Sam Newman"
 language: English
 importance: 4

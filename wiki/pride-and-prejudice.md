@@ -2,7 +2,7 @@
 layout: post
 title: "Quotes and Passages from Pride and Prejudice"
 date: 2024-01-22
-tags: books, excerpts, quotes
+tags: book, books, excerpts, quotes
 description: "My favorite quotes and passages from Pride and Prejudice"
 language: English
 importance: 4

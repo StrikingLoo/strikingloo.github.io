@@ -2,7 +2,7 @@
 layout: post
 title: "Otaku: Japan's Database Animals - Azuma Hiroki"
 date: 2024-07-09
-tags: book
+tags: book, books, Japan
 description: "A book about otaku subculture from a postmodern viewpoint, written around the turn of the century."
 abstract: "I gave this book a shot as it was recommended by the Youtuber Hazel. I strongly disliked it. Too postmodern for me, many terms are thrown around and used as if they had deep meaning but are never properly defined, so you have to go off vibes. Then there is lots of pattern matching to these loosely defined ideas, to the point where they could fit many different scenarios, but these multiple interpretations are treated as something deep or meaningful instead of random rearrangements of phenomena to fit a theory's scaffolding. A few discussions on otaku history were moderately interesting but all in all the book did not feel worth reading, with its biggest saving grace being its brevity. I cannot say I am leaving this book better informed, having gained any insights or changed my mind about anything."
 language: English
