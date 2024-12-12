@@ -15,7 +15,7 @@ Cards Affecting Board State (CABS) are, in order of descending importance, **cre
 
 You should try to create a simple, well-curved, 2-color beatdown deck based on only these kinds of cards.
 
-Life gain, combos, gimmicks, nice uncommons that require gymnastics to trigger, powerful but complex enchantments, should not be prioritized and ideally completely avoided. Just play creatures ollowing a good curve, and use removal to control the board. It is not optimal but it is leaps beyond people not following this advice (including forcing them to mulligan too much).
+Life gain, combos, gimmicks, nice uncommons that require gymnastics to trigger, powerful but complex enchantments, should not be prioritized and ideally completely avoided. Just play creatures following a good curve, and use removal to control the board. It is not optimal but it is leaps beyond people not following this advice (including forcing them to mulligan too much).
 
 > You want cards that are consistently good rather than cards that are sometimes very good but sometimes very bad.
 
