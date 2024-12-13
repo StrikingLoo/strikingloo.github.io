@@ -76,3 +76,22 @@ It mentions if you find a specific archetype that no one is picking, such that i
 You basically have more reason to commit if you have picked better cards so far.
 
 [Drafting the Correct Way - Paulo Vitor Damo da Rosa](https://www.threeforonetrading.com/en/drafting-the-correct-way)
+
+
+### Drafting the Hard Way
+
+> The single thing people do that ruins most drafts is stick to their early picks. In the vast majority of draft formats, you should be trying to figure out what is underdrafted at the table so that you can have access to a lot of what you are looking for in packs two and three. Also, by identifying which colors or archetypes the people to your right aren't playing, you end up having several packs to get incredibly powerful picks from. If you stick to your first picks, you often end up with few packs to select first-pick quality cards from.
+
+(...)
+
+> A perfect example of this is DGR if you start out in a Gatecrash guild. Since you don't care much about pack three, and pack two is your entire world, if your first two picks put you into a specific Gatecrash guild, you can just jam that guild and not bother to read what the people passing to you are playing, or what is being underdrafted in the pod, since you basically live and die by only pack two, and you are only looking for strong cards out of the first few picks of pack two. Draft formats where this is correct like DGR are few and far between though.
+
+> Going for a combo or cards without synergy that don't fit their deck's plan, or are difficult to cast but have a high power level. (...) You don't need to be in the best color or archetype, you don't need a way to win, you don't even need particularly powerful cards to win. If your deck is fully functional, meaning the cards you do have work together, your curve is good for the format, and your mana allows you to cast your spells when you need to cast them (some formats you are under more pressure (Gatecrash), some you have a little more time (Rise of Eldrazi), that is good enough to allow you to 3-0 any pod.
+
+> When you have good, fully functional draft decks, it is very easy to beat a better deck. When you have trainwrecks/bad draft decks it is very difficult to beat anyone.
+
+Bottom line: 
+
+> if you are willing to read every draft, be open to drafting whatever archetype is available that draft, and even drop bomb-rare first picks, you can put together a good draft deck in almost every draft you do and you can be a highly successful booster drafter.
+
+[Drafting the Hard Way](https://www.channelfireball.com/article/Stark-Reality-Drafting-the-Hard-Way/397b71cd-11d4-4644-9e77-5c08846d30c0/)
