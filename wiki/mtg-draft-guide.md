@@ -40,3 +40,37 @@ Other ways to measure cards' worth are: Vanilla test (an X/X for X mana, + value
 For Quadrant Theory, it helps to think how a card would help in each of the phases: Opening for the early game, Parity when the initial hand is played and we're in the midgame, acting on draws, Winning for finishers that do the last mile, or Losing for disrupters if the opponent has the upper hand.
 
 _[Everything You Need to Know About BREAD in MTG - Draftsim](https://draftsim.com/bread-mtg/)_
+
+### Drafting the Correct Way
+
+If you're picking cards from two colors and a very good card of a third color appears on the fourth pick, what do you do? This question reminds one of the [explore-exploit trade-off](/wiki/reinforcement-learning-sutton#multi-armed-bandits).
+
+> I don’t want to get too bogged down on definitions, but, at its core, the philosophy is about immediate gains (the card that makes your deck the best now) versus possible future gains (the card that might allow you to play a more powerful deck down the line). It’s not only “red card” versus “blue card” – it’s “solidifying yourself in a red deck” versus “leaving the door open to playing a blue deck”
+
+(Note the explore-exploit trade-off plus greedy vs more diversified strategy)
+
+I see [CABS](#cabs---board-affecting-cards-or-nothing) as a simple heuristic to go for a relatively greedier approach and prefer it whenever possible.
+
+> If you take the **Red card**, you will have selected a card that you will very likely play, and it will **likely improve the final product** (whereas with the Blue card you’re specifically selecting a card that you will likely not play, and making your deck weaker in the process).<br>You also **cut red more, so you lower the risk of your neighbor deciding to move into Red** and getting your cards in pack two.
+
+> If you pick the Blue card, you lose all of the above, but you gain in future possibilities.<br>You are basically paying a price from your Red deck for the potential to end up with a completely different deck that is better. Maybe, just maybe, there is a super strong Blue deck for the grabs on the table, and, if you take the Blue card here, that deck can be yours.
+
+> The reality is that you should draft the Correct Way, and sometimes that’s going to be the Easy Way, sometimes it’s going to be the Hard Way. Pigeonholing yourself to either of these strategies upfront is inevitably going to lead to failure, because the correct way to draft changes, depending on a variety of factors that are unique to each specific format and situation.
+
+> Contrast \[picking 3 cards of each color] to someone who has ten Red cards at the end of pack one, and it’s easy to see which person is more likely to have a train-wreck. So the reason to stay open is not to avoid trainwrecks, but to reap the rewards of powerful picks very late.
+
+He mentions the value of a card is its value above replacement (delta between a card and the next best thing you already have), so experimentation carries a smaller risk than would be estimated by naively subtracting the value of the entire card. Expected value of a card is its abstract value times chance of playing it.
+
+> Factor 2: How replaceable is a particular effect in the format?
+
+> Factor 3: How synergy based is the format?
+
+> As a general rule, the more synergy based a format is, the more it pays off to speculate, because that’s when you really reap the rewards of being in the open colors.
+
+It mentions if you find a specific archetype that no one is picking, such that its common cards are very good, it justifies exploration much more.
+
+> Factor 4: How good is what you already have, and how flat is the power level of the rest of the set?
+
+You basically have more reason to commit if you have picked better cards so far.
+
+[Drafting the Correct Way - Paulo Vitor Damo da Rosa](https://www.threeforonetrading.com/en/drafting-the-correct-way)
