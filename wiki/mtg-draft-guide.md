@@ -61,6 +61,8 @@ I see [CABS](#cabs---board-affecting-cards-or-nothing) as a simple heuristic to 
 
 He mentions the value of a card is its value above replacement (delta between a card and the next best thing you already have), so experimentation carries a smaller risk than would be estimated by naively subtracting the value of the entire card. Expected value of a card is its abstract value times chance of playing it.
 
+> Factor 1: How Deep is the Card Pool in the Format?
+
 > Factor 2: How replaceable is a particular effect in the format?
 
 > Factor 3: How synergy based is the format?
