@@ -200,9 +200,9 @@ Cicero, almost by the strength of his intellect and his oratorial skills alone, 
 
 ---
 
-> "A clearly written work is one in which the reader knows, at all times, what the writer is writing about.<br>Brevity is the elimination of extraneous detail. In other words, brevity is saying only what is important."
+> "A clearly written work is one in which the reader knows, at all times, what the writer is writing about. (...) <br>Brevity is the elimination of extraneous detail. In other words, brevity is saying only what is important."
 
-A quote for which I unfortunately lost the source.
+[Areopagus - XXV](https://areopagus.culturaltutor.com/posts/areopagus-volume-xxv)
 
 ### Quintilian on writing
 
