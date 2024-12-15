@@ -314,3 +314,92 @@ By the time of the last convict ship in 1868, 162,000 people had been transporte
 
 > “Only now did urban land become an investment and an object of speculation, valued not for its agricultural uses but simply because of its location.”
 
+> “The definition that is common today takes urbanization to be a process of social acceleration, compression, and reorganization, which may occur under a range of very different circumstances. The most important outcome of this process was the formation of spaces of increased human interaction in which information was swiftly exchanged and optimally employed, and new knowledge could be created under favorable institutional conditions.”
+
+> “Urbanization follows a logic of its own. It is not a by-product of other processes, such as industrialization, demographic growth, and nation-state building”
+
+### Urbanization and Urban Systems
+
+> “During the longest part of recorded history, the world’s most populous cities were in Asia and North Africa. Babylon had probably passed the 300,000 population mark by 1700 BC. Rome under the emperors had a larger population than even the leading Chinese cities at that time, but it was a unique case. It embodied itself, not “Europe.” In the second century AD more than a million people lived in Rome—a figure not reached by Beijing until the late eighteenth century or by London until shortly after 1800.”
+
+> “24.4 million city dwellers in continental Europe in 1830, and 76.1 million in 1890.”
+
+> “One exception, though, was the Balkans. It was highly urbanized in comparison with other regions at a similar level of economic development. This was not the result of a specifically nineteenth-century dynamic but the legacy of earlier developments: above all, the high value that the Ottomans attached to urban culture, and the importance of fortified garrison cities. After the end of Ottoman rule, a number of Balkan countries went through a phase of deurbanization. A particularly dramatic instance was Serbia, during the turmoil that lasted from 1789 to 1815. In Belgrade, which had approximately 6,000 houses in 1777, only 769 were recorded in 1834. The Serbian revolution destroyed the institutions of the Ottomans with such thoroughness that even their urban structure was dispensable.”
+
+### Between Deurbanization and Hypergrowth
+
+> “Rome in 1913, with a total of 600,000, had climbed above one-half of the dimensions it had in antiquity. If we assume that roughly 150,000 people lived in Periclean Athens, the Greek capital did not regain its ancient size before 1900.”
+
+> “Colonial North America was a rural world, in which the towns were so small that there could be no question of urban anonymity. Only a few—Boston, Philadelphia, New York, Newport, and Charleston—reached the size of an English provincial city. The big urbanization push in the United States came after 1830 and lasted a hundred years; the share of the population living in cities with more than 100,000 inhabitants has not appreciably increased since 1930.”
+
+> “Driven by the rapid development of an export economy on an agricultural frontier, a city like Buenos Aires—which in Spanish colonial times had been of no great importance—could rocket from a population of 64,000 in 1836 to one of 1,576,000 in 1914.”
+
+> “The period between 1850 and 1910 witnessed the highest annual rate of growth of the urban population in the whole history of Europe.”
+
+> “Economic success in the nineteenth century went to countries with an internally integrated and differentiated city system that was also open to the outside.”
+
+> “Until the 1840s the Navigation Laws governed many overseas commercial relationships in the British Empire, stipulating, inter alia, that an export producer such as Jamaica, in return for a monopoly over its products in the British market, had to obtain its imports from the United Kingdom.”
+
+> “At exactly the same time that the Navigation Laws ceased to operate, British pressure in China ended the monopoly privileges of Canton as a transshipment port for the whole of the overseas trade with Europe.”
+
+### Specialized Cities, Universal Cities
+
+> “a metropolis is a large city that (1) gives widely recognized expression to a certain culture, (2) controls an extensive hinterland, and (3) attracts large numbers of people from other areas to come and live in it. If, in addition, a metropolis forms part of a global network, it deserves the title of a “world city.”
+
+> “Before intercontinental telephony, radio communication, and airline links became normal and regular parts of life, it cannot be said that the largest and most important cities in various continents formed a permanent fabric of interaction and communication.”
+
+> “By 1840 the bathing resort had taken shape in England and Wales, with most of the characteristic features that we still see today. The prototype was Blackpool on the West Coast, whose 47,000 permanent residents catered (in 1900) for more than 100,000 vacationers.”
+
+> “While a large number of cities have services constantly on offer, the importance of the other three functions may be said to define three different kinds of city: the capital, the industrial city, and the port.”
+
+> “It is a striking fact that few nineteenth-century cities in the world followed the model of London or Paris to become metropolises with all-embracing functions. Even in dynamic counterexamples such as Tokyo and Vienna, which rested on foundations going back hundreds of years”
+
+> “Charles Dickens, who passed through in the spring of 1842, was distinctly unimpressed: it was a city not of magnificent distances but of “magnificent intentions”: “spacious avenues, that begin in nothing, and lead nowhere; streets, mile-long, that only want houses, roads and inhabitants; public buildings that need but a public to be complete.”
+
+### The Golden Age of Port Cities
+
+> “a clear distinction should be drawn, however, between fishing villages and port cities. In all civilizations fisherfolk live in small, often isolated, communities that preserve their special way of life for an unusually long time. Port cities, on the other hand, are plugged into wider and more up-to-date social trends, in which world market fluctuations determine economic conditions.”
+
+> “a clear distinction should be drawn, however, between fishing villages and port cities. In all civilizations fisherfolk live in small, often isolated, communities that preserve their special way of life for an unusually long time. Port cities, on the other hand, are plugged into wider and more up-to-date social trends, in which world market fluctuations determine economic conditions.”
+
+> “The total volume of shipping entering London from abroad rose almost thirteenfold between 1820 and 1901, from 778,000 to 10 million tons, while the largest ships were ten times larger than before.”
+
+> “In the nineteenth century, inadequate port facilities sometimes proved a serious hindrance to the blossoming of trade. In Buenos Aires, which lacked a serviceable natural harbor, ocean steamers continued through the 1880s to anchor out at sea, loading and unloading by means of barges. Then the wing of the Argentine oligarchy that was prepared to shoulder the cost of a modern port won the day. In 1898 the project on the River Plate reached completion, providing the city with nine kilometers of cement quays, deep sea basins, and modern loading equipment.”
+
+> “The general rule, valid on all continents, was that port cities without an adequate rail link had no future. The great port cities of the modern age are points at which land and water transport meet up and interact with each other.”
+
+### Colonial Cities, Treaty Ports, Imperial Cities
+
+> “The minimum that even the poorest colonial capital required was a governor’s palace, an army barracks, and a church; a hospital and a couple of villas for European officials and merchants completed the core. Whether whole districts sprang up in the European style depended on the size of the foreign presence in the city.”
+
+> “The crassest monuments of colonialism, the governor’s palace and the cathedral, were erected with brutal symbolism on the sites left vacant by demolished pagodas and Confucian examination halls. Whereas the British in Calcutta built their colonial city beside the indigenous old town, the French colonial authorities put theirs in its place.”
+
+> “A series of “unequal treaties” gave Westerners unilateral privileges, especially immunity from legal action in Asian courts, and trade regimes were set up that denied local governments control over customs policy.”
+
+### Internal Spaces and Undergrounds
+
+> “One thinks primarily of new links: the first intercity line in Britain opened in 1838 between London and Birmingham; the first in India in 1853 between Bombay and the small town of Thana. Proximity to a river or the sea was no longer decisive for the development of a locality. Cities became enmeshed in national and later in cross-border networks. This happened in Europe and the East Coast of North America within the space of two or three decades, mostly in the 1850s and 1860s.”
+
+> “The great pioneering age of railroad construction, which brought with it a novel technology and aesthetic, was the 1840s in the case of Britain and central Europe.”
+
+> “By the end of the urban railroad transformation, railroad companies possessed between 5 percent (London) and 9 percent (Liverpool) of the land in British cities and indirectly influenced the use of another 10 percent.”
+
+> “People arriving by train in a European city around 1870 used a technology that is essentially still in use today—and a few moments later found themselves in an archaic world of horse transport. In 1800 all cities in the world were still filled with pedestrians and were therefore, in this respect, at the same evolutionary stage. Their main outward difference was in the degree of their use of horses, which was not possible everywhere or available to everyone without restriction. In Chinese cities those who did not go about on foot had porters carry them in sedan chairs; horses were uncommon.”
+
+> “Later the horse-drawn bus developed as a form of public transport, operating a regular timetable on fixed routes and for a set price. This was an American invention, first introduced in 1832 in New York. It took twenty-four years for it to appear in Paris.”
+
+> “The streetcar brought a real revolution to the modern city: it was twice as fast and only half as expensive as a horse-drawn tram and finally made it possible for ordinary workers to commute to work. Tumbling fares had the same consequences as in the case of transatlantic steamships decades earlier. In Britain the number of trips per capita via public transportation soared from a mere eight in 1870 to 130 in 1906.”
+
+> “The largest pioneering enterprise in urban public transport was the London Underground, the first in the world, which combined a railroad system with tunneling techniques tested in the construction of sewers. It was a private initiative, originating not in farsighted urban planning but in the vision of one man, Charles Pearson. Throughout the nineteenth century it remained a profitoriented project in the spirit of capitalist entrepreneurship. Work on the Underground began in 1860. Three years later, the first six-kilometer stretch of the Metropolitan Line (“Metro” would become a standard name all over the world) went into operation.”
+
+> “the pedestrian city of the early nineteenth century was positively medieval: a place where executions were still one of the favorite popular amusements (140 people were publicly hanged in London between 1816 and 1820). It was also a dark place. House lights were put out early, and one could walk in the streets only with the help of torches and lanterns. Gas lighting was first installed in cotton factories, to lengthen the working day. In 1807 the first gaslights came on in London streets, and by 1860 some 250 German cities had followed suit. In Japan, kerosene and gas lighting were introduced simultaneously in the mid-1870s.”
+
+## Frontiers 
+
+> “People flow into the city and to the frontier; these are the two great magnets for nineteenth-century migration. As spaces of boundless possibility, they attract migrants like nothing else in the age.”
+
+### The North American West
+
+> “After 1830, for example, bison hides became more important than meat produce in cross-frontier trade, and it was around then that the problem of excessive herd depletion set in. An annual “yield” of six to seven animals per person was manageable (as we know today), but anything above that meant a dangerous level of overexploitation.<br>
+The livelihood of the Plains Indians, whose reaction to the demand stimulus was rational economically but not ecologically, faded before their eyes. As Pekka Hämäläinen has demonstrated for the Comanche, the very success of the Southern Plains horse economy was its undoing: an overabundance of horses and overgrazing “proved too heavy for the grassland ecology, triggering a steep decline in bison numbers.”43 White hunters also muscled in and organized the slaughter of bison on a scale unknown to the Indians, averaging as many as twenty-five daily per hunter. Between the end of the Civil War and the late 1870s, the number of bison on the Great Plains fell from 15 million to just a few hundred.”
+
