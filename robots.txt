@@ -1,0 +1,27 @@
+User-agent: *
+Disallow: /
+
+# Block common Chinese crawler user-agents
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Sogou web Spider
+Disallow: /
+
+User-agent: Sogou inst spider
+Disallow: /
+
+User-agent: 360Spider
+Disallow: /
+
+# Allow specific legitimate bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+Sitemap: https://strikingloo.github.io/sitemap.xml
