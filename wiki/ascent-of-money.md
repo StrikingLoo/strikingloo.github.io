@@ -131,3 +131,4 @@ There was a time when most such derivatives were standardized instruments produc
 - [Marginal Revolution University - Macroeconomics (MOOC notes)](/wiki/macroeconomics-mru)
 - [In Defense of Finance - PutANumOnIt](https://putanumonit.com/2018/12/14/defense-of-finance/)
 - [Economics of Money and Banking - Coursera](https://www.coursera.org/learn/money-banking)
+- [How Mathematics Built the Modern World](https://worksinprogress.co/issue/how-mathematics-built-the-modern-world/)
