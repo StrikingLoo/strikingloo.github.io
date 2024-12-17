@@ -140,10 +140,6 @@ note_category: book-notes
 
 > “ In December 1823, US President James Monroe declared the eponymous doctrine that, though born out of specific problems in foreign policy, signaled a turning away from the Atlantic and a reorientation westward toward the interior of the continent. Subsequent trends down to the 1890s give the impression that, after a falling out that climaxed in the 1860s with the US Civil War and the French intervention in Mexico, Europeans and Americans drew closer again but with much hesitation.”
 
-Excerpt From
-The Transformation of the World
-Camiller, Patrick, Osterhammel, Jrgen
-
 > “From Johann Gottfried Herder and his followers in the early nineteenth century comes the Romantic triad that is applied to the history of nations: ”
 
 > “From Johann Gottfried Herder and his followers in the early nineteenth century comes the Romantic triad that is applied to the history of nations:  Latin—Germanic—Slav.”
