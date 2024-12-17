@@ -16,7 +16,7 @@ note_category: book-notes
 
 > “If these themes had been developed in a “panoramic” scope, the requisite scale of the book would have made excessive demands on the reader’s patience as much as on the author’s stamina.”
 
-“The theater inaugurated in 1911 in Hanoi, the capital of French Indochina, was especially massive, dwarfing many in the mother country with its 750 seats for the fewer than three thousand French in the city.”
+> “The theater inaugurated in 1911 in Hanoi, the capital of French Indochina, was especially massive, dwarfing many in the mother country with its 750 seats for the fewer than three thousand French in the city.”
 
 ### Chapter 2: Treasuries of Memory and Knowledge
 
@@ -401,5 +401,7 @@ By the time of the last convict ship in 1868, 162,000 people had been transporte
 ### The North American West
 
 > “After 1830, for example, bison hides became more important than meat produce in cross-frontier trade, and it was around then that the problem of excessive herd depletion set in. An annual “yield” of six to seven animals per person was manageable (as we know today), but anything above that meant a dangerous level of overexploitation.<br>
-The livelihood of the Plains Indians, whose reaction to the demand stimulus was rational economically but not ecologically, faded before their eyes. As Pekka Hämäläinen has demonstrated for the Comanche, the very success of the Southern Plains horse economy was its undoing: an overabundance of horses and overgrazing “proved too heavy for the grassland ecology, triggering a steep decline in bison numbers.”43 White hunters also muscled in and organized the slaughter of bison on a scale unknown to the Indians, averaging as many as twenty-five daily per hunter. Between the end of the Civil War and the late 1870s, the number of bison on the Great Plains fell from 15 million to just a few hundred.”
+The livelihood of the Plains Indians, whose reaction to the demand stimulus was rational economically but not ecologically, faded before their eyes. As Pekka Hämäläinen has demonstrated for the Comanche, the very success of the Southern Plains horse economy was its undoing: an overabundance of horses and overgrazing “proved too heavy for the grassland ecology, triggering a steep decline in bison numbers.” White hunters also muscled in and organized the slaughter of bison on a scale unknown to the Indians, averaging as many as twenty-five daily per hunter. Between the end of the Civil War and the late 1870s, the number of bison on the Great Plains fell from 15 million to just a few hundred.
+
+
 
