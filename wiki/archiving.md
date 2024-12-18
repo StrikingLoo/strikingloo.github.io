@@ -239,6 +239,4 @@ Source: [Nabeelqu's Advice post](https://nabeelqu.co/advice)
 - [Sad Infra](https://beepb00p.xyz/sad-infra.html): Imagine if all the data we generate was easily exportable and mergeable instead of being in distributed silos? Here's some tools the author wishes existed.
 - [Edwin Wenink's Zettelkasten](https://www.edwinwenink.xyz/zettelkasten/) with 823 (!) entries.
 - [Simon Späti's Second Brain](https://brain.sspaeti.com/). Beautiful design and a great experience to browse in.
-
-
-
+- [Archive Team](https://wiki.archiveteam.org/index.php/Main_Page)

@@ -95,3 +95,23 @@ Bottom line:
 > if you are willing to read every draft, be open to drafting whatever archetype is available that draft, and even drop bomb-rare first picks, you can put together a good draft deck in almost every draft you do and you can be a highly successful booster drafter.
 
 [Drafting the Hard Way](https://www.channelfireball.com/article/Stark-Reality-Drafting-the-Hard-Way/397b71cd-11d4-4644-9e77-5c08846d30c0/)
+
+
+### _Required Reading_ by DoggertQBones
+
+> The Game Plan System is a way of approaching Magic that is broken down into two large segments: the thought process and the knowledge base. The thought process is how you think about Magic when you’re playing, and the knowledge is as it sounds, knowledge of a deck, metagame, play patterns, etc.
+
+> Although both are important, I think the thought process is the more important of the two as well as being significantly harder to grasp. The knowledge is generally easier (...) The thought process though, can only be achieved through constant and meticulous effort to change the way you naturally want to go about Magic.
+
+He contrasts trying to 'have the best turn possible' every turn with actually playing optimally (basically taking a greedy approach vs a long term one). Instead of what the best play is, thinking 'how do I win this game?'.
+
+> When I started to learn how to play Control decks years ago, I was terrible at them, but not for the reason you’d assume. I timed my spells well, I used my interaction well, I was answering my opponent’s game plan quite well even when I had little experience with the archetype. Then why was I so bad? I didn’t know when to “flip the switch” as I just assumed Control is all about controlling the game.
+
+> I ask how I \[can win the game], I consider the general matchup conventions at play, I evaluate the board state and my hand to figure out what I need to happen to win, and I execute that plan with my available resources.
+
+He basically boils planning down to
+- Matchup conventions
+- How do I win?
+- How does the opponent win? (or rather, 'How do I lose?')
+
+[How to Think in Game Plans](https://mtgazone.com/required-reading-the-best-magic-advice-youll-ever-get-how-to-think-in-game-plans/)
