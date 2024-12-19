@@ -8,7 +8,7 @@ importance: 6
 abstract: "Keigo is used in formal Japanese. Considered the polite form of the language, this is my summary of how it works (taken from wikipedia and the genki books)."
 ---
 
-# Honorifics (keigo):
+## Honorifics (keigo):
 
 _keigo_ (敬語), fall under three main categories:
 
@@ -84,7 +84,7 @@ phrase would be used to express the idea that "I will carry it if you please."
 | ask| 聞く kiku / 尋ねる tazuneru | | 伺う ukagau |
 | visit| 訪ねる tazuneru | | 伺う ukagau |
 
----
+
 ## Bottom line:
 
 While keeping tense:
