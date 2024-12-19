@@ -41,5 +41,14 @@ Feed-forward layers become highly dense, HOWEVER, the attention layers become ex
 
 For older articles or links, [search LLM on the wiki](/tagged?q=LLM).
 
+---
 
+> AI may be reaching its "platform shift" moment. It shares a lot of the same positive qualities and challenges I recognized in early cloud.
 
+> If this is true, we're in the extremely early innings of a very long game. If you take AWS launching S3 and EC2 as "time 0" of the cloud platform shift, then it took another decade or so for the ecosystem to mature and for long-time "legacy" incumbents to begin to be significantly disrupted.
+
+> Admittedly, I feel the hype around AI has a significantly broader social reach than cloud, so I think the time horizons on market maturity (if one develops) are shorter. But still, I predict at least many years of "open window" early-mover opportunity.
+
+The author compares AI (LLMs) to Cloud, mentions the biggest difference between Cloud and LLMs vs, e.g., web3 is immediate value, and how integrating LLMs into existing apps, without losing original functionality, can lift their value. How there may be an evolution in software properties (and user expectations) making LLM incorporation a key differentiator that allows newcomers to eat slow-moving established players' lunch, and how it took about a decade for cloud to disrupt big established players (including governments) so LLMs may take a while to mature and show their full hand.
+
+[Growth of AI Through a Cloud Lens - Mitchell Hashimoto](https://mitchellh.com/writing/ai-through-a-cloud-lens)
