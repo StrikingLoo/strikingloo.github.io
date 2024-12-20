@@ -83,24 +83,24 @@ If you have anything to say about one of the articles, you find an error in one 
 
 ## Size of the Site
 
-In case someone may find it interesting, as we digital garden / personal knowledge management types like comparing sizes, here's how big the whole site is. I will update this every few months, as it doesn't grow that quickly anyways. _Last updated: March 6th, 2023._
+In case someone may find it interesting, as we digital garden / personal knowledge management types like comparing sizes, here's how big the whole site is. I will update this every few months, as it doesn't grow that quickly anyways. _Last updated: Dec 19th, 2024._
 
 ```
 Wiki
 ----
     Markdown files: 
-        107
+        116
     lines: 
-        12484
+        14300
     word count: 
-        162402
+        181140
 
 Blog 
 ----
     Markdown files: 
-        16
+        19
     lines: 
-        2408 total
+        2842 total
     word count: 
-        28002 total
+        31934 total
 ```
