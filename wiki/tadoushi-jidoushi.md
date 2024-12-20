@@ -3,7 +3,7 @@ layout: post
 title: "Transitive and Intransitive Verbs in Japanese - Tadoushi and Jidoushi"
 date: 2024-12-19
 tags: Japanese
-description: ""
+description: "Explanation and examples for transitive vs intransitive verbs, borrowing from Imabi"
 language: English
 importance: 3
 ---
@@ -41,4 +41,4 @@ Examples:
 
 These are the most painful kind of verb pairs: you only change one into the other by adding 'e', but it can go both ways: 開く→開ける ; 割れる→割る (intrans. → trans.)
 
-https://imabi.org/transitivity-i-transitive-intransitive-forms/
+[Source: Imabi](https://imabi.org/transitivity-i-transitive-intransitive-forms/)
