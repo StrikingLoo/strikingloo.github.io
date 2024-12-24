@@ -144,6 +144,7 @@ Games for Engineers
 <https://www.bls.gov/data/inflation_calculator.htm>
 
 Mortgage Rates
+
 <https://www.mortgagenewsdaily.com/mortgage-rates/mnd> 
 
 ---
@@ -175,3 +176,9 @@ Best still active forums in the internet today (as of late 2024, but most of the
 <http://sonic.net/~rteeter/grtbloom.html#demo>
 
 Bloom's Western Canon list, though he himself didn't originally want to compile one and may be taken with half a grain of salt. Worth reading may be his [The Closing of the American Mind](https://en.wikipedia.org/wiki/The_Closing_of_the_American_Mind) though it looks long for what it is.
+
+---
+
+The death of Glitch and birth of Slack, a tale that brings me nostalgia.
+
+<https://buildingslack.com/the-death-of-glitch-the-birth-of-slack/>
