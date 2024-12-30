@@ -18,3 +18,5 @@ importance: 4
 [Larry MacDougall](https://larrymacdougallart.bigcartel.com/category/art)
 
 [Naoki Ikushima](https://www.creativeuncut.com/art_octopath-traveler_b.html)
+
+[Lana - Wanderwood](https://lanawanderwood.tumblr.com/)
