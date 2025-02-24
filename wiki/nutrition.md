@@ -81,6 +81,12 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC3290909
 
 The recommended fiber intake is around 35g/day, with an apple containing 4g, a large avocado 14g and 100g of cashews having 4g too.
 
+### Milk effect on Cancer
+
+> Drinking a half-pint of milk every day could cut risks of bowel cancer, aka colorectal cancer, by nearly 20%, according to a study of more than 500,000 postmenopausal women’s diets over almost two decades. Every 300mg daily serving of calcium consumed (daily recommendation is ~1,000mg), whether in dairy or nondairy form, was linked with a 17% lower risk of bowel cancer, which is the third-most prevalent cancer in the world. Diagnoses among 25- to 49-year-olds jumped 22% from the 1990s to 2018, and the reason isn’t clear. More than half of bowel cancer cases are preventable, though. For example, 1 in 5 are linked to diets heavy with red or processed meats.
+
+Source: [The Guardian](https://www.theguardian.com/science/2025/jan/08/daily-glass-of-milk-may-cut-bowel-cancer-risk-by-fifth-research-finds) via Morning Brew.
+
 
 ### Related Reading
 
