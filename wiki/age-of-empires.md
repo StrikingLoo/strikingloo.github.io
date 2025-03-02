@@ -146,4 +146,15 @@ From 1300 ELO
 
 > You use MAA to push and kill a few villagers (typically 3 and the scout to block the trapped villager, repeatedly killing off villagers one by one). This pushes you back a minute, but will push the oponent back by more if you kill 3 or more villagers.<br>This strategy is more complex than following the fast archers build order, but while it is one minute slower it hopefully delays your oponent by more.
 
+### When to get Upgrades
+
+Wheelbarrow: right before Castle Age or right after.
+Gold Mining: ASAP after clicking up Castle Age.
+Horse Collar: right away in feudal or right when you click up to castle.
+Stone Mining: right before when you start mining stone.
+Hand Cart: \~60 vills (!). Not right away on Castle.
+Gold Shaft Mining: mid-game (30 or 40 on gold)
+Heavy Plow: late, before imp. Maybe at 80~100 vills.
+Stone Shaft Mining: \~never
+Crop Rotation: \~never
 
