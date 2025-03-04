@@ -297,6 +297,8 @@ The political nation divided into Tories and Whigs. Whigs were for exclusion and
 
 The Exclusion Crisis came as Parliament convened and was dissolved again when pushing for exclusion, and the King chose not to call for a new one, started dissolving the charters of cities which had Whig inclinations (I didn't quite get how this mechanism worked exactly), and persecuting dissidents (especially quakers) throughout the 1680s. The nation was politically highly polarized.
 
+> In the aftermath of the 1685 rebellion of the duke of Monmouth (known as the Monmouth Rebellion)\[, the Bloody Assizes took place,] in which hundreds of rebels, expecting clemency, were executed after the most perfunctory of trials.<br>This remained a rallying cry for English liberals in Dickens’s time, as a historical symbol of monarchical tyranny and excess. (from Dickens' Tale of Two Cities, a footnote)
+
 The King then died at his most powerful, and converted to Catholicism in his deathbed.
 
 James II was closer to Charles I in temperament, whereas Charles II resembled James I more. He undermined his own position with his deeply sincere catholicism.
