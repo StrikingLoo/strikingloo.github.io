@@ -48,3 +48,12 @@ A trap that immobilises characters via adhesive or magic, for example, and sound
 <https://www.reddit.com/r/DnDBehindTheScreen/comments/55hspa/outside_the_manual_aberrations/>
 
 [A lot of resources for DMing](https://homebrewery.naturalcrit.com/source/S1s_gZCmQ)
+
+### Running a Hexcrawl in 5e
+
+Some interesting resources:
+
+[This guide to read some day - TheAlexandrian, running a 5e Hexcrawl](https://thealexandrian.net/wordpress/46020/roleplaying-games/5e-hexcrawl).
+
+Some recommended manuals: [Advanced 5e -rules for tracking resources and such-](https://enpublishingrpg.com/products/level-up-advanced-5th-edition-starter-box), [Trials and Treasures](https://enpublishingrpg.com/collections/level-up-advanced-5th-edition-a5e/products/level-up-trials-treasures).
+
