@@ -55,5 +55,5 @@ Some interesting resources:
 
 [This guide to read some day - TheAlexandrian, running a 5e Hexcrawl](https://thealexandrian.net/wordpress/46020/roleplaying-games/5e-hexcrawl).
 
-Some recommended manuals: [Advanced 5e -rules for tracking resources and such-](https://enpublishingrpg.com/products/level-up-advanced-5th-edition-starter-box), [Trials and Treasures](https://enpublishingrpg.com/collections/level-up-advanced-5th-edition-a5e/products/level-up-trials-treasures).
+Some recommended manuals: [Advanced 5e -rules for tracking resources and such-](https://enpublishingrpg.com/products/level-up-advanced-5th-edition-starter-box), [Trials and Treasures](https://enpublishingrpg.com/collections/level-up-advanced-5th-edition-a5e/products/level-up-trials-treasures). Free manual, I think, [here](https://copperpieces.itch.io/an-explorers-guide-to-hexcrawls)
 
