@@ -158,3 +158,28 @@ Heavy Plow: late, before imp. Maybe at 80~100 vills.
 Stone Shaft Mining: \~never
 Crop Rotation: \~never
 
+### 18 Pop Scout Rush Build Order
+
+18 Pop scouts:
+
+- 6 sheep
+- 1 to lure boar
+- 2 wood (lumber camp)
+- 2 to boar
+- 1 to make house + lure 2nd boar
+- 1 to make mill then berries
+- 3 boar
+- 1 to wood (same lumbercamp)
+- Loom, feudal
+
+- Move 1 from boar/sheep to barracks = house
+- 2 from boar/sheep to stragglers
+- 5 from boar/sheep to wood (lumbercamp) 
+
+after feudal hits:
+
+- New 3 to berries
+- Get double bit axe
+- Build stable
+- 2 from stragglers to boar/sheep
+- New vills to farms
