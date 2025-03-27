@@ -131,18 +131,18 @@
 			// Function to randomly select between designs with 50/50 split
 			function selectDesign() {
 			  const randomValue = Math.random();
+			  const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			  const darkTheme = document.documentElement.getAttribute('data-theme') === 'dark';
+			  if (prefersDarkMode || darkTheme) {
+			  	return "dark";
+			  }
 			  return randomValue > 0.5 ? 'new' : 'old';
 			}
 
 			function applyDesign(designVersion) {
-			  const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-			  
 			  if (designVersion === 'new') {
 			    // Only apply changes for light mode
-			    if (!prefersDarkMode) {
 			      document.documentElement.style.setProperty('--bkg', '#fdf0d5');
-			      // Add other light mode variable changes here
-			    }
 			    // Dark mode remains unchanged
 			  }
 			}
