@@ -141,9 +141,20 @@
 
 			function applyDesign(designVersion) {
 			  if (designVersion === 'new') {
-			    // Only apply changes for light mode
-			      document.documentElement.style.setProperty('--bkg', '#fdf0d5');
-			    // Dark mode remains unchanged
+			     const styleEl = document.createElement('style');
+			     styleEl.id = 'root-bkg-override';
+			    
+			     // Remove any previous override first
+			     const existingStyle = document.getElementById('root-bkg-override');
+			     if (existingStyle) {
+			        existingStyle.remove();
+			     }
+
+			     // New rule that specifically overrides the root --bkg 
+			     // without breaking theme-specific rules
+			     styleEl.textContent = `:root { --bkg: #fdf0d5; }`;
+			     // Dark mode remains unchanged
+			     document.head.appendChild(styleEl);
 			  }
 			}
 
