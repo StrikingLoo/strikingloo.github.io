@@ -152,7 +152,7 @@
 
 			     // New rule that specifically overrides the root --bkg 
 			     // without breaking theme-specific rules
-			     styleEl.textContent = `:root { --bkg: #fdf0d5; }`;
+			     styleEl.textContent = `:root { --bkg: #fdf0d5; } [data-theme=dark]{--bkg:#191919;}`;
 			     // Dark mode remains unchanged
 			     document.head.appendChild(styleEl);
 			  }
