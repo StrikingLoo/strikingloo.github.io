@@ -3,13 +3,6 @@ layout: default
 title: Monochromatic Palette Creator Tool
 description: "This tool creates harmonious palettes for website designs and front-end development. Quickly test out many palettes and see them in mock website."
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HSL Color Picker</title>
 <style>
   .colorSquare {
     width: 200px;
@@ -25,7 +18,6 @@ description: "This tool creates harmonious palettes for website designs and fron
     border: 1px solid black;
   }
 </style>
-</head>
 <body>
   <h1>Monochromatic Palette Creator Tool</h1>
   
@@ -43,7 +35,7 @@ description: "This tool creates harmonious palettes for website designs and fron
   <p>The palettes are based on HSL hues.</p>
 
   <div id='theDiv' class="contentBox">
-    <h2 id="theH2">Lorem Ipsum</h2>
+    <p id="theH2" style="font-weight:700;font-size:1.4em;line-height:1.5;">Lorem Ipsum</h2>
     <p id="theP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
   
@@ -96,4 +88,3 @@ description: "This tool creates harmonious palettes for website designs and fron
     updateColor();
   </script>
 </body>
-</html>
