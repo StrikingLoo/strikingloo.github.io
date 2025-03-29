@@ -25,6 +25,7 @@ description: "This tool creates harmonious palettes for website designs and fron
   <input type="number" id="hue" value="0" min="0" max="360" style="font-size:1.2em">
   <button onclick="increment('hue')" style="font-size:1.2em">▲</button>
   <button onclick="decrement('hue')" style="font-size:1.2em">▼</button>
+  <label for="rawColorInput" style="font-size:1.2em">Or pick any color: </label>
   <input type="color" value="#ff0000" id="rawColorInput" />
   <br>
   
@@ -52,9 +53,9 @@ description: "This tool creates harmonious palettes for website designs and fron
     function updateColor() {
       const hue = hueInput.value;
 
-      const baseColor = `hsl(${hue}, 70%, 50%)`;
+      const baseColor = `hsl(${hue}, 75%, 50%)`;
       const darkColor = `hsl(${hue}, 80%, 10%)`;
-      const lightColor = `hsl(${hue}, 70%, 95%)`;
+      const lightColor = `hsl(${hue}, 60%, 95%)`;
 
       colorSquare.style.backgroundColor = baseColor;
       darkColorSquare.style.backgroundColor = darkColor;
