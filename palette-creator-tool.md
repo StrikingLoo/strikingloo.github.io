@@ -25,6 +25,7 @@ description: "This tool creates harmonious palettes for website designs and fron
   <input type="number" id="hue" value="0" min="0" max="360" style="font-size:1.2em">
   <button onclick="increment('hue')" style="font-size:1.2em">▲</button>
   <button onclick="decrement('hue')" style="font-size:1.2em">▼</button>
+  <input type="color" value="#ff0000" id="rawColorInput" />
   <br>
   
   <div id="colorSquare" class="colorSquare"></div>
@@ -45,6 +46,8 @@ description: "This tool creates harmonious palettes for website designs and fron
     const accentColorSquare = document.getElementById('accentColorSquare');
     const darkColorSquare = document.getElementById('darkColorSquare');
     const hueInput = document.getElementById('hue');
+    const colorPicker = document.getElementById('rawColorInput');
+    
 
     function updateColor() {
       const hue = hueInput.value;
@@ -85,6 +88,70 @@ description: "This tool creates harmonious palettes for website designs and fron
       }
     }
 
+    function hexToHSL(hex) {
+      // Remove # if present
+      hex = hex.replace(/^#/, '');
+      
+      // Parse the hex values
+      let r, g, b;
+      if (hex.length === 3) {
+        r = parseInt(hex[0] + hex[0], 16) / 255;
+        g = parseInt(hex[1] + hex[1], 16) / 255;
+        b = parseInt(hex[2] + hex[2], 16) / 255;
+      } else {
+        r = parseInt(hex.substr(0, 2), 16) / 255;
+        g = parseInt(hex.substr(2, 2), 16) / 255;
+        b = parseInt(hex.substr(4, 2), 16) / 255;
+      }
+      
+      // Find min and max
+      const max = Math.max(r, g, b);
+      const min = Math.min(r, g, b);
+      let h, s, l = (max + min) / 2;
+      
+      if (max === min) {
+        // Achromatic
+        h = s = 0;
+      } else {
+        const d = max - min;
+        s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+        
+        switch (max) {
+          case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+          case g: h = (b - r) / d + 2; break;
+          case b: h = (r - g) / d + 4; break;
+        }
+        h /= 6;
+      }
+    
+    // Convert to degrees and percentages
+      return {
+        h: Math.round(h * 360),
+        s: Math.round(s * 100),
+        l: Math.round(l * 100)
+      };
+    }
+
+    function colorPickerUpdate() {
+      const baseColor = colorPicker.value;
+      const {h, s, l} = hexToHSL(colorPicker.value);
+
+      const darkColor = `hsl(${h}, 80%, ${l < 50 ? 10 : 90}%)`;
+      const lightColor = `hsl(${h}, 70%, ${l < 50 ? 90 : 20}%)`;
+
+      colorSquare.style.backgroundColor = baseColor;
+      darkColorSquare.style.backgroundColor = darkColor;
+      accentColorSquare.style.backgroundColor = lightColor;
+
+      const theDiv = document.getElementById('theDiv');
+      const theH2 = document.getElementById('theH2');
+      const theP = document.getElementById('theP');
+      theDiv.style.backgroundColor = lightColor;
+      theH2.style.color = baseColor;
+      theP.style.color = darkColor;
+    }
+
     hueInput.addEventListener('change', updateColor);
+    colorPicker.addEventListener('change', colorPickerUpdate, false);
     updateColor();
   </script>
