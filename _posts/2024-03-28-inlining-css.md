@@ -22,7 +22,7 @@ I began by running Webpagetest on the site's most visited page: [Stable Diffusio
 
 These were my results:
 
-![](resources/speed1.png){: loading="lazy"}
+![WebPageTest speed test results before applying inlining to CSS](resources/speed1.png){: loading="lazy"}
 
 ### Inlining CSS
 
@@ -32,7 +32,7 @@ Looking at the cascade graph, there was a whole 200ms in the network call to loa
 
 I was careful to copy the correct minified CSS for each site (for cases where the styles differ slightly) and tested again on the same page.
 
-![](resources/speed2.png){: loading="lazy"}
+![WebPageTest speed test results after applying inlining to CSS. It shows a marked improvement](resources/speed2.png){: loading="lazy"}
 
 This time the speed index went down to 1.1s, and the FCP to 1050ms, leaving us 150ms faster.
 
@@ -48,13 +48,13 @@ I moved that into a little sed script that does the change once for every HTML f
 
 This had negligible (I'd argue zero) effect on loading times, but consistently lowered 'Total blocking time', which makes sense as now there was no blocking JS script.
 
-![](resources/speed3.png){: loading="lazy"}
+![WebPageTest speed test results after applying inlining to CSS and removing extra JS](resources/speed3.png){: loading="lazy"}
 
 Finally, I moved the non-critical part of CSS -like the CSS for the buttons that only become visible after you scroll down- to the end of the HTML file so it only loads after rendering the DOM.
 
 This left me with my final numbers:
 
-![](resources/speed4.png){: loading="lazy"}
+![WebPageTest speed test results after applying inlining to CSS and deferring non-critical CSS. This last bit had a very small impact.](resources/speed4.png){: loading="lazy"}
 
 As you can see, FCP went down by another 100ms, as content that was always below the fold is now loading lazily. Speed index also went down 100ms, so that this change was about as important as inlining CSS (or rather, inlining all CSS to the top of the document was only half as effective as splitting the styles as before and inlining both).
 
@@ -68,7 +68,7 @@ But was all this effort worth it? I needed to know, so I made no other changes -
 
 One week after improving the site's loading speed, these were the analytics for the last 7 days:
 
-![](resources/post_image/analytics-after-change.png){: loading="lazy"}
+![Website traffic increase after improving performance and loading speeds through inlining CSS](resources/post_image/analytics-after-change.png){: loading="lazy"}
 
 This means finally, a 22% reduction in loading times led to a **32% increase in page_views**, 6% increase in session_start, and 36% in user_engagement. 
 
