@@ -49,9 +49,9 @@ description: "This tool creates harmonious palettes for website designs and fron
     function updateColor() {
       const hue = hueInput.value;
 
-      const baseColor = `hsl(${hue}, 80%, 40%)`;
-      const lightColor = `hsl(${hue}, 90%, 96%)`;
-      const darkColor = `hsl(${hue}, 90%, 20%)`;
+      const baseColor = `hsl(${hue}, 70%, 50%)`;
+      const darkColor = `hsl(${hue}, 80%, 10%)`;
+      const lightColor = `hsl(${hue}, 70%, 95%)`;
 
       colorSquare.style.backgroundColor = baseColor;
       darkColorSquare.style.backgroundColor = darkColor;
