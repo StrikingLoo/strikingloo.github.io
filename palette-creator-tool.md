@@ -20,17 +20,17 @@ description: "This tool creates harmonious palettes for website designs and fron
 </style>
   <h1>Monochromatic Palette Creator Tool</h1>
   
-  <div style="font-size:1.2em;text-align:center;">
+  <div style="text-align:center;">
   <label for="hue" style="font-size:1.2em">Try a hue (0 to 360):</label>
   <input type="number" id="hue" value="0" min="0" max="360" style="font-size:1.2em">
   <button onclick="increment('hue')" style="font-size:1.2em">▲</button>
   <button onclick="decrement('hue')" style="font-size:1.2em">▼</button>
-</div>
   <br>
   
   <div id="colorSquare" class="colorSquare"></div>
   <div id="darkColorSquare" class="colorSquare"></div>
   <div id="accentColorSquare" class="colorSquare"></div>
+  </div>
 
   <p>Easily test out several color palettes by changing the hue. Get one darker color (e.g. for fonts), one lighter one (ideal for background) and an intermediate one for accents.</p>
   <p>The palettes are based on HSL hues.</p>
