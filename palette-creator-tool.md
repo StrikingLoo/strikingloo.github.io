@@ -68,8 +68,8 @@ description: "This tool creates harmonious palettes for website designs and fron
     function increment(property) {
       const input = document.getElementById(property);
       let value = parseInt(input.value);
-      if (value < parseInt(input.max)) {
-        value++;
+      if (value < parseInt(input.max) - 10) {
+        value+=10;
         input.value = value;
         updateColor();
       }
@@ -79,7 +79,7 @@ description: "This tool creates harmonious palettes for website designs and fron
       const input = document.getElementById(property);
       let value = parseInt(input.value);
       if (value > parseInt(input.min)) {
-        value--;
+        value-=10;
         input.value = value;
         updateColor();
       }
