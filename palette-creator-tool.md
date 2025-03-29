@@ -20,10 +20,12 @@ description: "This tool creates harmonious palettes for website designs and fron
 </style>
   <h1>Monochromatic Palette Creator Tool</h1>
   
+  <div style="font-size:1.2em;text-align:center;">
   <label for="hue">Try a hue (0 to 360):</label>
   <input type="number" id="hue" value="0" min="0" max="360">
   <button onclick="increment('hue')">▲</button>
   <button onclick="decrement('hue')">▼</button>
+</div>
   <br>
   
   <div id="colorSquare" class="colorSquare"></div>
