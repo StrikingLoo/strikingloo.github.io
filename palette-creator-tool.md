@@ -18,7 +18,6 @@ description: "This tool creates harmonious palettes for website designs and fron
     border: 1px solid black;
   }
 </style>
-<body>
   <h1>Monochromatic Palette Creator Tool</h1>
   
   <label for="hue">Try a hue (0 to 360):</label>
@@ -87,4 +86,3 @@ description: "This tool creates harmonious palettes for website designs and fron
     hueInput.addEventListener('change', updateColor);
     updateColor();
   </script>
-</body>
