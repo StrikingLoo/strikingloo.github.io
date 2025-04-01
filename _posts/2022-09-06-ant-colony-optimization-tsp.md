@@ -87,7 +87,7 @@ That is, the probability of choosing a certain edge will be proportional to:
 
 Where P is the level of pheromones in that edge, and D the distance the edge covers. To get the distribution we sample from at each random jump, we normalize these weight coefficients so they add up to one.
 <div class="wide-eighty">
-{% raw %}<script defer src="https://gist.github.com/StrikingLoo/432302f114822d24504cf6bab0ab3964.js"></script>{% endraw %}
+{% raw %}<div id="gist1"></div>{% endraw %}
 </div>
 After that, the optimization procedure itself consists of:
 
@@ -107,7 +107,7 @@ Additionally, I tried a few more modifications to the algorithm: the 'elite' or 
 Here is the whole function in all its glory (with comments for sanity).
 
 <div class="wide-eighty">
-{% raw %}<script defer src="https://gist.github.com/StrikingLoo/778db2438b18d38f126082c046b19acd.js"></script>{% endraw %}
+{% raw %}<div id="gist2"></div>{% endraw %}
 </div>
 
 Some possible improvements for this algorithm that I didn't have the time for:
@@ -180,3 +180,27 @@ I would like to try Ant Colony Optimization for problems other than TSP in the f
 - [Solving the Large-Scale TSP Problem in 1 h: Santa Claus Challenge 2020](https://www.frontiersin.org/articles/10.3389/frobt.2021.689908/full): A fun challenge and a good explanation of TSP.
 - [Automatic Relation-aware Graph Network Proliferation](https://arxiv.org/pdf/2205.15678v1.pdf): Using Graph Neural Networks to solve, among other things, TSP.
 - [TSP Genetic Python](https://github.com/maoaiz/tsp-genetic-python): A genetic algorithm for solving TSP.
+
+{% raw %}
+<script>
+    function setUpGists() {
+        const url1 = "https://gist.github.com/StrikingLoo/432302f114822d24504cf6bab0ab3964.js";
+        const url2 ="https://gist.github.com/StrikingLoo/778db2438b18d38f126082c046b19acd.js";
+
+        const container1 = document.createElement('div');
+        container1.id = 'gist-container-1';
+        document.getElementById('gist1').appendChild(container1);
+        const script1 = document.createElement('script');
+        script1.src = url1;
+        container1.appendChild(script1);
+        
+        const container2 = document.createElement('div');
+            container2.id = 'gist-container-2';
+        document.getElementById('gist2').appendChild(container2);
+        const script2 = document.createElement('script');
+        script2.src = url2;
+        container2.appendChild(script2);
+    }
+    window.addEventListener('DOMContentLoaded', setUpGists);
+</script>
+{% endraw %}
