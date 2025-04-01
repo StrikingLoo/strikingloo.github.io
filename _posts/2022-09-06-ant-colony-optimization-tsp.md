@@ -87,7 +87,7 @@ That is, the probability of choosing a certain edge will be proportional to:
 
 Where P is the level of pheromones in that edge, and D the distance the edge covers. To get the distribution we sample from at each random jump, we normalize these weight coefficients so they add up to one.
 <div class="wide-eighty">
-{% raw %}<script src="https://gist.github.com/StrikingLoo/432302f114822d24504cf6bab0ab3964.js"></script>{% endraw %}
+{% raw %}<script defer src="https://gist.github.com/StrikingLoo/432302f114822d24504cf6bab0ab3964.js"></script>{% endraw %}
 </div>
 After that, the optimization procedure itself consists of:
 
@@ -107,7 +107,7 @@ Additionally, I tried a few more modifications to the algorithm: the 'elite' or 
 Here is the whole function in all its glory (with comments for sanity).
 
 <div class="wide-eighty">
-{% raw %}<script src="https://gist.github.com/StrikingLoo/778db2438b18d38f126082c046b19acd.js"></script>{% endraw %}
+{% raw %}<script defer src="https://gist.github.com/StrikingLoo/778db2438b18d38f126082c046b19acd.js"></script>{% endraw %}
 </div>
 
 Some possible improvements for this algorithm that I didn't have the time for:
