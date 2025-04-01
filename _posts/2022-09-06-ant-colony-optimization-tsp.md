@@ -11,7 +11,7 @@ sitemap: true
 
 {% raw %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 {% endraw %}
 
 Ant Colony Optimization algorithms always intrigued me. They are loosely based in biology and the real protocols ants use to communicate and plan routes. They do this by coordinating through small pheromone messages: chemical trails they leave as they move forward, signaling for other ants to follow them. Even though each ant is not especially smart, and they follow simple rules individually, collectively they can converge to complex behaviors as a system, and amazing properties emerge.
@@ -266,7 +266,7 @@ I would like to try Ant Colony Optimization for problems other than TSP in the f
 
 {% raw %}
 <script>
-  document.addEventListener('DOMContentLoaded', (event) => {
+  document.addEventListener('load', (event) => {
     document.querySelectorAll('pre code').forEach((el) => {
       hljs.highlightElement(el);
     });
