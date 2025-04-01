@@ -133,7 +133,7 @@ def update(state, action, value, value_dict):
 	else:
 		value_dict[state] = {}
 		value_dict[state][action] = value
-</pre></code>
+</code></pre>
 {% endraw %}
 
 The policy:
@@ -157,7 +157,7 @@ def policy(values, state, epsilon = 0.1):
 		best_value = q(state, best_action, values)
 
 	return best_action, best_value
-</pre></code>
+</code></pre>
 {% endraw %}
 </div>
 
@@ -190,7 +190,7 @@ for episoden in range(EPISODES):
 			current_state = next_state
 			action = next_action
 			action_v = next_action_v
-</pre></code>
+</code></pre>
 {% endraw %}
 </div>
 
@@ -201,44 +201,44 @@ I ran the code for multiple mazes, and was happy to see all of the results were 
 Here is our agent solving a very simple maze: a wall running across the middle. The agent is the blue square, the goal -an apple- is the red one.
 
 Before training:
-![](resources/post_image/first_iter_1.gif){: loading='lazy' style="width:30%"}
+![First iteration before training (the algorithm fails to solve the maze)](resources/post_image/first_iter_1.gif){: loading='lazy' style="width:30%"}
 
 After training:
-![](resources/post_image/last_iter_1.gif){: loading='lazy' style="width:30%"}
+![Last iteration after training (algorithm solved the maze fast)](resources/post_image/last_iter_1.gif){: loading='lazy' style="width:30%"}
 
 
 For a more advanced challenge, I tried a hockey-stick shape, where it needs to go through a narrow passage. It actually took it less time to learn this pattern, I guess because it was more constrained in the possible movements it could make.
 
 Before training:
-![](resources/post_image/first_iter_2.gif){: loading='lazy' style="width:30%"}
+![First iteration before training (the algorithm fails to solve the maze except by random walk)](resources/post_image/first_iter_2.gif){: loading='lazy' style="width:30%"}
 
 After training:
-![](resources/post_image/last_iter_2.gif){: loading='lazy' style="width:30%"}
+![Last iteration after training (the algorithm solved the maze fast)](resources/post_image/last_iter_2.gif){: loading='lazy' style="width:30%"}
 
 It performed similarly with a cross, even though in this case it had to back-pedal a bit.
 
 Before training:
-![](resources/post_image/first_iter_3.gif){: loading='lazy' style="width:30%"}
+![First iteration before training (the algorithm fails to solve the cross shaped maze except by random walk)](resources/post_image/first_iter_3.gif){: loading='lazy' style="width:30%"}
 
 After training:
-![](resources/post_image/last_iter_3.gif){: loading='lazy' style="width:30%"}
+![Last iteration after training (the algorithm solved the cross shaped maze fast)](resources/post_image/last_iter_3.gif){: loading='lazy' style="width:30%"}
 
 Then I tried making it go through narrow passages, one way and the other. This one took a long time for the random agent to crack.
 
 Before training:
-![](resources/post_image/first_iter_4.gif){: loading='lazy' style="width:30%"}
+![First iteration before training (the algorithm fails to solve the maze except by random walk)](resources/post_image/first_iter_4.gif){: loading='lazy' style="width:30%"}
 
 After training:
-![](resources/post_image/last_iter_4.gif){: loading='lazy' style="width:30%"}
+![Last iteration after training (the algorithm solved the maze quickly)](resources/post_image/last_iter_4.gif){: loading='lazy' style="width:30%"}
 
 
 And finally, just to see it could learn anything: what if it had to go through a wall that divided the whole map in half, and then follow it closely back in the other direction?
 
 Before training:
-![](resources/post_image/first_iter_5.gif){: loading='lazy' style="width:30%"}
+![First iteration before training (the algorithm fails to solve the trickiest maze except by random walk)](resources/post_image/first_iter_5.gif){: loading='lazy' style="width:30%"}
 
 After training:
-![](resources/post_image/last_iter_5.gif){: loading='lazy' style="width:30%"}
+![Last iteration after training (the algorithm solved the trickiest maze quickly)](resources/post_image/last_iter_5.gif){: loading='lazy' style="width:30%"}
 
 In conclusion, this maze solver is a-mazing!
 
