@@ -272,5 +272,4 @@ I would like to try Ant Colony Optimization for problems other than TSP in the f
     });
   });
 </script>
-
 {% endraw %}

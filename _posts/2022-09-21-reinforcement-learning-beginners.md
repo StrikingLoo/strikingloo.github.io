@@ -9,6 +9,11 @@ importance: 8
 sitemap: true
 ---
 
+{% raw %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+{% endraw %}
+
 What could we do if, instead of coding programs from the ground up, we could just specify the rules for a task, the success criteria, and make AI learn to complete it?
 
 Imagine the blessings humanity could unlock if we could automate all the tasks nobody wants to do, all the unsafe, unhealthy or uninspiring jobs. Or the ways Scientific progress could be sped up if big parts of the research process were accelerated.
@@ -115,18 +120,78 @@ Here are the relevant snippets, but you can also check the [GitHub Project](http
 
 The lookup table:
 
-{% raw %} <script src="https://gist.github.com/StrikingLoo/1a7abd14725455e9200ae2fa256e8a83.js"></script> {% endraw %}
+{% raw %} 
+<pre><code class="language-python">
+def q(state, action, value_dict):
+	result = value_dict.get(state, {}).get(action, 10)
+	return result
+
+def update(state, action, value, value_dict):
+	state_values = value_dict.get(state, None)
+	if state_values:
+		state_values[action] = value
+	else:
+		value_dict[state] = {}
+		value_dict[state][action] = value
+</pre></code>
+{% endraw %}
 
 The policy:
 
 <div class="wide-eighty">
-{% raw %} <script src="https://gist.github.com/StrikingLoo/6055bf081061b74c3d71adaaf3155cdc.js"></script> {% endraw %}
+{% raw %} 
+<pre><code class="language-python">
+def policy(values, state, epsilon = 0.1):
+	best_action = None
+	best_value = float('-inf')
+	allowed = allowed_actions(state) #filter by possible actions. No bumping into walls.
+	random.shuffle(allowed) # shuffle to avoid bias
+	for action in allowed:
+		if q(state, action, values) > best_value:
+			best_value = q(state, action, values)
+			best_action = action
+
+	r_var = random.random()
+	if r_var < epsilon: #with probability epsilon...
+		best_action = random.choice(allowed) #choose at random
+		best_value = q(state, best_action, values)
+
+	return best_action, best_value
+</pre></code>
+{% endraw %}
 </div>
 
 The main loop (minus the prints and after cleaning). I used an *α* value of 0.5, and a *γ* of 0.9.
 
 <div class="wide-eighty">
-{% raw %} <script src="https://gist.github.com/StrikingLoo/a73489773ca8c11028047d142b8024f2.js"></script> {% endraw %}
+{% raw %} 
+<pre><code class="language-python">
+for episoden in range(EPISODES):
+		env.reset() # Make player go back to square one
+		current_state = env.compressed_state_rep() # get unique representation of state
+		use_epsilon = 0.1
+		if episoden > 200:
+			use_epsilon = 0.0
+		action, action_v = policy(values, current_state, epsilon = use_epsilon)
+
+		while (not env.over):
+			reward = env.move(action)
+			total_reward += reward
+			next_state = env.compressed_state_rep()
+
+			next_action, next_action_v = policy(values, next_state, epsilon = use_epsilon) #obtain action from policy
+			
+			if env.over: #one can only win.
+				next_action_v = 100
+
+			delta = next_action_v*GAMMA + reward - action_v #sarsa update rule
+			new_value = action_v + delta*alpha #apply update
+			update(current_state, action, new_value, values)
+			current_state = next_state
+			action = next_action
+			action_v = next_action_v
+</pre></code>
+{% endraw %}
 </div>
 
 I polished them a bit compared with the ones on GitHub, for clarity's sake.
@@ -219,3 +284,13 @@ From the wiki:
 
 
 _If this post was useful or interesting, please share it on social media._
+
+{% raw %}
+<script>
+  window.addEventListener('load', (event) => {
+    document.querySelectorAll('pre code').forEach((el) => {
+      hljs.highlightElement(el);
+    });
+  });
+</script>
+{% endraw %}
