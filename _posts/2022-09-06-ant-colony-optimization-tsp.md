@@ -9,6 +9,11 @@ importance: 8
 sitemap: true
 ---
 
+{% raw %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+{% endraw %}
+
 Ant Colony Optimization algorithms always intrigued me. They are loosely based in biology and the real protocols ants use to communicate and plan routes. They do this by coordinating through small pheromone messages: chemical trails they leave as they move forward, signaling for other ants to follow them. Even though each ant is not especially smart, and they follow simple rules individually, collectively they can converge to complex behaviors as a system, and amazing properties emerge.
 
 In the computational sense, Ant Colony Optimization algorithms solve complex optimization problems for which a closed-form or polynomial solution does not exist, by trying different "routes" across some relevant space or graph, and trying to find the most efficient one (typically the shortest) from two points that satisfies some constraints.
@@ -87,7 +92,41 @@ That is, the probability of choosing a certain edge will be proportional to:
 
 Where P is the level of pheromones in that edge, and D the distance the edge covers. To get the distribution we sample from at each random jump, we normalize these weight coefficients so they add up to one.
 <div class="wide-eighty">
-{% raw %}<div id="gist1"></div>{% endraw %}
+{% raw %}
+<pre><code class="language-python">
+def traverse_graph(g, source_node = 0):
+    ALPHA = 0.9
+    BETA = 1.5
+    visited = np.asarray([1 for _ in range(g.nodes)]) #originally no nodes have been visited
+    visited[source_node] = 0 # except the initial/source node.
+
+    cycle = [source_node]
+    steps = 0
+    current = source_node
+    total_length = 0
+    while steps < g.nodes -1:
+
+        jumps_neighbors = []
+        jumps_values = []
+        for node in range(g.nodes):
+            if visited[node] != 0:
+               pheromone_level = max(g.intensity[current][node], 1e-5) #constant added to encourage exploration
+               v = (pheromone_level**ALPHA ) / (g.distance[current][node]**BETA) 
+               jumps_neighbors.append(node)
+               jumps_values.append(v)
+
+        next_node = random.choices(jumps_neighbors, weights = jumps_values)[0] # weighted (normalized) choice
+       
+        visited[next_node] = 0
+        current = next_node
+        cycle.append(current)
+        steps+=1
+
+    total_length = cycle_length(g, cycle) # just adds all the distances
+    assert len(list(set(cycle))) == len(cycle)
+    return cycle, total_length
+</code></pre>
+{% endraw %}
 </div>
 After that, the optimization procedure itself consists of:
 
@@ -107,7 +146,51 @@ Additionally, I tried a few more modifications to the algorithm: the 'elite' or 
 Here is the whole function in all its glory (with comments for sanity).
 
 <div class="wide-eighty">
-{% raw %}<div id="gist2"></div>{% endraw %}
+{% raw %}
+<pre><code class="language-python">
+def ant_colony_optimization(g, verbose=True, iterations = 100, ants_per_iteration = 50, q = 10, degradation_factor = .9, use_inertia = False):
+    best_cycle = best_so_far # can be pre set or set to None
+    best_length = cycle_length(g, best_so_far) #hardcoded instance. Else use None
+    if use_inertia: #this is adding pheromones everywhere if the process stagnates. This did not improve my results and is left off.
+      old_best = None
+      inertia = 0
+      patience = 100
+
+    for iteration in range(iterations):
+        cycles = [traverse_graph(g, random.randint(0, g.nodes -1)) for _ in range(ants_per_iteration)] # could be trivially parallelized if not on Mac through multiprocessing
+        cycles.sort(key = lambda x: x[1])
+        cycles = cycles[: ants_per_iteration//2] #optionally keep best half.
+
+        if best_cycle: #elitism
+            cycles.append((best_cycle, best_length))
+            if use_inertia:
+                old_best = best_length
+
+        for cycle, total_length in cycles: # pheromone update
+            total_length = cycle_length(g, cycle)
+            if total_length < best_length:
+                best_length = total_length
+                best_cycle = cycle
+
+            delta = q/total_length
+            i = 0
+            while i < len(cycle) -1:
+                g.intensity[cycle[i]][cycle[i+1]]+= delta
+                i+=1
+            g.intensity[cycle[i]][cycle[0]] += delta
+            g.intensity *= degradation_factor
+        
+        if use_inertia and best_cycle:        
+            if old_best == best_length:
+                    inertia+=1
+            else:
+                inertia = 0
+            if inertia > patience:
+                g.intensity += g.intensity.mean() # applying shake
+
+    return best_cycle
+</code></pre>
+{% endraw %}
 </div>
 
 Some possible improvements for this algorithm that I didn't have the time for:
@@ -183,24 +266,11 @@ I would like to try Ant Colony Optimization for problems other than TSP in the f
 
 {% raw %}
 <script>
-    function setUpGists() {
-        const url1 = "https://gist.github.com/StrikingLoo/432302f114822d24504cf6bab0ab3964.js";
-        const url2 ="https://gist.github.com/StrikingLoo/778db2438b18d38f126082c046b19acd.js";
-
-        const container1 = document.createElement('div');
-        container1.id = 'gist-container-1';
-        document.getElementById('gist1').appendChild(container1);
-        const script1 = document.createElement('script');
-        script1.src = url1;
-        container1.appendChild(script1);
-        
-        const container2 = document.createElement('div');
-            container2.id = 'gist-container-2';
-        document.getElementById('gist2').appendChild(container2);
-        const script2 = document.createElement('script');
-        script2.src = url2;
-        container2.appendChild(script2);
-    }
-    window.addEventListener('DOMContentLoaded', setUpGists);
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((el) => {
+      hljs.highlightElement(el);
+    });
+  });
 </script>
+
 {% endraw %}
