@@ -212,7 +212,7 @@ more digital illustration like air of the images from before.
 
 > A digital illustration of a steampunk robot \[/with cogs and clockwork by Josef Thoma], 4k, detailed, trending in artstation, fantasy vivid colors
 
-<div><img src="resources/ai-generated-images/stable-diffusion/selected/1173280232_A_digital_illustration_of_a_steampunk_robot__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png" loading="lazy"/></div>
+<div><img src="resources/ai-generated-images/stable-diffusion/selected/1173280232_A_digital_illustration_of_a_steampunk_robot__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png" alt="A Stable Diffusion generated picture of a steampunk robot" loading="lazy"/></div>
 
 ![](resources/ai-generated-images/stable-diffusion/selected/733543897_A_digital_illustration_of_a_steampunk_robot__4k__detailed__trending_in_artstation__fantasy_vivid_colors.png){: alt="A Stable Diffusion generated picture of a steampunk robot" loading="lazy"}
 
