@@ -20,6 +20,20 @@ The most basic formula to use here is the one for p-values:
 
 The value for t is then plugged into Welch's t-test.
 
+## Fisher's Exact Test
+
+For a simple test where we test one variable affecting two categories (e.g., a classic A/B test where convert/not-convert are the categories and treatment/control are the variable), the most common method to test for significance is [Fisher's exact test](https://en.wikipedia.org/wiki/Fisher%27s_exact_test). This yields an exact (as opposed to approximated) _p-value_, or the probability of obtaining such a result or a more extreme one under the null hypothesis (of no correlation between variable and categories).
+
+The justification is actually combinatorial, pretty interesting.
+
+A way to run this in Python, given a table with a, b, c, d values for the 4 samples is
+`scipy.stats.fisher_exact(table=[[a,b],[c,d]], alternative="less")`
+where a and b are the 'converted' counts and c, d the not converted ones, and a, c correspond to control and b, d to treatment (the opposite would also work).
+
+> This value \[the p-value] can be interpreted as the sum of evidence provided by the observed data—or any more extreme table—for the null hypothesis (that there is no difference in the proportions of \[conversion/non-conversion] between \[treatment and control])
+
+For a large enough sample it can be more convenient to use a chi-squared test, which is more powerful but only approximates the p-value -meaning it only works for a larger sample-. A heuristic is that you can start using the chi-squared test if all cells in your table have at least 10 elements.
+
 ### P-move
 
 _[Source: Objective Bayesian Two Sample Hypothesis Testing for
