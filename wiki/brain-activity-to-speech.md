@@ -34,6 +34,9 @@ In easier situations, this could automate WhatsApp audio recordings, or integrat
 ### Further Reading
 
 - [MindVis by Stanford - Seeing Beyond the Brain: Conditional Diffusion Model with Sparse Masked Modeling for Vision Decoding](https://mind-vis.github.io/)
+- [A streaming brain-to-voice neuroprosthesis to restore naturalistic communication](https://www.nature.com/articles/s41593-025-01905-6?utm_source=substack&utm_medium=email) - 2025 April update: Researchers from Berkeley got to convert thoughts to speech at a pace of 90 WPM -beating previous records of 30-.
+
+> We designed and used deep learning recurrent neural network transducer models to achieve online large-vocabulary intelligible fluent speech synthesis personalized to the participant’s preinjury voice with neural decoding in 80-ms increments. 
 
 
 
