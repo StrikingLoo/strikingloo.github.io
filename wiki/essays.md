@@ -11,27 +11,27 @@ tags: paul graham, advice, writing, thinking
 
 ## Advice from Paul Graham
 
+> To understand what a real essay is, we have to reach back into history again, though this time not so far. To Michel de Montaigne, who in 1580 published a book of what he called "essais." He was doing something quite different from what lawyers do, and the difference is embodied in the name. Essayer is the French verb meaning "to try" and an essai is an attempt. **An essay is something you write to try to figure something out.**
+
+> Figure out what? You don't know yet. And so you can't begin with a thesis, because you don't have one, and may never have one. An essay doesn't begin with a statement, but with a question. In a real essay, you don't take a position and defend it. You notice a door that's ajar, and you open it and walk in to see what's inside.
+
+> If all you want to do is figure things out, why do you need to write anything, though? Why not just sit and think? Well, there precisely is Montaigne's great discovery. **Expressing ideas helps to form them.** Indeed, helps is far too weak a word. Most of what ends up in my essays I only thought of when I sat down to write them. That's why I write them.
+
+> In the things you write in school you are, in theory, merely explaining yourself to the reader. In a real essay you're writing for yourself. You're thinking out loud.
+
 [**Trying**, by Paul Graham](http://paulgraham.com/essay.html)
-
-To understand what a real essay is, we have to reach back into history again, though this time not so far. To Michel de Montaigne, who in 1580 published a book of what he called "essais." He was doing something quite different from what lawyers do, and the difference is embodied in the name. Essayer is the French verb meaning "to try" and an essai is an attempt. **An essay is something you write to try to figure something out.**
-
-Figure out what? You don't know yet. And so you can't begin with a thesis, because you don't have one, and may never have one. An essay doesn't begin with a statement, but with a question. In a real essay, you don't take a position and defend it. You notice a door that's ajar, and you open it and walk in to see what's inside.
-
-If all you want to do is figure things out, why do you need to write anything, though? Why not just sit and think? Well, there precisely is Montaigne's great discovery. **Expressing ideas helps to form them.** Indeed, helps is far too weak a word. Most of what ends up in my essays I only thought of when I sat down to write them. That's why I write them.
-
-In the things you write in school you are, in theory, merely explaining yourself to the reader. In a real essay you're writing for yourself. You're thinking out loud.
 
 ## Writing a Blog
 
 ### Tom Critchlow on "You're not Blogging and that's a Problem"
 
-"So what’s the lesson here? **Blog on topics you’re thinking about - but remember you don’t need to finish the thought to put the post live.**
+> "So what’s the lesson here? **Blog on topics you’re thinking about - but remember you don’t need to finish the thought to put the post live.**
  
-Here’s my best trick for writing blog posts. It’s simple: **write a blog post, think about who cares about that topic, email it to them asking for their thoughts.**
+> Here’s my best trick for writing blog posts. It’s simple: **write a blog post, think about who cares about that topic, email it to them asking for their thoughts.**
  
-Could be an old boss, a friend, someone you met at a conference - it doesn’t matter. Write something they’d find interesting and email them a thoughtful email. Don’t send more than 5 of these per blog post. 
+> Could be an old boss, a friend, someone you met at a conference - it doesn’t matter. Write something they’d find interesting and email them a thoughtful email. Don’t send more than 5 of these per blog post. 
  
-it’s a great routine to get into because it **forces you to write a blog post so that at least one person cares about it.**"
+> It’s a great routine to get into because it **forces you to write a blog post so that at least one person cares about it.**"
 
 ### Advice from Monica Lent's Blogging Newsletter
 
@@ -97,11 +97,9 @@ More Patio11:
 
 > I am attempting to explain things to my future self, who is intelligent and interested, but has forgotten. What I am doing is explaining why I decided what I did to myself and noting down everything I found interesting about it for future reference. I hope my other readers, whomever they may be, might find the topic as interesting as I found it, and the essay useful or at least entertaining–but the intended audience is my future self.
 
-> I am attempting to explain things to my future self, who is intelligent and interested, but has forgotten. What I am doing is explaining why I decided what I did to myself and noting down everything I found interesting about it for future reference. I hope my other readers, whomever they may be, might find the topic as interesting as I found it, and the essay useful or at least entertaining–but the intended audience is my future self.
-
 > One of my personal interests is applying the idea of the [Long Now](/wiki/clock-of-the-long-now). What and how do you write a personal site with the long-term in mind? We live most of our lives in the future, and the actuarial tables give me until the 2070–2080s.(...) It is a common-place in science fiction that longevity would cause widespread risk aversion. But on the other hand, it could do the opposite: the longer you live, the more long-shots you can afford to invest in. Someone with a timespan of 70 years has reason to protect against black swans—but also time to look for them.
 
->  Knowing your site will survive for decades to come gives you the mental wherewithal to tackle long-term tasks like gathering information for years, and such persistence can be useful—if one holds onto every glimmer of genius for years, then even the dullest person may look a bit like a genius himself. (Even experienced professionals can only write at their peak for a few hours a day).
+> Knowing your site will survive for decades to come gives you the mental wherewithal to tackle long-term tasks like gathering information for years, and such persistence can be useful—if one holds onto every glimmer of genius for years, then even the dullest person may look a bit like a genius himself. (Even experienced professionals can only write at their peak for a few hours a day).
 
 As he writes more, the writing/research process becomes autocatalytic. He:
 - Internalizes a habit of noticing interesting questions that flit accross his brain.
