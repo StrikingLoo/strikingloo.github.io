@@ -59,11 +59,11 @@ A smarter approach to build a palette of k colors may have been running K-means 
 
 As an experiment to see how fast the algorithm was and how much smaller the file could get, I ran dithering compression on this image of a red panda (source: [pixabay](http://pixabay.com)).
 
-![](/resources/post_image/red-panda.jpg){: alt="" loading="lazy"}
+![Picture of a red panda](/resources/post_image/red-panda.jpg){: alt="" loading="lazy"}
 
 Here are the compressed versions after using palettes of evenly spaced colors (as described above) with k = 2, 4, 8 and 16. Note that for k=2, the palette is simple (only 0, 128 or 255 in each value of the color) and for k=16 we're closer to representing every color (over 5000 different colors out of 256^3=\~16M).
 
-![](/resources/post_image/red-panda-2.jpg){: alt="" loading="lazy"}
+![Compressed image with extremely small palette (k=2)](/resources/post_image/red-panda-2.jpg){: alt="" loading="lazy"}
 
 *Compressed image with extremely small palette (k=2)*
 
@@ -72,15 +72,15 @@ The picture went from 580Kb to 264Kb in size, but at what cost.
 
 We can see how the image loses less information as we increase palette size:
 
-![](/resources/post_image/red-panda-4.jpg){: alt="" loading="lazy"}
+![Compressed image with k = 4](/resources/post_image/red-panda-4.jpg){: alt="" loading="lazy"}
 
 *Compressed image with k = 4*
 
-![](/resources/post_image/red-panda-8.jpg){: alt="" loading="lazy"}
+![Compressed image with k = 8](/resources/post_image/red-panda-8.jpg){: alt="" loading="lazy"}
 
 *Compressed image with k = 8*
 
-![](/resources/post_image/red-panda-16.jpg){: alt="" loading="lazy"}
+![Compressed image with k = 16](/resources/post_image/red-panda-16.jpg){: alt="" loading="lazy"}
 
 *Compressed image with k = 16*
 
@@ -113,9 +113,9 @@ The only modifications I had to add to the program were for dealing with RGBA in
 
 Here are the results.
 
-![](/resources/post_image/potted-tree.png){: alt="" loading="lazy" style="width:30%"}
+![original image of a plant](/resources/post_image/potted-tree.png){: alt="" loading="lazy" style="width:30%"}
 
-![](/resources/post_image/potted-tree-16.png){: alt="" loading="lazy" style="width:30%"}
+![image with a reduced palette (k=16)](/resources/post_image/potted-tree-16.png){: alt="" loading="lazy" style="width:30%"}
 
 _original image, image with a reduced palette (k=16)_
 
@@ -126,11 +126,11 @@ I am not sure what compression algorithms the PNG format uses so I'm not sure if
 For fun, I tried the .png version on a bigger file (3.4MB) and it got to 885Kb with our k=16 palette. It's even less than half the size now.
 
 <div class="wide-eighty">
-<img src="/resources/post_image/large-tree.png" alt="" loading="lazy" class="unbounded"/>
+<img src="/resources/post_image/large-tree.png" alt="image of a tree" loading="lazy" class="unbounded"/>
 </div>
 
 <div class="wide-eighty">
-<img src="/resources/post_image/large-tree-16.png" alt="" loading="lazy" class="unbounded"/>
+<img src="/resources/post_image/large-tree-16.png" alt="image of a tree after compression (k=16)" loading="lazy" class="unbounded"/>
 </div>
 
 _before and after_
