@@ -3,7 +3,7 @@ layout: post
 title: "World Poverty"
 date: 2022-01-25
 description: "Interesting stats and facts on world poverty"
-tags: economy, Economics, trends, world modeling
+tags: economy, economics, trends, world modeling
 language: English
 importance: 5
 ---

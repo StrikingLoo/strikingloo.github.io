@@ -50,11 +50,12 @@ These notes encompass multiples sources, but usually form around a MOOC (_Massiv
 
 ### Economics
 
-- [Macroeconomics - Marginal Revolution University](/wiki/macroeconomics-mru)
-- [Economics of Money and Banking - Perry Mehrling](https://strikingloo.github.io/wiki/money-and-banking)
+- [Macroeconomics - Marginal Revolution University](/macroeconomics-mru)
+- [Economics of Money and Banking - Perry Mehrling](/money-and-banking)
+- [The Ascent of Money - Book Notes](/ascent-of-money)
 
 ### History
-- [Early Modern England - Yale History](https://strikingloo.github.io/wiki/early-modern-england)
+- [Early Modern England - Yale History](/early-modern-england)
 
 ## Papers
 
