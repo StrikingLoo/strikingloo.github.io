@@ -87,6 +87,10 @@ The recommended fiber intake is around 35g/day, with an apple containing 4g, a l
 
 Source: [The Guardian](https://www.theguardian.com/science/2025/jan/08/daily-glass-of-milk-may-cut-bowel-cancer-risk-by-fifth-research-finds) via Morning Brew.
 
+### Effect of Weight Loss on Blood Pressure
+
+Multiple clinical and epidemiological studies demonstrate a clear, approximately linear relationship between weight loss and reductions in both systolic blood pressure (SBP) and diastolic blood pressure (DBP). Meta-analyses and large trials consistently report that **losing about 1 kg (2.2 lb) of body weight lowers SBP by roughly 1 mm Hg and DBP by 1 mm Hg**, translating to approximately 0.45 mm Hg per pound lost. **Some adult cohorts show a slightly smaller effect (~0.2–0.3 mm Hg per pound), while adolescent–focused studies suggest a larger drop (1–2 mm Hg per pound)**. Overall, for every pound of weight loss, individuals can expect to see a reduction in SBP of about 0.3–0.5 mm Hg and a similar or slightly smaller drop in DBP.
+
 
 ### Related Reading
 

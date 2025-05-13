@@ -919,3 +919,8 @@ footer::before {
 ### Related Reading
 
 - [CSS Zen Garden](https://www.csszengarden.com/): Website where people submit their own spin on the design for a fixed HTML. A nice little place to check.
+
+
+Old palette
+
+:root{--bkg:#fefefe;--font-color:#191919;--header-anchor-color:#034659;--anchor-bottom-color:#4dd8ff;--anchor-only-color:#035a73;--wiki-bkg-color-hover:#036e8c;--heading-underline-color:rgba(0,0,0,.3);--quote-bkg:#f7f7f7;--absolute-bkg-color:#ffffff; --abstract-bkg-color:#ebf7fa}
