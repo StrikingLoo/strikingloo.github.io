@@ -218,3 +218,5 @@ a reality.
 They train a model to predict computational cost based on compute graph. The model takes nodes as input, mapping them to an opcode_id that has a corresponding embedding, concatenated to a vector of node specific features. They aggregate these vectors for all nodes or a smart sample of them, then move this aggregated vector (concatted to a vector of graph-specific features) through a feed-forward layer. That gives them a numerical estimator of the cost.
 
 In training, they only keep the intermediate states and backpropagate them for a sample of nodes, getting significant training-speed gains.
+
+- Three years later: [AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms](https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/) also uses an evolutionary (diff based mutation) approach to code development, to amazing results in multiple optimization problems.
