@@ -149,6 +149,12 @@ Mortgage Rates
 
 ---
 
+https://www.interconnection.fyi/
+
+Queued energy capacity map.
+
+---
+
 <https://dave-choi.github.io/strategy/agricola/index.html>
 
 Agricola strategy guide.
