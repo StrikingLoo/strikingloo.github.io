@@ -147,6 +147,10 @@ Mortgage Rates
 
 <https://www.mortgagenewsdaily.com/mortgage-rates/mnd> 
 
+Real Estate stats
+
+<https://www.neighborhoodscout.com/wa/seattle/real-estate>
+
 ---
 
 https://www.interconnection.fyi/
