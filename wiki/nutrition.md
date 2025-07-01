@@ -95,3 +95,4 @@ Multiple clinical and epidemiological studies demonstrate a clear, approximately
 ### Related Reading
 
 - [Longevity](/wiki/longevity)
+- [CDC paper with waist measurement statistics](https://www.cdc.gov/nchs/data/series/sr_03/sr03_039.pdf)
