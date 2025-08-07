@@ -88,6 +88,15 @@ Summary: Because it exerts the muscles and makes them stretch more, eccentric wa
 
 Source: [Effects of lunges inserted in walking (eccentric walking) on lower limb muscle strength, physical and cognitive function of regular walkers, Yoshihiro Katsura et al.](https://link.springer.com/epdf/10.1007/s00421-024-05453-y?sharing_token=1vDsDJTN5WzPxi5YmSEkOfe4RwlQNchNByi7wbcMAY5hnPeFvF3FY4v2z1P9M2M0oiR78kXv1Yzj0ODMgckqhKOGHUABEd9UOPOfV5kPAj1jf1IYMIYkdIBv-DUEcKCOiDdNyj6MFypeDhSyeYQrWu_bvlAYtPUmOSaldFpmycA%3D)
 
+
+### 10k Steps Myth
+
+> Overall mortality for people walking 7,000 steps was 47 per cent lower than for those who walked only 2,000. Risks for those who did 7,000 steps fell for health problems including death from cardiovascular disease and cancer, as well as incidence of type 2 diabetes and dementia.
+
+> The gains from moving even more were less pronounced, with the death rate 48 per cent lower for those who notched 10,000 steps compared with 2,000. 
+
+> Ding pointed out that 10,000 steps was still associated with better outcomes than 7,000 for some health conditions, such as a 14 per cent further reduction in the risk of depressive symptoms. 
+
 ### Related Reading
 
 - [Loneliness and its Impact on Health](/wiki/loneliness).

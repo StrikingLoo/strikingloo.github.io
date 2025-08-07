@@ -148,3 +148,7 @@ html {
 ### card regex
 
 testid=\"card-name">([A-Za-z0-9]|\:|\-|\s|\;|\!|\(|\)|\.|\&)*</a>
+
+### Flatten PDF with GhostScript
+
+`gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dBATCH -sOutputFile=$2 $1`

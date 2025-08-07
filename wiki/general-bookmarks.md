@@ -192,3 +192,7 @@ Bloom's Western Canon list, though he himself didn't originally want to compile 
 The death of Glitch and birth of Slack, a tale that brings me nostalgia.
 
 <https://buildingslack.com/the-death-of-glitch-the-birth-of-slack/>
+
+---
+
+[UptonTea](https://www.uptontea.com/): A good site to buy tea.
