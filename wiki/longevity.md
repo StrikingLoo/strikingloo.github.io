@@ -97,6 +97,16 @@ Source: [Effects of lunges inserted in walking (eccentric walking) on lower limb
 
 > Ding pointed out that 10,000 steps was still associated with better outcomes than 7,000 for some health conditions, such as a 14 per cent further reduction in the risk of depressive symptoms. 
 
+## Early Birds
+
+> In May 2021, an analysis published by JAMA Psychiatry of nearly 840,000 people of European descent found that getting up one hour earlier in the morning corresponded with a 23 percent decline in depression risk.
+
+> That’s an observational analysis, and there aren’t many big studies that randomly assign night owls to early wake-up groups. But the few such studies that exist show some promising results. A 2019 paper from British researchers found that getting self-described night owls to fall asleep two hours earlier—through fixed meal times and limited caffeine intake—had a "positive impact on mental health and performance."
+
+> The evidence here is a bit more scattershot than on sleep, but it’s interesting enough to earn our attention. Several studies have showed that limiting meals to an early time-restricted window improved “insulin sensitivity, glycemic variability, blood pressure, and appetite.” People who try out continuous glucose monitors often see first-hand that their bodies can handle a hit of sugar at 10am even though the same hit would cause a blood-sugar spike at 10pm. (...) Perhaps most memorably, a study of 1,195 people, 81 percent female, concluded that "each hour of delay in meal timing was associated with 2.2% higher long-term body weight."
+
+https://www.derekthompson.org/p/a-secret-to-a-long-healthy-life-do
+
 ### Related Reading
 
 - [Loneliness and its Impact on Health](/wiki/loneliness).
